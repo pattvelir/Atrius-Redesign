@@ -1,0 +1,90 @@
+﻿@using Thread.Foundation.Dictionary.Statics
+@using Thread.Foundation.Dictionary.Repositories
+@using Thread.Foundation.Mvc.Extensions
+@using Thread.Foundation.Theme.Extensions
+@model Thread.Feature.Account.Models.MemberEmailPreferencesModel
+
+<fieldset class="account-form__fieldset interest__fieldset">
+    <div class="account-form__field-group">
+        <legend class="form-legend">
+            <span class="form-legend__legend-heading"> @Html.Raw(EditableTranslate.Text("Account.EmailPreferences.Subscriptions.Subtitle"))</span>
+            <div class="form-legend__legend-description">
+                @Html.Raw(EditableTranslate.Text("Account.EmailPreferences.Subscriptions.Description"))
+            </div>
+            @{
+                var subscriptionsMessage = Dictionary.Current.Get("Account.EmailPreferences.Subscriptions.Message");
+            }
+            @if (!string.IsNullOrEmpty(subscriptionsMessage))
+            {
+                <div class="form-legend__legend-message">
+                    @Html.RenderSvg("info-circle")
+                    <div class="form-legend__legend-message-body">
+                        @Html.Raw(subscriptionsMessage)
+                    </div>
+                </div>
+            }
+        </legend>
+        <div>
+            <div class="account-form__fields account-form__fields--50-50  account-form__fields--strech-inputs  account-form__fields--force-column ">
+                <div class="interest__group js-interests-group  interest__group--full-width ">
+                    <div class="interest__title"> @Html.Raw(EditableTranslate.Text("Account.EmailPreferences.Subscriptions.FrequencyText"))</div>
+                    <div class="interests__input-row js-group">
+                        @for (var i = 0; i < Model.EmailFrequencyOptions.Count; i++)
+                        {
+                            <div class="interest__input">
+                                @Html.HiddenFor(m => Model.EmailFrequencyOptions[i].Id)
+                                <label class="sc-form-item sc-form-item--radio sc-form-item--optional ">
+                                    @if (Model.EmailFrequencyOptions[i].Selected)
+                                    {
+                                        @Html.RadioButtonFor(model => Model.SelectedEmailFrequency, Model.EmailFrequencyOptions[i].Id, new { @class = "sc-form-item__field", Checked = "checked" })
+                                    }
+                                    else
+                                    {
+                                        @Html.RadioButtonFor(model => Model.SelectedEmailFrequency, Model.EmailFrequencyOptions[i].Id, new { @class = "sc-form-item__field" })
+                                    }
+                                    <div class="sc-form-item__label">@Model.EmailFrequencyOptions[i].Name</div>
+                                    <span role="alert" class="sc-form-item__error-msg"></span>
+                                </label>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="interest__group js-interests-group  interest__group--full-width ">
+                    <div class="interest__title"> @Html.Raw(EditableTranslate.Text("Account.EmailPreferences.Subscriptions.ListsText"))</div>
+                    <div class="interests__input-row js-group  interests__input-row--column-50 ">
+                        @for (int i = 0; i < Model.EmailListOptions.Count; i++)
+                        {
+                            <div class="interest__input">
+                                @Html.HiddenFor(m => Model.EmailListOptions[i].Id)
+                                <label class="sc-form-item sc-form-item--checkbox sc-form-item--optional ">
+                                    @Html.CheckBoxSimple(m => Model.EmailListOptions[i].Selected, new { @class = "sc-form-item__field" })
+                                    <div class="sc-form-item__label">@Model.EmailListOptions[i].Name</div>
+                                    <div class="sc-form-item__opt-description">
+                                        <span>@Html.Raw(Model.EmailListOptions[i].Description)</span>
+                                    </div>
+                                    <span role="alert" class="sc-form-item__error-msg"></span>
+                                </label>
+                            </div>
+                        }
+                    </div>
+                    <div class="interest__selectGroup">
+                        <div class="js-select-all interest__select-all">
+                            <label class="sc-form-item sc-form-item--checkbox sc-form-item--optional ">
+                                <input type="checkbox" id="selectAllEmailLists" name="selectAllEmailLists" class="sc-form-item__field" data-is-dirty="false" data-checked="false">
+                                <div class="sc-form-item__label">Select All</div>
+                                <span role="alert" class="sc-form-item__error-msg"></span>
+                            </label>
+                        </div>
+                        <div class="js-select-none interest__select-all">
+                            <label class="sc-form-item sc-form-item--checkbox sc-form-item--optional ">
+                                <input type="checkbox" id="selectNoEmailLists" name="selectNoEmailLists" class="sc-form-item__field" data-is-dirty="false" data-checked="false">
+                                <div class="sc-form-item__label">Select None</div>
+                                <span role="alert" class="sc-form-item__error-msg"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</fieldset>

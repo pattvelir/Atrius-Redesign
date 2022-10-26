@@ -1,0 +1,25 @@
+﻿---
+ID: "f543c1d9-5fd0-44bc-b6ee-1050160f3e84"
+Parent: "d791a14e-0f21-4461-a457-1eda601795b5"
+Template: "d791a14e-0f21-4461-a457-1eda601795b5"
+Path: /sitecore/templates/Feature/Search/Featured Results Folder/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {80A8AD76-8EE3-483B-A43C-9FE29CA77938}
+    {D791A14E-0F21-4461-A457-1EDA601795B5}
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200216T160708Z

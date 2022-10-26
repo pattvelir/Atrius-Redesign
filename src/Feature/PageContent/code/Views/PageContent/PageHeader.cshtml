@@ -1,0 +1,31 @@
+﻿@using Thread.Foundation.Mvc.Extensions
+@using TaxonomyConstants = Thread.Foundation.Taxonomy.Reference.Constants
+@model Thread.Feature.PageContent.Models.PageHeaderModel
+
+@if (Model != null && Model.Datasource != null)
+{
+  <section class="page-header container">
+    @if (Model.ContentTypeItem != null)
+    {
+      using (Html.EditFrame(Model.ContentTypeItem, TaxonomyConstants.EditFrames.EditContentType, "Edit Content Type"))
+      {
+        if (Model.ContentTypeItem.ContentType.TargetItem != null)
+        {
+          <div class="page-header__type eyebrow">@Html.Raw(Model.ContentTypeItem.ContentType.TargetItem.DisplayName)</div>
+        }
+        else if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+        {
+          <div class="page-header__type eyebrow">No Content Type Selected.</div>
+        }
+      }
+    }
+    @if (Model.TitleItem != null && Html.Sitecore().HasValueOrEditing(Model.TitleItem.HeaderTitle))
+    {
+      <h1 class="page-header__title mainsection">@Html.Sitecore().Field(Model.TitleItem.HeaderTitle)</h1>
+    }
+    @if (Model.SubTitleItem != null && Html.Sitecore().HasValueOrEditing(Model.SubTitleItem.Subtitle))
+    {
+      <div class="page-header__subtitle quote">@Html.Sitecore().Field(Model.SubTitleItem.Subtitle)</div>
+    }
+  </section>
+}

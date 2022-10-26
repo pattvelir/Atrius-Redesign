@@ -1,0 +1,36 @@
+﻿@using Thread.Foundation.Dictionary.Statics
+@using Thread.Foundation.Dictionary.Repositories
+@model Thread.Feature.Account.Models.MemberProfileModel
+
+<fieldset class="account-form__fieldset">
+    <div class="account-form__field-group">
+        <legend class="form-legend">
+            <span class="form-legend__legend-heading">
+                @Html.Raw(EditableTranslate.Text("Account.Profile.ProfilePhoto.Subtitle"))
+            </span>
+            <div class="form-legend__legend-description">
+                @Html.Raw(EditableTranslate.Text("Account.Profile.ProfilePhoto.Description"))
+            </div>
+        </legend>
+        <div class="account-form__fields account-form__fields--50-50">
+            <div class="account-form__photo-upload">
+
+                @{
+                    var profileImage = !string.IsNullOrEmpty(Model.ProfileImageRaw) ? Model.ProfileImageRaw : "//placehold.it/300x300";
+                }
+                <img class="sc-form-item__profile-image js-image-preview" src="@profileImage">
+
+                <label class="sc-form-item sc-form-item--optional js-form-item">
+                    <span class="sc-form-item__label">@Html.Raw(EditableTranslate.Text("Account.Profile.ProfilePhoto.ProfilePhotoLabel"))</span>
+                    <input class="sc-form-item__field  js-form-item-field js-image-upload sc-form-item__field--" id="ProfileImage" name="ProfileImage" data-type="file" type="file" placeholder="" name="profile-photo" data-is-dirty="false" data-original-value="">
+
+                    <span role="alert" class="sc-form-item__error-msg">The file you attempted to upload is an unsupported file type. Please upload a PNG or JPG.</span>
+
+                    <div class="sc-form-item__helper-text">
+                        <span>@Html.Raw(EditableTranslate.Text("Account.Profile.ProfilePhoto.ProfilePhotoDescription"))</span>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>
+</fieldset>

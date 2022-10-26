@@ -1,0 +1,30 @@
+﻿---
+ID: "829247d8-9d05-45f7-a3dc-97f13b1b4e79"
+Parent: "bc4e24f1-b2af-42fd-8250-9fec15f0dad4"
+Template: "1eb19b8d-905f-4fd3-bf38-0e50c5958954"
+Path: /sitecore/system/Settings/Forms/Email Templates/Confirm Registration
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0c6784b4-bae1-4599-b0be-56b9a0fe48c1"
+      Hint: Subject
+      Value: Please confirm your registration
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190515T194945Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "7745a7c0-dc40-485b-9ecf-7b805bcc7af2"
+      Hint: From
+      Value: "no-reply@velir.com"
+    - ID: "a730a8d9-d78e-47bf-ad75-8c7497337685"
+      Hint: Body
+      Value: |
+        <p>Thank you for signing up! One final step and you're in.</p>
+        <p>Click on the link below to confirm your registration. Once confirmed you will be able to log in with your new account.</p>
+        <p>$link$</p>

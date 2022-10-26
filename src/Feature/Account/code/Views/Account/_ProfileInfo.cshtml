@@ -1,0 +1,81 @@
+﻿@using Thread.Foundation.Theme.Extensions
+@model Thread.Feature.Account.Models.MemberProfileModel
+<div  class="member-profile__header" >
+    <figure class="member-profile__image" >
+        @if (string.IsNullOrEmpty(Model.ProfileImageRaw))
+        {
+          <img
+            class="image-element"
+            alt=""
+            srcset="//placehold.it/300x300 150w, //placehold.it/300x300 300w"
+            sizes="150px"
+            loading="lazy"
+          />
+        }
+        else
+        {
+          <img class="image-element"
+            alt=""
+            srcset="@Model.ProfileImageRaw"
+            sizes="150px"
+            loading="lazy" />
+        }
+    </figure>
+    @if (!string.IsNullOrEmpty(Model.FirstName) || !string.IsNullOrEmpty(Model.LastName))
+    {
+        <h2 class="member-profile__name">@Model.FirstName @Model.LastName</h2>
+    }
+    @if (!string.IsNullOrEmpty(Model.ProfileTitle))
+    {
+        <p class="member-profile__title">@Html.Raw(Model.ProfileTitle)</p>
+    }
+    <ul class="member-profile__info">
+        @if (!string.IsNullOrEmpty(Model.EmailAddress))
+        {
+            <li class="member-profile__info-item"><span class="member-profile__info-title">Email:</span> @Model.EmailAddress</li>
+        }
+        @if (!string.IsNullOrEmpty(Model.PhoneNumber))
+        {
+            <li class="member-profile__info-item"><span class="member-profile__info-title">Phone:</span> @Model.DisplayPhoneNumber</li>
+        }
+        @if (!string.IsNullOrEmpty(Model.DisplayAddress))
+        {
+            <li class="member-profile__info-item"><span class="member-profile__info-title">Address:</span> @Model.DisplayAddress</li>
+        }
+    </ul>
+    @if (!string.IsNullOrEmpty(Model.LinkedInProfileUrl) || !string.IsNullOrEmpty(Model.FacebookProfileUrl) || !string.IsNullOrEmpty(Model.TwitterProfileUrl))
+    {
+        <div class="member-profile__social">
+            @if (!string.IsNullOrEmpty(Model.FirstName))
+            {
+                <span>Also find @Model.FirstName on:</span>
+            }
+            <ul class="member-profile__social-links">
+                @if (!string.IsNullOrEmpty(Model.LinkedInProfileUrl))
+                {
+                    <li>
+                        <a href="@Model.LinkedInProfileUrl" aria-label="linkedin">
+                            @Html.RenderSvg("linkedin", "connect__social-icon")
+                        </a>
+                    </li>
+                }
+                @if (!string.IsNullOrEmpty(Model.FacebookProfileUrl))
+                {
+                    <li>
+                        <a href="@Model.FacebookProfileUrl" aria-label="facebook">
+                            @Html.RenderSvg("facebook", "connect__social-icon")
+                        </a>
+                    </li>
+                }
+                @if (!string.IsNullOrEmpty(Model.TwitterProfileUrl))
+                {
+                    <li>
+                        <a href="@Model.TwitterProfileUrl" aria-label="twitter">
+                            @Html.RenderSvg("twitter", "connect__social-icon")
+                        </a>
+                    </li>
+                }
+            </ul>
+        </div>
+    }
+</div>

@@ -1,0 +1,17 @@
+﻿---
+ID: "2049504e-3527-4489-820f-74af8f8b4594"
+Parent: "7837680c-e0cc-4627-8e60-c2054318f193"
+Template: "a3960764-19cc-4eb6-9b99-ff7b8e062dc2"
+Path: /sitecore/templates/Branches/Project/Graybox/Sites/New Site/$name/Configuration/Enumerations/Colors/White
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "197fd7ed-d7de-4445-a87d-3a6b9e845000"
+      Hint: Value
+      Value: #fff
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170403T124641Z

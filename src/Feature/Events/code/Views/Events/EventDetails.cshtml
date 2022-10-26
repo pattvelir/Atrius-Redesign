@@ -1,0 +1,65 @@
+﻿@using Thread.Feature.Events.Reference
+@using Thread.Foundation.Dictionary.Statics
+@using Thread.Foundation.Mvc.Extensions
+@model Thread.Feature.Events.Models.EventDetailsModel
+
+<aside class="event-card">
+  @if (Model.EventDates != null)
+  {
+    <h3 class="event-card__heading"> @Html.Raw(EditableTranslate.Text("Events.EventDetails.DetailsHeading"))</h3>
+    using (Html.EditFrame(Model.EventDates, Constants.EditFrames.Dates, "Edit Event Dates"))
+    {
+      <h4 class="event-card__date">
+        <span>@Model.FormattedDate</span>
+        <span>@Model.FormattedTime</span>
+      </h4>
+    }
+  }
+
+  @if (Model.EventDetails != null)
+  {
+    if (Sitecore.Context.PageMode.IsExperienceEditorEditing || Model.HasAddressFields())
+    {
+      using (Html.EditFrame(Model.EventDetails, Constants.EditFrames.Location, "Edit Event Location"))
+      {
+        <address class="event-card__location">
+          <span>@Model.EventDetails.Address1.Value</span>
+          @if (Sitecore.Context.PageMode.IsExperienceEditorEditing || !string.IsNullOrEmpty(Model.EventDetails.Address2.Value))
+          {
+            <span>@Model.EventDetails.Address2.Value</span>
+          }
+          <span class="event-card__city-state-zip">
+            @if (!string.IsNullOrWhiteSpace(Model.EventDetails.City.Value) && Model.EventDetails.State != null && !string.IsNullOrWhiteSpace(Model.EventDetails.State.Value))
+            {
+              @(Model.EventDetails.City.Value + ", ")
+            }
+            else
+            {
+              @Model.EventDetails.City.Value
+            }
+
+            @if (Model.EventDetails.State.TargetItem != null)
+            {
+              Thread.Foundation.Enumerations.StateItem state = Model.EventDetails.State.TargetItem;
+              @state.Value.Value
+            }
+            else if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+            {
+              @Html.Raw("No State Selected")
+            }
+            @Model.EventDetails.ZipCode.Value
+          </span>
+        </address>
+      }
+    }
+
+    if (Html.Sitecore().HasValueOrEditing(Model.EventDetails.ShortDescription))
+    {
+      <p class="event-card__information">@Html.Sitecore().Field(Model.EventDetails.ShortDescription)</p>
+    }
+    if (Html.Sitecore().HasValueOrEditing(Model.EventDetails.RegistrationLink))
+    {
+      @Html.Sitecore().Field(Model.EventDetails.RegistrationLink, new { @class = "btn btn--primary" })
+    }
+  }
+</aside>

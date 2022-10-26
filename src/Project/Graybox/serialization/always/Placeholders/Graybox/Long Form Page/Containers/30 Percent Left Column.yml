@@ -1,0 +1,26 @@
+﻿---
+ID: "26030ef5-f63e-41ce-8e3f-063570a505c6"
+Parent: "737fd90e-4cc8-4244-9c1d-35b25b92014b"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/Project/Graybox/Long Form Page/Containers/30 Percent Left Column
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: 
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: |
+    {0EECCBC4-D56E-42BD-9227-3CC7C8DDE253}
+    {A2180523-F93E-432A-AF08-6009FA07122C}
+    {18B407EA-1385-4BAD-AF8A-422D85B0CEF2}
+    {1999A7EF-9D6D-4DC8-97AF-A9408543702D}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161004T131555Z

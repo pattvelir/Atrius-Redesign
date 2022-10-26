@@ -1,0 +1,61 @@
+@import "../../../scss/variables/_mixins.scss";
+@import "../../../scss/variables/_colors.scss";
+
+// content-list.scss
+// Define content list styles here
+
+// base
+
+.content-list {
+  // @include component-whitespace();
+}
+
+.content-list__heading {
+  margin-bottom: 30px;
+}
+
+.content-list__overflow {
+  .content-list__list {
+    visibility: hidden;
+  }
+
+  &.is-open .content-list__list {
+    visibility: visible;
+  }
+}
+
+// list
+
+.content-list__list {
+  @include zero-list;
+}
+
+// items
+
+.content-list__item {
+  overflow: hidden;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.content-list__more {
+  text-align: center;
+
+  .content-list__overflow.is-open & {
+    display: none;
+  }
+}
+
+.content-list--taxonomy-list {
+  li {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid $grey-400;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}

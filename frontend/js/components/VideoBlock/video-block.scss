@@ -1,0 +1,65 @@
+@import "../../../scss/variables/_mixins.scss";
+
+// video-block.scss
+// define video styles here
+
+// base
+
+.video-block {
+  // @include component-whitespace();
+}
+
+// title
+
+.video-block__title {
+}
+
+// media
+
+.video-block__media {
+}
+
+// media wrapper
+// Intrinsic Ratios - http://alistapart.com/article/creating-intrinsic-ratios-for-video
+
+.video-block__media-wrapper {
+  position: relative;
+  height: 0;
+  max-width: 100%;
+  overflow: hidden;
+  padding-bottom: 56.25%; // 16x9 Aspect Ratio
+
+  // video, iframe, object and embed
+
+  video,
+  iframe,
+  object,
+  embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+// media placeholder
+// we position this appropriately but hide it be default.
+// only sitecore authors should see this display.
+
+.video-block__media-placeholder {
+  display: none;
+  width: 100%;
+}
+
+// figcaption
+
+.video-block__caption {
+  max-width: 700px;
+  padding-top: 10px;
+  padding-bottom: 35px;
+
+  font-size: 14px;
+  line-height: 1.45;
+}

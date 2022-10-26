@@ -1,0 +1,17 @@
+﻿@{
+  @* This "hidden" switch is to avoid distorting markup for the search component. *@
+  bool eeOnly = @Html.Sitecore().CurrentRendering.Parameters["EE_Only"] == "1";
+  bool show = !eeOnly || Sitecore.Context.PageMode.IsExperienceEditor;
+}
+
+@if (show)
+{
+  <section class="container container--30-70">
+    <div class="container__col container__col--30 container__col--left">
+      @Html.Sitecore().DynamicPlaceholder("secondary-column-left")
+    </div>
+    <div class="container__col container__col--70 container__col--right">
+      @Html.Sitecore().DynamicPlaceholder("primary-column-right")
+    </div>
+  </section>
+}

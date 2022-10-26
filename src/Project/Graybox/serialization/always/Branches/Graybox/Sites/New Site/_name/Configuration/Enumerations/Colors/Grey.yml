@@ -1,0 +1,21 @@
+﻿---
+ID: "6f6efa5a-4cf9-4977-9dba-14d0d9503611"
+Parent: "7837680c-e0cc-4627-8e60-c2054318f193"
+Template: "a3960764-19cc-4eb6-9b99-ff7b8e062dc2"
+Path: /sitecore/templates/Branches/Project/Graybox/Sites/New Site/$name/Configuration/Enumerations/Colors/Grey
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "197fd7ed-d7de-4445-a87d-3a6b9e845000"
+      Hint: Value
+      Value: gray
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170403T124645Z

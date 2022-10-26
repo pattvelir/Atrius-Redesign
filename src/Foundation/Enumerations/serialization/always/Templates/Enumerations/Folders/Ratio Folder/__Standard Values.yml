@@ -1,0 +1,27 @@
+﻿---
+ID: "7fc972fb-23f2-4171-bdd5-cafca7362691"
+Parent: "09f8503a-5ccf-4e2c-9a5c-d9cf0d73fd69"
+Template: "09f8503a-5ccf-4e2c-9a5c-d9cf0d73fd69"
+Path: /sitecore/templates/Foundation/Enumerations/Folders/Ratio Folder/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{415FDCDD-992D-4F3F-9752-E33FA61CA5DB}"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161109T161642Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

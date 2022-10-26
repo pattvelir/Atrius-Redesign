@@ -1,0 +1,34 @@
+﻿---
+ID: "74077955-921d-4a82-b64c-289722a63f9d"
+Parent: "71c4b999-a961-4a1f-a990-213011f35cfd"
+Template: "b05db91d-0099-4f6b-9fa3-8c3f614dbbf1"
+Path: /sitecore/Forms/Login/Page/Conditional Section
+DB: master
+SharedFields:
+- ID: "589a7ade-81d4-4a60-b9e2-7eaf6ae8a563"
+  Hint: Field Type
+  Value: "{E9559156-1C10-4E17-9D02-E6E00F9C1315}"
+- ID: "71c6de8e-4718-4977-b83e-b49552ee14b0"
+  Hint: Conditions
+  Value: |
+    {"fieldConditions":[]}
+- ID: "84ece662-5034-40cb-9c60-744db64bb294"
+  Hint: Field Key
+  Value: 8AF5A9407C3449D7BDF8B2502D01B9C2
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191003T135606Z
+    - ID: "a6fb5466-41ca-4272-b11e-6925ba4342b7"
+      Hint: Query String Value
+      Value: resetPassword
+    - ID: "b13eb6a8-64fe-4ca6-b87b-38fa8df9777c"
+      Hint: Query String Key
+      Value: referrer

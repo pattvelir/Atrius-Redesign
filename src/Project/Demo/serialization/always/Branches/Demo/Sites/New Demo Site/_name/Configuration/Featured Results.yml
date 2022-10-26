@@ -1,0 +1,14 @@
+﻿---
+ID: "87b8b8be-0260-46d2-bee9-869569653cb0"
+Parent: "433d4a3c-a6df-4514-b3b9-8d943b65538a"
+Template: "d791a14e-0f21-4461-a457-1eda601795b5"
+Path: /sitecore/templates/Branches/Project/Demo/Sites/New Demo Site/$name/Configuration/Featured Results
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200908T212845Z

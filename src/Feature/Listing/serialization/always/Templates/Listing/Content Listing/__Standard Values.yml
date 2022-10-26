@@ -1,0 +1,33 @@
+﻿---
+ID: "f7ede6ca-ba08-4cf7-a138-050d87ba8731"
+Parent: "4943da38-e705-4ee8-a4bc-973e31304f3a"
+Template: "4943da38-e705-4ee8-a4bc-973e31304f3a"
+Path: /sitecore/templates/Feature/Listing/Content Listing/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{F71B9EDB-B484-405C-A84F-E8FD17DB6CA9}"
+- ID: "6fd695e7-7f6d-4ca5-8b49-a829e5950ae9"
+  Hint: __Subitems Sorting
+  Value: 
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "015ca08f-41fa-4c84-9f9d-294abf42d238"
+      Hint: Title
+      Value: Content Listing Title
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161109T202448Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

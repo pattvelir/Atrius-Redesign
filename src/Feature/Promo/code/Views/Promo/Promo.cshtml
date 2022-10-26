@@ -1,0 +1,55 @@
+﻿@using Thread.Foundation.Mvc.Extensions
+@using Thread.Foundation.ResponsiveImages.Extensions
+@using Thread.Foundation.ResponsiveImages.Extensions.Markers
+@using TaxonomyConstants = Thread.Foundation.Taxonomy.Reference.Constants
+
+@model Thread.Feature.Promo.Models.PromoModel
+
+@if (Model != null && Model.Datasource != null)
+{
+	string url = "";
+	if (Model.Datasource.Link != null)
+	{
+		url = Model.Datasource.Link.GetFriendlyUrl();
+	}
+	<section class="promo @(Model.OrientationClass)">
+		@if (Html.Sitecore().HasValueOrEditing(Model.Datasource.Image))
+		{
+		  <figure class="promo__media">
+        <div class="promo__picture js-make-clickable" data-location="@url">
+				@Html.Sitecore().Field(Model.Datasource.Image,new SrcSetList(),new {@class="promo_img", sizes= "(min-width: 910px) 50vw, 100vw", loadig="lazy"})
+				</div>
+        <figcaption class="u-visuallyhidden">@Html.Sitecore().Field(Model.Datasource.Description)</figcaption>
+      </figure>
+		}
+		<div class="promo__content">
+			@if (Html.Sitecore().HasValueOrEditing(Model.Datasource.ContentType))
+			{
+				using (Html.EditFrame(Model.Datasource, TaxonomyConstants.EditFrames.EditContentType, "Edit Content Type"))
+				{
+					<p class="promo__eyebrow txt-h5">@Html.Raw(Model.Datasource.ContentType.TargetItem != null ? Model.Datasource.ContentType.TargetItem.DisplayName : "No Content Type Selected")</p>
+				}
+			}
+			<div class="promo__title subheader1 js-make-clickable"
+				 id="promo-@Model.Datasource.ID"
+				 data-location="@url">
+				@Html.Sitecore().Field(Model.Datasource.Title)
+			</div>
+
+			@if (Html.Sitecore().HasValueOrEditing(Model.Datasource.Subtitle))
+			{
+				<span class="promo__subtitle">@Html.Sitecore().Field(Model.Datasource.Subtitle)</span>
+			}
+			@if (Html.Sitecore().HasValueOrEditing(Model.Datasource.Description))
+			{
+				<p class="promo__description">
+					@Html.Sitecore().Field(Model.Datasource.Description)
+				</p>
+			}
+			@if (Html.Sitecore().HasValueOrEditing(Model.Datasource.Link))
+			{
+				@Html.Sitecore().Field(Model.Datasource.Link, new { @class = "promo__cta", aria_labelledby = "promo-" + Model.Datasource.ID })
+			}
+		</div>
+	</section>
+}

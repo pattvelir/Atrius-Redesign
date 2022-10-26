@@ -1,0 +1,88 @@
+@import "../../../scss/variables/_colors.scss";
+@import "../../../scss/variables/_variables.scss";
+@import "../../../scss/variables/_breakpoints.scss";
+
+.privacy-banner {
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  z-index: $z-modal - 1;
+  width: 100%;
+  overflow: visible;
+  visibility: visible;
+  padding: 30px;
+  background: $grey-300;
+  transform: translateY(0%);
+  transition: transform 400ms ease-in-out;
+
+  &.is-hidden {
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(100%);
+    transition: transform 400ms ease-in-out, visibility 400ms ease-in-out 400ms;
+  }
+}
+
+.privacy-modal__content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: $max-width;
+  margin: 0 auto;
+
+  @media (max-width: $bp-large-max) {
+    display: block;
+  }
+
+  .btn {
+    flex-basis: 15%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 0 30px;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    @media (max-width: $bp-large-max) {
+      margin: 0px;
+    }
+  }
+}
+
+.privacy-modal__rte {
+  flex-basis: 70%;
+  flex-grow: 1;
+  flex-shrink: 1;
+
+  a:focus {
+    color: rgba(97, 97, 97, 0.7);
+  }
+
+  @media (max-width: $bp-large-max) {
+    padding-right: 60px;
+  }
+}
+
+.privacy-banner__close {
+  max-width: 40px;
+
+  @media (max-width: $bp-large-max) {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &::before,
+  &::after {
+    background-color: currentColor;
+  }
+}
+
+.privacy-banner__accept.btn {
+  @media (max-width: $bp-large-max) {
+    width: 100%;
+    margin-top: 16px;
+  }
+}

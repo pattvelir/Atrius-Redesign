@@ -1,0 +1,29 @@
+﻿---
+ID: "788f63ec-189a-4c97-8b1a-a88580b6895b"
+Parent: "cdce947d-d086-4163-bf35-2761663976d7"
+Template: "cdce947d-d086-4163-bf35-2761663976d7"
+Path: /sitecore/templates/Feature/Listing/Dynamic Content Listing Rendering Parameters/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "23241de5-760d-420f-83cc-3a0f1ef26369"
+      Hint: Display Images
+      Value: "{DABA4BE2-4F5E-48B9-833C-29672F5E1BA9}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180611T200632Z
+    - ID: "290723e9-f36a-4ec9-ad0d-765bed940aaa"
+      Hint: Display Content Type Labels
+      Type: Checkbox
+      Value: 1
+    - ID: "e1ef98ef-04a4-4db2-8093-6e07bbd64b64"
+      Hint: Display Summaries
+      Type: Checkbox
+      Value: 1
+    - ID: "f0a1fde7-2914-4d08-9cb0-11b49b7577f6"
+      Hint: Display Dates
+      Type: Checkbox
+      Value: 1

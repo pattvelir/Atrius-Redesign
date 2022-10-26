@@ -1,0 +1,18 @@
+﻿---
+ID: "4ddbc6ca-43a9-41b8-badc-38e26ef4c538"
+Parent: "3e646200-7c4c-4fdf-8e05-32762c7350bd"
+Template: "9112014d-54d5-4c5e-b696-92ac51ebb15a"
+Path: /sitecore/templates/Branches/Project/Graybox/Sites/New Site with Login/$name/Configuration/Navigation/Footer Navigation/Footer Navigation Link Columns
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190913T202529Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

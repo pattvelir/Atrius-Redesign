@@ -1,0 +1,168 @@
+@import "../../../scss/variables/_colors.scss";
+@import "../../../scss/variables/_breakpoints.scss";
+@import "../../../scss/variables/_mixins.scss";
+@import "../../../scss/variables/_variables.scss";
+
+$page-banner__caption-offset: 30px;
+
+.page-banner {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  min-height: 200px;
+
+  color: $white;
+
+  &.has-height {
+    height: 90vh;
+    min-height: 0;
+    overflow: hidden;
+
+    .background-video {
+      height: 100%;
+    }
+
+    &::before {
+      height: 100%;
+      padding: 0;
+    }
+  }
+
+  .background-video {
+    position: unset;
+  }
+
+  .background-video__button {
+    z-index: 4;
+  }
+
+  &::before {
+    display: inline-block;
+    height: 450px;
+
+    width: 1px;
+    margin-left: -1px;
+
+    vertical-align: bottom;
+    content: "";
+
+    @media (max-width: $bp-large-max) {
+      height: 0;
+      padding-top: 56.25%;
+    }
+  }
+}
+
+.page-banner__figure {
+  float: right;
+  margin: 0;
+
+  img,
+  video {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    height: 100%;
+    width: 100%;
+    inset: 0;
+    object-fit: cover;
+  }
+}
+
+.page-banner__content {
+  position: relative;
+  z-index: 3;
+  display: inline-block;
+  width: 100%;
+  padding: $page-banner__caption-offset * 2 0 $page-banner__caption-offset;
+
+  vertical-align: bottom;
+}
+
+.page-banner__overlay {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    -180deg,
+    rgba(0, 0, 0, 0) 3%,
+    rgba(0, 0, 0, 0.13) 20%,
+    #000 100%
+  );
+  inset: 0;
+}
+
+.page-banner__content-inner {
+  position: relative;
+  z-index: 2;
+  max-width: $max-width;
+  margin: 0 auto;
+
+  @media (max-width: $bp-x-large-max) {
+    padding-left: $page-banner__caption-offset;
+  }
+
+  .container--100 & {
+    padding-left: $page-banner__caption-offset;
+  }
+}
+
+.page-banner__eyebrow {
+  margin-bottom: 0;
+
+  font-family: $montserrat;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 2.625rem;
+  text-transform: uppercase;
+}
+
+.page-banner__title {
+}
+
+.page-banner__subtitle {
+  display: inline-block;
+
+  font-family: $montserrat;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.625rem;
+
+  @media (max-width: $bp-large-max) {
+    font-size: 1rem;
+  }
+}
+
+.page-banner__action {
+  display: inline-block;
+  padding: 10px 20px;
+
+  color: $white;
+  text-decoration: none;
+  background-color: darken($white, 10);
+  transition: background-color 0.28s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.28s cubic-bezier(0.4, 0, 0.2, 1); // Fast Out, Slow In
+
+  &:hover {
+    color: $white;
+    background-color: darken($white, 45);
+  }
+}
+
+// Page Banner Themes
+.page-banner--theme1 {
+  color: $white;
+}
+
+.page-banner--theme2 {
+  color: $grey-700;
+}
+
+.page-banner--theme3 {
+  color: $grey-600;
+}
+
+.page-banner--theme4 {
+  color: $grey-500;
+}

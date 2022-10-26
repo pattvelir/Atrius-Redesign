@@ -1,0 +1,37 @@
+﻿---
+ID: "55fb5dc5-53e2-4cde-bea3-a0ec1667210e"
+Parent: "52d2d679-2816-4a79-afe8-ebd5f5e9a1e3"
+Template: "52d2d679-2816-4a79-afe8-ebd5f5e9a1e3"
+Path: /sitecore/templates/Feature/Banners/Banner Parameters/__Standard Values
+DB: master
+SharedFields:
+- ID: "0793dcff-0ee7-48ad-b9d4-ef1dd24eb59b"
+  Hint: Data Source
+  Value: "{BB2E120F-4DFD-48E0-9361-8B26016C9FF7}"
+- ID: "3094d236-5985-4c4f-ae6a-e30740885532"
+  Hint: Caching
+  Value: 0|0|0|0|0|0|0|0
+- ID: "485e33d4-79f1-428f-8258-2cb29bb7cc6b"
+  Hint: Additional Parameters
+  Value: 
+- ID: "e42027f4-766d-45a7-8cf4-29e5c94326f7"
+  Hint: Placeholder
+  Value: "/content-body/full-width-column_d5f7149a-5382-4eaf-8802-97ee2af67ea1"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160311T194942Z
+    - ID: "e0c93ebb-51c4-4e1f-b42f-2e1ff4c80a8b"
+      Hint: Banner Height
+      Value: 
+    - ID: "f8852b05-c2c5-4fa0-a102-2f2490102f11"
+      Hint: Opacity
+      Value: 1

@@ -1,0 +1,22 @@
+﻿---
+ID: "530f4c2f-1482-4a9a-b451-530e06fdd8f2"
+Parent: "19a1fd4b-0791-440e-97b1-05fa6efa8702"
+Template: "35e75c72-4985-4e09-88c3-0eac6cd1e64f"
+Path: /sitecore/templates/Branches/Feature/Multimedia/Multiple Image Container
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "http://thread.htian.velir.com/temp/iconcache/multimedia/32x32/open_sound.png"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161205T153117Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

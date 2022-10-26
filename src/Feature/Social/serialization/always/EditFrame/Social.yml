@@ -1,0 +1,14 @@
+﻿---
+ID: "09d63321-f2bf-4074-929c-1e126c765afd"
+Parent: "e77eee1c-4f50-4a68-918c-47e9a8fc0957"
+Template: "b0666cfe-8c7b-4cc1-8e32-8253742ebfa9"
+Path: /sitecore/content/Applications/WebEdit/Edit Frame Buttons/Social
+DB: core
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190410T143713Z

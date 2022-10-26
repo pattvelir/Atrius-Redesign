@@ -1,0 +1,18 @@
+﻿---
+ID: "69d0a97e-7caa-42f8-a2de-c51fe279d456"
+Parent: "15c8aa1f-f780-45f7-a419-c35b0eeae3a0"
+Template: "e35eaa2d-edea-431c-a9e6-488272b53782"
+Path: /sitecore/client/Applications/FormsBuilder/Components/Layouts/Actions/SecureAccountLink/PageSettings
+DB: core
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190503T190440Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

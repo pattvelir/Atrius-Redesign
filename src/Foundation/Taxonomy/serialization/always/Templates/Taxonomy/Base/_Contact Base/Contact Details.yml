@@ -1,0 +1,18 @@
+﻿---
+ID: "0b96c36a-c615-4a1d-8e16-95695867f345"
+Parent: "95cb8785-255d-4c7e-be48-b040264938f2"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Foundation/Taxonomy/Base/_Contact Base/Contact Details
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161025T153143Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

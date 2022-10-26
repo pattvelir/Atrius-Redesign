@@ -1,0 +1,27 @@
+﻿---
+ID: "e85d4fd7-3833-4d8a-9b7b-5bcbe1356b65"
+Parent: "989d8ec4-7f29-4c6e-9e8d-1690f9d0088d"
+Template: "60ac7f1a-2dda-4022-8f6c-a75fd3732303"
+Path: /sitecore/templates/Branches/Project/Demo/Sites/New Demo Site/$name/Home/Error/404/Components/Banners/Page Banner
+DB: master
+BranchID: "f25c0d49-e33e-4871-828f-107c8d052ed9"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{CB0C283B-E828-4A69-9B86-6215912AEC9C}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190925T191545Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8f6bb17a-0d9a-4fb5-b9de-1133ca7cfcd0"
+      Hint: Image
+      Value: |
+        <image mediaid="{7C49C299-6A5C-4165-980A-9A33173D71AC}" />

@@ -1,0 +1,8 @@
+@import "../../../scss/variables/_colors.scss";
+
+.account-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 24px;
+  background-color: $grey-200;
+}

@@ -1,0 +1,26 @@
+﻿---
+ID: "1fc5ae0c-dcd8-4040-ac5a-d164ea4ba7e7"
+Parent: "001292eb-2165-4874-bf4b-b09ecb34dfd1"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/Project/Common/Rich Text/Rich Text
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: "rich-text"
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: |
+    {A1DF36A4-2A83-4F6E-92B7-8CC4AADF3CF1}
+    {B91A369C-77B1-4B6D-96D8-9E878808C1BF}
+    {0B281A30-77DE-4C3E-A951-8D040D8B52F0}
+    {2321AED5-316F-4149-AE49-56A8D6813482}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160303T193002Z

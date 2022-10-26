@@ -1,0 +1,51 @@
+@using Thread.Foundation.Theme.Extensions
+@using Thread.Foundation.Mvc.Extensions
+@using Thread.Foundation.PageEditor.Reference
+@model IEnumerable<Thread.Feature.Navigation.Models.LanguageModel>
+
+@{
+	var languages = Model.ToArray();
+}
+@if (languages.Any())
+{
+  <div class="language-selector js-language-selector">
+    <nav
+      class="language-selector__nav js-lang-select-nav"
+      aria-label="Site Language Selector">
+      <button type="button" class="language-selector__toggle js-lang-select-toggle">
+        <span class="language-selector__title">@Sitecore.Globalization.Translate.Text("Languages")</span>
+        <span class="icon">
+          @Html.RenderSvg("chevron-down")
+        </span>
+      </button>
+      <ul class="language-selector__menu js-lang-select-menu" role="menu">
+        @foreach (var language in languages)
+        {
+          if (language.IsCurrentLanguage)
+          {
+          <li class="language-selector__item language-selector__item--active" role="none">
+            <div class="language-selector__item-wrapper" role="menuitem">
+              <span lang="@language.IsoCode">@language.NativeName</span>
+              <span class="language-selector__icon icon">
+                @Html.RenderSvg("check-mark")
+              </span>
+            </div>
+          </li>
+          }
+          else
+          {
+          <li class="language-selector__item" role="none">
+            <a href="@language.Url" lang="@language.IsoCode" class="js-lang-select-menu-link" role="menuitem">@language.NativeName</a>
+          </li>
+          }
+        }
+      </ul>
+    </nav>
+  </div>
+}
+else if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+{
+	<nav class="language-selector__nav">
+		<p>Language Selector Component</p>
+	</nav>
+}

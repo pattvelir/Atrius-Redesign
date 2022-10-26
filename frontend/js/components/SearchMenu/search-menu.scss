@@ -1,0 +1,87 @@
+@import "../../../scss/variables/_colors.scss";
+@import "../../../scss/variables/_variables.scss";
+@import "../../../scss/variables/_breakpoints.scss";
+
+.search-menu {
+}
+
+.search-menu__button {
+  padding: 0;
+  padding-top: 4px;
+
+  color: $base-body-color;
+  background: none;
+  border: 0;
+
+  .icon {
+    height: 32px;
+    width: 32px;
+  }
+}
+
+.search-menu__open,
+.search-menu__close {
+  display: block;
+}
+
+.search-menu__open {
+  .search-menu__button[aria-expanded="true"] & {
+    display: none;
+  }
+}
+
+.search-menu__close {
+  display: none;
+
+  .search-menu__button[aria-expanded="true"] & {
+    display: block;
+  }
+}
+
+.search-menu__container {
+  overflow: hidden;
+
+  .search-menu:not(.is-open) {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.search-menu__drop-down {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: $z-dropdown;
+  max-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  overflow-y: auto;
+  transition: opacity 1s ease 500ms, visibility 1s ease 500ms;
+
+  .search-menu.is-open & {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 250ms, visibility 250ms;
+  }
+}
+
+.search-menu__inner-container {
+  position: relative;
+  padding: 16px $gutter;
+  background-color: #fff;
+  transform: translateY(-100%);
+  transition: transform 500ms;
+
+  .search-menu.is-open & {
+    transform: translateY(0);
+    transition: transform 750ms;
+  }
+
+  .search-box {
+    width: 100%;
+    max-width: 570px;
+    margin: 0 auto;
+  }
+}

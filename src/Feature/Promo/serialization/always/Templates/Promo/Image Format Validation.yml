@@ -1,0 +1,42 @@
+﻿---
+ID: "f53404dd-ba95-4df3-b118-10cac6d040e5"
+Parent: "b83df6c7-80a1-45f8-80a3-73230a10ab12"
+Template: "8f8e2549-c77f-4860-b83b-54fa31e2befa"
+Path: /sitecore/templates/Feature/Promo/Image Format Validation
+DB: master
+SharedFields:
+- ID: "43a829d1-43da-465c-b772-ebaa0d515e3e"
+  Hint: Type
+  Value: Thread.Feature.Promo.Validation.ImageFormatValidation
+- ID: "8f9d8603-2e34-4c5f-b0bb-f0d91eb956ca"
+  Hint: Parameters
+  Value: 
+- ID: "b3607d43-e523-494e-9aff-102678d11670"
+  Hint: Use Thread
+  Type: Checkbox
+  Value: 0
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+Languages:
+- Language: en
+  Fields:
+  - ID: "5dcf6ff3-41c5-466c-ad5e-991cfcd55716"
+    Hint: Text
+    Value: Image Format Is required
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20061123T114059Z
+    - ID: "58014183-26fe-4568-b19f-c26745824c32"
+      Hint: Description
+      Value: Field must have a value. 
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "da43c533-cbae-43d0-9019-65b1e346f984"
+      Hint: Title
+      Value: Image Format Is required

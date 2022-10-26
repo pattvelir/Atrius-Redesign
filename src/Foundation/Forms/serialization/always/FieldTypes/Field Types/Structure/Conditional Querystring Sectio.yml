@@ -1,0 +1,103 @@
+﻿---
+ID: "e9559156-1c10-4e17-9d02-e6e00f9c1315"
+Parent: "77d13f14-e78f-4476-8a2e-2b011fe0fb97"
+Template: "a60edcaf-1285-46b5-8380-d790bb8c8708"
+Path: /sitecore/system/Settings/Forms/Field Types/Structure/Conditional Querystring Section
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/document_header.png
+- ID: "12594037-53e5-44c0-ad63-deb52dead374"
+  Hint: View Path
+  Value: CustomFieldTemplates/ConditionalQuerystringSection
+- ID: "16882a65-d10b-4e9e-9d6a-b13480a34f2d"
+  Hint: Model Type
+  Value: Thread.Foundation.Forms.Models.ConditionalQuerystringFieldViewModel,Thread.Foundation.Forms
+- ID: "73f3c325-9b2a-4854-b698-038e06887fcd"
+  Hint: Property Editor
+  Value: "{99A5658C-8362-4F02-AF04-066301A30062}"
+- ID: "8e45815d-adcd-4dd9-9e20-fefdb01aad8a"
+  Hint: BackgroundColor
+  Value: Eggplant
+- ID: "8f40d151-4155-4564-b343-fa445410e3e0"
+  Hint: Icon
+  Value: OfficeWhite/32x32/document_text.png
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+- ID: "f2322bb9-bf52-45a6-a969-ac3735cc7cbf"
+  Hint: Field Template
+  Value: "{B05DB91D-0099-4F6B-9FA3-8C3F614DBBF1}"
+Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Tekst
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181101T100451Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Text
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181101T100735Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160609T084809Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: テキスト
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181101T101023Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "zh-CN"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 文本
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181101T101308Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

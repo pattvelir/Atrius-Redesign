@@ -1,0 +1,31 @@
+﻿---
+ID: "272dd17a-fb9e-4297-a3b5-44a2665db4d6"
+Parent: "ad1c366a-7190-4c82-9bf9-4b4250fc4a43"
+Template: "cb01f9fc-c187-46b3-ab0b-97a8468d8303"
+Path: /sitecore/system/Workflows/Sitecore Workflow/Scheduled/Reschedule Publishing
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: applications/32x32/checks.png
+- ID: "dcbebc58-6124-4100-a248-fc717d6c78d5"
+  Hint: Next state
+  Value: "{AD1C366A-7190-4C82-9BF9-4B4250FC4A43}"
+- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
+  Hint: __Security
+  Value: |
+    ar|sitecore\Sitecore Publisher Workflow|pe|+workflowCommand:execute|+item:read|pd|+workflowCommand:execute|+item:read|
+- ID: "f1090046-2f13-4f19-bb41-c75df4f89516"
+  Hint: Comment Template
+  Value: "{2660C339-7E02-49C6-B9B7-E6B6E091E40F}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200428T121911Z
+    - ID: "9d3d61ef-6f65-4f71-abd4-9172549b15c2"
+      Hint: Comment Dialog Height
+      Value: 450

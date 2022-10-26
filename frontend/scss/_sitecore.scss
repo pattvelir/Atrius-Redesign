@@ -1,0 +1,119 @@
+/* Sitecore styles are intended for customizations that need to be made for the sake of
+    Sitecore preview or the Experience Editor. It should not contain styles for
+    the user-facing site
+ */
+
+@import "variables/quantity-queries";
+@import "variables/breakpoints";
+@import "variables/variables";
+
+.is-page-editor {
+  img,
+  object,
+  video {
+    display: inline !important;
+  }
+
+  .sc-breadcrumb *,
+  .sc-breadcrumb *::after,
+  .sc-breadcrumb *::before,
+  .scChromeToolbar *,
+  .scChromeToolbar *::after,
+  .scChromeToolbar *::before {
+    box-sizing: initial !important;
+  }
+
+  .scLooseFrameZone {
+    display: inline-block;
+  }
+
+  .scEmptyPlaceholder {
+    min-width: 100px;
+  }
+
+  placeholder {
+    display: block;
+  }
+
+  .multi-image__image,
+  .multi-promo__promo {
+    max-width: none !important;
+    width: calc(100% - #{$multi-image__grid-space}) !important;
+
+    .scLooseFrameZone {
+      width: 50%;
+    }
+  }
+
+  .multi-promo__items .scLooseFrameZone {
+    @media (min-width: $bp-x-small-min) {
+      width: 50%;
+    }
+  }
+
+  $multi-image__bp-stack: 600px;
+  .multi-image__items .scLooseFrameZone {
+    @media (min-width: $bp-x-small-min) {
+      width: 100%;
+    }
+
+    @media (min-width: $multi-image__bp-stack) {
+      width: 50%;
+    }
+  }
+
+  .promo__content {
+    .scLooseFrameZone {
+      overflow-x: hidden;
+    }
+  }
+
+  .rich-text {
+    &--indented span[scfieldtype="rich text"] {
+      display: block;
+    }
+
+    &--indented span[scfieldtype="rich text"] > *:not(.rich-text__embed) {
+      max-width: var(--max-width, 650px);
+
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  // remove privacy banner display in editor
+  .privacy-banner {
+    display: none;
+  }
+
+  .slideshow {
+    .image-block {
+      display: block;
+      opacity: 1;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .event-card {
+    .scLooseFrameZone {
+      display: block;
+    }
+  }
+  // video component media placeholder
+  // only sitecore authors should see this display.
+
+  .video-block__media-placeholder {
+    display: block !important;
+  }
+
+  // inserted f into content list items messes
+  // up width, so we need to be explicit
+
+  .content-list__item {
+    & > .scLooseFrameZone {
+      width: 100%;
+    }
+  }
+}
+// everything should be wrapped in the `is-page-editor` class
+// DO NOT write code below this line

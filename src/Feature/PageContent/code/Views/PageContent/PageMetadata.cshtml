@@ -1,0 +1,40 @@
+﻿@using Thread.Foundation.Mvc.Extensions
+@using Thread.Foundation.SitecoreExtensions.Base
+@using Thread.Foundation.SitecoreExtensions.Item
+@using Thread.Foundation.Taxonomy
+@using TaxonomyConstants = Thread.Foundation.Taxonomy.Reference.Constants
+@model Thread.Feature.PageContent.Models.PageMetadataModel
+
+<p class="page-meta container eyebrow">
+    @if (Model.DateItem != null && Html.Sitecore().HasValueOrEditing(Model.DateItem.DisplayDate))
+    {
+        using (Html.EditFrame(Model.DateItem, "/sitecore/content/Applications/WebEdit/Edit Frame Buttons/Page Content/Date", "Edit Display Date"))
+        {
+            <time class="page-meta__date" datetime="@Model.DateItem.DisplayDate.DateTime.ToString("yyyy-MM-dd")">@Model.DateItem.DisplayDate.DateTime.ToThreadFormat()</time>
+        }
+    }
+
+    @if (Model.PeopleItem != null && Sitecore.Context.PageMode.IsExperienceEditorEditing)
+    {
+        using (Html.EditFrame(Model.PeopleItem, TaxonomyConstants.EditFrames.EditAuthors, "Edit Authors"))
+        {
+            <span class="page-meta__byline">
+                @if (Model.PeopleItem.People.Count == 0)
+                {
+                    @Html.Raw("No Authors Selected")
+                }
+                else
+                {
+                    @Html.Raw("by " + string.Join(", ", Model.PeopleItem.People.GetItems().OfType(PersonItem.TemplateId).Select(p => (PersonItem)p).Select(a => "<strong>" + a.FirstName.Value + " " + a.LastName.Value + "</strong>")))
+                }
+            </span>
+        }
+    }
+    else
+    if (Model.PeopleItem != null && Model.PeopleItem.People.Count > 0)
+    {
+        <span class="page-meta__byline">
+            @Html.Raw("by " + string.Join(", ", Model.PeopleItem.People.GetItems().OfType(PersonItem.TemplateId).Select(p => (PersonItem)p).Select(a => "<strong>" + a.FirstName.Value + " " + a.LastName.Value + "</strong>")))
+        </span>
+    }
+</p>

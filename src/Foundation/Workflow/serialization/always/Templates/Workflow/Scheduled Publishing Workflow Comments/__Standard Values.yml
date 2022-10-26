@@ -1,0 +1,22 @@
+﻿---
+ID: "a9446c99-c8c9-4086-afba-89cc6539e3bf"
+Parent: "2660c339-7e02-49c6-b9b7-e6b6e091e40f"
+Template: "2660c339-7e02-49c6-b9b7-e6b6e091e40f"
+Path: /sitecore/templates/Foundation/Workflow/Scheduled Publishing Workflow Comments/__Standard Values
+DB: master
+SharedFields:
+- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
+  Hint: __Security
+  Value: "ar|Everyone|pe|+item:write|pd|+item:write|"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200504T105505Z

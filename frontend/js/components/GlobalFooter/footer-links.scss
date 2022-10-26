@@ -1,0 +1,18 @@
+@import "../../../scss/variables/_mixins.scss";
+@import "../../../scss/variables/_breakpoints.scss";
+
+.footer-links {
+  ul {
+    @include zero-list();
+    text-align: right;
+
+    @media (max-width: $bp-large-max) {
+      text-align: center;
+    }
+  }
+
+  li {
+    display: inline;
+    margin-left: 16px;
+  }
+}

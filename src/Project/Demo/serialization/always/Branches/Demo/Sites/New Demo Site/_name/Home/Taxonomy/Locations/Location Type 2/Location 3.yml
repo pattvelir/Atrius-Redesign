@@ -1,0 +1,14 @@
+﻿---
+ID: "afc39fdc-809e-48a5-87a4-f74e083552ba"
+Parent: "3e88adce-9158-43e0-9ef2-927b8d92c138"
+Template: "410549bb-1134-4859-98ca-67125cee19a2"
+Path: /sitecore/templates/Branches/Project/Demo/Sites/New Demo Site/$name/Home/Taxonomy/Locations/Location Type 2/Location 3
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170310T170259Z

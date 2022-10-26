@@ -1,0 +1,25 @@
+﻿---
+ID: "ff7a4837-d051-48d5-80eb-538bb01ea785"
+Parent: "b18df9d2-c961-4a98-af57-bc75d4cf025c"
+Template: "b18df9d2-c961-4a98-af57-bc75d4cf025c"
+Path: /sitecore/templates/Velir/Search/Enumerations/Search Enumerations Folder/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {B18DF9D2-C961-4A98-AF57-BC75D4CF025C}
+    {E4D98773-347D-4931-B944-60DCE8F48E46}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20140814T140550
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

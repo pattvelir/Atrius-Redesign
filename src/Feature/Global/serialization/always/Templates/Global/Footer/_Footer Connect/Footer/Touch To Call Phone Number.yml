@@ -1,0 +1,31 @@
+﻿---
+ID: "96f8b3dc-22dd-4a48-b40c-b3f5f9f32fef"
+Parent: "223ba0e3-aa7f-403a-b130-4ff0086cfed3"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/Global/Footer/_Footer Connect/Footer/Touch To Call Phone Number
+DB: master
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Single-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 600
+Languages:
+- Language: en
+  Fields:
+  - ID: "577f1689-7de4-4ad2-a15f-7fdc1759285f"
+    Hint: __Long description
+    Value: "Touch-to-call phone number for mobile devices that does not include phonewords. Include country and area code with no spaces or punctuation (ex. 15556667777)"
+  - ID: "9541e67d-ce8c-4225-803d-33f7f29f09ef"
+    Hint: __Short description
+    Value: 
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "Touch-to-Call Phone Number"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160926T192921Z

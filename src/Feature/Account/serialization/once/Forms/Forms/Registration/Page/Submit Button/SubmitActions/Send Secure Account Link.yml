@@ -1,0 +1,29 @@
+﻿---
+ID: "122cee91-67c2-4812-8e00-0b2377dccfd9"
+Parent: "d3362d2a-ab9f-417e-9a8a-4241abe126b9"
+Template: "05fe45d4-b9c7-40de-b767-7c5abe7119f9"
+Path: /sitecore/Forms/Registration/Page/Submit Button/SubmitActions/Send Secure Account Link
+DB: master
+SharedFields:
+- ID: "5c796924-3f06-4d1f-8510-8ad9a4244477"
+  Hint: Parameters
+  Value: |
+    {"emailAddressFieldId":"8f28aa49-0655-4d6d-b63a-4c1463b0d839","expiration":"600","emailTemplateId":"{829247D8-9D05-45F7-A3DC-97F13B1B4E79}","isResetLink":false}
+- ID: "abc57b6d-5542-4ab9-a889-106225a032e6"
+  Hint: Submit Action
+  Value: "{D7A44EC4-F12B-45E4-BA0B-520AF7017870}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190515T205718Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

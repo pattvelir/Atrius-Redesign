@@ -1,0 +1,14 @@
+﻿---
+ID: "869a9320-6a08-4a6f-8140-c077c304d188"
+Parent: "7eef6e8b-1c55-4140-90ef-99f5952a128c"
+Template: "60ac7f1a-2dda-4022-8f6c-a75fd3732303"
+Path: /sitecore/templates/Branches/Project/Demo/Pages/Event Listing Page/$name/Components/Banners/Page Banner
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161117T031500Z

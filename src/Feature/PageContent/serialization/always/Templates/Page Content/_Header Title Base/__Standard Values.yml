@@ -1,0 +1,29 @@
+﻿---
+ID: "db8d14db-7b26-4d55-9865-0701cdf1605b"
+Parent: "12cc6a13-24e7-418e-a610-8e56d718823c"
+Template: "12cc6a13-24e7-418e-a610-8e56d718823c"
+Path: /sitecore/templates/Feature/Page Content/_Header Title Base/__Standard Values
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: WordProcessing/16x16/header.png
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161025T141628Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "d64a69f6-1317-47a1-a78b-2e22423c8133"
+      Hint: Header Title
+      Value: $name

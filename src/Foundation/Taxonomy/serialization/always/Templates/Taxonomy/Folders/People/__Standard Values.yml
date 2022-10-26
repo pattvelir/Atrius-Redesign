@@ -1,0 +1,29 @@
+﻿---
+ID: "6041b2a2-95bc-4b95-ad3b-a6119e7e8712"
+Parent: "a814df8e-c530-48bd-b162-a75fea5f1e6a"
+Template: "a814df8e-c530-48bd-b162-a75fea5f1e6a"
+Path: /sitecore/templates/Foundation/Taxonomy/Folders/People/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {4C0A8D3E-48C5-4C24-8B59-8EAB2EF0143A}
+    {A814DF8E-C530-48BD-B162-A75FEA5F1E6A}
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161109T161608Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

@@ -1,0 +1,75 @@
+@import "../../../../scss/variables/breakpoints";
+@import "../../../../scss/variables/mixins";
+
+.dynamic-content-listing {
+}
+
+.dynamic-content-listing__app {
+}
+
+.dynamic-content-listing__title {
+  margin-bottom: 20px;
+}
+
+.dynamic-content-listing__mount {
+}
+
+.dynamic-content-listing__link {
+}
+
+.dynamic-content-listing__featured {
+}
+
+.dynamic-content-listing__search-box {
+}
+
+.dynamic-content-listing__filter-bar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  @media (max-width: $bp-medium-max) {
+    .filter-bar {
+      max-width: 370px;
+    }
+  }
+
+  .filter-bar__menu {
+    flex-direction: row;
+  }
+
+  .filter-bar__title {
+    flex: none;
+    margin-top: 8px;
+
+    font-size: 1rem;
+  }
+}
+
+.dynamic-content-listing__toggle-bar {
+}
+
+.dynamic-content-listing__sorters-wrapper {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.dynamic-content-listing__results-info {
+}
+
+.dynamic-content-listing__sorters {
+}
+
+.dynamic-content-listing__results {
+}
+
+.dynamic-content-listing__results--hide-summaries {
+  .list-item__description {
+    display: none;
+  }
+}
+
+.dynamic-content-listing__pagination {
+}
+
+.dynamic-content-listing__load-more {
+}

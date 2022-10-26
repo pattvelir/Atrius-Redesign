@@ -1,0 +1,10 @@
+﻿@model Thread.Feature.Account.Models.MemberInterestsModel
+
+@using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post, new {@class = "account-form interests js-interests-form" }))
+{
+    @Html.Partial("_AccountHeader", Model)
+
+    @Html.Partial("_EditInterests", Model)
+
+    @Html.Partial("_AccountFooter", Model)
+}

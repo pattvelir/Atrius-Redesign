@@ -1,0 +1,41 @@
+﻿---
+ID: "9b1048b7-a9ce-4995-a982-a73684bc4dc2"
+Parent: "6b6bf1cb-098f-4133-897b-d8dfb1fca40a"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/Common/Multisite/Configuration Folder
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Applications/32x32/folder_gear.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: |
+    {94DBA5C9-8B1D-490C-8DB3-DCB33F75CE9E}
+    {C5E2C715-1397-4BA4-8EBD-AC8E038736D4}
+    {CA21BB62-10B5-46D5-A713-683C56333FEF}
+    {AFC79BD2-9D91-49E5-8BDC-CA4BF73C7B44}
+    {553420CC-2DA2-448A-BC94-6364EF2F768C}
+    {69ED1402-6EAF-46AD-B6D6-C3CF273A6E34}
+    {3F3A656C-332D-46D6-951E-63FB2D06F8E4}
+    {14E2F690-2849-45F2-9B1F-8741FD0606D0}
+    {8148E537-118D-4F13-B6E4-C70036C5B915}
+    {CB803DAB-1F25-469B-B5FF-5CEA4AC39EDD}
+    {66E6C75F-3E19-496D-82EC-CF7AF4938722}
+    {5E0E7757-C81C-4DDB-9B57-894E09D73619}
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{86183F87-F5BE-41D9-9C58-D5E6306B620B}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160219T204407Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

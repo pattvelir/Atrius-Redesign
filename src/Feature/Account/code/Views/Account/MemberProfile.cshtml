@@ -1,0 +1,46 @@
+﻿@using HtmlAgilityPack;
+@using Thread.Foundation.Dictionary.Repositories
+@model Thread.Feature.Account.Models.MemberProfileModel
+
+@{
+    //TODO: Add back "js-form js-form-change" class after figuring out with FE how form submission should work
+    var formAttributes = new Dictionary<string, object> { { "class", "js-profile-form" }, { "enctype", "multipart/form-data" } };
+}
+
+<div class="member-profile js-profile">
+    @using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post, formAttributes))
+    { 
+        @Html.Partial("_AccountHeader", Model)
+
+        <div class="js-preview js-toggle">
+            @Html.Partial("_ProfileInfo", Model)
+            @if (!Model.IsEmptyShortBio())
+            {
+                <div class="container__col member-profile__about">
+                    @if (!string.IsNullOrEmpty(Model.FirstName))
+                    {
+                        <p class="manage-profile__about-label">More about <span>@Model.FirstName</span></p>
+                    }
+                    @Html.Raw(Model.ShortBiography)
+                </div>
+            }
+        </div>
+
+        <div class="js-form-display is-hidden js-toggle">
+            @Html.Partial("_EditProfilePhoto", Model)
+            @Html.Partial("_EditPersonalInformation", Model)
+            @Html.Partial("_EditContactInformation", Model)
+            @Html.Partial("_EditAddressInformation", Model)
+            @Html.Partial("_EditSocialAccounts", Model)
+            @Html.Partial("_EditShortBio", Model)
+            
+            @if (!Sitecore.Context.PageMode.IsExperienceEditorEditing)
+            {
+                <div class="member-profile__button-block account-header">
+                    <button class="btn btn--secondary js-toggle-btn" type="button">@Dictionary.Current.Get("Account.CancelButtonLabel")</button>
+                    <button class="btn btn--primary js-submit-btn" type="submit" disabled="true">@Dictionary.Current.Get("Account.SaveButtonLabel")</button>
+                </div>
+            }
+        </div>
+    }
+</div>

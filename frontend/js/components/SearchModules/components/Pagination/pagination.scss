@@ -1,0 +1,17 @@
+.pagination {
+  text-align: center;
+}
+
+.pagination__pages {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  .btn {
+    padding: 6px;
+
+    color: currentColor;
+    font-weight: 400;
+    text-transform: unset;
+  }
+}

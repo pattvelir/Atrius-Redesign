@@ -1,0 +1,17 @@
+﻿---
+ID: "0602df3c-49d3-4691-a235-34358da50c8c"
+Parent: "28e74d89-4216-4e9e-949d-63575e81ce7b"
+Template: "f76633f7-ec75-40b3-832b-ac997c6ecb22"
+Path: /sitecore/templates/Branches/Project/Demo/Sites/New Demo Site/$name/Home/Components/Banners/Hero
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "201fa277-4f3c-4c28-beae-27f0ba548f1e"
+      Hint: Title
+      Value: Hero
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161117T025357Z

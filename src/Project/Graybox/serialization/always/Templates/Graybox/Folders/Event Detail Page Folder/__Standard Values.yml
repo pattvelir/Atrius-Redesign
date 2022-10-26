@@ -1,0 +1,29 @@
+﻿---
+ID: "64975916-a7fd-44ba-a65c-4df962b77c49"
+Parent: "3da13764-97d3-4342-b26f-b14d0e4d3219"
+Template: "3da13764-97d3-4342-b26f-b14d0e4d3219"
+Path: /sitecore/templates/Project/Graybox/Folders/Event Detail Page Folder/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {6B719B44-AC8F-4A4E-984B-FC975C3F0749}
+    {3DA13764-97D3-4342-B26F-B14D0E4D3219}
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161117T024230Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

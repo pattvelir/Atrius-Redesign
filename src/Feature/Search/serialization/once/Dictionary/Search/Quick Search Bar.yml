@@ -1,0 +1,18 @@
+﻿---
+ID: "75b14bfa-8887-45c9-b153-afc0bf3dbe97"
+Parent: "09569544-83e4-4df0-a07a-aacb3d042a52"
+Template: "267d9ac7-5d85-4e9d-af89-99ab296cc218"
+Path: /sitecore/system/Dictionary/Default/Search/Quick Search Bar
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160223T223357Z

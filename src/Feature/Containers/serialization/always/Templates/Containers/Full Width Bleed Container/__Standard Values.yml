@@ -1,0 +1,19 @@
+﻿---
+ID: "0fb4685a-ba16-432d-8238-99d203caa042"
+Parent: "1e967a94-9e31-4e7d-9fe2-1daf44e19fea"
+Template: "1e967a94-9e31-4e7d-9fe2-1daf44e19fea"
+Path: /sitecore/templates/Feature/Containers/Full Width Bleed Container/__Standard Values
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161102T155603Z

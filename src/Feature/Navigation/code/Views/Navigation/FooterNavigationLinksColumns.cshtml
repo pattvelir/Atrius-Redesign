@@ -1,0 +1,48 @@
+﻿ @using System.Web.Mvc.Html
+@using Thread.Foundation.Mvc.Extensions
+@using NavigationConstants = Thread.Feature.Navigation.Reference.Constants
+@using PageEditorConstants = Thread.Foundation.PageEditor.Reference.Constants
+@using StringExtensions = Thread.Foundation.Dictionary.Extensions.StringExtensions
+@model Thread.Feature.Navigation.Models.FooterNavigationLinksColumnsFolderModel
+
+@if (Model != null)
+{
+	<nav class="footer-nav" aria-label="@StringExtensions.Translate("Footer")">
+		@if (Sitecore.Context.PageMode.IsExperienceEditorEditing && !Model.LinkHeaders.Any())
+		{
+			<p>No Footer Columns have been created.</p>
+		}
+		@foreach (var header in Model.LinkHeaders)
+		{
+			var editFrameButtons = NavigationConstants.EditFrameButtons.NavigationColumns + "|" + PageEditorConstants.EditFrameButtons.ChildItemsWithInsert;
+			using (Html.EditFrame(header.LinkColumnHeader, editFrameButtons, "Edit Item"))
+			{
+				<div class="footer-nav__section has-@header.NumberOfColumns">
+					@if (Html.Sitecore().HasValueOrEditing(header.LinkColumnHeader.Title))
+					{
+						var headerId = !Sitecore.Context.PageMode.IsExperienceEditorEditing ? header.LinkColumnHeader.Title.Value + "-" + header.LinkColumnHeader.ID : string.Empty;
+
+						if (header.LinkColumnHeader.Link != null && (!string.IsNullOrEmpty(header.LinkColumnHeader.Link.Url) || header.LinkColumnHeader.Link.TargetItem != null))
+						{
+							<h2 id="@headerId" class="footer-nav__heading">
+								@Html.Sitecore().BeginField(header.LinkColumnHeader.Link, new { haschildren = true })
+								@Html.Sitecore().Field(header.LinkColumnHeader.Title)
+								@Html.Sitecore().EndField()
+							</h2>
+						}
+						else
+						{
+							<h2 id="@headerId" class="footer-nav__heading">
+								@Html.Sitecore().Field(header.LinkColumnHeader.Title)
+							</h2>
+						}
+						<div class="footer-nav__col-wrapper">
+							@Html.Partial("~/Views/Navigation/FooterNavigationLinkList.cshtml", header)
+						</div>
+
+					}
+				</div>
+			}
+		}
+	</nav>
+}

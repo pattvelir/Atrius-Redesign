@@ -1,0 +1,27 @@
+﻿---
+ID: "ef6f320a-f375-4f69-a2fc-cd930daae2b4"
+Parent: "403f1345-e354-4be8-8b0f-a87843ce89bc"
+Template: "403f1345-e354-4be8-8b0f-a87843ce89bc"
+Path: /sitecore/templates/Foundation/Page Editor/Alignment Options Folder/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{32E1A995-2EDF-433C-863B-A3E6443462AB}"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160307T171939Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

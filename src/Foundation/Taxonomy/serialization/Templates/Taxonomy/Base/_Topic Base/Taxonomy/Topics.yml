@@ -1,0 +1,31 @@
+﻿---
+ID: "027f5e1e-d0e5-4afd-9b7a-90a563504d47"
+Parent: "2dafa13c-75f5-4d58-b7ca-92c8b1079e27"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Thread/Foundation/Taxonomy/Base/_Topic Base/Taxonomy/Topics
+DB: master
+SharedFields:
+- ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
+  Hint: Source
+  Value: "StartSearchLocation={0DE95AE4-41AB-4D01-9EB0-67441B7C2450}&Filter=+_templatename:Topic"
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Multilist with Search
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Fields:
+  - ID: "577f1689-7de4-4ad2-a15f-7fdc1759285f"
+    Hint: __Long description
+    Value: Categorizes a content item by topic(s) for use in content queries
+  - ID: "9541e67d-ce8c-4225-803d-33f7f29f09ef"
+    Hint: __Short description
+    Value: 
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161025T143903Z

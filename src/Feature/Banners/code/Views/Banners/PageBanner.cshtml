@@ -1,0 +1,63 @@
+@using Thread.Foundation.Theme.Extensions
+@using Thread.Foundation.Mvc.Extensions
+@using Thread.Foundation.ResponsiveImages.Extensions
+@using Thread.Foundation.ResponsiveImages.Extensions.Markers
+@using Thread.Foundation.SitecoreExtensions.Item
+@using TaxonomyConstants = Thread.Foundation.Taxonomy.Reference.Constants
+@model Thread.Feature.Banners.Models.PageBannerModel
+
+@if (Model.IsValid || Sitecore.Context.PageMode.IsExperienceEditorEditing)
+{
+  string mediaStyles = string.Format("{0};{1}", Model.OpacityStyle, Model.HeightStyle);
+
+  <section class="page-banner js-dynamic-banner @Model.ThemeClass @Model.HeightClass" style="@Model.HeightStyle">
+    <figure class="page-banner__figure">
+      @if (Model.Datasource.Video != null && !string.IsNullOrEmpty(Model.Datasource.Video.Src))
+      {
+        <div class="background-video js-background-video is-playing">
+          <video class="background-video__video js-background-video-el"
+                 src="@Model.Datasource.Video.Src" autoplay muted loop
+                 data-object-position="bottom right"
+                 style="@mediaStyles"
+                 poster="@Model.Datasource.Image.GetSrc(1920)">
+          </video>
+          <button type="button" class="background-video__button js-background-video-button">
+            @Html.RenderSvg("play", "icon icon--play background-video__play", "play video")
+            @Html.RenderSvg("pause", "icon icon--pause background-video__pause", "pause video")
+          </button>
+        </div>
+      }
+      else
+      {
+        @Html.Sitecore().Field(Model.Datasource.Image, new SrcSetList(), new { sizes = "(min-width: 1440px) 1440px, 100vw", style = mediaStyles, loading = "lazy" })
+      }
+    </figure>
+    <div class="page-banner__content">
+      <div class="page-banner__overlay"></div>
+      <div class="page-banner__content-inner">
+        @using (Html.EditFrame(Model.ContentTypeItem, TaxonomyConstants.EditFrames.EditContentType, "Edit Content Type"))
+        {
+          if (Model.ContentTypeItem != null && Html.Sitecore().HasValueOrEditing(Model.ContentTypeItem.ContentType))
+          {
+            if (Model.ContentTypeItem.ContentType.TargetItem != null)
+            {
+              <div class="page-banner__eyebrow">@Html.Raw(Model.ContentTypeItem.ContentType.TargetItem.DisplayName)</div>
+            }
+            else if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+            {
+              <div class="page-banner__eyebrow">No Content Type Selected</div>
+            }
+          }
+        }
+        @if (Model.PageContentFields != null && Html.Sitecore().HasValueOrEditing(Model.PageContentFields.HeaderTitleField))
+        {
+          <h1 id="banner-@Model.Datasource.ID" class="page-banner__title">@Html.Sitecore().Field(Model.PageContentFields.HeaderTitleField)</h1>
+        }
+        @if (Model.PageContentFields != null && Html.Sitecore().HasValueOrEditing(Model.PageContentFields.SubtitleField))
+        {
+          <div class="page-banner__subtitle">@Html.Sitecore().Field(Model.PageContentFields.SubtitleField)</div>
+        }
+      </div>
+    </div>
+  </section>
+}

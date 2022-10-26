@@ -1,0 +1,14 @@
+﻿---
+ID: "ad87a07b-9fa4-4d60-b780-4fb133b0e17d"
+Parent: "c2392eb2-31e9-49c9-9267-db81945fd043"
+Template: "d5745f91-8fa1-457f-be87-875a029c7b69"
+Path: /sitecore/templates/Branches/Project/Graybox/Sites/New Site with Login/$name/Configuration/Navigation/Utility Navigation Logged In/Utility 2
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170202T220032Z

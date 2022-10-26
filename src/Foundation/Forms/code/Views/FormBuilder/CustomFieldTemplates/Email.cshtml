@@ -1,0 +1,10 @@
+@using Sitecore.ExperienceForms.Mvc.Html
+@model Sitecore.ExperienceForms.Mvc.Models.Fields.StringInputViewModel
+
+<label class="sc-form-item @if(Model.Required){<text>js-sc-form-required</text>}else{<text>sc-form-item--optional</text>}">
+    <span class="@Model.LabelCssClass">@Html.DisplayTextFor(t => Model.Title)</span>
+    <input id="@Html.IdFor(m => Model.Value)" name="@Html.NameFor(m => Model.Value)" class="@Model.CssClass" type="email" value="@Model.Value"
+        @if (Model.Required){<text>aria-required="true"</text>}
+        @if (Model.MaxLength > 0){<text> maxlength="@Model.MaxLength"</text>} placeholder="@Model.PlaceholderText" data-sc-tracking="@Model.IsTrackingEnabled" data-sc-field-name="@Model.Name" data-sc-field-key="@Model.ConditionSettings.FieldKey" @Html.GenerateUnobtrusiveValidationAttributes(m => m.Value)/>
+    <span role="alert" class="sc-form-item__error-msg">@Html.ValidationMessageFor(m => Model.Value)</span>
+</label>

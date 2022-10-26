@@ -1,0 +1,113 @@
+﻿---
+ID: "d0805639-32e5-457f-99ba-867b87f7385f"
+Parent: "27a629c7-5545-43e4-84aa-39cb510916bf"
+Template: "9f62ebd5-2280-4a35-be51-a210d831d687"
+Path: /sitecore/content/Applications/WebEdit/Ribbons/WebEdit/Page Editor/Page/Page Options
+DB: core
+SharedFields:
+- ID: "2e263167-b30f-45c0-8105-567960961874"
+  Hint: ID
+  Value: PageOptionsRibbonButton
+- ID: "4c2dedb4-40fb-4166-8221-c4dd3e914478"
+  Hint: Click
+  Value: "webedit:logout"
+- ID: "8e40ab40-8c83-4ff7-9d33-38ed9458de1e"
+  Hint: Icon
+  Value: Applications/32x32/document_text.png
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 149
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          id="{6E177CB2-BBC1-486E-90E9-8C5E579A090B}"
+          par="Tooltip&amp;IsVisible=1&amp;Click=trigger%3Abutton%3Aclick&amp;Command=LaunchFieldEditor&amp;ControlStateRequest&amp;PostponedCall=1&amp;HideInWebEditMode&amp;HideInPreviewMode&amp;HideInDebugMode&amp;HideInCmsOnlyMode&amp;AccessKey=Display%20Date%7CStart%20Date%7CEnd%20Date%7CImage%2016x9%7CImage%201x1%7CTitle%7CShort%20Title%7CHeader%20Title%7CSubtitle%7CSummary%7CAddress%201%7CAddress%202%7CCity%7CState%7CZip%20Code%7CShort%20Description%7CRegistration%20Link&amp;ConfigurationItem&amp;IsEnabled&amp;Id=PageOptionsSmallButton&amp;Behaviors&amp;PageCodeScriptFileName=%2FAreas%2FThread%2FScripts%2FLaunchFieldEditor.js"
+          uid="{3FAB8B16-3F85-4E38-BFBB-FC73F0016C1A}" />
+      </d>
+    </r>
+Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Log af
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160729T133323Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "a47cd065-c361-4332-b22b-7e2148de06f4"
+      Hint: Tooltip
+      Value: Log af.
+    - ID: "c184f18b-b452-44d6-8376-facd6cef8a42"
+      Hint: Header
+      Value: Log af
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Abmeldung
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160729T133449Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "a47cd065-c361-4332-b22b-7e2148de06f4"
+      Hint: Tooltip
+      Value: Abmelden.
+    - ID: "c184f18b-b452-44d6-8376-facd6cef8a42"
+      Hint: Header
+      Value: Abmelden
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20080215T151822Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "a47cd065-c361-4332-b22b-7e2148de06f4"
+      Hint: Tooltip
+      Value: Edit page options.
+    - ID: "c184f18b-b452-44d6-8376-facd6cef8a42"
+      Hint: Header
+      Value: Page Options
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: ログオフ
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160729T133616Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "a47cd065-c361-4332-b22b-7e2148de06f4"
+      Hint: Tooltip
+      Value: ログオフ
+    - ID: "c184f18b-b452-44d6-8376-facd6cef8a42"
+      Hint: Header
+      Value: ログオフ

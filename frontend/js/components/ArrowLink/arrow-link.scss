@@ -1,0 +1,53 @@
+.arrow-link {
+  span {
+    padding-right: 1.25em;
+  }
+
+  & > svg {
+    height: 0.75em;
+    width: 0.75em;
+    margin-left: -1em;
+    transform: translateY(-0.05em);
+    transition: transform 500ms ease;
+  }
+
+  &:focus,
+  &:hover {
+    & > svg {
+      transform: translate(0.1em, -0.05em);
+    }
+  }
+}
+
+.arrow-link--download,
+.arrow-link--jump {
+  & > svg {
+    transform: rotate(90deg);
+  }
+
+  &:focus,
+  &:hover {
+    & > svg {
+      transform: rotate(90deg) translateX(0.1em);
+    }
+  }
+}
+
+.arrow-link--external {
+  & > svg {
+    transform: rotate(-45deg);
+  }
+
+  &:focus,
+  &:hover {
+    & > svg {
+      transform: rotate(-45deg) translateX(0.1em);
+    }
+  }
+}
+
+.arrow-link--download {
+  & > svg {
+    border-right: 1px solid currentColor;
+  }
+}

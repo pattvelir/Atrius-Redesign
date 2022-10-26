@@ -1,0 +1,23 @@
+@import "../../../scss/variables/_colors.scss";
+@import "../../../scss/variables/_mixins.scss";
+@import "../../../scss/variables/_variables.scss";
+
+.page-header {
+}
+
+.page-header__title {
+}
+
+.page-header__subtitle {
+  font-family: $montserrat;
+  font-size: 1.5rem;
+}
+
+.page-header__type {
+  margin-bottom: 0;
+
+  color: $grey-500;
+
+  font-family: $montserrat;
+  text-transform: uppercase;
+}

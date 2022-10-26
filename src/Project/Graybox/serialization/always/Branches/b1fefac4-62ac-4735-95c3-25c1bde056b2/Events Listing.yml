@@ -1,0 +1,25 @@
+﻿---
+ID: "18b36df3-446d-4c47-839d-93288f408f4b"
+Parent: "b1fefac4-62ac-4735-95c3-25c1bde056b2"
+Template: "b0bb95b3-6115-4a24-afd4-9846e59093a6"
+Path: /sitecore/templates/Branches/Project/Graybox/Pages/Event Listing Page/$name/Components/Dynamic Content Listings/Events Listing
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "11a2a15b-52c4-4dc6-bb76-1150fcf05e69"
+      Hint: Content Types Displayed
+      Type: Multilist with Search
+      Value: "{2B491ED7-BA51-451E-B36B-909D4F68F02C}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200911T214500Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "cf77e1f2-c995-4fe2-a30c-61470ec48c1f"
+      Hint: Sort Method
+      Value: "{1F0BA4C6-9CAD-40F9-B093-8FE20FBCCB5B}"

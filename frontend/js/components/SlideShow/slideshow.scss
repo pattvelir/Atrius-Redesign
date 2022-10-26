@@ -1,0 +1,173 @@
+@import "../../../scss/variables/_colors.scss";
+@import "../../../scss/variables/_breakpoints.scss";
+@import "../../../scss/variables/_slick-settings.scss";
+
+// Slick Slider customization should happen per-component,
+// however, there are some global settings that can be set in
+// base/_slick-settings.scss
+
+$slideshow-arrow-size: 64px;
+$slideshow-dots-size: 10px;
+
+.slideshow {
+  max-width: 100%;
+  // hide all slides except first until
+  // slick slider initializes
+
+  .image-block {
+    margin-bottom: 0;
+    opacity: 0;
+  }
+
+  .slick-initialized .image-block {
+    opacity: 1;
+  }
+
+  .image-block__title {
+    display: none;
+  }
+
+  .image-block__media {
+    border-bottom: none;
+
+    figcaption {
+      max-width: 700px;
+      padding-top: em(10);
+      padding-bottom: em(35);
+      border-bottom: 0;
+
+      @media (max-width: $bp-x-small-max) {
+        padding-right: em(40);
+        padding-left: em(40);
+      }
+    }
+  }
+
+  // SlickSlider customizations
+
+  .slick-next,
+  .slick-prev {
+    z-index: 3;
+    display: block;
+
+    color: $slick-arrow-color;
+    background-color: rgba($grey-400, 0.5);
+    border-radius: 0 !important;
+    transition: background-color 0.3s;
+
+    @media (max-width: $bp-x-small-max) {
+      background-color: transparent;
+    }
+
+    // the button, the icon container
+    // and svg need to have dimenions
+    // explicitly defined
+
+    &,
+    & .icon,
+    & svg {
+      height: ($slideshow-arrow-size * 2);
+      width: $slideshow-arrow-size;
+    }
+
+    &:focus,
+    &:hover {
+      background-color: $grey-400;
+    }
+
+    &::before {
+      content: "";
+    }
+  }
+
+  .slick-next {
+    right: 0;
+  }
+
+  .slick-prev {
+    left: 0;
+  }
+
+  .slick-dotted {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .slick-dots {
+    position: static;
+    display: block;
+    width: auto;
+    margin: 0 auto;
+    padding: 2px;
+
+    font-size: 0;
+    border-radius: 9999px; // pill shape;
+
+    &:focus-within {
+      border: 4px solid #5b9dd9;
+    }
+
+    li {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding: 10px 12px;
+
+      // match specificy in origin css
+
+      button {
+        flex: none;
+
+        &::before {
+          display: none;
+          content: "";
+        }
+      }
+    }
+
+    li,
+    button {
+      height: $slideshow-dots-size;
+      width: $slideshow-dots-size;
+      border-radius: ($slideshow-dots-size * 2);
+    }
+
+    button {
+      height: 10px;
+      width: 10px;
+      margin: 0 auto;
+      padding: 4px;
+      background-color: $white;
+      box-shadow: 0 0 0 2px $white, 0 0 0 4px $base-border-color;
+      transition: background-color 0.3s;
+
+      &:focus {
+        outline: 0;
+      }
+    }
+
+    .slick-active {
+      button {
+        background-color: $base-border-color;
+      }
+    }
+  }
+
+  @media (max-width: $bp-large-max) {
+    .slick-next,
+    .slick-prev {
+      $size: $slideshow-arrow-size * 0.5;
+      $radius: $size * 2;
+
+      border-radius: $radius;
+
+      &,
+      & .icon,
+      & svg {
+        height: ($size * 2);
+        width: $size;
+      }
+    }
+  }
+}

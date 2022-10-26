@@ -1,0 +1,23 @@
+.search-results__load-more {
+  text-align: center;
+  transition: all 0.2s;
+
+  .btn {
+    padding: 12px 24px;
+
+    font-size: 18px;
+  }
+
+  .search-results__spinner {
+    position: static;
+    display: inline;
+
+    img {
+      height: 24px;
+      width: 24px;
+      margin-left: 14px;
+
+      vertical-align: middle;
+    }
+  }
+}

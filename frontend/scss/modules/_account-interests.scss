@@ -1,0 +1,146 @@
+.interests {
+  //override account form stuff
+
+  .account-form__fields--50-50 {
+    @media (min-width: 1100px) {
+      margin-top: 0;
+    }
+  }
+}
+
+.interest__fieldset {
+  padding-bottom: 40px;
+}
+
+.interest__input-row {
+  display: flex;
+  width: 100%;
+}
+
+.interests__input-row {
+  flex-basis: 100%;
+}
+
+.interest__title {
+  display: block;
+  flex-basis: 100%;
+  // margin: 0 16px 8px;
+  margin: 0 0 8px;
+  padding: 10px 0;
+
+  color: #262626;
+  font-weight: 500;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.interests__input-row {
+  display: inline-flex;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.interest__input {
+  width: 33.3%;
+
+  @media (max-width: $bp-large-max) {
+    width: 100%;
+  }
+}
+
+.sc-form-item__opt-description {
+  margin: 5px 32px 0px -32px;
+  margin-left: -32px;
+
+  font-size: 12px;
+}
+
+//if there is more than 1 group
+
+.account-form__fields--strech-inputs,
+.account-form__fields--force-row {
+  .interest__input {
+    width: 100%;
+  }
+}
+
+.account-form__fields--force-column {
+  .interest__input {
+    width: 33.3%;
+  }
+}
+
+.interests__input-row--column-50 {
+  .interest__input {
+    width: 50%;
+
+    @media (max-width: $bp-large-max) {
+      width: 100%;
+    }
+  }
+}
+
+//using grid from account form
+
+.account-form__fields--50-50 {
+  .interests__input-row {
+    .sc-form-item {
+      width: 100%;
+      margin: 0 32px 32px;
+    }
+  }
+
+  .interest__selectGroup {
+    margin: 0 16px;
+    border-top: 1px solid #e0e0e0;
+  }
+
+  .interest__select-all {
+    margin: 0px 16px;
+    padding: 16px 0px 0px;
+
+    .sc-form-item {
+      margin: 0;
+    }
+  }
+}
+
+.interest__group {
+  flex-basis: 33.3%;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.interest__group--full-width {
+  flex-basis: 100%;
+}
+
+.interest__select-all {
+  display: inline-block;
+
+  .sc-form-item {
+    width: 100%;
+    margin: 0;
+  }
+
+  //overriding for a select all checkbox
+
+  .sc-form-item--checkbox {
+    .sc-form-item__label {
+      font-size: 12px;
+      line-height: 1;
+      text-transform: uppercase;
+
+      &::before {
+        height: 17px;
+        width: 17px;
+      }
+
+      &::after {
+        top: 10px;
+        left: 3px;
+      }
+    }
+  }
+}

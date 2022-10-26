@@ -1,0 +1,104 @@
+﻿---
+ID: "13d8737e-d912-4ac2-affa-4fd20c15a6b0"
+Parent: "eb9da56d-99fe-4aeb-8919-97ae4b416da7"
+Template: "cdc8c7d0-90a0-48e7-be0e-c029a6a062d5"
+Path: /sitecore/templates/Branches/Project/Graybox/Pages/Detail Page/$name
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{A2DE3965-E340-45B4-9FAB-3F35BECE08C1}">
+        <p
+          uid="{9D4C7049-8BC4-4F38-8FA6-9AEF13DB4F20}"
+          key="content-body"
+          md="/sitecore/layout/Placeholder Settings/Project/Graybox/Detail Page/Base/Body" />
+        <p
+          uid="{9EC583C8-0EFC-4115-9228-4C28E8FB1D45}"
+          key="50-50-left-column"
+          md="/sitecore/layout/Placeholder Settings/Project/Graybox/Detail Page/Containers/50 Percent Column" />
+        <p
+          uid="{9D389A07-6C23-48A1-9CAC-AAA23CE1D2CF}"
+          key="50-50-right-column"
+          md="/sitecore/layout/Placeholder Settings/Project/Graybox/Detail Page/Containers/50 Percent Column" />
+        <p
+          uid="{476B8789-49CF-4343-9D4F-10E576B90018}"
+          key="content-width-column"
+          md="/sitecore/layout/Placeholder Settings/Project/Graybox/Detail Page/Containers/Full Width Content" />
+        <p
+          uid="{98E519C5-B0F5-40E5-89AD-CE89377910DF}"
+          key="secondary-column-left"
+          md="/sitecore/layout/Placeholder Settings/Project/Graybox/Detail Page/Containers/30 Percent Left Column" />
+        <p
+          uid="{93731C05-726F-4672-83CC-9990AFC00BA3}"
+          key="secondary-column-right"
+          md="/sitecore/layout/Placeholder Settings/Project/Graybox/Detail Page/Containers/30 Percent Right Column" />
+        <p
+          uid="{DE7D578A-38DF-407E-B5B6-3531011CE460}"
+          key="primary-column-left"
+          md="/sitecore/layout/Placeholder Settings/Project/Graybox/Detail Page/Containers/70 Percent Left Column" />
+        <p
+          uid="{BDC82F61-E3DD-43C0-8FD3-07C52EB5515B}"
+          key="primary-column-right"
+          md="/sitecore/layout/Placeholder Settings/Project/Graybox/Detail Page/Containers/70 Percent Right Column" />
+        <r
+          ds=""
+          id="{6F3D1130-74EC-4C8B-B8A7-8BD1D51B17E7}"
+          par="Include Bottom Margin=1"
+          ph="content-body"
+          uid="{1EBFBEC1-4F1B-4524-B33A-C059D586DAD4}" />
+        <r
+          ds=""
+          id="{FC3D7B61-8FFE-4FA5-8E62-841A0E8A8F17}"
+          par=""
+          ph="/content-body/primary-column-left-{1EBFBEC1-4F1B-4524-B33A-C059D586DAD4}-0"
+          uid="{56EB500D-BF13-47AE-BA65-0F1FBD7E0BB9}" />
+        <r
+          id="{1B8B6412-BC11-4D18-8547-28380C1BCCF7}"
+          ph="content-body"
+          uid="{335CD150-84A4-49C4-8BD2-693ECA039674}" />
+        <r
+          ds=""
+          id="{0EECCBC4-D56E-42BD-9227-3CC7C8DDE253}"
+          par=""
+          ph="/content-body/secondary-column-left-{335CD150-84A4-49C4-8BD2-693ECA039674}-0"
+          uid="{2BE121EF-31F9-4B02-ADA7-D99A38A2749E}" />
+        <r
+          ds=""
+          id="{4FC58D75-BE0A-469A-88A8-D5678805B423}"
+          par=""
+          ph="/content-body/primary-column-right-{335CD150-84A4-49C4-8BD2-693ECA039674}-0"
+          uid="{9DF76156-173D-411E-8872-A5C3334C13C2}" />
+        <r
+          ds=""
+          id="{C9529F14-C669-46C3-A959-97931F35E039}"
+          par=""
+          ph="/content-body/primary-column-right-{335CD150-84A4-49C4-8BD2-693ECA039674}-0"
+          uid="{5612F900-285A-4A9E-BF20-9E599A7095A4}" />
+        <r
+          ds="{010573DA-C0A3-4EF6-BFF2-D7888D7B5A48}"
+          id="{089971A7-90DA-4923-8712-BE61C59DD237}"
+          ph="/content-body/primary-column-right-{335CD150-84A4-49C4-8BD2-693ECA039674}-0"
+          uid="{2B292640-87CF-49D0-AE7E-9C57E3E3B5CF}" />
+        <r
+          id="{60C2AC1C-4754-4914-B11A-37F0DF825B43}"
+          ph="content-body"
+          uid="{6D21CA88-7E7D-481C-B410-E6E260D1B718}" />
+        <r
+          id="{3E615E7F-8DB2-4648-B7E1-E9C2F05FFD08}"
+          ph="content-body"
+          uid="{F46416F2-CF67-4FFB-9730-A40C3364C979}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161212T152704Z

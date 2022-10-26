@@ -1,0 +1,21 @@
+﻿---
+ID: "daba4be2-4f5e-48b9-833c-29672f5e1ba9"
+Parent: "16bdac3d-63bd-4b0e-b1c8-6cf1936a2058"
+Template: "415fdcdd-992d-4f3f-9752-e33fa61ca5db"
+Path: /sitecore/content/Global Configuration/Enumerations/Ratios/1x1
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 150
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "197fd7ed-d7de-4445-a87d-3a6b9e845000"
+      Hint: Value
+      Value: 1
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180611T201744Z

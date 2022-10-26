@@ -1,0 +1,22 @@
+﻿---
+ID: "a59136f9-73cd-4191-b8d6-64595e6b0fb8"
+Parent: "78e0460c-dbc9-46ba-a3fd-adc2466409c0"
+Template: "b5e1a562-1a76-49be-a899-1d5ca76703b2"
+Path: /sitecore/templates/Branches/Project/Graybox/Sites/New Site with Login/$name/Home/Registration/Components/Rich Text
+DB: master
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{612C183D-571F-481D-BEBE-32CBA8842BBF}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190524T174409Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

@@ -1,0 +1,35 @@
+﻿---
+ID: "4c0a8d3e-48c5-4c24-8b59-8eab2ef0143a"
+Parent: "d310833b-2243-4c04-bea2-e9db3a6c30ca"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Foundation/Taxonomy/Items/Person
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: BusinessV2/32x32/businesspeople.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: |
+    {7137B868-EE08-4E39-910D-5CA8EE58EBD7}
+    {62175606-0BA7-427E-AB34-A2F859A31A26}
+    {1930BBEB-7805-471A-A3BE-4858AC7CF696}
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{314C2C1F-4019-493C-B563-7767C698D1FE}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161025T144813Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

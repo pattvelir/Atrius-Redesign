@@ -1,0 +1,51 @@
+@using Thread.Foundation.Theme.Extensions
+@using Thread.Foundation.Mvc.Extensions
+@using Thread.Foundation.ResponsiveImages.Extensions
+@using Thread.Foundation.ResponsiveImages.Extensions.Markers
+@using Thread.Foundation.SitecoreExtensions.Item
+@model Thread.Feature.Banners.Models.HeroBannerModel
+
+@if (Html.Sitecore().HasValueOrEditing(Model.Datasource.Image))
+{
+  var bannerHeight = Model.RenderingParameters.BannerHeight;
+<section class="hero js-dynamic-banner @Model.ThemeClass @(bannerHeight > 0 ? "has-height" : string.Empty)" style="@(bannerHeight > 0 ? string.Format("; height: {0}px", bannerHeight) : string.Empty)">
+    <figure class="hero__figure">
+        @if (Html.Sitecore().HasValueOrEditing(Model.Datasource.Video))
+        {
+            <div class="background-video js-background-video is-playing">
+                <video class="background-video__video js-background-video-el" src="@Model.Datasource.Video.Src" autoplay muted loop style="opacity: @Model.RenderingParameters.Opacity; data-object-position: center center" poster="@Model.Datasource.Image.GetSrc(1920)"></video>
+                <button type="button" class="background-video__button js-background-video-button">
+                    @Html.RenderSvg("play", "background-video__play", "Play Video")
+                    @Html.RenderSvg("pause", "background-video__pause", "Pause Video")
+                </button>
+            </div>
+        }
+        else if (Html.Sitecore().HasValue(Model.Datasource.Image.InnerField.ID.ToString()))
+        {
+           
+           @Html.Sitecore().Field(Model.Datasource.Image, new SrcSetList(), new { @class = "js-banner-media", style = "opacity: " + Model.RenderingParameters.Opacity, sizes = "(min-width: 1440px) 1440px, 100vw" })
+     
+        }
+    </figure>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+        @if (Html.Sitecore().HasValueOrEditing(Model.Datasource.Title))
+        {
+            <h2 id="hero-@Model.Datasource.ID" class="hero__title">@Html.Sitecore().RawFieldValue(Model.Datasource.Title)</h2>
+        }
+        @if (Html.Sitecore().HasValueOrEditing(Model.Datasource.Subtitle))
+        {
+            <div class="hero__subtitle">@Html.Sitecore().Field(Model.Datasource.Subtitle)</div>
+        }
+        @if (Html.Sitecore().HasValueOrEditing(Model.Datasource.Link))
+        {
+            @Html.Sitecore().BeginField(Model.Datasource.Link, new { @class = "hero__action btn btn--primary", aria_labelledby = "hero-" + Model.Datasource.ID })
+            if (!Sitecore.Context.PageMode.IsExperienceEditorEditing && string.IsNullOrEmpty(Model.Datasource.Link.Text))
+            {
+                @Html.Raw(Thread.Foundation.Dictionary.Statics.EditableTranslate.Text("Banners.Hero.ReadMore"))
+            }
+            @Html.Sitecore().EndField()
+        }
+    </div>
+</section>
+}

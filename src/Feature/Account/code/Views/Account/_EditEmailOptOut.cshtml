@@ -1,0 +1,48 @@
+﻿@using Thread.Foundation.Dictionary.Statics
+@using Thread.Foundation.Dictionary.Repositories
+@using Thread.Foundation.Mvc.Extensions
+@using Thread.Foundation.Theme.Extensions
+@model Thread.Feature.Account.Models.MemberEmailPreferencesModel
+
+<fieldset class="account-form__fieldset interest__fieldset">
+    <div class="account-form__field-group">
+        <legend class="form-legend">
+            <span class="form-legend__legend-heading">
+                @Html.Raw(EditableTranslate.Text("Account.EmailPreferences.OptOut.Subtitle"))
+            </span>
+            <div class="form-legend__legend-description">
+                @Html.Raw(EditableTranslate.Text("Account.EmailPreferences.OptOut.Description"))
+            </div>
+            @{
+                var message = Dictionary.Current.Get("Account.EmailPreferences.OptOut.Message");
+            }
+            @if (!string.IsNullOrEmpty(message))
+            {
+                <div class="form-legend__legend-message">
+                    @Html.RenderSvg("info-circle")
+                    <div class="form-legend__legend-message-body">
+                        @Html.Raw(message)
+                    </div>
+                </div>
+            }
+        </legend>  <div class="account-form__fields account-form__fields--50-50  account-form__fields--force-row  override-margin ">
+            <div class="interest__group js-interests-group ">
+                <div class="interest__title">
+                    @Html.Raw(EditableTranslate.Text("Account.EmailPreferences.OptOut.OptOutText"))
+                </div>
+
+                <div class="interests__input-row js-group ">
+                    <div class="interest__input">
+                        <label class="sc-form-item sc-form-item--checkbox sc-form-item--optional ">
+                            @Html.CheckBoxSimple(m => Model.OptOut, new { @class = "sc-form-item__field" })
+                            <div class="sc-form-item__label"> @Html.Raw(EditableTranslate.Text("Account.EmailPreferences.OptOut.OptOutCheckboxText"))</div>
+                            <span role="alert" class="sc-form-item__error-msg"></span>
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</fieldset>

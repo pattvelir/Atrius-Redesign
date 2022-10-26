@@ -1,0 +1,23 @@
+﻿---
+ID: "98dc64f9-7324-4f41-b66e-b22d21727ede"
+Parent: "af84df6a-b5ff-4b6a-996d-17eae16aec3f"
+Template: "af84df6a-b5ff-4b6a-996d-17eae16aec3f"
+Path: /sitecore/templates/Foundation/Enumerations/Folders/Email Frequency Folder/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{A580D907-62FA-4935-84C0-8D8591A7D0D4}"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191001T133344Z

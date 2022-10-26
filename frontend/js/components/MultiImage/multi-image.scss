@@ -1,0 +1,109 @@
+@import "../../../scss/variables/_breakpoints.scss";
+@import "../../../scss/variables/_mixins.scss";
+@import "../../../scss/variables/_quantity-queries.scss";
+
+$multi-image__bp-stack: 600px;
+$multi-image__grid-space: 30px;
+
+.multi-image {
+  // @include component-whitespace();
+}
+
+.multi-image__title {
+  margin-bottom: 30px;
+}
+
+.multi-image__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: -$multi-image__grid-space;
+  margin-left: -$multi-image__grid-space;
+}
+
+.multi-image__caption {
+  max-width: 700px;
+  margin-top: 15px;
+
+  @media (max-width: $bp-x-small-max) {
+    display: none;
+  }
+}
+
+.multi-image__image {
+  max-width: 100%;
+  margin-top: $multi-image__grid-space;
+  margin-left: $multi-image__grid-space;
+
+  .image-block__media {
+    border-bottom: none;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  // fix IE flexbox bug to prevent text overflow
+
+  .image-block {
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .image-block__title {
+    display: none;
+  }
+
+  .image-block__media {
+    // hide captions in larger viewports
+
+    figcaption {
+      display: none;
+    }
+  }
+
+  @media (min-width: $bp-large-min) {
+
+    @include exactly(3) {
+      width: calc(33.333% - #{$multi-image__grid-space});
+    }
+    width: calc(50% - #{$multi-image__grid-space});
+  }
+
+  @media (min-width: $bp-x-small-min) {
+    width: calc(50% - #{$multi-image__grid-space});
+  }
+
+  @media (max-width: $multi-image__bp-stack) {
+    width: 100%;
+    margin-right: 0;
+
+    .image-block__media {
+      figcaption {
+        display: block;
+      }
+    }
+  }
+}
+
+// 70-column
+
+.container--70-30 .container__col:first-child,
+.container--30-70 .container__col:last-child {
+  .multi-image__image {
+    @media (max-width: $bp-x-large-max) {
+      width: 100%;
+    }
+  }
+}
+
+// 30-column and 50-column
+
+.container--70-30 .container__col:last-child,
+.container--30-70 .container__col:first-child,
+.container--50-50 .container__col {
+  .multi-image__image {
+    width: 100%;
+  }
+}

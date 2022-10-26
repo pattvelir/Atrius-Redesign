@@ -1,0 +1,25 @@
+﻿<?xml version="1.0"?>
+<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
+  <sitecore>
+    <pipelines>
+      <interfaceFactory>
+        <processor patch:before="*[1]" type="Thread.Project.Graybox.Pipelines.InterfaceFactory.EventDetailPageItemIListableProcessor,Thread.Project.Graybox" />
+      </interfaceFactory>
+    </pipelines>
+    <sites>
+      <site name="shell">
+        <patch:attribute name="enableItemLanguageFallback">true</patch:attribute>
+      </site>
+      <site name="website">
+        <patch:attribute name="rootPath">/sitecore/content/Thread Graybox</patch:attribute> 
+        <patch:attribute name="hostName">${Site.Website.Domain}</patch:attribute> 
+        <patch:attribute name="targetHostName">${Site.Website.Domain}</patch:attribute> 
+				<patch:attribute name="primaryArea">Graybox</patch:attribute> 
+        <patch:attribute name="scheme">${Site.Protocol}</patch:attribute> 
+        <patch:attribute name="loginPage">/login</patch:attribute> 
+        <patch:attribute name="dictionaryDomain">Default</patch:attribute>
+        <patch:attribute name="enableItemLanguageFallback">true</patch:attribute>
+      </site>
+    </sites>
+  </sitecore>
+</configuration>

@@ -1,0 +1,19 @@
+﻿---
+ID: "3e0b08e1-a588-44d2-9e29-f1a9fe85796e"
+Parent: "433d4a3c-a6df-4514-b3b9-8d943b65538a"
+Template: "95e5e5ef-6382-4bf8-979e-65f9e46da42d"
+Path: /sitecore/templates/Branches/Project/Demo/Sites/New Demo Site/$name/Configuration/Navigation
+DB: master
+SharedFields:
+- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
+  Hint: __Security
+  Value: |
+    ar|sitecore\Sitecore Content Author Content Access|pe|-item:delete|-item:rename|
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161006T155146Z

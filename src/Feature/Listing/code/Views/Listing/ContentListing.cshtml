@@ -1,0 +1,49 @@
+﻿@using System.Web.Mvc.Html
+@using Thread.Foundation.Dictionary.Repositories
+@using Thread.Foundation.Mvc.Extensions
+@model Thread.Feature.Listing.Models.ContentListingModel
+
+@if (Sitecore.Context.PageMode.IsExperienceEditorEditing || Model.VisibleListItems.Any())
+{
+  <section class="content-list">
+    <div class="content-list__default">
+      @if (Html.Sitecore().HasValueOrEditing(Model.Datasource.Title))
+      {
+        <h2 class="content-list__heading" id="contentlist-@Model.Datasource.ID">@Html.Sitecore().Field(Model.Datasource.Title)</h2>
+      }
+      <ul class="content-list__list" aria-labelledby="contentlist-@Model.Datasource.ID">
+        @if (Sitecore.Context.PageMode.IsExperienceEditorEditing && !Model.VisibleListItems.Any())
+        {
+          <li>There are no list items to display.</li>
+        }
+        @foreach (var item in Model.VisibleListItems)
+        {
+          <li class="content-list__item">
+            @Html.Partial("~/Views/Listing/_ContentListItem.cshtml", item)
+          </li>
+        }
+      </ul>
+    </div>
+    @if (Model.HiddenListItems.Any())
+    {
+      <div class="@(Sitecore.Context.PageMode.IsExperienceEditorEditing ? "content-list__default" : "content-list__overflow js-list-item-overflow")">
+        <ul class="content-list__list js-accordion-content" aria-labelledby="contentlist-@Model.Datasource.ID">
+          @foreach (var item in Model.HiddenListItems)
+          {
+            <li class="content-list__item">
+              @Html.Partial("~/Views/Listing/_ContentListItem.cshtml", item)
+            </li>
+          }
+        </ul>
+        @if (!Sitecore.Context.PageMode.IsExperienceEditorEditing)
+        {
+        <div class="content-list__more">
+          <button type="button" class="content-list__more btn btn--ghost js-accordion-link">@Dictionary.Current.Get("Listing.ContentListing.ViewAll")</button>
+        </div>
+        }
+      </div>
+
+     
+    }
+  </section>
+}

@@ -1,0 +1,13 @@
+.collapse-pane {
+}
+
+.collapse-pane__content {
+  overflow-y: hidden;
+  transition: height 0.3s ease-out;
+}
+
+.collapse-pane--well {
+  .collapse-pane__content {
+    width: 100%;
+  }
+}

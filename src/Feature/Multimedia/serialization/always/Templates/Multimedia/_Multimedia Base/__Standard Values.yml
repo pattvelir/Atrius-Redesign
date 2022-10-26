@@ -1,0 +1,23 @@
+﻿---
+ID: "e5a0b7f0-f0be-40d9-a560-6c42110af1d9"
+Parent: "be629c54-8937-4711-87f7-edeebbf69096"
+Template: "be629c54-8937-4711-87f7-edeebbf69096"
+Path: /sitecore/templates/Feature/Multimedia/_Multimedia Base/__Standard Values
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200917T095232Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

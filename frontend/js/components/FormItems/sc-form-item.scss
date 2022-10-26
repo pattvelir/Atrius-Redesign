@@ -1,0 +1,273 @@
+@import "../../../scss/variables/_colors.scss";
+@import "../../../scss/variables/_breakpoints.scss";
+
+/* css colors */
+$c-bd-error: #d01500;
+$c-bd-warning: $c-theme-secondary;
+
+$c-font-error: #d01500;
+$c-font-success: $c-theme-secondary;
+$c-font-warning: $c-theme-secondary;
+
+$base-body-color: $grey-700 !default;
+
+.sc-form-item {
+  position: relative;
+  display: block;
+  margin-top: 40px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &.sc-form-item--full-width {
+    width: 100%;
+  }
+}
+
+.sc-form-item__label {
+  display: block;
+  margin-bottom: 0.5em;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.sc-form-item--optional .sc-form-item__label::after {
+  content: " (optional)";
+}
+
+.sc-form-item__field {
+  min-height: 48px;
+  width: 100%;
+  padding: 10px 12px;
+
+  color: $base-body-color;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  border: 1px solid $base-border-color;
+  border-radius: 1px;
+  box-shadow: none;
+
+  &[readonly] {
+  }
+}
+
+.sc-form-item.has-warning .sc-form-item__field:not([readonly]) {
+  border: 2px solid $c-bd-warning;
+}
+
+.sc-form-item__field.input-validation-error,
+.sc-form-item.has-error .sc-form-item__field:not([readonly]) {
+  border: 2px solid $c-bd-error;
+}
+
+.sc-form-item__show-password {
+  display: table;
+  margin-top: 5px;
+  margin-left: auto;
+}
+
+.sc-form-item__error-msg {
+  display: none;
+  margin-top: 12px;
+
+  color: $c-font-warning;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 22px;
+
+  &.has-error,
+  .has-error & {
+    color: $c-font-error;
+  }
+}
+
+.sc-form-item__field.input-validation-error ~ .sc-form-item__error-msg {
+  color: $c-font-error;
+}
+
+.sc-form-item__field.input-validation-error ~ .sc-form-item__error-msg,
+.sc-form-item__error-msg.has-error,
+.sc-form-item.has-error .sc-form-item__error-msg {
+  display: block;
+}
+
+.sc-form-item__general-error {
+  margin-bottom: 20px;
+
+  text-align: center;
+}
+
+.sc-form-item__field[readonly] ~ .sc-form-item__error-msg {
+  display: none;
+}
+
+.sc-form-item__helper-text {
+  display: flex;
+  margin-top: 12px;
+
+  color: $grey-500;
+
+  .icon {
+    height: 32px;
+    width: 32px;
+    margin-right: 12px;
+  }
+
+  span {
+    width: calc(100% - 32px - 16px);
+  }
+}
+
+// ********************* Start Checkbox ****************** //
+
+.sc-form-item--checkbox,
+.sc-form-item--radio {
+  position: relative;
+  padding-left: 35px;
+
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+}
+
+.sc-form-item--checkbox .sc-form-item__field,
+.sc-form-item--radio .sc-form-item__field {
+  position: absolute;
+  height: 1px;
+  min-height: 1px;
+  width: 1px;
+  opacity: 0;
+}
+
+.sc-form-item--checkbox .sc-form-item__label,
+.sc-form-item--radio .sc-form-item__label {
+  display: block;
+  padding-top: 4px;
+
+  font-weight: 400;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    border: 2px solid $grey-400;
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    top: 12px;
+    left: 5px;
+    height: 0;
+    width: 0;
+    border-bottom: 2px solid $c-theme-primary;
+    border-left: 2px solid $c-theme-primary;
+    content: "";
+    opacity: 0;
+    transform: rotate(-45deg);
+    transform-origin: left top;
+    transition: height 250ms ease, width 250ms ease 250ms;
+  }
+}
+
+.sc-form-item--radio .sc-form-item__label {
+  &::before {
+    border-radius: 50%;
+  }
+
+  &::after {
+    top: 14px;
+    left: 14px;
+    height: 0em;
+    width: 0em;
+    background: $c-theme-primary;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transform-origin: center;
+    transition: all 250ms;
+  }
+}
+
+.sc-form-item--checkbox input:focus ~ .sc-form-item__label::before,
+.sc-form-item--radio input:focus ~ .sc-form-item__label::before {
+  outline: highlight auto 5px;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+.sc-form-item--checkbox
+  .sc-form-item__field:checked
+  + .sc-form-item__label::after {
+  height: 0.5em;
+  width: 1em;
+  opacity: 1;
+}
+
+.sc-form-item--radio
+  .sc-form-item__field:checked
+  + .sc-form-item__label::after {
+  top: 5px;
+  left: 5px;
+  height: 1em;
+  width: 1em;
+  opacity: 1;
+}
+// ******************* End Checkbox ***************** //
+
+// ******************* Start Textarea *************** //
+
+.sc-form-item--textarea {
+}
+
+.sc-form-item__field--textarea {
+  min-height: 200px;
+}
+
+// ********** End Textarea ************* //
+
+// *********  Start Select ************* //
+
+.select-form-item {
+}
+
+.select-form-item__input-wrapper {
+  position: relative;
+
+  input:not([type="hidden"]) + & {
+    display: none;
+  }
+
+  &::after {
+    position: absolute;
+    right: 16px;
+    bottom: 20px;
+    height: 0.75em;
+    width: 0.75em;
+    border-bottom: 3px solid currentColor;
+    border-right: 3px solid currentColor;
+    content: "";
+    pointer-events: none;
+    transform: rotate(45deg);
+  }
+}
+
+.select-form-item__field {
+  padding-right: 35px;
+
+  line-height: 30px;
+  appearance: none;
+}
+
+/* for IE and Edge */
+
+.select-form-item__field:disabled::-ms-expand,
+.select-form-item__field::-ms-expand {
+  display: none;
+}
+
+// ********** End Select *********** //

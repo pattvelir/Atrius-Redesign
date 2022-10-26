@@ -1,0 +1,27 @@
+﻿---
+ID: "27931ec1-5647-468d-aabb-376484531767"
+Parent: "7419f6ee-dfa6-48a7-a73b-3166d9c36aa7"
+Template: "7419f6ee-dfa6-48a7-a73b-3166d9c36aa7"
+Path: /sitecore/templates/Foundation/Forms/Email/Email Templates Folder/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{1EB19B8D-905F-4FD3-BF38-0E50C5958954}"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190515T194756Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

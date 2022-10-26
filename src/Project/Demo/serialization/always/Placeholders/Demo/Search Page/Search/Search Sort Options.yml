@@ -1,0 +1,22 @@
+﻿---
+ID: "71cb8ffc-dc5c-4a38-a67f-692ef21ddebc"
+Parent: "3558c6b3-0292-4969-b0d7-906c8335f33d"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/Project/Demo/Search Page/Search/Search Sort Options
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: 
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: "{81285635-4D67-463E-85EB-D32C0EF93160}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170111T135556Z

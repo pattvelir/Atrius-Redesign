@@ -1,0 +1,22 @@
+﻿---
+ID: "820ab29c-3b01-4d36-8c40-b82ca48f6c1e"
+Parent: "e1cd2909-09d2-48c2-a0ef-fda47d43dca3"
+Template: "fed6a14f-0d05-4e18-b160-17c0588a2005"
+Path: /sitecore/layout/Models/Feature/Promo/Pull Quote
+DB: master
+SharedFields:
+- ID: "ee9e23d2-181d-4172-a929-0e0b8d10313c"
+  Hint: Model Type
+  Value: Thread.Feature.Promo.Models.PullQuoteModel,Thread.Feature.Promo
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200812T124301Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

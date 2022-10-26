@@ -1,0 +1,25 @@
+﻿---
+ID: "81c63ec4-15aa-4280-8379-9a83ae14e4f2"
+Parent: "a2713705-4bdb-4093-9690-553082efa93a"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/Robots/Robots Configuration/Robots Configuration/Robots Text
+DB: master
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Multi-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Fields:
+  - ID: "577f1689-7de4-4ad2-a15f-7fdc1759285f"
+    Hint: __Long description
+    Value: Updates the robots. txt file that tells web robots (most often search engines) which pages on your site to crawl. It also tells web robots which pages not to crawl. 
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190429T155900Z

@@ -1,0 +1,60 @@
+@import "../../../../../scss/variables/_breakpoints.scss";
+@import "../../../../../scss/variables/_colors.scss";
+@import "../../../../../scss/variables/_variables.scss";
+
+.filter-bar {
+  padding: 16px 0 0;
+}
+
+.filter-bar__clear-button {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.filter-bar__title {
+  @media (max-width: $bp-medium-max) {
+    display: none;
+  }
+}
+
+.filter-bar__toggle-btn {
+  @media (min-width: $bp-medium-min) {
+    display: none;
+  }
+
+  .filter-bar:not(.filter-bar--flyout) & {
+    display: none;
+  }
+}
+
+.filter-bar__menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  gap: 10px;
+
+  .filter-bar--flyout &:not(.is-open) {
+    display: none;
+  }
+
+  @media (min-width: $bp-medium-min) {
+    margin-top: 0;
+
+    .filter-bar--flyout &:not(.is-open) {
+      display: flex;
+    }
+  }
+}
+
+.filter-bar__filter-menus {
+  @media (min-width: $bp-medium-min) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    .container__col--30 & {
+      flex-direction: column;
+    }
+  }
+}

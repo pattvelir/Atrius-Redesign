@@ -1,0 +1,37 @@
+﻿@using Sitecore.Caching
+@using Thread.Feature.Multimedia.Extensions
+@using Thread.Foundation.Mvc.Extensions
+@using Thread.Foundation.ResponsiveImages.Extensions
+@using Thread.Foundation.ResponsiveImages.Extensions.Markers
+@model Thread.Feature.Multimedia.Models.ImageModel
+
+@if (Html.Sitecore().HasValueOrEditing(Model.Datasource.Image))
+{
+
+  bool hasCaption = Html.Sitecore().HasValueOrEditing(Model.Datasource.Caption);
+<section class="image-block">
+  @if (Html.Sitecore().HasValueOrEditing(Model.Datasource.Title))
+  {
+    <h2 class="image-block__title subheader3">@Html.Sitecore().Field(Model.Datasource.Title)</h2>
+  }
+  <figure class="image-block__media">
+    @{
+      HtmlString image = Html.Sitecore().Field(Model.Datasource.Image, new SrcSetList(), new { sizes = "(min-width: 1290px) 1290px, 100vw" });
+      if (hasCaption)
+      {
+        @image.ClearAltTagFromImgNodes()
+      }
+      else
+      {
+        @image
+      }
+    }
+  </figure>
+ @if (hasCaption)
+    {
+      <figcaption class="image-block__caption caption">
+        <div class="image-block__description">@Html.Sitecore().Field(Model.Datasource.Caption)</div>
+      </figcaption>
+    }
+</section>
+}

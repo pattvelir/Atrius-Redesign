@@ -1,0 +1,52 @@
+@import "../../../scss/variables/_colors.scss";
+@import "../../../scss/variables/_breakpoints.scss";
+
+.global-footer {
+  .container--connect {
+    background-color: $grey-200;
+  }
+
+  .site-logo {
+    clear: both;
+    margin-bottom: 32px;
+  }
+
+  .site-logo__link {
+    max-width: 112px;
+  }
+
+  @media (max-width: $bp-large-max) {
+    .site-logo {
+      margin-right: auto;
+      margin-left: auto;
+
+      text-align: center;
+    }
+
+    .site-logo__link {
+      max-width: 66px;
+    }
+  }
+
+
+
+  .copyright,
+  .footer-links {
+    display: block;
+    margin-bottom: 16px;
+
+    text-align: center;
+  }
+
+  @media (min-width: $bp-large-min) {
+    .copyright {
+      float: left;
+    }
+
+    .footer-links {
+      float: right;
+
+      text-align: right;
+    }
+  }
+}

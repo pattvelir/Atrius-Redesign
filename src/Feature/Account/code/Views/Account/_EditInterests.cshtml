@@ -1,0 +1,60 @@
+﻿@using Thread.Foundation.Dictionary.Statics
+@using Thread.Foundation.Dictionary.Repositories
+@using Thread.Foundation.Mvc.Extensions
+@using Thread.Foundation.Theme.Extensions
+@model Thread.Feature.Account.Models.MemberInterestsModel
+
+<fieldset class="account-form__fieldset interest__fieldset">
+    <div class="account-form__field-group">
+        <legend class="form-legend">
+            <span class="form-legend__legend-heading">
+                @Html.Raw(EditableTranslate.Text("Account.Interests.InterestsSubtitle"))
+            </span>
+            <div class="form-legend__legend-description">
+                @Html.Raw(EditableTranslate.Text("Account.Interests.InterestsDescription"))
+            </div>
+            @if (!string.IsNullOrEmpty(Dictionary.Current.Get("Account.Interests.InterestsMessage")))
+            {
+                <div class="form-legend__legend-message">
+                    @Html.RenderSvg("check-square")
+                    <div class="form-legend__legend-message-body">
+                        @Html.Raw(EditableTranslate.Text("Account.Interests.InterestsMessage"))
+                    </div>
+                </div>
+            }
+        </legend>
+        <div class="account-form__fields account-form__fields--50-50 @(Model.InterestItems.Count > 1 ? "account-form__fields--strech-inputs" : string.Empty)">
+            @foreach (var interestSection in Model.InterestItems)
+            {
+                <div class="interest__group js-interests-group">
+                    <div class="interest__title">
+                        @interestSection.Key
+                    </div>
+                    <div class="interests__input-row js-group">
+                        @{
+                            foreach (var interest in interestSection.Value)
+                            {
+                                <div class="interest__input">
+                                    <label class="sc-form-item sc-form-item--checkbox sc-form-item--optional ">
+                                        <input type="checkbox" id="@interest.Id" name="@interest.Id" class="sc-form-item__field" data-is-dirty="false" @(interest.Selected ? "checked" : string.Empty) />
+                                        <div class="sc-form-item__label">@interest.Name</div>
+                                        <span role="alert" class="sc-form-item__error-msg"></span>
+                                    </label>
+                                </div>
+                            }
+                        }
+                    </div>
+                    <div class="interest__selectGroup">
+                        <div class="js-select-all interest__select-all">
+                            <label class="sc-form-item sc-form-item--checkbox sc-form-item--optional ">
+                                <input type="checkbox" id="@interestSection.Key-select-all" name="@interestSection.Key-select-all" class="sc-form-item__field">
+                                <div class="sc-form-item__label">Select All</div>
+                                <span role="alert" class="sc-form-item__error-msg"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</fieldset>

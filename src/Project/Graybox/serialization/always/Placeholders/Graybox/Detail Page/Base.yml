@@ -1,0 +1,14 @@
+﻿---
+ID: "fb95366b-8c2e-49de-90a0-b6d9eb422817"
+Parent: "6906a0da-9932-4d8d-ac41-360f46edc33b"
+Template: "c3b037a0-46e5-4b67-ac7a-a144b962a56f"
+Path: /sitecore/layout/Placeholder Settings/Project/Graybox/Detail Page/Base
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161110T145057Z

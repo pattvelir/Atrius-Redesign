@@ -1,0 +1,171 @@
+@import "../../../scss/variables/_breakpoints.scss";
+@import "../../../scss/variables/_mixins.scss";
+@import "../../../scss/variables/_colors.scss";
+
+.youtube-video {
+  position: relative;
+  display: block;
+  width: 100%;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+  }
+}
+
+.youtube-video--video-started {
+  iframe {
+    visibility: visible;
+  }
+}
+
+.youtube-video__video-wrapper {
+  position: relative;
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.youtube-video__poster-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+
+  color: $white;
+  border: none;
+  cursor: pointer;
+  outline: 0;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    height: 60px;
+    width: 60px;
+
+    background: rgba($black, 0.5);
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    content: "";
+    transform: translate(-50%, -50%);
+    transition: background 500ms, border-color 500ms;
+
+    @media (min-width: $bp-small-min) {
+      height: 105px;
+      width: 105px;
+    }
+
+    @media (min-width: $bp-medium-min) {
+      height: 100px;
+      width: 100px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    height: 0;
+    width: 0;
+    border-color: transparent transparent transparent currentColor;
+    border-style: solid;
+    border-width: 15px 0 15px 22px;
+    content: "";
+    //the play button doesnt look centered at -50, -50
+    transform: translate(-37%, -50%);
+    transition: border-color 500ms;
+
+    @media (min-width: $bp-small-min) {
+      border-width: 20px 0 20px 31px;
+    }
+
+    @media (min-width: $bp-medium-min) {
+      border-width: 25px 0 25px 40px;
+    }
+  }
+
+  &:focus,
+  &:hover {
+    &::before {
+      background-color: $grey-700;
+      border-color: $grey-700;
+    }
+
+    &::after {
+      border-color: transparent transparent transparent $white;
+    }
+  }
+
+  &:focus {
+    &::before {
+      box-shadow: 0 0 0 2px $grey-700;
+    }
+  }
+
+  .youtube-video--video-started & {
+    display: none;
+  }
+}
+.youtube-video__poster-button--dark {
+  color: $black;
+
+  &::before {
+    background-color: rgba($white, 0.5);
+  }
+
+  &:focus,
+  &:hover {
+    &::before {
+      background-color: $white;
+      border-color: $white;
+    }
+
+    &::after {
+      border-color: transparent transparent transparent $black;
+    }
+  }
+
+  &:focus {
+    &::before {
+      box-shadow: 0 0 0 2px $white;
+    }
+  }
+}
+
+.youtube-video__poster-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.youtube-video__caption {
+  max-width: 700px;
+  padding-top: 10px;
+  padding-bottom: 35px;
+
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.youtube-video__credit {
+  padding-left: 0.3rem;
+
+  @media (max-width: $bp-x-small-max) {
+    padding-left: 0;
+  }
+}

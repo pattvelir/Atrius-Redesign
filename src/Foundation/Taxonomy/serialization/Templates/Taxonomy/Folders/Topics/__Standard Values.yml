@@ -1,0 +1,25 @@
+﻿---
+ID: "fcf281c8-7e5d-45ce-bc4f-688574549435"
+Parent: "eb1141d0-72e9-4c69-91d2-4ea395f3574b"
+Template: "eb1141d0-72e9-4c69-91d2-4ea395f3574b"
+Path: /sitecore/templates/Thread/Foundation/Taxonomy/Folders/Topics/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {9BBBC5F7-8322-4D98-966F-D1C3EB92BB3E}
+    {EB1141D0-72E9-4C69-91D2-4EA395F3574B}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161108T203533Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

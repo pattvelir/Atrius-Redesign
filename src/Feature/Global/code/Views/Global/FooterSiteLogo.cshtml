@@ -1,0 +1,21 @@
+﻿@using Sitecore.Resources.Media
+@using Thread.Feature.Global
+@using Thread.Foundation.ResponsiveImages.Extensions
+@using Thread.Foundation.ResponsiveImages.Extensions.Markers
+@model _FooterLogoItem
+
+@if (Html.Sitecore().HasValue(_FooterLogoItem.FieldIds.FooterLogo) || Sitecore.Context.PageMode.IsExperienceEditor)
+{
+  <div class="site-logo">
+    <a class="site-logo__link" href="/">
+      @if (Html.Sitecore().HasValue(_FooterLogoItem.FieldIds.FooterLogo) || Sitecore.Context.PageMode.IsExperienceEditor)
+      {
+        @Html.Sitecore().Field(@Model.FooterLogo, new SrcSetList(112,66), new {sizes="(min-width: 910px) 112px, 66px"})
+      }
+    </a>
+    @if (Html.Sitecore().HasValue(_FooterLogoItem.FieldIds.FooterBrandingTitle) || Sitecore.Context.PageMode.IsExperienceEditor)
+    {
+      <span class="site-logo__title">@Html.Sitecore().Field(_FooterLogoItem.FieldIds.FooterBrandingTitle)</span>
+    }
+  </div>
+}

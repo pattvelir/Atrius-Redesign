@@ -1,0 +1,21 @@
+﻿---
+ID: "a819c487-211d-42d5-a4e8-93894e27d295"
+Parent: "6059ab8f-146d-475a-97a3-7bf34e3accfe"
+Template: "03f0a1d9-afa6-48d1-8db1-9b2195733caf"
+Path: /sitecore/templates/Branches/Project/Graybox/Sites/New Site with Login/$name/Configuration/Enumerations/Number of Columns/1
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0dc82897-5b0f-47ce-87bd-6957ab817afa"
+      Hint: Value
+      Value: 1
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170202T214238Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

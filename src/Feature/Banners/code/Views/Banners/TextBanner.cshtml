@@ -1,0 +1,29 @@
+﻿@using Sitecore.StringExtensions
+@using Thread.Foundation.Dictionary.Statics
+@using Thread.Foundation.Mvc.Extensions
+@model Thread.Feature.Banners.Models.TextBannerModel
+
+@if (Html.Sitecore().HasValueOrEditing(Model.Datasource.Title))
+{
+  <section class="text-banner container @Model.ThemeClass @Model.ExcludeTopMarginClass">
+    <div class="text-banner__container container">
+      @if (Html.Sitecore().HasValueOrEditing(Model.Datasource.Title))
+      {
+          <h2 class="text-banner__title" id="textbanner-@Model.Datasource.ID">@Html.Sitecore().Field(Model.Datasource.Title)</h2>
+      }
+      @if (Html.Sitecore().HasValueOrEditing(Model.Datasource.Subtitle))
+      {
+          <p class="text-banner__description">@Html.Sitecore().Field(Model.Datasource.Subtitle)</p>
+      }
+      @if (Html.Sitecore().HasValueOrEditing(Model.Datasource.Link))
+      {
+          @Html.Sitecore().BeginField(Model.Datasource.Link, new { haschildren = !Sitecore.Context.PageMode.IsExperienceEditorEditing && Model.Datasource.Link.Text.IsNullOrEmpty(), @class = "text-banner__cta btn btn--primary", aria_labelledby = "textbanner-" + Model.Datasource.ID })
+          if (!Sitecore.Context.PageMode.IsExperienceEditorEditing && Model.Datasource.Link.Text.IsNullOrEmpty())
+          {
+            @Html.Raw(EditableTranslate.Text("Banners.TextBanner.ReadMore"))
+          }
+          @Html.Sitecore().EndField()
+      }
+    </div>
+  </section>
+}

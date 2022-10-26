@@ -1,0 +1,20 @@
+.simple-list {
+}
+
+.simple-list__item {
+  & + & {
+    margin-top: 24px;
+  }
+
+  .list-item__media {
+    position: relative;
+    max-width: min(30vw, 220px);
+    margin-right: 32px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

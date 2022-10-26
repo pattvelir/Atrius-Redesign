@@ -1,0 +1,18 @@
+﻿---
+ID: "9678aeb1-69ee-4b3a-a934-7261077bdcba"
+Parent: "b9c5d243-921d-45e3-833b-8c4ee3fca798"
+Template: "b18df9d2-c961-4a98-af57-bc75d4cf025c"
+Path: /sitecore/system/Modules/Search/Enumerations
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170111T133504Z

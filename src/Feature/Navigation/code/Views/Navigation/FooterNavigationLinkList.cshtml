@@ -1,0 +1,44 @@
+﻿@using Thread.Foundation.Mvc.Extensions
+@using Thread.Foundation.PageEditor.Reference
+@model Thread.Feature.Navigation.Models.FooterNavigationLinksColumnModel
+
+@{
+	int itemsPerCol = 0;
+	int countdown = 0;
+	if (Model != null)
+	{
+		itemsPerCol = (Model.NumberOfColumns > 0) ? (int) Math.Ceiling((double) Model.Links.Count()/(double) Model.NumberOfColumns) : 0;
+		countdown = Model.NumberOfColumns;
+	}
+}
+@if (Sitecore.Context.PageMode.IsExperienceEditorEditing && itemsPerCol <= 0)
+{
+    <ul class="footer-nav__col">
+        <li>No Footer Links have been created.</li>
+    </ul>
+}
+else if (Model != null && itemsPerCol > 0)
+{
+	int linkstart = 0;
+	while(countdown > 0)
+	{
+		<ul class="footer-nav__col" aria-labelledby="@Model.LinkColumnHeader.Title.Value-@Model.LinkColumnHeader.ID.ToString()">
+			@foreach (var link in Model.Links.Skip(linkstart).Take(itemsPerCol))
+			{
+				if (Html.Sitecore().HasValueOrEditing(link.Link))
+				{
+					<li>
+						@using (Html.EditFrame(link, Constants.EditFrameButtons.ChildItems, "Edit Item"))
+						{
+							@Html.Sitecore().Field(link.Link)
+						}
+					</li>
+				}
+			}
+		    @{
+		        linkstart += itemsPerCol;
+		        countdown--;
+		    }
+		</ul>
+	}
+}

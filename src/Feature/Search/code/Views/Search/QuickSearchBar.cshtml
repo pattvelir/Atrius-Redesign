@@ -1,0 +1,56 @@
+﻿@using System.Web.Mvc.Html
+@using Sitecore.Mvc
+@using Thread.Foundation.Dictionary.Repositories
+@using Thread.Foundation.Theme.Extensions
+@model Thread.Feature.Search.Models.QuickSearchBarModel
+
+@if (Model != null)
+{
+	<div class="search-menu js-search-menu" role="search" aria-label="Global">
+		<button
+			type="button"
+			class="search-menu__button js-search-menu-button"
+	>
+			<span class="search-menu__open">
+				@{
+					string openTitle = Thread.Foundation.Dictionary.Repositories.Dictionary.Current.Get("Search.QuickSearchBar.OpenTitle");
+				}
+				@Html.RenderSvg("search", "", openTitle)
+			</span>
+			<span class="search-menu__close">
+				@{
+					string closeTitle = Thread.Foundation.Dictionary.Repositories.Dictionary.Current.Get("Search.QuickSearchBar.CloseTitle");
+				}
+				@Html.RenderSvg("close", "", closeTitle)
+			</span>
+		</button>
+		<div class="search-menu__drop-down js-search-menu-content">
+			<div class="search-menu__inner-container">
+
+
+
+				@using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post, new Dictionary<string, object> { { "class", "search-box" }, { "novalidate", "" }, {"role", "search"} }))
+				{
+					@Html.AntiForgeryToken()
+					@Html.Sitecore().FormHandler("Search", "QuickSearchBarSubmit")
+					<div class="search-box__input">
+						@Html.HiddenFor(model => model.SearchPageUrl)
+						@{
+							var textboxId = "keyword-" + Guid.NewGuid();
+						}
+						@Html.LabelFor(model => model.Keyword, Dictionary.Current.Get("Search.QuickSearchBar.Label"), new { id = textboxId, @class = "u-visuallyhidden" })
+
+						@* No Html.Helper for type="search" so using raw HTML. Not clear how to replicate `model=>model.Keyword` so using
+							raw output. *@
+						<input type="search" name="Keyword" id="@textboxId" placeholder="@Dictionary.Current.Get("Search.QuickSearchBar.Placeholder")" />
+						<button type="submit" class="search-box__button">
+							<span class="u-visuallyhidden">@Dictionary.Current.Get("Search.QuickSearchBar.ButtonLabel")</span>
+							@Html.RenderSvg("search")
+						</button>
+					</div>
+				}
+			</div>
+		</div>
+	</div>
+
+}

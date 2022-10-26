@@ -1,0 +1,22 @@
+export default {
+  query: {
+    q: null,
+    sortBy: "relevance",
+    sortOrder: "asc",
+    page: 1,
+    perPage: 10,
+    pageId: "",
+    loadAllPages: true,
+    date: null,
+    showDates: false,
+    showContentTypes: false,
+    showSummaries: false,
+    listingId: "",
+    showImages: 1,
+  },
+  pagination: false,
+  preSelectedFacets: {},
+  sorters: [],
+  url: "/api/dynamiccontentlisting",
+  featuredUrl: "/api/featuredresults",
+};

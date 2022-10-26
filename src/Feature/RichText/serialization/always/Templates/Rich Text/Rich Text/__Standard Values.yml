@@ -1,0 +1,23 @@
+﻿---
+ID: "d7660444-3aa6-4bbb-98de-2d38209bacc8"
+Parent: "e4076c99-8864-41c9-a691-e628331ab7c5"
+Template: "e4076c99-8864-41c9-a691-e628331ab7c5"
+Path: /sitecore/templates/Feature/Rich Text/Rich Text/__Standard Values
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200914T151438Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

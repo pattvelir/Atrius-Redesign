@@ -1,0 +1,25 @@
+﻿---
+ID: "3b177495-3690-4fdf-8b2d-6777fb66cb0b"
+Parent: "0e8d3193-6621-44f3-8b10-160e221fe41d"
+Template: "0e8d3193-6621-44f3-8b10-160e221fe41d"
+Path: /sitecore/templates/Feature/Promo/Promo Rendering Parameters/__Standard Values
+DB: master
+SharedFields:
+- ID: "3094d236-5985-4c4f-ae6a-e30740885532"
+  Hint: Caching
+  Value: 0|0|0|0|0|0|0|0
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160321T143245Z
+    - ID: "f1a3dbb2-63b6-45ce-a781-9dc3e122ab86"
+      Hint: Orientation
+      Value: "{795FFF70-F8AF-48AB-AEAF-055E312663BE}"

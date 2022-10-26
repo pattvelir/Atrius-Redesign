@@ -1,0 +1,31 @@
+﻿---
+ID: "71dc4a86-4d94-4cc6-bebf-9a5fb7f84883"
+Parent: "cddeb7e7-d67c-48ad-a3f5-df938a89310c"
+Template: "530ae3aa-efbc-4658-9fd0-500b35919b0c"
+Path: /sitecore/templates/Branches/Project/Demo/Pages/Event Detail Page/$name
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{2B292640-87CF-49D0-AE7E-9C57E3E3B5CF}"
+          s:ds="{CB8069B6-B1B6-432B-99FC-72D76259A32B}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190430T125514Z
+    - ID: "4037909f-26bb-42b7-9f37-7cd0b5e941bb"
+      Hint: Start Date
+      Value: $now

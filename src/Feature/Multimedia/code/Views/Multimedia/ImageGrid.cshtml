@@ -1,0 +1,27 @@
+﻿@using Sitecore.Data.Items
+@using Thread.Feature.Multimedia
+@using Thread.Foundation.Mvc.Extensions
+@using Thread.Foundation.PageEditor.Reference
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+<figure role="group" class="multi-image">
+  @if (Html.Sitecore().HasValueOrEditing(ImageGridItem.FieldIds.Title))
+  {
+    <h2 class="multi-image__title">@Html.Sitecore().Field(ImageGridItem.FieldIds.Title)</h2>
+  }
+<div class="multi-image__items" role="group">
+  @foreach (Item child in Model.Item.Children)
+  {
+    using (Html.EditFrame(child, Constants.EditFrameButtons.ChildItems, "Edit Image"))
+    {
+      <div class="multi-image__image">
+        @Html.Sitecore().Rendering("/sitecore/layout/renderings/feature/multimedia/image", new { DataSource = child.ID.ToString(), Parameters = "" })
+      </div>
+    }
+  }
+</div>
+  @if (Html.Sitecore().HasValueOrEditing(ImageGridItem.FieldIds.Caption))
+  {
+    <figcaption class="multi-image__caption">@Html.Sitecore().Field(ImageGridItem.FieldIds.Caption)</figcaption>
+  }
+</figure>

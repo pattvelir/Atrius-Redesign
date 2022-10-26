@@ -1,0 +1,14 @@
+﻿---
+ID: "1e649ecd-1e31-48b2-8ce8-3d1a060f5586"
+Parent: "e17a5c79-ed0a-4f95-8a47-ca76322a3c2c"
+Template: "e17a5c79-ed0a-4f95-8a47-ca76322a3c2c"
+Path: /sitecore/templates/Feature/Navigation/Link Column Header/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160927T185253Z

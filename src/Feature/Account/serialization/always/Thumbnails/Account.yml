@@ -1,0 +1,14 @@
+﻿---
+ID: "31bbefb7-6f5e-40c2-93c0-5696bf014327"
+Parent: "b7e4aaae-1cdb-4701-b58b-83fb708a05ae"
+Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
+Path: /sitecore/media library/Thumbnails/Feature/Account
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190924T161942Z

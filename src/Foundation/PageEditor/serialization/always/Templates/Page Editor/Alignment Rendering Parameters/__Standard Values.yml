@@ -1,0 +1,22 @@
+﻿---
+ID: "ba48b1b1-5d06-46c7-805f-9ff715be8861"
+Parent: "10d2d91c-b35d-4e59-9a1a-50c84f6a075b"
+Template: "10d2d91c-b35d-4e59-9a1a-50c84f6a075b"
+Path: /sitecore/templates/Foundation/Page Editor/Alignment Rendering Parameters/__Standard Values
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160322T170046Z
+    - ID: "63aad3ac-65a1-4e76-a52c-5c054e8e2195"
+      Hint: Align
+      Value: "{8F881180-C4E5-4FBE-8384-94BAE80051E7}"

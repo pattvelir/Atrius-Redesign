@@ -1,0 +1,52 @@
+﻿@using Thread.Feature.Global
+@using Thread.Foundation.Mvc.Extensions
+@model Thread.Feature.Global.Models.FooterConnectModel
+
+@if (Model.HasContent() || Sitecore.Context.PageMode.IsExperienceEditor)
+{
+  <div class="connect">
+    <div class="connect__inner">
+      @if (Html.Sitecore().HasValue(_FooterConnectItem.FieldIds.ConnectStatement) || Sitecore.Context.PageMode.IsExperienceEditor)
+      {
+        <div class="connect__promo-statement">
+          @Html.Sitecore().Field(_FooterConnectItem.FieldIds.ConnectStatement)
+        </div>
+      }
+      <div class="connect__contact">
+        @if (Html.Sitecore().HasValue(_FooterConnectItem.FieldIds.ConnectLink) || Sitecore.Context.PageMode.IsExperienceEditor)
+        {
+          <div class="connect__button">
+            @Html.Sitecore().Field(_FooterConnectItem.FieldIds.ConnectLink, new { @class = "btn btn--primary" })
+          </div>
+        }
+        @if (Html.Sitecore().HasValue(_FooterConnectItem.FieldIds.PhoneNumber) || Sitecore.Context.PageMode.IsExperienceEditor)
+        {
+          <div class="connect__phone">
+            @if (Sitecore.Context.PageMode.IsExperienceEditor)
+            {
+              using (Html.EditFrame(Model.Datasource, "/sitecore/content/Applications/WebEdit/Edit Frame Buttons/Global/Footer Connect", "Edit Touch-to-Call Phone Number"))
+              {
+                @Html.Sitecore().Field(_FooterConnectItem.FieldIds.PhoneNumber)
+              }
+            }
+            else
+            {
+              long touchCall = 0;
+              if (long.TryParse(Model.Datasource.InnerItem.Fields[_FooterConnectItem.FieldIds.TouchToCallPhoneNumber].Value, out touchCall) && touchCall > 0)
+              {
+                <a href="tel:@Html.Sitecore().Field(_FooterConnectItem.FieldIds.TouchToCallPhoneNumber)">@Html.Sitecore().Field(_FooterConnectItem.FieldIds.PhoneNumber)</a>
+              }
+              else
+              {
+                <span>@Html.Sitecore().Field(_FooterConnectItem.FieldIds.PhoneNumber)</span>
+              }
+            }
+          </div>
+        }
+      </div>
+      <div class="connect__social">
+        @Html.Sitecore().Placeholder("footer-social")
+      </div>
+    </div>
+  </div>
+}

@@ -1,0 +1,221 @@
+.filter-select-bar {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 30px;
+
+  @media (max-width: $bp-large-max) {
+    flex-direction: column;
+  }
+
+  @media (max-width: $bp-x-small-max) {
+    background-color: $grey-100;
+  }
+
+  .collapse-pane__content {
+    margin-top: 8px;
+  }
+}
+
+.filter-select-bar__title,
+.filter-select-bar__toggle {
+  margin-right: 1rem;
+  margin-bottom: 0;
+
+  color: $grey-500;
+  font-family: $opensans;
+  font-size: 15px;
+  font-weight: 700;
+  background: 0;
+  border: 0;
+}
+
+.filter-select-bar__title {
+  min-width: 65px; // require a min-width to prevent a abs position shift on the dropdowns. maybe due to flex pixel rounding?
+
+  @media (max-width: $bp-large-max) {
+    margin-bottom: 16px;
+  }
+}
+
+.filter-select-bar__toggle {
+  display: none;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 0;
+
+  span:first-child {
+    display: flex;
+    align-items: center;
+
+    &::after {
+      height: 0;
+      width: 0;
+      margin-top: 3px;
+      margin-left: 6px;
+      border-color: $grey-400 transparent transparent transparent;
+      border-style: solid;
+      border-width: 8px 6px 0;
+      content: "";
+    }
+  }
+
+  span:last-child {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1;
+  }
+}
+
+.is-open .filter-select-bar__toggle::after {
+  transform: rotate(180deg);
+}
+
+@media (max-width: $bp-x-small-max) {
+  .filter-select-bar__title {
+    display: none;
+  }
+
+  .filter-select-bar__toggle {
+    display: flex;
+  }
+}
+
+.filter-select-bar__list-top {
+  margin-bottom: 10px;
+  padding: 0 10px;
+  border-bottom: 1px solid $grey-200;
+
+  .multiselect-list li {
+    padding-left: 0;
+  }
+}
+
+.filter-select-bar__list-label {
+  display: block;
+
+  color: $grey-400;
+  font-size: 10px;
+
+  & + .multiselect-list {
+    margin-bottom: 6px;
+  }
+}
+
+.filter-select-bar__group-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.filter-select-bar__group {
+  margin-right: 20px;
+  margin-bottom: 0;
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  & > button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 180px;
+    padding: 10px;
+
+    color: $grey-500;
+    font-size: 12px;
+    text-align: left;
+    background: none;
+    background-color: $white;
+    border: 1px solid $grey-500;
+    outline: 0;
+
+    .icon {
+      right: 0;
+      height: 0;
+      width: 0;
+      border-color: $grey-500 transparent transparent transparent;
+      border-style: solid;
+      border-width: 6px 6px 0;
+    }
+  }
+
+  .flyout {
+    width: 180px;
+    margin-top: -1px;
+  }
+
+  &.is-open {
+    & > button {
+      border-bottom: none;
+    }
+  }
+
+  &.is-open > button .icon {
+    transform: rotate(180deg);
+  }
+
+  .filter-select-bar__group-label {
+    display: inline-block;
+    max-width: 80%;
+  }
+
+  @media (max-width: $bp-large-max) {
+    padding: 4px 0;
+    border-bottom: 1px solid #f0f0f0;
+
+    &.is-open,
+    &:hover {
+      background-color: transparent;
+      border-bottom: none;
+    }
+  }
+}
+
+.filter-select-bar__clear-group {
+  margin-bottom: 12px;
+  padding: 0;
+
+  color: $grey-500;
+  font-size: 12px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+
+  &:disabled {
+    color: $grey-300;
+  }
+}
+
+@media (max-width: $bp-x-small-max) {
+  .filter-select-bar {
+    .collapse-pane {
+      width: 100%;
+      padding: 0 12px;
+    }
+  }
+
+  .filter-select-bar__group-list {
+    flex-direction: column;
+  }
+
+  .filter-select-bar__group {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 8px;
+
+    .flyout {
+      width: 100%;
+    }
+
+    button {
+      width: 100%;
+
+      text-align: left;
+    }
+  }
+}

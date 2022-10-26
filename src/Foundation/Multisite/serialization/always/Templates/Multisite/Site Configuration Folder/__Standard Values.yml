@@ -1,0 +1,27 @@
+﻿---
+ID: "e014ebc0-2ee3-4e06-8671-0ce1eeb42f5a"
+Parent: "94dba5c9-8b1d-490c-8db3-dcb33f75ce9e"
+Template: "94dba5c9-8b1d-490c-8db3-dcb33f75ce9e"
+Path: /sitecore/templates/Foundation/Multisite/Site Configuration Folder/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{9112014D-54D5-4C5E-B696-92AC51EBB15A}"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160219T205121Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

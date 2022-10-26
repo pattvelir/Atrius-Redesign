@@ -1,0 +1,42 @@
+﻿---
+ID: "fbc0e4ea-1ee4-4aef-b9dc-da082c50010f"
+Parent: "8c29fe9a-318a-43d8-b74d-a2950cabcde9"
+Template: "a5491b5b-9423-4d8a-83cc-05c5b2348ff3"
+Path: /sitecore/client/Applications/FormsBuilder/Components/Layouts/Actions/SecureAccountLink/PageSettings/MapGenericForm/Page
+DB: core
+SharedFields:
+- ID: "0cc7f24b-2013-46c6-8ae3-5233d094ff7c"
+  Hint: StaticData
+  Value: "{0DE95AE4-41AB-4D01-9EB0-67441B7C2450}"
+- ID: "3e079fc3-6b2d-41c9-9204-374a786fc761"
+  Hint: BindingConfiguration
+  Value: pageId=SelectedItemId
+- ID: "4cec56f0-9fe2-4980-8085-62b0a0ab51ec"
+  Hint: Database
+  Value: $context_contentdatabase
+- ID: "a176e7b0-1c0b-4f2e-a494-2df342a75c0e"
+  Hint: IsLabelOnTop
+  Type: Checkbox
+  Value: 1
+- ID: "e0f5c2e5-ea32-4463-aef5-925d4194b4a2"
+  Hint: IsCheckModeEnabled
+  Type: Checkbox
+  Value: 0
+- ID: "e46cf3aa-5ad6-4a61-ad2b-d9d5d6698b7d"
+  Hint: CheckMode
+  Value: Single
+- ID: "e53dd72a-cc21-4771-a6b4-17762365e2b7"
+  Hint: IsRequired
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190509T164229Z
+    - ID: "3885a716-2eed-47ae-9132-32225f0458ff"
+      Hint: FormLabel
+      Value: Page

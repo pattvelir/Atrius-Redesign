@@ -1,0 +1,271 @@
+// This file is using the `_` so it can be included earlier in the bundle to make overrides easier
+
+@import "../../../scss/variables/_colors.scss";
+
+// buttons.scss
+// Define button styles here
+// color variables
+// base
+$base-btn-color: $grey-600 !default;
+$base-btn-bg: lighten($base-btn-color, 50%) !default;
+$base-btn-border: darken($base-btn-bg, 20%) !default;
+$base-btn-color--active: darken($base-btn-color, 10%) !default;
+$base-btn-bg--active: darken($base-btn-bg, 10%) !default;
+$base-btn-border--active: darken($base-btn-border, 10%) !default;
+// primary
+$primary-btn-color: $grey-50 !default;
+$primary-btn-bg: darken($primary-btn-color, 60%) !default;
+$primary-btn-border: darken($primary-btn-color, 60%) !default;
+$primary-btn-color--active: $primary-btn-color !default;
+$primary-btn-bg--active: darken($primary-btn-bg, 10%) !default;
+$primary-btn-border--active: darken($primary-btn-border, 10%) !default;
+// secondary
+$secondary-btn-color: $grey-800 !default;
+$secondary-btn-bg: lighten($secondary-btn-color, 50%) !default;
+$secondary-btn-border: darken($secondary-btn-bg, 20%) !default;
+$secondary-btn-color--active: darken($secondary-btn-color, 10%) !default;
+$secondary-btn-bg--active: darken($secondary-btn-bg, 10%) !default;
+$secondary-btn-border--active: darken($secondary-btn-border, 10%) !default;
+
+// base
+
+.btn {
+  display: inline-block;
+  padding: 6px 9px;
+
+  color: $base-btn-color;
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  text-transform: uppercase;
+  /* Prevent button from inheriting line-height */
+  vertical-align: middle;
+  background-color: $base-btn-bg;
+  border: 1px solid $base-btn-border;
+  cursor: pointer;
+  transition: color 0.35s, background-color 0.35s, border-color 0.35s;
+
+  &:active,
+  &:hover {
+    color: $base-btn-color--active;
+    background-color: $base-btn-bg--active;
+    border-color: $base-btn-border--active;
+    outline: 0;
+  }
+}
+
+.btn--disabled,
+.btn[disabled="true"] {
+  cursor: default;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+// modifiers
+// primary
+
+.btn--primary {
+  color: $primary-btn-color;
+  background-color: $primary-btn-bg;
+  border: 1px solid $primary-btn-border;
+
+  &:active,
+  &:hover {
+    color: $primary-btn-color--active;
+    background-color: $primary-btn-bg--active;
+    border-color: $primary-btn-border--active;
+  }
+}
+
+// primary and disabled
+
+.btn--primary.btn--disabled {
+  opacity: 0.3;
+}
+
+// primary and ghost
+
+.btn--primary.btn--ghost {
+  color: $primary-btn-border;
+
+  &:active,
+  &:hover {
+    color: $primary-btn-border--active;
+  }
+}
+
+// secondary
+
+.btn--secondary {
+  color: $secondary-btn-color;
+  background-color: $secondary-btn-bg;
+  border: 1px solid $secondary-btn-border;
+
+  &:active,
+  &:hover {
+    color: $secondary-btn-color--active;
+    background-color: $secondary-btn-bg--active;
+    border-color: $secondary-btn-border--active;
+  }
+}
+
+// secondary and disabled
+
+.btn--secondary.btn--disabled {
+  opacity: 0.35;
+}
+
+// link and reset
+
+.btn--link,
+.btn--reset {
+  letter-spacing: 0;
+  text-decoration: underline;
+  text-transform: unset;
+  background-color: transparent;
+  border: 0;
+
+  &:active,
+  &:hover {
+    text-decoration: none;
+    background-color: transparent;
+  }
+
+  &[disabled] {
+    color: $grey-400;
+    text-decoration: none;
+    cursor: default;
+  }
+}
+
+// cancel
+
+.btn--cancel {
+  background-color: transparent;
+
+  &:active,
+  &:hover {
+    text-decoration: none;
+    background-color: $grey-400;
+  }
+
+  &[disabled] {
+    color: $grey-400;
+    text-decoration: none;
+    cursor: default;
+  }
+}
+// disabled
+
+.btn--disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+// ghost
+
+.btn--ghost {
+  background-color: transparent;
+
+  &:active,
+  &:hover {
+    background-color: transparent;
+  }
+}
+// btn tags
+
+.btn--tag {
+  padding: 2px 4px;
+
+  font-weight: bold;
+
+  .icon {
+    height: 16px;
+    width: 16px;
+    margin-left: 4px;
+    fill: $base-btn-border;
+    transition: fill 0.35s;
+  }
+
+  &:hover {
+    .icon {
+      fill: $base-btn-color;
+    }
+  }
+}
+
+// btn sorts
+
+.btn--sort {
+  overflow: hidden;
+  background-color: transparent;
+  border: 0;
+}
+// btn icon group
+
+.btn--icon-group {
+  position: relative;
+  padding-right: 24px;
+
+  .btn_icon-group {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+
+    .icon {
+      position: absolute;
+      right: 0;
+      height: 1.846em;
+      max-height: 24px;
+      width: 1.846em;
+      max-width: 24px;
+      visibility: visible;
+      fill: currentColor;
+      opacity: 1;
+      transition: opacity 0.35s;
+
+      &:first-child {
+        bottom: 35%;
+        transform: translateY(35%);
+      }
+
+      &:last-child {
+        top: 35%;
+        transform: translateY(-35%);
+      }
+    }
+  }
+}
+
+.btn--close {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  background: none;
+  border: 0;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    display: block;
+    height: 2px;
+    width: 80%;
+    background: $base-btn-bg;
+    content: "";
+    transform: rotate(-45deg);
+  }
+
+  &::after {
+    transform: rotate(45deg);
+  }
+
+  &:active,
+  &:hover {
+    background: transparent;
+  }
+}

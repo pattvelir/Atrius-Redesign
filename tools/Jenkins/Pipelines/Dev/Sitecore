@@ -1,0 +1,3 @@
+@Library(['PipelineTools','ThreadPipelineTools']) _
+
+JenkinsStandalonePipeline(Environment: 'dev', FeEnv: 'production', SyncUnicorn: true, DeployStorybook: true)

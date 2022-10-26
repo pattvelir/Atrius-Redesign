@@ -1,0 +1,10 @@
+﻿@model Thread.Feature.Metadata.Areas.Thread.Models.IPageMetadata
+
+@if (!string.IsNullOrEmpty(Model.MetaFaviconSrc))
+{
+<link rel="shortcut icon" href="@Model.MetaFaviconSrc">
+}
+@foreach (var tag in Model.MetaTags)
+{
+<meta name="@tag.Key" content="@tag.Value" />
+}

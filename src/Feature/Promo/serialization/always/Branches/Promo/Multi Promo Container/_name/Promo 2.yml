@@ -1,0 +1,21 @@
+﻿---
+ID: "bbb3af9f-a298-43ee-99ba-0a5259f5f43b"
+Parent: "69377971-1a07-44fd-a36b-ff819137433e"
+Template: "4dee566f-614c-4a89-8f0b-00f4b04beab9"
+Path: /sitecore/templates/Branches/Feature/Promo/Multi Promo Container/$name/Promo 2
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161117T202058Z
+    - ID: "72c1bf85-d4e0-4c4a-822d-174391e1333e"
+      Hint: Title
+      Value: Promo 2

@@ -1,0 +1,26 @@
+﻿@using Sitecore.Resources.Media
+@using Thread.Foundation.ResponsiveImages.Extensions
+@using Thread.Feature.Global
+@using Thread.Foundation.ResponsiveImages.Extensions.Markers
+@model _HeaderLogoItem
+
+<div class="site-logo">
+    @if (Html.Sitecore().HasValue(_HeaderLogoItem.FieldIds.HeaderLogoLarge) || Sitecore.Context.PageMode.IsExperienceEditor)
+    {
+        <a href="/">
+            <picture class="site-logo__image">
+                @if (Html.Sitecore().HasValue(_HeaderLogoItem.FieldIds.HeaderLogoLarge))
+                {
+
+                    <source srcset="@Model.HeaderLogoLarge.GetSrcSetWidths(224,112)" media="(min-width: 910px)" sizes="112px"/>
+                }
+                @Html.Sitecore().Field(@Model.HeaderLogoSmall, new SrcSetList(112,66), new {sizes="66px"})
+   
+            </picture>
+        </a>
+    }
+    @if (Html.Sitecore().HasValue(_HeaderLogoItem.FieldIds.HeaderBrandingTitle) || Sitecore.Context.PageMode.IsExperienceEditor)
+    {
+        <span class="site-logo__title">@Html.Sitecore().Field(_HeaderLogoItem.FieldIds.HeaderBrandingTitle)</span>
+    }
+</div>

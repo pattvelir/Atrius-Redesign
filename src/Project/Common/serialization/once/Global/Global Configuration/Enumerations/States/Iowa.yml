@@ -1,0 +1,25 @@
+﻿---
+ID: "626b05db-c6f4-471a-a5a0-4d558e337feb"
+Parent: "116a28c6-3e36-4624-99ad-e825dd826c41"
+Template: "523c7870-f866-4f61-8e96-630405c2907f"
+Path: /sitecore/content/Global Configuration/Enumerations/States/Iowa
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 1600
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "197fd7ed-d7de-4445-a87d-3a6b9e845000"
+      Hint: Value
+      Value: IA
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180613T212832Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

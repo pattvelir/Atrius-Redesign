@@ -1,0 +1,47 @@
+﻿@using Thread.Foundation.Dictionary.Statics
+@using Thread.Foundation.Theme.Extensions
+@model Thread.Feature.Account.Models.MemberProfileModel
+
+<fieldset class="account-form__fieldset">
+    <div class="account-form__field-group">
+        <legend class="form-legend">
+            <span class="form-legend__legend-heading">
+                @Html.Raw(EditableTranslate.Text("Account.Profile.ContactInformation.Subtitle"))
+            </span>
+            <div class="form-legend__legend-description">
+                @Html.Raw(EditableTranslate.Text("Account.Profile.ContactInformation.Description"))
+            </div>
+            <div class="form-legend__legend-message">
+                @Html.RenderSvg("info-circle")
+                <div class="form-legend__legend-message-body">
+                    @Html.Raw(EditableTranslate.Text("Account.Profile.ContactInformation.Message"))
+                </div>
+            </div>
+        </legend>
+        <div class="account-form__fields account-form__fields--50-50">
+
+
+            <label class="sc-form-item js-form-item js-form-required sc-form-item--full-width ">
+                <span class="sc-form-item__label"> @Html.Raw(EditableTranslate.Text("Account.Profile.ContactInformation.EmailLabel"))</span>
+                @Html.TextBoxFor(m => m.EmailAddress, new { @class = "sc-form-item__field js-form-item-field", @readonly = "true", aria_required = "true" })
+                <span role="alert" class="sc-form-item__error-msg">Please enter a valid email address</span>
+
+
+                <div class="sc-form-item__helper-text">
+                    @Html.RenderSvg("info-circle")
+                    <span> @Html.Raw(EditableTranslate.Text("Account.Profile.ContactInformation.EmailDescription"))</span>
+                </div>
+            </label>
+            <label class="sc-form-item js-form-item js-form-required sc-form-item--optional  ">
+                <span class="sc-form-item__label"> @Html.Raw(EditableTranslate.Text("Account.Profile.ContactInformation.PhoneLabel"))</span>
+                @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "sc-form-item__field js-form-item-field" })
+                <span role="alert" class="sc-form-item__error-msg">Please enter a 9 digit phone number</span>
+            </label>
+            <label class="sc-form-item js-form-item js-form-required sc-form-item--optional  ">
+                <span class="sc-form-item__label"> @Html.Raw(EditableTranslate.Text("Account.Profile.ContactInformation.PhoneExtLabel"))</span>
+                @Html.TextBoxFor(m => m.PhoneExtension, new { @class = "sc-form-item__field js-form-item-field" })
+                <span role="alert" class="sc-form-item__error-msg">Please enter a valid phone extension</span>
+            </label>
+        </div>
+    </div>
+</fieldset>

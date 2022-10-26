@@ -1,0 +1,27 @@
+﻿---
+ID: "5fc1f6f3-9369-411e-a0ae-5cba62855c3b"
+Parent: "2463de7d-4c6e-4e02-ab46-45833e0408c3"
+Template: "2463de7d-4c6e-4e02-ab46-45833e0408c3"
+Path: /sitecore/templates/Velir/Search/Filters/Facet Group/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20140815T153114Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "c009efa3-5b61-4af2-9180-538d9d4a6918"
+      Hint: Sort Strategy
+      Value: "{20A22163-95EB-431E-A912-B54B03317FA6}"
+    - ID: "c118274c-8df4-4d8b-8255-ccb1a069e8de"
+      Hint: Boolean Operator
+      Value: "{6D008A46-F271-4782-BABE-81A231C82DFD}"
+    - ID: "cf386513-8cd1-43ba-88db-155bf057362d"
+      Hint: Min Count
+      Value: 1

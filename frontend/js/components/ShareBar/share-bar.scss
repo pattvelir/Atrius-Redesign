@@ -1,0 +1,226 @@
+@import "../../../scss/variables/_colors.scss";
+@import "../../../scss/variables/_breakpoints.scss";
+
+.share-bar {
+  text-align: right;
+
+  @media (max-width: $bp-x-large-max) {
+    width: calc(100% - 140px);
+    max-width: none;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media (max-width: $bp-x-small-max) {
+    display: none;
+  }
+
+  @media (max-width: 374px) {
+    position: relative;
+    left: -20px;
+    width: calc(100% + 40px);
+  }
+
+  &__label {
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.29;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+
+  &__label,
+  ul,
+  li {
+    display: inline-block;
+
+    vertical-align: middle;
+  }
+
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__label {
+    position: relative;
+    top: -4px;
+    margin-right: 10px;
+
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  li {
+    margin-right: 18px;
+
+    @media (max-width: 600px) {
+      margin-right: 10px;
+    }
+
+    &::before {
+      display: none;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  a {
+    display: block;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &[aria-label="Email"] {
+      color: $grey-600;
+
+      svg {
+        height: 20px;
+        width: 26px;
+      }
+    }
+
+    &[aria-label="Facebook"] {
+      color: #4a65a5;
+
+      svg {
+        height: 24px;
+        width: 24px;
+      }
+    }
+
+    &[aria-label="Twitter"] {
+      color: #1b9cec;
+
+      svg {
+        height: 24px;
+        width: 30px;
+      }
+    }
+
+    &[aria-label="Pinterest"] {
+      color: #c92e2c;
+
+      svg {
+        height: 26px;
+        width: 26px;
+      }
+    }
+
+    &[aria-label="Print"] {
+      color: $grey-600;
+
+      svg {
+        height: 23px;
+        width: 26px;
+      }
+    }
+  }
+
+  &.share-bar--gray-box {
+    .share-bar__label {
+      margin-top: 10px;
+    }
+
+    .share-bar__item {
+      height: 30px;
+      width: 30px;
+      box-sizing: border-box;
+      padding: 0 5px;
+      background: #666;
+
+      a {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+
+        color: white;
+
+        > svg {
+          width: 80%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  &.share-bar--colors {
+    .share-bar__label {
+      margin-top: 10px;
+    }
+
+    .share-bar__item {
+      height: 30px;
+      width: 30px;
+      box-sizing: border-box;
+      padding: 0 5px;
+
+      a {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+
+        color: white;
+
+        > svg {
+          width: 80%;
+          margin: 0 auto;
+        }
+      }
+
+      &.social-email {
+        background: $grey-600;
+      }
+
+      &.social-facebook {
+        background: #4a65a5;
+      }
+
+      &.social-twitter {
+        background: #1b9cec;
+      }
+
+      &.social-pinterest {
+        background: #c92e2c;
+      }
+
+      &.social-linkedin {
+        background: #0e76a8;
+      }
+
+      &.social-print {
+        background: $grey-600;
+      }
+    }
+  }
+
+  &.share-bar--rounded {
+    .share-bar__label {
+      margin-top: 10px;
+    }
+
+    .share-bar__item {
+      border-radius: 50%;
+    }
+  }
+}
+
+.secondary-nav + .share-bar {
+  margin-top: -24px;
+  margin-bottom: 60px;
+
+  @media (max-width: $bp-x-large-max) {
+    margin-top: 0;
+
+    text-align: left;
+  }
+}

@@ -1,0 +1,22 @@
+﻿---
+ID: "d8412d32-0774-435b-8b00-a42e21037c70"
+Parent: "f96bbe64-fa1e-45b6-87f7-63c720ea7a3d"
+Template: "f96bbe64-fa1e-45b6-87f7-63c720ea7a3d"
+Path: /sitecore/templates/Foundation/Theme/Theme Rendering Parameters/__Standard Values
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161109T190128Z
+    - ID: "5107ff88-ce34-4cbd-bf71-3d511c049fb0"
+      Hint: Theme
+      Value: "{77EB35F6-E3CA-43D9-BCAF-48B4BA978C1D}"

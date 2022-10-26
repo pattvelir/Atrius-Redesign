@@ -1,0 +1,8 @@
+﻿<layers xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+	<layer xdt:Locator="Match(name)" name="Custom">
+		<loadOrder>
+      <add xdt:Transform="Remove" xdt:Locator="Match(path)" path="VelirSearch" />
+      <add xdt:Transform="InsertBefore(/layers/layer[(@name='Custom')]/loadOrder/*[1])" xdt:Locator="Match(path)" path="VelirSearch" type="Folder" />
+		</loadOrder>
+	  </layer>
+</layers>

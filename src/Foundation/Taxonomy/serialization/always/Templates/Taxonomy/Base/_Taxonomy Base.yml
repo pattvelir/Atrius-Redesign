@@ -1,0 +1,36 @@
+﻿---
+ID: "2507ca55-c349-4c83-85c6-13db1d6a5428"
+Parent: "a2b90613-2546-4a32-a0c3-b4d30eca94a0"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Foundation/Taxonomy/Base/_Taxonomy Base
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Apps/16x16/listmanagement.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: |
+    {0B715D4D-34E3-4CC6-AD5F-1CDE18EDE95D}
+    {D8017F32-92A9-44F2-B461-1C38D7A5D75D}
+    {DDEE891F-6247-4F90-8F7F-AFF0C8C3C89D}
+    {958038AF-B23A-4F67-BBF7-879E709D83D2}
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 900
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{EECD8EA9-76FB-4079-B796-9242EA0178D4}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161025T153313Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

@@ -1,0 +1,69 @@
+.search {
+}
+
+.search__query-mount {
+  @include clearfix;
+
+  .search-box {
+    max-width: 900px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  @media (max-width: $bp-large-max) {
+    .search-box {
+      width: 100%;
+      max-width: 100%;
+      float: none;
+    }
+  }
+}
+
+@media (max-width: $bp-large-max) {
+  .search__facets-wrapper {
+    position: relative;
+    margin: 0;
+
+    &.is-left,
+    &.is-right {
+      position: absolute;
+      top: 0;
+      z-index: 100;
+      width: 85vw;
+      margin: 0;
+      padding: 30px;
+      background-color: $grey-200;
+      transition: transform 0.3s ease-in;
+
+      &.is-open {
+        // transform: translateX(0%);
+        transform: translateX(-50%);
+      }
+    }
+
+    &.is-left {
+      // left: 30px;
+      left: 50%;
+      // transform: translateX(-100%);
+      transform: translateX(-200%);
+    }
+
+    &.is-right {
+      // right: -30px;
+      right: -50%;
+      // transform: translateX(100%);
+      transform: translateX(200%);
+      transition: transform 0.3s ease-in;
+    }
+
+    &.is-open {
+      border: 1px solid $grey-400;
+      border-left: 0;
+      box-shadow: -1px 4px 12px 1px $grey-500;
+    }
+
+    .search-facets__group {
+      background-color: $white;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+﻿---
+ID: "3b690fb6-0db5-499d-bd48-b1c71be71ecd"
+Parent: "474c209d-f0ce-49e7-8271-b7abc6ddf4df"
+Template: "474c209d-f0ce-49e7-8271-b7abc6ddf4df"
+Path: /sitecore/templates/Foundation/Enumerations/Folders/Enumerations Folder/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {FBD8D65E-EA3B-413A-90DE-93F7FEDCA0BC}
+    {F40DA9DA-33B5-4533-9CD0-BA0D000CCBA6}
+    {C7146FE4-A0A6-48FA-BDBD-9ACC2723FF13}
+    {1625996D-32BA-4001-8D85-4072658A8BD0}
+    {439B37C1-9AD8-4F12-BB2A-47B46EEE254B}
+    {48E0CC49-1602-422F-8FC4-44814737591E}
+    {400B3DE1-9220-4CF9-A362-8023313C58CC}
+    {09F8503A-5CCF-4E2C-9A5C-D9CF0D73FD69}
+    {AF84DF6A-B5FF-4B6A-996D-17EAE16AEC3F}
+    {B4229F69-76DC-440C-8D4B-440309341AA1}
+    {56C607E1-B07A-47E9-9041-04703ACAFD3C}
+    {33496225-EC24-4B81-A8D3-F4C60F8BAD0C}
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170310T142829Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

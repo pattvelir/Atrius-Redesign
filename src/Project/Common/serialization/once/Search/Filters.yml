@@ -1,0 +1,14 @@
+﻿---
+ID: "cb643bb4-f947-48f8-a112-0f80239e64c6"
+Parent: "b9c5d243-921d-45e3-833b-8c4ee3fca798"
+Template: "0056b1ab-7661-4271-96c5-153cc73d3c6f"
+Path: /sitecore/system/Modules/Search/Filters
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150427T175454Z

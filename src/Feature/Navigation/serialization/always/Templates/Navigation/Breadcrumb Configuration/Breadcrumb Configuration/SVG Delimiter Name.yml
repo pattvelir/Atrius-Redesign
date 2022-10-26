@@ -1,0 +1,25 @@
+﻿---
+ID: "a94cf3ac-75ea-4f48-8299-082a9a1aa413"
+Parent: "ecfea0ef-2745-4cb5-813f-93c6a294168f"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/Navigation/Breadcrumb Configuration/Breadcrumb Configuration/SVG Delimiter Name
+DB: master
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Single-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Fields:
+  - ID: "577f1689-7de4-4ad2-a15f-7fdc1759285f"
+    Hint: __Long description
+    Value: The name of the SVG image inside the site's SVG sprite file that will be used as the delimiter between breadcrumb links.
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170921T172507Z

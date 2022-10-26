@@ -1,0 +1,21 @@
+﻿---
+ID: "c1d879d1-91da-4d0b-95c2-0e9d18a2abd9"
+Parent: "53307e4c-a4cf-445e-bd1c-71321b15e0fb"
+Template: "e5acf52c-1e6b-4142-84f2-6d09b1ba1ab8"
+Path: /sitecore/templates/Branches/Project/Graybox/Sites/New Site with Login/$name/Configuration/Navigation/Primary Navigation/Nav Category 2
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 150
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170310T155739Z
+    - ID: "efe41572-fbeb-4b09-814c-42c0ffe94dfb"
+      Hint: Title
+      Value: Nav Category 2

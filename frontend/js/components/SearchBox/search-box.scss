@@ -1,0 +1,52 @@
+@import "../../../scss/variables/_colors.scss";
+
+.search-box {
+  width: 100%;
+}
+
+.search-box__input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid $base-border-color;
+
+  input {
+    flex: auto;
+    width: auto;
+    padding: 10px 12px;
+
+    font-size: 16px;
+    border: 0;
+    box-shadow: none;
+  }
+}
+
+.search-box__button {
+  flex: none;
+  padding: 8px 10px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+
+  & > svg {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
+.search-box__loader {
+  .search-results__spinner {
+    position: absolute;
+    top: 0;
+    right: 45px;
+    left: auto;
+
+    text-align: left;
+
+    img {
+      height: 32px;
+      width: 32px;
+      margin-top: 4px;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+﻿---
+ID: "8ea76c18-b0a7-45f4-90f9-cdea86813ed6"
+Parent: "6079eab6-9660-4e59-9d28-f98578c4127d"
+Template: "e4d98773-347d-4931-b944-60dce8f48e46"
+Path: /sitecore/system/Modules/Search/Enumerations/Transition Directions/Slide From Right
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170117T143305Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

@@ -1,0 +1,41 @@
+﻿---
+ID: "6f3d1130-74ec-4c8b-b8a7-8bd1d51b17e7"
+Parent: "2dbbd912-e5ef-4204-8347-eaf3f63eefa5"
+Template: "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6"
+Path: /sitecore/layout/Renderings/Feature/Containers/Split Container 70 x 30
+DB: master
+SharedFields:
+- ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
+  Hint: Path
+  Value: /Views/Containers/Split70x30.cshtml
+- ID: "7d24e54f-5c16-4314-90c9-6051aa1a7da1"
+  Hint: Parameters Template
+  Value: 
+- ID: "989631c3-8cd3-4d04-a996-7c1f4eec75a4"
+  Hint: Default Parameters
+  Value: 
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{5C5EE5C9-1193-4A0B-9DB3-85934608BB63}" />
+- ID: "ddab263e-b42e-419a-aa6f-081b7393ca38"
+  Hint: Model
+  Value: /sitecore/layout/Models/Foundation/Mvc/RenderingModel
+- ID: "e441abe7-2ca3-4640-ae26-3789967925d7"
+  Hint: Compatible Renderings
+  Type: Treelist
+  Value: |
+    {60C2AC1C-4754-4914-B11A-37F0DF825B43}
+    {3E615E7F-8DB2-4648-B7E1-E9C2F05FFD08}
+    {1B8B6412-BC11-4D18-8547-28380C1BCCF7}
+- ID: "f869e724-0718-43e4-92a0-d612fe191cfb"
+  Hint: Area
+  Value: 
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160319T175718Z

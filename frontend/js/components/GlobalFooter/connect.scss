@@ -1,0 +1,134 @@
+@import "../../../scss/variables/_breakpoints.scss";
+@import "../../../scss/variables/_mixins.scss";
+
+// connect variables
+$connect-icon-size: 35px !default;
+$connect-icon-spacing: 4px !default;
+$connect-icon-fill: currentColor !default;
+$connect-phone-size: 24px !default;
+$connect-promo-size: 24px !default;
+$connect-bp-small-max: 570px !default;
+
+.connect {
+  @include container();
+}
+
+.connect__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: $bp-large-max) {
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: $connect-bp-small-max) {
+    text-align: center;
+  }
+
+  @media (max-width: $bp-x-small-max) {
+    display: block;
+
+    text-align: center;
+  }
+}
+
+.connect__button {
+  padding: 0 20px 0 0;
+
+  line-height: $connect-icon-size;
+  white-space: nowrap;
+
+  @media (max-width: $bp-x-small-max) {
+    padding: 0 0 12px;
+  }
+}
+
+.connect__contact {
+  display: flex;
+  order: 1;
+  padding: 12px 0;
+
+  @media (max-width: $bp-large-max) {
+    padding: 0 0 12px;
+  }
+
+  @media (max-width: $connect-bp-small-max) {
+    justify-content: center;
+    width: 100%;
+  }
+
+  @media (max-width: $bp-x-small-max) {
+    display: block;
+    padding: 0;
+  }
+}
+
+.connect__phone {
+  order: 2;
+  padding: 0 20px 0 0;
+
+  font-size: $connect-phone-size;
+  font-weight: 700;
+  line-height: $connect-icon-size;
+  white-space: nowrap;
+
+  @media (max-width: $bp-x-small-max) {
+    padding: 0 0 12px;
+  }
+
+  a {
+    color: currentColor;
+    text-decoration: none;
+  }
+}
+
+.connect__promo-statement {
+  flex-grow: 10;
+  order: 3;
+  padding: 12px 20px;
+
+  font-size: $connect-promo-size;
+  font-weight: 700;
+  line-height: $connect-icon-size;
+
+  @media (max-width: $bp-large-max) {
+    order: 0;
+    width: 100%;
+    padding: 12px 0;
+  }
+}
+
+.connect__social {
+  order: 4;
+  padding: 12px 0;
+
+  white-space: nowrap;
+
+  @media (max-width: $bp-large-max) {
+    padding: 0 0 12px;
+  }
+
+  @media (max-width: $connect-bp-small-max) {
+    width: 100%;
+
+    text-align: center;
+  }
+
+  a {
+    display: inline-block;
+    margin-left: $connect-icon-spacing;
+
+    text-decoration: none;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.connect__social-icon.icon {
+  height: $connect-icon-size;
+  width: $connect-icon-size;
+  fill: $connect-icon-fill;
+}

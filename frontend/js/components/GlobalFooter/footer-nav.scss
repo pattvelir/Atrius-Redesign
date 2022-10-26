@@ -1,0 +1,41 @@
+@import "../../../scss/variables/_mixins.scss";
+@import "../../../scss/variables/_breakpoints.scss";
+
+.footer-nav {
+  display: flex;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (max-width: $bp-x-small-max) {
+    display: block;
+  }
+}
+
+.footer-nav__section {
+  margin-right: 32px;
+  margin-bottom: 32px;
+}
+
+.footer-nav__col-wrapper {
+  display: flex;
+
+  @media (max-width: $bp-x-small-max) {
+    display: block;
+  }
+}
+
+.footer-nav__col {
+  @include zero-list;
+  margin-right: 24px;
+
+  @media (max-width: $bp-x-small-max) {
+    display: block;
+    width: 100%;
+  }
+}
+
+.footer-nav__heading {
+  font-size: 1.35rem;
+  width: 100%;
+}

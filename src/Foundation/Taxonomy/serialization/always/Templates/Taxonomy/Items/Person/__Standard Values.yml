@@ -1,0 +1,14 @@
+﻿---
+ID: "314c2c1f-4019-493c-b563-7767c698d1fe"
+Parent: "4c0a8d3e-48c5-4c24-8b59-8eab2ef0143a"
+Template: "4c0a8d3e-48c5-4c24-8b59-8eab2ef0143a"
+Path: /sitecore/templates/Foundation/Taxonomy/Items/Person/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200917T091103Z

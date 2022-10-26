@@ -1,0 +1,28 @@
+@import "../../../scss/variables/_colors.scss";
+@import "../../../scss/variables/_mixins.scss";
+
+.breadcrumbs {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid $grey-300;
+}
+
+.breadcrumbs__list {
+  @include zero-list;
+  font-size: 14px;
+}
+
+// breadcrumbs item
+
+.breadcrumbs__item {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.breadcrumbs__divider {
+  color: $base-body-color;
+
+  .icon {
+    fill: currentColor;
+  }
+}

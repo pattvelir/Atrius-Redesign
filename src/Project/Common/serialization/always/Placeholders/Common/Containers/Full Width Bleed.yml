@@ -1,0 +1,32 @@
+﻿---
+ID: "adf2fa56-b8bc-4e77-b9c1-eb6690df65e1"
+Parent: "1c7b8785-d1ad-4494-a4cd-07c37b2573d8"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/Project/Common/Containers/Full Width Bleed
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: "full-width-column"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: |
+    {60C2AC1C-4754-4914-B11A-37F0DF825B43}
+    {3E615E7F-8DB2-4648-B7E1-E9C2F05FFD08}
+    {6F3D1130-74EC-4C8B-B8A7-8BD1D51B17E7}
+    {1B8B6412-BC11-4D18-8547-28380C1BCCF7}
+    {EB9C4EE5-57B5-4B92-846B-F6032B41A357}
+    {968EBC81-A435-428A-86EA-381ECCA3D65B}
+    {E2C034E3-E3A6-4329-A870-8B276E6D23B8}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160308T134525Z

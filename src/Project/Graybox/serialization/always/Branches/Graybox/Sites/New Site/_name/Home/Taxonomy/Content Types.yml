@@ -1,0 +1,14 @@
+﻿---
+ID: "3bdb2c69-b6da-46f8-87f3-f6ddcce15fe7"
+Parent: "ec6a164d-8d20-42a6-b1ce-14981fe33b53"
+Template: "10a620aa-739d-448c-b0eb-f387a5287682"
+Path: /sitecore/templates/Branches/Project/Graybox/Sites/New Site/$name/Home/Taxonomy/Content Types
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161108T211202Z

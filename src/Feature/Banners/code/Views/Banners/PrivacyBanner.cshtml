@@ -1,0 +1,26 @@
+﻿@using Thread.Foundation.Dictionary.Statics
+@using Thread.Foundation.Mvc.Extensions
+@model Thread.Feature.Banners.Models.PrivacyBannerModel
+
+@if (Model != null && Model.Datasource != null && Model.Datasource.PrivacyDisclaimer != null)
+{
+    <div class="privacy-banner @(Sitecore.Context.PageMode.IsExperienceEditor ? string.Empty: "js-privacy-banner is-hidden")">
+        <div class="privacy-modal__content">
+            <div class="privacy-modal__rte rich-text">
+                @Html.Sitecore().Field(Model.Datasource.PrivacyDisclaimer)
+            </div>
+            <button class="btn btn--primary btn--hover-light privacy-banner__accept js-accept-cookies">
+                @Html.Raw(EditableTranslate.Text("Banners.PrivacyBanner.Accept"))
+            </button>
+            <button class="btn btn--close privacy-banner__close js-close-banner">
+                <span class="u-visuallyhidden">close</span>
+            </button>
+        </div>
+    </div>
+}
+else if (Sitecore.Context.PageMode.IsExperienceEditor)
+{
+    <div>
+        Privacy Banner Datasource is  not configured
+    </div>
+}

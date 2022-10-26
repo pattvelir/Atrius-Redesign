@@ -1,0 +1,96 @@
+@import "../../../../scss/variables/breakpoints";
+@import "../../../../scss/variables/mixins";
+@import "../../../../scss/variables/colors";
+
+.search {
+}
+
+.search__app {
+}
+
+.search__title {
+}
+
+.search__subtitle {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.search__link-wrapper {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.search__mount {
+}
+
+.search__link {
+}
+
+.search__container {
+}
+
+.search__container--indent {
+  .container__col--30 {
+    display: none;
+  }
+
+  .container__col--70 {
+    @media (min-width: $bp-large-min) {
+      grid-column: 1/-1;
+      max-width: 850px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
+
+.search__search-box {
+  max-width: 850px;
+  margin: 20px auto;
+}
+
+.search__filter-bar {
+}
+
+.search__toggle-bar {
+}
+
+.search__info-row {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.search__results-info {
+}
+
+.search__selected-filters {
+  margin-left: 0.25em;
+}
+
+.search__sorters {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.search__results {
+}
+
+.search__no-results {
+  &:not(.specificity-boost) {
+    margin: 0;
+  }
+
+  span {
+    display: block;
+    margin-top: var(--l-container-vertical-spacing);
+  }
+}
+
+.search__pagination {
+}
+
+.search__load-more {
+}

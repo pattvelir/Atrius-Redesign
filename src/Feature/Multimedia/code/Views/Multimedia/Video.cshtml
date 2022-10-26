@@ -1,0 +1,20 @@
+﻿@using Sitecore.Configuration
+@using Thread.Feature.Multimedia
+@using Thread.Foundation.Mvc.Extensions
+@model Thread.Feature.Multimedia.Models.VideoModel
+
+@if (Model.IsValidVideo)
+{
+ 
+  <div
+    class='js-youtube-video-mount youtube-video-mount'
+    data-model='@Html.Raw(Model.ReactData)'
+  ></div>
+
+ 
+  
+}
+else if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+{
+  <p>YouTube ID cannot be parsed from URL.</p>
+}

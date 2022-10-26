@@ -1,0 +1,22 @@
+﻿---
+ID: "6079eab6-9660-4e59-9d28-f98578c4127d"
+Parent: "9678aeb1-69ee-4b3a-a934-7261077bdcba"
+Template: "b18df9d2-c961-4a98-af57-bc75d4cf025c"
+Path: /sitecore/system/Modules/Search/Enumerations/Transition Directions
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170117T143251Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

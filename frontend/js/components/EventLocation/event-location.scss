@@ -1,0 +1,24 @@
+@import "../../../scss/variables/_mixins.scss";
+
+.event-location {
+  // @include component-whitespace;
+}
+
+.event-location__map {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 60%; /* aspect ratio */
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 0;
+  }
+}
+
+.event-location__placeholder {
+}

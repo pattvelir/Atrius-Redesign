@@ -1,0 +1,40 @@
+﻿---
+ID: "34e82106-c5c5-4a02-be90-1176b752b07e"
+Parent: "a5944469-af21-41d3-84a9-fa7f3544705b"
+Template: "a5944469-af21-41d3-84a9-fa7f3544705b"
+Path: /sitecore/templates/Feature/Rich Text/Rich Text Rendering Parameters/__Standard Values
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1b1b6831-ee31-4998-be8d-5e244afbe103"
+      Hint: Max Width
+      Value: 850
+    - ID: "23241de5-760d-420f-83cc-3a0f1ef26369"
+      Hint: Display Images
+      Value: "{DABA4BE2-4F5E-48B9-833C-29672F5E1BA9}"
+    - ID: "2493a7f1-8aa8-4df2-ac90-cd86732f5122"
+      Hint: Alignment
+      Value: "{EA7AFE3E-B147-4D5D-B85C-7984572D0E28}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180611T200632Z
+    - ID: "290723e9-f36a-4ec9-ad0d-765bed940aaa"
+      Hint: Display Content Type Labels
+      Type: Checkbox
+      Value: 1
+    - ID: "e1ef98ef-04a4-4db2-8093-6e07bbd64b64"
+      Hint: Display Summaries
+      Type: Checkbox
+      Value: 1
+    - ID: "f0a1fde7-2914-4d08-9cb0-11b49b7577f6"
+      Hint: Display Dates
+      Type: Checkbox
+      Value: 1

@@ -1,0 +1,25 @@
+﻿---
+ID: "ad1c366a-7190-4c82-9bf9-4b4250fc4a43"
+Parent: "f904f489-7129-4a77-8791-59662ab2b399"
+Template: "4b7e2da9-de43-4c83-88c3-02f042031d04"
+Path: /sitecore/system/Workflows/Sitecore Workflow/Scheduled
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Applications/32x32/document_time.png
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 60
+- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
+  Hint: __Security
+  Value: |
+    ar|sitecore\Sitecore Publisher Workflow|pe|+workflowState:write|+workflowState:delete|pd|+workflowState:write|+workflowState:delete|
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200428T121800Z

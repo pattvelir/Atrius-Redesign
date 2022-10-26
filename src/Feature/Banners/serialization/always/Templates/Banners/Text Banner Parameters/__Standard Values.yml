@@ -1,0 +1,26 @@
+﻿---
+ID: "ade840a2-fec0-4f5d-aa12-c05ee4cdf02c"
+Parent: "26713e59-27da-4b8b-bb29-e20f43e844f9"
+Template: "26713e59-27da-4b8b-bb29-e20f43e844f9"
+Path: /sitecore/templates/Feature/Banners/Text Banner Parameters/__Standard Values
+DB: master
+SharedFields:
+- ID: "3094d236-5985-4c4f-ae6a-e30740885532"
+  Hint: Caching
+  Value: 0|0|0|0|0|0|0|0
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160311T194942Z
+    - ID: "62f206fd-06a3-4f06-99be-576e655ad640"
+      Hint: Exclude Top Margin
+      Type: Checkbox
+      Value: 0

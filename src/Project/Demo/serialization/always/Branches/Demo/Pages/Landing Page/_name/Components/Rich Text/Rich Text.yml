@@ -1,0 +1,18 @@
+﻿---
+ID: "cbec8ce7-da08-4f2d-9c22-a60255fe267f"
+Parent: "4e46b6fc-7268-4303-8e70-d2d10d95033d"
+Template: "e4076c99-8864-41c9-a691-e628331ab7c5"
+Path: /sitecore/templates/Branches/Project/Demo/Pages/Landing Page/$name/Components/Rich Text/Rich Text
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170920T161121Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

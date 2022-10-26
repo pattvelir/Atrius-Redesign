@@ -1,0 +1,41 @@
+@using Thread.Foundation.Dictionary.Statics
+@using Thread.Foundation.Theme.Extensions
+@model Thread.Feature.Social.Models.ShareBarModel
+
+@if (Model.IsValid())
+{
+  <section class="share-bar share-bar--colors share-bar--rounded">
+      <div class="share-bar__label">@Html.Raw(EditableTranslate.Text("Social.ShareBar.Share"))</div>
+    <ul>
+      <li class="share-bar__item social-email">
+        <a href="#" class="addthis_button_mailto" aria-label="Email" addthis:url="@Model.ShareItem.ShareUrl" addthis:title="@Model.ShareItem.ShareTitle" addthis:description="@Model.ShareItem.ShareDescription">
+          @Html.RenderSvg("social-email", "connect__social-icon", "email")
+        </a>
+      </li>
+      <li class="share-bar__item social-facebook">
+        <a href="#" class="addthis_button_facebook" aria-label="Share on Facebook" addthis:url="@Model.ShareItem.ShareUrl" addthis:title="@Model.ShareItem.ShareTitle" addthis:description="@Model.ShareItem.ShareDescription">
+          @Html.RenderSvg("social-facebook", "connect__social-icon", "facebook")
+        </a>
+      </li>
+      <li class="share-bar__item social-twitter">
+        <a href="#" class="addthis_button_twitter" aria-label="Share on Twitter" addthis:url="@Model.ShareItem.ShareUrl" addthis:title="@Model.ShareItem.ShareTitle" addthis:description="@Model.ShareItem.ShareDescription">
+          @Html.RenderSvg("social-twitter", "connect__social-icon", "twitter")
+        </a>
+      </li>
+      <li class="share-bar__item social-linkedin">
+        <a href="#" class="addthis_button_linkedin" aria-label="Share on LinkedIn" addthis:url="@Model.ShareItem.ShareUrl" addthis:title="@Model.ShareItem.ShareTitle" addthis:description="@Model.ShareItem.ShareDescription">
+          @Html.RenderSvg("social-linkedin", "connect__social-icon", "linkedin")
+        </a>
+      </li>
+      <li class="share-bar__item social-print">
+        <a href="#" class="addthis_button_print" aria-label="Print" addthis:url="@Model.ShareItem.ShareUrl" addthis:title="@Model.ShareItem.ShareTitle" addthis:description="@Model.ShareItem.ShareDescription">
+          @Html.RenderSvg("social-print", "connect__social-icon", "print")
+        </a>
+      </li>
+    </ul>
+  </section>
+}
+else if (Sitecore.Context.PageMode.IsExperienceEditor)
+{
+    <span>Invalid AddThis account id</span>
+}

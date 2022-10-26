@@ -1,0 +1,21 @@
+@import "../../../scss/variables/_colors.scss";
+@import "../../../scss/variables/_breakpoints.scss";
+
+.account-message {
+  padding: 24px;
+
+  color: $black;
+  background-color: $grey-300;
+
+  @media (min-width: $bp-small-min) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon {
+    height: 32px;
+    width: 32px;
+    margin-right: 12px;
+  }
+}

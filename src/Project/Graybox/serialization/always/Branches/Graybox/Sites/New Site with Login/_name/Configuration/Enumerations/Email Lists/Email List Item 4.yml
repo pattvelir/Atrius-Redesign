@@ -1,0 +1,17 @@
+﻿---
+ID: "e766e456-8d06-48bb-902b-514659d6a13e"
+Parent: "b6d89df5-c5fc-4a06-8024-e998d2e92062"
+Template: "77f33dcc-04ef-4c40-8f34-7a131576180e"
+Path: /sitecore/templates/Branches/Project/Graybox/Sites/New Site with Login/$name/Configuration/Enumerations/Email Lists/Email List Item 4
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "197fd7ed-d7de-4445-a87d-3a6b9e845000"
+      Hint: Value
+      Value: Email List Item 4
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191001T134413Z

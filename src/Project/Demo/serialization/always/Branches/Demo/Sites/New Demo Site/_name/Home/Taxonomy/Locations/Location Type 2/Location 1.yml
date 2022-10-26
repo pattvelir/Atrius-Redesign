@@ -1,0 +1,18 @@
+﻿---
+ID: "704dce1c-3483-48ab-b9e3-1f15580619c0"
+Parent: "3e88adce-9158-43e0-9ef2-927b8d92c138"
+Template: "410549bb-1134-4859-98ca-67125cee19a2"
+Path: /sitecore/templates/Branches/Project/Demo/Sites/New Demo Site/$name/Home/Taxonomy/Locations/Location Type 2/Location 1
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170310T170252Z

@@ -1,0 +1,27 @@
+﻿---
+ID: "44d96021-413a-4e77-ac43-a9d43459e008"
+Parent: "400b3de1-9220-4cf9-a362-8023313c58cc"
+Template: "400b3de1-9220-4cf9-a362-8023313c58cc"
+Path: /sitecore/templates/Foundation/Enumerations/Folders/Orientations Folder/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{2C81004C-2528-40E6-98C2-73F73138AB05}"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161109T161642Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

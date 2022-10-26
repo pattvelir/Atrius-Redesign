@@ -1,0 +1,28 @@
+﻿---
+ID: "e63ddd67-46ef-4215-b502-df59b183b5ab"
+Parent: "718707ce-efdd-4f70-a724-24132ec00bd0"
+Template: "b4ea8092-11aa-4ac2-aa4c-79dba85b6fd7"
+Path: /sitecore/system/Modules/Image Cropper/Sizes/3x4/M
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1bf0501f-2cad-4f46-98bf-45ef0e7bf127"
+      Hint: Crop Image Width
+      Value: 1366
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170411T154109Z
+    - ID: "35fdc2cf-07fe-48fa-bfcb-aab2b46308e6"
+      Hint: Crop Image Height
+      Value: 1820
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

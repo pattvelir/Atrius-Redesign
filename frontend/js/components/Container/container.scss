@@ -1,0 +1,188 @@
+// **** Markup Notes **** //
+// Basic html markup for containers (modifier classes should be used as well)
+// <section class="container">
+//  <div class="container__col">{props.children}</div>
+// </section>
+//
+// Bleed Containers omit the container__col to help isolate a few styles
+// <section class="container container--bleed">{props.children}</section>
+//
+// Components can also use the container class to constrain content.
+// <section class="my-component">
+//  <div class="my-component__inner container">...</div>
+// </section>
+//
+
+@import "../../../scss/variables/_variables.scss";
+@import "../../../scss/variables/_breakpoints.scss";
+
+:root {
+  --l-container-vertical-spacing-l: 60px;
+  --l-container-vertical-spacing-m: 45px;
+  --l-container-vertical-spacing-s: 30px;
+  --l-container-max-width: #{$max-width-container};
+  --l-container-gutter: #{$gutter-mobile};
+  --l-container-gap-vertical: var(--l-container-vertical-spacing-s);
+  --l-container-gap-horizontal: 30px;
+
+  @media (min-width: $bp-small-min) {
+    --l-container-gutter: #{$gutter};
+  }
+}
+
+/**** Vertical Spacing ****/
+.main-content-wrapper {
+  // All components directly added to the main content area are considered the different sections of the page.
+  & > * + * {
+    margin-top: var(--l-container-vertical-spacing-l);
+  }
+
+  // special treatment for <main> to add bottom spacing above the footer for regular containers
+  & > *:last-child {
+    margin-bottom: var(--l-container-vertical-spacing-l);
+  }
+
+  // Components or Bleed Containers with .has-background should remain flush with the footer
+  & > .has-background:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.container--bleed,
+.container__col {
+  // All components added in a container are considered part of a section
+  & > * + * {
+    margin-top: var(--l-container-vertical-spacing-s);
+  }
+}
+
+// no space between has-background containers or components
+.has-background + .has-background {
+  margin-top: 0;
+}
+
+/**** Container Layouts ****/
+// re-usable class on any component to contrain content (padding is stripped when placed in a non-bleed container)
+.container {
+  position: relative;
+  width: 100%;
+  max-width: var(--l-container-max-width);
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: var(--l-container-gutter);
+  padding-left: var(--l-container-gutter);
+
+  .container__col & {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+// bleed containers should allow its children to span the full width of the page
+.container--bleed {
+  max-width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+// If a Bleed container has a background color add paddding
+.container--bleed.has-background {
+  padding-top: var(--l-container-vertical-spacing-l);
+  padding-right: var(--l-container-gutter);
+  padding-bottom: var(--l-container-vertical-spacing-l);
+  padding-left: var(--l-container-gutter);
+
+  & > .container {
+    max-width: var(--l-max-width);
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+// Containers with columns
+// Design system uses a 4 / 8 / 12 grid system
+.container--70-30,
+.container--50-50,
+.container--30-70,
+.container--search {
+  display: grid;
+  grid-column-gap: var(--l-container-gap-horizontal);
+  grid-row-gap: var(--l-container-gap-vertical);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+
+  @media (min-width: $bp-small-min) {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  @media (min-width: $bp-large-min) {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+// stacked columns on narrow view
+.container__col {
+  position: relative;
+  grid-column: 1/-1; // full width
+  min-width: 0; // hack to set a width and prevent blow out
+}
+
+.container__col--70 {
+  @media (min-width: $bp-medium-min) {
+    grid-column: span 5;
+  }
+
+  @media (min-width: $bp-large-min) {
+    grid-column: span 8;
+  }
+}
+
+.container__col--30 {
+  @media (min-width: $bp-medium-min) {
+    grid-column: span 3;
+  }
+
+  @media (min-width: $bp-large-min) {
+    grid-column: span 4;
+  }
+}
+
+.container__col--50 {
+  @media (min-width: $bp-small-min) {
+    grid-column: span 4;
+  }
+
+  @media (min-width: $bp-large-min) {
+    grid-column: span 6;
+  }
+}
+
+// special container scenarios
+
+// search container
+.container--search {
+  .container__col:first-child,
+  .container__col:last-child {
+    grid-column: 1/-1;
+  }
+
+  // @include media($bp-g-max-medium) {
+  @media (min-width: $bp-medium-min) {
+    .container__col:first-child {
+      position: relative;
+      grid-column: span 3;
+    }
+
+    .container__col:last-child {
+      grid-column: span 9;
+    }
+  }
+}
+
+// search filters
+.container__col--70.container__col--priority {
+  // limited by max-width to enable .container__col--70 media query
+  @media (min-width: $bp-small-min) and (max-width: $bp-large-max) {
+    grid-column: span 8;
+  }
+}

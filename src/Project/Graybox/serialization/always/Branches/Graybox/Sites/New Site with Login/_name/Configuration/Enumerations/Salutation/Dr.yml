@@ -1,0 +1,17 @@
+﻿---
+ID: "e46aa8a3-3297-4d82-95bf-e0a9bee2d670"
+Parent: "e36f0074-0d7f-43bf-9257-7de8d710c540"
+Template: "24b98cc6-fc73-4bc4-8b45-a40022047990"
+Path: /sitecore/templates/Branches/Project/Graybox/Sites/New Site with Login/$name/Configuration/Enumerations/Salutation/Dr
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "197fd7ed-d7de-4445-a87d-3a6b9e845000"
+      Hint: Value
+      Value: Dr.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170310T164325Z

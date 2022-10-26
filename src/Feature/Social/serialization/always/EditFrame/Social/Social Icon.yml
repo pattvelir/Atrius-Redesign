@@ -1,0 +1,14 @@
+﻿---
+ID: "9bec76f6-a1ae-4e2e-8fae-e4f26c1a3de3"
+Parent: "09d63321-f2bf-4074-929c-1e126c765afd"
+Template: "b0666cfe-8c7b-4cc1-8e32-8253742ebfa9"
+Path: /sitecore/content/Applications/WebEdit/Edit Frame Buttons/Social/Social Icon
+DB: core
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190410T143713Z

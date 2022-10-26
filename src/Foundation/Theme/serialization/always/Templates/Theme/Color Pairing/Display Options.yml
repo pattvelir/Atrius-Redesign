@@ -1,0 +1,18 @@
+﻿---
+ID: "7fea3b67-bf7e-41a9-8c79-5fa5d76f06cd"
+Parent: "618a2809-d88a-4f41-9215-75d558121610"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Foundation/Theme/Color Pairing/Display Options
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161103T143746Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

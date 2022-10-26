@@ -1,0 +1,14 @@
+﻿---
+Role: |
+  sitecore\Sitecore Content Publisher
+MemberOf:
+  Role: |
+    sitecore\Sitecore Client Developing
+  Role: |
+    sitecore\Sitecore Client Publishing
+  Role: |
+    sitecore\Sitecore Publisher Workflow
+  Role: |
+    sitecore\Sitecore Client Authoring
+  Role: |
+    sitecore\Sitecore Content Author Content Access

@@ -1,0 +1,74 @@
+﻿@using Thread.Feature.Navigation.Extensions
+@using Thread.Foundation.Dictionary.Statics
+@using Thread.Foundation.Theme.Extensions
+@using StringExtensions = Thread.Foundation.Dictionary.Extensions.StringExtensions
+@model IEnumerable<Thread.Feature.Navigation.Models.NavItem>
+
+@if (Model != null)
+{
+	<nav class="secondary-nav js-secondary-nav" aria-label="@StringExtensions.Translate("Secondary")">
+		<a href="" class="secondary-nav__toggle js-nav-toggle">
+			@Html.Raw(EditableTranslate.Text("Navigation.SecondaryNav.MoreInThisSection"))
+			<span class="icon">
+				@Html.RenderSvg("chevron-down")
+			</span>
+		</a>
+		<ul class="secondary-nav__menu js-menu">
+			@foreach (var firstTierLink in Model)
+			{
+				if (firstTierLink.LinkItem.IsCurrentItem)
+				{
+					<li class="secondary-nav__item is-active">
+						<a>@Html.Raw(firstTierLink.LinkItem.LinkField.Value)</a>
+					</li>
+				}
+				else
+				{
+					<li class="secondary-nav__item">
+						@Html.Sitecore().Field(firstTierLink.LinkItem)
+					</li>
+				}
+				if (firstTierLink.ChildLinks.Any())
+				{
+					<ul class="secondary-nav__submenu">
+						@foreach (var secondTierLink in firstTierLink.ChildLinks)
+						{
+							if (secondTierLink.LinkItem.IsCurrentItem)
+							{
+								<li class="secondary-nav__subitem is-active">
+									<a>@Html.Raw(secondTierLink.LinkItem.LinkField.Value)</a>
+								</li>
+							}
+							else
+							{
+								<li class="secondary-nav__subitem @(secondTierLink.LinkItem.IsAncestorItem ? "is-current-child" : string.Empty)">
+									@Html.Sitecore().Field(secondTierLink.LinkItem)
+								</li>
+							}
+							if (secondTierLink.ChildLinks.Any())
+							{
+								<ul class="secondary-nav__tertmenu">
+									@foreach (var thirdTierLink in secondTierLink.ChildLinks)
+									{
+										if (thirdTierLink.LinkItem.IsCurrentItem)
+										{
+											<li class="secondary-nav__tertitem is-active">
+												<a>@Html.Raw(thirdTierLink.LinkItem.LinkField.Value)</a>
+											</li>
+										}
+										else
+										{
+											<li class="secondary-nav__tertitem">
+												@Html.Sitecore().Field(thirdTierLink.LinkItem)
+											</li>
+										}
+									}
+								</ul>
+							}
+						}
+					</ul>
+				}
+			}
+		</ul>
+	</nav>
+}

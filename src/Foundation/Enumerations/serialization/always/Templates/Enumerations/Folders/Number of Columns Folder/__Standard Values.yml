@@ -1,0 +1,27 @@
+﻿---
+ID: "f4b5885b-1718-454d-ba9e-5d18e6013165"
+Parent: "fbd8d65e-ea3b-413a-90de-93f7fedca0bc"
+Template: "fbd8d65e-ea3b-413a-90de-93f7fedca0bc"
+Path: /sitecore/templates/Foundation/Enumerations/Folders/Number of Columns Folder/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{03F0A1D9-AFA6-48D1-8DB1-9B2195733CAF}"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161025T215348Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

@@ -1,0 +1,14 @@
+﻿---
+ID: "db95a213-a61b-4188-bfcb-5b5dcbd1b707"
+Parent: "05c02a7c-94f0-4547-8f5b-97ce75cf5586"
+Template: "60ac7f1a-2dda-4022-8f6c-a75fd3732303"
+Path: /sitecore/templates/Branches/Project/Graybox/Pages/Landing Page/$name/Components/Banners/Page Banner
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161117T031500Z

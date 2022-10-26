@@ -1,0 +1,18 @@
+﻿---
+ID: "87e91992-68f5-4ff8-a3ae-1a90a442932f"
+Parent: "d885b66a-72ea-48e0-b43d-1d148b435d80"
+Template: "267d9ac7-5d85-4e9d-af89-99ab296cc218"
+Path: /sitecore/system/Dictionary/Default/Account/AccountSecurity/ResetEmail
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191017T182338Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

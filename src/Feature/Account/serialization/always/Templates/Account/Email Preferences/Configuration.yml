@@ -1,0 +1,14 @@
+﻿---
+ID: "9301bbd1-60b6-4007-9589-4c07e2ccefe1"
+Parent: "61977679-a5da-4791-a6ec-003a99a40ae5"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/Account/Email Preferences/Configuration
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191001T135003Z

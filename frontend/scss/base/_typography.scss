@@ -1,0 +1,104 @@
+// base styles
+
+body {
+  color: $base-body-color;
+  font-family: $opensans;
+  font-size: 16px;
+  line-height: 1.25;
+  -webkit-font-smoothing: antialiased;
+}
+
+// headings
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.txt-h1,
+.txt-h2,
+.txt-h3,
+.txt-h4,
+.txt-h5,
+.txt-h6 {
+  margin: 0;
+  padding: 0;
+
+  font-family: $bitter;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 12px;
+}
+
+h4,
+h5,
+h6 {
+  margin-bottom: 9px;
+}
+
+h1,
+.txt-h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+
+  @media (max-width: $bp-large-max) {
+    font-size: 2.2rem;
+  }
+
+  @media (max-width: $bp-x-small-max) {
+    font-size: 1.8rem;
+    line-height: 1.1;
+  }
+}
+
+h2,
+.txt-h2 {
+  font-size: 2rem;
+  line-height: 2.625rem;
+}
+
+h3,
+.txt-h3 {
+  font-size: 1.563rem;
+}
+
+h4,
+.txt-h4 {
+  font-size: 1.375rem;
+}
+
+h5,
+.txt-h5 {
+  font-size: 1.25rem;
+}
+
+h6,
+.txt-h6 {
+  font-family: $montserrat;
+  font-size: 1.125rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+// paragraphs
+
+p {
+  margin: 0;
+  margin-bottom: 18px;
+  padding: 0;
+
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+// small text
+
+.txt-small {
+  font-size: 14px;
+}

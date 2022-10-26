@@ -1,0 +1,6 @@
+﻿---
+Role: |
+  sitecore\Sitecore Content Author Content Access
+MemberOf:
+  Role: |
+    sitecore\Sitecore Content Access

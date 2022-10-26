@@ -1,0 +1,39 @@
+﻿@using Thread.Feature.PageContent
+@using Thread.Foundation.Mvc.Extensions
+@using Thread.Foundation.Theme.Extensions
+@model Thread.Feature.PageContent.Models.RelatedLinksModel
+
+@if (Sitecore.Context.PageMode.IsExperienceEditorEditing || Model.IsValid())
+{
+  <nav class="related-links" aria-label="Related Links">
+    @if (Html.Sitecore().HasValueOrEditing(Model.Datasource.Title))
+    {
+      <h2 class="related-links__title">@Html.Sitecore().Field(Model.Datasource.Title)</h2>
+    }
+    <ul class="related-links__links">
+      @foreach (RelatedLinkItem link in Model.RelatedLinks)
+      {
+        if (Html.Sitecore().HasValueOrEditing(link.Link))
+        {
+          <li class="related-links__link">
+            @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+            {
+              @Html.Sitecore().Field(link.Link, new { @class = "arrow-link" })
+            }
+            else
+            {
+              @Html.Sitecore().BeginField(link.Link, new { wrap = "span", @class = "arrow-link" })
+              @Html.RenderSvg("arrow-right", "icon icon--arrow-right")
+              @Html.Sitecore().EndField()
+            }
+          </li>
+        }
+      }
+
+      @if (Sitecore.Context.PageMode.IsExperienceEditorEditing && !Model.RelatedLinks.Any())
+      {
+        <li class="related-links__link">No Related Links have been selected.</li>
+      }
+    </ul>
+  </nav>
+}

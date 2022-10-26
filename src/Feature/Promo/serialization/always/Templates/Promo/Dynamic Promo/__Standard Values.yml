@@ -1,0 +1,23 @@
+﻿---
+ID: "72b3bbf4-2805-4c3d-b06c-36dd1f8de3a3"
+Parent: "e1d1f8d7-36d5-4c92-a3e4-697127688f65"
+Template: "e1d1f8d7-36d5-4c92-a3e4-697127688f65"
+Path: /sitecore/templates/Feature/Promo/Dynamic Promo/__Standard Values
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200917T101022Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

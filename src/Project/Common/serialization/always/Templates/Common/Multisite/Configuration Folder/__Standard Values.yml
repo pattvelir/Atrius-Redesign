@@ -1,0 +1,23 @@
+﻿---
+ID: "86183f87-f5be-41d9-9c58-d5e6306b620b"
+Parent: "9b1048b7-a9ce-4995-a982-a73684bc4dc2"
+Template: "9b1048b7-a9ce-4995-a982-a73684bc4dc2"
+Path: /sitecore/templates/Project/Common/Multisite/Configuration Folder/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: 
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160219T205121Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

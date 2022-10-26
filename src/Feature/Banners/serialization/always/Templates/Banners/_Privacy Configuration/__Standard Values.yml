@@ -1,0 +1,23 @@
+﻿---
+ID: "0152a2d3-201b-4a1a-b7bd-92b1b351f27e"
+Parent: "5e0e7757-c81c-4ddb-9b57-894e09d73619"
+Template: "5e0e7757-c81c-4ddb-9b57-894e09d73619"
+Path: /sitecore/templates/Feature/Banners/_Privacy Configuration/__Standard Values
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200917T092458Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

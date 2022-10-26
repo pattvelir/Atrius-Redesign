@@ -1,0 +1,22 @@
+﻿---
+ID: "91b9d6fa-f14f-4a02-b158-5eab2a156cd2"
+Parent: "2295d9ab-a9da-4768-910d-c3f4f225340c"
+Template: "61f2ddc5-111b-406a-af8b-e37cdc30ca8a"
+Path: /sitecore/templates/Branches/Project/Demo/Sites/New Demo Site/$name/Home/Taxonomy
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 600
+- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
+  Hint: __Security
+  Value: |
+    ar|sitecore\Sitecore Content Author Content Access|pe|-item:delete|-item:rename|
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161108T201737Z

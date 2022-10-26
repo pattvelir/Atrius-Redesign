@@ -1,0 +1,28 @@
+﻿---
+ID: "fca64c65-6427-49a9-b5e6-a1a53f799305"
+Parent: "5f4af456-85fb-4710-a5b5-2ff60f5be674"
+Template: "ec6d62a5-5d00-4329-8958-8ac1ad100ebb"
+Path: /sitecore/content/Applications/Content Editor/Ribbons/Contextual Ribbons/Image Cropper/Image Cropper/Media
+DB: core
+SharedFields:
+- ID: "12c1ceb4-f549-472a-97ed-99bff70eb84e"
+  Hint: ID
+  Value: ImageCropperStrip
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20111031T202758Z
+    - ID: "4c9dc598-b43a-4b65-8425-bf2c4a9d132e"
+      Hint: Contextual Header
+      Value: Media
+    - ID: "5453dc07-6a17-48ba-8d05-17db90a2e795"
+      Hint: Header
+      Value: Image Cropper
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

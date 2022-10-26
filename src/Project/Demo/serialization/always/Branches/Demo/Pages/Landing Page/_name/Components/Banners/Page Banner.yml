@@ -1,0 +1,14 @@
+﻿---
+ID: "cb0c283b-e828-4a69-9b86-6215912aec9c"
+Parent: "334042c8-d98c-4cf7-8618-c557af5dc4d3"
+Template: "60ac7f1a-2dda-4022-8f6c-a75fd3732303"
+Path: /sitecore/templates/Branches/Project/Demo/Pages/Landing Page/$name/Components/Banners/Page Banner
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161117T031500Z

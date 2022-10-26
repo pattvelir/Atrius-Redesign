@@ -1,0 +1,26 @@
+﻿---
+ID: "52d2d679-2816-4a79-afe8-ebd5f5e9a1e3"
+Parent: "a7b596a7-1238-4167-ac2b-b3d61a33b60a"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Feature/Banners/Banner Parameters
+DB: master
+SharedFields:
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: "{F96BBE64-FA1E-45B6-87F7-63C720EA7A3D}"
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{55FB5DC5-53E2-4CDE-BEA3-A0EC1667210E}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160311T184549Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

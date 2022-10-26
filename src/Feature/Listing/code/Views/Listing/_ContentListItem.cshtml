@@ -1,0 +1,93 @@
+﻿@using Thread.Foundation.Dictionary.Statics
+@using Thread.Foundation.Mvc.Extensions
+@using Thread.Foundation.ResponsiveImages.Extensions
+@using Thread.Foundation.ResponsiveImages.Extensions.Markers
+@using Thread.Foundation.SitecoreExtensions.Base
+@using Thread.Foundation.Taxonomy
+@using Thread.Foundation.Taxonomy.Extensions
+@using PageEditorConstants = Thread.Foundation.PageEditor.Reference.Constants
+@using TaxonomyConstants = Thread.Foundation.Taxonomy.Reference.Constants
+@model Thread.Feature.Listing.ContentListingItemItem
+
+@if (Model != null)
+{
+  using (Html.EditFrame(Model, PageEditorConstants.EditFrameButtons.ChildItems, "Edit Item"))
+  {
+<article class="list-item is-left">
+    @if (Model.Image != null)
+    {
+        if (Sitecore.Context.PageMode.IsExperienceEditor || !Html.Sitecore().HasValueOrEditing(Model.Link))
+        {
+            <div class="list-item__media">
+                @Html.Sitecore().Field(Model.Image, new SrcSet1x2x(width1x: 240))
+            </div>
+        }
+        else
+        {
+            <div class="list-item__media js-list-item-clickable" data-location="@Model.Link.GetFriendlyUrl()">
+        @Html.Sitecore().Field(Model.Image, new SrcSet1x2x(width1x: 240))
+            </div>
+
+        }
+    }
+    <div class="list-item__content">
+        <div class="list-item__header">
+            @if (Html.Sitecore().HasValueOrEditing(Model.ContentType))
+            {
+                using (Html.EditFrame(Model.InnerItem, TaxonomyConstants.EditFrames.EditContentType, "Edit Content Type"))
+                {
+                    <div class="list-item__eyebrow">@Html.Raw(Model.ContentType.TargetItem != null ? Model.ContentType.TargetItem.DisplayName : "No Content Type Selected")</div>
+                }
+            }
+            <h2 class="list-item__title" id="article-@Model.ID">
+                @Html.Sitecore().BeginField(Model.Link, new { haschildren = true })
+                @Html.Sitecore().Field(Model.Title)
+                @Html.Sitecore().EndField()
+            </h2>
+        </div>
+        @if (Html.Sitecore().HasValueOrEditing(Model.Description))
+        {
+          <div class="list-item__description">@Html.Sitecore().Field(Model.Description)</div>
+        }
+        @if (Sitecore.Context.PageMode.IsExperienceEditorEditing || Model.People.TargetIDs.Any() || Model.Date.DateTime > DateTime.MinValue)
+        {
+            <div class="list-item__meta">
+                @if (Html.Sitecore().HasValueOrEditing(Model.Date))
+                {
+                    using (Html.EditFrame(Model.InnerItem, Thread.Feature.Listing.Reference.Constants.EditFrames.EditDate, "Edit Date"))
+                    {
+                        <span class="list-item__date">
+                            @if (Sitecore.Context.PageMode.IsExperienceEditorEditing && string.IsNullOrEmpty(Model.Date.Value))
+                            {
+                                @Html.Raw("No Date Selected")
+                            }
+                            else
+                            {
+                                @Model.Date.DateTime.ToThreadFormat()
+                            }
+                        </span>
+                    }
+                }
+
+                @if (Html.Sitecore().HasValueOrEditing(Model.People))
+                {
+                    using (Html.EditFrame(Model, TaxonomyConstants.EditFrames.EditAuthors, "Edit Authors"))
+                    {
+                        <span class="list-item__byline">
+                            @if (Sitecore.Context.PageMode.IsExperienceEditorEditing && !Model.People.TargetIDs.Any())
+                            {
+                                @Html.Raw("No Authors Selected")
+                            }
+                            else
+                            {
+                                @Html.Raw("by " + string.Join(", ", Model.People.GetItems().Select(p => (PersonItem)p).Select(p => p.GetFullName()).Where(n => !string.IsNullOrEmpty(n)).Select(p => "<strong>" + p + "</strong>")))
+                            }
+                        </span>
+                    }
+                }
+            </div>
+        }
+    </div>
+</article>
+  }
+}

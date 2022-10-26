@@ -1,0 +1,14 @@
+﻿---
+ID: "7baea20d-7242-430f-afaa-e56117dae087"
+Parent: "78188cec-8003-4f47-8dad-e68d6b7b9433"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/Promo/Dynamic Promo Rendering Parameters/Display Options
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200111T151336Z

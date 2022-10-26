@@ -1,0 +1,19 @@
+﻿---
+ID: "69377971-1a07-44fd-a36b-ff819137433e"
+Parent: "f0b3e31a-1e3e-4df7-97fa-0573088c2da5"
+Template: "e822a1e9-d502-463d-b38c-fdb84b3afabf"
+Path: /sitecore/templates/Branches/Feature/Promo/Multi Promo Container/$name
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{4DEE566F-614C-4A89-8F0B-00F4B04BEAB9}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161117T202043Z

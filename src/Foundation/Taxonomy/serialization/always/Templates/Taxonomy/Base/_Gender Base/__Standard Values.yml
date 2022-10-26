@@ -1,0 +1,23 @@
+﻿---
+ID: "b6286e1b-fd16-49d2-b9de-fce44e6b1568"
+Parent: "0901baea-4e2a-4a81-89e5-964b6e80230f"
+Template: "0901baea-4e2a-4a81-89e5-964b6e80230f"
+Path: /sitecore/templates/Foundation/Taxonomy/Base/_Gender Base/__Standard Values
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200917T085730Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

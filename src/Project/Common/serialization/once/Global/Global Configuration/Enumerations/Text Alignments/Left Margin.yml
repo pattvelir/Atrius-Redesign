@@ -1,0 +1,21 @@
+﻿---
+ID: "474dae39-f51d-4dd6-876a-3e9d4031ec0e"
+Parent: "c0d59150-6173-4b5f-8246-6e737dfa149e"
+Template: "6eb8bc7f-e231-44ad-92b2-b1fbac97b3b1"
+Path: /sitecore/content/Global Configuration/Enumerations/Text Alignments/Left Margin
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "197fd7ed-d7de-4445-a87d-3a6b9e845000"
+      Hint: Value
+      Value: indented
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200310T141403Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

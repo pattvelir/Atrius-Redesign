@@ -1,0 +1,23 @@
+﻿---
+ID: "72b46262-1249-4bf2-bc3e-ef450c772c3c"
+Parent: "20a41463-77fe-4eff-a99a-3a5eeb936782"
+Template: "b5e1a562-1a76-49be-a899-1d5ca76703b2"
+Path: /sitecore/templates/Branches/Project/Demo/Sites/New Demo Site/$name/Home/Error/404/Components
+DB: master
+BranchID: "f25c0d49-e33e-4871-828f-107c8d052ed9"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{53B28C3D-4A31-4396-98D7-F47B53FA5B79}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190925T191545Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

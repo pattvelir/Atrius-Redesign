@@ -1,0 +1,36 @@
+﻿@using Thread.Feature.Navigation.Extensions
+@using Thread.Foundation.SitecoreExtensions.Item
+@using Thread.Foundation.Theme.Extensions
+@using Thread.Foundation.Mvc.Extensions;
+@model IEnumerable<Thread.Feature.Navigation.Models.NavItem>
+
+@if (Model != null && Model.Any())
+{
+    <div class="account-nav js-account-nav">
+        <a href="" class="account-nav__toggle js-nav-toggle">
+            Account Navigation
+            <span class="icon">
+                @Html.RenderSvg("chevron-down")
+            </span>
+        </a>
+        <ul role="navigation" class="account-nav__menu js-menu">
+            @foreach (var link in Model)
+            {
+                <li class="account-nav__item">
+                    @if (link.LinkItem.IsCurrentItem)
+                    {
+                        <a href="@link.LinkItem.LinkField.InnerField.Item.Url()" aria-label="current page">@Html.Sitecore().Field(link.LinkItem.LinkField)</a>
+                    }
+                    else
+                    {
+                        @Html.Sitecore().Field(link.LinkItem)
+                    }
+                </li>
+            }
+        </ul>
+    </div>
+}
+else if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+{
+    <p>No member account nav items</p>
+}

@@ -1,0 +1,14 @@
+﻿---
+ID: "953049a3-cc30-4b7e-b197-7b9c5e13ffa0"
+Parent: "692bf8e2-a3ba-4ffa-8814-695c8467fae6"
+Template: "c3b037a0-46e5-4b67-ac7a-a144b962a56f"
+Path: /sitecore/layout/Placeholder Settings/Project/Graybox/Event Detail Page/Containers
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161110T145210Z

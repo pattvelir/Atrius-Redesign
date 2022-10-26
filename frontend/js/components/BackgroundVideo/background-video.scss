@@ -1,0 +1,32 @@
+@import "../../../scss/variables/_colors.scss";
+
+.background-video {
+  position: relative;
+}
+
+.background-video__video {
+}
+
+.background-video__button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  margin: 0 15px 15px 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+
+  svg {
+    height: 25px;
+    width: 25px;
+
+    color: $grey-700;
+  }
+}
+
+.background-video.is-playing .background-video__play,
+.background-video:not(.is-playing) .background-video__pause {
+  display: none;
+}

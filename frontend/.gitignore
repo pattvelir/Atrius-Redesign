@@ -1,0 +1,11 @@
+node_modules
+build/*
+assets/build
+.idea
+.vscode
+js/templates.cache.js
+lab/source/build
+lab/source/assets
+.DS_Store
+
+src/**/code/Areas/assets/**/*

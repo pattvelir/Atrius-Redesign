@@ -1,0 +1,20 @@
+﻿---
+ID: "83f0c28c-d430-4cb3-9af9-8d82bcf55732"
+Parent: "ea583959-6b26-4718-907f-f1e6bb14c9c0"
+Template: "b0666cfe-8c7b-4cc1-8e32-8253742ebfa9"
+Path: /sitecore/content/Applications/WebEdit/Edit Frame Buttons/Taxonomy/People
+DB: core
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190201T151000Z
+    - ID: "80d9e45b-deaf-4f9e-835b-62b43b715bfb"
+      Hint: Default Title
+      Value: Edit Content Type
+    - ID: "9a8dda2f-e364-42f1-bd4f-f1722802c418"
+      Hint: Default Tooltip
+      Value: "Edit the following fields: d7b9c27c-79e3-42a7-9b46-bff652ef0981"

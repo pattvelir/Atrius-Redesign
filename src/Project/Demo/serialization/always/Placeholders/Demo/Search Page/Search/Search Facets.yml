@@ -1,0 +1,27 @@
+﻿---
+ID: "4fddbeac-dee6-4d0e-996b-c0a799bc275d"
+Parent: "3558c6b3-0292-4969-b0d7-906c8335f33d"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/Project/Demo/Search Page/Search/Search Facets
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: 
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: |
+    {0A97DCA8-A7D9-4007-B1C8-07C2B6C89CA4}
+    {405C1B42-AB40-49E0-A9C1-AAFD3F792611}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170111T135549Z

@@ -1,0 +1,29 @@
+﻿---
+ID: "8103e4b3-e956-4031-bc87-5337af846fcb"
+Parent: "2491353e-0d76-4e19-a14f-03cc66def9a6"
+Template: "2491353e-0d76-4e19-a14f-03cc66def9a6"
+Path: /sitecore/templates/Foundation/Theme/Color Pairings Folder/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {618A2809-D88A-4F41-9215-75D558121610}
+    {2491353E-0D76-4E19-A14F-03CC66DEF9A6}
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161025T215027Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

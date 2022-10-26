@@ -1,0 +1,22 @@
+﻿---
+ID: "7cf2532d-f128-4ecc-9f6a-750911b2c048"
+Parent: "d86a6ae6-b6c4-468d-be8d-d0e6f8e502cc"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: /sitecore/system/Dictionary/Default/Forms/Forms Required Message
+DB: master
+SharedFields:
+- ID: "580c75a8-c01a-4580-83cb-987776ceb3af"
+  Hint: Key
+  Value: "{0} is required."
+Languages:
+- Language: en
+  Fields:
+  - ID: "2ba3454a-9a9c-4cdf-a9f8-107fd484eb6e"
+    Hint: Phrase
+    Value: "{0} is a required field!"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190711T162329Z

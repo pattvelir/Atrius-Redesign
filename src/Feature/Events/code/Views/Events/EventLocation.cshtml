@@ -1,0 +1,22 @@
+﻿@using Thread.Foundation.Dictionary.Statics
+
+@model Thread.Feature.Events.Models.EventLocationModel
+
+<section class="event-location">
+  @if (!Sitecore.Context.PageMode.IsExperienceEditorEditing && Model.CanDisplayMap)
+  {
+    <div class="event-location__map">
+      <iframe width="650" height="400" frameborder="0" style="border:0" src="@Model.MapSrc" allowfullscreen title="@EditableTranslate.Text("Events.EventLocation.MapIFrameTitle")"></iframe>
+    </div>
+  }
+  else if (Sitecore.Context.PageMode.IsExperienceEditorEditing || Sitecore.Context.PageMode.IsPreview)
+  {
+    <div class="event-location__placeholder">
+      <img src="/Content/map_placeholder.png" alt="Placeholder map" />
+      @if (!Model.CanDisplayMap)
+      {
+      <p>Please make sure your event address is properly filled out and your Google Maps API Key has been properly configured in the solution.</p>
+      }
+    </div>
+  }
+</section>

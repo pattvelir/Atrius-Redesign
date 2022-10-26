@@ -1,0 +1,26 @@
+﻿---
+ID: "c19602e4-caa3-48bf-940f-d73e706057ab"
+Parent: "917f5ed9-2197-4b18-99d1-19f018f107a1"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/Project/Common/Global/Footer/Footer Bottom
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: "footer-bottom"
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: |
+    {87678FDD-9F1D-4B4F-8FC2-2D13B6CC2C17}
+    {D7CCD033-46DD-421B-A4B0-48EEC441230E}
+    {4C90EEEE-76CA-4CF2-A7F9-B75AAADD473D}
+    {DBD34B40-BAE3-4912-A222-7665771F48CD}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161018T184155Z

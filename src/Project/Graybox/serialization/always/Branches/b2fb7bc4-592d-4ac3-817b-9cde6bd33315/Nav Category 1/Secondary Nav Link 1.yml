@@ -1,0 +1,17 @@
+﻿---
+ID: "3801e469-c844-465a-b589-af7ef6bf6218"
+Parent: "b32f97b6-47ee-482d-89f3-ef7fc24a377b"
+Template: "d5745f91-8fa1-457f-be87-875a029c7b69"
+Path: /sitecore/templates/Branches/Project/Graybox/Sites/New Site/$name/Configuration/Navigation/Primary Navigation/Nav Category 1/Secondary Nav Link 1
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170310T155810Z
+    - ID: "ca902061-ead1-441e-a6d5-90612ce27830"
+      Hint: Link
+      Value: 

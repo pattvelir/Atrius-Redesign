@@ -1,0 +1,12 @@
+﻿---
+Role: |
+  sitecore\Sitecore Content Author
+MemberOf:
+  Role: |
+    sitecore\Sitecore Author Workflow
+  Role: |
+    sitecore\Sitecore Content Author Content Access
+  Role: |
+    sitecore\Sitecore Client Authoring
+  Role: |
+    sitecore\Sitecore Client Designing

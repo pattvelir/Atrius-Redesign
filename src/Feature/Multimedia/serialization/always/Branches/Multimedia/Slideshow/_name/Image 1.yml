@@ -1,0 +1,18 @@
+﻿---
+ID: "740812db-841d-483f-b4c2-f4230d7c336d"
+Parent: "d6d61303-a60c-464d-adff-e219e1e97603"
+Template: "1393e28b-2a66-428c-81f9-bbfe01650e48"
+Path: /sitecore/templates/Branches/Feature/Multimedia/Slideshow/$name/Image 1
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161212T145917Z

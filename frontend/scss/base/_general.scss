@@ -1,0 +1,134 @@
+// general.scss
+// Define universal plain tag styles here
+// NOTE: No classes or IDs!
+
+// color variables
+$base-link-color: $grey-700 !default;
+$base-hairline-color: $grey-600 !default;
+
+body {
+  background-color: #fff;
+}
+
+html,
+body * {
+  box-sizing: border-box;
+}
+
+* {
+  &,
+  &::after,
+  &::before {
+    box-sizing: inherit;
+  }
+}
+
+// body element
+
+body {
+  margin: 0;
+}
+
+// Annotate breakpoints inside body psuedo-selector
+// so they may be read by javascript
+// More details: https://www.lullabot.com/articles/importing-css-breakpoints-into-javascript
+
+body::before {
+  display: none;
+  content: "large";
+
+  @media (max-width: $bp-large-max) {
+    content: "medium";
+  }
+
+  @media (max-width: $bp-x-small-max) {
+    content: "small";
+  }
+}
+
+// flexible media
+
+object,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+// lists
+
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: 60px;
+  padding: 0;
+
+  li {
+    margin-bottom: 10px;
+  }
+}
+
+// nested lists
+
+ul ul,
+ol ul,
+ol ol,
+ul ol {
+  margin-top: 10px;
+}
+
+// definition lists
+
+dl {
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: 60px;
+  padding: 0;
+
+  dd,
+  dt {
+    margin-bottom: 10px;
+  }
+}
+
+// links
+
+a {
+  color: $base-link-color;
+  transition: color 0.28s cubic-bezier(0.4, 0, 0.2, 1); // Fast Out, Slow In
+
+  &:hover {
+    color: rgba($base-link-color, 0.7);
+  }
+}
+
+// hr
+
+hr {
+  box-sizing: content-box;
+  margin: -1px 0 0;
+  border-bottom: 1px solid $base-hairline-color;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+figure {
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+
+  font-size: 16px;
+  border: 1px solid $base-border-color;
+}
+
+th {
+  background-color: $grey-300;
+}

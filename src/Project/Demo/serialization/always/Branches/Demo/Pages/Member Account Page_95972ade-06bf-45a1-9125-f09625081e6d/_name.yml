@@ -1,0 +1,40 @@
+﻿---
+ID: "c46289ec-b25b-44ed-a1b4-eb5f1981d00c"
+Parent: "95972ade-06bf-45a1-9125-f09625081e6d"
+Template: "0b1d60f7-519f-4377-a13c-2cb025c89ce3"
+Path: /sitecore/templates/Branches/Project/Demo/Pages/Member Account Page/$name
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{48E85CE9-2AAA-4815-9842-8CA4B05201BD}"
+          s:ds=""
+          s:par="Include Bottom Margin=1" />
+        <r
+          uid="{A2895705-1004-432A-936E-BAE3E64EDD5D}"
+          p:after="*[1=2]"
+          s:ds=""
+          s:id="{0ED61C20-A5F2-47B1-9CDB-7E62BFAF9C40}"
+          s:par=""
+          s:ph="/content-body/content-width-column-{BF7BCC5A-E28D-48D9-8B0A-1032271A8BD7}-0" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191112T193649Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

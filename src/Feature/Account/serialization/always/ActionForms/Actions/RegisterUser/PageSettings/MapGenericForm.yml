@@ -1,0 +1,14 @@
+﻿---
+ID: "d5643f58-e5f7-4d21-b5f3-4cf50a705c8c"
+Parent: "238601eb-22ac-4b67-a79f-55986e8f8def"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/client/Applications/FormsBuilder/Components/Layouts/Actions/RegisterUser/PageSettings/MapGenericForm
+DB: core
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190503T190801Z

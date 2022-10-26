@@ -1,0 +1,18 @@
+@import "../../../scss/variables/_mixins.scss";
+
+$copyright-symbol-size: 14px !default;
+$copyright-text-size: 14px !default;
+
+.copyright {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  font-size: $copyright-text-size;
+  line-height: $copyright-symbol-size;
+}
+
+.copyright__symbol {
+  display: inline-block;
+  font-size: $copyright-symbol-size;
+  vertical-align: top;
+}

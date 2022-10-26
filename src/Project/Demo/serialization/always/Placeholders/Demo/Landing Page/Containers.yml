@@ -1,0 +1,14 @@
+﻿---
+ID: "80ccdc03-63f6-42f0-8368-cbfb5252ad9f"
+Parent: "4f8ce193-f238-49f7-8fcb-a8a05714fb91"
+Template: "c3b037a0-46e5-4b67-ac7a-a144b962a56f"
+Path: /sitecore/layout/Placeholder Settings/Project/Demo/Landing Page/Containers
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161213T214439Z

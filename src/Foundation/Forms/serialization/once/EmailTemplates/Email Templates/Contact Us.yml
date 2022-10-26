@@ -1,0 +1,33 @@
+﻿---
+ID: "c01304c8-cb7e-4428-a8ab-433c77fd6899"
+Parent: "bc4e24f1-b2af-42fd-8250-9fec15f0dad4"
+Template: "1eb19b8d-905f-4fd3-bf38-0e50c5958954"
+Path: /sitecore/system/Settings/Forms/Email Templates/Contact Us
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0c6784b4-bae1-4599-b0be-56b9a0fe48c1"
+      Hint: Subject
+      Value: "Contact Us Submission: $Subject$"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190925T172251Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "7745a7c0-dc40-485b-9ecf-7b805bcc7af2"
+      Hint: From
+      Value: $From$
+    - ID: "8a357639-4c0c-4a45-9f43-20ec687f4676"
+      Hint: To
+      Value: thread@velir.com
+    - ID: "a730a8d9-d78e-47bf-ad75-8c7497337685"
+      Hint: Body
+      Value: |
+        <p>From: $Name$</p>
+        <p>Message:</p>
+        <p>$Message$</p>

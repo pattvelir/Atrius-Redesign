@@ -1,0 +1,19 @@
+<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
+	<sitecore>
+    <pipelines>
+      <preprocessRequest>
+        <processor type="Sitecore.Pipelines.PreprocessRequest.FilterUrlExtensions, Sitecore.Kernel">
+          <param desc="Allowed extensions (comma separated)">aspx, ashx, asmx, txt, xml</param>
+        </processor>
+      </preprocessRequest>
+    </pipelines>
+    #if ($Sitemap.AgentEnabled == "true")
+    <scheduling>
+      <agent type="Thread.Feature.Sitemap.Agent.GenerateSitemapAgent, Thread.Feature.Sitemap" method="GenerateSitemaps" interval="${Sitemap.AgentInterval}">
+        <param desc="database">web</param>
+        <param desc="sites (pipe-separated)">website</param>
+      </agent>
+    </scheduling>
+    #end
+  </sitecore>
+</configuration>

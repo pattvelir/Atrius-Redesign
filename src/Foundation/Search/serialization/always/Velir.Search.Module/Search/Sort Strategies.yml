@@ -1,0 +1,18 @@
+﻿---
+ID: "4a79da78-93cd-41ae-9f08-48212f62211a"
+Parent: "b9c5d243-921d-45e3-833b-8c4ee3fca798"
+Template: "76b2fe32-c1f6-446d-af66-4c04e2981a94"
+Path: /sitecore/system/Modules/Search/Sort Strategies
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151203T200556Z

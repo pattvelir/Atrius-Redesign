@@ -1,0 +1,65 @@
+﻿@using Thread.Feature.Navigation.Extensions
+@using Thread.Foundation.Theme.Extensions
+@using StringExtensions = Thread.Foundation.Dictionary.Extensions.StringExtensions
+@model IEnumerable<Tuple<Thread.Feature.Navigation.Models.IContextualLinkable, IEnumerable<Thread.Feature.Navigation.Models.ILinkable>, Sitecore.Data.ID>>
+
+@if (Model != null && Model.Any())
+{
+	<nav class="primary-nav js-primary-nav" aria-label="@StringExtensions.Translate("Primary")">
+		<ul class="primary-nav__items">
+
+			@foreach (var tuple in Model)
+			{
+				bool hasSubMenu = tuple.Item2.Any();
+				bool isActive = tuple.Item1.IsAncestorItem || tuple.Item1.IsCurrentItem;
+
+				<li class="primary-nav__item @(hasSubMenu ? "primary-nav__item--submenu" : "") @(isActive ? "primary-nav__top-link--active" : "")">
+					@if (hasSubMenu)
+					{
+						<div class="primary-nav__menu js-primary-nav-menu">
+							<button type="button" id="primarynav-@tuple.Item3" class="primary-nav__top-link primary-nav__top-link--button js-primary-nav-menu-button">
+								<span>@Html.Sitecore().Text(tuple.Item1)</span>
+								@Html.RenderSvg("chevron-down")
+							</button>
+
+							<ul class="primary-nav__submenu js-primary-nav-menu-content" aria-labeledby="primarynav-@tuple.Item3">
+								@foreach (var subMenu in tuple.Item2)
+								{
+									<li class="primary-nav__subitem">@Html.Sitecore().Field(subMenu, new { @class = "primary-nav__sub-link js-primary-nav-sub-link" })</li>
+								}
+							</ul>
+						</div>
+					}
+					else
+					{
+						if (tuple.Item1.IsCurrentItem)
+						{
+							<span aria-current='page' class='primary-nav__top-link primary-nav__top-link--active'>
+								@{
+									string linkText = "";
+									if (tuple.Item1.LinkField is Sitecore.Data.Fields.LinkField)
+									{
+										linkText = (tuple.Item1.LinkField as Sitecore.Data.Fields.LinkField).Text;
+									}
+								}
+								@linkText
+							</span>
+						}
+						else
+						{
+							@Html.Sitecore().Field(tuple.Item1, new { @class = "primary-nav__top-link js-primary-nav-top-link" })
+						}
+					}
+				</li>
+			}
+		</ul>
+	</nav>
+}
+else if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+{
+	<nav class="primary-nav" aria-label="primary">
+		<div class="primary-nav__menu-wrap">
+			<p>Primary navigation has not been configured.</p>
+		</div>
+	</nav>
+}

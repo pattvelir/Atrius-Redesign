@@ -1,0 +1,261 @@
+$search-facets__basic-padding: 16px;
+$search-facets__values-indent: 16px;
+
+.search-facets {
+}
+
+.search-facets__group-top,
+.search-facets__group-more,
+.search-facets__group-heading,
+.search-facets__values-wrapper {
+  padding: $search-facets__basic-padding;
+  padding-bottom: 0;
+}
+
+.search-facets__filter-close {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  display: none;
+  height: 40px;
+  width: 100%;
+
+  button {
+    display: block;
+    margin: 0 auto;
+    padding: 8px 12px;
+
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .icon {
+    float: right;
+    margin-left: 6px;
+
+    color: $white;
+  }
+
+  .icon,
+  .icon svg {
+    height: 24px;
+    width: 24px;
+  }
+
+  @media (max-width: $bp-large-max) {
+    display: block;
+  }
+}
+
+.search-facets__clear-all {
+  padding: $search-facets__basic-padding 8px;
+
+  text-align: right;
+
+  button {
+    font-weight: 700;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  @media (max-width: $bp-large-max) {
+    float: right;
+  }
+}
+
+.search-facets__group {
+  @include clearfix;
+  clear: both;
+  margin-bottom: 20px;
+  background: $grey-200;
+
+  // Root Group Heading
+
+  .search-facets__group-heading {
+    display: flex;
+    justify-content: space-between;
+    padding: $search-facets__basic-padding;
+    background-color: $white;
+    border: 1px solid $grey-300;
+
+    h4 {
+      margin-bottom: 0;
+
+      font-family: $montserrat;
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    button {
+      margin-top: -5px;
+    }
+
+    .icon {
+      height: 32px;
+      width: 32px;
+    }
+  }
+
+  &.is-open {
+    .search-facets__group-heading {
+      border-bottom: 0;
+    }
+
+    .search-facets__group-wrapper {
+      .is-open.search-facets__group {
+        .search-facets__group-heading {
+          border-bottom: 1px solid $grey-400;
+        }
+      }
+    }
+  }
+
+  .search-facets__group {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+}
+
+// Child Group headings
+
+.search-facets__group-wrapper {
+  .search-facets__group-heading {
+    padding: 32px $search-facets__basic-padding 8px;
+    background-color: transparent;
+    border: 0;
+
+    h4 {
+      color: $grey-500;
+      font-size: 16px;
+    }
+  }
+}
+
+.search-facets__group-more,
+.search-facets__group-toggle,
+.search-facets__group-clear,
+.search-facets__value-expand {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.search-facets__group-toggle,
+.search-facets__values-expand {
+  transition: transform 0.2s;
+
+  &.is-open {
+    .icon {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.search-facets__group-toggle {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.search-facets__group-top {
+  width: 100%;
+
+  text-align: right;
+}
+
+.search-facets__group-clear {
+  display: inline-block;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.search-facets__group-selected {
+  margin: 8px 0;
+  background-color: $grey-100;
+  border-bottom: 1px solid $grey-400;
+
+  .search-facets__group-values {
+    padding: $search-facets__basic-padding;
+  }
+}
+
+.search-facets__group-more {
+  padding-bottom: $search-facets__basic-padding;
+
+  text-align: right;
+
+  button {
+    font-size: 14px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+}
+
+.search-facets__value-expand {
+  float: right;
+}
+
+.search-facets__group-values {
+  margin: 0;
+  list-style: none;
+
+  &.is-level-1,
+  &.is-level-2 {
+    margin-left: $search-facets__values-indent;
+  }
+
+  li {
+    label {
+      display: inline-block;
+      padding-left: 8px;
+
+      font-size: 14px;
+    }
+
+    input {
+      display: inline-block;
+
+      vertical-align: middle;
+    }
+  }
+}
+
+.search-facets__group-wrapper {
+  overflow: hidden;
+  border: 1px solid $grey-200;
+  border-top: 0;
+
+  .search-facets__group-wrapper {
+    border: 0;
+  }
+}
+
+.search-facets__group-body {
+  transition: height 0.2s ease-in;
+
+  .search-facets__group-body {
+    padding-left: 0;
+  }
+}
+
+.search-facets__values-wrapper {
+  overflow: hidden;
+
+  // when a group has no direct values, but does have childGroups
+  // we want to remove the top-padding from the first childGroup
+
+  &.has-no-values + .search-facets__group {
+    .search-facets__group-heading {
+      padding-top: 0;
+    }
+  }
+
+  .search-facets__values-wrapper {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,16 @@
+﻿@using Thread.Foundation.Mvc.Extensions
+@model Thread.Feature.Listing.Models.DynamicContentListingModel
+
+<section class="dymanic-content-listing dynamic-content-listing--theme@(Model.Theme)">
+    @if (Html.Sitecore().HasValueOrEditing(Model.Datasource.Title))
+    {
+        <h2 class="dynamic-content-listing__title">@Html.Sitecore().Field(Model.Datasource.Title)</h2>
+    }
+
+    <div
+        class="dynamic-content-listing__mount js-dynamic-content-listing-mount"
+        data-query='@Html.Raw(Model.SerializedQuery)'
+        data-model='@Html.Raw(Model.SerializedConfig)'
+        data-dictionary='@Html.Raw(Model.SerializedDictionary)'>
+    </div>
+</section>

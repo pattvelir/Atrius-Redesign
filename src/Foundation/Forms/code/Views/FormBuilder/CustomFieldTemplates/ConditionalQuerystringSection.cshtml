@@ -1,0 +1,9 @@
+﻿@using Sitecore.ExperienceForms.Mvc.Html
+@model Thread.Foundation.Forms.Models.ConditionalQuerystringFieldViewModel
+
+@{
+    var hiddenText = Model.ShouldDisplay ? string.Empty : "style=display:none;";
+}
+<div data-sc-field-key="@Model.ConditionSettings.FieldKey" @hiddenText class="@Model.CssClass">
+    @Html.RenderFields(Model)
+</div>

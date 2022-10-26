@@ -1,0 +1,26 @@
+﻿---
+ID: "14075a92-2eb4-40be-916d-f89f4e553cc8"
+Parent: "553420cc-2da2-448a-bc94-6364ef2f768c"
+Template: "553420cc-2da2-448a-bc94-6364ef2f768c"
+Path: /sitecore/templates/Feature/Global/Footer/_Footer Copyright/__Standard Values
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161025T131854Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "ddbaec9a-cd44-44f2-91db-c8f997a279f5"
+      Hint: Copyright Statement
+      Value: ##CURRENTYEAR## Company Title. All rights reserved.

@@ -1,0 +1,26 @@
+﻿---
+ID: "97663c1a-80f7-4cca-b6fb-882377fff91a"
+Parent: "e56d528a-b576-4926-85e1-d08acc82fad5"
+Template: "e56d528a-b576-4926-85e1-d08acc82fad5"
+Path: /sitecore/templates/Velir/Image Cropper/Crop Ratio/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{B4EA8092-11AA-4AC2-AA4C-79DBA85B6FD7}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20140314T155600Z
+    - ID: "2be5218a-dc7d-47d9-b9f9-0c9a77d8176a"
+      Hint: Default Quality
+      Value: 65
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

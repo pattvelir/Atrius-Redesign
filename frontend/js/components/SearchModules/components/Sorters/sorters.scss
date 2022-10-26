@@ -1,0 +1,94 @@
+@import "../../../../../scss/variables/_breakpoints.scss";
+@import "../../../../../scss/variables/_colors.scss";
+@import "../../../../../scss/variables/_variables.scss";
+
+.sorters {
+  --flex-gap: 25px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--flex-gap);
+}
+
+.sorters__label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.sorters__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  gap: var(--flex-gap);
+  list-style: none;
+}
+
+.sorters__list-item {
+  margin: 0;
+
+  font-size: 0;
+}
+
+.sorters__sorter {
+  padding: 0;
+
+  text-decoration: none;
+
+  span {
+    position: relative;
+    display: block;
+
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+.sorters__sorter--active span,
+.sorters__sorter:hover span {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.sorters__sorter--has-direction span {
+  margin-right: 16px;
+}
+
+.sorters__sorter--has-direction span::before,
+.sorters__sorter--has-direction span::after {
+  position: absolute;
+  right: -16px;
+  height: 0;
+  width: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  content: "";
+}
+
+.sorters__sorter--has-direction span::before {
+  top: 0;
+  border-bottom: 5px solid $black;
+}
+
+.sorters__sorter--has-direction span::after {
+  bottom: 0;
+  border-top: 5px solid $black;
+}
+
+.sorters__sorter--active {
+  &.sorters__sorter--asc span::before,
+  &.sorters__sorter--desc span::before {
+    border-bottom-color: $black;
+  }
+
+  &.sorters__sorter--asc span::after,
+  &.sorters__sorter--desc span::after {
+    border-top-color: $black;
+  }
+
+  &.sorters__sorter--desc span::before,
+  &.sorters__sorter--asc span::after {
+    border-bottom-color: $grey-500;
+    border-top-color: $grey-500;
+  }
+}

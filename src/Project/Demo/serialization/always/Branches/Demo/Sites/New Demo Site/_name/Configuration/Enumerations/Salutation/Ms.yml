@@ -1,0 +1,17 @@
+﻿---
+ID: "df4d11cc-c234-4d8b-9dc2-6e16d4705c1b"
+Parent: "11d7c8c3-d217-435e-adf0-ed7874cab6d2"
+Template: "24b98cc6-fc73-4bc4-8b45-a40022047990"
+Path: /sitecore/templates/Branches/Project/Demo/Sites/New Demo Site/$name/Configuration/Enumerations/Salutation/Ms
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "197fd7ed-d7de-4445-a87d-3a6b9e845000"
+      Hint: Value
+      Value: Ms.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170310T164345Z

@@ -1,0 +1,18 @@
+﻿---
+ID: "b5471898-e5f2-4eab-9cfa-1333ad26ee8f"
+Parent: "7137b868-ee08-4e39-910d-5ca8ee58ebd7"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Foundation/Taxonomy/Base/_Name Base/Personal Details
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161025T145120Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

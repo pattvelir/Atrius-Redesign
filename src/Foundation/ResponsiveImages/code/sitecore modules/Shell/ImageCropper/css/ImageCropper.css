@@ -1,0 +1,171 @@
+﻿html{
+	font-size: 100%;
+}
+body
+{
+  font-family: Arial;
+  background-color: #FAFAFA;
+  color:  #333;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.231;
+}
+
+.header {
+	padding: 10px;
+	background-color: #eeebe9;
+	height: 30px;
+	color: #494745;
+}
+
+.header h1{
+	font-size: 20px;
+}
+
+.header img {
+	float: right;
+}
+
+.tool-wrapper{
+	min-width: 900px;
+}
+.row  
+{
+  clear:both;
+  padding: 20px 0 0 20px;
+  position: relative;
+}
+
+h1,h3
+{
+  margin: 0;
+}
+
+h1
+{
+    font-size: 20px;
+}
+
+h3
+{
+    font-size: 16px;
+}
+
+.row .section 
+{
+  float: left;
+  width: 400px;
+}
+
+.uploadprogress
+{
+	width: 250px;
+	text-align:center;
+}
+
+.loading {
+	text-align: center;
+}
+
+.loading img {
+	vertical-align: middle;
+	padding-right: 5px;
+}
+
+.row .options
+{
+	padding-left: 20px;
+	width: 380px;
+}
+
+.section div 
+{
+  margin-bottom: 15px;
+}
+
+.row table 
+{
+  width: 400px;
+}
+
+.row table input,
+.row table textarea  
+{
+  width: 100%;
+}
+
+.row table textarea 
+{
+  height: 100px;
+}
+
+.buttons 
+{
+  width: 400px;
+  margin-top: 20px;
+}
+
+.finalbutton div,
+.buttons div 
+{
+  float: left;
+}
+
+.finalbutton div.right,
+.buttons div.right 
+{
+  float: right;
+  margin-left: 20px;
+}
+
+.min-padding
+{
+  padding: 5px 0 0 20px;
+}
+/**Added CSS**/
+div.check 
+{
+	background: url('/~/icon/Applications/16x16/check2.png.aspx') no-repeat scroll right top transparent;
+}
+div.crop-screen{
+	border-bottom: 1px solid #AAA;
+}
+div.crop-screen div.crop-input{
+	margin-bottom: 10px;	
+}
+.margin-left{
+	margin-left: 50px;
+}
+
+div.main-image{
+	display: none;
+}
+label.cropInput-Label{
+	display: none;
+}
+.footnote{
+	color: #999;
+	font-size: 12px;
+}
+/**End Added CSS**/
+
+div.finalbutton 
+{
+  width: 600px;
+  padding: 0 0 0 20px;
+}
+
+div.hidden 
+{
+	display: none;
+}
+  
+#image-quality {
+	border:0; 
+	width:35px; 
+	font-weight:bold;
+  background-color: #FAFAFA;
+	height: 20px;
+	font-size: 19px;
+	text-align: right;
+}

@@ -1,0 +1,74 @@
+@import "../../../scss/variables/_colors.scss";
+@import "../../../scss/variables/_variables.scss";
+
+.event-card {
+  max-width: 600px;
+  padding: 1rem;
+  background-color: $grey-100;
+}
+
+.event-card__date {
+  font-family: $bitter;
+  font-weight: 700;
+}
+
+.event-card__date,
+.event-card__location,
+.event-card__information {
+  margin-bottom: 20px;
+}
+
+.event-card__heading {
+  margin-bottom: 8px;
+
+  font-family: $montserrat;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.event-card__date {
+  display: inline-block;
+  padding: 0;
+
+  span {
+    display: block;
+  }
+
+  span:nth-child(2) {
+    font-size: 20px;
+  }
+}
+
+.event-card__time {
+  display: block;
+
+  time {
+    font-weight: 400;
+  }
+}
+
+.event-card__location {
+  font-size: 14px;
+  font-style: normal;
+
+  span {
+    display: block;
+
+    & > span,
+    & > div {
+      // For EE-generated contenteditable spans
+      display: inline;
+
+      vertical-align: middle;
+    }
+  }
+}
+
+.event-card__city-state-zip {
+}
+
+.event-card__information {
+  font-size: 1rem;
+  line-height: 1.6;
+}

@@ -1,0 +1,31 @@
+﻿@using Thread.Foundation.Dictionary.Statics
+@using Thread.Foundation.Theme.Extensions
+@model Thread.Feature.Account.Models.MemberProfileModel
+
+<fieldset class="account-form__fieldset">
+    <div class="account-form__field-group">
+        <legend class="form-legend">
+            <span class="form-legend__legend-heading">
+                @Html.Raw(EditableTranslate.Text("Account.Profile.ShortBio.Subtitle"))
+            </span>
+            <div class="form-legend__legend-description">
+                @Html.Raw(EditableTranslate.Text("Account.Profile.ShortBio.Description"))
+            </div>
+            <div class="form-legend__legend-message">
+                @Html.RenderSvg("info-circle")
+                <div class="form-legend__legend-message-body">
+                    @Html.Raw(EditableTranslate.Text("Account.Profile.ShortBio.Message"))
+                </div>
+            </div>
+        </legend>
+        <div class="account-form__fields account-form__fields--50-50">
+            <label class="sc-form-item js-form-item js-form-required   ">
+                <span class="sc-form-item__label">@Html.Raw(EditableTranslate.Text("Account.Profile.ShortBio.ShortBioLabel"))</span>
+                <input type="hidden" class="sc-form-item__field js-form-item-field js-rte-content" data-max-length="2600" aria-required="true" data-type="text-length" name="ShortBiography" id="ShortBiography" value="@Model.ShortBiography" />
+                <span role="alert" class="sc-form-item__error-msg">Your Short Bio is too long</span>
+            </label>
+            <div id="editor" class="pell"><div class="account-form__rte-count-container"><span class="js-rte-count account-form__rte-count"></span> Characters Total</div></div>
+            <span role="alert" class="sc-form-item__error-msg"></span>
+        </div>
+    </div>
+</fieldset>

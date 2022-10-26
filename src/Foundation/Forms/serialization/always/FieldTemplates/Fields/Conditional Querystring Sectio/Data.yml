@@ -1,0 +1,14 @@
+﻿---
+ID: "64bc2be3-ad62-4b3c-bfb5-48cada829cb9"
+Parent: "b05db91d-0099-4f6b-9fa3-8c3f614dbbf1"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/System/Forms/Fields/Conditional Querystring Section/Data
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191002T155622Z

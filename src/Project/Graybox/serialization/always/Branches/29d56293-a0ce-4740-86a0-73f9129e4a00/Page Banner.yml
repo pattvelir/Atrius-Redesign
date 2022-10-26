@@ -1,0 +1,18 @@
+﻿---
+ID: "3ed50814-d633-4584-9523-56880386550e"
+Parent: "29d56293-a0ce-4740-86a0-73f9129e4a00"
+Template: "60ac7f1a-2dda-4022-8f6c-a75fd3732303"
+Path: /sitecore/templates/Branches/Project/Graybox/Sites/New Site with Login/$name/Home/Landing Page/Components/Banners/Page Banner
+DB: master
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{DB95A213-A61B-4188-BFCB-5B5DCBD1B707}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170310T162939Z

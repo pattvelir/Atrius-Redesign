@@ -1,0 +1,22 @@
+﻿---
+ID: "93a781c2-b66c-4729-a04d-067e2f635dd6"
+Parent: "44e910a4-d82a-45f0-9fbf-f8377b6514bd"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: /sitecore/system/Dictionary/Default/Banners/Privacy Banner/Accept Label
+DB: master
+SharedFields:
+- ID: "580c75a8-c01a-4580-83cb-987776ceb3af"
+  Hint: Key
+  Value: Banners.PrivacyBanner.Accept
+Languages:
+- Language: en
+  Fields:
+  - ID: "2ba3454a-9a9c-4cdf-a9f8-107fd484eb6e"
+    Hint: Phrase
+    Value: Accept
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191118T215321Z

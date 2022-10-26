@@ -1,0 +1,25 @@
+﻿---
+ID: "ea7afe3e-b147-4d5d-b85c-7984572d0e28"
+Parent: "c0d59150-6173-4b5f-8246-6e737dfa149e"
+Template: "6eb8bc7f-e231-44ad-92b2-b1fbac97b3b1"
+Path: /sitecore/content/Global Configuration/Enumerations/Text Alignments/Default
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "197fd7ed-d7de-4445-a87d-3a6b9e845000"
+      Hint: Value
+      Value: 
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200528T174019Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

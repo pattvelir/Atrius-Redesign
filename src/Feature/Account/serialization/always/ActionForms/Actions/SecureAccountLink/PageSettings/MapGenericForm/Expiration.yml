@@ -1,0 +1,33 @@
+﻿---
+ID: "ec7514ca-36fe-4e02-8d21-f0c6bd296b54"
+Parent: "8c29fe9a-318a-43d8-b74d-a2950cabcde9"
+Template: "dd74148e-e8fc-4774-8cba-bafdb76a4e47"
+Path: /sitecore/client/Applications/FormsBuilder/Components/Layouts/Actions/SecureAccountLink/PageSettings/MapGenericForm/Expiration
+DB: core
+SharedFields:
+- ID: "3809b205-df9b-41bb-9f4c-29a35aa46f64"
+  Hint: InputType
+  Value: Text
+- ID: "3e079fc3-6b2d-41c9-9204-374a786fc761"
+  Hint: BindingConfiguration
+  Value: expiration=Value
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 450
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190509T142833Z
+    - ID: "2d4cece7-1092-404a-8ce9-8936d3a4ba88"
+      Hint: Value
+      Value: 30
+    - ID: "3885a716-2eed-47ae-9132-32225f0458ff"
+      Hint: FormLabel
+      Value: Expiration
+    - ID: "e17d3534-a424-47e3-8f2c-3dbba705565f"
+      Hint: Tooltip
+      Value: Time specified in minutes

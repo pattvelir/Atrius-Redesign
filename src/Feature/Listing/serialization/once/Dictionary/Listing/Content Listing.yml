@@ -1,0 +1,14 @@
+﻿---
+ID: "0b90bdff-1591-41e7-b8e8-26e63785f1de"
+Parent: "d8ae9648-6c10-4e3e-9441-382d84e54034"
+Template: "267d9ac7-5d85-4e9d-af89-99ab296cc218"
+Path: /sitecore/system/Dictionary/Default/Listing/Content Listing
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180703T194927Z

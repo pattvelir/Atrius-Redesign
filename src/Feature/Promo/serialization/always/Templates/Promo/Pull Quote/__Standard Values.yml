@@ -1,0 +1,36 @@
+﻿---
+ID: "bd56a0f0-ee89-41fb-a052-ad115107dfa1"
+Parent: "755f251c-81ed-490c-81ae-c05dd3f6bd2f"
+Template: "755f251c-81ed-490c-81ae-c05dd3f6bd2f"
+Path: /sitecore/templates/Feature/Promo/Pull Quote/__Standard Values
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "058a56b2-57f9-448d-a9f7-3507ee1020ac"
+      Hint: Name
+      Value: Firstname Lastname
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161107T202353Z
+    - ID: "372a8116-9d83-48a7-9539-fee6f2ae4920"
+      Hint: Job Title
+      Value: Job Title
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "be6dd7a7-ef9f-4ea9-b1d1-6c520cc7db1d"
+      Hint: Quote
+      Value: |
+        "This is a centered pull quote from someone or a highlight of some paragraph text."
+    - ID: "f5157f10-b660-40bf-9f93-ecefc38ca4cf"
+      Hint: Company
+      Value: Company Name

@@ -1,0 +1,39 @@
+﻿---
+ID: "c6f59b69-ec5b-405a-a527-377e492669a2"
+Parent: "67688e25-bd36-40f7-aeac-b3cd59042b26"
+Template: "cc427b21-053a-4a29-ab94-1beae52b63f6"
+Path: /sitecore/templates/Branches/Project/Demo/Pages/Detail Page/$name
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{EB71799C-3982-45CA-91CE-C33A14E0181D}"
+          s:par="Caching=0%7c0%7c0%7c0%7c0%7c0%7c0%7c0&amp;Include Bottom Margin=1" />
+        <r
+          uid="{2B292640-87CF-49D0-AE7E-9C57E3E3B5CF}"
+          p:after="r[@uid='{5612F900-285A-4A9E-BF20-9E599A7095A4}']"
+          s:ds="{7547A47B-54FD-4054-B2DD-5AC4EA1643DC}"
+          s:id="{089971A7-90DA-4923-8712-BE61C59DD237}"
+          s:par=""
+          s:ph="/content-body/primary-column-right-{335CD150-84A4-49C4-8BD2-693ECA039674}-0" />
+        <r
+          uid="{F46416F2-CF67-4FFB-9730-A40C3364C979}"
+          s:ds=""
+          s:par="Include Bottom Margin=1" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161212T152704Z

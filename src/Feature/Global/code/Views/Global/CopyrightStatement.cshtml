@@ -1,0 +1,10 @@
+﻿@using Thread.Feature.Global
+@model _FooterCopyrightItem
+
+@if (Html.Sitecore().HasValue(_FooterCopyrightItem.FieldIds.CopyrightStatement) || Sitecore.Context.PageMode.IsExperienceEditor)
+{
+    <div class="copyright">
+        <span class="copyright__symbol">&copy;</span>
+        <span class="copyright__notice">@Html.Sitecore().Field(_FooterCopyrightItem.FieldIds.CopyrightStatement)</span>
+    </div>
+}

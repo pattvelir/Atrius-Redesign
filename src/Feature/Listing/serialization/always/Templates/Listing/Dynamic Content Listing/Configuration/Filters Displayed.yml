@@ -1,0 +1,28 @@
+﻿---
+ID: "bdb4079f-841b-45f6-b590-27aa702d2b99"
+Parent: "151c68f5-1809-4028-b643-acb4eb5ddd82"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/Listing/Dynamic Content Listing/Configuration/Filters Displayed
+DB: master
+SharedFields:
+- ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
+  Hint: Source
+  Value: /sitecore/system/Modules/Search/Filters
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: TreelistEx
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
+Languages:
+- Language: en
+  Fields:
+  - ID: "577f1689-7de4-4ad2-a15f-7fdc1759285f"
+    Hint: __Long description
+    Value: "Determines which taxonomy-based filters will be displayed and it what order. Note that if Content Types Displayed value is limited to specific content types these are the only options that will appear in that filter."
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180611T195222Z

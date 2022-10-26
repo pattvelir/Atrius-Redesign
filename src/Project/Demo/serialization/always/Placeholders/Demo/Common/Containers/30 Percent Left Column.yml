@@ -1,0 +1,28 @@
+﻿---
+ID: "aa7a198e-8ad8-4c93-83ae-0b36b3019597"
+Parent: "f992f670-b093-46c6-81e5-9ed2ea92a932"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/Project/Demo/Common/Containers/30 Percent Left Column
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: "demo-secondary-column-left"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: |
+    {0EECCBC4-D56E-42BD-9227-3CC7C8DDE253}
+    {A1DF36A4-2A83-4F6E-92B7-8CC4AADF3CF1}
+    {1999A7EF-9D6D-4DC8-97AF-A9408543702D}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161004T131555Z

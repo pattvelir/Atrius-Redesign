@@ -1,0 +1,33 @@
+﻿---
+ID: "da3f865b-fd2a-473a-970e-51d3d2476d97"
+Parent: "1c7b8785-d1ad-4494-a4cd-07c37b2573d8"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/Project/Common/Containers/50 50 Right Column
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: "50-50-right-column"
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: |
+    {89D50468-1E51-4FE1-A4B6-4AFA397FAAB3}
+    {93F07F46-F356-419A-B937-A5EB2A9D63DD}
+    {22061E9A-4D3A-4C43-845C-EE91C304A8C7}
+    {B91A369C-77B1-4B6D-96D8-9E878808C1BF}
+    {A1DF36A4-2A83-4F6E-92B7-8CC4AADF3CF1}
+    {0B281A30-77DE-4C3E-A951-8D040D8B52F0}
+    {A2180523-F93E-432A-AF08-6009FA07122C}
+    {968EBC81-A435-428A-86EA-381ECCA3D65B}
+    {089971A7-90DA-4923-8712-BE61C59DD237}
+    {18B407EA-1385-4BAD-AF8A-422D85B0CEF2}
+    {1999A7EF-9D6D-4DC8-97AF-A9408543702D}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161004T131544Z

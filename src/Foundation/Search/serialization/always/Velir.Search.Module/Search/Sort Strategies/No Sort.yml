@@ -1,0 +1,29 @@
+﻿---
+ID: "20a22163-95eb-431e-a912-b54b03317fa6"
+Parent: "4a79da78-93cd-41ae-9f08-48212f62211a"
+Template: "2e317d2b-24ed-4633-87f8-6ccfadb06d93"
+Path: /sitecore/system/Modules/Search/Sort Strategies/No Sort
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 50
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151207T152051Z
+    - ID: "32086477-70e7-45b1-a3fe-204b3a73e42d"
+      Hint: Type
+      Value: Velir.Search.Core.Facets.Sort.NoSortStrategy, Velir.Search.Core
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "c57349b0-ead1-45a7-be69-a1d53971c900"
+      Hint: Include Selected Values
+      Type: Checkbox
+      Value: 1

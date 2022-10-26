@@ -1,0 +1,73 @@
+﻿---
+ID: "cc753765-4e4a-4ce5-b16a-d2184d70c7d0"
+Parent: "ec8f9d21-ae6e-4017-bda3-5d6cf7f66e6e"
+Template: "fcd3bd0d-71bd-45f7-a758-6ababcf3f0f6"
+Path: /sitecore/templates/Branches/Project/Graybox/Sites/New Site with Login/$name/Home/Landing Page/Long Form Page
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <p
+          uid="{2E5328B8-A174-46B2-8076-B2DF5105DCA8}"
+          s:md="{C98D4D8E-6B2D-4FCA-8F74-C275BB8C79FB}" />
+        <p
+          uid="{00EE5058-14D2-4F0F-8E39-70CC9F4FFD49}"
+          s:md="{4B05ED0C-97B7-4E5F-918E-FD721A53697B}" />
+        <p
+          uid="{ECDD7A83-9B2C-46EE-950B-A5186D289912}"
+          s:md="{26030EF5-F63E-41CE-8E3F-063570A505C6}" />
+        <p
+          uid="{C984B85F-0177-46FC-80E0-CD1B4FD25FE4}"
+          s:md="{BCBB1512-C83B-476B-868D-ABE2E1BAE57A}" />
+        <r
+          uid="{AC49801A-F030-4229-9206-D89BCFA7EB4D}"
+          p:after="p[@uid='{C984B85F-0177-46FC-80E0-CD1B4FD25FE4}']"
+          s:ds="{4201D05F-C429-430C-B669-362F8102382E}"
+          s:id="{E2C034E3-E3A6-4329-A870-8B276E6D23B8}"
+          s:par="Banner Height&amp;Color Pairing&amp;Opacity=1"
+          s:ph="/content-body/full-width-column-{8B05B85C-CADF-4C0E-A460-2874217B09F1}-0" />
+        <r
+          uid="{0E502833-C8B2-4086-8362-8D226DF16244}"
+          p:after="r[@uid='{AC49801A-F030-4229-9206-D89BCFA7EB4D}']" />
+        <r
+          uid="{9D524A8D-0742-4FA8-B487-900627E796D9}"
+          p:after="r[@uid='{0E502833-C8B2-4086-8362-8D226DF16244}']"
+          s:ds="{14AEA6EE-F15E-4255-8E03-937B43AF8F6D}"
+          s:id="{089971A7-90DA-4923-8712-BE61C59DD237}"
+          s:par=""
+          s:ph="/content-body/content-width-column-{8047D1DD-8D81-49F4-86BE-25C5F3D2052E}-0" />
+        <r
+          uid="{8B05B85C-CADF-4C0E-A460-2874217B09F1}"
+          s:ds=""
+          s:par="Include Bottom Margin=1" />
+      </d>
+    </r>
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{EE97B266-E00E-4EF2-A39E-5751004C5B9B}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "10e9213f-9aad-4979-a6a4-912a36275bb9"
+      Hint: Short title
+      Value: Long Form Page
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170310T162957Z
+    - ID: "3927b1aa-347c-4d88-9b93-b327eae1b6d0"
+      Hint: Date of Publication
+      Value: 20161103T000000Z
+    - ID: "91573f05-edb0-43cf-ac81-a6ca06c7fc0d"
+      Hint: Title
+      Value: Long Form Page
+    - ID: "d64a69f6-1317-47a1-a78b-2e22423c8133"
+      Hint: Header Title
+      Value: Long Form Page

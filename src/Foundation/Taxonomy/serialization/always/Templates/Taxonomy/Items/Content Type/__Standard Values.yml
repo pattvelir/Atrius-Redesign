@@ -1,0 +1,23 @@
+﻿---
+ID: "1855e663-323d-4d92-90e8-be7e788a67f8"
+Parent: "2dca937a-9634-4d0d-9a27-8b8d9ed3d99b"
+Template: "2dca937a-9634-4d0d-9a27-8b8d9ed3d99b"
+Path: /sitecore/templates/Foundation/Taxonomy/Items/Content Type/__Standard Values
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200917T091136Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

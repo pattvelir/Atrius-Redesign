@@ -1,0 +1,39 @@
+@import "../../../../scss/variables/_colors";
+
+.form-legend {
+  .form-legend__legend-heading {
+    display: block;
+    margin-bottom: 12px;
+
+    color: $black;
+    font-weight: 600;
+  }
+
+  .form-legend__legend-description {
+    color: $black;
+    font-weight: 400;
+  }
+
+  .form-legend__legend-message {
+    display: flex;
+    margin-top: 20px;
+
+    .icon {
+      height: 32px;
+      width: 100%;
+      max-width: 32px;
+      margin-top: -2px;
+      margin-right: 16px;
+    }
+  }
+
+  .form-legend__legend-message-body {
+    color: $grey-500;
+    font-size: 14px;
+
+    .form-legend__legend-message-title {
+      color: $grey-600;
+      font-weight: 700;
+    }
+  }
+}

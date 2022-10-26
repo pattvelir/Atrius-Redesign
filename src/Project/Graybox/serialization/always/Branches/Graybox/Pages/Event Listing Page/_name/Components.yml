@@ -1,0 +1,18 @@
+﻿---
+ID: "2adf3ebd-49b0-457a-b58a-b4a8c2aa6ee6"
+Parent: "a682ef9f-3fd2-4b1c-ae96-caee15e57c75"
+Template: "b5e1a562-1a76-49be-a899-1d5ca76703b2"
+Path: /sitecore/templates/Branches/Project/Graybox/Pages/Event Listing Page/$name/Components
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160308T143430Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

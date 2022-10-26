@@ -1,0 +1,16 @@
+@import "../../../scss/variables/_colors.scss";
+@import "../../../scss/variables/_mixins.scss";
+
+.page-meta {
+  // @include component-whitespace();
+}
+
+.page-meta__byline {
+  margin-left: 0.5em;
+  padding-left: 0.75em;
+  border-left: 1px solid $grey-300;
+}
+
+.page-meta__date {
+  font-style: italic;
+}

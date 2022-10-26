@@ -1,0 +1,14 @@
+﻿---
+ID: "fc79fbc0-d7f1-4967-ad74-b9540549a725"
+Parent: "d9bd6ed8-6e2a-4532-b98a-f09f01a09de3"
+Template: "d5745f91-8fa1-457f-be87-875a029c7b69"
+Path: /sitecore/templates/Branches/Project/Demo/Sites/New Demo Site/$name/Configuration/Navigation/Footer Navigation/Footer Navigation Links/Footer Nav Link 2
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170310T155503Z

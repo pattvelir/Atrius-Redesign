@@ -1,0 +1,14 @@
+﻿---
+ID: "70978b65-8d2d-4904-b94d-4dcf8215db18"
+Parent: "9678aeb1-69ee-4b3a-a934-7261077bdcba"
+Template: "b18df9d2-c961-4a98-af57-bc75d4cf025c"
+Path: /sitecore/system/Modules/Search/Enumerations/Sort Directions
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170111T133531Z

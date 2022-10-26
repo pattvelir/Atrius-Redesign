@@ -1,0 +1,19 @@
+﻿---
+ID: "217574e8-1d1e-4508-8d9a-b5d740979777"
+Parent: "530f4c2f-1482-4a9a-b451-530e06fdd8f2"
+Template: "ef23bbfe-e8e8-421b-8580-75b7d5f77c12"
+Path: /sitecore/templates/Branches/Feature/Multimedia/Multiple Image Container/$name
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{1393E28B-2A66-428C-81F9-BBFE01650E48}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161205T153150Z

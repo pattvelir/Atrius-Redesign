@@ -1,0 +1,76 @@
+﻿@using Thread.Foundation.Dictionary.Statics
+@using Thread.Foundation.Theme.Extensions
+@model Thread.Feature.Account.Models.MemberProfileModel
+
+<fieldset class="account-form__fieldset">
+    <div class="account-form__field-group">
+        <legend class="form-legend">
+            <span class="form-legend__legend-heading">
+                @Html.Raw(EditableTranslate.Text("Account.Profile.AddressInformation.Subtitle"))
+            </span>
+            <div class="form-legend__legend-description">
+                @Html.Raw(EditableTranslate.Text("Account.Profile.AddressInformation.Description"))
+            </div>
+            <div class="form-legend__legend-message">
+                @Html.RenderSvg("info-circle")
+                <div class="form-legend__legend-message-body">
+                    @Html.Raw(EditableTranslate.Text("Account.Profile.AddressInformation.Message"))
+                </div>
+            </div>
+        </legend>
+        <div class="account-form__fields account-form__fields--50-50">
+
+
+            <label class="select-form-item sc-form-item sc-form-item--select sc-form-item--optional sc-form-item--full-width js-form-item ">
+                <span class="select-form-item__text sc-form-item__label"> @Html.Raw(EditableTranslate.Text("Account.Profile.AddressInformation.CountryLabel"))</span>
+                <div class="select-form-item__input-wrapper">
+                    @Html.DropDownListFor(m => m.Country, new List<SelectListItem>(), new { @class = "select-form-item__field sc-form-item__field js-form-item-field js-country-dropdown", data_value = Model.Country, aria_required = "true" })
+                </div>
+                <span role="alert" class="sc-form-item__error-msg"></span>
+            </label>
+            <label class="sc-form-item sc-form-item--optional sc-form-item--full-width js-form-item ">
+                <span class="sc-form-item__label"> @Html.Raw(EditableTranslate.Text("Account.Profile.AddressInformation.Address1Label"))</span>
+                @Html.TextBoxFor(m => m.StreetAddress1, new { @class = "sc-form-item__field js-form-item-field" })
+                <span role="alert" class="sc-form-item__error-msg">A Street Address is required</span>
+            </label>
+            <label class="sc-form-item sc-form-item--optional sc-form-item--full-width js-form-item ">
+                <span class="sc-form-item__label"> @Html.Raw(EditableTranslate.Text("Account.Profile.AddressInformation.Address2Label"))</span>
+                @Html.TextBoxFor(m => m.StreetAddress2, new { @class = "sc-form-item__field js-form-item-field" })
+                <span role="alert" class="sc-form-item__error-msg"></span>
+
+
+            </label>
+
+
+            <label class="sc-form-item sc-form-item--optional js-form-item   ">
+                <span class="sc-form-item__label"> @Html.Raw(EditableTranslate.Text("Account.Profile.AddressInformation.CityLabel"))</span>
+                @Html.TextBoxFor(m => m.City, new { @class = "sc-form-item__field js-form-item-field" })
+                <span role="alert" class="sc-form-item__error-msg">A City is required</span>
+
+
+            </label>
+
+            <div class="flex-spacer"></div>
+
+
+
+            <label class="select-form-item sc-form-item sc-form-item--select sc-form-item--optional js-form-item ">
+                <span class="select-form-item__text sc-form-item__label"> @Html.Raw(EditableTranslate.Text("Account.Profile.AddressInformation.StateLabel"))</span>
+                <div class="select-form-item__input-wrapper">
+                    @Html.DropDownListFor(m => m.State, new List<SelectListItem>(), new { @class = "select-form-item__field sc-form-item__field js-form-item-field js-province-dropdown", data_value = Model.State, aria_required = "true" })
+                </div>
+                <span role="alert" class="sc-form-item__error-msg"></span>
+            </label>
+
+
+
+            <label class="sc-form-item sc-form-item--optional js-form-item   ">
+                <span class="sc-form-item__label"> @Html.Raw(EditableTranslate.Text("Account.Profile.AddressInformation.ZipCodeLabel"))</span>
+                @Html.TextBoxFor(m => m.ZipCode, new { @class = "sc-form-item__field js-form-item-field" })
+                <span role="alert" class="sc-form-item__error-msg">A Zip / Postal Code is required</span>
+
+
+            </label>
+        </div>
+    </div>
+</fieldset>

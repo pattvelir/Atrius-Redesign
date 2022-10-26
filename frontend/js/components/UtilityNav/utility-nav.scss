@@ -1,0 +1,24 @@
+@import "../../../scss/variables/_colors.scss";
+@import "../../../scss/variables/_mixins.scss";
+@import "../../../scss/variables/_variables.scss";
+@import "../../../scss/variables/_breakpoints.scss";
+@import "./_base.scss";
+
+.utility-nav__link {
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+
+  &:not(span):hover {
+    border-bottom: 2px solid currentColor;
+  }
+
+  @media (max-width: $bp-global-header-max) {
+    border: 0;
+
+    &:not(span):hover {
+      color: $white;
+      background-color: $grey-700;
+      border: 0;
+    }
+  }
+}

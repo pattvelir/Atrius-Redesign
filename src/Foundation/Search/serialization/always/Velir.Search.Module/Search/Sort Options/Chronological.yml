@@ -1,0 +1,34 @@
+﻿---
+ID: "1f0ba4c6-9cad-40f9-b093-8fe20fbccb5b"
+Parent: "148d55c7-4490-4291-a7b1-2e84fc85179c"
+Template: "a216f849-a384-46e8-afac-05860d8c69c1"
+Path: /sitecore/system/Modules/Search/Sort Options/Chronological
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1818ab02-885d-41d4-8b71-59da29f81866"
+      Hint: Key
+      Value: date
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170118T205255Z
+    - ID: "32e84ec7-0ac5-4da0-a122-7e18c4c4812b"
+      Hint: Search Field Name
+      Value: c_date
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "b5557551-3655-4b26-840e-3f60931589ee"
+      Hint: Sort Direction Default
+      Value: "{B94A5078-768C-406D-B35B-B90BAF237B19}"
+    - ID: "f5fb1147-82f1-4c02-bff8-cc133618781f"
+      Hint: Title
+      Value: Date

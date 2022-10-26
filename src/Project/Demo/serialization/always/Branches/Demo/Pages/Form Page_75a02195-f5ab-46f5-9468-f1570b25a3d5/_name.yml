@@ -1,0 +1,40 @@
+﻿---
+ID: "a333f9a5-7128-4cda-a554-5008b5ceee4d"
+Parent: "75a02195-f5ab-46f5-9468-f1570b25a3d5"
+Template: "5153aaaf-55d0-4196-8392-c2a437763d43"
+Path: /sitecore/templates/Branches/Project/Demo/Pages/Form Page/$name
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{708B05EC-AF57-41CF-B17D-35052ED6FBEC}"
+          s:ds="{952B1629-60A0-4EEC-AB7C-F871C031F0D5}"
+          s:par="Include Bottom Margin=1" />
+        <r
+          uid="{48B61B1C-1028-45D6-853B-880F71751CB2}"
+          s:ds=""
+          s:par="" />
+        <r
+          uid="{1499620E-F13E-40BD-A280-BD8B192F2FBB}"
+          s:ds="{9580EE57-7C8F-4144-989C-6EDF40D53314}" />
+        <r
+          uid="{332EBDE1-D7DE-456B-8835-80ED4E50B670}"
+          s:ds=""
+          s:par="Include Bottom Margin=1" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191112T193440Z

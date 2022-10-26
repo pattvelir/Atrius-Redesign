@@ -1,0 +1,22 @@
+﻿---
+ID: "e9635423-77f6-42ef-b518-3a834a4924f8"
+Parent: "917f5ed9-2197-4b18-99d1-19f018f107a1"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/Project/Common/Global/Footer/Footer Social
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: "footer-social"
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: "{716E6E7C-6472-41CC-B587-A828168410AE}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161028T153207Z

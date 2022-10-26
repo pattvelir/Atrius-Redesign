@@ -1,0 +1,14 @@
+﻿---
+ID: "e07df68c-2975-4d5d-b852-62333f239e5e"
+Parent: "3e646200-7c4c-4fdf-8e05-32762c7350bd"
+Template: "056b6446-94d4-4c94-86bf-d0b10c384dbc"
+Path: /sitecore/templates/Branches/Project/Graybox/Sites/New Site with Login/$name/Configuration/Navigation/Footer Navigation/Footer Navigation Links
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161017T190930Z

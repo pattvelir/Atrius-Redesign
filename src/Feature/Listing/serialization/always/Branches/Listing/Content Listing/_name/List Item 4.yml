@@ -1,0 +1,21 @@
+﻿---
+ID: "d5f15405-3f76-4baf-964e-a2c6a874b791"
+Parent: "81a5024e-1c72-4c80-97f9-8f849cd7a9ca"
+Template: "f71b9edb-b484-405c-a84f-e8fd17db6ca9"
+Path: /sitecore/templates/Branches/Feature/Listing/Content Listing/$name/List Item 4
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161117T140251Z
+    - ID: "81b6d8c9-cc77-41db-bd64-e6fbc7a5183b"
+      Hint: Title
+      Value: List Item 4

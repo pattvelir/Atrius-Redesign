@@ -1,0 +1,31 @@
+﻿---
+ID: "c19ece9e-7443-4c0c-a6e6-5eabbdec22cd"
+Parent: "148d55c7-4490-4291-a7b1-2e84fc85179c"
+Template: "a216f849-a384-46e8-afac-05860d8c69c1"
+Path: /sitecore/system/Modules/Search/Sort Options/Relevance
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1818ab02-885d-41d4-8b71-59da29f81866"
+      Hint: Key
+      Value: relevance
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170118T205255Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "b5557551-3655-4b26-840e-3f60931589ee"
+      Hint: Sort Direction Default
+      Value: 
+    - ID: "f5fb1147-82f1-4c02-bff8-cc133618781f"
+      Hint: Title
+      Value: Relevance

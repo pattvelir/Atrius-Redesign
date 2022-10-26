@@ -1,0 +1,26 @@
+﻿---
+ID: "757216e9-9fd8-482d-b59e-8c12297bdf82"
+Parent: "77f33dcc-04ef-4c40-8f34-7a131576180e"
+Template: "77f33dcc-04ef-4c40-8f34-7a131576180e"
+Path: /sitecore/templates/Foundation/Enumerations/Email List/__Standard Values
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191001T133707Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "f4e5896d-004e-499d-b8f0-23345baef94d"
+      Hint: Short Description
+      Value: Email list short description aenean lacinia bibendum nulla sed consectetur

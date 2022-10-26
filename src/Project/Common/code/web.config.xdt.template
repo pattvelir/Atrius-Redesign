@@ -1,0 +1,51 @@
+﻿<?xml version="1.0"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <appSettings>
+    <add key="env:define" value="${env}" xdt:Transform="InsertIfMissing" xdt:Locator="Match(key)" />
+    <add key="env:define" value="${env}" xdt:Transform="SetAttributes" xdt:Locator="Match(key)" />
+  </appSettings>
+  <system.web>
+    #if ($webfarm.enabled == "true")
+    <machineKey xdt:Transform="InsertIfMissing" validationKey="${webfarm.validationkey}" decryptionKey="${webfarm.decryptionkey}" decryption="AES" validation="HMACSHA256" />
+    <machineKey xdt:Transform="SetAttributes" validationKey="${webfarm.validationkey}" decryptionKey="${webfarm.decryptionkey}" decryption="AES" validation="HMACSHA256" />
+    #end
+    <httpCookies xdt:Transform="InsertIfMissing" />
+    <httpCookies xdt:Transform="SetAttributes" httpOnlyCookies="true" requireSSL="${Authentication.Cookies.RequireSSL}" />
+
+    <compilation xdt:Transform="SetAttributes" debug="${debug.Mode}" optimizeCompilations="${compilation.OptimizeCompilations}"></compilation>
+
+    <customErrors xdt:Transform="SetAttributes" mode="${Errors.CustomErrors.Mode}" />
+  </system.web>
+  #if($Site.Protocol == "https")
+  <system.webServer>
+    <rewrite xdt:Transform="InsertIfMissing">
+      <rules xdt:Transform="InsertIfMissing">
+        <rule name="HTTPS force" enabled="true" stopProcessing="true" xdt:Transform="InsertIfMissing">
+          <match url="(.*)" />
+          <conditions>
+            <add input="{HTTPS}" pattern="on" ignoreCase="true" />
+            <add input="{HTTP_HOST}" matchType="Pattern" pattern="^localhost(:\d+)?$" negate="true" />
+            <add input="{HTTP_HOST}" matchType="Pattern" pattern="^(127.0.0.1)(:\d+)?$" negate="true" />
+          </conditions>
+          <action type="Redirect" url="https://{HTTP_HOST}{REQUEST_URI}" redirectType="Permanent" />
+        </rule>
+      </rules>
+    </rewrite>
+  </system.webServer>
+  #end
+  <location xdt:Transform="Replace" path="sitecore">
+    <system.webServer>
+      <httpProtocol>
+        <customHeaders>
+          <remove name="X-Content-Type-Options"/>
+          <remove name="X-XSS-Protection"/>
+          <remove name="Content-Security-Policy"/>
+          <add name="X-XSS-Protection" value="1; mode=block"/>
+          <add name="X-Content-Type-Options" value="nosniff "/>
+          <add name="Content-Security-Policy"
+            value="default-src 'self' 'unsafe-inline' 'unsafe-eval' https://apps.sitecore.net https://use.fontawesome.com https://cdn.fontawesome.com; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://use.fontawesome.com; font-src 'self' 'unsafe-inline' https://fonts.gstatic.com https://use.fontawesome.com; upgrade-insecure-requests; block-all-mixed-content;"/>
+        </customHeaders>
+      </httpProtocol>
+    </system.webServer>
+  </location>
+</configuration>

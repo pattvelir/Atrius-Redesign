@@ -1,0 +1,47 @@
+.search-item {
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid $grey-200;
+  opacity: 0;
+  transition: opacity 250ms;
+
+  &.is-visible {
+    opacity: 1;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  a {
+    // remove transitions when graying out results
+    // while search results refreshing
+    transition: none;
+  }
+}
+
+.search-item__meta {
+  margin-bottom: 6px;
+
+  & > span {
+    padding-right: 16px;
+  }
+}
+
+.search-item__title {
+  margin-bottom: 8px;
+}
+
+.search-item__content-type {
+  text-transform: uppercase;
+}
+
+.search-item__body {
+  margin-bottom: 12px;
+}
+
+.search-item__url {
+  font-family: $opensans;
+  font-size: 14px;
+  font-weight: 700;
+}

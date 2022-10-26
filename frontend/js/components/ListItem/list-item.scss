@@ -1,0 +1,126 @@
+@import "../../../scss/variables/_breakpoints.scss";
+@import "../../../scss/variables/_variables.scss";
+@import "../../../scss/variables/_colors.scss";
+@import "../../../scss/variables/mixins/_clearfix.scss";
+
+$list-item-media-margin: 30px;
+
+.list-item {
+  display: flex;
+  align-items: left;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+
+  &.is-left,
+  &.is-right {
+    align-items: flex-start;
+  }
+
+  &.is-left {
+    flex-direction: row-reverse;
+
+    .list-item__media {
+      margin-right: 0;
+      margin-bottom: 0;
+      margin-left: $list-item-media-margin;
+    }
+  }
+
+  &.is-right {
+    flex-direction: row;
+
+    .list-item__media {
+      margin-right: $list-item-media-margin;
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: $bp-x-small-max) {
+    .list-item__media {
+      display: none;
+    }
+  }
+}
+
+.list-item__media {
+  &.js-list-item-clickable {
+    cursor: pointer;
+  }
+
+  img {
+    max-width: 100%;
+    margin-top: 4px;
+  }
+}
+
+@media (max-width: $bp-large-max) {
+  .list-item__media {
+    width: 30%;
+  }
+}
+
+.list-item__content {
+  flex: 1;
+}
+
+.list-item__eyebrow {
+  //  Exceed 100% width to fix IE bug where the eyebrow does not trigger flex-wrap
+  //  For some reason, the computed layout box slightly exceeds the value of width: 100%
+  width: 100.5%;
+  margin-top: 16px;
+  margin-bottom: 4px;
+
+  color: $grey-500;
+  font-family: $montserrat;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.6;
+
+  span + span {
+    margin-left: 8px;
+  }
+
+  span:last-child {
+    display: none;
+  }
+}
+
+.list-item__eyebrow-item--content-type {
+  text-transform: uppercase;
+}
+
+.list-item__featured {
+  display: inline-block;
+  margin: 14px 0;
+  padding: 6px 14px;
+
+  font-family: $font-secondary;
+
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 0;
+  text-transform: unset;
+  background-color: $c-theme-tertiary;
+  border: 1px solid $c-theme-tertiary;
+}
+
+.list-item__title {
+  font-size: 1.563rem;
+}
+
+.list-item__description {
+  max-width: 800px;
+  margin-top: 24px;
+}
+
+.list-item__meta {
+  @include clearfix;
+  margin-top: 16px;
+  margin-bottom: $list-item-media-margin;
+
+  line-height: 1.5;
+}
+
+.list-item__date {
+}

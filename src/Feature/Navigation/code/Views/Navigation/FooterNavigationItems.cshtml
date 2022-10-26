@@ -1,0 +1,25 @@
+﻿@using Thread.Foundation.Mvc.Extensions
+@using Thread.Foundation.PageEditor.Reference
+@using StringExtensions = Thread.Foundation.Dictionary.Extensions.StringExtensions
+
+@model IEnumerable<Thread.Feature.Navigation.LinkItem>
+
+@if (Model != null)
+{
+	<nav class="footer-links" aria-label="@StringExtensions.Translate("Footer Utility")" >
+		<ul>
+			@foreach (var link in Model)
+			{
+				if (Html.Sitecore().HasValueOrEditing(link.Link))
+				{
+					<li>
+						@using (Html.EditFrame(link, Constants.EditFrameButtons.ChildItems, "Edit Item"))
+						{
+							@Html.Sitecore().Field(link.Link)
+						}
+					</li>
+				}
+			}
+		</ul>
+	</nav>
+}

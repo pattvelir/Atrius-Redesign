@@ -1,0 +1,32 @@
+﻿---
+ID: "f0ce06c9-10a5-4b39-af58-77cceb3b7696"
+Parent: "45c047e7-a01e-4e09-ab47-a76dc25f2f0c"
+Template: "45c047e7-a01e-4e09-ab47-a76dc25f2f0c"
+Path: /sitecore/templates/Feature/Search/Site Search/__Standard Values
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1b853b14-36cd-4fee-89e1-2f574c6e1dab"
+      Hint: Search Results Format
+      Value: "{8BF5C2D4-983F-4ECC-9FF2-D50289B6CE3B}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170111T134512Z
+    - ID: "39fc0c16-7a0a-4458-8f51-57fecd5d5477"
+      Hint: Featured Results Endpoint
+      Value: /api/featuredresults
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "642ab2a6-8b71-4553-8dfc-f737362d0779"
+      Hint: Number Of Items
+      Value: 

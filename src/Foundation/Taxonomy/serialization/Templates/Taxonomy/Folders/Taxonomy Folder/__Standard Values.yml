@@ -1,0 +1,27 @@
+﻿---
+ID: "d007d610-f611-400e-9a8c-ea0b57095aa6"
+Parent: "61f2ddc5-111b-406a-af8b-e37cdc30ca8a"
+Template: "61f2ddc5-111b-406a-af8b-e37cdc30ca8a"
+Path: /sitecore/templates/Thread/Foundation/Taxonomy/Folders/Taxonomy Folder/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {61F2DDC5-111B-406A-AF8B-E37CDC30CA8A}
+    {10A620AA-739D-448C-B0EB-F387A5287682}
+    {D7BBAE50-0EDD-4DD8-8489-97443F6E5B19}
+    {EB1141D0-72E9-4C69-91D2-4EA395F3574B}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160302T173735Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

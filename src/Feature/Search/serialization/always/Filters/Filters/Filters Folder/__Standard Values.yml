@@ -1,0 +1,23 @@
+﻿---
+ID: "7a33a4a0-ffbc-4a5a-a7c2-abb072d87ec7"
+Parent: "0056b1ab-7661-4271-96c5-153cc73d3c6f"
+Template: "0056b1ab-7661-4271-96c5-153cc73d3c6f"
+Path: /sitecore/templates/Velir/Search/Filters/Filters Folder/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{2463DE7D-4C6E-4E02-AB46-45833E0408C3}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20140814T140550
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

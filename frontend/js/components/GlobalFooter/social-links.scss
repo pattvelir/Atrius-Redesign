@@ -1,0 +1,21 @@
+.social-links {
+  ul {
+    display: flex;
+    margin: 0;
+    list-style: none;
+  }
+
+  li {
+    margin-right: 5px;
+    margin-bottom: 0;
+
+    a:hover,
+    a:focus {
+      border-color: transparent;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

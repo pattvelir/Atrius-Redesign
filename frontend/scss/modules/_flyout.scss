@@ -1,0 +1,12 @@
+.flyout {
+  z-index: 10;
+  width: 250px;
+  background-color: $white;
+  border: 1px solid $grey-500;
+  border-top: 0;
+  box-shadow: 2px u7px 18px $grey-300;
+
+  &.in-flow {
+    position: static;
+  }
+}

@@ -1,0 +1,37 @@
+﻿@using Sitecore.Mvc.Extensions
+@using Thread.Feature.Social
+@using Thread.Foundation.Theme.Extensions
+@model Thread.Feature.Social.Models.SocialFollowModel
+
+@if (Model != null && Model.SocialFollowItems.Any())
+{
+  <nav class="social-links">
+    <ul>
+      @foreach (var socialFollow in Model.SocialFollowItems)
+      {
+        if (socialFollow.Link != null || Sitecore.Context.PageMode.IsExperienceEditor)
+        {
+          <li>
+            @using (Html.EditFrame(Model.Datasource.ID.ToString(), "/sitecore/content/Applications/WebEdit/Edit Frame Buttons/Social/Social Icon", "Edit Icon", "Edit Icon", string.Empty, null))
+            {
+              @Html.Sitecore().BeginField(SocialMediaLinkItem.FieldIds.Link, socialFollow.InnerItem, new { haschildren = true, aria_label = socialFollow.Link != null ? socialFollow.Link.Text : string.Empty })
+              if (Sitecore.Context.PageMode.IsExperienceEditor && socialFollow.Icon == null)
+              {
+                <p>Select an Icon</p>
+              }
+              else if (socialFollow.Icon.TargetItem != null)
+              {
+                @Html.RenderSvg(socialFollow.Icon.TargetItem.Fields[SocialMediaIconItem.FieldIds.IconName].Value, "connect__social-icon")
+              }
+              @Html.Sitecore().EndField()
+            }
+          </li>
+        }
+      }
+    </ul>
+  </nav>
+}
+else if (Sitecore.Context.PageMode.IsExperienceEditor)
+{
+  <p>No social media icons have been configured.</p>
+}

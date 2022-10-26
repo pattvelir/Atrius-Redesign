@@ -1,0 +1,18 @@
+﻿---
+ID: "419b6ce4-b299-4d7a-9521-56105b5c459a"
+Parent: "e9783d52-2176-42e7-958d-8fee95ed7872"
+Template: "9bbbc5f7-8322-4d98-966f-d1c3eb92bb3e"
+Path: /sitecore/templates/Branches/Project/Demo/Sites/New Demo Site/$name/Home/Taxonomy/Topics/Topic 1/Sub Topic 1
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170310T170136Z

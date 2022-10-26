@@ -1,0 +1,34 @@
+﻿@using Thread.Foundation.Mvc.Extensions
+@using Thread.Foundation.PageEditor.Reference
+@using StringExtensions = Thread.Foundation.Dictionary.Extensions.StringExtensions
+@model IEnumerable<Thread.Feature.Navigation.LinkItem>
+
+@{
+	var links = Model.ToArray();
+}
+@if (links.Any())
+{
+	<nav class="utility-nav" aria-label="@StringExtensions.Translate("Utility")">
+		<ul class="utility-nav__list">
+			@for (int i = 0; i < links.Length; i++)
+			{
+				var link = links[i];
+				if (Html.Sitecore().HasValueOrEditing(link.Link))
+				{
+					<li class="utility-nav__item">
+						@using (Html.EditFrame(link, Constants.EditFrameButtons.ChildItems, "Edit Item"))
+						{
+							@Html.Sitecore().Field(link.Link, new {@class= "utility-nav__link js-utility-nav-link" })
+						}
+					</li>
+				}
+			}
+		</ul>
+	</nav>
+}
+else if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+{
+	<nav class="utility-nav" aria-label="@StringExtensions.Translate("Utility")">
+		<p>Utility Navigation Component</p>
+	</nav>
+}

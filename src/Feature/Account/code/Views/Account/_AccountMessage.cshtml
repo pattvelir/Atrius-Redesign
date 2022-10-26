@@ -1,0 +1,19 @@
+﻿@using Thread.Foundation.Dictionary.Repositories
+@using Thread.Foundation.Theme.Extensions
+@model Thread.Feature.Account.Models.MemberProfileBaseModel
+
+@if (Model.Response != null && !Sitecore.Context.PageMode.IsExperienceEditorEditing)
+{
+    <div class="account-message js-error-box" role="alert">
+        @if (Model.Response.Success)
+        {
+            @Html.RenderSvg("check-circle")
+            <span class="js-error-msg">@(string.IsNullOrEmpty(Model.Response.Message) ? Dictionary.Current.Get("Account.SuccessMessage") : Model.Response.Message)</span>
+        }
+        else
+        {
+            @Html.RenderSvg("notification-circle")
+            <span class="js-error-msg">@(string.IsNullOrEmpty(Model.Response.Message) ?Dictionary.Current.Get("Account.ErrorMessage") : Model.Response.Message)</span>
+        }
+    </div>
+}

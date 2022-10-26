@@ -1,0 +1,22 @@
+﻿---
+ID: "42d0a0b1-f8be-4eb1-8317-1995e37c3b56"
+Parent: "b89cb801-084b-4363-bdc8-082519a277d7"
+Template: "46efcf7f-6ebb-4059-b9bf-8ef47c4f5e20"
+Path: /sitecore/client/Applications/FormsBuilder/Components/Layouts/Actions/LoginUser/PageSettings/ValueNoInListText
+DB: core
+SharedFields:
+- ID: "6d0c0ab0-bc40-4bd0-8acb-16612a180f14"
+  Hint: IsVisible
+  Type: Checkbox
+  Value: 0
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "240acdcd-c405-4e49-a96a-b3caab843920"
+      Hint: Text
+      Value: Value not in the selection list
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190503T190930Z

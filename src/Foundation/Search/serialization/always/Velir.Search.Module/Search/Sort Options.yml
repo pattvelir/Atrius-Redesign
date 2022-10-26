@@ -1,0 +1,14 @@
+﻿---
+ID: "148d55c7-4490-4291-a7b1-2e84fc85179c"
+Parent: "b9c5d243-921d-45e3-833b-8c4ee3fca798"
+Template: "0941e9eb-06e9-415b-aab1-6362dd21afd5"
+Path: /sitecore/system/Modules/Search/Sort Options
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150424T185215Z

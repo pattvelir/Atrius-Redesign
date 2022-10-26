@@ -1,0 +1,14 @@
+﻿---
+ID: "d6d61303-a60c-464d-adff-e219e1e97603"
+Parent: "beacd82f-57fa-4a24-a6bf-6d83719ed0fb"
+Template: "c7f38bce-98f1-4693-93f7-c678dc6d9bcd"
+Path: /sitecore/templates/Branches/Feature/Multimedia/Slideshow/$name
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161212T145900Z

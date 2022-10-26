@@ -1,0 +1,21 @@
+﻿---
+ID: "c7362c86-9147-4cdd-81a7-7029fa6ee9d5"
+Parent: "116a28c6-3e36-4624-99ad-e825dd826c41"
+Template: "523c7870-f866-4f61-8e96-630405c2907f"
+Path: /sitecore/content/Global Configuration/Enumerations/States/Connecticut
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 750
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "197fd7ed-d7de-4445-a87d-3a6b9e845000"
+      Hint: Value
+      Value: CT
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180613T160754Z

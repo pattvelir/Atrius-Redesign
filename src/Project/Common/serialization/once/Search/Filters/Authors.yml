@@ -1,0 +1,26 @@
+﻿---
+ID: "bfee13e8-ca2b-4048-ab1e-e19f781a50d9"
+Parent: "cb643bb4-f947-48f8-a112-0f80239e64c6"
+Template: "2463de7d-4c6e-4e02-ab46-45833e0408c3"
+Path: /sitecore/system/Modules/Search/Filters/Authors
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150831T145548Z
+    - ID: "3162cd52-3d1c-41f1-88a1-e5d7c4e89215"
+      Hint: Title
+      Value: Authors
+    - ID: "605fcdd4-db1f-43b1-a138-fc22f5c563f8"
+      Hint: Search Field Name
+      Value: c_authors
+    - ID: "c009efa3-5b61-4af2-9180-538d9d4a6918"
+      Hint: Sort Strategy
+      Value: "{BF1EB94A-30EA-410D-997D-A0E87057B812}"
+    - ID: "d1c9128f-881b-4951-a9a3-96f7d60cf743"
+      Hint: Key
+      Value: author

@@ -1,0 +1,24 @@
+﻿---
+ID: "7e6768ba-e343-453d-a5d8-ebd0b9ef0e39"
+Parent: "4a5e9c5f-d070-4615-8e38-0cd9e7cadeef"
+Template: "4a5e9c5f-d070-4615-8e38-0cd9e7cadeef"
+Path: /sitecore/templates/Velir/Search/Base/_Admin Configuration/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170111T162930Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8538e64b-69b6-44c0-829b-0826f26231dc"
+      Hint: Search Index Name
+      Value: "sitecore_{0}_index"
+    - ID: "ebbb5cdb-a469-46ae-ab89-fe1f11d676f0"
+      Hint: Endpoint Url
+      Value: /api/search

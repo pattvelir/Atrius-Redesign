@@ -1,0 +1,21 @@
+﻿@using Thread.Foundation.Theme.Extensions
+@using Velir.Search.Core.Models
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+@if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+{
+    <li class="search-results__sorter">
+        <span class="search-results__sort-label">@Html.Sitecore().Field(SortOptionItem.TitleFieldId.ToString())</span>
+        @if (!string.IsNullOrEmpty(Model.Item[SortOptionItem.SortDirectionDefaultFieldId]))
+        {
+            <span class="search-results__sort-dir">
+                <button type="button">
+                    @Html.RenderSvg("arrow_drop_up")
+                </button>
+                <button type="button">
+                    @Html.RenderSvg("arrow_drop_down")
+                </button>
+            </span>
+        }
+    </li>
+}

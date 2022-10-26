@@ -1,0 +1,22 @@
+﻿@using Thread.Feature.Account.Models
+@using Thread.Foundation.Dictionary.Repositories
+@using Thread.Foundation.Theme.Extensions
+@model Thread.Feature.Account.Models.MemberProfileBaseModel
+
+<div class="account-header">
+    <div class="account-header__titles">
+        <h1 class="account-header__title subheader1">@Model.Title</h1>
+        <span class="account-header__subtitle">@Model.Description</span>
+    </div>
+    <div class="account-buttons">
+        @if (Model.GetType() == typeof(MemberProfileModel))
+        {
+            @Html.Partial("_AccountHeaderButtonsProfile", Model)
+        }
+        else
+        {
+            @Html.Partial("_AccountHeaderButtons", Model)
+        }
+    </div>
+</div>
+@Html.Partial("_AccountMessage", Model)

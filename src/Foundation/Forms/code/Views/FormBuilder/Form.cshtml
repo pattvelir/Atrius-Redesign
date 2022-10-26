@@ -1,0 +1,17 @@
+﻿@using Sitecore.ExperienceForms.Mvc.Constants
+@using Sitecore.ExperienceForms.Mvc.Html
+@model Sitecore.ExperienceForms.Mvc.Models.FormViewModel
+
+@{
+    using (Html.BeginRenderRouteForm(Model, IsPost))
+    {
+        @Html.AntiForgeryToken()
+        @Html.Hidden(AttributeNames.FormItemId, Model.ItemId)
+        @Html.RenderFields(Model)
+
+        if (!Sitecore.Context.PageMode.IsExperienceEditor)
+        {
+            <input type="hidden" data-sc-fxb-condition value='@Html.RenderConditions(Model)'/>
+        }
+    }
+}

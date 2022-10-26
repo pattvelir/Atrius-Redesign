@@ -1,0 +1,41 @@
+﻿@using Thread.Foundation.Dictionary.Statics
+@using Thread.Foundation.Dictionary.Repositories
+@using Thread.Foundation.Theme.Extensions
+@model Thread.Feature.Account.Models.MemberAccountSecurityModel
+
+<fieldset class="account-form__fieldset">
+    <div class="account-form__field-group">
+        <legend class="form-legend">
+            <span class="form-legend__legend-heading">
+                @Html.Raw(EditableTranslate.Text("Account.AccountSecurity.ResetEmail.Subtitle"))
+            </span>
+            <div class="form-legend__legend-description">
+                @Html.Raw(EditableTranslate.Text("Account.AccountSecurity.ResetEmail.Description"))
+            </div>
+            @if (!string.IsNullOrEmpty(Dictionary.Current.Get("Account.AccountSecurity.ResetEmail.Message")))
+            {
+                <div class="form-legend__legend-message">
+
+                    @Html.RenderSvg("info-circle")
+                    <div class="form-legend__legend-message-body">
+                        @Html.Raw(EditableTranslate.Text("Account.AccountSecurity.ResetEmail.Message"))
+                    </div>
+                </div>
+            }
+        </legend>
+        <div class="account-form__fields account-form__fields--50-50">
+            <label class="sc-form-item js-form-required   ">
+                <span class="sc-form-item__label">@Html.Raw(EditableTranslate.Text("Account.AccountSecurity.ResetEmail.EmailLabel"))</span>
+                @Html.TextBoxFor(m => m.Email, new { type = "email", @class = "sc-form-item__field", value = string.Empty })
+                <span role="alert" class="sc-form-item__error-msg"></span>
+                @if (!string.IsNullOrEmpty(Dictionary.Current.Get("Account.AccountSecurity.ResetEmail.EmailDescription")))
+                {
+                    <div class="sc-form-item__helper-text">
+                        @Html.RenderSvg("info-circle")
+                        <span>@Html.Raw(EditableTranslate.Text("Account.AccountSecurity.ResetEmail.EmailDescription"))</span>
+                    </div>
+                }
+            </label>
+        </div>
+    </div>
+</fieldset>

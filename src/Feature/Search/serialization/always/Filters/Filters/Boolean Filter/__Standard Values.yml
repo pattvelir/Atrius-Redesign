@@ -1,0 +1,26 @@
+﻿---
+ID: "d924a064-b95b-4b83-82cb-bf99b4e9a949"
+Parent: "ec9f61d5-4b55-4e71-8dfa-20a38d7499c2"
+Template: "ec9f61d5-4b55-4e71-8dfa-20a38d7499c2"
+Path: /sitecore/templates/Velir/Search/Filters/Boolean Filter/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20140818T173439
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "a6bc148a-b466-4c37-baa4-581d96d5d06f"
+      Hint: Apply When False
+      Type: Checkbox
+      Value: 1
+    - ID: "c1c73ebe-0e2b-470c-ab9b-9da77182e7c5"
+      Hint: Apply When True
+      Type: Checkbox
+      Value: 1

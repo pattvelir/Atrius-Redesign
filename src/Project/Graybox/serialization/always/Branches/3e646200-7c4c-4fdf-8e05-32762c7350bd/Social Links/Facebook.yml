@@ -1,0 +1,17 @@
+﻿---
+ID: "027fa5a6-e1a2-4180-9ca3-7cecc2bb60e5"
+Parent: "2b7fdd87-bb8c-48ce-a13b-fd6270f8c4f3"
+Template: "9744d172-190e-49ed-9d2f-b9f588bfeaf9"
+Path: /sitecore/templates/Branches/Project/Graybox/Sites/New Site with Login/$name/Configuration/Navigation/Footer Navigation/Social Links/Facebook
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170310T155520Z
+    - ID: "6c54a7e4-cb8b-4f5c-838e-b784517c4cb7"
+      Hint: Icon
+      Value: "{64BFFBFD-2C49-4C21-9777-8B80743AF5A9}"

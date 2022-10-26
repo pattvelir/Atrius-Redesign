@@ -1,0 +1,22 @@
+﻿---
+ID: "b2fb7bc4-592d-4ac3-817b-9cde6bd33315"
+Parent: "cf8dfc02-9ac5-4a8d-b5d5-1227a08d2178"
+Template: "8c5b5db5-85de-4b12-aaba-0c112cabfdd0"
+Path: /sitecore/templates/Branches/Project/Graybox/Sites/New Site/$name/Configuration/Navigation/Primary Navigation
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
+  Hint: __Security
+  Value: |
+    ar|sitecore\Sitecore Content Author Content Access|pe|-item:delete|-item:rename|
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160929T160059Z

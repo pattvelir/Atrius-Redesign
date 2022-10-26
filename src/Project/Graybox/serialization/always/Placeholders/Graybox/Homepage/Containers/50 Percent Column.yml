@@ -1,0 +1,29 @@
+﻿---
+ID: "116f0349-80d2-4101-b1c5-f5b08ee8b3e8"
+Parent: "8cb703aa-4bb2-4aed-96dc-8df067a49c82"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/Project/Graybox/Homepage/Containers/50 Percent Column
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: 
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: |
+    {89D50468-1E51-4FE1-A4B6-4AFA397FAAB3}
+    {A1DF36A4-2A83-4F6E-92B7-8CC4AADF3CF1}
+    {B91A369C-77B1-4B6D-96D8-9E878808C1BF}
+    {0B281A30-77DE-4C3E-A951-8D040D8B52F0}
+    {A2180523-F93E-432A-AF08-6009FA07122C}
+    {968EBC81-A435-428A-86EA-381ECCA3D65B}
+    {18B407EA-1385-4BAD-AF8A-422D85B0CEF2}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161117T030254Z

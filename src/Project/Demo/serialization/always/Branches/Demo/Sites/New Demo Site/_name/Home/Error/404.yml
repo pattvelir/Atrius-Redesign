@@ -1,0 +1,74 @@
+﻿---
+ID: "20a41463-77fe-4eff-a99a-3a5eeb936782"
+Parent: "05bd202a-f6a9-4b90-a9f4-af6bf933609e"
+Template: "d358c2c1-0081-43bf-8f81-3c5ad05ed0ff"
+Path: /sitecore/templates/Branches/Project/Demo/Sites/New Demo Site/$name/Home/Error/404
+DB: master
+BranchID: "f25c0d49-e33e-4871-828f-107c8d052ed9"
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <p
+          uid="{F68BCE00-453D-46B5-BD0A-7B181E54AF7E}"
+          s:md="{7811E5F3-7D88-4252-9CCF-5BA0891CE404}" />
+        <p
+          uid="{80C131B0-31D5-4145-AD41-E7385A7EC3DF}"
+          s:md="{8EC7B037-D664-4AC2-8917-F1EFA4D903B6}" />
+        <p
+          uid="{72E14C20-70CC-44A3-A51E-CB48CB819C69}"
+          s:md="{DB36443C-676F-414D-AD61-4342104B21D8}" />
+        <r
+          uid="{DE3B41F4-0EEB-45F4-9DAE-800A0805E998}"
+          p:after="p[@uid='{72E14C20-70CC-44A3-A51E-CB48CB819C69}']"
+          s:ds="{7914A86A-810C-4654-A925-6996680DA56E}"
+          s:id="{089971A7-90DA-4923-8712-BE61C59DD237}"
+          s:ph="/content-body/full-width-column-{D38DF4A2-F2CA-4431-92A7-A93F417825AC}-0/content-width-column-{580B684C-9B1A-4F09-85CD-7725342571D7}-0" />
+        <r
+          uid="{4A505092-9A6E-4300-A030-858698D21D08}"
+          p:after="r[@uid='{DE3B41F4-0EEB-45F4-9DAE-800A0805E998}']" />
+        <r
+          uid="{6E4400D0-B44E-4886-A0E0-D24F7336AF5A}"
+          p:after="r[@uid='{4A505092-9A6E-4300-A030-858698D21D08}']"
+          s:ds="{E85D4FD7-3833-4D8A-9B7B-5BCBE1356B65}"
+          s:id="{E2C034E3-E3A6-4329-A870-8B276E6D23B8}"
+          s:par="Banner Height&amp;Color Pairing&amp;Opacity=1"
+          s:ph="/content-body/full-width-column-{D38DF4A2-F2CA-4431-92A7-A93F417825AC}-0" />
+        <r
+          uid="{D38DF4A2-F2CA-4431-92A7-A93F417825AC}"
+          s:ds="{630F3F51-2432-4AE0-BEB7-A408DFA13511}"
+          s:par="Include Bottom Margin" />
+      </d>
+    </r>
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{20A41463-77FE-4EFF-A99A-3A5EEB936782}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "10e9213f-9aad-4979-a6a4-912a36275bb9"
+      Hint: Short title
+      Value: 404
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190925T191545Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "91573f05-edb0-43cf-ac81-a6ca06c7fc0d"
+      Hint: Title
+      Value: 404
+    - ID: "cb8dc0b3-f344-4cb0-b9f2-79eb4da005a9"
+      Hint: Subtitle
+      Value: We can't seem to find what you're looking for
+    - ID: "d64a69f6-1317-47a1-a78b-2e22423c8133"
+      Hint: Header Title
+      Value: "Lost?"

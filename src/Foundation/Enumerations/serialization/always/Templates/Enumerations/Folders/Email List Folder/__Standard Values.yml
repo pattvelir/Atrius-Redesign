@@ -1,0 +1,23 @@
+﻿---
+ID: "01f1b318-304d-483c-92de-54793909ab0c"
+Parent: "b4229f69-76dc-440c-8d4b-440309341aa1"
+Template: "b4229f69-76dc-440c-8d4b-440309341aa1"
+Path: /sitecore/templates/Foundation/Enumerations/Folders/Email List Folder/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{77F33DCC-04EF-4C40-8F34-7A131576180E}"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191001T133348Z

@@ -1,0 +1,89 @@
+﻿@using Sitecore.Configuration
+@using Sitecore.ContentSearch.SearchTypes
+@using Sitecore.Data
+@using Thread.Feature.Search
+@using Thread.Foundation.Mvc.Extensions
+@using Thread.Foundation.Theme.Extensions
+@using Thread.Foundation.Search.Reference
+@using Velir.Search.Core.Models
+@model Thread.Feature.Search.Models.SiteSearchModel
+
+@if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+{
+
+  if (!Model.Datasource.InnerItem.DescendsFrom(SearchResultsItem.TemplateId))
+  {
+    <p>Datasource must be set to Search Results item</p>
+    return;
+  }
+  <form class="search-box" novalidate role="search">
+    <div class="search-box__input">
+      <label for="site-search" class="u-visuallyhidden">Search</label><input type="text" id="site-search" placeholder="Enter keywords" value=""><button type="submit" class="search-box__button" aria-label="Submit Search">
+        @Html.RenderSvg("search")
+      </button>
+    </div>
+  </form>
+
+
+  <section class="container container--30-70">
+    <div class="container__col container__col--30 container__col--left">
+      <div class="search__facets-wrapper">
+    <div class="search__facets-mount js-search-facets" data-search-id="@Model.SearchId">
+      @Html.Sitecore().Placeholder("search-facets")
+    </div>
+  </div>
+    </div>
+    <div class="container__col container__col--70 container__col--right">
+      <section class="search">
+        <section class="search-results">
+          <p class="search-results__status"><strong>1 - 10</strong>&nbsp;<span>of</span>&nbsp;<strong>100</strong>&nbsp;<span>results</span>&nbsp;<span>for "keyword"</span></p>
+          <div class="search-results__sort-bar">
+            <span>Sort By:</span>
+            <ul>
+              @Html.Sitecore().Placeholder("search-sort-options")
+            </ul>
+          </div>
+          <div class="search-results__items">
+            <article class="search-item">
+              <div class="search-item__meta"><span class="search-item__content-type">Article</span><span class="search-item__date">December 11th, 2016</span><span class="search-item__authors"> by <strong>John Smith</strong></span></div>
+              <h3 class="search-item__title">
+                <a href="#">Detail Page 3</a>
+              </h3>
+              <p class="search-item__body">Summary text.</p>
+              <a href="#" class="search-item__url">/articles/2016/article-1</a>
+            </article>
+          </div>
+          @using (Html.EditFrame(Model.Datasource, "", "Edit Results Format"))
+          {
+            if (Model.Datasource.SearchResultsFormat.TargetID.Guid == Constants.ResultFormats.Pagination)
+            {
+              <div class="search-results__pagination">
+                <div class="search-results__pages">
+                  <button class="btn btn--link" type="button" disabled="">&lt;&lt; First</button><button class="btn btn--link" type="button" disabled="">&lt; Previous</button><button class="btn btn--link" type="button" disabled="">Next &gt;</button><button class="btn btn--link" type="button" disabled="">Last &gt;&gt;</button>
+                </div>
+              </div>
+            }
+            else
+            {
+              <div class="search-results__load-more">
+                <button class="btn btn--primary" type="button">@Html.Raw(Thread.Foundation.Dictionary.Statics.EditableTranslate.Text("Search.SiteSearch.LoadMore"))</button>
+              </div>
+            }
+          }
+        </section>
+      </section>
+    </div>
+  </section>
+
+
+  
+}
+else
+{
+  <section class="search search--theme1">
+    <div class="search__mount js-search-mount"
+         data-query='@Html.Raw(Model.SerializedQuery)'
+         data-model='@Html.Raw(Model.SerializedConfig)'
+         data-dictionary='@Html.Raw(Model.SerializedDictionary)'></div>
+  </section>
+}

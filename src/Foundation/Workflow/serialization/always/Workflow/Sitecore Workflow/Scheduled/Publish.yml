@@ -1,0 +1,25 @@
+﻿---
+ID: "821ee058-c18b-4c61-9439-a7c513bca532"
+Parent: "ad1c366a-7190-4c82-9bf9-4b4250fc4a43"
+Template: "cb01f9fc-c187-46b3-ab0b-97a8468d8303"
+Path: /sitecore/system/Workflows/Sitecore Workflow/Scheduled/Publish
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Applications/32x32/check2.png
+- ID: "dcbebc58-6124-4100-a248-fc717d6c78d5"
+  Hint: Next state
+  Value: "{4458FD36-EEF2-40B7-8BA3-A8ED0E41CDAC}"
+- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
+  Hint: __Security
+  Value: |
+    ar|sitecore\Sitecore Publisher Workflow|pe|+workflowCommand:execute|+item:read|pd|+workflowCommand:execute|+item:read|
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200428T121828Z

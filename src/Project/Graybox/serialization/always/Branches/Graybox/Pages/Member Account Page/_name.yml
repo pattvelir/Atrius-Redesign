@@ -1,0 +1,32 @@
+﻿---
+ID: "dd7e29d8-b177-48ba-8b25-a62963fe3dc0"
+Parent: "ff6f1733-b38e-4afd-8008-553806a77528"
+Template: "dc59a232-3274-4de7-b3bb-0ae7594c9659"
+Path: /sitecore/templates/Branches/Project/Graybox/Pages/Member Account Page/$name
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{A2895705-1004-432A-936E-BAE3E64EDD5D}"
+          p:after="*[1=2]"
+          s:ds=""
+          s:id="{0ED61C20-A5F2-47B1-9CDB-7E62BFAF9C40}"
+          s:par=""
+          s:ph="/content-body/content-width-column-{BF7BCC5A-E28D-48D9-8B0A-1032271A8BD7}-0" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190926T182055Z

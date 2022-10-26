@@ -1,0 +1,103 @@
+@import "../../../scss/variables/_mixins.scss";
+@import "../../../scss/variables/_variables.scss";
+@import "../../../scss/variables/_colors.scss";
+
+.text-banner {
+  text-align: center;
+
+  &.text-banner--no-margin {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.text-banner__container.container {
+  padding: 4rem 1rem;
+}
+
+.text-banner__title {
+  font-size: 1.8rem;
+}
+
+.text-banner__description {
+  font-family: $montserrat;
+  font-size: 1.2rem;
+}
+
+.text-banner__cta {
+  transition: opacity 0.28s cubic-bezier(0.4, 0, 0.2, 1); // Fast Out, Slow In
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+// Text Banner Themes
+.text-banner--theme1 {
+  color: $grey-700;
+  background-color: $grey-300;
+
+  .btn-primary {
+    color: $white;
+    background-color: $grey-600;
+    border-color: $grey-600;
+
+    &:hover,
+    &:focus {
+      background-color: $grey-900;
+      border-color: $grey-900;
+    }
+  }
+}
+
+.text-banner--theme2 {
+  color: $grey-700;
+  background-color: $grey-400;
+
+  .btn-primary {
+    color: $black;
+    background-color: $grey-500;
+    border-color: $grey-500;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: $grey-900;
+      border-color: $grey-900;
+    }
+  }
+}
+
+.text-banner--theme3 {
+  color: $white;
+  background-color: $grey-500;
+
+  .btn-primary {
+    color: $black;
+    background-color: $grey-400;
+    border-color: $grey-400;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: $grey-900;
+      border-color: $grey-900;
+    }
+  }
+}
+
+.text-banner--theme4 {
+  color: $grey-700;
+  background-color: $white;
+
+  .btn-primary {
+    color: $white;
+    background-color: $grey-700;
+    border-color: $grey-700;
+
+    &:hover {
+      background-color: $grey-900;
+      border-color: $grey-900;
+    }
+  }
+}

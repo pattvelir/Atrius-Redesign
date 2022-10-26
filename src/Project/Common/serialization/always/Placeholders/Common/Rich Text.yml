@@ -1,0 +1,14 @@
+﻿---
+ID: "001292eb-2165-4874-bf4b-b09ecb34dfd1"
+Parent: "f658cd0c-0991-4c4f-8241-424ca4f89f12"
+Template: "c3b037a0-46e5-4b67-ac7a-a144b962a56f"
+Path: /sitecore/layout/Placeholder Settings/Project/Common/Rich Text
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160303T192954Z

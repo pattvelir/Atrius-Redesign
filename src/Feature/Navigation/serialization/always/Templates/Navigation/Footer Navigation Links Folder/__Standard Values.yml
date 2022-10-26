@@ -1,0 +1,29 @@
+﻿---
+ID: "d5b73097-1ed9-4dd4-899f-b0c02e1e216d"
+Parent: "ed05b776-d15c-47f6-9bb7-887a65cf227d"
+Template: "ed05b776-d15c-47f6-9bb7-887a65cf227d"
+Path: /sitecore/templates/Feature/Navigation/Footer Navigation Links Folder/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {E17A5C79-ED0A-4F95-8A47-CA76322A3C2C}
+    {D5745F91-8FA1-457F-BE87-875A029C7B69}
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160224T195459Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

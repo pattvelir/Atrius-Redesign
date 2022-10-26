@@ -1,0 +1,18 @@
+﻿---
+ID: "90a56516-96b5-4eb0-98f1-00117326f44f"
+Parent: "d6e83b30-4afb-4223-95ef-7b49d576f8c8"
+Template: "aa91a868-02f2-41d3-8b78-1cad91b4dcae"
+Path: /sitecore/system/Settings/Rules/Definitions/Tags/Velir Search/Visibility
+DB: master
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: 
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20140811T112440

@@ -1,0 +1,17 @@
+﻿---
+ID: "6b49a74f-6f92-4042-88d0-5b143c2a15a3"
+Parent: "4064e635-1532-415d-bdbe-18c170b04b87"
+Template: "01258d88-4119-47a5-87f1-f83fc76c92a9"
+Path: /sitecore/content/Global Configuration/Enumerations/Themes/Theme 2
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "197fd7ed-d7de-4445-a87d-3a6b9e845000"
+      Hint: Value
+      Value: 2
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200730T113211Z

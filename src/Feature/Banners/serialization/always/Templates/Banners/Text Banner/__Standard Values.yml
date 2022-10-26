@@ -1,0 +1,26 @@
+﻿---
+ID: "4868eec1-f32e-4fc4-94f7-80aaab7e86d3"
+Parent: "4e8757b1-b9a1-483b-a705-621f86420d75"
+Template: "4e8757b1-b9a1-483b-a705-621f86420d75"
+Path: /sitecore/templates/Feature/Banners/Text Banner/__Standard Values
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161103T170137Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "6bb99ee9-359e-43cb-a9e9-9c199f8d318b"
+      Hint: Title
+      Value: $name

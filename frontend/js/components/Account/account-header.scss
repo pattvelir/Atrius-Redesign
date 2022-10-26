@@ -1,0 +1,38 @@
+@import "../../../scss/variables/_colors.scss";
+@import "../../../scss/variables/_breakpoints.scss";
+@import "../../../scss/variables/_variables.scss";
+
+.account-header {
+  align-items: center;
+  padding: 24px;
+  background-color: $grey-200;
+
+  @media (min-width: $bp-large-min) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.account-header__titles {
+  flex-basis: 62%;
+  flex-grow: 1;
+  flex-shrink: 1;
+
+  @media (min-width: $bp-large-min) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.account-header__title {
+  color: $black;
+  font-family: $opensans;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.account-header__subtitle {
+  @media (min-width: $bp-large-min) {
+    margin-left: 24px;
+  }
+}

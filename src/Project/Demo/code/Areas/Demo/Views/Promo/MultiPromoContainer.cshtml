@@ -1,0 +1,38 @@
+﻿@using Sitecore.Data.Items
+@using Thread.Foundation.Mvc.Extensions
+@using Thread.Foundation.PageEditor.Reference
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+<div class="component multi-promo container">
+    @if (Model != null && Model.Item.Fields["Title"] != null && Sitecore.Context.PageMode.IsExperienceEditorEditing)
+    {
+        <h2 class="multi-promo__title txt-h2">
+            @Html.Sitecore().BeginField("Title")
+            @Html.Sitecore().EndField()
+        </h2>
+    }
+    else if (Model != null && Model.Item.Fields["Title"] != null)
+    {
+        <h2 class="multi-promo__title txt-h2">
+            @Model.Item.Fields["Title"].Value
+        </h2>
+    }
+
+    <section class="multi-promo__items">
+
+
+        @if (Sitecore.Context.PageMode.IsExperienceEditorEditing && !Model.Item.Children.Any())
+        {
+            <p>No Promos have been created.</p>
+        }
+        @foreach (Item child in Model.Item.Children)
+        {
+            using (Html.EditFrame(child, Constants.EditFrameButtons.ChildItems, "Edit Promo"))
+            {
+                <div class="multi-promo__promo">
+                    @Html.Sitecore().Rendering("/sitecore/layout/renderings/feature/promo/promo", new { DataSource = child.ID.ToString(), Parameters = "" })
+                </div>
+            }
+        }
+    </section>
+</div>

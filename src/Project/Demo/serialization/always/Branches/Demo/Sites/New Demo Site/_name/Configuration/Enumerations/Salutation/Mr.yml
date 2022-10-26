@@ -1,0 +1,21 @@
+﻿---
+ID: "676f0b2d-7d44-4925-ab0a-2f7a5a18679c"
+Parent: "11d7c8c3-d217-435e-adf0-ed7874cab6d2"
+Template: "24b98cc6-fc73-4bc4-8b45-a40022047990"
+Path: /sitecore/templates/Branches/Project/Demo/Sites/New Demo Site/$name/Configuration/Enumerations/Salutation/Mr
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "197fd7ed-d7de-4445-a87d-3a6b9e845000"
+      Hint: Value
+      Value: Mr.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170310T164333Z

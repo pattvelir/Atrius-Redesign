@@ -1,0 +1,18 @@
+﻿---
+ID: "ea7b7b4b-9347-475e-b5ea-b25aa69ea829"
+Parent: "91b9d6fa-f14f-4a02-b158-5eab2a156cd2"
+Template: "a814df8e-c530-48bd-b162-a75fea5f1e6a"
+Path: /sitecore/templates/Branches/Project/Demo/Sites/New Demo Site/$name/Home/Taxonomy/People
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161117T151731Z

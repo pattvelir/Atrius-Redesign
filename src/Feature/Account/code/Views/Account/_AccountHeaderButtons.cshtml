@@ -1,0 +1,6 @@
+﻿@using Thread.Foundation.Dictionary.Repositories
+@if (!Sitecore.Context.PageMode.IsExperienceEditorEditing)
+{
+<button class="btn btn--cancel js-cancel-btn" type="button"> @Dictionary.Current.Get("Account.CancelButtonLabel")</button>
+<button class="btn btn--primary js-submit-btn" type="submit" disabled="true"> @Dictionary.Current.Get("Account.SaveButtonLabel")</button>
+}

@@ -1,0 +1,21 @@
+﻿---
+ID: "7d22501d-23dd-4632-811a-e774818e48e1"
+Parent: "9eded55a-013f-4f93-87d0-f33338327122"
+Template: "e56d528a-b576-4926-85e1-d08acc82fad5"
+Path: /sitecore/system/Modules/Image Cropper/Sizes/16x9
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161128T193127Z
+    - ID: "4212293b-523b-45b0-b551-c3a15e53e06a"
+      Hint: Crop Label
+      Value: "16:9"

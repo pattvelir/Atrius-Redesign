@@ -1,0 +1,28 @@
+﻿@using Thread.Foundation.Theme.Extensions
+@using Velir.Search.Core.Models
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+@if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+{
+    <div class="search-facets__group">
+	    <div class="search-facets__group-heading"><h4>@Html.Sitecore().Field(FilterBaseItem.TitleFieldId.ToString())</h4><button class="search-facets__group-toggle is-open" type="button">
+			  @Html.RenderSvg("chevron-down")  
+		    </button>
+        </div>
+        <div class="search-facets__group-wrapper">
+            <div class="search-facets__group-body">
+                <div class="search-facets__group-top"><button class="search-facets__group-clear" type="button">Clear</button>
+                </div>
+                <div class="search-facets__values-wrapper">
+                    <ul class="search-facets__group-values is-level-0">
+                        <li><input type="checkbox" value="on"><label>Facet Value (25)</label></li>
+                        <li><input type="checkbox" value="on"><label>Facet Value (15)</label></li>
+                        <li><input type="checkbox" value="on"><label>Facet Value (5)</label></li>
+                    </ul>
+                </div>
+                <div class="search-facets__group-more"><button type="button">@Html.Raw(Thread.Foundation.Dictionary.Statics.EditableTranslate.Text("Search.SiteSearch.ShowMore"))</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}

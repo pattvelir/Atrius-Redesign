@@ -1,0 +1,20 @@
+﻿---
+ID: "d9ea56ad-421c-4218-bc89-e7d5157adb17"
+Parent: "37d2c955-7d26-4aa1-bd78-44dd4cd74fa2"
+Template: "618a2809-d88a-4f41-9215-75d558121610"
+Path: /sitecore/templates/Branches/Project/Graybox/Sites/New Site/$name/Configuration/Enumerations/Color Pairings/Bg Grey Fg White
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170310T160330Z
+    - ID: "9d35680b-d5b4-4977-8598-87437702a5e1"
+      Hint: Foreground Color
+      Value: "{2049504E-3527-4489-820F-74AF8F8B4594}"
+    - ID: "b7265fde-0fac-48d5-bed3-cca546fcc6bd"
+      Hint: Background Color
+      Value: "{6F6EFA5A-4CF9-4977-9DBA-14D0D9503611}"

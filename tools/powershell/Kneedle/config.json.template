@@ -1,0 +1,8 @@
+#set( $deployRoot = "${Project.DeployRoot}" )
+#set( $jsonDeployRoot = $deployRoot.replace('\', '\\') )
+
+{
+    "SiteAddress": "${Site.Address}",
+    "DeployRoot": "${jsonDeployRoot}",
+    "BuildConfiguration": "${Configuration}"
+}

@@ -1,0 +1,38 @@
+// icons.scss
+// Define icon styles here
+
+// base
+
+// icon styles
+// best viewed at 16, 24, 36, and 48
+
+// reducing styles on the base `icon` to make it easier to override
+.icon {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+
+  vertical-align: middle;
+  fill: currentColor;
+}
+
+// 24x24
+
+.icon--24x24 {
+  height: 24px;
+  width: 24px;
+}
+
+// 36x36
+
+.icon--36x36 {
+  height: 36px;
+  width: 36px;
+}
+
+// 48x48
+
+.icon--48x48 {
+  height: 48px;
+  width: 48px;
+}

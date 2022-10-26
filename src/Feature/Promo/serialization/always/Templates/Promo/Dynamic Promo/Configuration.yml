@@ -1,0 +1,14 @@
+﻿---
+ID: "e356f9b0-0a45-473d-a4f7-5b43827dd8a9"
+Parent: "e1d1f8d7-36d5-4c92-a3e4-697127688f65"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/Promo/Dynamic Promo/Configuration
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200111T150810Z

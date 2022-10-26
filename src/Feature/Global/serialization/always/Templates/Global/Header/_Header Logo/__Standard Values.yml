@@ -1,0 +1,31 @@
+﻿---
+ID: "2dd77d76-ac7c-4343-bd26-b7090d9608c3"
+Parent: "c5e2c715-1397-4ba4-8ebd-ac8e038736d4"
+Template: "c5e2c715-1397-4ba4-8ebd-ac8e038736d4"
+Path: /sitecore/templates/Feature/Global/Header/_Header Logo/__Standard Values
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161012T121232Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "9afdea09-3395-4ca4-b068-b09b0b0033b2"
+      Hint: Header Logo Small
+      Value: |
+        <image mediaid="{A1999E94-8FF2-42CA-9C71-805A26E5AA83}" />
+    - ID: "a0ca1737-a0d7-4878-9f81-49c1759dc482"
+      Hint: Header Logo Large
+      Value: |
+        <image mediaid="{A1999E94-8FF2-42CA-9C71-805A26E5AA83}" />

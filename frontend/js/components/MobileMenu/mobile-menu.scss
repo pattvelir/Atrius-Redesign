@@ -1,0 +1,48 @@
+@import "../../../scss/variables/_colors.scss";
+@import "../../../scss/variables/_variables.scss";
+@import "../../../scss/variables/_mixins.scss";
+
+// NOTE "position: relative;" needs to be added to the parent with full width.
+.mobile-menu {
+  .nav-toggle__label {
+    @include visually-hidden;
+    display: block;
+  }
+
+  .nav-toggle__label + .nav-toggle__label {
+    display: none;
+  }
+}
+
+.mobile-menu__drop-down {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: $z-dropdown;
+  max-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  overflow-y: auto;
+  transition: opacity 1s ease 500ms, visibility 1s ease 500ms;
+
+  .mobile-menu.is-open & {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 250ms, visibility 250ms;
+  }
+}
+
+.mobile-menu__inner-container {
+  position: relative;
+  padding: 8px $gutter;
+  background-color: #fff;
+  transform: translateY(-100%);
+  transition: transform 500ms;
+
+  .mobile-menu.is-open & {
+    transform: translateY(0);
+    transition: transform 750ms;
+  }
+}

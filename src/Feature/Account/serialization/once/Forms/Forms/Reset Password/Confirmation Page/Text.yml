@@ -1,0 +1,22 @@
+﻿---
+ID: "2f87e102-40fd-4bbf-8110-fbbc69780fa7"
+Parent: "a21e242f-ae72-44ea-859b-00fa3df08113"
+Template: "fc18f915-eac6-460a-8777-6e1376a9ea09"
+Path: /sitecore/Forms/Reset Password/Confirmation Page/Text
+DB: master
+SharedFields:
+- ID: "7abaa3f6-6ec0-4b65-a463-7919bfae55aa"
+  Hint: Css Class
+  Value: "sc-form__success-message is-visible rich-text"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190610T132539Z
+    - ID: "9666782b-21bb-40ce-b38f-8f6c53fa5070"
+      Hint: Text
+      Value: |
+        Success! Your password has been reset. Please <a href="#">login</a>.

@@ -1,0 +1,81 @@
+﻿---
+ID: "8d191e18-888c-4c45-ab96-963802a6669a"
+Parent: "420a6589-0c9b-4d12-a6d3-0ee444dbfc98"
+Template: "420a6589-0c9b-4d12-a6d3-0ee444dbfc98"
+Path: /sitecore/templates/Project/Demo/Pages/Search Page/__Standard Values
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Applications/16x16/document_find.png
+- ID: "ca9b9f52-4fb0-4f87-a79f-24dea62cda65"
+  Hint: __Default workflow
+  Value: "{F904F489-7129-4A77-8791-59662AB2B399}"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{8AF7F6ED-C5AE-45F8-90ED-02694A861800}">
+        <p
+          uid="{3F5AC642-48E0-412D-901B-04FDAE5A389B}"
+          key="content-body"
+          md="{A8B7C6D8-9EF2-4724-A6FD-904E08195FBE}" />
+        <p
+          uid="{FED0AB10-DE04-401C-B96C-F665F8683058}"
+          key="full-width-column"
+          md="{8A9589AF-90F0-438D-97CC-EEC0F6F331E5}" />
+        <p
+          uid="{74E1ED73-E4F8-40A3-823A-C25F910367D5}"
+          key="content-width-column"
+          md="{1FAB5861-9E27-4CA1-890D-8E2A5514AC81}" />
+        <p
+          uid="{61203125-3B00-4247-B3EE-FE90E3B7B254}"
+          key="search-sort-options"
+          md="{71CB8FFC-DC5C-4A38-A67F-692EF21DDEBC}" />
+        <p
+          uid="{AB4E0D91-698A-4C69-A5CF-87685358EFD6}"
+          key="search-facets"
+          md="{4FDDBEAC-DEE6-4D0E-996B-C0A799BC275D}" />
+        <r
+          id="{60C2AC1C-4754-4914-B11A-37F0DF825B43}"
+          ph="content-body"
+          uid="{69395D94-C347-4B68-8389-8C74C22D37D1}" />
+        <r
+          id="{FC3D7B61-8FFE-4FA5-8E62-841A0E8A8F17}"
+          ph="/content-body/content-width-column-{69395D94-C347-4B68-8389-8C74C22D37D1}-0"
+          uid="{3DD777BB-E921-4EAD-B5E5-06CC20C64418}" />
+        <r
+          id="{4FC58D75-BE0A-469A-88A8-D5678805B423}"
+          ph="/content-body/content-width-column-{69395D94-C347-4B68-8389-8C74C22D37D1}-0"
+          uid="{5F794B1E-534C-4F7F-AFB2-7CCDDD1CE391}" />
+        <r
+          id="{04E17BDE-B4F7-4B77-BED6-2A24F059D04D}"
+          ph="content-body"
+          uid="{E2875D99-8FAF-4F0E-9E14-D9177BF28782}" />
+        <r
+          ds=""
+          id="{8082A2EA-D9BB-431F-9A16-BD98532E77A4}"
+          par=""
+          ph="/content-body/content-width-column-{69395D94-C347-4B68-8389-8C74C22D37D1}-0"
+          uid="{DA8355DB-CD80-4601-9F8A-1558AF500296}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1bd0fef8-5ee5-435b-bde3-a332a0709e8e"
+      Hint: No Follow
+      Type: Checkbox
+      Value: 1
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161025T204529Z
+    - ID: "497a98de-d47a-4da9-931e-100fc84d5ab1"
+      Hint: No Index
+      Type: Checkbox
+      Value: 1

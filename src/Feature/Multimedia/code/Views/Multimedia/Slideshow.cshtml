@@ -1,0 +1,21 @@
+﻿@using Sitecore.Data.Items
+@using Thread.Feature.Multimedia
+@using Thread.Foundation.Mvc.Extensions
+@using Thread.Foundation.PageEditor.Reference
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+<section class="slideshow">
+  @if (Html.Sitecore().HasValueOrEditing(SlideshowItem.FieldIds.Title))
+  {
+    <h2 class="slideshow__title subheader3">@Html.Sitecore().Field(SlideshowItem.FieldIds.Title)</h2>
+  }
+  <div class="slideshow__slider @(Sitecore.Context.PageMode.IsExperienceEditorEditing ? "" : "js-slideshow-slider")">
+    @foreach (Item child in Model.Item.Children)
+    {
+      using (Html.EditFrame(child, Constants.EditFrameButtons.ChildItems, "Edit Image"))
+      {
+        @Html.Sitecore().Rendering("/sitecore/layout/renderings/feature/multimedia/image", new { DataSource = child.ID.ToString(), Parameters = "" })
+      }
+    }
+  </div>
+</section>

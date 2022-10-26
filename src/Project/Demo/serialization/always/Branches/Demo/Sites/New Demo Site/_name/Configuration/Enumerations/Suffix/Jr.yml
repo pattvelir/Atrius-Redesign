@@ -1,0 +1,21 @@
+﻿---
+ID: "d44c2a46-345a-4f7c-be7c-ad30d0d19c4b"
+Parent: "051c078b-dd2d-4429-9726-8e105dd3de47"
+Template: "7a623f5c-692d-45ce-a749-0aa63f680a67"
+Path: /sitecore/templates/Branches/Project/Demo/Sites/New Demo Site/$name/Configuration/Enumerations/Suffix/Jr
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "197fd7ed-d7de-4445-a87d-3a6b9e845000"
+      Hint: Value
+      Value: Jr.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170310T164354Z

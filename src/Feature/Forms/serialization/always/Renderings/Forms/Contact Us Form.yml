@@ -1,0 +1,32 @@
+﻿---
+ID: "2562f9a1-019f-4548-9ecc-d4d3c7f71619"
+Parent: "d49bec93-cb8d-4131-899a-4bb0cb787adc"
+Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
+Path: /sitecore/layout/Renderings/Feature/Forms/Contact Us Form
+DB: master
+SharedFields:
+- ID: "5a14936f-2100-4541-b700-2f122e88f3f8"
+  Hint: Data source
+  Value: "{25E35E55-38EF-46A3-A0F7-A2A34DDA3D4D}"
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{AB08C633-AB38-473F-B133-1346351B104C}" />
+- ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
+  Hint: Controller Action
+  Value: Index
+- ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
+  Hint: Controller
+  Value: Sitecore.ExperienceForms.Mvc.Controllers.FormBuilderController, Sitecore.ExperienceForms.Mvc
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190920T204427Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

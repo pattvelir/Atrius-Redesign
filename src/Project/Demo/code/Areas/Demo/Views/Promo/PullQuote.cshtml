@@ -1,0 +1,36 @@
+﻿@using Thread.Feature.Promo.Reference
+@using Thread.Foundation.Mvc.Extensions
+@model Thread.Feature.Promo.Models.PullQuoteModel
+
+@if (Model.HasContent() || Sitecore.Context.PageMode.IsExperienceEditorEditing)
+{
+  <figure class="pull-quote container">
+    <blockquote class="pull-quote__quote subheader2">
+      @Html.Sitecore().Field(Model.Datasource.Quote)
+    </blockquote>
+    @if (Model.HasCitation() || Sitecore.Context.PageMode.IsExperienceEditorEditing)
+    {
+      <figcaption class="pull-quote__caption">
+        <span class="pull-quote__prefix">@Html.Raw(SiteSettings.CitatationPrefix)</span>
+        @if (Html.Sitecore().HasValueOrEditing(Model.Datasource.Name))
+        {
+          <span class="pull-quote__name">@Html.Sitecore().Field(Model.Datasource.Name)</span>
+        }
+        @if (Html.Sitecore().HasValueOrEditing(Model.Datasource.JobTitle))
+        {
+          <span class="pull-quote__job">
+            @Html.Sitecore().Field(Model.Datasource.JobTitle)
+          </span>
+        }
+        @if (Html.Sitecore().HasValueOrEditing(Model.Datasource.Company))
+        {
+          <span class="pull-quote__company">
+            @if (Html.Sitecore().HasValueOrEditing(Model.Datasource.Name) || Html.Sitecore().HasValueOrEditing(Model.Datasource.Company))
+            {@SiteSettings.CitatationSeparator}
+            @Html.Sitecore().Field(Model.Datasource.Company)
+          </span>
+        }
+      </figcaption>
+    }
+  </figure>
+}

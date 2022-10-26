@@ -1,0 +1,23 @@
+﻿---
+ID: "6f5bc1c0-1128-4016-8bab-a0b9c7a8ea5f"
+Parent: "8148e537-118d-4f13-b6e4-c70036c5b915"
+Template: "8148e537-118d-4f13-b6e4-c70036c5b915"
+Path: /sitecore/templates/Foundation/Error Handling/Error Handling Configuration/__Standard Values
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200917T084741Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

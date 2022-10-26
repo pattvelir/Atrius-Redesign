@@ -1,0 +1,32 @@
+﻿---
+ID: "04c1d55c-a3fc-4e3a-b361-be02657200a9"
+Parent: "4721b9f9-0517-4a0d-9fe3-97f68b4f59e7"
+Template: "4721b9f9-0517-4a0d-9fe3-97f68b4f59e7"
+Path: /sitecore/templates/Foundation/Cascaded Renderings/Cascaded Rendering/__Standard Values
+DB: master
+SharedFields:
+- ID: "0793dcff-0ee7-48ad-b9d4-ef1dd24eb59b"
+  Hint: Data Source
+  Value: 
+- ID: "3094d236-5985-4c4f-ae6a-e30740885532"
+  Hint: Caching
+  Value: 0|0|0|0|0|0|0|0
+- ID: "e42027f4-766d-45a7-8cf4-29e5c94326f7"
+  Hint: Placeholder
+  Value: 
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160302T150716Z
+    - ID: "55762bbe-cae8-4b96-a662-e946efeb9493"
+      Hint: Cascade
+      Type: Checkbox
+      Value: 1

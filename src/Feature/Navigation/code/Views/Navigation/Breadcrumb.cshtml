@@ -1,0 +1,30 @@
+﻿@using Thread.Feature.Navigation.Extensions
+@using Thread.Foundation.Theme.Extensions
+@model Thread.Feature.Navigation.Models.BreadcrumbModel
+@using StringExtensions = Thread.Foundation.Dictionary.Extensions.StringExtensions
+
+@if (Model != null)
+{
+	<nav class="breadcrumbs container" aria-label="@StringExtensions.Translate("Breadcrumbs")">
+		<ul class="breadcrumbs__list">
+			@foreach (var link in Model.Parents)
+			{
+				<li class="breadcrumbs__item">
+					@Html.Sitecore().Field(link)
+					@if (!string.IsNullOrEmpty(Model.Delimiter))
+					{
+						<span class="breadcrumbs__divider">
+							@Html.RenderSvg(Model.Delimiter, "icon--24x24")
+						</span>
+					}
+				</li>
+			}
+			@if (Model.Current != null)
+			{
+				<li class="breadcrumbs__item">
+					@Html.Raw(Model.Current.LinkField.Value)
+				</li>
+			}
+		</ul>
+	</nav>
+}

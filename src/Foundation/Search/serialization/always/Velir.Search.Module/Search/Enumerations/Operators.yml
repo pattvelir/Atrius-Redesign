@@ -1,0 +1,14 @@
+﻿---
+ID: "fae3cbe6-ac0e-4d7b-918b-4216f2bd2848"
+Parent: "9678aeb1-69ee-4b3a-a934-7261077bdcba"
+Template: "b18df9d2-c961-4a98-af57-bc75d4cf025c"
+Path: /sitecore/system/Modules/Search/Enumerations/Operators
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170111T133512Z

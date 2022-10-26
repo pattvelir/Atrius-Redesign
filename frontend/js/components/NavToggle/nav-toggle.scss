@@ -1,0 +1,110 @@
+@import "../../../scss/variables/_colors.scss";
+@import "../../../scss/variables/_variables.scss";
+@import "../../../scss/variables/_mixins.scss";
+
+// button element
+.nav-toggle {
+  display: block;
+  padding: 0;
+  background: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+// Original Icon style and animation code cribbed from
+// http://codepen.io/pedrocampos/pen/gufrx/
+// This has been modified
+
+.nav-toggle__icon {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+
+  span {
+    position: relative;
+    top: 50%;
+    margin: 0 auto;
+    transition-delay: 0.2s;
+    transition-duration: 0s;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      transition-delay: 0.2s, 0s;
+      transition-duration: 0.2s;
+      transition-property: margin, transform;
+    }
+
+    &,
+    &::before,
+    &::after {
+      display: block;
+      height: 15%;
+      width: 100%;
+      background-color: $base-body-color;
+    }
+
+    &::before {
+      height: 100%;
+      transform: translateY(-250%);
+    }
+
+    &::after {
+      height: 100%;
+      transform: translateY(250%);
+    }
+  }
+}
+
+.nav-toggle__label {
+  padding-top: 4px;
+
+  color: $base-body-color;
+  font-family: $font-secondary;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-toggle__label--open {
+  display: block;
+}
+
+.nav-toggle__label--close {
+  display: none;
+}
+
+.nav-toggle[aria-expanded="true"] {
+  .nav-toggle__icon {
+    span {
+      background-color: rgba(0, 0, 0, 0);
+      transition-delay: 0.2s;
+
+      &::before,
+      &::after {
+        margin-top: 0;
+        transition-delay: 0.2s, 0s;
+        transition-duration: 0.2s;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  .nav-toggle__label-open {
+    display: none;
+  }
+
+  .nav-toggle__label-close {
+    display: block;
+  }
+}

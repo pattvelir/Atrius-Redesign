@@ -1,0 +1,32 @@
+# folders
+.git
+.gitignore
+.vs
+.vscode
+build
+docker
+packages
+src/**/bin/
+**/obj/
+**/out/
+.storybook*
+doc
+#frontend
+node_modules
+sitecorepackages
+#tools/gulp
+tools/helix
+tools/Jenkins
+tools/unicorn
+tools/docker/data
+tools/docker/deploy
+tools/powershell
+tools/nant
+vars
+
+# files
+*Dockerfile
+docker-compose*
+**/*.md
+#*.ps1
+*.bak

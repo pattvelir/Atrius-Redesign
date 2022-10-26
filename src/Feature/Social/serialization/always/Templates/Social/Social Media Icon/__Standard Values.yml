@@ -1,0 +1,30 @@
+﻿---
+ID: "751a4432-ae8f-4e60-8fc1-331316cd4ef5"
+Parent: "8b1e6df7-c1b5-410a-ab8a-10d16e3b3df4"
+Template: "8b1e6df7-c1b5-410a-ab8a-10d16e3b3df4"
+Path: /sitecore/templates/Feature/Social/Social Media Icon/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{8B1E6DF7-C1B5-410A-AB8A-10D16E3B3DF4}"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161107T151128Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "60767e88-bdd6-4c21-bad7-5e338630d5ff"
+      Hint: Icon Name
+      Value: $name

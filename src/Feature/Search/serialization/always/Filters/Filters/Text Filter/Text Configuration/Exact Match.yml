@@ -1,0 +1,21 @@
+﻿---
+ID: "0c131541-0d60-46f4-9248-138ef257a026"
+Parent: "22de3a0c-c88d-4657-bb31-a99d7814f554"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Velir/Search/Filters/Text Filter/Text Configuration/Exact Match
+DB: master
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Checkbox
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20140815T141130

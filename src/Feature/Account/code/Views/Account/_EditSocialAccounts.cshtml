@@ -1,0 +1,40 @@
+﻿@using Thread.Foundation.Dictionary.Statics
+@using Thread.Foundation.Dictionary.Repositories
+@using Thread.Foundation.Theme.Extensions
+@model Thread.Feature.Account.Models.MemberProfileModel
+
+<fieldset class="account-form__fieldset">
+    <div class="account-form__field-group">
+        <legend class="form-legend">
+            <span class="form-legend__legend-heading">
+                @Html.Raw(EditableTranslate.Text("Account.Profile.SocialAccounts.Subtitle"))
+            </span>
+            <div class="form-legend__legend-description">
+                @Html.Raw(EditableTranslate.Text("Account.Profile.SocialAccounts.Description"))
+            </div>
+            <div class="form-legend__legend-message">
+                @Html.RenderSvg("info-circle")
+                <div class="form-legend__legend-message-body">
+                    @Html.Raw(EditableTranslate.Text("Account.Profile.SocialAccounts.Message"))
+                </div>
+            </div>
+        </legend>
+        <div class="account-form__fields account-form__fields--50-50">
+            <label class="sc-form-item js-form-item js-form-required   ">
+                <span class="sc-form-item__label">@Html.Raw(EditableTranslate.Text("Account.Profile.SocialAccounts.LinkedinLabel"))</span>
+                @Html.TextBoxFor(m => m.LinkedInProfileUrl, new { @class = "sc-form-item__field js-form-item-field", placeholder = "http://www.website.com", data_type = "website", aria_required = "true" })
+                <span role="alert" class="sc-form-item__error-msg">Please enter a valid URL</span>
+            </label>
+            <label class="sc-form-item js-form-item js-form-required   ">
+                <span class="sc-form-item__label">@Html.Raw(EditableTranslate.Text("Account.Profile.SocialAccounts.FacebookLabel"))</span>
+                @Html.TextBoxFor(m => m.FacebookProfileUrl, new { @class = "sc-form-item__field js-form-item-field", placeholder = "http://www.website.com", data_type = "website", aria_required = "true" })
+                <span role="alert" class="sc-form-item__error-msg">Please enter a valid URL</span>
+            </label>
+            <label class="sc-form-item js-form-item js-form-required   ">
+                <span class="sc-form-item__label">@Html.Raw(EditableTranslate.Text("Account.Profile.SocialAccounts.TwitterLabel"))</span>
+                @Html.TextBoxFor(m => m.TwitterProfileUrl, new { @class = "sc-form-item__field js-form-item-field", placeholder = "http://www.website.com", data_type = "website", aria_required = "true" })
+                <span role="alert" class="sc-form-item__error-msg">Please enter a valid URL</span>
+            </label>
+        </div>
+    </div>
+</fieldset>

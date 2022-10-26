@@ -1,0 +1,41 @@
+﻿---
+ID: "c630520a-8909-432c-9ce7-c18221908a52"
+Parent: "78188cec-8003-4f47-8dad-e68d6b7b9433"
+Template: "78188cec-8003-4f47-8dad-e68d6b7b9433"
+Path: /sitecore/templates/Feature/Promo/Dynamic Promo Rendering Parameters/__Standard Values
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0dc95fad-d1fa-4ec6-93b7-5780e5bdedc3"
+      Hint: Display Subtitle
+      Type: Checkbox
+      Value: 1
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200111T152235Z
+    - ID: "358a573f-230f-4a81-b5a1-479bd56b17e9"
+      Hint: Display Link
+      Type: Checkbox
+      Value: 1
+    - ID: "4908e72e-a35a-4d3d-92ef-042d338cd82a"
+      Hint: Display Content Type Label
+      Type: Checkbox
+      Value: 1
+    - ID: "886360bf-3e31-4e30-b8b4-b440fab7525c"
+      Hint: Image Format
+      Value: "{D6B99B22-A412-4AD1-93FF-14C85D7348FA}"
+    - ID: "8c5494a9-b8b4-49f5-880a-31359307d697"
+      Hint: Display Summary
+      Type: Checkbox
+      Value: 1
+    - ID: "f26501b9-4ce7-4d6b-bbf6-605ff5865970"
+      Hint: Image Orientation
+      Value: "{795FFF70-F8AF-48AB-AEAF-055E312663BE}"

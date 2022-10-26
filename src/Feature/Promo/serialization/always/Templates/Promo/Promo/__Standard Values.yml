@@ -1,0 +1,33 @@
+﻿---
+ID: "0a8880f1-7795-416a-ae52-f6a155cf59a5"
+Parent: "4dee566f-614c-4a89-8f0b-00f4b04beab9"
+Template: "4dee566f-614c-4a89-8f0b-00f4b04beab9"
+Path: /sitecore/templates/Feature/Promo/Promo/__Standard Values
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160315T124836Z
+    - ID: "4d17936d-369e-4156-9308-abe4388454da"
+      Hint: Subtitle
+      Value: 
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "6b9e0b00-03c3-47e2-8b0f-8f5db2176d7d"
+      Hint: Image
+      Value: |
+        <image mediaid="{ECD1121C-5433-44E4-81D1-AD708F9DAECC}" />
+    - ID: "72c1bf85-d4e0-4c4a-822d-174391e1333e"
+      Hint: Title
+      Value: $name

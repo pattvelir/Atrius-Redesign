@@ -1,0 +1,23 @@
+﻿---
+ID: "357edbf4-55f9-48cd-a92e-0b621a4ee27d"
+Parent: "7d24dfac-bdf7-4bd2-a2e7-159e300c0170"
+Template: "7d24dfac-bdf7-4bd2-a2e7-159e300c0170"
+Path: /sitecore/templates/Foundation/Enumerations/_Numerical Enumeration Base/__Standard Values
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200917T083932Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

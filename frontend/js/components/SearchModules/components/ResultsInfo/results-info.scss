@@ -1,0 +1,33 @@
+@import "../../../../../scss/variables/mixins";
+
+.results-info {
+  display: flex;
+
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.results-info__label,
+.results-info__range,
+.results-info__total-results {
+  padding-right: 5px;
+}
+
+.results-info__range {
+  font-weight: 500;
+}
+
+.results-info__total-results {
+  font-weight: 500;
+}
+
+.results-info__query {
+  font-weight: 500;
+}
+
+.results-info__clear-filters {
+  margin-left: auto;
+
+  font-weight: bold;
+  text-transform: uppercase;
+}

@@ -1,0 +1,18 @@
+﻿---
+ID: "07a7a6d7-5719-446e-95a8-7120dab7dd27"
+Parent: "ee97b266-e00e-4ef2-a39e-5751004c5b9b"
+Template: "b5e1a562-1a76-49be-a899-1d5ca76703b2"
+Path: /sitecore/templates/Branches/Project/Graybox/Pages/Long Form Page/$name/Components
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160308T143430Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

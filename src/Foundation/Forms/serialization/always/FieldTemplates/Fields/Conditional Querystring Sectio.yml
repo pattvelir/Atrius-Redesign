@@ -1,0 +1,25 @@
+﻿---
+ID: "b05db91d-0099-4f6b-9fa3-8c3f614dbbf1"
+Parent: "ebde78cc-ad3f-4623-b395-cc67df70b5ea"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/System/Forms/Fields/Conditional Querystring Section
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/document_header.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: "{84ED565A-BEC9-46D4-9603-6E0516580832}"
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{B9D0178F-8036-4F7A-8214-21F069EC2CCF}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191002T155558Z

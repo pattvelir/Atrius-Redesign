@@ -1,0 +1,21 @@
+﻿---
+ID: "76c1de22-e8d0-4c5a-a72c-081aa45a5220"
+Parent: "60d380f3-459c-4254-b858-6f4b237d1007"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Foundation/Workflow/Scheduled Publishing Workflow Comments/Schedule/Unpublish Date
+DB: master
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Datetime
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200504T105641Z

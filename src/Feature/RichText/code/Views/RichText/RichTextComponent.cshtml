@@ -1,0 +1,12 @@
+﻿@using Thread.Feature.RichText
+@using Thread.Foundation.Mvc.Extensions
+@model Thread.Feature.RichText.Models.RichTextComponentModel
+
+@if (Model != null && Model.Datasource != null)
+{
+
+    if (Html.Sitecore().HasValueOrEditing(Model.Datasource.Text))
+    {
+        <section class="rich-text js-rich-text @(Model.TextAllignment)" style="--max-width:@(Model.RenderingParameters.MaxWidth)px;">@Html.Sitecore().Field(RichTextItem.FieldIds.Text)</section>
+    }
+}

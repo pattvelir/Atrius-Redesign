@@ -1,0 +1,19 @@
+﻿---
+ID: "db402d39-ea01-4ad2-9e2b-88cf8c46ac13"
+Parent: "1c15176f-bb2e-4062-8819-565982b4c64f"
+Template: "95e5e5ef-6382-4bf8-979e-65f9e46da42d"
+Path: /sitecore/templates/Branches/Project/Graybox/Sites/New Site with Login/$name/Configuration/Navigation
+DB: master
+SharedFields:
+- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
+  Hint: __Security
+  Value: |
+    ar|sitecore\Sitecore Content Author Content Access|pe|-item:delete|-item:rename|
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161006T155146Z

@@ -1,0 +1,6 @@
+﻿---
+Role: |
+  sitecore\Sitecore Author Workflow
+MemberOf:
+  Role: |
+    sitecore\Sitecore Workflow

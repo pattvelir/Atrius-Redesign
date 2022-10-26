@@ -1,0 +1,24 @@
+@import "../../../../../scss/variables/_breakpoints.scss";
+
+.simple-grid {
+}
+
+.simple-grid__container {
+  --vertical-spacing: 48px;
+  --horizontal-spacing: 32px;
+  display: grid;
+  grid-gap: var(--vertical-spacing) var(--horizontal-spacing);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.simple-grid__item {
+  .list-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .list-item__media {
+    width: 100%;
+  }
+}

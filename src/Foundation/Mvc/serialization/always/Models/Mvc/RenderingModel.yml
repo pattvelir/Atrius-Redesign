@@ -1,0 +1,22 @@
+﻿---
+ID: "9137eb02-e231-4962-9c97-9c3a5dab2875"
+Parent: "62130f10-e399-4524-894a-d50e32d49ee5"
+Template: "fed6a14f-0d05-4e18-b160-17c0588a2005"
+Path: /sitecore/layout/Models/Foundation/Mvc/RenderingModel
+DB: master
+SharedFields:
+- ID: "ee9e23d2-181d-4172-a929-0e0b8d10313c"
+  Hint: Model Type
+  Value: Sitecore.Mvc.Presentation.RenderingModel,Sitecore.Mvc
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200812T023956Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

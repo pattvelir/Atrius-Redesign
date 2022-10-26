@@ -1,0 +1,18 @@
+﻿---
+ID: "16bdac3d-63bd-4b0e-b1c8-6cf1936a2058"
+Parent: "7bbb1306-1992-4079-9586-2c35d7fa66fc"
+Template: "09f8503a-5ccf-4e2c-9a5c-d9cf0d73fd69"
+Path: /sitecore/content/Global Configuration/Enumerations/Ratios
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 900
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180611T201726Z

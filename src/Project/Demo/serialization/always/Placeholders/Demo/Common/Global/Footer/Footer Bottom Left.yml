@@ -1,0 +1,27 @@
+﻿---
+ID: "3048f994-9a4d-4436-8711-cc5eb308982b"
+Parent: "bdbb8830-5b29-4504-ad0b-001fee7475ba"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/Project/Demo/Common/Global/Footer/Footer Bottom Left
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: "demo-footer-bottom-left"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: |
+    {87678FDD-9F1D-4B4F-8FC2-2D13B6CC2C17}
+    {DBD34B40-BAE3-4912-A222-7665771F48CD}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161018T184155Z

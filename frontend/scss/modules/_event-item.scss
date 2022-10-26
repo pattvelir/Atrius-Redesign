@@ -1,0 +1,35 @@
+.event-item {
+}
+
+.event-item__header {
+  display: flex;
+}
+
+.event-item__datetime {
+  width: 60px;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+
+  font-family: $bitter;
+  font-size: 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+
+  span {
+    display: block;
+
+    &:nth-child(2) {
+      font-size: 1.6rem;
+      letter-spacing: 2px;
+    }
+  }
+}
+
+.event-item__location {
+  font-family: $montserrat;
+  font-size: 1rem;
+}
+
+.event-item__description {
+  margin-left: 92px;
+}

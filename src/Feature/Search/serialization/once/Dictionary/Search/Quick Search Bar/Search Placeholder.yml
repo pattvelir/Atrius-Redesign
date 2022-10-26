@@ -1,0 +1,22 @@
+﻿---
+ID: "f774fb72-ead3-4e6d-bd40-41ede3fac4b9"
+Parent: "75b14bfa-8887-45c9-b153-afc0bf3dbe97"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: /sitecore/system/Dictionary/Default/Search/Quick Search Bar/Search Placeholder
+DB: master
+SharedFields:
+- ID: "580c75a8-c01a-4580-83cb-987776ceb3af"
+  Hint: Key
+  Value: Search.QuickSearchBar.Placeholder
+Languages:
+- Language: en
+  Fields:
+  - ID: "2ba3454a-9a9c-4cdf-a9f8-107fd484eb6e"
+    Hint: Phrase
+    Value: Search by keyword
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160223T223404Z

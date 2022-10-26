@@ -1,0 +1,32 @@
+﻿---
+ID: "e7f1a209-8a05-4c0f-9570-326a94160878"
+Parent: "99a5658c-8362-4f02-af04-066301a30062"
+Template: "f698fe6d-35ca-4783-b36c-34928f3a23f2"
+Path: /sitecore/client/Applications/FormsBuilder/Components/Layouts/PropertyGridForm/PageSettings/Settings/ConditionalQuerystringSection/Details
+DB: core
+SharedFields:
+- ID: "00fdab55-3a4a-4376-b786-7ea959bb0057"
+  Hint: ControlDefinitions
+  Type: TreelistEx
+  Value: |
+    {B7C81B8B-10C9-4CBD-BBB1-7E92C5D07B8F}
+    {ABF0FAFF-1650-4C22-93BC-A4236775435C}
+    {362DF97E-0B79-477E-906A-F830DF8D882D}
+- ID: "91194d47-8df3-43e3-8310-67b718ce2c93"
+  Hint: ConfigurationItem
+  Value: "{D19B6A60-0E25-41B8-9FF8-9316AC03DA21}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160921T073838Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

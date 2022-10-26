@@ -1,0 +1,58 @@
+@import "../../../scss/variables/_mixins.scss";
+@import "../../../scss/variables/_colors.scss";
+@import "../../../scss/variables/_variables.scss";
+@import "../../../scss/variables/_breakpoints.scss";
+
+.pull-quote {
+  padding: 40px;
+  background-color: $grey-300;
+
+  @media (max-width: $bp-large-max) {
+    padding: 30px;
+  }
+}
+
+// add back horizontal padding removed from container.scss
+.pull-quote.container {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+// blockquote
+
+.pull-quote__quote {
+  margin: 0;
+  padding: 0;
+
+  font-family: $montserrat;
+  font-size: 1.5rem;
+
+  @media (max-width: $bp-large-max) {
+    font-size: 1.25rem;
+  }
+}
+
+.pull-quote__caption {
+  display: block;
+  margin-top: 30px;
+  padding-left: 30%;
+
+  font-size: 1rem;
+  font-style: normal;
+  text-align: right;
+
+  @media (max-width: $bp-large-max) {
+    padding-left: 0%;
+  }
+}
+
+.pull-quote__prefix {
+  display: none;
+}
+
+.pull-quote__name {
+  display: block;
+
+  font-family: $montserrat;
+  font-weight: 700;
+}

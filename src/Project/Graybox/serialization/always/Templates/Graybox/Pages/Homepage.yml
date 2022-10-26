@@ -1,0 +1,32 @@
+﻿---
+ID: "ce166101-2f7f-4fcd-a95c-1bf48fb682cb"
+Parent: "7e0e3688-2662-456b-b906-8446ed5a5aa5"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/Graybox/Pages/Homepage
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Network/32x32/home.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: |
+    {4FC11A80-88E7-476C-B7C0-7E3D65DCB741}
+    {C8B2D606-72C1-47CB-B4C3-6D27A3976DE0}
+    {1930BBEB-7805-471A-A3BE-4858AC7CF696}
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{C69D244B-4C1A-411A-96F0-6657BC894A1C}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160222T141008Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
