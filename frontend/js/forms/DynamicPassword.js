@@ -2,8 +2,8 @@ import $ from "jquery";
 
 export class DynamicPassword {
   constructor($el) {
-    this.$el = $el;
-    this.$input = $("#" + $el.data("input-id"));
+    this.$el = $(el);
+    this.$input = $("#" + this.$el.data("input-id"));
 
     this.bindEvents();
   }

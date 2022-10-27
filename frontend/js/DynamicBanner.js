@@ -2,10 +2,10 @@ import $ from "jquery";
 import { objectFitSupport, objectFit } from "./polyfill/object-fit";
 
 export class DynamicBanner {
-  constructor($el) {
-    this.$el = $el;
-    this.$container = $el.parent();
-    this.$media = $el.find(".js-banner-media");
+  constructor(el) {
+    this.$el = $(el);
+    this.$container = this.$el.parent();
+    this.$media = this.$el.find(".js-banner-media");
     this.bindEvents();
   }
 

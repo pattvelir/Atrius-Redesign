@@ -1,8 +1,8 @@
 import $ from "jquery";
 
 export class SecondaryNav {
-  constructor($el) {
-    this.$el = $el;
+  constructor(el) {
+    this.$el = $(el);
     this.$menu = this.$el.find(".js-menu");
     this.$toggle = this.$el.find(".js-nav-toggle");
 

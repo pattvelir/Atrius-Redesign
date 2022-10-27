@@ -2,22 +2,18 @@ import React from "react";
 import ReactDom from "react-dom";
 import DynamicContentListingApp from "./DynamicContentListingApp.jsx";
 
-export function renderDynamicContentListing() {
-  document
-    .querySelectorAll(".js-dynamic-content-listing-mount")
-    .forEach((mount, i) => {
-      const dictionary = JSON.parse(mount.dataset.dictionary) || null;
-      const query = JSON.parse(mount.dataset.query) || {};
-      const dataModel = JSON.parse(mount.dataset.model);
+export default (mount, i) => {
+  const dictionary = JSON.parse(mount.dataset.dictionary) || null;
+  const query = JSON.parse(mount.dataset.query) || {};
+  const dataModel = JSON.parse(mount.dataset.model);
 
-      ReactDom.render(
-        <DynamicContentListingApp
-          dictionary={dictionary}
-          query={query}
-          id={`dynamic-content-listing-${i}`}
-          {...dataModel}
-        />,
-        mount
-      );
-    });
-}
+  ReactDom.render(
+    <DynamicContentListingApp
+      dictionary={dictionary}
+      query={query}
+      id={`dynamic-content-listing-${i}`}
+      {...dataModel}
+    />,
+    mount,
+  );
+};

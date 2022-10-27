@@ -6,7 +6,7 @@ import {
 
 export class InterestsGroups {
   constructor(el) {
-    this.form = el;
+    this.form = document.querySelector(el);
     this.components = this.form.querySelectorAll(".js-interests-group");
     this.interestInputs = [
       ...this.form.querySelectorAll('input[type="checkbox"]'),

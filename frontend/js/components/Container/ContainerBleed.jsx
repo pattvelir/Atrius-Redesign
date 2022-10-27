@@ -1,6 +1,7 @@
 import React from "react";
 import { node, string, bool } from "prop-types";
 import cx from "classnames";
+import "./container.scss";
 
 const propTypes = {
   children: node,
@@ -10,13 +11,8 @@ const propTypes = {
 };
 
 const ContainerBleed = (props) => {
-  const {
-    children,
-    className,
-    backgroundColor,
-    darkMode,
-    ...otherProps
-  } = props;
+  const { children, className, backgroundColor, darkMode, ...otherProps } =
+    props;
 
   const backgroundStyle = backgroundColor
     ? { "--c-background": backgroundColor }

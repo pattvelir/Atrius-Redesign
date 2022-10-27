@@ -1,11 +1,10 @@
 import React from "react";
 import {} from "prop-types";
-
+import "./back-to-top.scss";
 const propTypes = {};
 
 const backToTop = (props) => {
   const {} = props;
-
   return (
     <button className="button-back-to-top js-back-to-top" type="button">
       <span className="chevron"></span>

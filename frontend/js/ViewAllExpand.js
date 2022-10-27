@@ -1,8 +1,8 @@
 import $ from "jquery";
 
 export class ViewAllExpand {
-  constructor($el) {
-    this.$el = $el;
+  constructor(el) {
+    this.$el = $(el);
     this.$button = $el.find(".js-more");
     this.$expandTarget = $el.find(".js-expand-target");
 

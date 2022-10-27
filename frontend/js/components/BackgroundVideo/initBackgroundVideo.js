@@ -4,7 +4,7 @@ export default (el, index) => {
 
   backgroundVideoButton.addEventListener("click", (e) => playPauseVideo());
 
-  function playPauseVideo (event) {
+  function playPauseVideo(event) {
     if (backgroundVideoEl.paused) {
       backgroundVideoEl.play();
       el.classList.add("is-playing");

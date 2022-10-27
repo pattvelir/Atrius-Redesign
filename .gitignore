@@ -176,3 +176,6 @@ tools/helix/add-helix-module-configuration.json
 .env
 !tools/docker/build/mssql/backups
 /tools/powershell/Kneedle/config.json
+
+#FE
+/build

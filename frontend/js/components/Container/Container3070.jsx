@@ -1,7 +1,7 @@
 import React from "react";
 import { node, string } from "prop-types";
 import cx from "classnames";
-
+import "./container.scss";
 const propTypes = {
   left: node,
   right: node,

@@ -2,11 +2,11 @@ import _ from "lodash";
 import $ from "jquery";
 
 export class PrivacyModal {
-  constructor($el) {
-    this.$el = $el;
-    this.$acceptBtn = $el.find(".js-accept-cookies");
-    this.$closeBtn = $el.find(".js-close-banner");
-    this.handleResize = _.throttle(() => {
+  constructor(el) {
+    this.$el = $(el);
+    this.$acceptBtn = this.$el.find(".js-accept-cookies");
+    this.$closeBtn = this.$el.find(".js-close-banner");
+    this.handleResize = throttle(() => {
       $("body").css({ paddingBottom: this.$el.outerHeight() });
     }, 150);
     this.init();

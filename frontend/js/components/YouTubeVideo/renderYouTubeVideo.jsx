@@ -1,12 +1,14 @@
-import React from "react";
+import React, { Suspense } from "react";
 import ReactDom from "react-dom";
 
-import YouTubeVideoApp from "./YouTubeVideoApp.jsx";
+const YouTubeVideoApp = React.lazy(() => import("./YouTubeVideoApp.jsx"));
 
-export default function renderYoutubeVideo() {
-  document.querySelectorAll(".js-youtube-video-mount").forEach((mount) => {
-    const dataModel = JSON.parse(mount.dataset.model);
-
-    ReactDom.render(<YouTubeVideoApp {...dataModel} />, mount);
-  });
-}
+export default (mount) => {
+  const dataModel = JSON.parse(mount.dataset.model);
+  ReactDom.render(
+    <Suspense fallback={<p>Loading...</p>}>
+      <YouTubeVideoApp {...dataModel} />
+    </Suspense>,
+    mount,
+  );
+};

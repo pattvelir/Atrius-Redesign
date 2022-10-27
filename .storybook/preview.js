@@ -6,7 +6,10 @@ import { themes } from '@storybook/theming';
 // include _generated_ css so gulp does the compiling
 // import "../build/css/index-generated.css";
 // include the _entry_ javascript file, so webpack can take care of importing npm modules
-import "../frontend/js/index.js";
+import "../build/js/index-generated.js";
+// import "../frontend/js/index.js";
+import "../build/assets/index-generated.css";
+// import "../frontend/scss/index.css";
 
 export const parameters = {
   layout: "fullscreen", // Remove padding from body

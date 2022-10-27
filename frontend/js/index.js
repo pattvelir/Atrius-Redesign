@@ -1,5 +1,6 @@
+// import RenderWorker from "web-worker:./RenderWorker.js";
+
 import "./polyfill";
-import $ from "jquery";
 import "picturefill";
 import "../scss/index.scss";
 
@@ -14,102 +15,81 @@ import { DynamicPassword } from "./forms/DynamicPassword";
 import { ProfileControl } from "./ProfileControl";
 import { InterestsGroups } from "./forms/InterestsGroups";
 import { PrivacyModal } from "./PrivacyModal";
+import renderer from "./renderer.js";
 
 import Forms from "./forms/forms.js";
-import richText from "./richText.js";
+import renderRichText from "./richText.render.js";
 import makeClickable from "./makeClickable.js";
 import initSlideShow from "./components/SlideShow/initSlideShow.js";
 import languageSelector from "./components/LanguageSelector/initLanguageSelector.js";
 import initBackgroundVideo from "./components/BackgroundVideo/initBackgroundVideo";
 import initContentList from "./components/ContentList/initContentList.js";
 
-import initGlobalHeader from "./components/GlobalHeader/initGlobalHeader.js";
+import initPrimaryNav from "./components/PrimaryNav/initPrimaryNav.js";
+import initMobileMenu from "./components/MobileMenu/initMobileMenu.js";
+import initSearchMenu from "./components/SearchMenu/initSearchMenu.js";
 import initSkipNavigation from "./components/SkipNavigation/initSkipNavigation.js";
 import initBackToTop from "./components/BackToTop/initBackToTop.js";
-import initListItem from "./components/ListItem/initListItem.js";
 
 import renderYouTubeVideo from "./components/YouTubeVideo/renderYouTubeVideo.jsx";
 
 // React Apps
-import { renderDynamicContentListing } from "./components/SearchModules/DynamicContentListing/renderDynamicContentListing.jsx";
-import { renderSearch } from "./components/SearchModules/Search/renderSearch.jsx";
-
+import renderDynamicContentListing from "./components/SearchModules/DynamicContentListing/renderDynamicContentListing.jsx";
+import renderSearch from "./components/SearchModules/Search/renderSearch.jsx";
 // This is required to make Storybook run JS when patterns are choosen
+
+const threadComponents = [
+  { selector: ".js-rich-text", callback: renderRichText },
+  { selector: ".js-make-clickable", callback: makeClickable },
+  { selector: ".js-primary-nav", callback: initPrimaryNav },
+  { selector: ".js-mobile-menu", callback: initMobileMenu },
+  { selector: ".js-search-menu", callback: initSearchMenu },
+  { selector: ".js-skip-navigation", callback: initSkipNavigation },
+  { selector: ".js-back-to-top", callback: initBackToTop },
+  { selector: ".js-list-item-overflow", callback: initContentList },
+  { selector: ".js-list-item-clickable", callback: makeClickable },
+  { selector: ".js-youtube-video-mount", callback: renderYouTubeVideo },
+  { selector: ".js-lang-select-nav", callback: languageSelector },
+  { selector: ".js-slideshow-slider", callback: initSlideShow },
+  { selector: ".js-background-video", callback: initBackgroundVideo },
+  { selector: ".js-show-password", callback: DynamicPassword },
+  { selector: ".js-form", callback: () => Forms(document, window) },
+  {
+    selector: ".js-dynamic-content-listing-mount",
+    callback: renderDynamicContentListing,
+  },
+  { selector: ".js-search-mount", callback: renderSearch },
+
+  {
+    selector: ".js-view-all-expand",
+    callback: (el) => new ViewAllExpand(el),
+  },
+  {
+    selector: ".js-secondary-nav",
+    callback: (el) => new SecondaryNav(el),
+  },
+  {
+    selector: ".js-account-nav",
+    callback: (el) => new SecondaryNav(el),
+  },
+  {
+    selector: ".js-dynamic-banner",
+    callback: (el) => new DynamicBanner(el),
+  },
+  {
+    selector: ".js-profile",
+    callback: (el) => new ProfileControl(".js-profile"),
+  },
+  {
+    selector: ".js-interests-form",
+    callback: (el) => new InterestsGroups(el),
+  },
+  {
+    selector: ".js-privacy-banner",
+    callback: (el) => new PrivacyModal(el),
+  },
+];
+
 document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".js-rich-text").forEach(richText);
-
-  [...document.querySelectorAll(".js-make-clickable")].forEach(makeClickable);
-
-  // JS apps
-  initGlobalHeader();
-  initSkipNavigation();
-  initBackToTop();
-  initContentList();
-  initListItem();
-
-  renderYouTubeVideo();
-
-  // LanguageSelector
-  document.querySelectorAll(".js-lang-select-nav").forEach(languageSelector);
-
-  // Expandable Listings
-  const viewAllables = $.makeArray($(".js-view-all-expand")).map((el) => {
-    return new ViewAllExpand($(el));
-  });
-
-  // Slideshows
-  document.querySelectorAll(".js-slideshow-slider").forEach(initSlideShow);
-
-  // Secondary Nav
-  if ($(".js-secondary-nav").length) {
-    const secondaryNav = new SecondaryNav($(".js-secondary-nav"));
-  }
-
-  if ($(".js-account-nav").length) {
-    const accountNav = new SecondaryNav($(".js-account-nav"));
-  }
-
-  // Dynamic Banners (Hero and Page Banner)
-  const $banners = $(".js-dynamic-banner");
-  if ($banners.length) {
-    const dynamicBanners = $.makeArray($banners).map((el) => {
-      return new DynamicBanner($(el));
-    });
-  }
-
-  // Pause Video button
-  document
-    .querySelectorAll(".js-background-video")
-    .forEach(initBackgroundVideo);
-
-  // react Apps
-  renderDynamicContentListing();
-  renderSearch();
-
-  if ($(".js-profile").length) {
-    const previewControl = new ProfileControl(
-      document.querySelector(".js-profile"),
-    );
-  }
-
-  //handle interest group select all
-  if ($(".js-interests-form").length) {
-    const intersetsGroups = new InterestsGroups(
-      document.querySelector(".js-interests-form"),
-    );
-  }
-
-  [...document.querySelectorAll(".js-show-password")].forEach((el) => {
-    const dynamicPassword = new DynamicPassword($(el));
-  });
-
-  if ($(".js-form").length) {
-    Forms(document, window);
-  }
-
-  if ($(".js-privacy-banner").length) {
-    new PrivacyModal($(".js-privacy-banner"));
-  }
+  threadComponents.map(renderer);
 });
-
-window.addEventListener("load", () => {});

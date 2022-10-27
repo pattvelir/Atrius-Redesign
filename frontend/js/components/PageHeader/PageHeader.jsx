@@ -1,5 +1,6 @@
 import React from "react";
 import { string } from "prop-types";
+import "./page-header.scss";
 
 const propTypes = { title: string, subtitle: string, contentType: string };
 

@@ -13,7 +13,7 @@ import { countries, provinces } from "./common/data/countryProvince.js";
 
 export class ProfileControl {
   constructor(el) {
-    this.preview = el;
+    this.preview = document.querySelector(el);
     this.toggles = this.preview.querySelectorAll(".js-toggle");
     this.toggleBtns = this.preview.querySelectorAll(".js-toggle-btn");
     this.formDisplay = this.preview.querySelector(".js-form-display");
@@ -73,7 +73,9 @@ export class ProfileControl {
     const fileCheck = input.files[0]
       ? acceptedMimes.indexOf(input.files[0].type) !== -1
       : false;
-    const parentItem = input.closest(".sc-form-item:not(.sc-form-item--optional)");
+    const parentItem = input.closest(
+      ".sc-form-item:not(.sc-form-item--optional)",
+    );
 
     if (fileCheck) {
       const reader = new FileReader();
