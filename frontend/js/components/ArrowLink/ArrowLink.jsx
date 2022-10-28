@@ -19,6 +19,7 @@ const ArrowLink = (props) => {
       href={href}
       className={`arrow-link ${classModifier}`}
       target={type === "external" ? "_blank" : null}
+      rel="noreferrer"
     >
       <span>{text}</span>
       <Icon iconName="arrow-right" />

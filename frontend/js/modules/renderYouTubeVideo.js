@@ -1,7 +1,9 @@
 import React, { Suspense } from "react";
 import ReactDom from "react-dom";
 
-const YouTubeVideoApp = React.lazy(() => import("./YouTubeVideoApp.jsx"));
+const YouTubeVideoApp = React.lazy(() =>
+  import("../components/YouTubeVideo/YouTubeVideoApp.jsx"),
+);
 
 export default (mount) => {
   const dataModel = JSON.parse(mount.dataset.model);

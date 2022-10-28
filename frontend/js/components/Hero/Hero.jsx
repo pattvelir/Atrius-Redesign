@@ -2,9 +2,9 @@ import React from "react";
 import { bool, string, number, object } from "prop-types";
 import cx from "classnames";
 import uniqueid from "lodash.uniqueid";
-
 import BackgroundVideo from "../BackgroundVideo/BackgroundVideo.jsx";
 import ImageElement from "../ImageElement/ImageElement.jsx";
+import "./hero.scss";
 
 const propTypes = {
   height: bool,
@@ -46,7 +46,7 @@ const Hero = (props) => {
     {},
     opacityStyles,
     objPositionStyles,
-    heightStyles
+    heightStyles,
   );
 
   const titleID = uniqueid("hero-");

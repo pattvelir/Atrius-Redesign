@@ -1,5 +1,5 @@
-import React from 'react';
-import { bool, string, object } from 'prop-types';
+import React from "react";
+import { bool, string, object } from "prop-types";
 
 import Icon from "../Icon/Icon.jsx";
 
@@ -7,7 +7,7 @@ const propTypes = {
   height: bool,
   position: string,
   video: string,
-  mediaStyles: object
+  mediaStyles: object,
 };
 
 const BackgroundVideo = (props) => {
@@ -29,8 +29,16 @@ const BackgroundVideo = (props) => {
         type="button"
         className="background-video__button js-background-video-button"
       >
-        <Icon iconName="play" className="background-video__play" title="play video" />
-        <Icon iconName="pause" className="background-video__pause" title="pause video" />
+        <Icon
+          iconName="play"
+          className="background-video__play"
+          title="play video"
+        />
+        <Icon
+          iconName="pause"
+          className="background-video__pause"
+          title="pause video"
+        />
       </button>
     </div>
   );

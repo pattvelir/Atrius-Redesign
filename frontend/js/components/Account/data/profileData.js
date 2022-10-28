@@ -19,7 +19,7 @@ export default {
       https://via.placeholder.com/300x300/9E9E9E/757575?text=1x1+Large+1x+300x300 300w,
       `,
     alt: "",
-     
+
     description: "",
   },
 };

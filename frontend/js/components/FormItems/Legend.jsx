@@ -11,13 +11,8 @@ const propTypes = {
 };
 
 const legend = (props) => {
-  const {
-    legendTitle,
-    legendBody,
-    messageTitle,
-    messageIcon,
-    messageBody,
-  } = props;
+  const { legendTitle, legendBody, messageTitle, messageIcon, messageBody } =
+    props;
 
   return (
     <legend className="form-legend">

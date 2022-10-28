@@ -5,7 +5,7 @@ import {
   matchfields,
   validationListeners,
   handleSubmit,
-} from "../common/ThreadValidator.js";
+} from "../../common/ThreadValidator.js";
 
 export default function (document = document, window = window) {
   [...document.querySelectorAll(".js-form")].forEach((elForm) => {

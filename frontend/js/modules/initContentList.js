@@ -1,4 +1,4 @@
-import { Accordion } from "../../accordion.js";
+import { Accordion } from "./accordion.js";
 
 export default (el, i) => {
   Accordion(el, i);

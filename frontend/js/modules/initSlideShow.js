@@ -1,8 +1,9 @@
-import imageSlider from "../../slickSlider.js";
+import imageSlider from "./slickSlider.js";
 
-export default function initSlideShow(el, i) {
+const initSlideShow = (el) => {
   // override default values
   const conf = {};
 
   imageSlider(el, conf, (event, slick, currentSlide) => {});
-}
+};
+export default initSlideShow;

@@ -10,9 +10,7 @@ const propTypes = {
 
 const Icon = (props) => {
   const { iconName, className, title, ...otherProps } = props;
-  const test = {
-    format: "me",
-  };
+
   return (
     <svg
       tabIndex="-1"

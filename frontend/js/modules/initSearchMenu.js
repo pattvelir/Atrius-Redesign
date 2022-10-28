@@ -1,6 +1,6 @@
-import NavMenu from "../../navigation/NavMenu.js";
+import NavMenu from "./navigation/NavMenu.js";
 
-export default (el, i) => {
+const initSearchMenu = (el) => {
   const onClose = () => {};
   const onOpen = () => {};
 
@@ -17,3 +17,5 @@ export default (el, i) => {
     parent: el,
   });
 };
+
+export default initSearchMenu;

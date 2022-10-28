@@ -1,5 +1,5 @@
-import { scrollToId } from "../../common/scrollHelpers.js";
-import { getScrollTop } from "../../common/scrollHelpers.js";
+import { scrollToId } from "../common/scrollHelpers.js";
+import { getScrollTop } from "../common/scrollHelpers.js";
 
 export default (el) => {
   const main = document.querySelector("#main-content");

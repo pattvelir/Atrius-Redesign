@@ -1,12 +1,11 @@
-import NavMenu from "../../navigation/NavMenu.js";
+import NavMenu from "./navigation/NavMenu.js";
 
-export default (el, index) => {
+const initPrimaryNav = (el, index = 0) => {
   const onClose = () => {};
   const onOpen = () => {};
   const primaryLinks = el.querySelectorAll(
     ".js-primary-nav-top-link, .js-primary-nav-menu-button",
   );
-
   primaryLinks.forEach((el, i) => {
     el.addEventListener("keydown", (e) => {
       handleKeyDown(e, i);
@@ -51,3 +50,4 @@ export default (el, index) => {
   // accounting for wrapping links.
   // add `.primary-nav__submenu--right` class.
 };
+export default initPrimaryNav;

@@ -1,4 +1,4 @@
-import NavMenu from "../../navigation/NavMenu.js";
+import NavMenu from "./navigation/NavMenu.js";
 
 // props: {
 //   animationDelay: number
@@ -13,7 +13,7 @@ import NavMenu from "../../navigation/NavMenu.js";
 //   parent: node_element.isRequired
 // }
 
-export default function initLanguageSelector(el) {
+const initLanguageSelector = (el) => {
   const langSelect = new NavMenu({
     animationDelay: 600,
     closed: true,
@@ -24,4 +24,5 @@ export default function initLanguageSelector(el) {
     openClass: "is-open",
     parent: el,
   });
-}
+};
+export default initLanguageSelector;

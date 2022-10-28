@@ -174,8 +174,6 @@ export default {
     description:
       "Vitas mori. Albus orexiss ducunt ad gabalium. Ubi est altus nomen? Liberi de castus bubo, pugna species! Persuadere diligenter ducunt ad bi-color barcas.",
     cta: "Read Full Article",
-     
-     
   },
   promo2: {
     title: "Terrors cadunt in quadrata! Cur adelphis cantare?",
@@ -183,32 +181,24 @@ export default {
     description:
       "Vitas mori. Albus orexiss ducunt ad gabalium. Ubi est altus nomen? Liberi de castus bubo, pugna species! Persuadere diligenter ducunt ad bi-color barcas.",
     cta: "Read Full Article",
-     
-     
   },
   imageEmbed1: {
     orientation: "",
     title: "Image Component Title",
     description:
       "Image Component Caption: Vitas mori. Albus orexiss ducunt ad gabalium. Ubi est altus nomen? Liberi de castus bubo, pugna species! Persuadere diligenter ducunt ad bi-color barcas.",
-     
-     
   },
   imageEmbed2: {
     orientation: "",
     title: "Image Component Title",
     description:
       "Image Component Caption: Vitas mori. Albus orexiss ducunt ad gabalium. Ubi est altus nomen? Liberi de castus bubo, pugna species! Persuadere diligenter ducunt ad bi-color barcas.",
-     
-     
   },
   imageEmbed3: {
     orientation: "",
     title: "Image Component Title",
     description:
       "Image Component Caption: Vitas mori. Albus orexiss ducunt ad gabalium. Ubi est altus nomen? Liberi de castus bubo, pugna species! Persuadere diligenter ducunt ad bi-color barcas.",
-     
-     
   },
   videoEmbed1: {
     title: "Foo",

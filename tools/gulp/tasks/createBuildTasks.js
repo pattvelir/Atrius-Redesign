@@ -1,5 +1,5 @@
 const gulp = require("gulp");
-
+const dynamicImportVars = require("@rollup/plugin-dynamic-import-vars");
 const runCommand = require("../quench/runCommand.js");
 const runBrowserSyncTask = require("../quench/runBrowserSyncTask.js");
 const rollup = require("rollup");
@@ -19,7 +19,7 @@ const copy = require("rollup-plugin-copy");
 const svgSprite = require("../quench/runRollupSvgSprite.js");
 const terserLib = require("rollup-plugin-terser");
 const filesize = require("rollup-plugin-filesize");
-const webWorkerLoader = require("rollup-plugin-web-worker-loader");
+// const webWorkerLoader = require("rollup-plugin-web-worker-loader");
 const { NODE_ENV = "development" } = process.env;
 const isProduction = NODE_ENV === "production";
 const styles = require("rollup-plugin-styles");
@@ -32,21 +32,24 @@ module.exports = function createBuildTasks(projectRoot) {
   const PropTypes = Object.keys(propTypesLib);
   const terser = terserLib.terser;
   const extensions = [".js", ".jsx"];
-  console.log(isProduction);
   const rollupTask = () =>
     rollup
       .rollup({
         input: [`${frontendDir}/js/index`],
-     
+        output: {
+          preserveModules: true,
+        },
         plugins: [
-          webWorkerLoader(),
+          // webWorkerLoader(),
           svgSprite({
             src: `${frontendDir}/img/svg`,
             dest: `${frontendDir}/img`,
           }),
           styles({
             mode: [
+              // "emit",
               "extract",
+              //"inject",
               // {
               //   container: "body",
               //   singleTag: true,
@@ -55,19 +58,20 @@ module.exports = function createBuildTasks(projectRoot) {
               // },
             ],
           }),
-          // scss({
-          //   output: true,
-          //   include: [
-          //     `${frontendDir}/scss/index.scss`,
-          //     `${frontendDir}/js/components/**/*.scss`,
-          //   ],
-          //   sourceMap: true,
-          //   failOnError: true,
-          //   // prefix: '@import "./imports.scss";',
-          //   processor: () => postcss([autoprefixer()]),
-          //   verbose: true,
-          //   watch: `${frontendDir}/**`,
-          // }),
+          scss({
+            output: true,
+            include: [
+              `${frontendDir}/scss/index.scss`,
+              `${frontendDir}/js/components/**/*.scss`,
+            ],
+            sourceMap: true,
+            failOnError: true,
+            // prefix: '@import "./imports.scss";',
+            processor: () => postcss([autoprefixer()]),
+            verbose: true,
+            watch: `${frontendDir}/**`,
+          }),
+          // dynamicImportVars(),
           copy({
             targets: [
               {
@@ -110,6 +114,7 @@ module.exports = function createBuildTasks(projectRoot) {
             port: 3000,
           }),
           livereload({ watch: buildDir }),
+          dynamicImportVars(),
         ],
         ...(isProduction && terser()),
         ...(isProduction && filesize()),
@@ -117,6 +122,7 @@ module.exports = function createBuildTasks(projectRoot) {
       .then((bundle) => {
         return bundle.write({
           dir: `${buildDir}`,
+          preserveModules: true,
           entryFileNames: "js/[name]-generated.js",
           chunkFileNames: "js/chunks/[name]-[hash].js",
           assetFileNames: "assets/[name]-generated[extname]",

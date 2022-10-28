@@ -13,7 +13,6 @@ export default {
       https://via.placeholder.com/800x450.jpg 800w,
       https://via.placeholder.com/400x225.jpg 400w,
       `,
-     
   },
   transcriptLink: {
     href: "test.txt",

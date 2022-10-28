@@ -17,16 +17,12 @@ export default {
     title: "Image Component Title",
     description:
       "Image Component Caption: Vitas mori. Albus orexiss ducunt ad gabalium. Ubi est altus nomen? Liberi de castus bubo, pugna species! Persuadere diligenter ducunt ad bi-color barcas.",
-     
-     
   },
   imageEmbed2: {
     orientation: "",
     title: "Image Component Title",
     description:
       "Image Component Caption: Vitas mori. Albus orexiss ducunt ad gabalium. Ubi est altus nomen? Liberi de castus bubo, pugna species! Persuadere diligenter ducunt ad bi-color barcas.",
-     
-     
   },
   videoEmbed1: {
     title: "Foo",
@@ -39,7 +35,5 @@ export default {
     title: "Image Component Title",
     description:
       "Image Component Caption: Vitas mori. Albus orexiss ducunt ad gabalium. Ubi est altus nomen? Liberi de castus bubo, pugna species! Persuadere diligenter ducunt ad bi-color barcas.",
-     
-     
   },
 };

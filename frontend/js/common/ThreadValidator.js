@@ -21,7 +21,8 @@ export const checkIfDirty = (field) => {
 // adds error class to invalid fields
 export const validateField = (field, elForm) => {
   let valid = true;
-  const re = /^.*(?=.{8,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W])(?!.*[\s]).*$/;
+  const re =
+    /^.*(?=.{8,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W])(?!.*[\s]).*$/;
 
   switch (field.dataset.type) {
     case "email":

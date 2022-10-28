@@ -1,4 +1,4 @@
-export default (el, index) => {
+export default (el) => {
   const backgroundVideoEl = el.querySelector(".js-background-video-el");
   const backgroundVideoButton = el.querySelector(".js-background-video-button");
 

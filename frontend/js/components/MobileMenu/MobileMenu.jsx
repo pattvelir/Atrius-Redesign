@@ -4,7 +4,7 @@ import NavToggle from "../NavToggle/NavToggle.jsx";
 
 const propTypes = { children: node };
 
-const MobileMenu = props => {
+const MobileMenu = (props) => {
   return (
     <div className="mobile-menu js-mobile-menu">
       <NavToggle />

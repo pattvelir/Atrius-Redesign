@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDom from "react-dom";
-import SearchApp from "./SearchApp.jsx";
+import DynamicContentListingApp from "../components/SearchModules/DynamicContentListing/DynamicContentListingApp.jsx";
 
 export default (mount, i) => {
   const dictionary = JSON.parse(mount.dataset.dictionary) || null;
@@ -8,10 +8,10 @@ export default (mount, i) => {
   const dataModel = JSON.parse(mount.dataset.model);
 
   ReactDom.render(
-    <SearchApp
+    <DynamicContentListingApp
       dictionary={dictionary}
       query={query}
-      id={`search-${i}`}
+      id={`dynamic-content-listing-${i}`}
       {...dataModel}
     />,
     mount,

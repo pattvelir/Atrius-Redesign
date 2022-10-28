@@ -1,8 +1,5 @@
 import React from "react";
 import { string, shape } from "prop-types";
-
-import { breakpoint } from "../../breakpoint.js";
-
 import Icon from "../Icon/Icon.jsx";
 import ImageElement from "../ImageElement/ImageElement.jsx";
 

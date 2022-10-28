@@ -3,8 +3,7 @@ export default {
     hasVideo: false,
     hasImage: true,
     video: "/assets/img/placeholders/Diagonal.mp4",
-     
-     
+
     opacity: 0.6,
     contentType: "",
     title: "Why Choose Us",
@@ -22,8 +21,6 @@ export default {
         description:
           "Vitas mori. Albus orexiss ducunt ad gabalium. Ubi est altus nomen? Liberi de castus bubo, pugna species! Persuadere diligenter ducunt ad bi-color barcas.",
         cta: "Read Full Article",
-         
-         
       },
       {
         title: "Lotus brodium virtualiter captiss barcas est?",
@@ -32,8 +29,6 @@ export default {
         description:
           "Favere rare ducunt ad varius luna. Placidus calcaria sapienter captiss fiscina est. Cum luba congregabo, omnes seculaes visum primus, fidelis nuclear vexatum iacerees.",
         cta: "Read Full Article",
-         
-         
       },
       {
         title: "Sunt triticumes resuscitabo domesticus, germanus caculaes?",
@@ -42,8 +37,6 @@ export default {
         description:
           "Ecce, resistentia! Heu, grandis nuclear vexatum iacere! Accentor azureus nuclear vexatum iacere est. Cum epos studere, omnes nuptiaes convertam neuter, alter vigiles.",
         cta: "Read Full Article",
-         
-         
       },
     ],
   },

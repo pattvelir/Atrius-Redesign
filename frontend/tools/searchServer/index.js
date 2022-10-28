@@ -57,7 +57,7 @@ var hasKeywords = R.curry((keywords, data) => {
   var keyArr = keywords.split(" ");
   var search = (item) => {
     var matches = keyArr.map(
-      (key) => item.title.indexOf(key) >= 0 || item.body.indexOf(key) >= 0
+      (key) => item.title.indexOf(key) >= 0 || item.body.indexOf(key) >= 0,
     );
 
     var trueMatches = matches.filter((match) => match === true);
@@ -111,7 +111,7 @@ app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header(
     "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
+    "Origin, X-Requested-With, Content-Type, Accept",
   );
   next();
 });
@@ -126,7 +126,7 @@ app.get("/", function (req, res) {
     : Math.abs((req.query.page - 1) * req.query.perPage);
   var sorter = sorted(
     req.query.sortBy || "relevance",
-    req.query.sortOrder || null
+    req.query.sortOrder || null,
   );
   var keywords = hasKeywords(req.query.q || null);
   var pager = page(count, start);

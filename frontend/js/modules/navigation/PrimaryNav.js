@@ -13,38 +13,34 @@ const KEY_CODES = {
   space: 32,
 };
 
-export class PrimaryNav {
-  constructor($el) {
-    this.$el = $el;
-    this.$navMenu = $el.find(".js-menu");
-    this.$navItems = $el.find(".js-nav-item");
-    this.$navToggle = $el.find(".js-nav-toggle");
-    this.openClass = "is-open";
+const PrimaryNav = (el) => {
+  const $el = $(el);
+  const $navMenu = $el.find(".js-menu");
+  const $navItems = $el.find(".js-nav-item");
+  const $navToggle = $el.find(".js-nav-toggle");
+  const openClass = "is-open";
 
-    this.bindEvents();
+  bindEvents();
 
-    this.$navItems.each(this.adjustFlyoutMenuAlignment);
+  $navItems.each(adjustFlyoutMenuAlignment);
 
-    // run any breakpoint changes immediately
-    this.onBreakpointChange(breakpoint());
-  }
+  // run any breakpoint changes immediately
+  onBreakpointChange(breakpoint());
 
-  bindEvents() {
+  function bindEvents() {
     // Show sub menus on click
-    this.$navItems
-      .filter(".has-submenu")
-      .on("click", (event) => this.onItemClick(event));
+    $navItems.filter(".has-submenu").on("click", (event) => onItemClick(event));
 
     // Toggle entire navigation when hidden
     // in some viewports
-    this.$navToggle.on("click", (event) => this.onNavToggleClick(event));
+    $navToggle.on("click", (event) => onNavToggleClick(event));
 
     // bind keypress events for keyboard navigation
-    this.$navMenu.on("keydown", (event) => this.onKeyPress(event));
+    $navMenu.on("keydown", (event) => onKeyPress(event));
 
     // Add a document click handler to detect clicks
     // with the intent to dismiss navigation
-    $(document).on("click", (event) => this.onOtherClick(event));
+    $(document).on("click", (event) => onOtherClick(event));
 
     // tie in certain responsive behaviors to a throttled
     // resize event
@@ -53,41 +49,41 @@ export class PrimaryNav {
         window.clearTimeout(throttler);
       }
       throttler = setTimeout(() => {
-        this.$navItems.each(this.adjustFlyoutMenuAlignment);
-        this.onBreakpointChange(breakpoint());
+        $navItems.each(adjustFlyoutMenuAlignment);
+        onBreakpointChange(breakpoint());
       }, 400);
     });
   }
 
-  onNavToggleClick(event) {
+  function onNavToggleClick(event) {
     // Prevent this click from being counted
     // as a document click
     event.stopPropagation();
-    this.toggleNavMenu();
+    toggleNavMenu();
   }
 
-  onItemClick(event) {
+  function onItemClick(event) {
     // Prevent this click from being counted
     // as a document click
     event.stopPropagation();
     let $clickedItem = $(event.target).closest(".js-nav-item");
-    this.operateSubMenu($clickedItem);
+    operateSubMenu($clickedItem);
   }
 
-  onOtherClick(event) {
+  function onOtherClick(event) {
     if (breakpoint() === "large") {
-      this.toggleFlyoutMenus([this.$openItem()]);
+      toggleFlyoutMenus([$openItem()]);
     }
   }
 
-  onBreakpointChange(bp) {
+  function onBreakpointChange(bp) {
     switch (bp) {
       case "large":
-        this.$navMenu.show();
-        this.ariaExpand(this.$el);
+        $navMenu.show();
+        ariaExpand($el);
         break;
       case "medium":
-        this.ariaCollapse(this.$el);
+        ariaCollapse($el);
         break;
       case "small":
       default:
@@ -95,42 +91,42 @@ export class PrimaryNav {
     }
   }
 
-  onKeyPress(event) {
+  function onKeyPress(event) {
     switch (event.which) {
       case KEY_CODES.enter:
       case KEY_CODES.space:
-        this.toggleInContext(this.focusContext());
+        toggleInContext(focusContext());
         break;
       case KEY_CODES.rightArrow:
-        this.rightInContext(this.focusContext());
+        rightInContext(focusContext());
         break;
       case KEY_CODES.leftArrow:
-        this.leftInContext(this.focusContext());
+        leftInContext(focusContext());
         break;
       case KEY_CODES.upArrow:
-        this.upInContext(this.focusContext());
+        upInContext(focusContext());
         break;
       case KEY_CODES.downArrow:
-        this.downInContext(this.focusContext());
+        downInContext(focusContext());
         break;
       case KEY_CODES.esc:
-        this.collapseInContext(this.focusContext());
+        collapseInContext(focusContext());
         break;
       default:
         return;
     }
   }
 
-  operateSubMenu($el) {
+  function operateSubMenu($el) {
     // the behavior of the menus changes depending
     // on the active breakpoint
     switch (breakpoint()) {
       case "large":
-        this.toggleFlyoutMenus([$el, this.$openItem()]);
+        toggleFlyoutMenus([$el, $openItem()]);
         break;
       case "medium":
       case "small":
-        this.toggleCollapsingMenu($el);
+        toggleCollapsingMenu($el);
         break;
       default:
         return;
@@ -138,53 +134,53 @@ export class PrimaryNav {
   }
 
   // explicity close a submenu
-  closeSubMenu($el) {
+  function closeSubMenu($el) {
     switch (breakpoint()) {
       case "large":
-        this.closeFlyoutMenu($el);
+        closeFlyoutMenu($el);
         break;
       case "medium":
       case "small":
-        this.closeCollapsingMenu($el);
+        closeCollapsingMenu($el);
         break;
       default:
         return;
     }
   }
 
-  toggleNavMenu() {
-    if (this.$el.hasClass(this.openClass)) {
-      this.$navMenu.slideUp(300);
-      this.ariaCollapse(this.$el);
+  function toggleNavMenu() {
+    if ($el.hasClass(openClass)) {
+      $navMenu.slideUp(300);
+      ariaCollapse($el);
     } else {
-      this.$navMenu.slideDown(300);
-      this.ariaExpand(this.$el);
+      $navMenu.slideDown(300);
+      ariaExpand($el);
     }
 
-    this.$el.toggleClass(this.openClass);
+    $el.toggleClass(openClass);
   }
 
-  ariaExpand($el) {
+  function ariaExpand($el) {
     $el.attr("aria-expanded", true);
   }
 
-  ariaCollapse($el) {
+  function ariaCollapse($el) {
     $el.attr("aria-expanded", false);
   }
 
-  toggleFlyoutMenus(items) {
+  function toggleFlyoutMenus(items) {
     // In case the same item is added twice (by clicking on the currently open item, for example)
     // only apply behavior to each element once
     items.reduce(($toggled, $item) => {
       if ($toggled.index($item) === -1) {
-        if ($item.hasClass(this.openClass)) {
-          this.closeFlyoutMenu($item);
-          this.closeMenuAttributes($item);
-          this.ariaCollapse($item.find(".js-submenu"));
+        if ($item.hasClass(openClass)) {
+          closeFlyoutMenu($item);
+          closeMenuAttributes($item);
+          ariaCollapse($item.find(".js-submenu"));
         } else {
-          this.openFlyoutMenu($item);
-          this.openMenuAttributes($item);
-          this.ariaExpand($item.find(".js-submenu"));
+          openFlyoutMenu($item);
+          openMenuAttributes($item);
+          ariaExpand($item.find(".js-submenu"));
         }
 
         return $toggled.add($item);
@@ -192,45 +188,45 @@ export class PrimaryNav {
     }, $());
   }
 
-  openFlyoutMenu($item) {
-    this.openMenuAttributes($item);
+  function openFlyoutMenu($item) {
+    openMenuAttributes($item);
   }
 
-  closeFlyoutMenu($item) {
-    this.closeMenuAttributes($item);
+  function closeFlyoutMenu($item) {
+    closeMenuAttributes($item);
   }
 
-  toggleCollapsingMenu($item) {
-    if ($item.hasClass(this.openClass)) {
-      this.closeCollapsingMenu($item);
-      this.closeMenuAttributes($item);
+  function toggleCollapsingMenu($item) {
+    if ($item.hasClass(openClass)) {
+      closeCollapsingMenu($item);
+      closeMenuAttributes($item);
     } else {
-      this.openCollapsingMenu($item);
-      this.openMenuAttributes($item);
+      openCollapsingMenu($item);
+      openMenuAttributes($item);
     }
   }
 
-  openCollapsingMenu($item) {
+  function openCollapsingMenu($item) {
     const $submenu = $item.find(".js-submenu");
     $submenu.slideDown(300);
   }
 
-  closeCollapsingMenu($item) {
+  function closeCollapsingMenu($item) {
     const $submenu = $item.find(".js-submenu");
     $submenu.slideUp(300);
   }
 
-  openMenuAttributes($item) {
-    $item.addClass(this.openClass);
+  function openMenuAttributes($item) {
+    $item.addClass(openClass);
     $item.find("a").attr("tabindex", 0);
   }
 
-  closeMenuAttributes($item) {
-    $item.removeClass(this.openClass);
+  function closeMenuAttributes($item) {
+    $item.removeClass(openClass);
     $item.find("a").attr("tabindex", -1);
   }
 
-  adjustFlyoutMenuAlignment(idx, item) {
+  function adjustFlyoutMenuAlignment(idx, item) {
     // if the menu is going to be rendered offscreen,
     // we need to push it back.
     let $item = $(item);
@@ -244,66 +240,66 @@ export class PrimaryNav {
     $menu.css({ left: `${newLeft}px` });
   }
 
-  $openItem() {
-    return this.$el.find(`.${this.openClass}`);
+  function $openItem() {
+    return $el.find(`.${openClass}`);
   }
 
-  downInContext(context) {
+  function downInContext(context) {
     if (!context) {
       return;
     }
 
     if (!context.$parent && context.$el.hasClass("js-has-submenu")) {
-      this.operateSubMenu(context.$el);
+      operateSubMenu(context.$el);
       context.$el.find("a:first").trigger("focus");
     } else if (context.$parent && context.$next) {
       context.$next.trigger("focus");
     }
   }
 
-  upInContext(context) {
+  function upInContext(context) {
     if (!context) {
       return;
     }
 
     if (context.$parent && !context.$prev) {
-      this.operateSubMenu(context.$el);
+      operateSubMenu(context.$el);
       context.$parent.trigger("focus");
     } else if (context.$parent && context.$prev) {
       context.$prev.trigger("focus");
     }
   }
 
-  collapseInContext(context) {
-    this.closeSubMenu(context.$el);
+  function collapseInContext(context) {
+    closeSubMenu(context.$el);
   }
 
-  toggleInContext(context) {
-    this.operateSubMenu(context.$el);
+  function toggleInContext(context) {
+    operateSubMenu(context.$el);
   }
 
-  rightInContext(context) {
+  function rightInContext(context) {
     if (!context) {
       return;
     }
 
     if (context.$parent) {
       const $nextMenu = context.$parent.nextAll(".js-has-submenu").first();
-      this.operateSubMenu($nextMenu);
+      operateSubMenu($nextMenu);
       $nextMenu.find("li a").first().trigger("focus");
     } else if (context.$next) {
       context.$next.trigger("focus");
     }
   }
 
-  leftInContext(context) {
+  function leftInContext(context) {
     if (!context) {
       return;
     }
 
     if (context.$parent) {
       const $prevMenu = context.$parent.prevAll(".js-has-submenu").first();
-      this.operateSubMenu($prevMenu);
+      operateSubMenu($prevMenu);
       $prevMenu.find("li a").first().trigger("focus");
     } else if (context.$prev) {
       context.$prev.trigger("focus");
@@ -313,7 +309,7 @@ export class PrimaryNav {
   // Provides an object with the currently focused element,
   // prev and next focusable elements, and the menu parent
   // if applicable
-  focusContext() {
+  function focusContext() {
     const $focusEl = $(document.activeElement);
 
     // return nothing if focus doesn't exist, or is not in our menu
@@ -370,4 +366,4 @@ export class PrimaryNav {
       $parent: $parent($focusEl),
     };
   }
-}
+};

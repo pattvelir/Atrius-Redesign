@@ -4,8 +4,7 @@ export default {
     hasImage: true,
     opacity: "0.6",
     video: "/assets/img/placeholders/paris.mp4",
-     
-     
+
     title: "If you could go anywhere",
     subtitle: "Where would you go?",
     cta: "Browse Tours",
@@ -25,16 +24,12 @@ export default {
         title: "Image Component Title",
         description:
           "Image Component Caption: Vitas mori. Albus orexiss ducunt ad gabalium. Ubi est altus nomen? Liberi de castus bubo, pugna species! Persuadere diligenter ducunt ad bi-color barcas.",
-         
-         
       },
       {
         orientation: "",
         title: "Image Component Title",
         description:
           "Image Component Caption: Vitas mori. Albus orexiss ducunt ad gabalium. Ubi est altus nomen? Liberi de castus bubo, pugna species! Persuadere diligenter ducunt ad bi-color barcas.",
-         
-         
       },
     ],
   },

@@ -36,9 +36,14 @@ const FilterDropdown = (props) => {
   const [isOpen, setOpen] = useState(false);
   const filterDropdownRef = useClickAway({ isOpen, setOpen });
 
-  const validChildGroups = childGroups.filter(group => group.values && group.values.length > 0);
+  const validChildGroups = childGroups.filter(
+    (group) => group.values && group.values.length > 0,
+  );
 
-  if ((!values || values.length < 1) && (!validChildGroups || validChildGroups.length < 1)) {
+  if (
+    (!values || values.length < 1) &&
+    (!validChildGroups || validChildGroups.length < 1)
+  ) {
     return null;
   }
 

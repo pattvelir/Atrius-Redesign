@@ -1,6 +1,6 @@
-import NavMenu from "../../navigation/NavMenu.js";
+import NavMenu from "./navigation/NavMenu.js";
 
-export default (el, i) => {
+const initMobileMenu = (el, i = 0) => {
   const onClose = () => {};
   const onOpen = () => {};
 
@@ -18,3 +18,4 @@ export default (el, i) => {
     parent: el,
   });
 };
+export default initMobileMenu;

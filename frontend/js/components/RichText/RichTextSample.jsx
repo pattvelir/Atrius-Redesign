@@ -19,14 +19,8 @@ const defaultProps = {
 };
 
 const RichTextSample = (props) => {
-  const {
-    embeds,
-    short,
-    videoEmbed1,
-    imageEmbed1,
-    imageEmbed2,
-    imageEmbed3,
-  } = props;
+  const { embeds, short, videoEmbed1, imageEmbed1, imageEmbed2, imageEmbed3 } =
+    props;
 
   return (
     <>

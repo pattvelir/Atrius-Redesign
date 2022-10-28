@@ -1,7 +1,7 @@
 import React from "react";
 import {} from "prop-types";
 const propTypes = {};
-const navToggle = props => {
+const navToggle = (props) => {
   const {} = props;
   return (
     <button type="button" className="nav-toggle js-nav-toggle">

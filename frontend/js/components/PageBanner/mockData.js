@@ -1,8 +1,7 @@
 export default {
   hasImage: true,
   position: "bottom right",
-   
-   
+
   opacity: 0.6,
   contentType: "Content Type",
   title: "Header Title",
