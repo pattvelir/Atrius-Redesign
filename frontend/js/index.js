@@ -1,14 +1,9 @@
 // import RenderWorker from "web-worker:./RenderWorker.js";
-
-import "./polyfill";
-import "picturefill";
 import "../scss/index.scss";
-
 // needed to set the path for Images used in JS files.
 // import was required to set the value before the other imports.
 import "./modules/assetsDirectory.js";
 import renderer from "./renderer.js";
-
 const threadComponents = [
   {
     selector: ".js-rich-text",
@@ -32,8 +27,8 @@ const threadComponents = [
   },
   {
     selector: ".js-search-menu",
-    dir: "initPrimaryNav",
-    src: "SearchMenu/initSearchMenu",
+    dir: "modules",
+    src: "initSearchMenu",
   },
   {
     selector: ".js-skip-navigation",
@@ -58,7 +53,7 @@ const threadComponents = [
   {
     selector: ".js-slideshow-slider",
     dir: "modules",
-    src: "SlideShow",
+    src: "initSlideShow",
   },
   {
     selector: ".js-background-video",
@@ -68,12 +63,12 @@ const threadComponents = [
   {
     selector: ".js-show-password",
     dir: "modules",
-    src: "forms/DynamicPassword",
+    src: "initDynamicPassword",
   },
   {
     selector: ".js-form",
     dir: "modules",
-    src: "forms/forms",
+    src: "initForms",
   },
   {
     selector: ".js-youtube-video-mount",
@@ -98,12 +93,12 @@ const threadComponents = [
   {
     selector: [".js-secondary-nav", ".js-account-nav"],
     dir: "modules",
-    src: "navigation/SecondaryNav",
+    src: "initSecondaryNav",
   },
   {
     selector: ".js-dynamic-banner",
     dir: "modules",
-    src: "DynamicBanner",
+    src: "initDynamicBanner",
   },
   {
     selector: ".js-profile",
@@ -113,7 +108,7 @@ const threadComponents = [
   {
     selector: ".js-interests-form",
     dir: "modules",
-    src: "forms/InterestsGroups",
+    src: "initInterestsGroups",
   },
   {
     selector: ".js-privacy-banner",

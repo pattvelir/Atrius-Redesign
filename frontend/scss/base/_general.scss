@@ -7,7 +7,11 @@ $base-link-color: $grey-700 !default;
 $base-hairline-color: $grey-600 !default;
 
 body {
-  background-color: #fff;
+  background-color:$base-link-color;
+  // @media (prefers-color-scheme: dark) {
+  //   background-color: var(--color-green-600);
+
+  // }
 }
 
 html,

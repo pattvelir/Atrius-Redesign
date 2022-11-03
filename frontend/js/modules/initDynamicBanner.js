@@ -1,5 +1,4 @@
 import $ from "jquery";
-import { objectFitSupport, objectFit } from "../polyfill/object-fit";
 
 const adjustMedia = ($media, $container) => {
   const imgEl = $media.get(0);

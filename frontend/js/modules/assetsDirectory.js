@@ -1,1 +1,1 @@
-window.assetsFolder = "/assets/Graybox-build";
+window.assetsFolder = "";

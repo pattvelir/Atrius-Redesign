@@ -179,3 +179,5 @@ tools/helix/add-helix-module-configuration.json
 
 #FE
 build
+bundle.css
+bundle.css.map

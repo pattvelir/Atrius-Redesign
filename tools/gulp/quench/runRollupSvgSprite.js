@@ -11,7 +11,7 @@ const R = require("ramda");
  * In css: svg { fill: BlanchedAlmond; }
  */
 
-module.exports = function svgSprite(userConfig) {
+export default function svgSprite(userConfig) {
   const defaultConfig = {
     /**
      * src   : glob of files to copy
@@ -51,4 +51,4 @@ module.exports = function svgSprite(userConfig) {
   });
 
   return {};
-};
+}

@@ -2,7 +2,7 @@ import {
   setDefaults,
   resetDefaults,
   handleSubmit,
-} from "../../common/ThreadValidator.js";
+} from "../common/ThreadValidator.js";
 
 const InterestsGroups = (el) => {
   const form = document.querySelector(el);

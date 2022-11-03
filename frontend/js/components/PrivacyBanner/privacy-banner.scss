@@ -11,10 +11,10 @@
   overflow: visible;
   visibility: visible;
   padding: 30px;
-  background: $grey-300;
+  background: var(--pink-5,green);
   transform: translateY(0%);
   transition: transform 400ms ease-in-out;
-
+  
   &.is-hidden {
     visibility: hidden;
     pointer-events: none;

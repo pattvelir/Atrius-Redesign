@@ -10,7 +10,7 @@ import "../build/js/index-generated.js";
 // import "../frontend/js/index.js";
 import "../build/assets/index-generated.css";
 // import "../frontend/scss/index.css";
-
+console.log( themes.dark );
 export const parameters = {
   layout: "fullscreen", // Remove padding from body
   options: {

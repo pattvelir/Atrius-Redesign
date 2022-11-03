@@ -1,0 +1,13 @@
+{
+  "source": ["./frontend/design-tokens/**/*.json"],
+  "platforms": {
+    "scss": {
+      "transformGroup": "scss",
+      "buildPath": "./frontend/scss/variables/",
+      "files": [{
+        "destination": "_props-generated.scss",
+        "format": "css/variables"
+      }]
+    }
+  }
+}
