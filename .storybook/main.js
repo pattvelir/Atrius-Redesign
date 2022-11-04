@@ -1,6 +1,4 @@
 const path = require("path");
-
-
 module.exports = {
   stories: ["../frontend/**/*.stories.jsx"],
   addons: [
@@ -10,12 +8,6 @@ module.exports = {
     "@storybook/addon-a11y",
     "@storybook/addon-links", 
     "@storybook/addon-essentials",
-    // {
-    //   name: "@storybook/addon-essentials",
-    //   options: {
-    //     backgrounds: false,
-    //   },
-    // },
   ],
   core:{
     disableTelemetry: true,

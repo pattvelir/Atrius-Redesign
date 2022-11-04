@@ -1,4 +1,4 @@
 {
-    "extends": ["@velir-fe/eslint-config-velir"],"rules":[  "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-]
+    "extends": ["@velir-fe/eslint-config-velir"]
+
 }

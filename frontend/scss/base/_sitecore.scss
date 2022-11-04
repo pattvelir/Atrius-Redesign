@@ -3,9 +3,9 @@
     the user-facing site
  */
 
-@import "variables/quantity-queries";
-@import "variables/breakpoints";
-@import "variables/variables";
+@import "../variables/quantity-queries";
+@import "../variables/breakpoints";
+@import "../variables/variables";
 
 .is-page-editor {
   img,

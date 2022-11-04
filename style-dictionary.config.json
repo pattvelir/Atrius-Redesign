@@ -2,12 +2,22 @@
   "source": ["./frontend/design-tokens/**/*.json"],
   "platforms": {
     "scss": {
-      "transformGroup": "scss",
+      "transformGroup": "tokens-scss",
       "buildPath": "./frontend/scss/variables/",
       "files": [{
         "destination": "_props-generated.scss",
-        "format": "css/variables"
+        "format": "css/variables",
+        "outputReferences": true
+      }]
+    },
+    "css": {
+      "buildPath": "./frontend/scss/base/",
+      "transformGroup":"scss",
+      "files": [{
+        "destination": "_utility.scss",
+         "format": "utilityClass",
+         "outputReferences": true
       }]
     }
   }
-}
+} 

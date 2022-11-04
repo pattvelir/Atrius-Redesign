@@ -4,6 +4,7 @@ import "../scss/index.scss";
 // import was required to set the value before the other imports.
 import "./modules/assetsDirectory.js";
 import renderer from "./renderer.js";
+alert("test");
 const threadComponents = [
   {
     selector: ".js-rich-text",

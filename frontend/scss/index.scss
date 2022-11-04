@@ -1,47 +1,32 @@
-@charset 'UTF-8';
-
-// package imports
-@import "./_normalize.scss";
-@import "./_sitecore.scss";
-
-// base imports
-@import "variables/breakpoints";
-@import "variables/colors";
-@import "variables/mixins";
-@import "variables/variables";
-@import "variables/quantity-queries.scss";
-
-@import "base/typography";
-@import "base/general";
-
-// Slick Slider styles
-// be explicit about scss extension because css version
-// also exists, and SASS cannot disambiguate
-// @import "variables/_slick-settings.scss";
-// @import "../../node_modules/slick-slider/slick/slick.scss";
-// @import "../../node_modules/slick-slider/slick/slick-theme.scss";
-
+/**
+* index.scss
+* This file should contain global styles only.
+* import component specific styles in respective js files.
+**/
+@import "./variables/_imports.scss";
 // helper imports
 @import "helpers/class-helpers";
 @import "helpers/layout-helpers";
 
+@import "./base/_normalize.scss";
+@import "./base/_typography.scss";
+@import "./base/_general.scss";
+@import "./base/_button.scss";
+@import "./base/_container.scss";
+@import "./base/_sitecore.scss";
+ 
 // component imports
-@import "modules/account-form";
-@import "modules/account-interests";
-@import "modules/account-profile";
-@import "modules/collapse-pane";
-@import "modules/event-item";
-@import "modules/filter-select-bar";
-@import "modules/flyout";
-@import "modules/multiselect-list";
-@import "modules/sc-form";
-@import "modules/search";
-@import "modules/search-facets";
-@import "modules/search-item";
-@import "modules/search-results";
-@import "../js/components/Button/buttons.scss";
-@import "../js/components/PrivacyBanner/privacy-banner.scss";
-
-// pages
-
-// print styles
+// @import "modules/account-form";
+// @import "modules/account-interests";
+// @import "modules/account-profile";
+// @import "modules/collapse-pane";
+// @import "modules/event-item";
+// @import "modules/filter-select-bar";
+// @import "modules/flyout";
+// @import "modules/multiselect-list";
+// @import "modules/sc-form";
+// @import "modules/search";
+// @import "modules/search-facets";
+// @import "modules/search-item";
+// @import "modules/search-results";
+ 

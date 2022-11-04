@@ -26,13 +26,12 @@ $secondary-btn-border: darken($secondary-btn-bg, 20%) !default;
 $secondary-btn-color--active: darken($secondary-btn-color, 10%) !default;
 $secondary-btn-bg--active: darken($secondary-btn-bg, 10%) !default;
 $secondary-btn-border--active: darken($secondary-btn-border, 10%) !default;
-
 // base
-
+ 
 .btn {
   display: inline-block;
   padding: 6px 9px;
-
+  background: black;
   color: $base-btn-color;
   font-size: 0.875rem;
   font-weight: bold;
