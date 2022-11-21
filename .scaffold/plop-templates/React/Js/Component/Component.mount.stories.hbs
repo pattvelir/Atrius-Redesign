@@ -1,0 +1,14 @@
+import React from "react";
+import mockData  from "./{{pascalCase name}}.mockData.js";
+ 
+const Template = (args) => (
+  <div className="js-{{kebabCase name}}-mount"/>
+);
+
+export const {{pascalCase name}} = Template.bind({});
+{{pascalCase name}}.args = {};
+
+export default {
+  title: "{{pascalCase name}}",
+  component: Template,
+};

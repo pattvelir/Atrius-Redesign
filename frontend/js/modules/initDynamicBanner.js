@@ -1,5 +1,5 @@
 import $ from "jquery";
-
+import "../components/Hero/hero.scss";
 const adjustMedia = ($media, $container) => {
   const imgEl = $media.get(0);
   if (!imgEl || !imgEl.complete || imgEl.naturalWidth === 0) {
@@ -43,8 +43,9 @@ const DynamicBanner = (el) => {
   adjustMedia($media, $container);
   // only apply this if media is video or object-fit is not natively supported
   if (
-    !objectFitSupport() ||
-    ($media.length > 1 && $media[0].nodeName === "VIDEO")
+    // !objectFitSupport() ||
+    $media.length > 1 &&
+    $media[0].nodeName === "VIDEO"
   ) {
     adjustMedia();
     $(window).on("resize", () => adjustMedia());

@@ -1,5 +1,4 @@
-@import "../../../scss/variables/_colors.scss";
-@import "../../../scss/variables/_variables.scss";
+@import "../../../scss/variables";
 
 .event-card {
   max-width: 600px;
@@ -8,7 +7,7 @@
 }
 
 .event-card__date {
-  font-family: $bitter;
+  font-family: $serif;
   font-weight: 700;
 }
 
@@ -21,7 +20,7 @@
 .event-card__heading {
   margin-bottom: 8px;
 
-  font-family: $montserrat;
+  font-family: $secondary-sans;
   font-size: 0.875rem;
   font-weight: 700;
   text-transform: uppercase;

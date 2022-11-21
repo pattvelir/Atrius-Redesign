@@ -3,11 +3,11 @@
   align-items: baseline;
   margin-bottom: 30px;
 
-  @media (max-width: $bp-large-max) {
+  @media (--bp-large-max) {
     flex-direction: column;
   }
 
-  @media (max-width: $bp-x-small-max) {
+  @media (--bp-x-small-max) {
     background-color: $grey-100;
   }
 
@@ -22,7 +22,7 @@
   margin-bottom: 0;
 
   color: $grey-500;
-  font-family: $opensans;
+  font-family: $sans-serif;
   font-size: 15px;
   font-weight: 700;
   background: 0;
@@ -30,9 +30,9 @@
 }
 
 .filter-select-bar__title {
-  min-width: 65px; // require a min-width to prevent a abs position shift on the dropdowns. maybe due to flex pixel rounding?
+  min-width: 65px; /* require a min-width to prevent a abs position shift on the dropdowns. maybe due to flex pixel rounding? */
 
-  @media (max-width: $bp-large-max) {
+  @media (--bp-large-max) {
     margin-bottom: 16px;
   }
 }
@@ -71,7 +71,7 @@
   transform: rotate(180deg);
 }
 
-@media (max-width: $bp-x-small-max) {
+@media (--bp-x-small-max) {
   .filter-select-bar__title {
     display: none;
   }
@@ -164,7 +164,7 @@
     max-width: 80%;
   }
 
-  @media (max-width: $bp-large-max) {
+  @media (--bp-large-max) {
     padding: 4px 0;
     border-bottom: 1px solid #f0f0f0;
 
@@ -191,7 +191,7 @@
   }
 }
 
-@media (max-width: $bp-x-small-max) {
+@media (--bp-x-small-max) {
   .filter-select-bar {
     .collapse-pane {
       width: 100%;

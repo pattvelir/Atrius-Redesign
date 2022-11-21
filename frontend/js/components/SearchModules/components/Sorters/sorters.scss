@@ -1,6 +1,5 @@
-@import "../../../../../scss/variables/_breakpoints.scss";
-@import "../../../../../scss/variables/_colors.scss";
-@import "../../../../../scss/variables/_variables.scss";
+@import "../../../../../scss/variables/index.scss";
+
 
 .sorters {
   --flex-gap: 25px;
@@ -19,9 +18,9 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  gap: var(--flex-gap);
   margin: 0;
   padding: 0;
-  gap: var(--flex-gap);
   list-style: none;
 }
 
@@ -44,6 +43,7 @@
     font-weight: 500;
   }
 }
+
 .sorters__sorter--active span,
 .sorters__sorter:hover span {
   font-weight: 700;

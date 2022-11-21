@@ -1,12 +1,12 @@
 import React from "react";
 import { object, array } from "prop-types";
-
 import SiteLogo from "../SiteLogo/SiteLogo.jsx";
 import SearchMenu from "../SearchMenu/SearchMenu.jsx";
 import UtilityNav from "../UtilityNav/UtilityNav.jsx";
 import PrimaryNav from "../PrimaryNav/PrimaryNav.jsx";
 import MobileMenu from "../MobileMenu/MobileMenu.jsx";
 import LanguageSelector from "../LanguageSelector/LanguageSelector.jsx";
+import "./global-header.scss";
 
 const propTypes = {
   primaryNav: array.isRequired,

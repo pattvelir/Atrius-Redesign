@@ -1,8 +1,5 @@
 $form-gutter: 45px;
-
-.account-form {
-}
-
+ 
 .account-form__fieldset {
   width: 100%;
   margin: 0;
@@ -24,19 +21,16 @@ $form-gutter: 45px;
     display: grid;
     grid-gap: 215px;
     grid-template-columns: 350px 1fr;
-    grid-template-rows: auto; // required for IE11
+    grid-template-rows: auto; /* required for IE11 */
   }
-}
-
-.account-form__fields {
 }
 
 .account-form__fields--50-50 {
   width: 100%;
 
-  @media (min-width: $bp-large-min) {
+  @media (--bp-large-min) {
     display: flex;
-    // margin-left: -$form-gutter;
+
     flex-wrap: wrap;
   }
 
@@ -51,7 +45,7 @@ $form-gutter: 45px;
     margin-top: $form-gutter;
     margin-left: 0;
 
-    @media (min-width: $bp-large-min) {
+    @media (--bp-large-min) {
       width: calc(50% - #{$form-gutter});
       margin-left: $form-gutter;
     }

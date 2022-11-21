@@ -1,5 +1,5 @@
-@import "../../../scss/variables/variables.scss";
-@import "../../../scss/variables/_colors.scss";
+@import "../../../scss/variables";
+
 
 $button-color: $grey-700 !default;
 $button-color-hover: $grey-500 !default;
@@ -25,11 +25,6 @@ $button-color-hover: $grey-500 !default;
   transform: translateY(20px);
   transition: opacity 0.2s ease, background 0.2s ease, transform 0.2s ease,
     visibility 0.2s ease;
-
-  // @include media($bp-g-max-medium) {
-  //   bottom: 16px;
-  //   right: 16px;
-  // }
 
   &.is-active {
     visibility: visible;

@@ -1,6 +1,4 @@
-@import "../../../scss/variables/_mixins.scss";
-@import "../../../scss/variables/_variables.scss";
-@import "../../../scss/variables/_colors.scss";
+@import "../../../scss/variables/index.scss";
 
 .text-banner {
   text-align: center;
@@ -20,7 +18,7 @@
 }
 
 .text-banner__description {
-  font-family: $montserrat;
+  font-family: $secondary-sans;
   font-size: 1.2rem;
 }
 

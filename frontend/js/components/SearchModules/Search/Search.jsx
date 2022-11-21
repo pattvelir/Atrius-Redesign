@@ -1,7 +1,7 @@
 import React from "react";
 import { object } from "prop-types";
 import cx from "classnames";
-
+import "./search.scss";
 const propTypes = {
   query: object.isRequired,
   model: object.isRequired,

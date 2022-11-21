@@ -1,6 +1,4 @@
-@import "../../../scss/variables/_breakpoints.scss";
-@import "../../../scss/variables/_mixins.scss";
-@import "../../../scss/variables/_quantity-queries.scss";
+@import "../../../scss/variables/index.scss";
 
 $multi-image__bp-stack: 600px;
 $multi-image__grid-space: 30px;
@@ -25,7 +23,7 @@ $multi-image__grid-space: 30px;
   max-width: 700px;
   margin-top: 15px;
 
-  @media (max-width: $bp-x-small-max) {
+  @media (--bp-x-small-max) {
     display: none;
   }
 }
@@ -63,15 +61,14 @@ $multi-image__grid-space: 30px;
     }
   }
 
-  @media (min-width: $bp-large-min) {
-
+  @media (--bp-large-min) {
     @include exactly(3) {
       width: calc(33.333% - #{$multi-image__grid-space});
     }
     width: calc(50% - #{$multi-image__grid-space});
   }
 
-  @media (min-width: $bp-x-small-min) {
+  @media (--bp-x-small-min) {
     width: calc(50% - #{$multi-image__grid-space});
   }
 
@@ -92,7 +89,7 @@ $multi-image__grid-space: 30px;
 .container--70-30 .container__col:first-child,
 .container--30-70 .container__col:last-child {
   .multi-image__image {
-    @media (max-width: $bp-x-large-max) {
+    @media (--bp-x-large-max) {
       width: 100%;
     }
   }

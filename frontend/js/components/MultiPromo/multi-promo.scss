@@ -1,6 +1,4 @@
-@import "../../../scss/variables/_breakpoints.scss";
-@import "../../../scss/variables/_mixins.scss";
-@import "../../../scss/variables/_quantity-queries.scss";
+@import "../../../scss/variables/index.scss";
 
 $multi-promo__bp-stack: 600px;
 $multi-promo__promo-space: 30px;
@@ -15,7 +13,7 @@ $multi-promo__promo-space: 30px;
 .multi-promo__title {
   margin-bottom: 1em;
 
-  @media (max-width: $bp-medium-max) {
+  @media (--bp-medium-max) {
     font-size: rem(24);
   }
 }
@@ -24,15 +22,14 @@ $multi-promo__promo-space: 30px;
   width: 100%;
   margin-left: $multi-promo__promo-space;
 
-  @media (min-width: $bp-large-min) {
-
+  @media (--bp-large-min) {
     @include exactly(3) {
       width: calc(33.333% - #{$multi-promo__promo-space});
     }
     width: calc(50% - #{$multi-promo__promo-space});
   }
 
-  @media (min-width: $bp-x-small-min) {
+  @media (--bp-x-small-min) {
     width: calc(50% - #{$multi-promo__promo-space});
   }
 
@@ -53,20 +50,6 @@ $multi-promo__promo-space: 30px;
     }
   }
 }
-
-// 70-column
-// Broken code found v2.5
-// .container--70-30 .container__col:first-child,
-// .container--30-70 .container__col:last-child {
-//
-// 	.multi-promo__promo {
-// 		@media (width: $bp-max-large) {
-// 			width: 100%;
-// 		}
-// 	}
-// }
-
-// 30-column and 50-column
 
 .container--70-30 .container__col:last-child,
 .container--30-70 .container__col:first-child,

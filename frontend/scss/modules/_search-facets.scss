@@ -42,7 +42,7 @@ $search-facets__values-indent: 16px;
     width: 24px;
   }
 
-  @media (max-width: $bp-large-max) {
+  @media (--bp-large-max) {
     display: block;
   }
 }
@@ -59,7 +59,7 @@ $search-facets__values-indent: 16px;
     cursor: pointer;
   }
 
-  @media (max-width: $bp-large-max) {
+  @media (--bp-large-max) {
     float: right;
   }
 }
@@ -70,7 +70,7 @@ $search-facets__values-indent: 16px;
   margin-bottom: 20px;
   background: $grey-200;
 
-  // Root Group Heading
+  /* Root Group Heading */
 
   .search-facets__group-heading {
     display: flex;
@@ -82,7 +82,7 @@ $search-facets__values-indent: 16px;
     h4 {
       margin-bottom: 0;
 
-      font-family: $montserrat;
+      font-family: $secondary-sans;
       font-size: 18px;
       font-weight: 700;
       text-transform: uppercase;
@@ -118,7 +118,7 @@ $search-facets__values-indent: 16px;
   }
 }
 
-// Child Group headings
+/* Child Group headings */
 
 .search-facets__group-wrapper {
   .search-facets__group-heading {
@@ -245,9 +245,9 @@ $search-facets__values-indent: 16px;
 .search-facets__values-wrapper {
   overflow: hidden;
 
-  // when a group has no direct values, but does have childGroups
-  // we want to remove the top-padding from the first childGroup
-
+  /* when a group has no direct values, but does have childGroups
+  ** we want to remove the top-padding from the first childGroup
+  */
   &.has-no-values + .search-facets__group {
     .search-facets__group-heading {
       padding-top: 0;

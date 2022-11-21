@@ -1,6 +1,5 @@
-@import "../../../../scss/variables/breakpoints";
-@import "../../../../scss/variables/mixins";
-@import "../../../../scss/variables/colors";
+@import "../../../../scss/variables/";
+ 
 
 .search {
 }
@@ -36,7 +35,7 @@
   }
 
   .container__col--70 {
-    @media (min-width: $bp-large-min) {
+    @media (--bp-large-min) {
       grid-column: 1/-1;
       max-width: 850px;
       margin-right: auto;

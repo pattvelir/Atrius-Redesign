@@ -1,10 +1,9 @@
-@import "../../../scss/variables/_colors.scss";
-@import "../../../scss/variables/_breakpoints.scss";
-@import "../../../scss/variables/_mixins.scss";
+@import "../../../scss/variables";
 
 // global-header.scss
 // Define global header styles here
 $global-header__bottom-space: 30px;
+
 // base
 
 .global-header {
@@ -22,7 +21,7 @@ $global-header__bottom-space: 30px;
       color: #fff;
     }
 
-    @media (max-width: $bp-global-header-max) {
+    @media (--bp-global-header-max) {
       color: $grey-700;
 
       &:hover {
@@ -45,7 +44,7 @@ $global-header__bottom-space: 30px;
 }
 
 .global-header__desktop {
-  @media (max-width: $bp-global-header-max) {
+  @media (--bp-global-header-max) {
     display: none;
   }
 }
@@ -60,7 +59,7 @@ $global-header__bottom-space: 30px;
   align-items: center;
   justify-content: flex-end;
 
-  @media (max-width: $bp-global-header-max) {
+  @media (--bp-global-header-max) {
     width: 100%;
     margin-bottom: 1rem;
 
@@ -115,7 +114,7 @@ $global-header__bottom-space: 30px;
   align-items: center;
   padding: 24px 0;
 
-  @media (min-width: $bp-global-header-min) {
+  @media (--bp-global-header-min) {
     display: none;
   }
 

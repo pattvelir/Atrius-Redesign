@@ -1,16 +1,18 @@
-// general.scss
-// Define universal plain tag styles here
-// NOTE: No classes or IDs!
+/* general.scss
+** Define universal plain tag styles here
+** NOTE: No classes or IDs!
 
-// color variables
+** color variables
+*/
 $base-link-color: $grey-700 !default;
 $base-hairline-color: $grey-600 !default;
 
 body {
-   // @media (prefers-color-scheme: dark) {
-  //   background-color: var(--color-green-600);
+  /* @media (prefers-color-scheme: dark) {
+      background-color: var(--color-green-600);
 
-  // }
+    }*/
+  font: var(--font-body-body-md);
 }
 
 html,
@@ -26,30 +28,31 @@ body * {
   }
 }
 
-// body element
+/* body element */
 
 body {
   margin: 0;
 }
 
-// Annotate breakpoints inside body psuedo-selector
-// so they may be read by javascript
-// More details: https://www.lullabot.com/articles/importing-css-breakpoints-into-javascript
+/* Annotate breakpoints inside body psuedo-selector
+** so they may be read by javascript
+** More details: https://www.lullabot.com/articles/importing-css-breakpoints-into-javascript
+*/
 
 body::before {
   display: none;
   content: "large";
 
-  @media (max-width: $bp-large-max) {
+  @media (--bp-large-max) {
     content: "medium";
   }
 
-  @media (max-width: $bp-x-small-max) {
+  @media (--bp-x-small-max) {
     content: "small";
   }
 }
 
-// flexible media
+/* flexible media */
 
 object,
 video {
@@ -57,7 +60,7 @@ video {
   max-width: 100%;
 }
 
-// lists
+/* lists */
 
 ol,
 ul {
@@ -71,7 +74,7 @@ ul {
   }
 }
 
-// nested lists
+/* nested lists */
 
 ul ul,
 ol ul,
@@ -80,7 +83,7 @@ ul ol {
   margin-top: 10px;
 }
 
-// definition lists
+/* definition lists */
 
 dl {
   margin-top: 0;
@@ -94,18 +97,19 @@ dl {
   }
 }
 
-// links
+/* links */
 
 a {
   color: $base-link-color;
-  transition: color 0.28s cubic-bezier(0.4, 0, 0.2, 1); // Fast Out, Slow In
+  /* Fast Out, Slow In */
+  transition: color 0.28s cubic-bezier(0.4, 0, 0.2, 1); 
 
   &:hover {
     color: rgba($base-link-color, 0.7);
   }
 }
 
-// hr
+/* hr */
 
 hr {
   box-sizing: content-box;

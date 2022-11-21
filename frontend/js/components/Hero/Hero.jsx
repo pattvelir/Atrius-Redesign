@@ -84,13 +84,12 @@ const Hero = (props) => {
           dangerouslySetInnerHTML={{ __html: title }}
         ></h2>
         <div className="hero__subtitle">{subtitle}</div>
-        <a
-          href="#"
+        <button
           className="hero__action btn btn--primary"
           aria-labelledby={titleID}
         >
           {cta}
-        </a>
+        </button>
       </div>
     </section>
   );

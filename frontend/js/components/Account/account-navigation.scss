@@ -1,8 +1,5 @@
-@import "../../../scss/variables/_mixins.scss";
-@import "../../../scss/variables/_colors.scss";
-@import "../../../scss/variables/_breakpoints.scss";
-@import "../../../scss/variables/_variables.scss";
-
+@import "../../../scss/variables";
+ 
 .account-nav {
   position: relative;
   margin-top: 30px;
@@ -18,7 +15,7 @@
     background: $grey-300;
     content: "";
 
-    @media (max-width: $bp-x-small-max) {
+    @media (--bp-x-small-max) {
       display: none;
     }
   }
@@ -26,7 +23,7 @@
   .account-nav__toggle {
     display: none;
 
-    font-family: $montserrat;
+    font-family: $secondary-sans;
     font-weight: 700;
 
     text-align: center;
@@ -40,7 +37,7 @@
       width: 32px;
     }
 
-    @media (max-width: $bp-x-small-max) {
+    @media (--bp-x-small-max) {
       display: block;
     }
   }
@@ -55,7 +52,7 @@
     margin-left: -52px;
     padding-bottom: 0;
 
-    @media (max-width: $bp-x-small-max) {
+    @media (--bp-x-small-max) {
       display: none;
       margin-top: 16px;
     }
@@ -70,7 +67,7 @@
 
     font-size: 16px;
 
-    @media (max-width: $bp-x-small-max) {
+    @media (--bp-x-small-max) {
       display: block;
       margin-bottom: 8px;
       padding-left: 12px;
@@ -79,7 +76,7 @@
     a {
       text-decoration: none;
 
-      @media (max-width: $bp-x-small-max) {
+      @media (--bp-x-small-max) {
         padding: 8px 0;
       }
     }
@@ -99,7 +96,7 @@
         background: $grey-500;
         content: "";
 
-        @media (max-width: $bp-x-small-max) {
+        @media (--bp-x-small-max) {
           display: none;
         }
       }

@@ -1,13 +1,13 @@
-// layout-helpers.scss
-// Define layout helpers here - NOTE: prefixed with 'l-'
+/* layout-helpers.scss
+** Define layout helpers here - NOTE: prefixed with 'l-'
 
-// full width
-
+** full width
+*/
 .l-full {
   width: 100%;
 }
 
-// float left
+/* float left */
 
 .l-pull-left {
   float: left;
@@ -15,7 +15,7 @@
   margin-bottom: 30px;
 }
 
-// float right
+/* float right */
 
 .l-pull-right {
   float: right;
@@ -23,47 +23,48 @@
   margin-left: 30px;
 }
 
-// table layout
+/* table layout */
 
 .l-table {
   position: relative;
   display: table;
   border-collapse: collapse;
 }
-// positioning - inspired by http://howtocenterincss.com/
-// NOTE: most use flexbox - be sure to check browser reqs: http://caniuse.com/#feat=flexbox.
-// most below classes are for parent elements. children must have 'flex' property set.
 
-// horizontal and vertical alignment: center
+/* positioning - inspired by http://howtocenterincss.com/
+** NOTE: most use flexbox - be sure to check browser reqs: http://caniuse.com/#feat=flexbox.
+** most below classes are for parent elements. children must have 'flex' property set.
 
+** horizontal and vertical alignment: center
+*/
 .l-centered {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-// horizontal alignment: left, vertical alignment: center
+/* horizontal alignment: left, vertical alignment: center */
 
 .l-left-centered {
   display: flex;
   align-items: center;
 }
 
-// horizontal alignment: left, vertical alignment: bottom
+/* horizontal alignment: left, vertical alignment: bottom */
 
 .l-left-bottom {
   display: flex;
   align-items: flex-end;
 }
 
-// horizontal alignment: center, vertical alignment: top
+/* horizontal alignment: center, vertical alignment: top */
 
 .l-center-top {
   margin-right: auto;
   margin-left: auto;
 }
 
-// horizontal alignment: center, vertical alignment: bottom
+/* horizontal alignment: center, vertical alignment: bottom */
 
 .l-center-bottom {
   display: flex;
@@ -71,13 +72,13 @@
   justify-content: center;
 }
 
-// horizontal alignment: right, vertical alignment: top
+/* horizontal alignment: right, vertical alignment: top */
 
 .l-right-top {
   margin-left: auto;
 }
 
-// horizontal alignment: right, vertical alignment: centered
+/* horizontal alignment: right, vertical alignment: centered */
 
 .l-right-centered {
   display: flex;
@@ -85,7 +86,7 @@
   justify-content: flex-end;
 }
 
-// horizontal alignment: right, vertical alignment: bottom
+/* horizontal alignment: right, vertical alignment: bottom */
 
 .l-right-bottom {
   display: flex;

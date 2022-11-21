@@ -7,8 +7,14 @@ import { themes } from '@storybook/theming';
 // import "../build/css/index-generated.css";
 // include the _entry_ javascript file, so webpack can take care of importing npm modules
 
-import "../build/js/index-generated.js";
-import "../build/assets/index-generated.css";
+// import "../frontend/js/index.js";
+import "../frontend/js/index.js";
+// import "../frontend/scss/index.scss";
+
+import "../frontend/scss/variables/_props-generated.scss";
+//load built css because src file custom media queries dont work 
+import "../build/css/index-generated.css";
+
 export const parameters = {
   layout: "fullscreen", // Remove padding from body
   options: {

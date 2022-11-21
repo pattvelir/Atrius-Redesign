@@ -1,16 +1,15 @@
-@import "../../../scss/variables/_breakpoints.scss";
-@import "../../../scss/variables/_mixins.scss";
+@import "../../../scss/variables/index.scss";
 
 // connect variables
 $connect-icon-size: 35px !default;
 $connect-icon-spacing: 4px !default;
-$connect-icon-fill: currentColor !default;
+$connect-icon-fill: currentcolor !default;
 $connect-phone-size: 24px !default;
 $connect-promo-size: 24px !default;
 $connect-bp-small-max: 570px !default;
 
 .connect {
-  @include container();
+  @include container;
 }
 
 .connect__inner {
@@ -18,7 +17,7 @@ $connect-bp-small-max: 570px !default;
   align-items: center;
   justify-content: space-between;
 
-  @media (max-width: $bp-large-max) {
+  @media (--bp-large-max) {
     flex-wrap: wrap;
   }
 
@@ -26,7 +25,7 @@ $connect-bp-small-max: 570px !default;
     text-align: center;
   }
 
-  @media (max-width: $bp-x-small-max) {
+  @media (--bp-x-small-max) {
     display: block;
 
     text-align: center;
@@ -39,7 +38,7 @@ $connect-bp-small-max: 570px !default;
   line-height: $connect-icon-size;
   white-space: nowrap;
 
-  @media (max-width: $bp-x-small-max) {
+  @media (--bp-x-small-max) {
     padding: 0 0 12px;
   }
 }
@@ -49,7 +48,7 @@ $connect-bp-small-max: 570px !default;
   order: 1;
   padding: 12px 0;
 
-  @media (max-width: $bp-large-max) {
+  @media (--bp-large-max) {
     padding: 0 0 12px;
   }
 
@@ -58,7 +57,7 @@ $connect-bp-small-max: 570px !default;
     width: 100%;
   }
 
-  @media (max-width: $bp-x-small-max) {
+  @media (--bp-x-small-max) {
     display: block;
     padding: 0;
   }
@@ -73,12 +72,12 @@ $connect-bp-small-max: 570px !default;
   line-height: $connect-icon-size;
   white-space: nowrap;
 
-  @media (max-width: $bp-x-small-max) {
+  @media (--bp-x-small-max) {
     padding: 0 0 12px;
   }
 
   a {
-    color: currentColor;
+    color: currentcolor;
     text-decoration: none;
   }
 }
@@ -92,7 +91,7 @@ $connect-bp-small-max: 570px !default;
   font-weight: 700;
   line-height: $connect-icon-size;
 
-  @media (max-width: $bp-large-max) {
+  @media (--bp-large-max) {
     order: 0;
     width: 100%;
     padding: 12px 0;
@@ -105,7 +104,7 @@ $connect-bp-small-max: 570px !default;
 
   white-space: nowrap;
 
-  @media (max-width: $bp-large-max) {
+  @media (--bp-large-max) {
     padding: 0 0 12px;
   }
 

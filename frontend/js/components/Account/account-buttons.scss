@@ -1,4 +1,4 @@
-@import "../../../scss/variables/_breakpoints.scss";
+@import "../../../scss/variables/index.scss";
 
 .account-buttons {
   flex-basis: 38%;
@@ -8,14 +8,14 @@
 
   text-align: right;
 
-  @media (min-width: $bp-small-min) {
+  @media (--bp-small-min) {
     min-width: 355px;
   }
 
   div + & {
     margin-top: 16px;
 
-    @media (min-width: $bp-medium-min) {
+    @media (--bp-medium-min) {
       margin-top: 0;
     }
   }
@@ -24,7 +24,7 @@
     margin-top: 10px;
     margin-left: 24px;
 
-    @media (min-width: $bp-medium-min) {
+    @media (--bp-medium-min) {
       margin-top: 0;
     }
   }

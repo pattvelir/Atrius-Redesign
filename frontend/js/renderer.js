@@ -1,8 +1,9 @@
-export default async (component) => {
-  const { selector, src, dir } = component;
-  const module = await import(`./${dir}/${src}.js`);
+export default (component) => {
+  const { selector, src } = component;
 
-  return [selector].forEach((s) =>
-    [...document.querySelectorAll(s)].forEach((el) => module.default(el)),
-  );
+  return [selector].forEach((s) => {
+    const selectors = [...document.querySelectorAll(s)];
+    if (selectors.length <= 0) return;
+    selectors.forEach((el) => src(el));
+  });
 };

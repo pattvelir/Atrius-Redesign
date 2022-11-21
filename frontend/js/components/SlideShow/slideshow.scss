@@ -1,6 +1,4 @@
-@import "../../../scss/variables/_colors.scss";
-@import "../../../scss/variables/_breakpoints.scss";
-@import "../../../scss/variables/_slick-settings.scss";
+@import "../../../scss/variables";
 
 // Slick Slider customization should happen per-component,
 // however, there are some global settings that can be set in
@@ -11,12 +9,13 @@ $slideshow-dots-size: 10px;
 
 .slideshow {
   max-width: 100%;
+
   // hide all slides except first until
   // slick slider initializes
 
   .image-block {
-    margin-bottom: 0;
     opacity: 0;
+    margin-bottom: 0;
   }
 
   .slick-initialized .image-block {
@@ -36,7 +35,7 @@ $slideshow-dots-size: 10px;
       padding-bottom: em(35);
       border-bottom: 0;
 
-      @media (max-width: $bp-x-small-max) {
+      @media (--bp-x-small-max) {
         padding-right: em(40);
         padding-left: em(40);
       }
@@ -55,7 +54,7 @@ $slideshow-dots-size: 10px;
     border-radius: 0 !important;
     transition: background-color 0.3s;
 
-    @media (max-width: $bp-x-small-max) {
+    @media (--bp-x-small-max) {
       background-color: transparent;
     }
 
@@ -154,7 +153,7 @@ $slideshow-dots-size: 10px;
     }
   }
 
-  @media (max-width: $bp-large-max) {
+  @media (--bp-large-max) {
     .slick-next,
     .slick-prev {
       $size: $slideshow-arrow-size * 0.5;

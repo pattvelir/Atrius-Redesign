@@ -1,7 +1,4 @@
-@import "../../../scss/variables/_colors.scss";
-@import "../../../scss/variables/_breakpoints.scss";
-@import "../../../scss/variables/_mixins.scss";
-@import "../../../scss/variables/_variables.scss";
+@import "../../../scss/variables/index.scss";
 
 $page-banner__caption-offset: 30px;
 
@@ -46,7 +43,7 @@ $page-banner__caption-offset: 30px;
     vertical-align: bottom;
     content: "";
 
-    @media (max-width: $bp-large-max) {
+    @media (--bp-large-max) {
       height: 0;
       padding-top: 56.25%;
     }
@@ -86,8 +83,8 @@ $page-banner__caption-offset: 30px;
   width: 100%;
   background-image: linear-gradient(
     -180deg,
-    rgba(0, 0, 0, 0) 3%,
-    rgba(0, 0, 0, 0.13) 20%,
+    rgb(0 0 0 / 0%) 3%,
+    rgb(0 0 0 / 13%) 20%,
     #000 100%
   );
   inset: 0;
@@ -99,7 +96,7 @@ $page-banner__caption-offset: 30px;
   max-width: $max-width;
   margin: 0 auto;
 
-  @media (max-width: $bp-x-large-max) {
+  @media (--bp-x-large-max) {
     padding-left: $page-banner__caption-offset;
   }
 
@@ -111,7 +108,7 @@ $page-banner__caption-offset: 30px;
 .page-banner__eyebrow {
   margin-bottom: 0;
 
-  font-family: $montserrat;
+  font-family: $secondary-sans;
   font-size: 1.125rem;
   font-weight: 700;
   line-height: 2.625rem;
@@ -124,12 +121,12 @@ $page-banner__caption-offset: 30px;
 .page-banner__subtitle {
   display: inline-block;
 
-  font-family: $montserrat;
+  font-family: $secondary-sans;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 2.625rem;
 
-  @media (max-width: $bp-large-max) {
+  @media (--bp-large-max) {
     font-size: 1rem;
   }
 }

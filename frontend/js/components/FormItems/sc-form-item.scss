@@ -1,14 +1,12 @@
-@import "../../../scss/variables/_colors.scss";
-@import "../../../scss/variables/_breakpoints.scss";
+@import "../../../scss/variables";
 
+$c-theme-secondary:red;
 /* css colors */
 $c-bd-error: #d01500;
 $c-bd-warning: $c-theme-secondary;
-
 $c-font-error: #d01500;
 $c-font-success: $c-theme-secondary;
 $c-font-warning: $c-theme-secondary;
-
 $base-body-color: $grey-700 !default;
 
 .sc-form-item {
@@ -166,13 +164,13 @@ $base-body-color: $grey-700 !default;
     left: 5px;
     height: 0;
     width: 0;
+    opacity: 0;
     border-bottom: 2px solid $c-theme-primary;
     border-left: 2px solid $c-theme-primary;
     content: "";
-    opacity: 0;
+    transition: height 250ms ease, width 250ms ease 250ms;
     transform: rotate(-45deg);
     transform-origin: left top;
-    transition: height 250ms ease, width 250ms ease 250ms;
   }
 }
 
@@ -184,8 +182,8 @@ $base-body-color: $grey-700 !default;
   &::after {
     top: 14px;
     left: 14px;
-    height: 0em;
-    width: 0em;
+    height: 0;
+    width: 0;
     background: $c-theme-primary;
     border-radius: 50%;
     transform: rotate(0deg);
@@ -217,6 +215,7 @@ $base-body-color: $grey-700 !default;
   width: 1em;
   opacity: 1;
 }
+
 // ******************* End Checkbox ***************** //
 
 // ******************* Start Textarea *************** //
@@ -248,11 +247,11 @@ $base-body-color: $grey-700 !default;
     bottom: 20px;
     height: 0.75em;
     width: 0.75em;
-    border-bottom: 3px solid currentColor;
-    border-right: 3px solid currentColor;
+    border-right: 3px solid currentcolor;
+    border-bottom: 3px solid currentcolor;
     content: "";
-    pointer-events: none;
     transform: rotate(45deg);
+    pointer-events: none;
   }
 }
 

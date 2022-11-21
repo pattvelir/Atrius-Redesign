@@ -1,5 +1,6 @@
 import _ from "lodash";
 import $ from "jquery";
+import "../components/PrivacyBanner/privacy-banner.scss";
 
 const PrivacyModal = (el) => {
   const $el = $(el);

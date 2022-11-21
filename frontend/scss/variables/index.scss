@@ -1,0 +1,15 @@
+@import "partials/variables";
+@import "partials/colors";
+@import "partials/mixins";
+@custom-media --bp-x-small-min (min-width: #{$x-small-min});
+@custom-media --bp-small-min (min-width: #{$small-min});
+@custom-media --bp-medium-min (min-width: #{$medium-min});
+@custom-media --bp-large-min (min-width: #{$large-min});
+@custom-media --bp-x-large-min (min-width: #{$x-large-min});
+@custom-media --bp-global-header-min (min-width: #{$global-header-min});
+@custom-media --bp-x-small-max (max-width: #{$x-small-max});
+@custom-media --bp-small-max (max-width: #{$small-max});
+@custom-media --bp-medium-max (max-width: #{$medium-max});
+@custom-media --bp-large-max (max-width: #{$large-max});
+@custom-media --bp-x-large-max (max-width: #{$x-large-max});
+@custom-media --bp-global-header-max (max-width: #{$global-header-max});

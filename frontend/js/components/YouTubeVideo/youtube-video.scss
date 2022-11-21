@@ -1,6 +1,4 @@
-@import "../../../scss/variables/_breakpoints.scss";
-@import "../../../scss/variables/_mixins.scss";
-@import "../../../scss/variables/_colors.scss";
+@import "../../../scss/variables/index.scss";
 
 .youtube-video {
   position: relative;
@@ -46,8 +44,8 @@
 
   color: $white;
   border: none;
-  cursor: pointer;
   outline: 0;
+  cursor: pointer;
 
   &::before {
     position: absolute;
@@ -56,20 +54,20 @@
     display: block;
     height: 60px;
     width: 60px;
+    border: 2px solid currentcolor;
+    border-radius: 50%;
 
     background: rgba($black, 0.5);
-    border: 2px solid currentColor;
-    border-radius: 50%;
     content: "";
-    transform: translate(-50%, -50%);
     transition: background 500ms, border-color 500ms;
+    transform: translate(-50%, -50%);
 
-    @media (min-width: $bp-small-min) {
+    @media (--bp-small-min) {
       height: 105px;
       width: 105px;
     }
 
-    @media (min-width: $bp-medium-min) {
+    @media (--bp-medium-min) {
       height: 100px;
       width: 100px;
     }
@@ -82,19 +80,20 @@
     display: block;
     height: 0;
     width: 0;
-    border-color: transparent transparent transparent currentColor;
-    border-style: solid;
     border-width: 15px 0 15px 22px;
+    border-style: solid;
+    border-color: transparent transparent transparent currentcolor;
     content: "";
-    //the play button doesnt look centered at -50, -50
-    transform: translate(-37%, -50%);
     transition: border-color 500ms;
 
-    @media (min-width: $bp-small-min) {
+    /*the play button doesnt look centered at -50, -50*/
+    transform: translate(-37%, -50%);
+
+    @media (--bp-small-min) {
       border-width: 20px 0 20px 31px;
     }
 
-    @media (min-width: $bp-medium-min) {
+    @media (--bp-medium-min) {
       border-width: 25px 0 25px 40px;
     }
   }
@@ -102,8 +101,8 @@
   &:focus,
   &:hover {
     &::before {
-      background-color: $grey-700;
       border-color: $grey-700;
+      background-color: $grey-700;
     }
 
     &::after {
@@ -121,6 +120,7 @@
     display: none;
   }
 }
+
 .youtube-video__poster-button--dark {
   color: $black;
 
@@ -165,7 +165,7 @@
 .youtube-video__credit {
   padding-left: 0.3rem;
 
-  @media (max-width: $bp-x-small-max) {
+  @media (--bp-x-small-max) {
     padding-left: 0;
   }
 }

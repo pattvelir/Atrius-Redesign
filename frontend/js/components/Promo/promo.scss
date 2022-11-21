@@ -1,7 +1,4 @@
-@import "../../../scss/variables/_breakpoints.scss";
-@import "../../../scss/variables/_colors.scss";
-@import "../../../scss/variables/_mixins.scss";
-@import "../../../scss/variables/_variables.scss";
+@import "../../../scss/variables/index.scss";
 
 $promo-media-margin: 30px;
 
@@ -30,9 +27,9 @@ $promo-media-margin: 30px;
     flex-direction: row;
 
     .promo__media {
+      width: 50%;
       margin-right: $promo-media-margin;
       margin-bottom: 0;
-      width: 50%;
     }
 
     .promo__cta {
@@ -44,9 +41,9 @@ $promo-media-margin: 30px;
     flex-direction: row-reverse;
 
     .promo__media {
-      margin-left: $promo-media-margin;
-      margin-bottom: 0;
       width: 50%;
+      margin-bottom: 0;
+      margin-left: $promo-media-margin;
     }
   }
 
@@ -54,22 +51,22 @@ $promo-media-margin: 30px;
     max-width: 100%;
   }
 
-  @media (max-width: $bp-large-max) {
+  @media (--bp-large-max) {
     &.is-right,
     &.is-left {
       align-items: flex-start;
       flex-direction: column;
 
       .promo__media {
+        min-width: 100%;
+        margin-right: 0;
         margin-bottom: $promo-media-margin;
         margin-left: 0;
-        margin-right: 0;
-        min-width: 100%;
       }
     }
   }
 
-  @media (max-width: $bp-x-small-max) {
+  @media (--bp-x-small-max) {
     &.is-right,
     &.is-left {
       flex-direction: column;
@@ -100,25 +97,25 @@ $promo-media-margin: 30px;
 }
 
 .promo__title {
-  font-family: $bitter;
-  font-weight: bold;
-  font-size: 1.55rem;
-  line-height: 2.625rem;
   margin-bottom: 12px;
+  font-family: $serif;
+  font-size: 1.55rem;
+  font-weight: bold;
+  line-height: 2.625rem;
   cursor: pointer;
 
   &:hover {
-    text-decoration: underline;
     color: ($grey-500, 0.7);
+    text-decoration: underline;
   }
 }
 
 .promo__subtitle {
-  font-family: $montserrat;
   display: block;
+  margin-bottom: 12px;
+  font-family: $secondary-sans;
   font-size: 1.2rem;
   font-weight: bold;
-  margin-bottom: 12px;
 }
 
 .promo__cta {

@@ -1,3 +1,4 @@
+import "../components/BackgroundVideo/background-video.scss";
 export default (el) => {
   const backgroundVideoEl = el.querySelector(".js-background-video-el");
   const backgroundVideoButton = el.querySelector(".js-background-video-button");

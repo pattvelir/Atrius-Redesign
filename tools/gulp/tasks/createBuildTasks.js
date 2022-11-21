@@ -18,11 +18,6 @@ const copy = require("rollup-plugin-copy");
 const { svgSprite } = require("../quench/runRollupSvgSprite.js");
 const terserLib = require("rollup-plugin-terser");
 const filesize = require("rollup-plugin-filesize");
-// const webWorkerLoader = require("rollup-plugin-web-worker-loader");
-import * as react from "react";
-import * as reactDom from "react-dom";
-import * as reactIs from "react-is";
-import * as propTypes from "prop-types";
 
 const yargs = require("yargs");
 // const styles = require("rollup-plugin-styles");

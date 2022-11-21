@@ -1,8 +1,8 @@
 import React from "react";
 import { arrayOf, string, shape } from "prop-types";
 import cx from "classnames";
-
 import Icon from "../Icon/Icon.jsx";
+import "./language-selector.scss";
 
 const propTypes = {
   currentItem: string,

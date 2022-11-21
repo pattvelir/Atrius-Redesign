@@ -1,5 +1,6 @@
 import React, { Suspense } from "react";
 import ReactDom from "react-dom";
+import "../components/YouTubeVideo/youtube-video.scss";
 
 const YouTubeVideoApp = React.lazy(() =>
   import("../components/YouTubeVideo/YouTubeVideoApp.jsx"),

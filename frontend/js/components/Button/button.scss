@@ -1,6 +1,6 @@
 // This file is using the `_` so it can be included earlier in the bundle to make overrides easier
+@import "../../../scss/variables/index.scss";
 
-@import "../../../scss/variables/_colors.scss";
 
 // buttons.scss
 // Define button styles here
@@ -12,6 +12,7 @@ $base-btn-border: darken($base-btn-bg, 20%) !default;
 $base-btn-color--active: darken($base-btn-color, 10%) !default;
 $base-btn-bg--active: darken($base-btn-bg, 10%) !default;
 $base-btn-border--active: darken($base-btn-border, 10%) !default;
+
 // primary
 $primary-btn-color: $grey-50 !default;
 $primary-btn-bg: darken($primary-btn-color, 60%) !default;
@@ -19,6 +20,7 @@ $primary-btn-border: darken($primary-btn-color, 60%) !default;
 $primary-btn-color--active: $primary-btn-color !default;
 $primary-btn-bg--active: darken($primary-btn-bg, 10%) !default;
 $primary-btn-border--active: darken($primary-btn-border, 10%) !default;
+
 // secondary
 $secondary-btn-color: $grey-800 !default;
 $secondary-btn-bg: lighten($secondary-btn-color, 50%) !default;
@@ -26,8 +28,9 @@ $secondary-btn-border: darken($secondary-btn-bg, 20%) !default;
 $secondary-btn-color--active: darken($secondary-btn-color, 10%) !default;
 $secondary-btn-bg--active: darken($secondary-btn-bg, 10%) !default;
 $secondary-btn-border--active: darken($secondary-btn-border, 10%) !default;
+
 // base
- 
+
 .btn {
   display: inline-block;
   padding: 6px 9px;
@@ -39,6 +42,7 @@ $secondary-btn-border--active: darken($secondary-btn-border, 10%) !default;
   letter-spacing: 0.02em;
   text-decoration: none;
   text-transform: uppercase;
+
   /* Prevent button from inheriting line-height */
   vertical-align: middle;
   background-color: $base-btn-bg;
@@ -156,6 +160,7 @@ $secondary-btn-border--active: darken($secondary-btn-border, 10%) !default;
     cursor: default;
   }
 }
+
 // disabled
 
 .btn--disabled {
@@ -173,6 +178,7 @@ $secondary-btn-border--active: darken($secondary-btn-border, 10%) !default;
     background-color: transparent;
   }
 }
+
 // btn tags
 
 .btn--tag {
@@ -202,6 +208,7 @@ $secondary-btn-border--active: darken($secondary-btn-border, 10%) !default;
   background-color: transparent;
   border: 0;
 }
+
 // btn icon group
 
 .btn--icon-group {
@@ -222,7 +229,7 @@ $secondary-btn-border--active: darken($secondary-btn-border, 10%) !default;
       width: 1.846em;
       max-width: 24px;
       visibility: visible;
-      fill: currentColor;
+      fill: currentcolor;
       opacity: 1;
       transition: opacity 0.35s;
 

@@ -1,5 +1,5 @@
 import NavMenu from "./navigation/NavMenu.js";
-
+import "../components/PrimaryNav/primary-nav.scss";
 const initPrimaryNav = (el, index = 0) => {
   const onClose = () => {};
   const onOpen = () => {};

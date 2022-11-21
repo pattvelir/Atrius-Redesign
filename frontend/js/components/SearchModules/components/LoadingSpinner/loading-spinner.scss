@@ -1,6 +1,4 @@
-@import "../../../../../scss/variables/_breakpoints.scss";
-@import "../../../../../scss/variables/_colors.scss";
-@import "../../../../../scss/variables/_variables.scss";
+@import "../../../../../scss/variables/index.scss";
 
 @keyframes loading-spinner {
   0% {
@@ -37,14 +35,14 @@
       display: block;
       height: 200px;
       width: 200px;
+      border: 16px solid $grey-500;
+      border-top-color: $grey-900;
+      border-radius: 50%;
+      content: "";
+      animation-name: loading-spinner;
 
       animation-duration: 2s;
       animation-iteration-count: infinite;
-      animation-name: loading-spinner;
-      border: 16px solid $grey-500;
-      border-radius: 50%;
-      border-top-color: $grey-900;
-      content: "";
     }
   }
 }

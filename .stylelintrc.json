@@ -1,3 +1,0 @@
-{
-  "extends": ["@velir-fe/stylelint-plugin-velir-presets"]
-}

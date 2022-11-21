@@ -1,6 +1,6 @@
-const svgstore = require("svgstore");
-const fs = require("fs");
-const R = require("ramda");
+import svgstore from "svgstore";
+import fs from "fs";
+import * as R from "ramda";
 
 /**
  * Usage: put svg's in svg.src directory.  eg. /img/svg-sprite/my-icon.svg

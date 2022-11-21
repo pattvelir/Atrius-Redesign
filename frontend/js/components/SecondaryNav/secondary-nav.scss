@@ -1,12 +1,9 @@
-@import "../../../scss/variables/_colors.scss";
-@import "../../../scss/variables/_breakpoints.scss";
-@import "../../../scss/variables/_mixins.scss";
-@import "../../../scss/variables/_variables.scss";
+@import "../../../scss/variables/index.scss";
+
 
 $secondary-nav__parent-indent: 0;
 $secondary-nav__child-indent: 12px;
 $secondary-nav__grandchild-indent: 24px;
-
 $secondary-nav__item-vert-padding: 8px;
 $secondary-nav__item-vert-margin: 8px;
 $secondary-nav__list-vert-margin: 16px;
@@ -15,7 +12,7 @@ $secondary-nav__list-vert-margin: 16px;
   position: relative;
   width: 80%;
 
-  @media (max-width: $bp-large-max) {
+  @media (--bp-large-max) {
     width: 100%;
   }
 
@@ -27,7 +24,7 @@ $secondary-nav__list-vert-margin: 16px;
 .secondary-nav__toggle {
   display: none;
 
-  font-family: $montserrat;
+  font-family: $secondary-sans;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
@@ -40,7 +37,7 @@ $secondary-nav__list-vert-margin: 16px;
     width: 32px;
   }
 
-  @media (max-width: $bp-x-small-max) {
+  @media (--bp-x-small-max) {
     display: block;
   }
 }
@@ -62,7 +59,7 @@ $secondary-nav__list-vert-margin: 16px;
   flex-direction: column;
   margin-bottom: 0;
 
-  @media (max-width: $bp-x-small-max) {
+  @media (--bp-x-small-max) {
     display: none;
   }
 }
@@ -91,7 +88,7 @@ $secondary-nav__list-vert-margin: 16px;
     }
   }
 
-  @media (max-width: $bp-x-small-max) {
+  @media (--bp-x-small-max) {
     // hide all items except the
     // active parent. But hide
     // the text inside the active parent
@@ -116,7 +113,7 @@ $secondary-nav__list-vert-margin: 16px;
   & > a {
     width: 100%;
 
-    font-family: $montserrat;
+    font-family: $secondary-sans;
     font-weight: 700;
   }
 
@@ -139,7 +136,7 @@ $secondary-nav__list-vert-margin: 16px;
   display: block;
   clear: both;
 
-  font-family: $montserrat;
+  font-family: $secondary-sans;
 
   font-size: 16px;
   font-weight: 700;
@@ -168,7 +165,7 @@ $secondary-nav__list-vert-margin: 16px;
     width: 100%;
     padding-left: $secondary-nav__grandchild-indent;
 
-    font-family: $opensans;
+    font-family: $sans-serif;
     font-size: 0.875rem;
   }
 }

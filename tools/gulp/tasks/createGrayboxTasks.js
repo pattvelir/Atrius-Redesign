@@ -95,8 +95,7 @@ module.exports = function createGrayboxTasks(props) {
 
   if (quench.isWatching()) {
     return gulp.series(buildTasks, gulp.parallel(storybook, browserSync));
-  }
-  else {
+  } else {
     return buildTasks;
   }
 };

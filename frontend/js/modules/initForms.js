@@ -1,5 +1,6 @@
 // Forms with empty inputs (create profile)
 // <form class="sc-form js-form" action="apiUrl">
+import "../components/FormItems/sc-form-item.scss";
 import {
   setDefaults,
   matchfields,

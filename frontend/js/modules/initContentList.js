@@ -1,4 +1,5 @@
 import { Accordion } from "./accordion.js";
+import "../components/ContentList/content-list.scss";
 
 export default (el, i) => {
   Accordion(el, i);

@@ -1,7 +1,4 @@
-@import "../../../scss/variables/_breakpoints.scss";
-@import "../../../scss/variables/_variables.scss";
-@import "../../../scss/variables/_colors.scss";
-@import "../../../scss/variables/mixins/_clearfix.scss";
+@import "../../../scss/variables";
 
 $list-item-media-margin: 30px;
 
@@ -35,7 +32,7 @@ $list-item-media-margin: 30px;
     }
   }
 
-  @media (max-width: $bp-x-small-max) {
+  @media (--bp-x-small-max) {
     .list-item__media {
       display: none;
     }
@@ -53,7 +50,7 @@ $list-item-media-margin: 30px;
   }
 }
 
-@media (max-width: $bp-large-max) {
+@media (--bp-large-max) {
   .list-item__media {
     width: 30%;
   }
@@ -71,7 +68,7 @@ $list-item-media-margin: 30px;
   margin-bottom: 4px;
 
   color: $grey-500;
-  font-family: $montserrat;
+  font-family: $secondary-sans;
   font-size: 0.95rem;
   font-weight: 700;
   line-height: 1.6;

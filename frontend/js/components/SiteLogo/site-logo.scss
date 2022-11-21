@@ -1,5 +1,5 @@
-@import "../../../scss/variables/_breakpoints.scss";
-@import "../../../scss/variables/_variables.scss";
+@import "../../../scss/variables/index.scss";
+
 
 .site-logo {
   display: flex;
@@ -9,7 +9,7 @@
   font-size: 1.2rem;
   font-weight: bold;
 
-  @media (max-width: $bp-large-max) {
+  @media (--bp-large-max) {
     flex-direction: column;
   }
 
@@ -25,7 +25,7 @@
 .site-logo__title {
   margin-left: 0.5em;
 
-  @media (max-width: $bp-large-max) {
+  @media (--bp-large-max) {
     margin-top: 10px;
     margin-left: 0;
 

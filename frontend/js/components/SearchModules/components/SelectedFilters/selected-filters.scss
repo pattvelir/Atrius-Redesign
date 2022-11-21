@@ -1,11 +1,11 @@
-@import "../../../../../scss/variables/colors.scss";
-@import "../../../../../scss/variables/variables.scss";
+@import "../../../../../scss/variables/index.scss";
+
 .selected-filters {
   display: flex;
+  gap: 16px;
 
   font-size: 18px;
   line-height: 1.6;
-  gap: 16px;
 }
 
 .selected-filters__label {
@@ -14,9 +14,9 @@
 .selected-filters__group {
   display: flex;
   flex-wrap: wrap;
+  gap: 16px;
   margin: 0;
   padding: 0;
-  gap: 16px;
   list-style: none;
 }
 
@@ -44,8 +44,8 @@
     height: 0.75em;
     width: 0.75em;
 
-    background-image: linear-gradient(0deg, currentColor, currentColor),
-      linear-gradient(0deg, currentColor, currentColor);
+    background-image: linear-gradient(0deg, currentcolor, currentcolor),
+      linear-gradient(0deg, currentcolor, currentcolor);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% 1px, 1px 100%;

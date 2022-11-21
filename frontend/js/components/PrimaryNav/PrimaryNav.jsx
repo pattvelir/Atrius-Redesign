@@ -1,9 +1,10 @@
 import React from "react";
 import { arrayOf, shape, string, bool } from "prop-types";
 import cx from "classnames";
-
 import Icon from "../Icon/Icon.jsx";
+import "./primary-nav.scss";
 
+import { copyKeys } from "ramda-adjunct";
 const propTypes = {
   primaryNav: arrayOf(
     shape({
@@ -23,7 +24,7 @@ const propTypes = {
 
 const PrimaryNav = (props) => {
   const { primaryNav } = props;
-
+console.log("RUN");
   return (
     <nav className="primary-nav js-primary-nav" aria-label="Primary">
       <ul className="primary-nav__items">

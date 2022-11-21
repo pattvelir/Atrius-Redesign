@@ -1,5 +1,4 @@
-@import "../../../scss/variables/_colors.scss";
-@import "../../../scss/variables/_breakpoints.scss";
+@import "../../../scss/variables/index.scss";
 
 .account-message {
   padding: 24px;
@@ -7,7 +6,7 @@
   color: $black;
   background-color: $grey-300;
 
-  @media (min-width: $bp-small-min) {
+  @media (--bp-small-min) {
     display: flex;
     align-items: center;
     justify-content: center;

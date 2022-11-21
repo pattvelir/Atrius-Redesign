@@ -1,7 +1,4 @@
-@import "../../../scss/variables/_colors.scss";
-@import "../../../scss/variables/_breakpoints.scss";
-@import "../../../scss/variables/_mixins.scss";
-@import "../../../scss/variables/_variables.scss";
+@import "../../../scss/variables/index.scss";
 
 .hero {
   position: relative;
@@ -21,7 +18,7 @@
   width: 100%;
   margin: 0;
 
-  @media (max-width: $bp-medium-max) {
+  @media (--bp-medium-max) {
     position: absolute;
   }
 
@@ -48,8 +45,8 @@
   width: 100%;
   background-image: linear-gradient(
     -180deg,
-    rgba(0, 0, 0, 0) 3%,
-    rgba(0, 0, 0, 0.13) 20%,
+    rgb(0 0 0 / 0%) 3%,
+    rgb(0 0 0 / 13%) 20%,
     #000 100%
   );
 }
@@ -63,7 +60,7 @@
   text-align: center;
   transform: translate(0, -50%);
 
-  @media (max-width: $bp-medium-max) {
+  @media (--bp-medium-max) {
     position: static;
     max-width: 100%;
     padding: 60px;
@@ -75,11 +72,11 @@
   color: $white;
   font-size: 3.5rem;
 
-  @media (max-width: $bp-large-max) {
+  @media (--bp-large-max) {
     font-size: 2.2rem;
   }
 
-  @media (max-width: $bp-x-small-max) {
+  @media (--bp-x-small-max) {
     font-size: 1.8rem;
   }
 }
@@ -87,10 +84,10 @@
 .hero__subtitle {
   margin-bottom: 4rem;
 
-  font-family: $montserrat;
+  font-family: $secondary-sans;
   font-size: 1.5rem;
 
-  @media (max-width: $bp-large-max) {
+  @media (--bp-large-max) {
     margin-bottom: 2rem;
 
     font-size: 1rem;
@@ -103,7 +100,7 @@
   font-size: 1.125rem;
   line-height: 1.5;
 
-  @media (max-width: $bp-large-max) {
+  @media (--bp-large-max) {
     font-size: 1rem;
   }
 }

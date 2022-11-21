@@ -1,8 +1,8 @@
 .search-item {
+  opacity: 0;
   margin-bottom: 32px;
   padding-bottom: 32px;
   border-bottom: 1px solid $grey-200;
-  opacity: 0;
   transition: opacity 250ms;
 
   &.is-visible {
@@ -14,8 +14,9 @@
   }
 
   a {
-    // remove transitions when graying out results
-    // while search results refreshing
+    /* remove transitions when graying out results
+    ** while search results refreshing
+    */
     transition: none;
   }
 }
@@ -41,7 +42,7 @@
 }
 
 .search-item__url {
-  font-family: $opensans;
+  font-family: $sans-serif;
   font-size: 14px;
   font-weight: 700;
 }

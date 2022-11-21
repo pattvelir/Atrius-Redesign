@@ -1,5 +1,4 @@
-@import "../../../../scss/variables/breakpoints";
-@import "../../../../scss/variables/mixins";
+@import "../../../../scss/variables/index.scss";
 
 .dynamic-content-listing {
 }
@@ -27,7 +26,7 @@
   margin-top: 20px;
   margin-bottom: 20px;
 
-  @media (max-width: $bp-medium-max) {
+  @media (--bp-medium-max) {
     .filter-bar {
       max-width: 370px;
     }

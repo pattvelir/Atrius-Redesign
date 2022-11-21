@@ -1,5 +1,5 @@
 .interests {
-  //override account form stuff
+  /* override account form stuff */
 
   .account-form__fields--50-50 {
     @media (min-width: 1100px) {
@@ -24,7 +24,8 @@
 .interest__title {
   display: block;
   flex-basis: 100%;
-  // margin: 0 16px 8px;
+
+  /* margin: 0 16px 8px;*/
   margin: 0 0 8px;
   padding: 10px 0;
 
@@ -44,19 +45,19 @@
 .interest__input {
   width: 33.3%;
 
-  @media (max-width: $bp-large-max) {
+  @media (--bp-large-max) {
     width: 100%;
   }
 }
 
 .sc-form-item__opt-description {
-  margin: 5px 32px 0px -32px;
+  margin: 5px 32px 0 -32px;
   margin-left: -32px;
 
   font-size: 12px;
 }
 
-//if there is more than 1 group
+/*if there is more than 1 group */
 
 .account-form__fields--strech-inputs,
 .account-form__fields--force-row {
@@ -75,13 +76,13 @@
   .interest__input {
     width: 50%;
 
-    @media (max-width: $bp-large-max) {
+    @media (--bp-large-max) {
       width: 100%;
     }
   }
 }
 
-//using grid from account form
+/*using grid from account form*/
 
 .account-form__fields--50-50 {
   .interests__input-row {
@@ -97,8 +98,8 @@
   }
 
   .interest__select-all {
-    margin: 0px 16px;
-    padding: 16px 0px 0px;
+    margin: 0 16px;
+    padding: 16px 0 0;
 
     .sc-form-item {
       margin: 0;
@@ -124,7 +125,7 @@
     margin: 0;
   }
 
-  //overriding for a select all checkbox
+  /*overriding for a select all checkbox*/
 
   .sc-form-item--checkbox {
     .sc-form-item__label {

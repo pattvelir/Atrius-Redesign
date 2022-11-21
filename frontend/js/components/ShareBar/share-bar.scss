@@ -1,17 +1,17 @@
-@import "../../../scss/variables/_colors.scss";
-@import "../../../scss/variables/_breakpoints.scss";
+@import "../../../scss/variables/index.scss";
+
 
 .share-bar {
   text-align: right;
 
-  @media (max-width: $bp-x-large-max) {
+  @media (--bp-x-large-max) {
     width: calc(100% - 140px);
     max-width: none;
     margin-right: auto;
     margin-left: auto;
   }
 
-  @media (max-width: $bp-x-small-max) {
+  @media (--bp-x-small-max) {
     display: none;
   }
 
@@ -218,7 +218,7 @@
   margin-top: -24px;
   margin-bottom: 60px;
 
-  @media (max-width: $bp-x-large-max) {
+  @media (--bp-x-large-max) {
     margin-top: 0;
 
     text-align: left;

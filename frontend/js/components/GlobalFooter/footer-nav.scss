@@ -1,5 +1,5 @@
-@import "../../../scss/variables/_mixins.scss";
-@import "../../../scss/variables/_breakpoints.scss";
+@import "../../../scss/variables/index.scss";
+
 
 .footer-nav {
   display: flex;
@@ -7,7 +7,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  @media (max-width: $bp-x-small-max) {
+  @media (--bp-x-small-max) {
     display: block;
   }
 }
@@ -20,7 +20,7 @@
 .footer-nav__col-wrapper {
   display: flex;
 
-  @media (max-width: $bp-x-small-max) {
+  @media (--bp-x-small-max) {
     display: block;
   }
 }
@@ -29,13 +29,13 @@
   @include zero-list;
   margin-right: 24px;
 
-  @media (max-width: $bp-x-small-max) {
+  @media (--bp-x-small-max) {
     display: block;
     width: 100%;
   }
 }
 
 .footer-nav__heading {
-  font-size: 1.35rem;
   width: 100%;
+  font-size: 1.35rem;
 }

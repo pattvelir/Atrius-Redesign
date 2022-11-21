@@ -1,10 +1,7 @@
-@import "../../../scss/variables/_mixins.scss";
-@import "../../../scss/variables/_colors.scss";
-@import "../../../scss/variables/_breakpoints.scss";
-@import "../../../scss/variables/_variables.scss";
+@import "../../../scss/variables/index.scss";
 
-.primary-nav {
-  @media (min-width: $bp-global-header-min) {
+ .primary-nav {
+  @media (--bp-global-header-min) {
     margin-right: 16px;
   }
 }
@@ -15,7 +12,7 @@
   align-items: flex-start;
   flex-wrap: wrap;
 
-  @media (max-width: $bp-global-header-max) {
+  @media (--bp-global-header-max) {
     align-items: stretch;
     flex-direction: column;
   }
@@ -86,7 +83,7 @@
 .primary-nav__menu {
   position: relative;
 
-  @media (max-width: $bp-global-header-max) {
+  @media (--bp-global-header-max) {
     position: static;
     width: 100%;
   }
@@ -101,8 +98,8 @@
   display: block;
   min-width: 100%;
   visibility: hidden;
-  background-color: $grey-700;
   opacity: 0;
+  background-color: $grey-700;
   transition: opacity 400ms ease-out, visibility 400ms ease-out;
 
   @keyframes animateHeightShrink {
@@ -116,7 +113,7 @@
     }
   }
 
-  @media (max-width: $bp-global-header-max) {
+  @media (--bp-global-header-max) {
     position: relative;
     top: 0;
     height: 0;
@@ -132,7 +129,7 @@
     visibility: visible;
     opacity: 1;
 
-    @media (max-width: $bp-global-header-max) {
+    @media (--bp-global-header-max) {
       height: auto;
     }
   }
@@ -150,7 +147,7 @@
 
   font-size: 1rem;
 
-  @media (max-width: $bp-global-header-max) {
+  @media (--bp-global-header-max) {
     width: 100%;
   }
 

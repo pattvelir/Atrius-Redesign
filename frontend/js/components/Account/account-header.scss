@@ -1,13 +1,11 @@
-@import "../../../scss/variables/_colors.scss";
-@import "../../../scss/variables/_breakpoints.scss";
-@import "../../../scss/variables/_variables.scss";
+@import "../../../scss/variables/index.scss";
 
 .account-header {
   align-items: center;
   padding: 24px;
   background-color: $grey-200;
 
-  @media (min-width: $bp-large-min) {
+  @media (--large-min) {
     display: flex;
     justify-content: space-between;
   }
@@ -18,7 +16,7 @@
   flex-grow: 1;
   flex-shrink: 1;
 
-  @media (min-width: $bp-large-min) {
+  @media (--large-min) {
     display: flex;
     align-items: center;
   }
@@ -26,13 +24,13 @@
 
 .account-header__title {
   color: $black;
-  font-family: $opensans;
+  font-family: $sans-serif;
   font-size: 32px;
   font-weight: 700;
 }
 
 .account-header__subtitle {
-  @media (min-width: $bp-large-min) {
+  @media (--large-min) {
     margin-left: 24px;
   }
 }

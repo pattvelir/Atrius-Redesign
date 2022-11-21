@@ -1,13 +1,11 @@
-@import "../../../scss/variables/_mixins.scss";
-@import "../../../scss/variables/_colors.scss";
-@import "../../../scss/variables/_variables.scss";
-@import "../../../scss/variables/_breakpoints.scss";
+@import "../../../scss/variables/index.scss";
+
 
 .pull-quote {
   padding: 40px;
   background-color: $grey-300;
 
-  @media (max-width: $bp-large-max) {
+  @media (--bp-large-max) {
     padding: 30px;
   }
 }
@@ -24,10 +22,10 @@
   margin: 0;
   padding: 0;
 
-  font-family: $montserrat;
+  font-family: $secondary-sans;
   font-size: 1.5rem;
 
-  @media (max-width: $bp-large-max) {
+  @media (--bp-large-max) {
     font-size: 1.25rem;
   }
 }
@@ -41,7 +39,7 @@
   font-style: normal;
   text-align: right;
 
-  @media (max-width: $bp-large-max) {
+  @media (--bp-large-max) {
     padding-left: 0%;
   }
 }
@@ -53,6 +51,6 @@
 .pull-quote__name {
   display: block;
 
-  font-family: $montserrat;
+  font-family: $secondary-sans;
   font-weight: 700;
 }

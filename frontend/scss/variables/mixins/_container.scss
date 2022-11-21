@@ -1,7 +1,0 @@
-@mixin container() {
-  max-width: $max-width + (2 * $gutter);
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $gutter;
-  padding-left: $gutter;
-}
