@@ -1,0 +1,22 @@
+@import "../../../scss/variables/index.scss";
+
+.sc-form-item__field {
+  font: var(--font-ui-labels-ui-sm);
+  text-decoration: var(--typography-ui-labels-ui-sm-text-decoration);
+  color: var(--color-neutral-900);
+  border: 2px solid var(--color-neutral-50);
+  background: var(--color-design-system-white);
+
+  &:hover {
+    border: 2px solid var(--color-neutral-100);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-yellow-300);
+    outline-offset: -1px;
+  }
+
+  &::placeholder {
+    color: var(--color-neutral-600);
+  }
+}

@@ -3,7 +3,6 @@ dotenv.config();
 const { NODE_ENV = "production" } = process.env;
 import styles from "rollup-plugin-styles";
 // import path from 'path'
-
 import * as R from "ramda";
 // import { writeFileSync } from "fs";
 import path from "path";
@@ -14,6 +13,7 @@ import svgSprite from "./tools/gulp/quench/runRollupSvgSprite.js";
 import fg from "fast-glob";
 // import postcssJitProps from "postcss-jit-props";
 import postcss from "rollup-plugin-postcss";
+// import postcss from "postcss";
 // import postcssEncodeBackgroundSVGs from "postcss-encode-background-svgs";
 import postcssPresetEnv from "postcss-preset-env";
 import dynamicImportVar from "@rollup/plugin-dynamic-import-vars";
@@ -26,54 +26,54 @@ import copy from "rollup-plugin-copy";
 import filesize from "rollup-plugin-filesize";
 // import OpenProps from "open-props";
 import commonjs from "@rollup/plugin-commonjs";
+import eslint from "@rollup/plugin-eslint";
+import globals from "rollup-plugin-node-globals";
+import builtins from "rollup-plugin-node-builtins";
 
 //if .env is not defined set NODE_ENV to "production"
-const env = yargs?.argv?.env || NODE_ENV;
+const env = yargs?.argv?.environment || NODE_ENV;
 const isWatching = yargs?.argv?.w || false;
 const isLocal = env === "development" || env === "local";
 const isCi = env === "ci";
 const isProduction = env === "production";
 const buildDir = "./build";
 const frontendDir = "./frontend";
-
-// const scss = require("rollup-plugin-scss");
 // const extensions = [".js", ".jsx"];
 // console.log(isLocal && isWatching);
+
 const rollupPlugins = R.reject(
   //reject false
   (i) => !i,
   R.flatten([
-    postcss({ extract: path.resolve("build/css/index-generated.css") }),
-    nodeResolve({
-      browser: true,
-      extensions: [".js", ".jsx", ".scss", ".css"],
+    postcss({
+      extract: "index-generated.css",
+      config: {
+        path: path.resolve("./postcss.config.js"),
+        ctx: { env: yargs?.argv?.environment },
+      },
     }),
+    // rollup PostCss
+    // styles({
+    //   onImport: (a, b) => console.log(b),
+    //   extract: true,
+    // }),
+    nodeResolve({
+      dedupe: ["react", "react-dom", "ramda", "lodash", "jquery"], // Default: []
+      jsnext: true,
+      main: true,
+      browser: true,
+    }),
+
+    // scss({
+    //   output: false,
+    //   sass: sass,
+    //   processor: () => postcss(),
+    // }),
+    // scss({ process: postcss }),
     svgSprite({
       src: `${frontendDir}/img/svg`,
       dest: `${frontendDir}/img`,
     }),
-    // scss({ verbose: true, output: false }),
-    // styles({
-    //   // mode: "emit",
-
-    //   verbose: true,
-    //   sourceMap: true,
-    //   include: [`${frontendDir}/scss/index.scss`],
-    //   mode: [
-    //     "extract",
-    //     // "inject",
-    //     // {
-    //     //   container: "head",
-    //     //   singleTag: false,
-    //     //   prepend: false,
-    //     //   attributes: { id: "global" },
-    //     // },
-    //   ],
-    //   // output: `${buildDir}/assets/index-generated.css`,
-    //   // processor: () => postcss({ config: { path: "./postcss.config.js" } }),
-    // }),
-    // postcss(),
-
     copy({
       targets: [
         {
@@ -107,8 +107,26 @@ const rollupPlugins = R.reject(
         ],
       ],
     }),
-    commonjs(),
-    dynamicImportVar(),
+    dynamicImportVar({ warnOnError: true }),
+    commonjs({
+      // non-CommonJS modules will be ignored, but you can also
+      // specifically include/exclude files
+      include: "node_modules/**", // Default: undefined
+      browser: true,
+      preferBuiltins: false,
+      // if true then uses of `global` won't be dealt with by this plugin
+      ignoreGlobal: false, // Default: false
+
+      // if false then skip sourceMap generation for CommonJS modules
+      sourceMap: false, // Default: true
+
+      // explicitly specify unresolvable named exports
+      // (see below for more details)
+      // namedExports: { './module.js': ['foo', 'bar' ] }  // Default: undefined
+    }),
+    // eslint({
+    //   exclude: ["frontend/**/*.scss", "node_modules/**"],
+    // }),
     ...[
       isLocal &&
         isWatching &&
@@ -135,17 +153,21 @@ const rollupPlugins = R.reject(
           livereload({ watch: path.resolve(buildDir), verbose: true }),
         ],
     ],
-
     ...[(isProduction || isCi) && terser()],
     ...[(isProduction || isCi) && filesize()],
+    globals(),
+    builtins(),
   ]),
 );
 
 export default {
-  input: [`${frontendDir}/js/index`],
+  input: [`${frontendDir}/js/index.js`],
   output: {
+    // file: "js/index-generated.js",
+    format: "esm",
+    // // Removes the hash from the asset filename
     dir: `${buildDir}`,
-    entryFileNames: "js/[name]-generated.js",
+    entryFileNames: "js/index-generated.js",
     chunkFileNames: "js/chunks/[name]-[hash].js",
     assetFileNames: "assets/[name]-generated[extname]",
     sourcemap: isLocal ? "inline" : false,

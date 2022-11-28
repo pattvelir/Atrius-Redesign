@@ -1,4 +1,4 @@
-@import "../../../scss/variables";
+@import "../../../scss/variables/index.scss";
 
 $c-theme-secondary:red;
 /* css colors */
@@ -41,13 +41,13 @@ $base-body-color: $grey-700 !default;
   width: 100%;
   padding: 10px 12px;
 
-  color: $base-body-color;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.25px;
-  border: 1px solid $base-border-color;
-  border-radius: 1px;
-  box-shadow: none;
+  // color: $base-body-color;
+  // font-size: 16px;
+  // line-height: 24px;
+  // letter-spacing: 0.25px;
+  // border: 1px solid $base-border-color;
+  // border-radius: 1px;
+  // box-shadow: none;
 
   &[readonly] {
   }

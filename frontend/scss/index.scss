@@ -2,10 +2,12 @@
 * index.scss
 **/
 
-@import "./variables";
-@import "./base";
-@import "./helpers";
-@import "./modules";
+@import "./variables/index.scss";
+@import "./base/index.scss";
+@import "./helpers/index.scss";
+@import "./modules/index.scss";
+// @import-glob "../js/components/**/*.scss";
+
 @import "../js/components/ShareBar/share-bar";
 @import "../js/components/LanguageSelector/language-selector";
 @import "../js/components/MultiImage/multi-image";
@@ -55,6 +57,7 @@
 @import "../js/components/SecondaryNav/secondary-nav";
 @import "../js/components/FormItems/sc-form-item";
 @import "../js/components/FormItems/scss/form-legend";
+@import "../js/components/FormItems/thread-form-overrides";
 @import "../js/components/RichText/rich-text";
 @import "../js/components/Icon/icon";
 @import "../js/components/Account/account-header";
@@ -74,8 +77,4 @@
 @import "../js/components/UtilityNav/utility-nav";
 @import "../js/components/UtilityNav/_base";
 @import "../js/components/Promo/promo";
-@import "../js/components/SearchBox/search-box";
-
-body {
-  /* transform: rotate(180deg); */
-}
+@import "../js/components/SearchBox/search-box"; 

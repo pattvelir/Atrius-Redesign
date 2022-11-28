@@ -1,6 +1,5 @@
 import React from "react";
 import {} from "prop-types";
-
 const propTypes = {};
 
 const YouTubeVideoMount = (props) => {

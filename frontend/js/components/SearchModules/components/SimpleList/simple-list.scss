@@ -8,7 +8,7 @@
 
   .list-item__media {
     position: relative;
-    max-width: min(30vw, 220px);
+    max-width: calc(min(30vw, 220px));
     margin-right: 32px;
 
     img {
