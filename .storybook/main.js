@@ -5,6 +5,7 @@ module.exports = {
   },
   stories: ['../frontend/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: [
+    "@whitespace/storybook-addon-html",
     '@storybook/preset-scss',
     '@storybook/addon-links',
     '@storybook/addon-essentials',

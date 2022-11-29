@@ -24,6 +24,12 @@ export const parameters = {
       order: [ "Base", "Objects", "Components", "Containers", "Pages"],
     },
   },
+  html: {
+    prettier: {
+      tabWidth: 4,
+      useTabs: false,
+     },
+  },
   darkMode: {
     // Override the default dark theme
     dark: { ...themes.dark },

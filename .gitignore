@@ -178,6 +178,7 @@ tools/helix/add-helix-module-configuration.json
 /tools/powershell/Kneedle/config.json
 
 #FE
-build/**/*
+build
+/build/**/*
 bundle.css
 bundle.css.map
