@@ -16,5 +16,5 @@ We've overridden the `GetAllowedRenderings` processor in the `GetPlaceholderRend
 
 **Related Files**
 
-* `App_Config/Include/zThread/Thread.Foundation.Multisite.config`
+* `App_Config/Include/zAtriusHealth/AtriusHealth.Foundation.Multisite.config`
 * `Pipelines/GetPlaceholderRenderings/GetSiteSpecificRenderings.cs`

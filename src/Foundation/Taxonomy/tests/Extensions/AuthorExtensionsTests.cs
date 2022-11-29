@@ -1,9 +1,9 @@
-﻿using NUnit.Framework;
+using NUnit.Framework;
 using Sitecore.Data;
 using Sitecore.FakeDb;
-using Thread.Foundation.Taxonomy.Extensions;
+using AtriusHealth.Foundation.Taxonomy.Extensions;
 
-namespace Thread.Foundation.Taxonomy.Tests.Extensions
+namespace AtriusHealth.Foundation.Taxonomy.Tests.Extensions
 {
 	[TestFixture]
 	public class AuthorExtensionsTests

@@ -1,7 +1,7 @@
-﻿using System.Text.RegularExpressions;
+using System.Text.RegularExpressions;
 using Sitecore.Pipelines.RenderField;
 
-namespace Thread.Feature.RichText.Pipelines.RenderField
+namespace AtriusHealth.Feature.RichText.Pipelines.RenderField
 {
 	public class FixEmbeddedContentEditableFields
 	{

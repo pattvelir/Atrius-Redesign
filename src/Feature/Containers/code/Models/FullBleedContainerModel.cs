@@ -1,9 +1,9 @@
-﻿using Thread.Foundation.Mvc.ViewModels;
-using Thread.Foundation.Orm;
+using AtriusHealth.Foundation.Mvc.ViewModels;
+using AtriusHealth.Foundation.Orm;
 
-namespace Thread.Feature.Containers.Models
+namespace AtriusHealth.Feature.Containers.Models
 {
-	public class FullBleedContainerModel : ThreadViewModel<ThreadItem>
+	public class FullBleedContainerModel : AtriusHealthViewModel<AtriusHealthItem>
 	{
 		public virtual string ContainerId => $"Container-{Rendering.UniqueId}";
 	}

@@ -1,8 +1,8 @@
-﻿using Jabberwocky.Core.Caching;
+using Jabberwocky.Core.Caching;
 using Sitecore.Data;
 using Sitecore.Data.Items;
 
-namespace Thread.Foundation.Multisite.Configuration
+namespace AtriusHealth.Foundation.Multisite.Configuration
 {
 	public class SitecoreConfigurationManagerCacheDecorator : ISitecoreConfigurationManager
 	{

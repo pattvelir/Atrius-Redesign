@@ -2,7 +2,7 @@
 <configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
   <system.webServer>
     <handlers>
-      <add verb="*" xdt:Transform="InsertIfMissing" xdt:Locator="Match(name)" path="/sitemap.xml" type="Thread.Feature.Sitemap.Handlers.SitemapHandler, Thread.Feature.Sitemap" name="Sitemap" />
+      <add verb="*" xdt:Transform="InsertIfMissing" xdt:Locator="Match(name)" path="/sitemap.xml" type="AtriusHealth.Feature.Sitemap.Handlers.SitemapHandler, AtriusHealth.Feature.Sitemap" name="Sitemap" />
     </handlers>
   </system.webServer>
 </configuration>

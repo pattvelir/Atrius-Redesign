@@ -2,7 +2,7 @@
 <configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
   <system.webServer>
     <handlers>
-      <add verb="*" xdt:Transform="InsertIfMissing" xdt:Locator="Match(name)" path="/robots.txt" type="Thread.Feature.Robots.Handlers.RobotsHandler, Thread.Feature.Robots" name="Robots" />
+      <add verb="*" xdt:Transform="InsertIfMissing" xdt:Locator="Match(name)" path="/robots.txt" type="AtriusHealth.Feature.Robots.Handlers.RobotsHandler, AtriusHealth.Feature.Robots" name="Robots" />
     </handlers>
   </system.webServer>
 </configuration>

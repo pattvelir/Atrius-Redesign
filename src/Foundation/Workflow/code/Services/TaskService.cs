@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -8,10 +8,10 @@ using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
 using Sitecore.Globalization;
 using Sitecore.SecurityModel;
-using Thread.Foundation.Workflow.References;
-using Constants = Thread.Foundation.Workflow.References.Constants;
+using AtriusHealth.Foundation.Workflow.References;
+using Constants = AtriusHealth.Foundation.Workflow.References.Constants;
 
-namespace Thread.Foundation.Workflow.Services
+namespace AtriusHealth.Foundation.Workflow.Services
 {
     public class TaskService
     {

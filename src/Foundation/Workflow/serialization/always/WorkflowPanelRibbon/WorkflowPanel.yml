@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "1cc9896c-5d20-4439-8938-57b5bfb3734f"
 Parent: "22aef88c-58bc-4bfd-8f34-299782312338"
 Template: "3619f992-4177-4124-89dd-dabfc2baf6bb"
@@ -16,7 +16,7 @@ SharedFields:
   Value: 100
 - ID: "c78d9b41-ffeb-402d-93e8-e1270d8bb787"
   Hint: Type
-  Value: Thread.Foundation.Workflow.Form.CustomWorkflowPanel,Thread.Foundation.Workflow
+  Value: AtriusHealth.Foundation.Workflow.Form.CustomWorkflowPanel,AtriusHealth.Foundation.Workflow
 - ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
   Hint: __Security
   Value: |

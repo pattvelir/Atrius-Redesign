@@ -1,8 +1,8 @@
-﻿---
+---
 ID: "c95fbf94-9964-4372-b5d2-c15a2f9ed432"
 Parent: "49e1fc3b-ca8c-4baa-992c-c2beefe7bfe6"
 Template: "2b421e6f-e820-4a04-9a4a-e421a0262b61"
-Path: /sitecore/system/Settings/Html Editor Profiles/Thread/Rich Text Limited/Paragraphs/Normal
+Path: /sitecore/system/Settings/Html Editor Profiles/AtriusHealth/Rich Text Limited/Paragraphs/Normal
 DB: core
 BranchID: "14d0d756-dd94-4cfa-aed6-6d2585535700"
 SharedFields:
@@ -70,7 +70,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 通常
+    Value: ??
   Versions:
   - Version: 1
     Fields:
@@ -79,7 +79,7 @@ Languages:
       Value: 20151207T115510Z
     - ID: "519cd02a-a857-4894-9c9b-ac9bdc472937"
       Hint: Header
-      Value: 通常
+      Value: ??
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

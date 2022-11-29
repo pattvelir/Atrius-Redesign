@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "e9559156-1c10-4e17-9d02-e6e00f9c1315"
 Parent: "77d13f14-e78f-4476-8a2e-2b011fe0fb97"
 Template: "a60edcaf-1285-46b5-8380-d790bb8c8708"
@@ -13,7 +13,7 @@ SharedFields:
   Value: CustomFieldTemplates/ConditionalQuerystringSection
 - ID: "16882a65-d10b-4e9e-9d6a-b13480a34f2d"
   Hint: Model Type
-  Value: Thread.Foundation.Forms.Models.ConditionalQuerystringFieldViewModel,Thread.Foundation.Forms
+  Value: AtriusHealth.Foundation.Forms.Models.ConditionalQuerystringFieldViewModel,AtriusHealth.Foundation.Forms
 - ID: "73f3c325-9b2a-4854-b698-038e06887fcd"
   Hint: Property Editor
   Value: "{99A5658C-8362-4F02-AF04-066301A30062}"
@@ -75,7 +75,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: テキスト
+    Value: ????
   Versions:
   - Version: 1
     Fields:
@@ -90,7 +90,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 文本
+    Value: ??
   Versions:
   - Version: 1
     Fields:

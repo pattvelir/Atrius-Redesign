@@ -1,10 +1,10 @@
-﻿using Sitecore.Diagnostics;
+using Sitecore.Diagnostics;
 using Sitecore.Pipelines.GetLookupSourceItems;
 using Sitecore.Shell.Applications.ContentEditor;
 using Sitecore.Text;
 using Sitecore.Web;
 
-namespace Thread.Foundation.AX.Pipelines.GetLookupSourceItems
+namespace AtriusHealth.Foundation.AX.Pipelines.GetLookupSourceItems
 {
 	public class ResolveRelativeQuerySource
 	{

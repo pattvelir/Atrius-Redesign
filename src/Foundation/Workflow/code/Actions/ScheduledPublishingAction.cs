@@ -1,9 +1,9 @@
-﻿using Sitecore;
+using Sitecore;
 using Sitecore.SecurityModel;
 using Sitecore.Workflows.Simple;
-using Thread.Foundation.Workflow.Services;
+using AtriusHealth.Foundation.Workflow.Services;
 
-namespace Thread.Foundation.Workflow.Actions
+namespace AtriusHealth.Foundation.Workflow.Actions
 {
     public class ScheduledPublishingAction :AbstractCustomWorkflowAction
     {

@@ -1,13 +1,13 @@
-﻿@using Sitecore.Configuration
-@using Thread.Feature.Multimedia
-@using Thread.Foundation.Mvc.Extensions
-@model Thread.Feature.Multimedia.Models.VideoModel
+@using Sitecore.Configuration
+@using AtriusHealth.Feature.Multimedia
+@using AtriusHealth.Foundation.Mvc.Extensions
+@model AtriusHealth.Feature.Multimedia.Models.VideoModel
 
 @if (Model.IsValidVideo)
 {
  
   <div
-    class='js-youtube-video-mount youtube-video-mount'
+    class='js-youtube-video-mount youtube-video-mount component'
     data-model='@Html.Raw(Model.ReactData)'
   ></div>
 

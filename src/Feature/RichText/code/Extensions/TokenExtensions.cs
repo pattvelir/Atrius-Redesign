@@ -1,6 +1,6 @@
-﻿using Thread.Feature.RichText.Tokens;
+using AtriusHealth.Feature.RichText.Tokens;
 
-namespace Thread.Feature.RichText.Extensions
+namespace AtriusHealth.Feature.RichText.Extensions
 {
 	public static class TokenExtensions
 	{

@@ -10,7 +10,7 @@
 //------------------------------------------------------------------------------
 // ReSharper disable All
 
-					namespace Thread.Feature.Multimedia
+					namespace AtriusHealth.Feature.Multimedia
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -51,7 +51,7 @@ public static implicit operator Item(ImageItem customItem)
 					}
 				
 
-					namespace Thread.Feature.Multimedia
+					namespace AtriusHealth.Feature.Multimedia
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -88,7 +88,7 @@ public static implicit operator Item(ImageGridItem customItem)
 					}
 				
 
-					namespace Thread.Feature.Multimedia
+					namespace AtriusHealth.Feature.Multimedia
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -121,7 +121,7 @@ public static implicit operator Item(SlideshowItem customItem)
 					}
 				
 
-					namespace Thread.Feature.Multimedia
+					namespace AtriusHealth.Feature.Multimedia
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -170,7 +170,7 @@ public static implicit operator Item(VideoItem customItem)
 					}
 				
 
-					namespace Thread.Feature.Multimedia
+					namespace AtriusHealth.Feature.Multimedia
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -211,15 +211,15 @@ public static implicit operator Item(_MultimediaBaseItem customItem)
 
 
 
-					namespace Thread.Feature.Multimedia
+					namespace AtriusHealth.Feature.Multimedia
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
 						using Sitecore.Data.Items;
 						using Sitecore.Mvc.Presentation;
-						using Thread.Foundation.Orm;
+						using AtriusHealth.Foundation.Orm;
 
-						public partial class VideoParameters : ThreadRenderingParameters
+						public partial class VideoParameters : AtriusHealthRenderingParameters
 						{
 							public static class Fields
 		{
@@ -239,23 +239,23 @@ public VideoParameters(string parametersAsQueryString) : base(parametersAsQueryS
 
 
 
-// Thread.Feature.Multimedia.Image (/sitecore/templates/Feature/Multimedia/Image 1393e28b-2a66-428c-81f9-bbfe01650e48)
+// AtriusHealth.Feature.Multimedia.Image (/sitecore/templates/Feature/Multimedia/Image 1393e28b-2a66-428c-81f9-bbfe01650e48)
 	// Image (bc91a53d-f539-4275-b803-05286d41151a)
 		// Type: Image
 		// Section: Image
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Feature.Multimedia.Image_Grid (/sitecore/templates/Feature/Multimedia/Image Grid ef23bbfe-e8e8-421b-8580-75b7d5f77c12)
+// AtriusHealth.Feature.Multimedia.Image_Grid (/sitecore/templates/Feature/Multimedia/Image Grid ef23bbfe-e8e8-421b-8580-75b7d5f77c12)
 
-// Thread.Feature.Multimedia.Slideshow (/sitecore/templates/Feature/Multimedia/Slideshow c7f38bce-98f1-4693-93f7-c678dc6d9bcd)
+// AtriusHealth.Feature.Multimedia.Slideshow (/sitecore/templates/Feature/Multimedia/Slideshow c7f38bce-98f1-4693-93f7-c678dc6d9bcd)
 	// Title (3c315287-123b-430f-9a5a-921807496b29)
 		// Type: Single-Line Text
 		// Section: Title
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Feature.Multimedia.Video (/sitecore/templates/Feature/Multimedia/Video 62057676-a2a9-4375-9f38-06005bb0bb10)
+// AtriusHealth.Feature.Multimedia.Video (/sitecore/templates/Feature/Multimedia/Video 62057676-a2a9-4375-9f38-06005bb0bb10)
 	// Image (da7d7a99-87be-48ce-8943-0d41de09224e)
 		// Type: Image
 		// Section: Image
@@ -272,14 +272,14 @@ public VideoParameters(string parametersAsQueryString) : base(parametersAsQueryS
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Feature.Multimedia.Video_Parameters (/sitecore/templates/Feature/Multimedia/Video Parameters 70293405-7cf1-4e46-9cb8-eefdcb77606f)
+// AtriusHealth.Feature.Multimedia.Video_Parameters (/sitecore/templates/Feature/Multimedia/Video Parameters 70293405-7cf1-4e46-9cb8-eefdcb77606f)
 	// Dark_Play_Icon (785cc731-6eb8-45d6-aaa4-402151bc0944)
 		// Type: Checkbox
 		// Section: Display Options
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Feature.Multimedia._Multimedia_Base (/sitecore/templates/Feature/Multimedia/_Multimedia Base be629c54-8937-4711-87f7-edeebbf69096)
+// AtriusHealth.Feature.Multimedia._Multimedia_Base (/sitecore/templates/Feature/Multimedia/_Multimedia Base be629c54-8937-4711-87f7-edeebbf69096)
 	// Caption (9444c804-b802-40b7-a41b-62e64f3fba78)
 		// Type: Single-Line Text
 		// Section: Text

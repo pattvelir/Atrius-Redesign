@@ -10,7 +10,7 @@
     .OUTPUTS
         Writes user-provided values back to the properties file specified by the FileName parameter.
     .EXAMPLE
-        Update-Properties
+        PS> Update-Properties
 #>
 Function Update-Properties {
     [CmdletBinding()]

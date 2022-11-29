@@ -1,16 +1,16 @@
-﻿@using Thread.Foundation.Mvc.Extensions
-@using Thread.Foundation.SitecoreExtensions.Base
-@using Thread.Foundation.SitecoreExtensions.Item
-@using Thread.Foundation.Taxonomy
-@using TaxonomyConstants = Thread.Foundation.Taxonomy.Reference.Constants
-@model Thread.Feature.PageContent.Models.PageMetadataModel
+@using AtriusHealth.Foundation.Mvc.Extensions
+@using AtriusHealth.Foundation.SitecoreExtensions.Base
+@using AtriusHealth.Foundation.SitecoreExtensions.Item
+@using AtriusHealth.Foundation.Taxonomy
+@using TaxonomyConstants = AtriusHealth.Foundation.Taxonomy.Reference.Constants
+@model AtriusHealth.Feature.PageContent.Models.PageMetadataModel
 
 <p class="page-meta container eyebrow">
     @if (Model.DateItem != null && Html.Sitecore().HasValueOrEditing(Model.DateItem.DisplayDate))
     {
         using (Html.EditFrame(Model.DateItem, "/sitecore/content/Applications/WebEdit/Edit Frame Buttons/Page Content/Date", "Edit Display Date"))
         {
-            <time class="page-meta__date" datetime="@Model.DateItem.DisplayDate.DateTime.ToString("yyyy-MM-dd")">@Model.DateItem.DisplayDate.DateTime.ToThreadFormat()</time>
+            <time class="page-meta__date" datetime="@Model.DateItem.DisplayDate.DateTime.ToString("yyyy-MM-dd")">@Model.DateItem.DisplayDate.DateTime.ToAtriusHealthFormat()</time>
         }
     }
 

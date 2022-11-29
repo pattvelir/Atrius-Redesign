@@ -26,7 +26,7 @@ services:
   #   mem_limit: 3GB
   #   ports:
   #     - "3030:3030"
-  #   command: bash -c "npm install && node_modules/.bin/gulp graybox"
+  #   command: bash -c "npm install && node_modules/.bin/gulp Atrius"
 
   jmeter:
     image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-jmeter:${VERSION:-latest}
@@ -104,16 +104,16 @@ services:
     entrypoint: powershell -Command "& C:\\tools\\entrypoints\\iis\\Development.ps1"
 
   # xconnect:
-    # Thread - removed customizations
+    # AtriusHealth - removed customizations
 
   # xdbsearchworker:
-    # Thread - removed customizations
+    # AtriusHealth - removed customizations
 
   # xdbautomationworker:
-    # Thread - removed customizations
+    # AtriusHealth - removed customizations
 
   # cortexprocessingworker:
-    # Thread - removed customizations
+    # AtriusHealth - removed customizations
 
   hrz:
     image: ${SITECORE_MODULE_REGISTRY}sitecore-horizon:${HORIZON_VERSION}

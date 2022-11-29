@@ -8,10 +8,10 @@ using Newtonsoft.Json;
 using Sitecore.Data.Fields;
 using Sitecore.Diagnostics;
 using Sitecore.Resources.Media;
-using Thread.Foundation.Dictionary.Repositories;
-using Thread.Foundation.ResponsiveImages.Extensions;
+using AtriusHealth.Foundation.Dictionary.Repositories;
+using AtriusHealth.Foundation.ResponsiveImages.Extensions;
 
-namespace Thread.Feature.Multimedia.Services
+namespace AtriusHealth.Feature.Multimedia.Services
 {
   [AutowireService(LifetimeScope.SingleInstance)]
   public class YouTubeVideoService : IVideoService

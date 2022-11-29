@@ -1,11 +1,11 @@
-﻿using Sitecore.ContentSearch.Linq;
-using Thread.Foundation.Search.Results;
+using Sitecore.ContentSearch.Linq;
+using AtriusHealth.Foundation.Search.Results;
 using Velir.Search.Core.Pipelines.VelirSearchQuery;
 using Velir.Search.Core.Pipelines.VelirSearchQuery.Args;
 
-namespace Thread.Foundation.Search.Pipelines.VelirSearchApplyFilters
+namespace AtriusHealth.Foundation.Search.Pipelines.VelirSearchApplyFilters
 {
-	public class AppyIsSearchableFilter : AbstractVelirSearchQueryProcessor<ThreadSearchResultItem>
+	public class AppyIsSearchableFilter : AbstractVelirSearchQueryProcessor<AtriusHealthSearchResultItem>
 	{
 		public override void Process<T>(VelirSearchQueryArgs<T> queryArgs)
         {

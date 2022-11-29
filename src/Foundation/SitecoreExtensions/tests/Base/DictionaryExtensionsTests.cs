@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using NUnit.Framework;
-using Thread.Foundation.SitecoreExtensions.Base;
+using AtriusHealth.Foundation.SitecoreExtensions.Base;
 
-namespace Thread.Foundation.SitecoreExtensions.Tests.Base
+namespace AtriusHealth.Foundation.SitecoreExtensions.Tests.Base
 {
 	[TestFixture]
 	public class DictionaryExtensionsTests

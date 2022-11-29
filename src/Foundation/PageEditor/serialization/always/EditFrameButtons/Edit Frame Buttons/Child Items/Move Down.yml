@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "9475330b-2cb7-4f08-9c22-581810dcbb24"
 Parent: "0a8702bd-6f57-46ad-b1ec-dda0e8b0596e"
 Template: "02404208-46d4-49bf-988b-eb363a52a1c9"
@@ -82,13 +82,13 @@ Languages:
   Fields:
   - ID: "371e0d96-4f00-4b80-ad14-6284e00493ba"
     Hint: Tooltip
-    Value: アイテムを下へ移動します
+    Value: ????????????
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 下へ移動
+    Value: ????
   - ID: "c523aba8-d1a1-4dcb-aeee-52635a4ab2ae"
     Hint: Header
-    Value: 下へ移動
+    Value: ????
   Versions:
   - Version: 1
     Fields:

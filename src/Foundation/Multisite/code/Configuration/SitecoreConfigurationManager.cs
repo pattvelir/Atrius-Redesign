@@ -1,9 +1,9 @@
 using System.Linq;
 using Sitecore.Data;
 using Sitecore.Data.Items;
-using Thread.Foundation.Orm.Services;
+using AtriusHealth.Foundation.Orm.Services;
 
-namespace Thread.Foundation.Multisite.Configuration
+namespace AtriusHealth.Foundation.Multisite.Configuration
 {
 	public class SitecoreConfigurationManager : ISitecoreConfigurationManager
 	{

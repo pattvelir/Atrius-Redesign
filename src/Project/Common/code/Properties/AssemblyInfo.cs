@@ -1,16 +1,16 @@
-﻿using System.Reflection;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Thread.Project.Common")]
+[assembly: AssemblyTitle("AtriusHealth.Project.Common")]
 [assembly: AssemblyDescription("Common settings for setting a project from scratch")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Velir")]
-[assembly: AssemblyProduct("Thread.Project.Common")]
-[assembly: AssemblyCopyright("Copyright ©  2018")]
+[assembly: AssemblyProduct("AtriusHealth.Project.Common")]
+[assembly: AssemblyCopyright("Copyright �  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

@@ -10,7 +10,7 @@
 //------------------------------------------------------------------------------
 // ReSharper disable All
 
-					namespace Thread.Foundation.Multisite
+					namespace AtriusHealth.Foundation.Multisite
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -39,7 +39,7 @@ public static implicit operator Item(GlobalConfigurationFolderItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Multisite
+					namespace AtriusHealth.Foundation.Multisite
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -68,7 +68,7 @@ public static implicit operator Item(SiteConfigurationFolderItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Multisite
+					namespace AtriusHealth.Foundation.Multisite
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -103,9 +103,9 @@ public static implicit operator Item(SiteFolderItem customItem)
 
 
 
-// Thread.Foundation.Multisite.Global_Configuration_Folder (/sitecore/templates/Foundation/Multisite/Global Configuration Folder 48f39ecb-369a-495e-9807-6010c6c69870)
+// AtriusHealth.Foundation.Multisite.Global_Configuration_Folder (/sitecore/templates/Foundation/Multisite/Global Configuration Folder 48f39ecb-369a-495e-9807-6010c6c69870)
 
-// Thread.Foundation.Multisite.Site_Configuration_Folder (/sitecore/templates/Foundation/Multisite/Site Configuration Folder 94dba5c9-8b1d-490c-8db3-dcb33f75ce9e)
+// AtriusHealth.Foundation.Multisite.Site_Configuration_Folder (/sitecore/templates/Foundation/Multisite/Site Configuration Folder 94dba5c9-8b1d-490c-8db3-dcb33f75ce9e)
 
-// Thread.Foundation.Multisite.Site_Folder (/sitecore/templates/Foundation/Multisite/Site Folder 98ac8506-0017-4964-81a9-19b76fa9ee98)
+// AtriusHealth.Foundation.Multisite.Site_Folder (/sitecore/templates/Foundation/Multisite/Site Folder 98ac8506-0017-4964-81a9-19b76fa9ee98)
 

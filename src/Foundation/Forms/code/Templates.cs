@@ -10,7 +10,7 @@
 //------------------------------------------------------------------------------
 // ReSharper disable All
 
-					namespace Thread.Foundation.Forms
+					namespace AtriusHealth.Foundation.Forms
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -63,7 +63,7 @@ public static implicit operator Item(EmailTemplateItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Forms
+					namespace AtriusHealth.Foundation.Forms
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -92,7 +92,7 @@ public static implicit operator Item(EmailTemplatesFolderItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Forms
+					namespace AtriusHealth.Foundation.Forms
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -131,7 +131,7 @@ public static implicit operator Item(PasswordItem customItem)
 
 
 
-// Thread.Foundation.Forms.Email_Template (/sitecore/templates/Foundation/Forms/Email/Email Template 1eb19b8d-905f-4fd3-bf38-0e50c5958954)
+// AtriusHealth.Foundation.Forms.Email_Template (/sitecore/templates/Foundation/Forms/Email/Email Template 1eb19b8d-905f-4fd3-bf38-0e50c5958954)
 	// Bcc (f2cbe66b-4a66-4bac-a010-ad66ca59996d)
 		// Type: Single-Line Text
 		// Section: Message
@@ -163,9 +163,9 @@ public static implicit operator Item(PasswordItem customItem)
 		// Sort Order: 50
 		// Source: 
 
-// Thread.Foundation.Forms.Email_Templates_Folder (/sitecore/templates/Foundation/Forms/Email/Email Templates Folder 7419f6ee-dfa6-48a7-a73b-3166d9c36aa7)
+// AtriusHealth.Foundation.Forms.Email_Templates_Folder (/sitecore/templates/Foundation/Forms/Email/Email Templates Folder 7419f6ee-dfa6-48a7-a73b-3166d9c36aa7)
 
-// Thread.Foundation.Forms.Password (/sitecore/templates/Foundation/Forms/Fields/Password e8212336-f051-465f-a37e-6547515ce29e)
+// AtriusHealth.Foundation.Forms.Password (/sitecore/templates/Foundation/Forms/Fields/Password e8212336-f051-465f-a37e-6547515ce29e)
 	// Show_Hide_Password (fd0350f6-d7ba-45da-a865-0c8fe0b48eb9)
 		// Type: Checkbox
 		// Section: Data

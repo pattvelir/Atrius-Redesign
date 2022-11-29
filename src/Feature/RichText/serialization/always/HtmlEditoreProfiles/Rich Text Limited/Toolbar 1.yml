@@ -1,8 +1,8 @@
-﻿---
+---
 ID: "f50aa367-f492-4096-aa14-4b71627153fb"
 Parent: "1c1a2643-50d6-4094-aa14-7a1502ec4013"
 Template: "0e0da701-bc94-4855-a0c3-92063e64ba1f"
-Path: /sitecore/system/Settings/Html Editor Profiles/Thread/Rich Text Limited/Toolbar 1
+Path: /sitecore/system/Settings/Html Editor Profiles/AtriusHealth/Rich Text Limited/Toolbar 1
 DB: core
 SharedFields:
 - ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
@@ -19,7 +19,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Værktøjslinje 1
+    Value: V�rkt�jslinje 1
   Versions:
   - Version: 1
     Fields:
@@ -63,7 +63,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: ツールバー 1
+    Value: ????? 1
   Versions:
   - Version: 1
     Fields:

@@ -1,13 +1,13 @@
-﻿using Jabberwocky.WebApi.Attributes;
-using Thread.Foundation.Search.Results;
+using Jabberwocky.WebApi.Attributes;
+using AtriusHealth.Foundation.Search.Results;
 using Velir.Search.Core.Managers;
 using Velir.Search.Core.Page;
 using Velir.Search.WebApi.Controllers;
 
-namespace Thread.Feature.Search.Api.Controllers.Search
+namespace AtriusHealth.Feature.Search.Api.Controllers.Search
 {
 	[Compression, CamelCasingFilter]
-	public class SearchController : VelirSearchController<ThreadSearchResultItem>
+	public class SearchController : VelirSearchController<AtriusHealthSearchResultItem>
 	{
 		public SearchController(ISearchManager searchManager, IPageConfigurationFactory configurationFactory) : base(searchManager, configurationFactory)
 		{

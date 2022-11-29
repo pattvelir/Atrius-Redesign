@@ -1,5 +1,5 @@
-﻿
-namespace Thread.Feature.Events.Reference
+
+namespace AtriusHealth.Feature.Events.Reference
 {
 	public static class Constants
 	{

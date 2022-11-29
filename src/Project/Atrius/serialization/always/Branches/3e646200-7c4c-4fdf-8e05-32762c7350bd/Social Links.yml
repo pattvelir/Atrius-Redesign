@@ -1,0 +1,19 @@
+---
+ID: "2b7fdd87-bb8c-48ce-a13b-fd6270f8c4f3"
+Parent: "3e646200-7c4c-4fdf-8e05-32762c7350bd"
+Template: "707d5c9f-12ec-4ae5-80e2-c254134e6612"
+Path: /sitecore/templates/Branches/Project/Atrius/Sites/New Site with Login/$name/Configuration/Navigation/Footer Navigation/Social Links
+DB: master
+SharedFields:
+- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
+  Hint: __Security
+  Value: |
+    ar|sitecore\Sitecore Content Author Content Access|pe|-item:delete|-item:rename|
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161018T163106Z

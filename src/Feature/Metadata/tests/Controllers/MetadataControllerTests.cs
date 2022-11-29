@@ -1,11 +1,11 @@
-﻿using NSubstitute;
+using NSubstitute;
 using NUnit.Framework;
 using Sitecore.Mvc.Presentation;
-using Thread.Feature.Metadata.Controllers;
-using Thread.Feature.Metadata.Services;
-using Thread.Foundation.Multisite.Configuration;
+using AtriusHealth.Feature.Metadata.Controllers;
+using AtriusHealth.Feature.Metadata.Services;
+using AtriusHealth.Foundation.Multisite.Configuration;
 
-namespace Thread.Feature.Metadata.Tests.Controllers
+namespace AtriusHealth.Feature.Metadata.Tests.Controllers
 {
 	[TestFixture]
 	public class MetadataControllerTests

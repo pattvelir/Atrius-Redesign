@@ -1,0 +1,17 @@
+---
+ID: "2a17cf06-7fcb-4aed-a08e-bb227e9e5dcf"
+Parent: "3f32124b-395b-4a72-b5dc-ed87684a3018"
+Template: "f76633f7-ec75-40b3-832b-ac997c6ecb22"
+Path: /sitecore/templates/Branches/Project/Atrius/Sites/New Site/$name/Home/Components/Banners/Hero
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "201fa277-4f3c-4c28-beae-27f0ba548f1e"
+      Hint: Title
+      Value: Hero
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161117T025357Z

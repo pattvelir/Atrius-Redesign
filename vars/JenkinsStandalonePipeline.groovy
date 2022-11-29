@@ -78,7 +78,7 @@ def call(Map pipelineParams) {
 						if (pipelineParams.DeployStorybook) {
 							script {
 								dir(WORKSPACE_PATH) {
-									bat "npm run build-storybook-graybox"
+									bat "npm run build-storybook-Atrius"
 									bat "npm run build-storybook-demo"
 								}
 							}
@@ -92,7 +92,7 @@ def call(Map pipelineParams) {
 
 			stage ('Restore Nuget Packages') {
 				steps {
-					bat '"' + WORKSPACE_PATH + '/.nuget/nuget.exe" restore ./Thread-Sitecore.sln'
+					bat '"' + WORKSPACE_PATH + '/.nuget/nuget.exe" restore ./AtriusHealth.sln'
 				}
 			}
 

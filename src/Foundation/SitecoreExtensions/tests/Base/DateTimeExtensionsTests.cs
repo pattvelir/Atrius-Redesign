@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using NUnit.Framework;
-using Thread.Foundation.SitecoreExtensions.Base;
+using AtriusHealth.Foundation.SitecoreExtensions.Base;
 
-namespace Thread.Foundation.SitecoreExtensions.Tests.Base
+namespace AtriusHealth.Foundation.SitecoreExtensions.Tests.Base
 {
 	[TestFixture]
 	public class DateTimeExtensionsTests
@@ -128,17 +128,17 @@ namespace Thread.Foundation.SitecoreExtensions.Tests.Base
 		}
 
 		[Test]
-		public void ToThreadFormat_ValidDateTime_ReturnsFormattedDate()
+		public void ToAtriusHealthFormat_ValidDateTime_ReturnsFormattedDate()
 		{
 			DateTime date = new DateTime(2000, 1, 13);
 
-			Assert.AreEqual("Jan 13, 2000", date.ToThreadFormat());
+			Assert.AreEqual("Jan 13, 2000", date.ToAtriusHealthFormat());
 		}
 
 		[Test]
-		public void ToThreadFormat_MinDateTime_ReturnsEmptyString()
+		public void ToAtriusHealthFormat_MinDateTime_ReturnsEmptyString()
 		{
-			Assert.IsEmpty(DateTime.MinValue.ToThreadFormat());
+			Assert.IsEmpty(DateTime.MinValue.ToAtriusHealthFormat());
 		}
 	}
 }

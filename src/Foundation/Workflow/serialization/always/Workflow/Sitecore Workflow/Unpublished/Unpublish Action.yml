@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "2ea3674a-da04-452d-ab85-305ca7d69153"
 Parent: "60389bc3-874b-4bbe-bf53-1c8d64710b85"
 Template: "66882e97-c8aa-4e37-8901-7a8aa35ed2ed"
@@ -10,7 +10,7 @@ SharedFields:
   Value: database=web
 - ID: "a291a22b-99e2-46bb-a27b-8ec744275396"
   Hint: Type
-  Value: Thread.Foundation.Workflow.Actions.UnpublishAction, Thread.Foundation.Workflow
+  Value: AtriusHealth.Foundation.Workflow.Actions.UnpublishAction, AtriusHealth.Foundation.Workflow
 Languages:
 - Language: en
   Versions:

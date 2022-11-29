@@ -1,0 +1,26 @@
+---
+ID: "ecd849ad-5a36-4ff4-829a-027bcd462e51"
+Parent: "8cb703aa-4bb2-4aed-96dc-8df067a49c82"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/Project/Atrius/Homepage/Containers/Full Width Bleed
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: 
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: |
+    {60C2AC1C-4754-4914-B11A-37F0DF825B43}
+    {3E615E7F-8DB2-4648-B7E1-E9C2F05FFD08}
+    {EB9C4EE5-57B5-4B92-846B-F6032B41A357}
+    {968EBC81-A435-428A-86EA-381ECCA3D65B}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161110T145223Z

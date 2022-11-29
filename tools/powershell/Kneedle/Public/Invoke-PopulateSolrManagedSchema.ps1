@@ -5,7 +5,7 @@
         Populates SOLR's managed schema.  This is a necessary step when
         first setting up Sitecore/SOLR.
     .EXAMPLE
-        Invoke-PopulateSolrManagedSchema
+        PS> Invoke-PopulateSolrManagedSchema
 #>
 Function Invoke-PopulateSolrManagedSchema {
     

@@ -1,11 +1,11 @@
-﻿using NSubstitute;
+using NSubstitute;
 using NUnit.Framework;
 using Sitecore.Data;
 using Sitecore.FakeDb;
-using Thread.Foundation.Multisite.Configuration;
-using Thread.Foundation.Orm.Services;
+using AtriusHealth.Foundation.Multisite.Configuration;
+using AtriusHealth.Foundation.Orm.Services;
 
-namespace Thread.Foundation.Multisite.Tests.Sitecore
+namespace AtriusHealth.Foundation.Multisite.Tests.Sitecore
 {
 	[TestFixture]
 	public class SitecoreConfigurationManagerTests

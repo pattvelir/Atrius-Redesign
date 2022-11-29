@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "4ee89ea7-cefe-4c8e-8532-467ef64591fc"
 Parent: "b5350d9a-ceee-4d15-b9ff-797ceacccdc7"
 Template: "a60edcaf-1285-46b5-8380-d790bb8c8708"
@@ -38,7 +38,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Tekst bestående af én linje
+    Value: Tekst best�ende af �n linje
   Versions:
   - Version: 1
     Fields:
@@ -98,7 +98,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 单行文本
+    Value: ????
   Versions:
   - Version: 1
     Fields:

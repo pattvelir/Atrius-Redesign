@@ -1,4 +1,4 @@
-﻿namespace Thread.Foundation.ResponsiveImages.Extensions.Markers
+namespace AtriusHealth.Foundation.ResponsiveImages.Extensions.Markers
 {
   /// <summary>
   /// Supports rendering 1x/2x srcSet images using <code>@Html.Sitecore().Field(ImageField, new SrcSetWidth(int))</code>

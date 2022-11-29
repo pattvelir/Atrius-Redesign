@@ -10,7 +10,7 @@
 //------------------------------------------------------------------------------
 // ReSharper disable All
 
-					namespace Thread.Feature.Robots
+					namespace AtriusHealth.Feature.Robots
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -49,7 +49,7 @@ public static implicit operator Item(RobotsConfigurationItem customItem)
 
 
 
-// Thread.Feature.Robots.Robots_Configuration (/sitecore/templates/Feature/Robots/Robots Configuration cb803dab-1f25-469b-b5ff-5cea4ac39edd)
+// AtriusHealth.Feature.Robots.Robots_Configuration (/sitecore/templates/Feature/Robots/Robots Configuration cb803dab-1f25-469b-b5ff-5cea4ac39edd)
 	// Robots_Text (81c63ec4-15aa-4280-8379-9a83ae14e4f2)
 		// Type: Multi-Line Text
 		// Section: Robots Configuration

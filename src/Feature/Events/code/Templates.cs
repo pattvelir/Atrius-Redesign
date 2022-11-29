@@ -10,7 +10,7 @@
 //------------------------------------------------------------------------------
 // ReSharper disable All
 
-					namespace Thread.Feature.Events
+					namespace AtriusHealth.Feature.Events
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -47,7 +47,7 @@ public static implicit operator Item(_EventDatesItem customItem)
 					}
 				
 
-					namespace Thread.Feature.Events
+					namespace AtriusHealth.Feature.Events
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -110,7 +110,7 @@ public static implicit operator Item(_EventDetailsItem customItem)
 
 
 
-// Thread.Feature.Events._Event_Dates (/sitecore/templates/Feature/Events/_Event Dates b906556e-0ab9-4174-9520-26c282933569)
+// AtriusHealth.Feature.Events._Event_Dates (/sitecore/templates/Feature/Events/_Event Dates b906556e-0ab9-4174-9520-26c282933569)
 	// End_Date (1fa41737-7a7b-484d-ae33-49be52a1af41)
 		// Type: Datetime
 		// Section: Date
@@ -122,7 +122,7 @@ public static implicit operator Item(_EventDetailsItem customItem)
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Feature.Events._Event_Details (/sitecore/templates/Feature/Events/_Event Details 26b33d54-4f6b-4e86-b3f3-5d25a68c2941)
+// AtriusHealth.Feature.Events._Event_Details (/sitecore/templates/Feature/Events/_Event Details 26b33d54-4f6b-4e86-b3f3-5d25a68c2941)
 	// Address_1 (99f3f951-5ae8-4777-b705-354e7f9e4f9a)
 		// Type: Single-Line Text
 		// Section: Event Details

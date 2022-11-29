@@ -1,15 +1,15 @@
-﻿using System;
+using System;
 using System.Collections.Specialized;
 using System.Web;
 using Jabberwocky.DependencyInjection.Autowire.Attributes;
 using Sitecore.Configuration;
-using Thread.Feature.Account.Cipher;
-using Thread.Feature.Account.Services.Models;
-using Thread.Foundation.Forms.Reference;
-using Thread.Foundation.Multisite.Configuration;
-using Thread.Foundation.SitecoreExtensions.Base;
+using AtriusHealth.Feature.Account.Cipher;
+using AtriusHealth.Feature.Account.Services.Models;
+using AtriusHealth.Foundation.Forms.Reference;
+using AtriusHealth.Foundation.Multisite.Configuration;
+using AtriusHealth.Foundation.SitecoreExtensions.Base;
 
-namespace Thread.Feature.Account.Services
+namespace AtriusHealth.Feature.Account.Services
 {
 	[AutowireService(LifetimeScope.SingleInstance)]
 	public class AccountLinkService : IAccountLinkService
@@ -19,7 +19,7 @@ namespace Thread.Feature.Account.Services
 		private const string TokenParam = "token";
 		private const string EncryptedParam = "v";
 
-		private static readonly string PrivateKey = Settings.GetSetting("Thread.Feature.Accounts.ResetPassword.PrivateKey");
+		private static readonly string PrivateKey = Settings.GetSetting("AtriusHealth.Feature.Accounts.ResetPassword.PrivateKey");
 
 
         private readonly ICipherService _cipher;

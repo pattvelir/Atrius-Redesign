@@ -1,16 +1,16 @@
-﻿using System.Reflection;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Thread.Feature.RichText")]
+[assembly: AssemblyTitle("AtriusHealth.Feature.RichText")]
 [assembly: AssemblyDescription("Customized rich text fields along with some embeddedable components.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Velir")]
-[assembly: AssemblyProduct("Thread.Feature.RichText")]
-[assembly: AssemblyCopyright("Copyright ©  2018")]
+[assembly: AssemblyProduct("AtriusHealth.Feature.RichText")]
+[assembly: AssemblyCopyright("Copyright �  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

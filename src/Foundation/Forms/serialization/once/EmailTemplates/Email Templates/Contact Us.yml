@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "c01304c8-cb7e-4428-a8ab-433c77fd6899"
 Parent: "bc4e24f1-b2af-42fd-8250-9fec15f0dad4"
 Template: "1eb19b8d-905f-4fd3-bf38-0e50c5958954"
@@ -24,7 +24,7 @@ Languages:
       Value: $From$
     - ID: "8a357639-4c0c-4a45-9f43-20ec687f4676"
       Hint: To
-      Value: thread@velir.com
+      Value: AtriusHealth@velir.com
     - ID: "a730a8d9-d78e-47bf-ad75-8c7497337685"
       Hint: Body
       Value: |

@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Thread.Feature.Account.Models
+namespace AtriusHealth.Feature.Account.Models
 {
     public class ProfileEmailListItem : ProfileFieldListItem
     {

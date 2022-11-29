@@ -10,7 +10,7 @@
 //------------------------------------------------------------------------------
 // ReSharper disable All
 
-					namespace Thread.Feature.Listing
+					namespace AtriusHealth.Feature.Listing
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -47,7 +47,7 @@ public static implicit operator Item(ContentListingItem customItem)
 					}
 				
 
-					namespace Thread.Feature.Listing
+					namespace AtriusHealth.Feature.Listing
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -104,7 +104,7 @@ public static implicit operator Item(ContentListingItemItem customItem)
 					}
 				
 
-					namespace Thread.Feature.Listing
+					namespace AtriusHealth.Feature.Listing
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -161,15 +161,15 @@ public static implicit operator Item(DynamicContentListingItem customItem)
 
 
 
-					namespace Thread.Feature.Listing
+					namespace AtriusHealth.Feature.Listing
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
 						using Sitecore.Data.Items;
 						using Sitecore.Mvc.Presentation;
-						using Thread.Foundation.Orm;
+						using AtriusHealth.Foundation.Orm;
 
-						public partial class DynamicContentListingRenderingParameters : ThreadRenderingParameters
+						public partial class DynamicContentListingRenderingParameters : AtriusHealthRenderingParameters
 						{
 							public static class Fields
 		{
@@ -191,7 +191,7 @@ public DynamicContentListingRenderingParameters(string parametersAsQueryString) 
 
 				public virtual bool DisplayDates => GetBoolValue(Fields.DisplayDates);
 
-				public virtual Thread.Foundation.Enumerations.RatioItem DisplayImages => GetItemValue(Fields.DisplayImages);
+				public virtual AtriusHealth.Foundation.Enumerations.RatioItem DisplayImages => GetItemValue(Fields.DisplayImages);
 
 				public virtual bool DisplaySummaries => GetBoolValue(Fields.DisplaySummaries);
 
@@ -201,7 +201,7 @@ public DynamicContentListingRenderingParameters(string parametersAsQueryString) 
 
 
 
-// Thread.Feature.Listing.Content_Listing (/sitecore/templates/Feature/Listing/Content Listing 4943da38-e705-4ee8-a4bc-973e31304f3a)
+// AtriusHealth.Feature.Listing.Content_Listing (/sitecore/templates/Feature/Listing/Content Listing 4943da38-e705-4ee8-a4bc-973e31304f3a)
 	// Number_Of_Items (caed5a05-b1fb-40c7-9ea0-d1031b1a70c7)
 		// Type: Droplink
 		// Section: Display Options
@@ -213,7 +213,7 @@ public DynamicContentListingRenderingParameters(string parametersAsQueryString) 
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Feature.Listing.Content_Listing_Item (/sitecore/templates/Feature/Listing/Content Listing Item f71b9edb-b484-405c-a84f-e8fd17db6ca9)
+// AtriusHealth.Feature.Listing.Content_Listing_Item (/sitecore/templates/Feature/Listing/Content Listing Item f71b9edb-b484-405c-a84f-e8fd17db6ca9)
 	// Date (c6fd88bd-192d-43af-b607-1076dcc4905d)
 		// Type: Date
 		// Section: Date
@@ -240,7 +240,7 @@ public DynamicContentListingRenderingParameters(string parametersAsQueryString) 
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Feature.Listing.Dynamic_Content_Listing (/sitecore/templates/Feature/Listing/Dynamic Content Listing b0bb95b3-6115-4a24-afd4-9846e59093a6)
+// AtriusHealth.Feature.Listing.Dynamic_Content_Listing (/sitecore/templates/Feature/Listing/Dynamic Content Listing b0bb95b3-6115-4a24-afd4-9846e59093a6)
 	// Content_Types_Displayed (11a2a15b-52c4-4dc6-bb76-1150fcf05e69)
 		// Type: Multilist with Search
 		// Section: Configuration
@@ -272,7 +272,7 @@ public DynamicContentListingRenderingParameters(string parametersAsQueryString) 
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Feature.Listing.Dynamic_Content_Listing_Rendering_Parameters (/sitecore/templates/Feature/Listing/Dynamic Content Listing Rendering Parameters cdce947d-d086-4163-bf35-2761663976d7)
+// AtriusHealth.Feature.Listing.Dynamic_Content_Listing_Rendering_Parameters (/sitecore/templates/Feature/Listing/Dynamic Content Listing Rendering Parameters cdce947d-d086-4163-bf35-2761663976d7)
 	// Display_Content_Type_Labels (290723e9-f36a-4ec9-ad0d-765bed940aaa)
 		// Type: Checkbox
 		// Section: Display Options
@@ -284,7 +284,7 @@ public DynamicContentListingRenderingParameters(string parametersAsQueryString) 
 		// Sort Order: 100
 		// Source: 
 	// Display_Images (23241de5-760d-420f-83cc-3a0f1ef26369)
-		// Type: custom=Thread.Foundation.Enumerations.RatioItem
+		// Type: custom=AtriusHealth.Foundation.Enumerations.RatioItem
 		// Section: Display Options
 		// Sort Order: 400
 		// Source: /sitecore/content/Global Configuration/Enumerations/Ratios

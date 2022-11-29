@@ -1,10 +1,10 @@
-﻿using Sitecore.Globalization;
+using Sitecore.Globalization;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Thread.Feature.Search.References
+namespace AtriusHealth.Feature.Search.References
 {
     public class Constants
     {

@@ -1,8 +1,8 @@
-﻿---
+---
 ID: "d831759f-db42-47f0-951f-421e9db09ff4"
 Parent: "27afa7d0-ca5f-4d0a-9140-70d7944548b5"
 Template: "1ab4f9ad-b004-413c-8924-3e07143a614b"
-Path: /sitecore/content/Applications/WebEdit/Custom Experience Buttons/Thread/Feature/Account/Interests
+Path: /sitecore/content/Applications/WebEdit/Custom Experience Buttons/AtriusHealth/Feature/Account/Interests
 DB: core
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

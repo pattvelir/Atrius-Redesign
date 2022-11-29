@@ -1,8 +1,8 @@
-﻿---
+---
 ID: "411a4a06-ccbc-4558-a3c4-30391a8be2f2"
 Parent: "49e1fc3b-ca8c-4baa-992c-c2beefe7bfe6"
 Template: "2b421e6f-e820-4a04-9a4a-e421a0262b61"
-Path: /sitecore/system/Settings/Html Editor Profiles/Thread/Rich Text Limited/Paragraphs/Heading 5
+Path: /sitecore/system/Settings/Html Editor Profiles/AtriusHealth/Rich Text Limited/Paragraphs/Heading 5
 DB: core
 BranchID: "14d0d756-dd94-4cfa-aed6-6d2585535700"
 SharedFields:
@@ -35,7 +35,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Überschrift 5
+    Value: �berschrift 5
   Versions:
   - Version: 1
     Fields:
@@ -44,7 +44,7 @@ Languages:
       Value: 20151207T115408Z
     - ID: "519cd02a-a857-4894-9c9b-ac9bdc472937"
       Hint: Header
-      Value: Überschrift 5
+      Value: �berschrift 5
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -70,7 +70,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 見出し 5
+    Value: ??? 5
   Versions:
   - Version: 1
     Fields:
@@ -79,7 +79,7 @@ Languages:
       Value: 20151207T115530Z
     - ID: "519cd02a-a857-4894-9c9b-ac9bdc472937"
       Hint: Header
-      Value: 見出し 5
+      Value: ??? 5
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

@@ -1,7 +1,7 @@
-﻿using Thread.Foundation.Abstractions.Indexing;
-using Thread.Foundation.Orm.Factory.Pipeline;
+using AtriusHealth.Foundation.Abstractions.Indexing;
+using AtriusHealth.Foundation.Orm.Factory.Pipeline;
 
-namespace Thread.Feature.Events.Pipelines.InterfaceFactory
+namespace AtriusHealth.Feature.Events.Pipelines.InterfaceFactory
 {
 	public class EventDatesISortableProcessor : InterfaceFactoryProcessor<ISortable>
 	{

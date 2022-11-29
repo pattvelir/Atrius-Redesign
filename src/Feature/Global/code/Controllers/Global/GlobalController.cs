@@ -1,10 +1,10 @@
-﻿using System.Web.Mvc;
-using Thread.Feature.Global.Models;
-using Thread.Foundation.Mvc.Controllers;
+using System.Web.Mvc;
+using AtriusHealth.Feature.Global.Models;
+using AtriusHealth.Foundation.Mvc.Controllers;
 
-namespace Thread.Feature.Global.Controllers.Global
+namespace AtriusHealth.Feature.Global.Controllers.Global
 {
-	public class GlobalController : ThreadController
+	public class GlobalController : AtriusHealthController
 	{
 		public virtual ActionResult HeaderSiteLogo()
 		{

@@ -1,11 +1,11 @@
-﻿using System.Linq;
+using System.Linq;
 using NUnit.Framework;
 using Sitecore.Data;
 using Sitecore.FakeDb;
-using Thread.Feature.Listing.Models;
-using Thread.Foundation.Enumerations;
+using AtriusHealth.Feature.Listing.Models;
+using AtriusHealth.Foundation.Enumerations;
 
-namespace Thread.Feature.Listing.Tests.Models
+namespace AtriusHealth.Feature.Listing.Tests.Models
 {
 	[TestFixture]
 	public class ContentListingModelTests

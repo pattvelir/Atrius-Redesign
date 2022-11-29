@@ -1,9 +1,9 @@
-﻿using System.Linq;
+using System.Linq;
 using Sitecore.Diagnostics;
 using Sitecore.Pipelines.GetRenderingDatasource;
-using Thread.Foundation.PageEditor.Reference;
+using AtriusHealth.Foundation.PageEditor.Reference;
 
-namespace Thread.Foundation.PageEditor.Pipelines.GetRenderingDatasource
+namespace AtriusHealth.Foundation.PageEditor.Pipelines.GetRenderingDatasource
 {
 	public class AddRelativeComponentRoots : AbstractRelativeComponentRoots
 	{

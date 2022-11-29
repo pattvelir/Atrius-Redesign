@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using Thread.Foundation.Dictionary.Statics;
+using AtriusHealth.Foundation.Dictionary.Statics;
 
-namespace Thread.Foundation.Dictionary.Extensions
+namespace AtriusHealth.Foundation.Dictionary.Extensions
 {
     public static class StringExtensions
     {

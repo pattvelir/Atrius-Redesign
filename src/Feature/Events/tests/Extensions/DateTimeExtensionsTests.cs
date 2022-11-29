@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using NUnit.Framework;
-using Thread.Feature.Events.Extensions;
+using AtriusHealth.Feature.Events.Extensions;
 
-namespace Thread.Feature.Events.Tests.Extensions
+namespace AtriusHealth.Feature.Events.Tests.Extensions
 {
 	[TestFixture]
 	public class DateTimeExtensionsTests

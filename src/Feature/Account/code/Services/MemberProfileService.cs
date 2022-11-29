@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.IO;
@@ -10,17 +10,17 @@ using Jabberwocky.DependencyInjection.Autowire.Attributes;
 using Sitecore.Data;
 using Sitecore.Data.Items;
 using Sitecore.Security.Authentication;
-using Thread.Feature.Account.Models;
-using Thread.Foundation.Account.Users;
-using Thread.Foundation.Abstractions.Account;
-using Thread.Foundation.Account.Services;
-using Thread.Foundation.Enumerations;
-using Thread.Foundation.Orm.Factory;
-using Thread.Foundation.Orm.Services;
-using Thread.Foundation.Taxonomy;
-using Thread.Foundation.Taxonomy.Extensions;
+using AtriusHealth.Feature.Account.Models;
+using AtriusHealth.Foundation.Account.Users;
+using AtriusHealth.Foundation.Abstractions.Account;
+using AtriusHealth.Foundation.Account.Services;
+using AtriusHealth.Foundation.Enumerations;
+using AtriusHealth.Foundation.Orm.Factory;
+using AtriusHealth.Foundation.Orm.Services;
+using AtriusHealth.Foundation.Taxonomy;
+using AtriusHealth.Foundation.Taxonomy.Extensions;
 
-namespace Thread.Feature.Account.Services
+namespace AtriusHealth.Feature.Account.Services
 {
     [AutowireService]
     public class MemberProfileService : IMemberProfileService

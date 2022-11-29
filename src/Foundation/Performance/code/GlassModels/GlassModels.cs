@@ -13,7 +13,7 @@
 
 
 
-namespace Thread.Foundation.Performance
+namespace AtriusHealth.Foundation.Performance
 {
 	using global::Sitecore.Data;
 	

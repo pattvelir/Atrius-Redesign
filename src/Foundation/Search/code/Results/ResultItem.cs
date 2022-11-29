@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Runtime.Serialization;
 
-namespace Thread.Foundation.Search.Results
+namespace AtriusHealth.Foundation.Search.Results
 {
     [DataContract]
     public class ResultItem

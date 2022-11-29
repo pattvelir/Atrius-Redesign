@@ -1,13 +1,13 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Web;
 using Sitecore.DependencyInjection;
-using Thread.Feature.Sitemap.Services;
-using Thread.Feature.Sitemap.Sitemap;
-using Thread.Foundation.Orm.Services;
-using Thread.Foundation.SitecoreExtensions.DependencyInjection;
+using AtriusHealth.Feature.Sitemap.Services;
+using AtriusHealth.Feature.Sitemap.Sitemap;
+using AtriusHealth.Foundation.Orm.Services;
+using AtriusHealth.Foundation.SitecoreExtensions.DependencyInjection;
 
-namespace Thread.Feature.Sitemap.Handlers
+namespace AtriusHealth.Feature.Sitemap.Handlers
 {
 	public class SitemapHandler : IHttpHandler
 	{

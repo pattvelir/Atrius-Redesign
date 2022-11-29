@@ -10,7 +10,7 @@
 //------------------------------------------------------------------------------
 // ReSharper disable All
 
-namespace Thread.Feature.Search
+namespace AtriusHealth.Feature.Search
 {
   using Sitecore.Data;
   using Sitecore.Data.Fields;
@@ -47,7 +47,7 @@ public static implicit operator Item(FeaturedResultsItem customItem)
 					}
 				
 
-					namespace Thread.Feature.Search
+					namespace AtriusHealth.Feature.Search
 {
   using Sitecore.Data;
   using Sitecore.Data.Items;
@@ -75,7 +75,7 @@ public static implicit operator Item(FeaturedResultsFolderItem customItem)
 					}
 				
 
-					namespace Thread.Feature.Search
+					namespace AtriusHealth.Feature.Search
 {
   using Sitecore.Data;
   using Sitecore.Data.Fields;
@@ -120,12 +120,12 @@ public static implicit operator Item(SearchResultsItem customItem)
 
 
 
-					namespace Thread.Feature.Search
+					namespace AtriusHealth.Feature.Search
 {
   using Sitecore.Data.Items;
-  using Thread.Foundation.Orm;
+  using AtriusHealth.Foundation.Orm;
 
-  public partial class SearchFacetsRenderingParameters : ThreadRenderingParameters
+  public partial class SearchFacetsRenderingParameters : AtriusHealthRenderingParameters
 						{
 							public static class Fields
 		{
@@ -145,7 +145,7 @@ public SearchFacetsRenderingParameters(string parametersAsQueryString) : base(pa
 
 
 
-// Thread.Feature.Search.Featured_Results (/sitecore/templates/Feature/Search/Featured Results 80a8ad76-8ee3-483b-a43c-9fe29ca77938)
+// AtriusHealth.Feature.Search.Featured_Results (/sitecore/templates/Feature/Search/Featured Results 80a8ad76-8ee3-483b-a43c-9fe29ca77938)
 	// Featured_Items (300f4fbf-afb4-43d5-afea-30561fb789aa)
 		// Type: TreelistEx
 		// Section: Featured Items
@@ -157,16 +157,16 @@ public SearchFacetsRenderingParameters(string parametersAsQueryString) : base(pa
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Feature.Search.Featured_Results_Folder (/sitecore/templates/Feature/Search/Featured Results Folder d791a14e-0f21-4461-a457-1eda601795b5)
+// AtriusHealth.Feature.Search.Featured_Results_Folder (/sitecore/templates/Feature/Search/Featured Results Folder d791a14e-0f21-4461-a457-1eda601795b5)
 
-// Thread.Feature.Search.Search_Facets_Rendering_Parameters (/sitecore/templates/Feature/Search/Search Facets Rendering Parameters 1ae5d59f-367f-4745-bf6f-a9ff7ae6bea7)
+// AtriusHealth.Feature.Search.Search_Facets_Rendering_Parameters (/sitecore/templates/Feature/Search/Search Facets Rendering Parameters 1ae5d59f-367f-4745-bf6f-a9ff7ae6bea7)
 	// Mobile_Transition (08cd4522-7f82-4567-803a-eac6e67cf9e5)
 		// Type: Droplink
 		// Section: Display Options
 		// Sort Order: 100
 		// Source: /sitecore/system/Modules/Search/Enumerations/Transition Directions
 
-// Thread.Feature.Search.Search_Results (/sitecore/templates/Feature/Search/Search Results 45c047e7-a01e-4e09-ab47-a76dc25f2f0c)
+// AtriusHealth.Feature.Search.Search_Results (/sitecore/templates/Feature/Search/Search Results 45c047e7-a01e-4e09-ab47-a76dc25f2f0c)
 	// Featured_Results_Endpoint (39fc0c16-7a0a-4458-8f51-57fecd5d5477)
 		// Type: Single-Line Text
 		// Section: Configuration

@@ -1,4 +1,4 @@
-﻿var imgData = new ImageData();
+var imgData = new ImageData();
 var cropIndex = 0;
 var imageInitialized = false;
 

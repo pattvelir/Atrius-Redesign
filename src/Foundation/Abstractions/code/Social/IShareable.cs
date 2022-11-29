@@ -1,4 +1,4 @@
-﻿namespace Thread.Foundation.Abstractions.Social
+namespace AtriusHealth.Foundation.Abstractions.Social
 {
 	public interface IShareable
 	{

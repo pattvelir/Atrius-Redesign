@@ -1,4 +1,4 @@
-﻿namespace Thread.Foundation.ResponsiveImages.Extensions.Markers
+namespace AtriusHealth.Foundation.ResponsiveImages.Extensions.Markers
 {
   /// <summary>
   /// Supports rendering srcsets with a range of widths, using default values if no values passed.

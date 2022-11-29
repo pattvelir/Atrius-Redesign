@@ -10,7 +10,7 @@
 //------------------------------------------------------------------------------
 // ReSharper disable All
 
-					namespace Thread.Foundation.Workflow
+					namespace AtriusHealth.Foundation.Workflow
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -53,7 +53,7 @@ public static implicit operator Item(ScheduledPublishingWorkflowCommentsItem cus
 
 
 
-// Thread.Foundation.Workflow.Scheduled_Publishing_Workflow_Comments (/sitecore/templates/Foundation/Workflow/Scheduled Publishing Workflow Comments 2660c339-7e02-49c6-b9b7-e6b6e091e40f)
+// AtriusHealth.Foundation.Workflow.Scheduled_Publishing_Workflow_Comments (/sitecore/templates/Foundation/Workflow/Scheduled Publishing Workflow Comments 2660c339-7e02-49c6-b9b7-e6b6e091e40f)
 	// Publish_Date (88672ca5-5b66-48ab-8865-4d8c6cebda25)
 		// Type: Datetime
 		// Section: Schedule

@@ -1,4 +1,4 @@
-﻿using Sitecore;
+using Sitecore;
 using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
 using Sitecore.SecurityModel;
@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Thread.Foundation.Workflow.Commands
+namespace AtriusHealth.Foundation.Workflow.Commands
 {
     public class UnlockItem : Command
     {

@@ -1,17 +1,17 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Jabberwocky.DependencyInjection.Autowire.Attributes;
 using Sitecore.Data.Items;
-using Thread.Feature.Metadata.Areas.Thread.Models;
-using Thread.Feature.Metadata.Reference;
-using Thread.Foundation.Abstractions.Listing;
-using Thread.Foundation.Multisite.Configuration;
-using Thread.Foundation.Orm.Factory;
-using Thread.Foundation.SitecoreExtensions.Base;
-using Thread.Foundation.SitecoreExtensions.Item;
+using AtriusHealth.Feature.Metadata.Areas.AtriusHealth.Models;
+using AtriusHealth.Feature.Metadata.Reference;
+using AtriusHealth.Foundation.Abstractions.Listing;
+using AtriusHealth.Foundation.Multisite.Configuration;
+using AtriusHealth.Foundation.Orm.Factory;
+using AtriusHealth.Foundation.SitecoreExtensions.Base;
+using AtriusHealth.Foundation.SitecoreExtensions.Item;
 
-namespace Thread.Feature.Metadata.Services
+namespace AtriusHealth.Feature.Metadata.Services
 {
 	[AutowireService(LifetimeScope.PerScope)]
 	public class MetadataService : IMetadataService

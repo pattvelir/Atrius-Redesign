@@ -1,9 +1,9 @@
-﻿using System.IO;
+using System.IO;
 using System.Linq;
 using System.Text;
 using Sitecore.Mvc.Presentation;
 
-namespace Thread.Foundation.Mvc.Extensions
+namespace AtriusHealth.Foundation.Mvc.Extensions
 {
 	public static class RenderingContextExtensions
 	{

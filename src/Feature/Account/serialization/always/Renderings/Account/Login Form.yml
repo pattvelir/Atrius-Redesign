@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "95ce05c4-6c3d-4a90-806f-e0ff260de6d1"
 Parent: "07187b6b-56c3-474b-9f9b-db7c5ac25b0a"
 Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
@@ -70,7 +70,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Mvc フォーム
+    Value: Mvc ????
   Versions:
   - Version: 1
     Fields:
@@ -85,7 +85,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Mvc表格
+    Value: Mvc??
   Versions:
   - Version: 1
     Fields:

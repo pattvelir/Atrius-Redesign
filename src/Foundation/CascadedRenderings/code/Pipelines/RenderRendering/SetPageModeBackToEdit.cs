@@ -1,7 +1,7 @@
 using Sitecore.Mvc.Pipelines.Response.RenderRendering;
 using Sitecore.Sites;
 
-namespace Thread.Foundation.CascadedRenderings.Pipelines.RenderRendering
+namespace AtriusHealth.Foundation.CascadedRenderings.Pipelines.RenderRendering
 {
     public class SetPageModeBackToEdit : RenderRenderingProcessor
     {

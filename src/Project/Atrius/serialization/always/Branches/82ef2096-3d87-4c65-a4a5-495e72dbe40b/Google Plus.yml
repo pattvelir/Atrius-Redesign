@@ -1,0 +1,21 @@
+---
+ID: "e73aabae-4390-4fcf-9e1f-9a74da59e2ed"
+Parent: "82ef2096-3d87-4c65-a4a5-495e72dbe40b"
+Template: "9744d172-190e-49ed-9d2f-b9f588bfeaf9"
+Path: /sitecore/templates/Branches/Project/Atrius/Sites/New Site/$name/Configuration/Navigation/Footer Navigation/Social Links/Google Plus
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170310T201640Z
+    - ID: "6c54a7e4-cb8b-4f5c-838e-b784517c4cb7"
+      Hint: Icon
+      Value: "{301E38C9-DC14-4055-A8D3-5383EF9DA555}"

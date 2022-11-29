@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "d0805639-32e5-457f-99ba-867b87f7385f"
 Parent: "27a629c7-5545-43e4-84aa-39cb510916bf"
 Template: "9f62ebd5-2280-4a35-be51-a210d831d687"
@@ -26,7 +26,7 @@ SharedFields:
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <r
           id="{6E177CB2-BBC1-486E-90E9-8C5E579A090B}"
-          par="Tooltip&amp;IsVisible=1&amp;Click=trigger%3Abutton%3Aclick&amp;Command=LaunchFieldEditor&amp;ControlStateRequest&amp;PostponedCall=1&amp;HideInWebEditMode&amp;HideInPreviewMode&amp;HideInDebugMode&amp;HideInCmsOnlyMode&amp;AccessKey=Display%20Date%7CStart%20Date%7CEnd%20Date%7CImage%2016x9%7CImage%201x1%7CTitle%7CShort%20Title%7CHeader%20Title%7CSubtitle%7CSummary%7CAddress%201%7CAddress%202%7CCity%7CState%7CZip%20Code%7CShort%20Description%7CRegistration%20Link&amp;ConfigurationItem&amp;IsEnabled&amp;Id=PageOptionsSmallButton&amp;Behaviors&amp;PageCodeScriptFileName=%2FAreas%2FThread%2FScripts%2FLaunchFieldEditor.js"
+          par="Tooltip&amp;IsVisible=1&amp;Click=trigger%3Abutton%3Aclick&amp;Command=LaunchFieldEditor&amp;ControlStateRequest&amp;PostponedCall=1&amp;HideInWebEditMode&amp;HideInPreviewMode&amp;HideInDebugMode&amp;HideInCmsOnlyMode&amp;AccessKey=Display%20Date%7CStart%20Date%7CEnd%20Date%7CImage%2016x9%7CImage%201x1%7CTitle%7CShort%20Title%7CHeader%20Title%7CSubtitle%7CSummary%7CAddress%201%7CAddress%202%7CCity%7CState%7CZip%20Code%7CShort%20Description%7CRegistration%20Link&amp;ConfigurationItem&amp;IsEnabled&amp;Id=PageOptionsSmallButton&amp;Behaviors&amp;PageCodeScriptFileName=%2FAreas%2FAtriusHealth%2FScripts%2FLaunchFieldEditor.js"
           uid="{3FAB8B16-3F85-4E38-BFBB-FC73F0016C1A}" />
       </d>
     </r>
@@ -94,7 +94,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: ログオフ
+    Value: ????
   Versions:
   - Version: 1
     Fields:
@@ -107,7 +107,7 @@ Languages:
         sitecore\admin
     - ID: "a47cd065-c361-4332-b22b-7e2148de06f4"
       Hint: Tooltip
-      Value: ログオフ
+      Value: ????
     - ID: "c184f18b-b452-44d6-8376-facd6cef8a42"
       Hint: Header
-      Value: ログオフ
+      Value: ????

@@ -1,16 +1,16 @@
-﻿using Jabberwocky.DependencyInjection.Sc.Configuration;
+using Jabberwocky.DependencyInjection.Sc.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Sitecore.Mvc.Presentation;
-using Thread.Foundation.Mvc.Extensions;
+using AtriusHealth.Foundation.Mvc.Extensions;
 
-namespace Thread.Foundation.Mvc.DependencyInjection
+namespace AtriusHealth.Foundation.Mvc.DependencyInjection
 {
 	public class Registrar : AbstractServicesConfigurator
 	{
 		public override void Configure(IServiceCollection serviceCollection)
 		{
 			serviceCollection.AddMvcControllers(AssemblyNames);
-			serviceCollection.AddThreadViewModels(AssemblyNames);
+			serviceCollection.AddAtriusHealthViewModels(AssemblyNames);
 
 			serviceCollection.AddScoped<PageContext>(p => PageContext.CurrentOrNull);
 		}

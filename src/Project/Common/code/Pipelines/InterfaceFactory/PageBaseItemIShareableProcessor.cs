@@ -1,7 +1,7 @@
-﻿using Thread.Foundation.Abstractions.Social;
-using Thread.Foundation.Orm.Factory.Pipeline;
+using AtriusHealth.Foundation.Abstractions.Social;
+using AtriusHealth.Foundation.Orm.Factory.Pipeline;
 
-namespace Thread.Project.Common.Pipelines.InterfaceFactory
+namespace AtriusHealth.Project.Common.Pipelines.InterfaceFactory
 {
 	public class PageBaseItemIShareableProcessor : InterfaceFactoryProcessor<IShareable>
 	{

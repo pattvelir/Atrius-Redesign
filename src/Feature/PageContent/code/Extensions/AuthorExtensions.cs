@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Thread.Foundation.Taxonomy;
+using AtriusHealth.Foundation.Taxonomy;
 
-namespace Thread.Feature.PageContent.Extensions
+namespace AtriusHealth.Feature.PageContent.Extensions
 {
 	public static class AuthorExtensions
 	{

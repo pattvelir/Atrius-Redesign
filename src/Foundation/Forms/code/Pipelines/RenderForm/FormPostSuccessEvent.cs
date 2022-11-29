@@ -1,7 +1,7 @@
-﻿using Sitecore.ExperienceForms.Mvc.Pipelines.RenderForm;
+using Sitecore.ExperienceForms.Mvc.Pipelines.RenderForm;
 using Sitecore.Mvc.Pipelines;
 
-namespace Thread.Foundation.Forms.Pipelines.RenderForm
+namespace AtriusHealth.Foundation.Forms.Pipelines.RenderForm
 {
     public class FormPostSuccessEvent : MvcPipelineProcessor<RenderFormEventArgs>
     {

@@ -1,5 +1,5 @@
-﻿
-namespace Thread.Foundation.Taxonomy.Reference
+
+namespace AtriusHealth.Foundation.Taxonomy.Reference
 {
 	public static class Constants
 	{

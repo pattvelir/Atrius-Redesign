@@ -1,0 +1,14 @@
+---
+ID: "cdd33eac-0e94-495f-ad51-6d7b1eb95709"
+Parent: "9aa71760-56b1-418c-a23f-de10c3207f3d"
+Template: "45c047e7-a01e-4e09-ab47-a76dc25f2f0c"
+Path: /sitecore/templates/Branches/Project/Atrius/Pages/Search Page/$name/Components/Search/Site Search
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170118T204944Z

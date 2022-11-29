@@ -1,6 +1,6 @@
-﻿using Sitecore.Pipelines;
+using Sitecore.Pipelines;
 
-namespace Thread.Foundation.Dictionary.Pipelines.Initialize
+namespace AtriusHealth.Foundation.Dictionary.Pipelines.Initialize
 {
     public class InitializeDictionary
     {

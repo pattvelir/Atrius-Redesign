@@ -1,12 +1,12 @@
-﻿using System.Runtime.CompilerServices;
+using System.Runtime.CompilerServices;
 using System.Text.RegularExpressions;
 using System.Web;
-using Thread.Feature.Multimedia.Services;
-using Thread.Foundation.Mvc.ViewModels;
+using AtriusHealth.Feature.Multimedia.Services;
+using AtriusHealth.Foundation.Mvc.ViewModels;
 
-namespace Thread.Feature.Multimedia.Models
+namespace AtriusHealth.Feature.Multimedia.Models
 {
-  public class VideoModel : ThreadViewModel<VideoItem, VideoParameters>
+  public class VideoModel : AtriusHealthViewModel<VideoItem, VideoParameters>
   {
     private readonly IVideoService _videoService;
 

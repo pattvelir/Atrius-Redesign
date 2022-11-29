@@ -1,8 +1,8 @@
-﻿---
+---
 ID: "e910c4e4-5c19-408f-8bbc-7fdf7996109f"
 Parent: "e3e750a1-58ff-4db0-aa74-a9b7246c409d"
 Template: "b0666cfe-8c7b-4cc1-8e32-8253742ebfa9"
-Path: /sitecore/content/Applications/WebEdit/Custom Experience Buttons/Thread/Feature/Multimedia
+Path: /sitecore/content/Applications/WebEdit/Custom Experience Buttons/AtriusHealth/Feature/Multimedia
 DB: core
 SharedFields:
 - ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
@@ -60,7 +60,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: デフォルト
+    Value: ?????
   Versions:
   - Version: 1
     Fields:

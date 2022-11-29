@@ -1,6 +1,6 @@
-﻿using Sitecore.Data.Fields;
+using Sitecore.Data.Fields;
 
-namespace Thread.Foundation.Abstractions.PageContent
+namespace AtriusHealth.Foundation.Abstractions.PageContent
 {
 	public interface IPageEditable
 	{

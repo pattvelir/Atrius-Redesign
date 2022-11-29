@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using Sitecore.Mvc.Helpers;
 using Sitecore.Mvc.Pipelines.Response.GetModel;
 using Sitecore.Mvc.Presentation;
 using Sitecore.StringExtensions;
 
-namespace Thread.Foundation.Mvc.Pipelines.MvcGetModel
+namespace AtriusHealth.Foundation.Mvc.Pipelines.MvcGetModel
 {
 	public class ServiceProviderModelLocatorProcessor : GetModelProcessor
 	{

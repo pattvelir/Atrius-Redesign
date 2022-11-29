@@ -3,9 +3,9 @@ using System.Web.Mvc;
 using System.Web.WebPages;
 using RazorGenerator.Mvc;
 
-[assembly: WebActivatorEx.PostApplicationStartMethod(typeof(Thread.Feature.Banners.RazorGeneratorMvcStart), "Start")]
+[assembly: WebActivatorEx.PostApplicationStartMethod(typeof(AtriusHealth.Feature.Banners.RazorGeneratorMvcStart), "Start")]
 
-namespace Thread.Feature.Banners {
+namespace AtriusHealth.Feature.Banners {
     public static class RazorGeneratorMvcStart {
         public static void Start() {
             var engine = new PrecompiledMvcEngine(typeof(RazorGeneratorMvcStart).Assembly) {

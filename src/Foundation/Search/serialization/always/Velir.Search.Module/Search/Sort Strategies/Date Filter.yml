@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "6fea07d5-7626-468d-9f21-90ac01f0691e"
 Parent: "4a79da78-93cd-41ae-9f08-48212f62211a"
 Template: "2e317d2b-24ed-4633-87f8-6ccfadb06d93"
@@ -14,7 +14,7 @@ Languages:
       Value: 20200204T142447Z
     - ID: "32086477-70e7-45b1-a3fe-204b3a73e42d"
       Hint: Type
-      Value: Thread.Feature.Search.Facets.DateRangeFilterStrategy, Thread.Feature.Search
+      Value: AtriusHealth.Feature.Search.Facets.DateRangeFilterStrategy, AtriusHealth.Feature.Search
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

@@ -17,14 +17,14 @@
     .OUTPUTS
         .bacpac files for each database matching keywords provided.
     .EXAMPLE
-        Export-SqlBacPacs -Server "vwsql2016sc9" -ClientKeyword "mlh" -EnvironmentKeyword "dev"
+        PS> Export-SqlBacPacs -Server "vwmysqlserver" -ClientKeyword "AtriusHealth" -EnvironmentKeyword "dev"
 #>
 Function Export-SqlBacPacs {
     param(
         [string] $Server = 'localhost',
         [string] $ClientKeyword = (Get-EnvVariable -Name "COMPOSE_PROJECT_NAME"),
         [string] $EnvironmentKeyword = "uat",
-        [string[]] $Databases = @("_core", "_master", "_web"),
+        [string[]] $Databases = @("[_]core", "[_]master", "[_]web"),
         [string] $OutputDirectory="$(Get-EnvVariable -Name "LOCAL_DATA_PATH")\backups"
     )
  

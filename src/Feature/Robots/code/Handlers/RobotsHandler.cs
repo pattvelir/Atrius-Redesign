@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Web;
 using System.Web.Mvc;
-using Thread.Foundation.Multisite.Configuration;
+using AtriusHealth.Foundation.Multisite.Configuration;
 
-namespace Thread.Feature.Robots.Handlers
+namespace AtriusHealth.Feature.Robots.Handlers
 {
 	public class RobotsHandler : IHttpHandler
 	{

@@ -1,11 +1,11 @@
-﻿using HtmlAgilityPack;
+using HtmlAgilityPack;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Microsoft.Practices.EnterpriseLibrary.Common.Utility;
 
-namespace Thread.Feature.Multimedia.Extensions
+namespace AtriusHealth.Feature.Multimedia.Extensions
 {
 	public static class HtmlStringExtensions
 	{

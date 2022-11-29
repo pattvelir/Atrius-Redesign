@@ -1,15 +1,15 @@
-﻿using System;
+using System;
 using System.Web;
 using System.Web.Http.Controllers;
 using System.Web.Http.ModelBinding;
 using System.Web.Http.ValueProviders;
 using Jabberwocky.DependencyInjection.Autowire.Attributes;
-using Thread.Feature.Listing.Page;
-using Thread.Feature.Listing.Reference;
-using Thread.Foundation.SitecoreExtensions.DependencyInjection;
+using AtriusHealth.Feature.Listing.Page;
+using AtriusHealth.Feature.Listing.Reference;
+using AtriusHealth.Foundation.SitecoreExtensions.DependencyInjection;
 using Velir.Search.Core.Reference;
 
-namespace Thread.Feature.Listing.Models
+namespace AtriusHealth.Feature.Listing.Models
 {
 	[AutowireService]
 	public class DynamicContentConfigurationBinder : IModelBinder

@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.IO;
 using Sitecore.Mvc.ExperienceEditor.Pipelines.RenderPageExtenders;
 
-namespace Thread.Foundation.AX.Pipelines.RenderPageExtenders
+namespace AtriusHealth.Foundation.AX.Pipelines.RenderPageExtenders
 {
 	public class InjectPageEditorResources : RenderPageExtendersProcessor
 	{

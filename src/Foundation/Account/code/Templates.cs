@@ -10,7 +10,7 @@
 //------------------------------------------------------------------------------
 // ReSharper disable All
 
-					namespace Thread.Foundation.Account
+					namespace AtriusHealth.Foundation.Account
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -45,5 +45,5 @@ public static implicit operator Item(_MemberAccountPageBaseItem customItem)
 
 
 
-// Thread.Foundation.Account._Member_Account_Page_Base (/sitecore/templates/Foundation/Account/_Member Account Page Base 03fbb497-88ef-4c34-8a55-195601431a6d)
+// AtriusHealth.Foundation.Account._Member_Account_Page_Base (/sitecore/templates/Foundation/Account/_Member Account Page Base 03fbb497-88ef-4c34-8a55-195601431a6d)
 

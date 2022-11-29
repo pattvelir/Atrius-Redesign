@@ -1,12 +1,12 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using Thread.Foundation.Mvc.ViewModels;
+using AtriusHealth.Foundation.Mvc.ViewModels;
 
-namespace Thread.Feature.RichText.Models
+namespace AtriusHealth.Feature.RichText.Models
 {
-    public class RichTextComponentModel : ThreadViewModel<RichTextItem, RichTextRenderingParameters>
+    public class RichTextComponentModel : AtriusHealthViewModel<RichTextItem, RichTextRenderingParameters>
     {
         
         public string TextAllignment => RenderingParameters.Alignment?.Value?.Value ?? string.Empty;

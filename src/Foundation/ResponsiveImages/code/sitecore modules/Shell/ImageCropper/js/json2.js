@@ -1,4 +1,4 @@
-﻿/*
+/*
 
 From https://github.com/douglascrockford/JSON-js
 

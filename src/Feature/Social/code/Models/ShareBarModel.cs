@@ -1,10 +1,10 @@
 using System.Text.RegularExpressions;
-using Thread.Foundation.Abstractions.Social;
-using Thread.Foundation.Multisite.Configuration;
-using Thread.Foundation.Orm.Factory;
-using Thread.Foundation.Orm.Services;
+using AtriusHealth.Foundation.Abstractions.Social;
+using AtriusHealth.Foundation.Multisite.Configuration;
+using AtriusHealth.Foundation.Orm.Factory;
+using AtriusHealth.Foundation.Orm.Services;
 
-namespace Thread.Feature.Social.Models
+namespace AtriusHealth.Feature.Social.Models
 {
 	public class ShareBarModel : AddThisModel
 	{

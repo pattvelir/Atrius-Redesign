@@ -1,12 +1,12 @@
-﻿using System;
+using System;
 using System.Json;
 using NSubstitute;
 using NUnit.Framework;
 using Sitecore.Data.Items;
 using Sitecore.NSubstituteUtils;
-using Thread.Feature.Multimedia.Services;
+using AtriusHealth.Feature.Multimedia.Services;
 
-namespace Thread.Feature.Multimedia.Tests.Services
+namespace AtriusHealth.Feature.Multimedia.Tests.Services
 {
 
   public class YouTubeVideoServiceTests

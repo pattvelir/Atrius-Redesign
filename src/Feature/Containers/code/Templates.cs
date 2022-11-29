@@ -10,7 +10,7 @@
 //------------------------------------------------------------------------------
 // ReSharper disable All
 
-					namespace Thread.Feature.Containers
+					namespace AtriusHealth.Feature.Containers
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -45,5 +45,5 @@ public static implicit operator Item(FullWidthBleedContainerItem customItem)
 
 
 
-// Thread.Feature.Containers.Full_Width_Bleed_Container (/sitecore/templates/Feature/Containers/Full Width Bleed Container 1e967a94-9e31-4e7d-9fe2-1daf44e19fea)
+// AtriusHealth.Feature.Containers.Full_Width_Bleed_Container (/sitecore/templates/Feature/Containers/Full Width Bleed Container 1e967a94-9e31-4e7d-9fe2-1daf44e19fea)
 

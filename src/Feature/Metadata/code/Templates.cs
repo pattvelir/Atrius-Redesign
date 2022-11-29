@@ -10,7 +10,7 @@
 //------------------------------------------------------------------------------
 // ReSharper disable All
 
-					namespace Thread.Feature.Metadata
+					namespace AtriusHealth.Feature.Metadata
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -51,7 +51,7 @@ public static implicit operator Item(MetadataConfigurationItem customItem)
 					}
 				
 
-					namespace Thread.Feature.Metadata
+					namespace AtriusHealth.Feature.Metadata
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -88,7 +88,7 @@ public static implicit operator Item(_IndexBaseItem customItem)
 					}
 				
 
-					namespace Thread.Feature.Metadata
+					namespace AtriusHealth.Feature.Metadata
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -127,7 +127,7 @@ public static implicit operator Item(_MetadataBaseItem customItem)
 
 
 
-// Thread.Feature.Metadata.Metadata_Configuration (/sitecore/templates/Feature/Metadata/Metadata Configuration 3f3a656c-332d-46d6-951e-63fb2d06f8e4)
+// AtriusHealth.Feature.Metadata.Metadata_Configuration (/sitecore/templates/Feature/Metadata/Metadata Configuration 3f3a656c-332d-46d6-951e-63fb2d06f8e4)
 	// Favicon (8833be50-af2b-4c49-aba1-7d8e2a8af6cc)
 		// Type: File
 		// Section: Header
@@ -144,7 +144,7 @@ public static implicit operator Item(_MetadataBaseItem customItem)
 		// Sort Order: 300
 		// Source: 
 
-// Thread.Feature.Metadata._Index_Base (/sitecore/templates/Feature/Metadata/_Index Base e300d2d2-ab70-4876-9c8a-285c681eaf15)
+// AtriusHealth.Feature.Metadata._Index_Base (/sitecore/templates/Feature/Metadata/_Index Base e300d2d2-ab70-4876-9c8a-285c681eaf15)
 	// No_Follow (1bd0fef8-5ee5-435b-bde3-a332a0709e8e)
 		// Type: Checkbox
 		// Section: Index
@@ -156,7 +156,7 @@ public static implicit operator Item(_MetadataBaseItem customItem)
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Feature.Metadata._Metadata_Base (/sitecore/templates/Feature/Metadata/_Metadata Base c8b2d606-72c1-47cb-b4c3-6d27a3976de0)
+// AtriusHealth.Feature.Metadata._Metadata_Base (/sitecore/templates/Feature/Metadata/_Metadata Base c8b2d606-72c1-47cb-b4c3-6d27a3976de0)
 	// Meta_Html (f7504c40-7c68-42c2-be36-8bb61072f21b)
 		// Type: Multi-Line Text
 		// Section: Metadata

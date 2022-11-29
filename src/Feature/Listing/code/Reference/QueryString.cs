@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace Thread.Feature.Listing.Reference
+namespace AtriusHealth.Feature.Listing.Reference
 {
 	public static class QueryString
 	{

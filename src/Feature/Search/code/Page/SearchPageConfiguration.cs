@@ -1,12 +1,12 @@
-﻿using System.Linq;
+using System.Linq;
 using Jabberwocky.DependencyInjection.Autowire.Attributes;
-using Thread.Foundation.Enumerations;
+using AtriusHealth.Foundation.Enumerations;
 using Velir.Search.Core.Extensions;
 using Velir.Search.Core.Factory;
 using Velir.Search.Core.Page;
 using Velir.Search.Core.Rules.Parser;
 
-namespace Thread.Feature.Search.Page
+namespace AtriusHealth.Feature.Search.Page
 {
 	[AutowireService]
 	public class SearchPageConfiguration : PageConfiguration

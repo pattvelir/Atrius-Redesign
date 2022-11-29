@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "267d9ac7-5d85-4e9d-af89-99ab296cc218"
 Parent: "93b36b23-4b04-44a0-af37-5fcded572d02"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
@@ -35,7 +35,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Wörterbuch Ordner
+    Value: W�rterbuch Ordner
   Versions:
   - Version: 1
     Fields:
@@ -61,7 +61,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 辞書フォルダー
+    Value: ???????
   Versions:
   - Version: 1
     Fields:

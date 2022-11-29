@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Web;
 using Sitecore;
 using Sitecore.Pipelines.HttpRequest;
@@ -7,11 +7,11 @@ using Sitecore.Data;
 using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
 using Sitecore.Web;
-using Thread.Foundation.Aliases.Resolvers;
+using AtriusHealth.Foundation.Aliases.Resolvers;
 using Sitecore.Pipelines.HttpRequest.HandlerMapping;
 using Sitecore.Abstractions;
 
-namespace Thread.Foundation.Aliases.Pipelines.HttpRequestBegin
+namespace AtriusHealth.Foundation.Aliases.Pipelines.HttpRequestBegin
 {
 	public class AliasResolver : Sitecore.Pipelines.HttpRequest.AliasResolver
 	{

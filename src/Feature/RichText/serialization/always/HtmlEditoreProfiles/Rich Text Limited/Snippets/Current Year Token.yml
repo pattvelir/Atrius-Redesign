@@ -1,8 +1,8 @@
-﻿---
+---
 ID: "c7816b95-95ad-411b-8bed-302b909e3775"
 Parent: "ab669b21-f239-49af-a4bc-a4b3276687b4"
 Template: "3825fe6a-6ca1-489b-a7c9-c3b4b3b38272"
-Path: /sitecore/system/Settings/Html Editor Profiles/Thread/Rich Text Limited/Snippets/Current Year Token
+Path: /sitecore/system/Settings/Html Editor Profiles/AtriusHealth/Rich Text Limited/Snippets/Current Year Token
 DB: core
 BranchID: "2c9e00e7-4a4f-42e8-9251-b50a3fdf356f"
 SharedFields:
@@ -14,7 +14,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Eksempel på Snippet
+    Value: Eksempel p� Snippet
   Versions:
   - Version: 1
     Fields:
@@ -27,7 +27,7 @@ Languages:
         sitecore\admin
     - ID: "8e5179b0-2a09-4624-885d-619c0e3d0390"
       Hint: Header
-      Value: Eksempel på Snippet
+      Value: Eksempel p� Snippet
 - Language: "de-DE"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -67,7 +67,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: サンプル スニペット
+    Value: ???? ?????
   Versions:
   - Version: 1
     Fields:
@@ -80,4 +80,4 @@ Languages:
         sitecore\admin
     - ID: "8e5179b0-2a09-4624-885d-619c0e3d0390"
       Hint: Header
-      Value: サンプル スニペット
+      Value: ???? ?????

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\..\..\..\packages\Microsoft.Net.Compilers.2.0.1\build\Microsoft.Net.Compilers.props" Condition="Exists('..\..\..\..\packages\Microsoft.Net.Compilers.2.0.1\build\Microsoft.Net.Compilers.props')" />
   <Import Project="..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
@@ -139,41 +139,41 @@
     <None Include="Properties\PublishProfiles\Local.pubxml" />
   </ItemGroup>
   <ItemGroup>
-	<ProjectReference Include="..\..\..\Foundation\Abstractions\code\Thread.Foundation.Abstractions.csproj">
+	<ProjectReference Include="..\..\..\Foundation\Abstractions\code\AtriusHealth.Foundation.Abstractions.csproj">
       <Project>{40c6efde-4485-4a68-b5ab-b9c7ea875f7c}</Project>
-      <Name>Thread.Foundation.Abstractions</Name>
+      <Name>AtriusHealth.Foundation.Abstractions</Name>
     </ProjectReference>
-	<ProjectReference Include="..\..\..\Foundation\Dictionary\code\Thread.Foundation.Dictionary.csproj">
+	<ProjectReference Include="..\..\..\Foundation\Dictionary\code\AtriusHealth.Foundation.Dictionary.csproj">
       <Project>{39e98a88-e03f-4d05-8aa5-444f7d32d50d}</Project>
-      <Name>Thread.Foundation.Dictionary</Name>
+      <Name>AtriusHealth.Foundation.Dictionary</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Foundation\Enumerations\code\Thread.Foundation.Enumerations.csproj">
+    <ProjectReference Include="..\..\..\Foundation\Enumerations\code\AtriusHealth.Foundation.Enumerations.csproj">
       <Project>{3ec8176e-15f2-4fd6-9085-c6efbdc237fd}</Project>
-      <Name>Thread.Foundation.Enumerations</Name>
+      <Name>AtriusHealth.Foundation.Enumerations</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Foundation\Multisite\code\Thread.Foundation.Multisite.csproj">
+    <ProjectReference Include="..\..\..\Foundation\Multisite\code\AtriusHealth.Foundation.Multisite.csproj">
       <Project>{a2df4fd9-9957-46ef-96f4-a32004dd0f98}</Project>
-      <Name>Thread.Foundation.Multisite</Name>
+      <Name>AtriusHealth.Foundation.Multisite</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Foundation\Mvc\code\Thread.Foundation.Mvc.csproj">
+    <ProjectReference Include="..\..\..\Foundation\Mvc\code\AtriusHealth.Foundation.Mvc.csproj">
       <Project>{43b01bd9-a994-4197-8a36-39ab64a669d0}</Project>
-      <Name>Thread.Foundation.Mvc</Name>
+      <Name>AtriusHealth.Foundation.Mvc</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Foundation\Theme\code\Thread.Foundation.Theme.csproj">
+    <ProjectReference Include="..\..\..\Foundation\Theme\code\AtriusHealth.Foundation.Theme.csproj">
       <Project>{c83c0c9f-1567-49b3-9558-0d46b5d14419}</Project>
-      <Name>Thread.Foundation.Theme</Name>
+      <Name>AtriusHealth.Foundation.Theme</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Foundation\Mvc\code\Thread.Foundation.Mvc.csproj">
+    <ProjectReference Include="..\..\..\Foundation\Mvc\code\AtriusHealth.Foundation.Mvc.csproj">
       <Project>{43b01bd9-a994-4197-8a36-39ab64a669d0}</Project>
-      <Name>Thread.Foundation.Mvc</Name>
+      <Name>AtriusHealth.Foundation.Mvc</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Foundation\ORM\code\Thread.Foundation.Orm.csproj">
+    <ProjectReference Include="..\..\..\Foundation\ORM\code\AtriusHealth.Foundation.Orm.csproj">
       <Project>{5f8229a3-8b62-45bb-968b-3d51d6037e4a}</Project>
-      <Name>Thread.Foundation.Orm</Name>
+      <Name>AtriusHealth.Foundation.Orm</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Foundation\SitecoreExtensions\code\Thread.Foundation.SitecoreExtensions.csproj">
+    <ProjectReference Include="..\..\..\Foundation\SitecoreExtensions\code\AtriusHealth.Foundation.SitecoreExtensions.csproj">
       <Project>{4517d6ff-3d9a-428c-82cf-2626077aaaea}</Project>
-      <Name>Thread.Foundation.SitecoreExtensions</Name>
+      <Name>AtriusHealth.Foundation.SitecoreExtensions</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

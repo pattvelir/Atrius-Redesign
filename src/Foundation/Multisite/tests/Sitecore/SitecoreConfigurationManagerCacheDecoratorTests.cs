@@ -3,9 +3,9 @@ using Jabberwocky.Core.Caching;
 using NSubstitute;
 using NUnit.Framework;
 using Sitecore.Data.Items;
-using Thread.Foundation.Multisite.Configuration;
+using AtriusHealth.Foundation.Multisite.Configuration;
 
-namespace Thread.Foundation.Multisite.Tests.Sitecore
+namespace AtriusHealth.Foundation.Multisite.Tests.Sitecore
 {
 	[TestFixture]
 	public class SitecoreConfigurationManagerCacheDecoratorTests

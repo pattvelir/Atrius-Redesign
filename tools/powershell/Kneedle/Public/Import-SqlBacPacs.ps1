@@ -13,7 +13,7 @@
     .OUTPUTS
         N/A
     .EXAMPLE
-        Import-SqlBacPacs
+        PS> Import-SqlBacPacs
 #>
 Function Import-SqlBacPacs {
     param(

@@ -1,14 +1,14 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Thread.Foundation.Enumerations;
-using Thread.Foundation.Mvc.ViewModels;
-using Thread.Foundation.SitecoreExtensions.Base;
-using Thread.Foundation.SitecoreExtensions.Item;
+using AtriusHealth.Foundation.Enumerations;
+using AtriusHealth.Foundation.Mvc.ViewModels;
+using AtriusHealth.Foundation.SitecoreExtensions.Base;
+using AtriusHealth.Foundation.SitecoreExtensions.Item;
 
-namespace Thread.Feature.Listing.Models
+namespace AtriusHealth.Feature.Listing.Models
 {
-	public class ContentListingModel : ThreadViewModel<ContentListingItem>
+	public class ContentListingModel : AtriusHealthViewModel<ContentListingItem>
 	{
 		protected Lazy<int> NumberOfItems;
 

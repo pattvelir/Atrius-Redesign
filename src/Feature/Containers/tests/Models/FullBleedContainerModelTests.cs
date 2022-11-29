@@ -1,10 +1,10 @@
-﻿using NUnit.Framework;
+using NUnit.Framework;
 using Sitecore.Data;
 using Sitecore.FakeDb;
-using Thread.Feature.Containers.Models;
-using Thread.Foundation.Theme;
+using AtriusHealth.Feature.Containers.Models;
+using AtriusHealth.Foundation.Theme;
 
-namespace Thread.Feature.Containers.Tests.Models
+namespace AtriusHealth.Feature.Containers.Tests.Models
 {
 	[TestFixture]
 	public class FullBleedContainerModelTests

@@ -1,9 +1,9 @@
 using NUnit.Framework;
 using Sitecore.Data;
 using Sitecore.FakeDb;
-using Thread.Foundation.Theme.Extensions;
+using AtriusHealth.Foundation.Theme.Extensions;
 
-namespace Thread.Foundation.Theme.Tests.Extensions
+namespace AtriusHealth.Foundation.Theme.Tests.Extensions
 {
 	[TestFixture]
 	public class ColorExtensionsTests

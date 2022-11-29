@@ -1,8 +1,8 @@
 using NUnit.Framework;
 using Sitecore.Collections;
-using Thread.Foundation.ResponsiveImages.Extensions;
+using AtriusHealth.Foundation.ResponsiveImages.Extensions;
 
-namespace Thread.Foundation.ResponsiveImages.Tests.Extensions
+namespace AtriusHealth.Foundation.ResponsiveImages.Tests.Extensions
 {
 	[TestFixture]
 	public class SafeDictionaryExtensionsTests

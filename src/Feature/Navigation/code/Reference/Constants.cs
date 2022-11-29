@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace Thread.Feature.Navigation.Reference
+namespace AtriusHealth.Feature.Navigation.Reference
 {
 	public static class Constants
 	{
@@ -12,7 +12,7 @@ namespace Thread.Feature.Navigation.Reference
 
 	    public static class EditFrameButtons
 	    {
-	        public const string NavigationColumns = "/sitecore/content/Applications/WebEdit/Custom Experience Buttons/Thread/Feature/Navigation/Footer Navigation Columns";
+	        public const string NavigationColumns = "/sitecore/content/Applications/WebEdit/Custom Experience Buttons/AtriusHealth/Feature/Navigation/Footer Navigation Columns";
 	    }
     }
 }

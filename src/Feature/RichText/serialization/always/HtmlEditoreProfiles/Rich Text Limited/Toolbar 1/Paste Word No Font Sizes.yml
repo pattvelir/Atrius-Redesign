@@ -1,8 +1,8 @@
-﻿---
+---
 ID: "d8a43248-d979-4c5c-8414-cb2a7ad0ad20"
 Parent: "f50aa367-f492-4096-aa14-4b71627153fb"
 Template: "3c8bd8a1-280b-4278-bb8b-21fa3b87af0f"
-Path: /sitecore/system/Settings/Html Editor Profiles/Thread/Rich Text Limited/Toolbar 1/Paste Word No Font Sizes
+Path: /sitecore/system/Settings/Html Editor Profiles/AtriusHealth/Rich Text Limited/Toolbar 1/Paste Word No Font Sizes
 DB: core
 BranchID: "b9ed3ccb-9ec5-4c8c-825b-3dbc2eb0e676"
 SharedFields:
@@ -17,7 +17,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Indsæt fra Word uden skriftstørrelser
+    Value: Inds�t fra Word uden skriftst�rrelser
   Versions:
   - Version: 1
     Fields:
@@ -32,7 +32,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Wort einfügen keine Schriftgrößen
+    Value: Wort einf�gen keine Schriftgr��en
   Versions:
   - Version: 1
     Fields:
@@ -61,7 +61,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: フォント サイズ情報を削除した Word を貼り付け
+    Value: ???? ?????????? Word ?????
   Versions:
   - Version: 1
     Fields:

@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace Thread.Feature.RichText.Tokens
+namespace AtriusHealth.Feature.RichText.Tokens
 {
 	public class Token
 	{

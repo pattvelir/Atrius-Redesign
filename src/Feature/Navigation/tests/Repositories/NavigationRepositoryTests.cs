@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using NSubstitute;
 using NUnit.Framework;
 using Sitecore.Collections;
@@ -7,12 +7,12 @@ using Sitecore.Data.Items;
 using Sitecore.FakeDb;
 using Sitecore.Sites;
 using Sitecore.Web;
-using Thread.Feature.Navigation.Repositories;
-using Thread.Foundation.Multisite.Configuration;
-using Thread.Foundation.Orm.Factory;
-using Thread.Foundation.Orm.Services;
+using AtriusHealth.Feature.Navigation.Repositories;
+using AtriusHealth.Foundation.Multisite.Configuration;
+using AtriusHealth.Foundation.Orm.Factory;
+using AtriusHealth.Foundation.Orm.Services;
 
-namespace Thread.Feature.Navigation.Tests.Repositories
+namespace AtriusHealth.Feature.Navigation.Tests.Repositories
 {
 	[TestFixture]
 	public class NavigationRepositoryTests

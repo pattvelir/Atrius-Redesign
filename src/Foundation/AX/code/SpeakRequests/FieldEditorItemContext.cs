@@ -1,8 +1,8 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 using Sitecore.ExperienceEditor.Speak.Server.Contexts;
 
 
-namespace Thread.Foundation.AX.SpeakRequests
+namespace AtriusHealth.Foundation.AX.SpeakRequests
 {
     public class FieldEditorItemContext : ItemContext
     {

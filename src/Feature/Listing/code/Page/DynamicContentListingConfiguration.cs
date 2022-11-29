@@ -1,17 +1,17 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using Jabberwocky.DependencyInjection.Autowire.Attributes;
 using Sitecore.Data.Items;
-using Thread.Feature.Listing.Services;
+using AtriusHealth.Feature.Listing.Services;
 using Velir.Search.Core.Factory;
 using Velir.Search.Core.Filters;
 using Velir.Search.Core.Page;
 using Velir.Search.Core.Rules.Parser;
 using Velir.Search.Core.Sorts;
 
-namespace Thread.Feature.Listing.Page
+namespace AtriusHealth.Feature.Listing.Page
 {
 	[AutowireService]
 	public class DynamicContentListingConfiguration : PageConfiguration

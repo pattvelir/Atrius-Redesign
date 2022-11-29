@@ -1,5 +1,5 @@
-﻿
-namespace Thread.Foundation.Abstractions.Indexing
+
+namespace AtriusHealth.Foundation.Abstractions.Indexing
 {
 	public interface ISearchable
 	{

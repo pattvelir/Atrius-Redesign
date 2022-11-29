@@ -6,7 +6,7 @@ Param (
     $LicenseXmlPath,
 
     [string]
-    $HostName = "thread",
+    $HostName = "AtriusHealth",
     
     # We do not need to use [SecureString] here since the value will be stored unencrypted in .env,
     # and used only for transient local example environment.
@@ -46,6 +46,9 @@ if (-not (Get-InstalledModule -Name SitecoreDockerTools -RequiredVersion $docker
 Write-Host "Importing SitecoreDockerTools..." -ForegroundColor Green
 Import-Module SitecoreDockerTools -RequiredVersion $dockerToolsVersion
 Write-SitecoreDockerWelcome
+
+Write-Host "Importing Invoke-MsBuild..." -ForegroundColor Green
+Import-Module Invoke-MsBuild
 
 ###############################
 # Populate the environment file

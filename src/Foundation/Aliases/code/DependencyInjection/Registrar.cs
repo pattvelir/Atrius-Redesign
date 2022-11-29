@@ -1,9 +1,9 @@
-﻿using Jabberwocky.DependencyInjection.Extensions;
+using Jabberwocky.DependencyInjection.Extensions;
 using Microsoft.Extensions.DependencyInjection;
 using Sitecore.DependencyInjection;
-using Thread.Foundation.Aliases.Resolvers;
+using AtriusHealth.Foundation.Aliases.Resolvers;
 
-namespace Thread.Foundation.Aliases.DependencyInjection
+namespace AtriusHealth.Foundation.Aliases.DependencyInjection
 {
 	public class Registrar : IServicesConfigurator
 	{

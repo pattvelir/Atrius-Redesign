@@ -1,13 +1,13 @@
-﻿using System;
+using System;
 using System.Web;
 using NSubstitute;
 using NUnit.Framework;
 using Sitecore.Data;
-using Thread.Feature.Account.Cipher;
-using Thread.Feature.Account.Services;
-using Thread.Feature.Account.Services.Models;
+using AtriusHealth.Feature.Account.Cipher;
+using AtriusHealth.Feature.Account.Services;
+using AtriusHealth.Feature.Account.Services.Models;
 
-namespace Thread.Feature.Account.Tests.Services
+namespace AtriusHealth.Feature.Account.Tests.Services
 {
 	[TestFixture]
 	public class AccountLinkServiceTests
@@ -31,12 +31,12 @@ namespace Thread.Feature.Account.Tests.Services
 		{
 			var input = new AccountLinkInput
 			{
-				BaseUrl = "http://dev.thread.velir.com/reset-password",
+				BaseUrl = "http://dev.AtriusHealth.velir.com/reset-password",
 				EmailAddress = "kevin.mazzoni@velir.com",
 				ExpirationMinutes = 30
 			};
             var passwordToken = ID.NewID.ToShortID().ToString();
-			Assert.AreEqual("http://dev.thread.velir.com/reset-password?v=validEncryption", _service.GenerateSecureUrl(input, passwordToken));
+			Assert.AreEqual("http://dev.AtriusHealth.velir.com/reset-password?v=validEncryption", _service.GenerateSecureUrl(input, passwordToken));
 		}
 
 		[Test]
@@ -57,7 +57,7 @@ namespace Thread.Feature.Account.Tests.Services
 		{
 			var input = new AccountLinkInput
 			{
-				BaseUrl = "http://dev.thread.velir.com/reset-password",
+				BaseUrl = "http://dev.AtriusHealth.velir.com/reset-password",
 				ExpirationMinutes = 30
 			};
             var passwordToken = ID.NewID.ToShortID().ToString();
@@ -74,7 +74,7 @@ namespace Thread.Feature.Account.Tests.Services
 		[Test]
 		public void GetAccountParams_HasEmailAndExpiration_ReturnsValidParams()
 		{
-			var request = new HttpRequest("test", "http://dev.thread.velir.com/reset-password", "v=validEncryption");
+			var request = new HttpRequest("test", "http://dev.AtriusHealth.velir.com/reset-password", "v=validEncryption");
 
 			var vals = _service.GetAccountParams(request.QueryString);
 

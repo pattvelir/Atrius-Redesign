@@ -1,10 +1,10 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using NSubstitute;
 using NUnit.Framework;
 using Sitecore.Mvc.Presentation;
-using Thread.Foundation.Mvc.Extensions;
+using AtriusHealth.Foundation.Mvc.Extensions;
 
-namespace Thread.Foundation.Mvc.Tests.Extensions
+namespace AtriusHealth.Foundation.Mvc.Tests.Extensions
 {
 	[TestFixture]
 	public class RenderingContextExtensionsTests

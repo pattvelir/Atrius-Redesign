@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-using Thread.Foundation.Abstractions.Listing;
+using System.Collections.Generic;
+using AtriusHealth.Foundation.Abstractions.Listing;
 
-namespace Thread.Feature.Search.Repositories
+namespace AtriusHealth.Feature.Search.Repositories
 {
 	public interface IFeaturedResultsRepository
     {

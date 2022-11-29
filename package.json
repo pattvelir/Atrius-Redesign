@@ -1,5 +1,5 @@
 {
-  "name": "Thread_Sitecore_Gulp",
+  "name": "AtriusHealth_Sitecore_Gulp",
   "author": "Mike Lambert",
   "version": "5.8.0",
   "description": "This project is based of Velir/frontend-starter v5.8.0",
@@ -97,8 +97,7 @@
     "eslint": "eslint './frontend/**/*.{js,jsx}'",
     "stylelint": "stylelint './frontend/**/*.{css,scss}'",
     "storybook": " start-storybook --port 3030",
-    "build-storybook-demo": "build-storybook --config-dir .storybook-demo --output-dir storybook-static-demo",
-    "build-storybook-graybox": "build-storybook --config-dir .storybook-graybox --output-dir storybook-static-graybox"
+    "build-storybook-atrius": "build-storybook --config-dir .storybook-atrius --output-dir storybook-static-atrius"
   },
   "dependencies": {
     "canvg": "^3.0.5",

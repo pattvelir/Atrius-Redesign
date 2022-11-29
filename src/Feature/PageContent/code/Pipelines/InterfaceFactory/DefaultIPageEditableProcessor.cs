@@ -1,8 +1,8 @@
-﻿using Thread.Feature.PageContent.Factory.PageEditable;
-using Thread.Foundation.Abstractions.PageContent;
-using Thread.Foundation.Orm.Factory.Pipeline;
+using AtriusHealth.Feature.PageContent.Factory.PageEditable;
+using AtriusHealth.Foundation.Abstractions.PageContent;
+using AtriusHealth.Foundation.Orm.Factory.Pipeline;
 
-namespace Thread.Feature.PageContent.Pipelines.InterfaceFactory
+namespace AtriusHealth.Feature.PageContent.Pipelines.InterfaceFactory
 {
 	public class DefaultIPageEditableProcessor : InterfaceFactoryProcessor<IPageEditable>
 	{

@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-using Thread.Foundation.Dictionary.Repositories;
+using System.Collections.Generic;
+using AtriusHealth.Foundation.Dictionary.Repositories;
 
-namespace Thread.Feature.Account.Models
+namespace AtriusHealth.Feature.Account.Models
 {
     public class MemberInterestsModel : MemberProfileBaseModel
     {

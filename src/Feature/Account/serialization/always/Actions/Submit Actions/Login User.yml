@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "0c3d0f64-cdd2-468e-9a7b-012dddaa878d"
 Parent: "891e7268-fa3e-4e74-b4b1-c16b206f2165"
 Template: "c2d1d114-3cfe-4558-a9e3-d1a1ec0fcab7"
@@ -10,7 +10,7 @@ SharedFields:
   Value: Office/32x32/user_monitor.png
 - ID: "2c6e7306-2871-473a-9149-71443182b8e8"
   Hint: Model Type
-  Value: Thread.Feature.Account.Forms.SubmitActions.Login.LoginUser
+  Value: AtriusHealth.Feature.Account.Forms.SubmitActions.Login.LoginUser
 - ID: "b525e9c6-d605-4bda-844f-35d6e8236d10"
   Hint: Enable Robot Submission
   Type: Checkbox

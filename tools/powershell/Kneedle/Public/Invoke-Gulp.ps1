@@ -10,7 +10,8 @@
     .OUTPUTS
         Resulting ouput of the executed Gulp command
     .EXAMPLE
-        Invoke-Gulp -Command "build --no-watch"
+        PS> Invoke-Gulp -Command "build --no-watch"
+        Outputs result of 'gulp build --no-watch'
 #>
 Function Invoke-Gulp {
     param (

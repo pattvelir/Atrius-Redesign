@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using System.Text.RegularExpressions;
 using Leprechaun.MetadataGeneration;
 
-namespace Thread.Foundation.CodeGen
+namespace AtriusHealth.Foundation.CodeGen
 {
 	public class FlatTypeNameGenerator : ITypeNameGenerator
 	{

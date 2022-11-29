@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "0155a6ad-5205-46f2-9514-0c4ec32a2bed"
 Parent: "a70349d9-28b1-4949-96ec-37cab79156b6"
 Template: "fed6a14f-0d05-4e18-b160-17c0588a2005"
@@ -7,7 +7,7 @@ DB: master
 SharedFields:
 - ID: "ee9e23d2-181d-4172-a929-0e0b8d10313c"
   Hint: Model Type
-  Value: Thread.Feature.Social.Models.AddThisModel,Thread.Feature.Social
+  Value: AtriusHealth.Feature.Social.Models.AddThisModel,AtriusHealth.Feature.Social
 Languages:
 - Language: en
   Versions:

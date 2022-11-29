@@ -1,4 +1,4 @@
-﻿using Sitecore.Globalization;
+using Sitecore.Globalization;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -19,7 +19,7 @@ using System.Web.Caching;
 using Sitecore.Web.UI.HtmlControls;
 using Sitecore.Caching;
 
-namespace Thread.Foundation.Dictionary.Services
+namespace AtriusHealth.Foundation.Dictionary.Services
 {
     public class DictionaryService
     {

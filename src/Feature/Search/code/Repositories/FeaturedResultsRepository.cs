@@ -1,15 +1,15 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using Jabberwocky.Core.Caching;
 using Jabberwocky.DependencyInjection.Autowire.Attributes;
 using Sitecore.Data;
 using Sitecore.Data.Items;
-using Thread.Foundation.Abstractions.Listing;
-using Thread.Foundation.Multisite.Configuration;
-using Thread.Foundation.Orm.Factory;
-using Thread.Foundation.Orm.Services;
+using AtriusHealth.Foundation.Abstractions.Listing;
+using AtriusHealth.Foundation.Multisite.Configuration;
+using AtriusHealth.Foundation.Orm.Factory;
+using AtriusHealth.Foundation.Orm.Services;
 
-namespace Thread.Feature.Search.Repositories
+namespace AtriusHealth.Feature.Search.Repositories
 {
     [AutowireService(LifetimeScope.PerScope)]
     public class FeaturedResultsRepository : IFeaturedResultsRepository

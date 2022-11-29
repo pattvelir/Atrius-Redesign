@@ -1,8 +1,8 @@
-﻿using System.Linq;
+using System.Linq;
 using HtmlAgilityPack;
 using Sitecore.Pipelines.RenderField;
 
-namespace Thread.Foundation.ResponsiveImages.Pipelines.RenderField
+namespace AtriusHealth.Foundation.ResponsiveImages.Pipelines.RenderField
 {
 	public class RemoveImageSizeAttributes
 	{

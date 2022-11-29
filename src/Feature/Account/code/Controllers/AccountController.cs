@@ -1,13 +1,13 @@
-﻿using System;
+using System;
 using System.Web.Mvc;
-using Thread.Feature.Account.Models;
-using Thread.Feature.Account.Services;
-using Thread.Foundation.Abstractions.Account;
-using Thread.Foundation.Mvc.Controllers;
+using AtriusHealth.Feature.Account.Models;
+using AtriusHealth.Feature.Account.Services;
+using AtriusHealth.Foundation.Abstractions.Account;
+using AtriusHealth.Foundation.Mvc.Controllers;
 
-namespace Thread.Feature.Account.Controllers
+namespace AtriusHealth.Feature.Account.Controllers
 {
-	public class AccountController : ThreadController
+	public class AccountController : AtriusHealthController
 	{
 		private readonly IMembershipProvider _provider;
         private readonly IMemberProfileService _memberProfileService;

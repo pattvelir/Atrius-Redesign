@@ -1,12 +1,12 @@
-﻿using Jabberwocky.WebApi.Attributes;
+using Jabberwocky.WebApi.Attributes;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
-using Thread.Feature.Search.Repositories;
-using Thread.Foundation.Search.Results;
-using Thread.Foundation.SitecoreExtensions.Base;
+using AtriusHealth.Feature.Search.Repositories;
+using AtriusHealth.Foundation.Search.Results;
+using AtriusHealth.Foundation.SitecoreExtensions.Base;
 
-namespace Thread.Feature.Search.Api.Controllers.FeaturedResults
+namespace AtriusHealth.Feature.Search.Api.Controllers.FeaturedResults
 {
     [Compression,CamelCasingFilter]
     public class FeaturedResultsController : ApiController

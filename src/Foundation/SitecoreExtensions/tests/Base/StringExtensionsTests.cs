@@ -1,7 +1,7 @@
-﻿using NUnit.Framework;
-using Thread.Foundation.SitecoreExtensions.Base;
+using NUnit.Framework;
+using AtriusHealth.Foundation.SitecoreExtensions.Base;
 
-namespace Thread.Foundation.SitecoreExtensions.Tests.Base
+namespace AtriusHealth.Foundation.SitecoreExtensions.Tests.Base
 {
 	[TestFixture]
 	public class StringExtensionsTests

@@ -1,19 +1,19 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Sitecore.ContentSearch.Linq;
 using Sitecore.Data;
-using Thread.Feature.Search.References;
-using Thread.Feature.Search.Repositories;
-using Thread.Foundation.Abstractions.Listing;
-using Thread.Foundation.Search.Results;
+using AtriusHealth.Feature.Search.References;
+using AtriusHealth.Feature.Search.Repositories;
+using AtriusHealth.Foundation.Abstractions.Listing;
+using AtriusHealth.Foundation.Search.Results;
 using Velir.Search.Core.Pipelines.VelirSearchQuery;
 using Velir.Search.Core.Pipelines.VelirSearchQuery.Args;
 using Velir.Search.Core.Reference;
 
-namespace Thread.Feature.Search.Pipelines.VelirSearchQuery
+namespace AtriusHealth.Feature.Search.Pipelines.VelirSearchQuery
 {
-    public class GetFeaturedResults : AbstractVelirSearchQueryProcessor<ThreadSearchResultItem>
+    public class GetFeaturedResults : AbstractVelirSearchQueryProcessor<AtriusHealthSearchResultItem>
     {
         private readonly IFeaturedResultsRepository _featuredResults;
 
@@ -32,7 +32,7 @@ namespace Thread.Feature.Search.Pipelines.VelirSearchQuery
         }
     }
 
-    public class FilterFeaturedResults : AbstractVelirSearchQueryProcessor<ThreadSearchResultItem>
+    public class FilterFeaturedResults : AbstractVelirSearchQueryProcessor<AtriusHealthSearchResultItem>
     {
         public override void Process<TR>(VelirSearchQueryArgs<TR> queryArgs)
         {
@@ -42,7 +42,7 @@ namespace Thread.Feature.Search.Pipelines.VelirSearchQuery
         }
     }
 
-    public class AddFeaturedResultsToResponse : AbstractVelirSearchQueryProcessor<ThreadSearchResultItem>
+    public class AddFeaturedResultsToResponse : AbstractVelirSearchQueryProcessor<AtriusHealthSearchResultItem>
     {
         public override void Process<TR>(VelirSearchQueryArgs<TR> queryArgs)
         {

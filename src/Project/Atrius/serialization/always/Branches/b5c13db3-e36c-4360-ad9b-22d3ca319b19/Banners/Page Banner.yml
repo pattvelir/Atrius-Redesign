@@ -1,0 +1,18 @@
+---
+ID: "4201d05f-c429-430c-b669-362f8102382e"
+Parent: "0514cab2-cc4d-43dc-80b1-ba33a3b8d88f"
+Template: "60ac7f1a-2dda-4022-8f6c-a75fd3732303"
+Path: /sitecore/templates/Branches/Project/Atrius/Sites/New Site with Login/$name/Home/Landing Page/Long Form Page/Components/Banners/Page Banner
+DB: master
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{C28A18BB-179A-44C3-BE25-41047B9B4F7F}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170310T162957Z

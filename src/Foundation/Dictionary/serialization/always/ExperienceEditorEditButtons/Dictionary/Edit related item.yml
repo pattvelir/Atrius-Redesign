@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "dda87845-87c7-4b27-94c0-21fc9b78aca2"
 Parent: "96379a63-af7f-4cee-b02f-25994d0549d4"
 Template: "02404208-46d4-49bf-988b-eb363a52a1c9"
@@ -27,7 +27,7 @@ Languages:
   Fields:
   - ID: "371e0d96-4f00-4b80-ad14-6284e00493ba"
     Hint: Tooltip
-    Value: Rediger elementet i indholdsredigeringsværktøjet.
+    Value: Rediger elementet i indholdsredigeringsv�rkt�jet.
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
     Value: Rediger relateret element
@@ -54,7 +54,7 @@ Languages:
     Value: Verbundenes Item bearbeiten
   - ID: "c523aba8-d1a1-4dcb-aeee-52635a4ab2ae"
     Hint: Header
-    Value: Das zugehörige Item bearbeiten.
+    Value: Das zugeh�rige Item bearbeiten.
   Versions:
   - Version: 1
     Fields:
@@ -87,13 +87,13 @@ Languages:
   Fields:
   - ID: "371e0d96-4f00-4b80-ad14-6284e00493ba"
     Hint: Tooltip
-    Value: 関連するアイテムをコンテンツ エディターで編集します
+    Value: ?????????????? ???????????
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 関連アイテムの編集
+    Value: ?????????
   - ID: "c523aba8-d1a1-4dcb-aeee-52635a4ab2ae"
     Hint: Header
-    Value: 関連アイテムの編集
+    Value: ?????????
   Versions:
   - Version: 1
     Fields:

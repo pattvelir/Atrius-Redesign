@@ -1,7 +1,7 @@
-﻿using System;
-using Thread.Feature.RichText.Tokens;
+using System;
+using AtriusHealth.Feature.RichText.Tokens;
 
-namespace Thread.Feature.RichText.Reference
+namespace AtriusHealth.Feature.RichText.Reference
 {
 	public static class Constants
 	{

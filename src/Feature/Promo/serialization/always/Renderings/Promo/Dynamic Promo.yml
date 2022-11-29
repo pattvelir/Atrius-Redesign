@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "18b407ea-1385-4bad-af8a-422d85b0cef2"
 Parent: "a9ba4f34-6ea2-4e07-a63b-12059044d30f"
 Template: "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6"
@@ -8,10 +8,6 @@ SharedFields:
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
   Value: /sitecore/templates/Feature/Promo/Dynamic Promo
-- ID: "3ad2506a-dc39-4b1e-959f-9d524addbf50"
-  Hint: VaryByParm
-  Type: Checkbox
-  Value: 1
 - ID: "3d08db46-2267-41b0-bc52-be69fd618633"
   Hint: Cacheable
   Type: Checkbox

@@ -1,7 +1,7 @@
-﻿using Thread.Foundation.Abstractions.Indexing;
-using Thread.Foundation.Orm.Factory.Pipeline;
+using AtriusHealth.Foundation.Abstractions.Indexing;
+using AtriusHealth.Foundation.Orm.Factory.Pipeline;
 
-namespace Thread.Feature.Metadata.Pipelines.InterfaceFactory
+namespace AtriusHealth.Feature.Metadata.Pipelines.InterfaceFactory
 {
 	public class IndexBaseISearchableProcessor : InterfaceFactoryProcessor<ISearchable>
 	{

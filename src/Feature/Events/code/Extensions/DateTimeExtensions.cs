@@ -1,7 +1,7 @@
-﻿using System;
-using Thread.Foundation.SitecoreExtensions.Base;
+using System;
+using AtriusHealth.Foundation.SitecoreExtensions.Base;
 
-namespace Thread.Feature.Events.Extensions
+namespace AtriusHealth.Feature.Events.Extensions
 {
 	public static class DateTimeExtensions
 	{

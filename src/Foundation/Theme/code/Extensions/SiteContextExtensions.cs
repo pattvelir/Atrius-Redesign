@@ -1,4 +1,4 @@
-﻿namespace Thread.Foundation.Theme.Extensions
+namespace AtriusHealth.Foundation.Theme.Extensions
 {
     public static class SiteContextExtensions
     {

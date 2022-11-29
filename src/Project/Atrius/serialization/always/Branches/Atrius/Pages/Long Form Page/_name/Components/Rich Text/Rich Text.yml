@@ -1,0 +1,18 @@
+---
+ID: "b99b2c79-2495-4cb8-ab9e-1a870f5e839f"
+Parent: "fd3fac58-b31a-44a7-b1de-3565fa20e122"
+Template: "e4076c99-8864-41c9-a691-e628331ab7c5"
+Path: /sitecore/templates/Branches/Project/Atrius/Pages/Long Form Page/$name/Components/Rich Text/Rich Text
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161205T211641Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
