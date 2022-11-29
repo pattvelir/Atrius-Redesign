@@ -41,7 +41,7 @@
   text-align: left;
   text-decoration: none;
   transition: color 0.28s cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 0.36s cubic-bezier(0.4, 0, 0.2, 1); // Fast Out, Slow In
+    background-color 0.36s cubic-bezier(0.4, 0, 0.2, 1); /* Fast Out, Slow In */
 
   &--active,
   &:hover {

@@ -1,6 +1,6 @@
 import React from "react";
 import { string, arrayOf, shape, bool } from "prop-types";
-import "./utility-nav.scss";
+// import "./utility-nav.scss";
 
 const propTypes = {
   items: arrayOf(

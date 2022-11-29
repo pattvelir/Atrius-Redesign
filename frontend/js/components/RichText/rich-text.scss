@@ -11,7 +11,7 @@ $rich-text__video-width: 328px;
     margin-left: auto;
   }
 
-  // all textual element on the page should receive a max-width
+  /* // all textual element on the page should receive a max-width */
   & > * {
     max-width: var(--max-width, 850px);
     margin-top: 1em;
@@ -133,14 +133,14 @@ $rich-text__video-width: 328px;
 
       .video-block,
       .video-block__media {
-        // don't use percentages here
-        // embed parent has no explicit width
+        /* ** don't use percentages here
+        ** embed parent has no explicit width */
         min-width: $rich-text__video-width;
       }
 
       .video-block__media-placeholder {
-        // for consistency, restrain
-        // placeholder image to video width
+        /* ** for consistency, restrain
+        ** placeholder image to video width */
         width: $rich-text__video-width;
       }
     }

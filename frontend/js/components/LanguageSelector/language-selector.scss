@@ -40,7 +40,7 @@ $language-selector__item-vert-margin: 4px;
   border: 0;
   border-bottom: 2px solid transparent;
   background-color: transparent;
-  transition: color 0.28s cubic-bezier(0.4, 0, 0.2, 1); // Fast Out, Slow In
+  transition: color 0.28s cubic-bezier(0.4, 0, 0.2, 1); /* Fast Out, Slow In */
   cursor: pointer;
 
   &:hover {

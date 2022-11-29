@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from "react";
 import { string, bool, shape } from "prop-types";
 import { loadScript, createPlayer } from "./youtubeService.js";
-import "./youtube-video.scss";
+// import "./youtube-video.scss";
 
 import uniqueid from "lodash.uniqueid";
 import cx from "classnames";

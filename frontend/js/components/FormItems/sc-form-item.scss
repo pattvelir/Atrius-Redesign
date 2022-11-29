@@ -1,6 +1,7 @@
 @import "../../../scss/variables/index.scss";
 
-$c-theme-secondary:red;
+$c-theme-secondary: red;
+
 /* css colors */
 $c-bd-error: #d01500;
 $c-bd-warning: $c-theme-secondary;
@@ -41,13 +42,13 @@ $base-body-color: $grey-700 !default;
   width: 100%;
   padding: 10px 12px;
 
-  // color: $base-body-color;
-  // font-size: 16px;
-  // line-height: 24px;
-  // letter-spacing: 0.25px;
-  // border: 1px solid $base-border-color;
-  // border-radius: 1px;
-  // box-shadow: none;
+  /* ** color: $base-body-color;
+  ** font-size: 16px;
+  ** line-height: 24px;
+  ** letter-spacing: 0.25px;
+  ** border: 1px solid $base-border-color;
+  ** border-radius: 1px;
+  ** box-shadow: none; */
 
   &[readonly] {
   }
@@ -120,7 +121,7 @@ $base-body-color: $grey-700 !default;
   }
 }
 
-// ********************* Start Checkbox ****************** //
+/********************* Start Checkbox ******************/
 
 .sc-form-item--checkbox,
 .sc-form-item--radio {
@@ -216,9 +217,9 @@ $base-body-color: $grey-700 !default;
   opacity: 1;
 }
 
-// ******************* End Checkbox ***************** //
+/******************* End Checkbox *****************/
 
-// ******************* Start Textarea *************** //
+/******************* Start Textarea ***************/
 
 .sc-form-item--textarea {
 }
@@ -227,9 +228,9 @@ $base-body-color: $grey-700 !default;
   min-height: 200px;
 }
 
-// ********** End Textarea ************* //
+/********** End Textarea *************/
 
-// *********  Start Select ************* //
+/*********  Start Select *************/
 
 .select-form-item {
 }
@@ -269,4 +270,4 @@ $base-body-color: $grey-700 !default;
   display: none;
 }
 
-// ********** End Select *********** //
+/********** End Select ***********/

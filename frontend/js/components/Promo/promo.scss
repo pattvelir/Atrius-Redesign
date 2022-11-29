@@ -3,8 +3,7 @@
 $promo-media-margin: 30px;
 
 .promo {
-  // @include component-whitespace();
-  display: flex;
+   display: flex;
   align-items: flex-start;
   flex-direction: column;
   margin-bottom: 2.75rem;

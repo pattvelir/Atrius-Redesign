@@ -1,7 +1,7 @@
 @import "../../../scss/variables/index.scss";
 
 
-// NOTE "position: relative;" needs to be added to the parent with full width.
+/* NOTE "position: relative;" needs to be added to the parent with full width. */
 .mobile-menu {
   .nav-toggle__label {
     @include visually-hidden;

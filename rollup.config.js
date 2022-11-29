@@ -14,6 +14,7 @@ import fg from "fast-glob";
 // import postcssJitProps from "postcss-jit-props";
 import postcss from "rollup-plugin-postcss";
 // import postcss from "postcss";
+// import scss from "rollup-plugin-scss";
 // import postcssEncodeBackgroundSVGs from "postcss-encode-background-svgs";
 import postcssPresetEnv from "postcss-preset-env";
 import dynamicImportVar from "@rollup/plugin-dynamic-import-vars";
@@ -45,6 +46,13 @@ const rollupPlugins = R.reject(
   //reject false
   (i) => !i,
   R.flatten([
+    // scss({ processor: () => postcss(), fileName: "index-generated.css" }),
+    //   extract: "index-generated.css",
+    //   config: {
+    //     path: path.resolve("./postcss.config.js"),
+    //     ctx: { env: yargs?.argv?.environment },
+    //   },
+    // }),
     postcss({
       extract: "index-generated.css",
       config: {
@@ -58,10 +66,9 @@ const rollupPlugins = R.reject(
     //   extract: true,
     // }),
     nodeResolve({
+      extensions: [".js", ".jsx", ".ts", ".tsx", ".json", ".css", ".scss"],
       dedupe: ["react", "react-dom", "ramda", "lodash", "jquery"], // Default: []
       jsnext: true,
-      main: true,
-      browser: true,
     }),
 
     // scss({
@@ -124,9 +131,9 @@ const rollupPlugins = R.reject(
       // (see below for more details)
       // namedExports: { './module.js': ['foo', 'bar' ] }  // Default: undefined
     }),
-    // eslint({
-    //   exclude: ["frontend/**/*.scss", "node_modules/**"],
-    // }),
+    eslint({
+      exclude: ["frontend/**/*.scss", "node_modules/**"],
+    }),
     ...[
       isLocal &&
         isWatching &&

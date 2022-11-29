@@ -139,7 +139,7 @@ $page-banner__caption-offset: 30px;
   text-decoration: none;
   background-color: darken($white, 10);
   transition: background-color 0.28s cubic-bezier(0.4, 0, 0.2, 1),
-    color 0.28s cubic-bezier(0.4, 0, 0.2, 1); // Fast Out, Slow In
+    color 0.28s cubic-bezier(0.4, 0, 0.2, 1); /* Fast Out, Slow In */
 
   &:hover {
     color: $white;

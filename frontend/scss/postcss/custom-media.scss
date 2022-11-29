@@ -1,0 +1,13 @@
+/* hardcoded for testing */
+@custom-media --bp-x-small-min (min-width: 470px);
+@custom-media --bp-small-min (min-width: 680px);
+@custom-media --bp-medium-min (min-width: 780px);
+@custom-media --bp-large-min (min-width: 910px);
+@custom-media --bp-x-large-min (min-width: 1290px);
+@custom-media --bp-global-header-min (min-width: 910px);
+@custom-media --bp-x-small-max (max-width: 469px);
+@custom-media --bp-small-max (max-width: 679px);
+@custom-media --bp-medium-max (max-width: 779px);
+@custom-media --bp-large-max (max-width: 909px);
+@custom-media --bp-x-large-max (max-width: 1289px);
+@custom-media --bp-global-header-max (max-width: 909px);

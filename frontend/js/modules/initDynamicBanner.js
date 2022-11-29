@@ -1,5 +1,5 @@
 import $ from "jquery";
-import "../components/Hero/hero.scss";
+// import "../components/Hero/hero.scss";
 const adjustMedia = ($media, $container) => {
   const imgEl = $media.get(0);
   if (!imgEl || !imgEl.complete || imgEl.naturalWidth === 0) {

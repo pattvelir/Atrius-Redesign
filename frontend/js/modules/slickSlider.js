@@ -1,5 +1,5 @@
 import $ from "jquery";
-import "slick-slider";
+// import "slick-slider";
 
 const slickDefaults = {
   dots: true,

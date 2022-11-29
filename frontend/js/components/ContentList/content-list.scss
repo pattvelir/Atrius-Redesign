@@ -1,14 +1,13 @@
 @import "../../../scss/variables/index.scss";
 
 
-// content-list.scss
+/* // content-list.scss
 // Define content list styles here
 
-// base
+// base */
 
 .content-list {
-  // @include component-whitespace();
-}
+ }
 
 .content-list__heading {
   margin-bottom: 30px;
@@ -24,13 +23,13 @@
   }
 }
 
-// list
+/* // list */
 
 .content-list__list {
   @include zero-list;
 }
 
-// items
+/* // items */
 
 .content-list__item {
   overflow: hidden;

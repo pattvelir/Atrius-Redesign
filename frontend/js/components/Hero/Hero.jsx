@@ -4,7 +4,7 @@ import cx from "classnames";
 import uniqueid from "lodash.uniqueid";
 import BackgroundVideo from "../BackgroundVideo/BackgroundVideo.jsx";
 import ImageElement from "../ImageElement/ImageElement.jsx";
-import "./hero.scss";
+// import "./hero.scss";
 
 const propTypes = {
   height: bool,

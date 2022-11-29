@@ -1,17 +1,17 @@
 @import "../../../scss/variables/index.scss";
 
-// Slick Slider customization should happen per-component,
+/* // Slick Slider customization should happen per-component,
 // however, there are some global settings that can be set in
-// base/_slick-settings.scss
+// base/_slick-settings.scss */
 
 $slideshow-arrow-size: 64px;
 $slideshow-dots-size: 10px;
 
 .slideshow {
   max-width: 100%;
-
+/* 
   // hide all slides except first until
-  // slick slider initializes
+  // slick slider initializes */
 
   .image-block {
     opacity: 0;
@@ -42,7 +42,7 @@ $slideshow-dots-size: 10px;
     }
   }
 
-  // SlickSlider customizations
+  /* // SlickSlider customizations */
 
   .slick-next,
   .slick-prev {
@@ -58,9 +58,9 @@ $slideshow-dots-size: 10px;
       background-color: transparent;
     }
 
-    // the button, the icon container
-    // and svg need to have dimenions
-    // explicitly defined
+    /* ** the button, the icon container
+    ** and svg need to have dimenions
+    ** explicitly defined */
 
     &,
     & .icon,
@@ -100,7 +100,7 @@ $slideshow-dots-size: 10px;
     padding: 2px;
 
     font-size: 0;
-    border-radius: 9999px; // pill shape;
+    border-radius: 9999px; /* pill shape;*/
 
     &:focus-within {
       border: 4px solid #5b9dd9;
@@ -113,7 +113,7 @@ $slideshow-dots-size: 10px;
       margin: 0;
       padding: 10px 12px;
 
-      // match specificy in origin css
+      /* // match specificy in origin css */
 
       button {
         flex: none;

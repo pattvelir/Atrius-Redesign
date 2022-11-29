@@ -1,7 +1,7 @@
 import React from "react";
 import { array } from "prop-types";
 import Icon from "../Icon/Icon.jsx";
-import "./breadcrumbs.scss";
+// import "./breadcrumbs.scss";
 const propTypes = {
   items: array,
 };

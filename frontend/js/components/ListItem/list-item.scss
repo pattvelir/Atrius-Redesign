@@ -61,8 +61,10 @@ $list-item-media-margin: 30px;
 }
 
 .list-item__eyebrow {
-  //  Exceed 100% width to fix IE bug where the eyebrow does not trigger flex-wrap
-  //  For some reason, the computed layout box slightly exceeds the value of width: 100%
+ /*
+ **  Exceed 100% width to fix IE bug where the eyebrow does not trigger flex-wrap
+ **  For some reason, the computed layout box slightly exceeds the value of width: 100%
+ */
   width: 100.5%;
   margin-top: 16px;
   margin-bottom: 4px;

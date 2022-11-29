@@ -1,6 +1,6 @@
 import React from "react";
 import { string } from "prop-types";
-import "./site-logo.scss";
+// import "./site-logo.scss";
 
 const propTypes = {
   title: string,

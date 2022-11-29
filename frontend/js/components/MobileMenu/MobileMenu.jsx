@@ -1,7 +1,7 @@
 import React from "react";
 import { node } from "prop-types";
 import NavToggle from "../NavToggle/NavToggle.jsx";
-import "./mobile-menu.scss";
+// import "./mobile-menu.scss";
 
 const propTypes = { children: node };
 

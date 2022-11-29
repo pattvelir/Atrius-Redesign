@@ -1,16 +1,16 @@
 /**** Markup Notes ****
-// Basic html markup for containers (modifier classes should be used as well)
-// <section class="container">
-//  <div class="container__col">{props.children}</div>
-// </section>
+** Basic html markup for containers (modifier classes should be used as well)
+** <section class="container">
+**  <div class="container__col">{props.children}</div>
+** </section>
 
-// Bleed Containers omit the container__col to help isolate a few styles
-// <section class="container container--bleed">{props.children}</section>
+** Bleed Containers omit the container__col to help isolate a few styles
+** <section class="container container--bleed">{props.children}</section>
 
-// Components can also use the container class to constrain content.
-// <section class="my-component">
-//  <div class="my-component__inner container">...</div>
-// </section>
+** Components can also use the container class to constrain content.
+** <section class="my-component">
+**  <div class="my-component__inner container">...</div>
+** </section>
 */
 
 @import "../../../scss/variables/index.scss";

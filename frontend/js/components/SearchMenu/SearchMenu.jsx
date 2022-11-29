@@ -3,7 +3,7 @@ import {} from "prop-types";
 
 import Icon from "../Icon/Icon.jsx";
 import SearchBox from "../SearchBox/SearchBox.jsx";
-import "./search-menu.scss";
+// import "./search-menu.scss";
 const propTypes = {};
 
 const SearchMenu = (props) => {

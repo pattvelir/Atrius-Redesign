@@ -1,5 +1,5 @@
 import NavMenu from "./navigation/NavMenu.js";
-import "../components/LanguageSelector/language-selector.scss";
+// import "../components/LanguageSelector/language-selector.scss";
 
 // props: {
 //   animationDelay: number

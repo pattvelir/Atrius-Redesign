@@ -1,5 +1,3 @@
-
-
 body {
   --heading-a: var(--font-headings-400-heading-a);
   --heading-b: var(--font-headings-400-heading-b);
@@ -52,7 +50,6 @@ body {
   }
 }
 
-
 body {
   font-size: 16px;
   line-height: 1.25;
@@ -97,45 +94,49 @@ h6 {
 .txt-h1,
 h1 {
   font: var(--heading-a);
-  // @media (--bp-medium-min) {
-  //   --heading-a: var(--font-headings-1600-800-heading-a);
-  // }
+  @media (--bp-medium-min) {
+    --heading-a: var(--font-headings-1600-800-heading-a);
+  }
 }
 
 .heading-2,
 .txt-h2,
 h2 {
   font: var(--heading-b);
-  // @media (--bp-medium-min) {
+
+  /* // @media (--bp-medium-min) {
   //   --heading-b: var(--font-headings-1600-800-heading-b);
-  // }
+  // } */
 }
 
 .heading-3,
 .txt-h3,
 h3 {
   font: var(--heading-c);
-  // @media (--bp-medium-min) {
+
+  /* // @media (--bp-medium-min) {
   //   --heading-c: var(--font-headings-1600-800-heading-c);
-  // }
+  // } */
 }
 
 .heading-4,
 .txt-h4,
 h4 {
   font: var(--heading-d);
-  // @media (--bp-medium-min) {
+
+  /* // @media (--bp-medium-min) {
   //   --heading-d: var(--font-headings-1600-800-heading-d);
-  // }
+  // } */
 }
 
 .heading-5,
 .txt-h5,
 h5 {
   font: var(--heading-e);
-  // @media (--bp-medium-min) {
+
+  /* // @media (--bp-medium-min) {
   //   --heading-e: var(--font-headings-1600-800-heading-e);
-  // }
+  // } */
 }
 
 h6,

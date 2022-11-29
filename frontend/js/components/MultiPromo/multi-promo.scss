@@ -4,7 +4,7 @@ $multi-promo__bp-stack: 600px;
 $multi-promo__promo-space: 30px;
 
 .multi-promo__items {
-  // @include component-whitespace;
+  /* @include component-whitespace;*/
   display: flex;
   flex-wrap: wrap;
   margin-left: -$multi-promo__promo-space;
@@ -33,12 +33,13 @@ $multi-promo__promo-space: 30px;
     width: calc(50% - #{$multi-promo__promo-space});
   }
 
-  // Broken code found v2.5
-  // @media (width: $multi-image__bp-stack) {
-  // 	width: 100%;
-  // }
+  /*  Broken code found v2.5
+  ** @media (width: $multi-image__bp-stack) {
+  ** 	width: 100%;
+  ** }
+  */
 
-  // fix IE flexbox bug to prevent text overflow
+  /* fix IE flexbox bug to prevent text overflow */
 
   .promo {
     display: block;

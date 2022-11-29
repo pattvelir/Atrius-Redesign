@@ -9,11 +9,12 @@ import { themes } from '@storybook/theming';
 
 // import "../frontend/js/index.js";
 import "../frontend/js/index.js";
+// import "../frontend/scss/postcss/custom-media.scss";
+import "../frontend/scss/variables/_props-generated.scss";
 // import "../frontend/scss/index.scss";
 
-import "../frontend/scss/variables/_props-generated.scss";
 //load built css because src file custom media queries dont work 
-import "../build/css/index-generated.css";
+import "../build/index-generated.css";
 
 export const parameters = {
   layout: "fullscreen", // Remove padding from body

@@ -33,27 +33,28 @@
 }
 
 /* 
-// -----------------------------------------------------------------------------
-// Quantity queries
-// -----------------------------------------------------------------------------
-// Table of contents:
-// 1. Last Simple Selector
-// 2. Build Quantity Selector
-// 3. At least
-// 4. At most
-// 5. Between
-// 6. Exactly
+** -----------------------------------------------------------------------------
+** Quantity queries
+** -----------------------------------------------------------------------------
+** Table of contents:
+** 1. Last Simple Selector
+** 2. Build Quantity Selector
+** 3. At least
+** 4. At most
+** 5. Between
+** 6. Exactly
 
-// -----------------------------------------------------------------------------
-// 1. Last Simple Selector
-// -----------------------------------------------------------------------------
+** -----------------------------------------------------------------------------
+** 1. Last Simple Selector
+** -----------------------------------------------------------------------------
 
-/// Find the last simple selector in a given selector
-/// @access private
-/// @param  {list | string} $selector - A single selector
-/// @return {string}                  - The last simple selector in $selector
-/// @example scss
-///   $result: _last-simple-selector(ul > li); // li */
+**  Find the last simple selector in a given selector
+**  @access private
+**  @param  {list | string} $selector - A single selector
+**  @return {string}                  - The last simple selector in $selector
+**  @example scss
+**    $result: _last-simple-selector(ul > li);  li 
+*/
 
 @function _last-simple-selector($selector) {
   $parsed: selector-parse($selector);
@@ -68,15 +69,15 @@
 }
 
 /* 
-// -----------------------------------------------------------------------------
-// 2. Build Quantity Selector
-// -----------------------------------------------------------------------------
+** -----------------------------------------------------------------------------
+** 2. Build Quantity Selector
+** -----------------------------------------------------------------------------
 
-/// Builds the selector for the quantity query
-/// @access private
-/// @param  {string} $selector-append      - The selector to be appended
-/// @param  {string} $last-selector        - The item's selector
-/// @return {list}                         - The final quantity query selector */
+**  Builds the selector for the quantity query
+**  @access private
+**  @param  {string} $selector-append      - The selector to be appended
+**  @param  {string} $last-selector        - The item's selector
+**  @return {list}                         - The final quantity query selector */
 
 @function _build-quantity-selector($selector-append, $last-selector) {
   $quantity-selector: ();
@@ -93,20 +94,20 @@
   @return $quantity-selector;
 }
 
-/* // -----------------------------------------------------------------------------
-// 3. At least
-// -----------------------------------------------------------------------------
+/* ** -----------------------------------------------------------------------------
+** 3. At least
+** -----------------------------------------------------------------------------
 
-/// Query when total items is at least N items
-/// @param  {number} $count - Quantity to match (equal or more)
-/// @example scss - Make the items color red when there are 4 items or more
-///   ul li {
-///     @include at-least(4) { color: red; }
-///   }
-/// @example scss - Make the items color blue when there are 6 items or more and use '*' (element agnostic) as the item selector
-///   ul li {
-///     @include at-least(6, '*') { color: blue; }
-///   } */
+**  Query when total items is at least N items
+**  @param  {number} $count - Quantity to match (equal or more)
+**  @example scss - Make the items color red when there are 4 items or more
+**    ul li {
+**      @include at-least(4) { color: red; }
+**    }
+**  @example scss - Make the items color blue when there are 6 items or more and use '*' (element agnostic) as the item selector
+**    ul li {
+**      @include at-least(6, '*') { color: blue; }
+**    } */
 
 @mixin at-least($count, $selector: null) {
   $selector-append: ":nth-last-child(n+#{$count})";
@@ -130,20 +131,20 @@
 }
 
 /* 
-// -----------------------------------------------------------------------------
-// 4. At most
-// -----------------------------------------------------------------------------
+** -----------------------------------------------------------------------------
+** 4. At most
+** -----------------------------------------------------------------------------
 
-/// Query when total items is at most N items
-/// @param  {number} $count - Quantity to match (equal or less)
-/// @example scss - Make the items color red when there are 4 items or less
-///   ul li {
-///     @include at-most(4) { color: red; }
-///   }
-/// @example scss - Make the items color blue when there are 6 items or less and use '*' (element agnostic) as the item selector
-///   ul li {
-///     @include at-most(6, '*') { color: blue; }
-///   } */
+**  Query when total items is at most N items
+**  @param  {number} $count - Quantity to match (equal or less)
+**  @example scss - Make the items color red when there are 4 items or less
+**    ul li {
+**      @include at-most(4) { color: red; }
+**    }
+**  @example scss - Make the items color blue when there are 6 items or less and use '*' (element agnostic) as the item selector
+**    ul li {
+**      @include at-most(6, '*') { color: blue; }
+**    } */
 
 @mixin at-most($count, $selector: null) {
   $selector-append: ":nth-last-child(-n+#{$count}):first-child";
@@ -167,21 +168,21 @@
 }
 
 /* 
-// -----------------------------------------------------------------------------
-// 5. Between
-// -----------------------------------------------------------------------------
+** -----------------------------------------------------------------------------
+** 5. Between
+** -----------------------------------------------------------------------------
 
-/// Query when total items is at least X items and at most Y items
-/// @param  {number} $at-least - Lower quantity of items to match
-/// @param  {number} $at-most - Higher quantity of items to match
-/// @example scss - Make the items color red when there are at least 2 and at most 4 items
-///   ul li {
-///     @include between(4, 8) { color: red; }
-///   }
-/// @example scss - Make the items color blue when there are at least 6 items and at most 10 items and use '*' (element agnostic) as the item selector
-///   ul li {
-///     @include between(6, 10, '*') { color: blue; }
-///   } */
+**  Query when total items is at least X items and at most Y items
+**  @param  {number} $at-least - Lower quantity of items to match
+**  @param  {number} $at-most - Higher quantity of items to match
+**  @example scss - Make the items color red when there are at least 2 and at most 4 items
+**    ul li {
+**      @include between(4, 8) { color: red; }
+**    }
+**  @example scss - Make the items color blue when there are at least 6 items and at most 10 items and use '*' (element agnostic) as the item selector
+**    ul li {
+**      @include between(6, 10, '*') { color: blue; }
+**    } */
 
 @mixin between($first, $last, $selector: null) {
   $selector-append: ":nth-last-child(n+#{$first}):nth-last-child(-n+#{$last}):first-child";
@@ -213,20 +214,20 @@
 }
 
 /* 
-// -----------------------------------------------------------------------------
-// 6. Exactly
-// -----------------------------------------------------------------------------
+ -----------------------------------------------------------------------------
+ 6. Exactly
+ -----------------------------------------------------------------------------
 
-/// Query when total items is exactly N items
-/// @param  {number} $count - Quantity to match (equal)
-/// @example scss - Make the items color red when there are exactly 4 items
-///   ul li {
-///     @include exactly(4) { color: red; }
-///   }
-/// @example scss - Make the items color blue when there are exactly 6 items and use '*' (element agnostic) as the item selector
-///   ul li {
-///     @include exactly(6, '*') { color: blue; }
-///   } */
+  Query when total items is exactly N items
+  @param  {number} $count - Quantity to match (equal)
+  @example scss - Make the items color red when there are exactly 4 items
+    ul li {
+      @include exactly(4) { color: red; }
+    }
+  @example scss - Make the items color blue when there are exactly 6 items and use '*' (element agnostic) as the item selector
+    ul li {
+      @include exactly(6, '*') { color: blue; }
+    } */
 
 @mixin exactly($count, $selector: null) {
   $selector-append: ":nth-last-child(#{$count}):first-child";

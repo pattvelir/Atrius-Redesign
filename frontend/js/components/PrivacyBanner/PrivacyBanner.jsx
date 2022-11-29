@@ -1,6 +1,6 @@
 import React from "react";
 import { string } from "prop-types";
-import "./privacy-banner.scss";
+// import "./privacy-banner.scss";
 const propTypes = {
   policyDescription: string.isRequired,
   buttonText: string.isRequired,

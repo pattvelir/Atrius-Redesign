@@ -1,35 +1,39 @@
-const path = require("path");
+const path = require('path')
 module.exports = {
-  stories: ["../frontend/**/*.stories.jsx"],
+  features: {
+    postcss: true,
+  },
+  stories: ['../frontend/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: [
-    "@whitespace/storybook-addon-html",
-    "storybook-dark-mode",
+    '@storybook/preset-scss',
+    '@storybook/addon-links',
+    '@storybook/addon-essentials',
     {
       name: '@storybook/addon-postcss',
+      sideEffects: true,
       options: {
         postcssLoaderOptions: {
           implementation: require('postcss'),
         },
       },
-    },
-    "@storybook/preset-scss",
-    "@storybook/addon-a11y",
-    "@storybook/addon-links", 
-    "@storybook/addon-essentials",
+    }
+
   ],
-  core:{
-    disableTelemetry: true,
-  },
-  // webpackFinal: async (config, { configType }) => {
-  //   // Make whatever fine-grained changes you need
-  //   config.module.rules.push({
-  //     test: /\.scss$/,
-  //     use: ["style-loader", "css-loader", "sass-loader"],
-  //     include: path.resolve(__dirname, "../"),
-  //   });
+  framework: '@storybook/react',
+  static: ['build'],
+  webpackFinal: async (config, { configType }) => {
+    // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
+    // You can change the configuration based on that.
+    // 'PRODUCTION' is used when building the static version of storybook.
 
-  //   // Return the altered config
-  //   return config;
-  // }
+    // Make whatever fine-grained changes you need
+    config.module.rules.push({
+      test: /\.scss$/,
+      use: ['scss-loader','style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
+      include: path.resolve(__dirname, '../'),
+      exclude: path.resolve('./node_modules/', '../')
+    });
+    return config;
+  }
 
-};
+}

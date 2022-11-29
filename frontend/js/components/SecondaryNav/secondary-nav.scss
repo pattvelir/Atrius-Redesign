@@ -89,10 +89,10 @@ $secondary-nav__list-vert-margin: 16px;
   }
 
   @media (--bp-x-small-max) {
-    // hide all items except the
-    // active parent. But hide
-    // the text inside the active parent
-    // link
+    /* ** hide all items except the
+    ** active parent. But hide
+    ** the text inside the active parent
+    ** link */
     display: none;
 
     &.is-current-parent {

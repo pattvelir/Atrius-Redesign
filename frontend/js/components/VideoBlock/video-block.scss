@@ -1,7 +1,7 @@
 @import "../../../scss/variables/index.scss";
 
 /* media wrapper
-// Intrinsic Ratios - http://alistapart.com/article/creating-intrinsic-ratios-for-video
+** Intrinsic Ratios - http://alistapart.com/article/creating-intrinsic-ratios-for-video
 */
 .video-block__media-wrapper {
   position: relative;
@@ -10,9 +10,9 @@
   overflow: hidden;
   padding-bottom: 56.25%;
 
-  /* // 16x9 Aspect Ratio
+  /* 16x9 Aspect Ratio */
 
-  // video, iframe, object and embed */
+  /* video, iframe, object and embed */
 
   video,
   iframe,
@@ -27,16 +27,16 @@
   }
 }
 
-/* // media placeholder
-// we position this appropriately but hide it be default.
-// only sitecore authors should see this display. */
+/* ** media placeholder
+** we position this appropriately but hide it be default.
+** only sitecore authors should see this display. */
 
 .video-block__media-placeholder {
   display: none;
   width: 100%;
 }
 
-/* // figcaption */
+/* ** figcaption */
 
 .video-block__caption {
   max-width: 700px;

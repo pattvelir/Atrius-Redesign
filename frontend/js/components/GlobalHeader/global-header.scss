@@ -1,10 +1,10 @@
 @import "../../../scss/variables/index.scss";
 
-// global-header.scss
-// Define global header styles here
+/* /* global-header.scss
+/* Define global header styles here */
 $global-header__bottom-space: 30px;
 
-// base
+/* base */
 
 .global-header {
   position: relative;
@@ -96,7 +96,7 @@ $global-header__bottom-space: 30px;
 .global-header__search-form {
   margin-left: 7px;
 
-  // responsive layout
+  /* responsive layout */
   @media (max-width: 740px) {
     display: block;
     margin-bottom: 12px;

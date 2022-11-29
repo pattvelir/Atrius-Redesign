@@ -6,7 +6,7 @@ import UtilityNav from "../UtilityNav/UtilityNav.jsx";
 import PrimaryNav from "../PrimaryNav/PrimaryNav.jsx";
 import MobileMenu from "../MobileMenu/MobileMenu.jsx";
 import LanguageSelector from "../LanguageSelector/LanguageSelector.jsx";
-import "./global-header.scss";
+// import "./global-header.scss";
 
 const propTypes = {
   primaryNav: array.isRequired,

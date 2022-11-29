@@ -1,6 +1,6 @@
 @import "../../../scss/variables/index.scss";
 
-// button element
+/* button element*/
 .nav-toggle {
   display: block;
   padding: 0;
@@ -9,10 +9,10 @@
   cursor: pointer;
 }
 
-// Original Icon style and animation code cribbed from
-// http://codepen.io/pedrocampos/pen/gufrx/
-// This has been modified
-
+/* Original Icon style and animation code cribbed from
+** http://codepen.io/pedrocampos/pen/gufrx/
+** This has been modified
+*/
 .nav-toggle__icon {
   position: relative;
   display: inline-block;
