@@ -5,7 +5,7 @@ module.exports = {
   },
   stories: ['../frontend/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: [
-    "@whitespace/storybook-addon-html",
+    '@whitespace/storybook-addon-html',
     '@storybook/preset-scss',
     '@storybook/addon-links',
     '@storybook/addon-essentials',
@@ -21,7 +21,7 @@ module.exports = {
 
   ],
   framework: '@storybook/react',
-  static: ['build'],
+  staticDirs: ['../build'],
   webpackFinal: async (config, { configType }) => {
     // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
     // You can change the configuration based on that.

@@ -4,5 +4,6 @@
   "componentsPath": "frontend/js/components",
   "hooksPath": "frontend/js/hooks",
   "contextsPath": "frontend/js/contexts",
-  "isImportStyles": true
+  "isImportStyles": true,
+  "servicesPath": "frontend/js/services"
 }
