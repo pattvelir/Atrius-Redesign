@@ -182,3 +182,4 @@ build/*
 /build/**/*
 bundle.css
 bundle.css.map
+build/
