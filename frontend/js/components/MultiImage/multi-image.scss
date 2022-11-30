@@ -1,4 +1,4 @@
-@import "../../../scss/variables/index.scss";
+@import "../../../scss/variables/index";
 
 $multi-image__bp-stack: 600px;
 $multi-image__grid-space: 30px;
@@ -41,7 +41,7 @@ $multi-image__grid-space: 30px;
     margin-right: 0;
   }
 
-  /* fix IE flexbox bug to prevent text overflow*/
+  /* fix IE flexbox bug to prevent text overflow */
 
   .image-block {
     display: block;

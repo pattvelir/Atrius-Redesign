@@ -13,7 +13,7 @@
 ** </section>
 */
 
-@import "../../../scss/variables/index.scss";
+@import "../../../scss/variables/index";
 
 :root {
   --l-container-vertical-spacing-l: 60px;
@@ -31,17 +31,17 @@
 
 /**** Vertical Spacing ****/
 .main-content-wrapper {
-  /* All components directly added to the main content area are considered the different sections of the page.*/
+  /* All components directly added to the main content area are considered the different sections of the page. */
   & > * + * {
     margin-top: var(--l-container-vertical-spacing-l);
   }
 
-  /* special treatment for <main> to add bottom spacing above the footer for regular containers*/
+  /* special treatment for <main> to add bottom spacing above the footer for regular containers */
   & > *:last-child {
     margin-bottom: var(--l-container-vertical-spacing-l);
   }
 
-  /* Components or Bleed Containers with .has-background should remain flush with the footer*/
+  /* Components or Bleed Containers with .has-background should remain flush with the footer */
   & > .has-background:last-child {
     margin-bottom: 0;
   }
@@ -49,19 +49,20 @@
 
 .container--bleed,
 .container__col {
-  /* All components added in a container are considered part of a section*/
+  /* All components added in a container are considered part of a section */
   & > * + * {
     margin-top: var(--l-container-vertical-spacing-s);
   }
 }
 
-/* no space between has-background containers or components*/
+/* no space between has-background containers or components */
 .has-background + .has-background {
   margin-top: 0;
 }
 
 /**** Container Layouts ****/
-/* re-usable class on any component to contrain content (padding is stripped when placed in a non-bleed container)*/
+
+/* re-usable class on any component to contrain content (padding is stripped when placed in a non-bleed container) */
 .container {
   position: relative;
   width: 100%;
@@ -77,14 +78,14 @@
   }
 }
 
-/* bleed containers should allow its children to span the full width of the page*/
+/* bleed containers should allow its children to span the full width of the page */
 .container--bleed {
   max-width: 100%;
   padding-right: 0;
   padding-left: 0;
 }
 
-/* If a Bleed container has a background color add paddding*/
+/* If a Bleed container has a background color add paddding */
 .container--bleed.has-background {
   padding-top: var(--l-container-vertical-spacing-l);
   padding-right: var(--l-container-gutter);

@@ -1,4 +1,5 @@
-@import "../../../scss/variables/index.scss";
+@import "../../../scss/variables/index";
+
 /* Define global header styles here */
 $global-header__bottom-space: 30px;
 
@@ -11,20 +12,20 @@ $global-header__bottom-space: 30px;
     display: block;
     margin-top: 0;
   }
-  .site-logo{
-    padding:  20px 0;
 
-    img{
-      margin:0;
-      padding: 0;
-      display: block;
+  .site-logo {
+    padding: 20px 0;
+
+    img {
       position: relative;
+      display: block;
+      margin: 0;
+      padding: 0;
     }
 
     @media (--bp-large-min) {
       padding: 16px 0;
     }
-
   }
 }
 
@@ -41,7 +42,7 @@ $global-header__bottom-space: 30px;
 .global-header__top-container {
   display: flex;
   justify-content: space-between;
-  
+
   > div {
     width: 100%;
   }
@@ -50,11 +51,13 @@ $global-header__bottom-space: 30px;
     width: 100%;
   }
 }
-.global-header__utility-container{
+
+.global-header__utility-container {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  *{
+
+  * {
     flex-basis: auto;
   }
 }
@@ -73,24 +76,22 @@ $global-header__bottom-space: 30px;
 
 .global-header__bottom-left {
   flex: auto;
- }
+}
 
 .global-header__search-form {
- 
   /* responsive layout */
   @media (max-width: 740px) {
     display: block;
-   }
+  }
 
   @media (max-width: 560px) {
     width: 90%;
-   }
+  }
 }
 
 .global-header__mobile {
   display: flex;
   align-items: center;
-  
 
   @media (--bp-global-header-min) {
     display: none;

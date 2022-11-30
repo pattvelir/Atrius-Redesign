@@ -1,4 +1,4 @@
-@import "../../../scss/variables/index.scss";
+@import "../../../scss/variables/index";
 
 .youtube-video {
   position: relative;
@@ -86,7 +86,7 @@
     content: "";
     transition: border-color 500ms;
 
-    /*the play button doesnt look centered at -50, -50*/
+    /* the play button doesnt look centered at -50, -50 */
     transform: translate(-37%, -50%);
 
     @media (--bp-small-min) {

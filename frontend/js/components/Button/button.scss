@@ -1,5 +1,5 @@
 /* This file is using the `_` so it can be included earlier in the bundle to make overrides easier */
-@import "../../../scss/variables/index.scss";
+@import "../../../scss/variables/index";
 
 .btn {
   display: inline-block;
@@ -8,7 +8,7 @@
 
   /* Prevent button from inheriting line-height */
   vertical-align: middle;
-  background:var(--color-green-500);
+  background: var(--color-green-500);
   transition: color 0.35s, background-color 0.35s, border-color 0.35s;
   cursor: pointer;
   @media (--bp-medium-min) {

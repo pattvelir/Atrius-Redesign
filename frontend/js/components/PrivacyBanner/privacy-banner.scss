@@ -1,5 +1,4 @@
-@import "../../../scss/variables/index.scss";
-
+@import "../../../scss/variables/index";
 
 .privacy-banner {
   position: fixed;
@@ -16,9 +15,9 @@
 
   &.is-hidden {
     visibility: hidden;
-    pointer-events: none;
-    transform: translateY(100%);
     transition: transform 400ms ease-in-out, visibility 400ms ease-in-out 400ms;
+    transform: translateY(100%);
+    pointer-events: none;
   }
 }
 
@@ -56,7 +55,7 @@
   flex-shrink: 1;
 
   a:focus {
-    color: rgb(97, 97, 97 );
+    color: rgb(97 97 97);
   }
 
   @media (--bp-large-max) {

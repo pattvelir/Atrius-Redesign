@@ -1,5 +1,4 @@
-@import "../../../scss/variables/index.scss";
-
+@import "../../../scss/variables/index";
 
 .site-logo {
   display: flex;
@@ -23,8 +22,8 @@
 }
 
 .site-logo__title {
-  margin-left: 0.5em;
   display: none;
+  margin-left: 0.5em;
 
   @media (--bp-large-max) {
     margin-top: 10px;

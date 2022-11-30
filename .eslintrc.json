@@ -1,4 +1,9 @@
 {
-    "extends": ["@velir-fe/eslint-config-velir"]
-
+    "extends": ["@velir-fe/eslint-config-velir"],
+    "ignorePatterns": ["/frontend/js/custom-vendor/**/*.js"],
+    "rules":{
+        "react/jsx-filename-extension":0,
+        "no-unused-vars":0,
+        "jsx-a11y/anchor-is-valid":0
+    }
 }

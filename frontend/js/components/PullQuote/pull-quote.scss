@@ -1,5 +1,4 @@
-@import "../../../scss/variables/index.scss";
-
+@import "../../../scss/variables/index";
 
 .pull-quote {
   padding: 40px;
@@ -10,7 +9,7 @@
   }
 }
 
-/* add back horizontal padding removed from container.scss*/
+/* add back horizontal padding removed from container.scss */
 .pull-quote.container {
   padding-right: 30px;
   padding-left: 30px;

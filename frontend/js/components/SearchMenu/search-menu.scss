@@ -1,12 +1,12 @@
-@import "../../../scss/variables/index.scss";
+@import "../../../scss/variables/index";
 
- 
 .search-menu {
   .search-menu__button {
-    .search-menu__close{
+    .search-menu__close {
       display: none;
     }
-    .search-menu__open{
+
+    .search-menu__open {
       display: block;
     }
   }
@@ -16,7 +16,8 @@
       .search-menu__open {
         display: none;
       }
-      .search-menu__close{
+
+      .search-menu__close {
         display: block;
       }
     }
@@ -24,20 +25,14 @@
 }
 
 .search-menu__button {
+  min-width: 96px;
   padding: 0;
   padding-top: 4px;
 
   color: $base-body-color;
-  background: none;
   border: 0;
-  min-width: 96px;
- 
+  background: none;
 }
-
- 
-
-
- 
 
 .search-menu__container {
   overflow: hidden;

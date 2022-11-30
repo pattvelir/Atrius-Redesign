@@ -1,5 +1,4 @@
-@import "../../../scss/variables/index.scss";
-
+@import "../../../scss/variables/index";
 
 $button-color: $grey-700 !default;
 $button-color-hover: $grey-500 !default;
@@ -14,17 +13,17 @@ $button-color-hover: $grey-500 !default;
   height: 40px;
   width: 40px;
   visibility: hidden;
+  opacity: 0;
   padding: 0;
 
   vertical-align: middle;
-  background: $button-color;
   border: none;
   border-radius: 50%;
-  cursor: pointer;
-  opacity: 0;
-  transform: translateY(20px);
+  background: $button-color;
   transition: opacity 0.2s ease, background 0.2s ease, transform 0.2s ease,
     visibility 0.2s ease;
+  transform: translateY(20px);
+  cursor: pointer;
 
   &.is-active {
     visibility: visible;

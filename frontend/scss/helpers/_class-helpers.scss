@@ -1,4 +1,4 @@
-@import "../variables/index.scss";
+@import "../variables/index";
 
 /* class-helpers.scss
 ** Define class helpers here
@@ -11,20 +11,20 @@ $base-label-color: $grey-500 !default;
 $base-label-bg: rgba($grey-100, 0.75) !default;
 $base-label-border: $grey-100 !default;
 
-/* hide from screenreaders and browsers: h5bp.com/u*/
+/* hide from screenreaders and browsers: h5bp.com/u */
 
 .u-hidden {
   display: none !important;
   visibility: hidden;
 }
 
-/* visually hidden, but still available for screenreaders: h5bp.com/v*/
+/* visually hidden, but still available for screenreaders: h5bp.com/v */
 
 .u-visuallyhidden {
   @include visually-hidden;
 }
 
-/* extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p*/
+/* extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
 
 .u-visuallyhidden.focusable:active,
 .u-visuallyhidden:focus {
@@ -52,8 +52,8 @@ $base-label-border: $grey-100 !default;
 
 .u-clearfix::before,
 .u-clearfix::after {
-  display: table;  
-  content: " ";  
+  display: table;
+  content: " ";
 }
 
 .u-clearfix::after {

@@ -1,10 +1,10 @@
-@import "../../../scss/variables/index.scss";
+@import "../../../scss/variables/index";
 
 $multi-promo__bp-stack: 600px;
 $multi-promo__promo-space: 30px;
 
 .multi-promo__items {
-  /* @include component-whitespace;*/
+  /* @include component-whitespace; */
   display: flex;
   flex-wrap: wrap;
   margin-left: -$multi-promo__promo-space;

@@ -68,31 +68,32 @@ const SecondaryNav = (props) => {
                           <a href={currentItem !== subItem.label ? "#" : null}>
                             {subItem.label}
                           </a>
-                          {subItem.submenu && currentChild === subItem.label && (
-                            <ul className="secondary-nav__tertmenu">
-                              {subItem.submenu.map((tertItem, i) => {
-                                return (
-                                  <li
-                                    key={i}
-                                    className={cx("secondary-nav__tertitem", {
-                                      "is-active":
-                                        currentItem === tertItem.label,
-                                    })}
-                                  >
-                                    <a
-                                      href={
-                                        currentItem !== tertItem.label
-                                          ? tertItem.href
-                                          : null
-                                      }
+                          {subItem.submenu &&
+                            currentChild === subItem.label && (
+                              <ul className="secondary-nav__tertmenu">
+                                {subItem.submenu.map((tertItem, i) => {
+                                  return (
+                                    <li
+                                      key={i}
+                                      className={cx("secondary-nav__tertitem", {
+                                        "is-active":
+                                          currentItem === tertItem.label,
+                                      })}
                                     >
-                                      {tertItem.label}
-                                    </a>
-                                  </li>
-                                );
-                              })}
-                            </ul>
-                          )}
+                                      <a
+                                        href={
+                                          currentItem !== tertItem.label
+                                            ? tertItem.href
+                                            : null
+                                        }
+                                      >
+                                        {tertItem.label}
+                                      </a>
+                                    </li>
+                                  );
+                                })}
+                              </ul>
+                            )}
                         </li>
                       );
                     })}
