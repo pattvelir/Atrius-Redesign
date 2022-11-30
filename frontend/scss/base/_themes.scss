@@ -1,0 +1,14 @@
+.theme-dark{
+background-color: var(--color-neutral-900);
+color:var(--color-design-system-white);
+&.theme-dark--blue{
+  background-color: var(--color-blue-800);
+}
+
+}
+.theme-light{
+ color: var(--color-neutral-900);
+ 
+&.theme-dark--blue{
+  background-color: var(--color-blue-800);
+}

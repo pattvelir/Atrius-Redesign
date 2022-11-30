@@ -1,0 +1,24 @@
+.text-w-icon {
+    display: inline-flex;
+    width: auto;
+    word-break: keep-all;
+    white-space: pre;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+
+  span{
+    flex-basis: calc(100% - 24px);
+  }
+  
+  & > svg {
+    flex-basis: 24px;
+   }
+}
+
+.text-w-icon--reverse {
+  flex-direction: row-reverse;
+}
+ 
+
+ 

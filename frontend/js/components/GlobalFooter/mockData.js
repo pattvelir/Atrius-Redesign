@@ -4,8 +4,8 @@ export default {
     title: "Company Name",
     logoLg: "",
     logoSm: `
-      /assets/Graybox-build/img/placeholders/logo_placeholder_small.png 66w,
-      /assets/Graybox-build/img/placeholders/logo_placeholder.png 112w
+      //img/placeholders/logo_placeholder_small.png 66w,
+      //img/placeholders/logo_placeholder.png 112w
     `,
     sizesSm: "(min-width: 910px) 112px, 66px",
     sizesLg: "",

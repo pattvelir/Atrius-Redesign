@@ -18,14 +18,17 @@ module.exports = (context) => {
   return postcss({
     minimize: context.options.env === "production" ? true : false,
     sourceMap: context.options.env === "production" ? false : "inline",
-    loaders: ["sass-loader", "scss-loader", "style-loader", "css-loader"],
+    loaders: ["sass-loader", "style-loader", "css-loader"],
     // insertBefore: {
     //   "all-property": postcssSimpleVars,
     // },
+    syntax: "postcss-scss",
     parser: "postcss-scss",
 
-    syntax: "scss",
     plugins: R.unnest([
+      importExtGlob(),
+
+      require("postcss-atroot"),
       require("postcss-nested"),
       autoprefixer(),
       postcssSimpleVars({ silent: true }),
@@ -39,6 +42,7 @@ module.exports = (context) => {
         features: {
           "custom-properties": {
             warnings: true,
+            preserve: true,
           },
           "custom-media-queries": {
             preserve: true,
@@ -47,7 +51,6 @@ module.exports = (context) => {
           },
         },
       }),
-      // importExtGlob({ sort: "desc" }),
       postcssImport(),
       postcssJitProps({
         ...OpenProps,

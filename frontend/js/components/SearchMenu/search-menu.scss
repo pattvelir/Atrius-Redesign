@@ -1,8 +1,26 @@
 @import "../../../scss/variables/index.scss";
 
  
-
 .search-menu {
+  .search-menu__button {
+    .search-menu__close{
+      display: none;
+    }
+    .search-menu__open{
+      display: block;
+    }
+  }
+
+  &.is-open {
+    .search-menu__button {
+      .search-menu__open {
+        display: none;
+      }
+      .search-menu__close{
+        display: block;
+      }
+    }
+  }
 }
 
 .search-menu__button {
@@ -12,31 +30,14 @@
   color: $base-body-color;
   background: none;
   border: 0;
-
-  .icon {
-    height: 32px;
-    width: 32px;
-  }
+  min-width: 96px;
+ 
 }
 
-.search-menu__open,
-.search-menu__close {
-  display: block;
-}
+ 
 
-.search-menu__open {
-  .search-menu__button[aria-expanded="true"] & {
-    display: none;
-  }
-}
 
-.search-menu__close {
-  display: none;
-
-  .search-menu__button[aria-expanded="true"] & {
-    display: block;
-  }
-}
+ 
 
 .search-menu__container {
   overflow: hidden;

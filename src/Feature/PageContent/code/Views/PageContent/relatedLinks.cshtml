@@ -18,11 +18,11 @@
           <li class="related-links__link">
             @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
             {
-              @Html.Sitecore().Field(link.Link, new { @class = "arrow-link" })
+              @Html.Sitecore().Field(link.Link, new { @class = "text-w-icon" })
             }
             else
             {
-              @Html.Sitecore().BeginField(link.Link, new { wrap = "span", @class = "arrow-link" })
+              @Html.Sitecore().BeginField(link.Link, new { wrap = "span", @class = "text-w-icon" })
               @Html.RenderSvg("arrow-right", "icon icon--arrow-right")
               @Html.Sitecore().EndField()
             }

@@ -6,7 +6,6 @@ import UtilityNav from "../UtilityNav/UtilityNav.jsx";
 import PrimaryNav from "../PrimaryNav/PrimaryNav.jsx";
 import MobileMenu from "../MobileMenu/MobileMenu.jsx";
 import LanguageSelector from "../LanguageSelector/LanguageSelector.jsx";
-// import "./global-header.scss";
 
 const propTypes = {
   primaryNav: array.isRequired,
@@ -17,25 +16,25 @@ const propTypes = {
 
 const globalHeader = (props) => {
   const { primaryNav, siteLogo, utilityNav, langSelect } = props;
-
+  console.log(siteLogo);
   return (
     <section className="global-header">
       <div className="global-header__desktop">
         <div className="global-header__top">
-          <div className="global-header__top-container container container--100">
-            <UtilityNav {...utilityNav} />
-            {langSelect && <LanguageSelector {...langSelect} />}
-          </div>
-        </div>
-        <div className="global-header__container container container--100">
-          <div className="global-header__bottom">
-            <div className="global-header__bottom-left">
+          <div className="global-header__top-container container container--50-50">
+            <div className="container__col container__col--50 container__col--left">
               <SiteLogo {...siteLogo} />
             </div>
-            <div className="global-header__bottom-right">
-              <PrimaryNav primaryNav={primaryNav} utilityNav={utilityNav} />
-              <SearchMenu />
+            <div className="container__col container__col--50 container__col--right global-header__utility-container">
+              <UtilityNav {...utilityNav} />
+              {langSelect && <LanguageSelector {...langSelect} />}
             </div>
+          </div>
+        </div>
+        <div className="global-header__container container">
+          <div className="global-header__bottom">
+            <PrimaryNav primaryNav={primaryNav} utilityNav={utilityNav} />
+            <SearchMenu />
           </div>
         </div>
       </div>

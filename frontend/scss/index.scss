@@ -1,12 +1,12 @@
 /**
 * index
 **/
-@import "./postcss/custom-media.scss";
-@import "./variables/index.scss";
-@import "./base/index.scss";
-@import "./helpers/index.scss";
-@import "./modules/index.scss";
-
+ @import "./postcss/custom-media.scss";
+ @import "./variables/index.scss";
+ @import "./base/index.scss";
+ @import "./helpers/index.scss";
+ @import "./modules/index.scss";
+ 
 @import "../js/components/ShareBar/share-bar.scss";
 @import "../js/components/LanguageSelector/language-selector.scss";
 @import "../js/components/MultiImage/multi-image.scss";
@@ -39,7 +39,6 @@
 @import "../js/components/SearchModules/components/LoadingSpinner/loading-spinner.scss";
 @import "../js/components/SearchModules/components/ResultsInfo/results-info.scss";
 @import "../js/components/PrimaryNav/primary-nav.scss";
-@import "../js/components/TextIcon/TextIcon.scss";
 @import "../js/components/TextBanner/text-banner.scss";
 @import "../js/components/BackToTop/back-to-top.scss";
 @import "../js/components/ListItem/list-item.scss";
@@ -50,7 +49,7 @@
 @import "../js/components/Button/button.scss";
 @import "../js/components/ContentList/content-list.scss";
 @import "../js/components/YouTubeVideo/youtube-video.scss";
-@import "../js/components/ArrowLink/arrow-link.scss";
+@import "../js/components/TextWithIcon/text-w-icon.scss";
 @import "../js/components/MultiPromo/multi-promo.scss";
 @import "../js/components/VideoBlock/video-block.scss";
 @import "../js/components/SecondaryNav/secondary-nav.scss";

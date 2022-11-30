@@ -2,7 +2,7 @@ import React from "react";
 import { object, string } from "prop-types";
 import cx from "classnames";
 
-import ArrowLink from "../../ArrowLink/ArrowLink.jsx";
+import TextWithIcon from "../../TextWithIcon/TextWithIcon.jsx";
 
 const propTypes = {
   title: string,

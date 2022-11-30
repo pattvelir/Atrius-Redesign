@@ -45,7 +45,7 @@ export const heroVideoHeight = () => (
       hasVideo={true}
       hasImage={false}
       height="400px"
-      video="/assets/Graybox-build/img/placeholders/paris.mp4"
+      video="//img/placeholders/paris.mp4"
     />
   </ContainerBleed>
 );
@@ -56,7 +56,7 @@ export const heroVideo = () => (
       {...mockData.videoHero}
       hasVideo={true}
       hasImage={false}
-      video="/assets/Graybox-build/img/placeholders/paris.mp4"
+      video="//img/placeholders/paris.mp4"
     />
   </ContainerBleed>
 );

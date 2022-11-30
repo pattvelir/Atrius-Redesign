@@ -1,6 +1,6 @@
 import React from "react";
 import { string, array } from "prop-types";
-import ArrowLink from "../ArrowLink/ArrowLink.jsx";
+import TextWithIcon from "../TextWithIcon/TextWithIcon.jsx";
 
 const propTypes = {
   title: string,
@@ -22,7 +22,7 @@ const RelatedLinks = (props) => {
               return (
                 link.href && (
                   <li key={i} className="related-links__link">
-                    <ArrowLink {...link} />
+                    <TextWithIcon {...link} />
                   </li>
                 )
               );

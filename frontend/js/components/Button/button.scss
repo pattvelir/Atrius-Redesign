@@ -8,7 +8,7 @@
 
   /* Prevent button from inheriting line-height */
   vertical-align: middle;
-  background: black;
+  background:var(--color-green-500);
   transition: color 0.35s, background-color 0.35s, border-color 0.35s;
   cursor: pointer;
   @media (--bp-medium-min) {

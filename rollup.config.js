@@ -8,13 +8,14 @@ import * as R from "ramda";
 import path from "path";
 import yargs from "yargs";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
-import { terser } from "rollup-plugin-terser";
+import terser from "@rollup/plugin-terser";
 import svgSprite from "./tools/gulp/quench/runRollupSvgSprite.js";
 import fg from "fast-glob";
 // import postcssJitProps from "postcss-jit-props";
+import gzipPlugin from "rollup-plugin-gzip";
 import postcss from "rollup-plugin-postcss";
-// import postcss from "postcss";
-// import scss from "rollup-plugin-scss";
+import postcssLib from "postcss";
+import scss from "rollup-plugin-scss";
 // import postcssEncodeBackgroundSVGs from "postcss-encode-background-svgs";
 import postcssPresetEnv from "postcss-preset-env";
 import dynamicImportVar from "@rollup/plugin-dynamic-import-vars";
@@ -30,6 +31,7 @@ import commonjs from "@rollup/plugin-commonjs";
 import eslint from "@rollup/plugin-eslint";
 import globals from "rollup-plugin-node-globals";
 import builtins from "rollup-plugin-node-builtins";
+import stylelint from "rollup-plugin-stylelint";
 
 //if .env is not defined set NODE_ENV to "production"
 const env = yargs?.argv?.environment || NODE_ENV;
@@ -39,44 +41,23 @@ const isCi = env === "ci";
 const isProduction = env === "production";
 const buildDir = "./build";
 const frontendDir = "./frontend";
-// const extensions = [".js", ".jsx"];
-// console.log(isLocal && isWatching);
-
 const rollupPlugins = R.reject(
-  //reject false
   (i) => !i,
   R.flatten([
-    // scss({ processor: () => postcss(), fileName: "index-generated.css" }),
-    //   extract: "index-generated.css",
-    //   config: {
-    //     path: path.resolve("./postcss.config.js"),
-    //     ctx: { env: yargs?.argv?.environment },
-    //   },
-    // }),
     postcss({
-      extract: "index-generated.css",
+      extract: "css/index-generated.css",
+      extensions: [".scss", ".css"],
+      loaders: ["sass-loader"],
       config: {
         path: path.resolve("./postcss.config.js"),
         ctx: { env: yargs?.argv?.environment },
       },
     }),
-    // rollup PostCss
-    // styles({
-    //   onImport: (a, b) => console.log(b),
-    //   extract: true,
-    // }),
     nodeResolve({
-      extensions: [".js", ".jsx", ".ts", ".tsx", ".json", ".css", ".scss"],
+      // extensions: [".js", ".jsx", ".ts", ".tsx", ".json", ".css", ".scss"],
       dedupe: ["react", "react-dom", "ramda", "lodash", "jquery"], // Default: []
       jsnext: true,
     }),
-
-    // scss({
-    //   output: false,
-    //   sass: sass,
-    //   processor: () => postcss(),
-    // }),
-    // scss({ process: postcss }),
     svgSprite({
       src: `${frontendDir}/img/svg`,
       dest: `${frontendDir}/img`,
@@ -123,10 +104,8 @@ const rollupPlugins = R.reject(
       preferBuiltins: false,
       // if true then uses of `global` won't be dealt with by this plugin
       ignoreGlobal: false, // Default: false
-
       // if false then skip sourceMap generation for CommonJS modules
       sourceMap: false, // Default: true
-
       // explicitly specify unresolvable named exports
       // (see below for more details)
       // namedExports: { './module.js': ['foo', 'bar' ] }  // Default: undefined
@@ -134,6 +113,7 @@ const rollupPlugins = R.reject(
     eslint({
       exclude: ["frontend/**/*.scss", "node_modules/**"],
     }),
+    stylelint.default(),
     ...[
       isLocal &&
         isWatching &&
@@ -160,7 +140,14 @@ const rollupPlugins = R.reject(
           livereload({ watch: path.resolve(buildDir), verbose: true }),
         ],
     ],
-    ...[(isProduction || isCi) && terser()],
+
+    ...[
+      (isProduction || isCi) &&
+        terser({
+          ecma: "2019", // specify one of: 5, 2015, 2016, etc.
+        }),
+    ],
+    ...[(isProduction || isCi) && gzipPlugin.default()],
     ...[(isProduction || isCi) && filesize()],
     globals(),
     builtins(),

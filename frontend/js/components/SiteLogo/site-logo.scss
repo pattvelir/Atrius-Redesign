@@ -24,6 +24,7 @@
 
 .site-logo__title {
   margin-left: 0.5em;
+  display: none;
 
   @media (--bp-large-max) {
     margin-top: 10px;
