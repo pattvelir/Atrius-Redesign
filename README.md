@@ -38,20 +38,56 @@ Solution code for the Atrius Health Redesign.
 3. Open a Powershell window as Administrator in the root of your **source** directory
 4. In your Powershell console, run `.\up.ps1 -IncludeDbBackups`.  (If this your first time running the script, you will be prompted for a path to your Sitecore license file, enter a valid path (e.g. C:\data\license\license.xml) and press 'Enter')
 
+### FE Setup
+
+1. Visit https://github.com/settings/tokens/new and create a Github Personal Access Token with *read:packages* permissions selected
+2. On Windows, add a new environment variable named `GH_PAT` with the value of the Personal Access Token created in Step #1.
+3. On a Mac, paste the token generated into your `.zshrc` or `.bash_profile` file. This will make the PAT token available for use in projects and make it possible to use Velir toolkit packages.
+
+```
+export GH_PAT=<GITHUB_TOKEN>
+```
+4. Run `npm install`.
+
+### FE Commands
+
+```bash
+//Run dev server and storybook
+$ npm start 
+//or
+$ npm run dev
+
+//create production build
+$ npm run build
+
+//clean up dependencies and reinstall
+$ npm run fresh-install
+
+// linting
+$ npm run eslint
+//or
+$ npm run eslint -- --fix
+
+//and
+
+$ npm run stylelint
+//or
+$ npm run stylelint -- --fix
+
+// run storybook
+$ npm run storybook
+
+// convert design tokens from figma to css props
+$ npm run convert:tokens
+
+```
+
 ### Creating a New Site
 
 1. From the Sitecore Content Editor, right-click the **Content** item and create a new site using the branch: `/sitecore/templates/Branches/AtriusHealth/Project/Atrius/Sites/New Site`.
 2. Update `rootPath` attribute of website site, in the `/src/Project/Atrius/code/App_Config/Include/zAtriusHealth/AtriusHealth.Project.Atrius.config.example` and rename the file to `AtriusHealth.Project.Atrius.config`.
 3. Right-click `AtriusHealth.Project.Atrius.config`, select **Properties** and set `Build Action` to `Content`.
 4. Right-click on AtriusHealth.Project.Atrius, click **Publish...**.
-
-### Installing Horizion
-
-Horizon customizes the functionality to add fields to Solr, and this customization conflicts with AtriusHealth. This is only an issue during installation, when running "Populate Solr Schema" for the "sitecore_horizon_index". The Horizon class is "internal", so cannot be extended. The workaround is to comment out this line in Foundation.Search.config during the Horizon installation, and then uncomment it afterwards.
-
-```
-    <param set:type="AtriusHealth.Foundation.Search.Schema.CustomPopulateHelperFactory,AtriusHealth.Foundation.Search" />
-```
 
 ## Powershell Module: Kneedle
 

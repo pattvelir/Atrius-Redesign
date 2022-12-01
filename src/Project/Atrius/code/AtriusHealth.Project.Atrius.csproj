@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\..\..\..\packages\Microsoft.Net.Compilers.2.0.1\build\Microsoft.Net.Compilers.props" Condition="Exists('..\..\..\..\packages\Microsoft.Net.Compilers.2.0.1\build\Microsoft.Net.Compilers.props')" />
   <Import Project="..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
@@ -507,66 +507,10 @@
     <Compile Include="Templates.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="assets\Atrius-build\css\index-generated.css.map" />
-    <Content Include="assets\Atrius-build\img\slick\fonts\slick.eot" />
-    <Content Include="assets\Atrius-build\img\slick\fonts\slick.ttf" />
-    <Content Include="assets\Atrius-build\img\slick\fonts\slick.woff" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\add_circle.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\arrow-right.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\arrow_drop_down.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\arrow_drop_up.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\check-circle.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\check-mark.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\check-square.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\chevron-down.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\chevron-left.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\chevron-right.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\chevron-up.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\close.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\close_circle.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\equalizer.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\facebook.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\globe.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\google.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\info-circle.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\linkedin.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\loading-squares.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\logo-full.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\notification-circle.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\pause.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\play.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\pub-date.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\remove_circle.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\rss.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\search.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\social-email.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\social-facebook.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\social-linkedin.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\social-pinterest.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\social-print.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\social-twitter.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\social-youtube.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\twitter.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\unfold_less.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\unfold_more.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite\youtube.svg" />
-    <Content Include="assets\Atrius-build\js\index-generated.js.map" />
-    <Content Include="assets\Atrius-build\js\libraries-generated.js.map" />
     <Content Include="App_Config\Include\Project\Project.Atrius.Serialization.config">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Areas\AtriusHealth\Views\web.config" />
-    <Content Include="assets\Atrius-build\css\index-generated.css" />
-    <Content Include="assets\Atrius-build\img\placeholders\Diagonal.mp4" />
-    <Content Include="assets\Atrius-build\img\placeholders\logo_placeholder.png" />
-    <Content Include="assets\Atrius-build\img\placeholders\logo_placeholder_small.png" />
-    <Content Include="assets\Atrius-build\img\placeholders\paris.mp4" />
-    <Content Include="assets\Atrius-build\img\placeholders\video_block_placeholder_image.svg" />
-    <Content Include="assets\Atrius-build\img\slick\ajax-loader.gif" />
-    <Content Include="assets\Atrius-build\img\slick\fonts\slick.svg" />
-    <Content Include="assets\Atrius-build\img\svg-sprite.svg" />
-    <Content Include="assets\Atrius-build\js\index-generated.js" />
-    <Content Include="assets\Atrius-build\js\libraries-generated.js" />
     <Content Include="App_Config\Include\Project\Project.Atrius.config" />
     <None Include="CodeGen.config">
       <SubType>Designer</SubType>
@@ -640,16 +584,16 @@
     <None Include="Properties\PublishProfiles\local.pubxml" />
   </ItemGroup>
   <ItemGroup>
-        <!-- Publish Storybook site to top level -->
-        <Content Include="..\..\..\..\storybook-static-Atrius\*">
-          <Link>storybook-static-Atrius/%(Filename)%(Extension)</Link>
-          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </Content>
-        <!-- Publish Storybook assets folder to top level -->
-        <Content Include="..\..\..\..\frontend\Atrius\img\**\*">
-          <Link>assets/Atrius-build/img/%(RecursiveDir)%(Filename)%(Extension)</Link>
-          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </Content>
+    <!-- Publish Storybook site to top level -->
+    <Content Include="..\..\..\..\storybook-static-Atrius\*">
+      <Link>storybook-static-Atrius/%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <!-- Publish Storybook assets folder to top level -->
+    <Content Include="..\..\..\..\frontend\Atrius\img\**\*">
+      <Link>assets/Atrius-build/img/%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
