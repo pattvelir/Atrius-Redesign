@@ -29,6 +29,13 @@ $global-header__bottom-space: 30px;
   }
 }
 
+.global-header__bottom-container {
+  display: flex;
+  justify-content: space-between;
+  width: var(--max-content-width);
+  margin: 0 auto;
+}
+
 .global-header__container.container {
   position: static;
 }
