@@ -143,10 +143,9 @@
   "scripts": {
     "dev": " rollup -c ./rollup.config.js --bundleConfigAsCjs -w",
     "start": "run-p dev storybook",
-    "build": "rollup -c --bundleConfigAsCjs",
-    "build:watch": "rollup -c ./rollup.config.js --bundleConfigAsCjs -w",
+    "build": "rollup -c rollup.config.js --bundleConfigAsCjs",
     "build:prod": "rollup -c --bundleConfigAsCjs --environment production",
-    "serve": "http-serve ./build",
+    "serve": "rm -rf build  && npm run build:prod && browser-sync start  -s build --https -c bs-config.js ",
     "fresh-install": "rm -rf node_modules && rm package-lock.json && npm cache clean --force && npm install",
     "eslint": "eslint './frontend/**/*.{js,jsx}'",
     "stylelint": "stylelint './frontend/**/*.{css,scss}'",

@@ -6,10 +6,8 @@ const postcssPresetEnv = require("postcss-preset-env");
 const autoprefixer = require("autoprefixer");
 const postcssImport = require("postcss-import");
 const cssnano = require("cssnano");
-// const combineSelectors = require("postcss-combine-duplicated-selectors");
+const combineSelectors = require("postcss-combine-duplicated-selectors");
 const postcssSimpleVars = require("postcss-simple-vars");
-const importExtGlob = require("postcss-import-ext-glob");
-// const buildDir = "./build";
 const frontendDir = "../frontend";
 const R = require("ramda");
 const postcssCustomMedia = require("postcss-custom-media");
@@ -19,15 +17,11 @@ module.exports = (context) => {
     minimize: context.options.env === "production" ? true : false,
     sourceMap: context.options.env === "production" ? false : "inline",
     loaders: ["sass-loader", "style-loader", "css-loader"],
-    // insertBefore: {
-    //   "all-property": postcssSimpleVars,
-    // },
     syntax: "postcss-scss",
     parser: "postcss-scss",
 
     plugins: R.unnest([
-      importExtGlob(),
-
+      // importExtGlob(),
       require("postcss-atroot"),
       require("postcss-nested"),
       autoprefixer(),
@@ -51,6 +45,7 @@ module.exports = (context) => {
           },
         },
       }),
+      combineSelectors(),
       postcssImport(),
       postcssJitProps({
         ...OpenProps,

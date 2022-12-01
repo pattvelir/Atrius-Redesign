@@ -1,39 +1,29 @@
 import * as dotenv from "dotenv"; // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
 dotenv.config();
 const { NODE_ENV = "production" } = process.env;
-import styles from "rollup-plugin-styles";
-// import path from 'path'
 import * as R from "ramda";
-// import { writeFileSync } from "fs";
 import path from "path";
 import yargs from "yargs";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 import terser from "@rollup/plugin-terser";
 import svgSprite from "./tools/gulp/quench/runRollupSvgSprite.js";
-import fg from "fast-glob";
-// import postcssJitProps from "postcss-jit-props";
 import gzipPlugin from "rollup-plugin-gzip";
 import postcss from "rollup-plugin-postcss";
-import postcssLib from "postcss";
-import scss from "rollup-plugin-scss";
-// import postcssEncodeBackgroundSVGs from "postcss-encode-background-svgs";
-import postcssPresetEnv from "postcss-preset-env";
 import dynamicImportVar from "@rollup/plugin-dynamic-import-vars";
-// import replace from "@rollup/plugin-replace";
-import serve from "rollup-plugin-serve";
-import livereload from "rollup-plugin-livereload";
 import babel from "@rollup/plugin-babel";
-// import autoprefixer from "autoprefixer";
 import copy from "rollup-plugin-copy";
 import filesize from "rollup-plugin-filesize";
-// import OpenProps from "open-props";
 import commonjs from "@rollup/plugin-commonjs";
 import eslint from "@rollup/plugin-eslint";
 import globals from "rollup-plugin-node-globals";
 import builtins from "rollup-plugin-node-builtins";
 import stylelint from "rollup-plugin-stylelint";
+import { brotliCompress } from "zlib";
+import { promisify } from "util";
+import compression from "compression";
+import browsersync from "rollup-plugin-browsersync";
 
-//if .env is not defined set NODE_ENV to "production"
+const brotliPromise = promisify(brotliCompress);
 const env = yargs?.argv?.environment || NODE_ENV;
 const isWatching = yargs?.argv?.w || false;
 const isLocal = env === "development" || env === "local";
@@ -46,6 +36,7 @@ const rollupPlugins = R.reject(
   R.flatten([
     postcss({
       extract: "css/index-generated.css",
+      // inject: true,
       extensions: [".scss", ".css"],
       loaders: ["sass-loader"],
       config: {
@@ -117,37 +108,26 @@ const rollupPlugins = R.reject(
     ...[
       isLocal &&
         isWatching &&
-        serve({
-          open: true,
-          verbose: true,
-          contentBase: [buildDir],
-          host: "localhost",
-          port: 3000,
+        browsersync({
+          server: "build",
+          watch: true,
+          middleware: [compression()],
         }),
     ],
-    ...[
-      isLocal &&
-        isWatching && [
-          {
-            name: "watch-external",
-            async buildStart() {
-              const files = await fg(`${frontendDir}/**/*.*`);
-              for (let file of files) {
-                this.addWatchFile(file);
-              }
-            },
-          },
-          livereload({ watch: path.resolve(buildDir), verbose: true }),
-        ],
-    ],
-
     ...[
       (isProduction || isCi) &&
         terser({
-          ecma: "2019", // specify one of: 5, 2015, 2016, etc.
+          ecma: "2019",
         }),
     ],
-    ...[(isProduction || isCi) && gzipPlugin.default()],
+    ...[
+      (isProduction || isCi) &&
+        gzipPlugin.default({
+          additionalFiles: ["./build/index.html"],
+          customCompression: (content) => brotliPromise(Buffer.from(content)),
+          fileName: ".br",
+        }),
+    ],
     ...[(isProduction || isCi) && filesize()],
     globals(),
     builtins(),
@@ -157,9 +137,7 @@ const rollupPlugins = R.reject(
 export default {
   input: [`${frontendDir}/js/index.js`],
   output: {
-    // file: "js/index-generated.js",
     format: "esm",
-    // // Removes the hash from the asset filename
     dir: `${buildDir}`,
     entryFileNames: "js/index-generated.js",
     chunkFileNames: "js/chunks/[name]-[hash].js",
@@ -173,6 +151,6 @@ export default {
           clearScreen: false,
           include: `${frontendDir}/**/*`,
         }
-      : false,
+      : true,
   plugins: rollupPlugins,
 };

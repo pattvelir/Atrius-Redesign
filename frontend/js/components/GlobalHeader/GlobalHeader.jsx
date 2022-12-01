@@ -16,7 +16,6 @@ const propTypes = {
 
 const globalHeader = (props) => {
   const { primaryNav, siteLogo, utilityNav, langSelect } = props;
-  console.log(siteLogo);
   return (
     <section className="global-header">
       <div className="global-header__desktop">
@@ -31,14 +30,14 @@ const globalHeader = (props) => {
             </div>
           </div>
         </div>
-        <div className="global-header__container container">
-          <div className="global-header__bottom">
+        <div className="global-header__bottom theme-dark theme-dark--blue">
+          <div className="global-header__bottom-container">
             <PrimaryNav primaryNav={primaryNav} utilityNav={utilityNav} />
             <SearchMenu />
           </div>
         </div>
       </div>
-      <div className="global-header__container container container--100">
+      <div className="global-header__container container container--100 ">
         <div className="global-header__mobile">
           <SiteLogo {...siteLogo} />
           <SearchMenu />
