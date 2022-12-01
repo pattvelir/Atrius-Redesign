@@ -151,6 +151,6 @@ export default {
           clearScreen: false,
           include: `${frontendDir}/**/*`,
         }
-      : false,
+      : true,
   plugins: rollupPlugins,
 };
