@@ -1,41 +1,27 @@
 import React from "react";
 import { string } from "prop-types";
-
-import Icon from "../Icon/Icon.jsx";
 import ImageElement from "../ImageElement/ImageElement.jsx";
+import TextWithIconComponent from "../TextWithIcon/TextWithIcon.jsx";
 
 const propTypes = {
-  orientation: string,
   title: string.isRequired,
   srcset: string,
   sizes: string,
   description: string,
-  contentType: string,
-  subtitle: string,
   cta: string,
   ctaIcon: string,
   url: string,
 };
 
 const promo = (props) => {
-  const {
-    orientation,
-    title,
-    srcset,
-    sizes,
-    description,
-    contentType,
-    cta,
-    ctaIcon,
-    url,
-    type,
-  } = props;
+  const { title, srcset, sizes, description, cta, ctaIcon, url, type, theme } =
+    props;
 
   const id = parseInt(Math.random() * 1000);
 
   const image = (
     <figure className="promo__media">
-      <div className="promo__picture js-make-clickable" data-location={url}>
+      <div className="promo__picture">
         <ImageElement
           className="promo__img"
           srcSet={srcset}
@@ -48,36 +34,38 @@ const promo = (props) => {
   );
 
   const header = (
-    <div
-      className="promo__title subheader1 js-make-clickable"
-      id={id}
-      data-location={url}
-    >
+    <h2 className="promo__title" id={id}>
       {title}
-    </div>
+    </h2>
   );
 
   const promoHeaderTypes =
     type === "circle" ? (
-      <>
+      <header>
         {header}
-        {image}
-      </>
+        {srcset && image}
+      </header>
     ) : (
-      <>
-        {image} {header}
-      </>
+      <header>
+        {srcset && image} {header}
+      </header>
     );
 
   return (
-    <section className={`promo ${orientation || ""}`}>
+    <section className={`promo promo--${type} promo--${theme}`}>
       {type !== "no-image" ? promoHeaderTypes : header}
       <div className="promo__content">
         <p className="promo__description">{description}</p>
-        <a href={url} aria-labelledby={id} className="promo__cta">
-          {cta}
-          {ctaIcon && <Icon iconName={ctaIcon} />}
-        </a>
+        {url && (
+          <footer className="promo__cta">
+            <TextWithIconComponent
+              text={cta}
+              icon={ctaIcon}
+              href={url}
+              aria-labelledby={id}
+            />
+          </footer>
+        )}
       </div>
     </section>
   );

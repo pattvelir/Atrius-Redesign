@@ -2,7 +2,22 @@
 
 $promo-media-margin: 30px;
 
+:root {
+  --promo-background-color: var(--color-design-system-white);
+  --promo-color: var(--color-neutral-900);
+  --promo-text-align: left;
+  --promo-img-margin-block-end: 24px;
+  --promo-title-font: var(--font-headings-1600-800-heading-d);
+  --promo-description-font: var(--font-sub-headings-400-sub-heading-b);
+  --promo-title-transfrom: capitalize;
+}
+
 .promo {
+  background-color: var(--promo-background-color);
+  color: var(--promo-color);
+  max-inline-size: 552px;
+  padding: 40px;
+
   img {
     max-width: 100%;
   }
@@ -17,32 +32,75 @@ $promo-media-margin: 30px;
 }
 
 
-.promo__media {
-  
-}
-
-.promo__picture {
-  
-}
-
-.promo__content {
-  
-}
-
 .promo__title {
-  
+  margin-block-end: 24px;
+  text-align: var(--promo-text-align);
+  font: var(--promo-title-font);
+  text-transform: var(--promo-title-transfrom);
 }
 
 .promo__description {
-  
+  margin-block-start: 24px;
+  text-align: var(--promo-text-align);
+  font: var(--promo-description-font);
 }
 
 .promo__cta {
+  font: var(--font-ui-labels-ui-md-smb);
+  text-align: var(--promo-text-align);
+  text-decoration: none;
   
+  a {
+    color: var(--promo-color);
+  }
+
+  .icon {
+    color: var(--color-yellow-300);
+  }
 }
 
-.promo--no-image {}
+.promo__img {
+  margin-block-end: var(--promo-img-margin-block-end);
+}
+
+.promo--no-image {
+
+}
 
 .promo--image {}
 
-.promo--circle {}
+.promo--circle {
+  --promo-text-align: center;
+  --promo-img-margin-block-end: 0;
+  --promo-title-font: var(--font-meta-1600-800-meta-c);
+  --promo-description-font: var(--font-body-body-lg-med);
+  --promo-title-transfrom: uppercase;
+
+  .promo__img {
+    border-radius: 50%;
+    margin-inline: auto;
+    max-inline-size: 192px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+}
+
+.promo--theme4 {
+  --promo-background-color: var(--color-blue-800);
+  --promo-color:  var(--color-design-system-white);
+}
+
+.promo--theme2 {
+  --promo-background-color: var(--color-green-900);
+  --promo-color:  var(--color-design-system-white);
+}
+
+.promo--theme3 {
+  --promo-background-color: var(--color-purple-900);
+  --promo-color:  var(--color-design-system-white);
+}
+
+.promo--theme1 {
+  --promo-background-color: var(--color-design-system-white);
+  --promo-color: var(--color-neutral-900);
+}
