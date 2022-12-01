@@ -23,14 +23,11 @@ $promo-media-margin: 30px;
   }
 
   @media (--bp-large-max) {
-   
   }
 
   @media (--bp-x-small-max) {
-    
   }
 }
-
 
 .promo__title {
   margin-block-end: 24px;
@@ -49,7 +46,7 @@ $promo-media-margin: 30px;
   font: var(--font-ui-labels-ui-md-smb);
   text-align: var(--promo-text-align);
   text-decoration: none;
-  
+
   a {
     color: var(--promo-color);
   }
@@ -64,10 +61,10 @@ $promo-media-margin: 30px;
 }
 
 .promo--no-image {
-
 }
 
-.promo--image {}
+.promo--image {
+}
 
 .promo--circle {
   --promo-text-align: center;
@@ -87,17 +84,17 @@ $promo-media-margin: 30px;
 
 .promo--theme4 {
   --promo-background-color: var(--color-blue-800);
-  --promo-color:  var(--color-design-system-white);
+  --promo-color: var(--color-design-system-white);
 }
 
 .promo--theme2 {
   --promo-background-color: var(--color-green-900);
-  --promo-color:  var(--color-design-system-white);
+  --promo-color: var(--color-design-system-white);
 }
 
 .promo--theme3 {
   --promo-background-color: var(--color-purple-900);
-  --promo-color:  var(--color-design-system-white);
+  --promo-color: var(--color-design-system-white);
 }
 
 .promo--theme1 {
