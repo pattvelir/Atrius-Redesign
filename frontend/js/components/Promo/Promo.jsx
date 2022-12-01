@@ -25,37 +25,54 @@ const promo = (props) => {
     sizes,
     description,
     contentType,
-    subtitle,
     cta,
     ctaIcon,
     url,
+    type,
   } = props;
 
   const id = parseInt(Math.random() * 1000);
 
+  const image = (
+    <figure className="promo__media">
+      <div className="promo__picture js-make-clickable" data-location={url}>
+        <ImageElement
+          className="promo__img"
+          srcSet={srcset}
+          sizes={sizes || "(min-width: 910px) 50vw, 100vw"}
+          loading="lazy"
+        />
+      </div>
+      <figcaption className="u-visuallyhidden">{description}</figcaption>
+    </figure>
+  );
+
+  const header = (
+    <div
+      className="promo__title subheader1 js-make-clickable"
+      id={id}
+      data-location={url}
+    >
+      {title}
+    </div>
+  );
+
+  const promoHeaderTypes =
+    type === "circle" ? (
+      <>
+        {header}
+        {image}
+      </>
+    ) : (
+      <>
+        {image} {header}
+      </>
+    );
+
   return (
     <section className={`promo ${orientation || ""}`}>
-      <figure className="promo__media">
-        <div className="promo__picture js-make-clickable" data-location={url}>
-          <ImageElement
-            className="promo__img"
-            srcSet={srcset}
-            sizes={sizes || "(min-width: 910px) 50vw, 100vw"}
-            loading="lazy"
-          />
-        </div>
-        <figcaption className="u-visuallyhidden">{description}</figcaption>
-      </figure>
+      {type !== "no-image" ? promoHeaderTypes : header}
       <div className="promo__content">
-        {contentType && <p className="promo__eyebrow txt-h5">{contentType}</p>}
-        <div
-          className="promo__title subheader1 js-make-clickable"
-          id={id}
-          data-location={url}
-        >
-          {title}
-        </div>
-        <div className="promo__subtitle">{subtitle}</div>
         <p className="promo__description">{description}</p>
         <a href={url} aria-labelledby={id} className="promo__cta">
           {cta}

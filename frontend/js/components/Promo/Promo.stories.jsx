@@ -7,13 +7,19 @@ export default {
   title: "Components/Promo",
 };
 
-export const promoImageLeft = () => (
+export const promoImage = () => (
   <ContainerFull>
     <Promo {...mockData} />
   </ContainerFull>
 );
 
-export const promoImageRight = () => (
+export const promoNoImage = () => (
+  <ContainerFull>
+    <Promo {...mockData} />
+  </ContainerFull>
+);
+
+export const promoImageCircle = () => (
   <ContainerFull>
     <Promo {...mockData} orientation="is-right" />
   </ContainerFull>

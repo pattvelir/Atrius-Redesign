@@ -3,132 +3,46 @@
 $promo-media-margin: 30px;
 
 .promo {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  margin-bottom: 2.75rem;
-
-  &.is-left,
-  &.is-right {
-    align-items: center;
-
-    .container__col--30 & {
-      flex-direction: column;
-      align-items: flex-start;
-
-      .promo__media {
-        width: 100%;
-      }
-    }
-  }
-
-  &.is-left {
-    flex-direction: row;
-
-    .promo__media {
-      width: 50%;
-      margin-right: $promo-media-margin;
-      margin-bottom: 0;
-    }
-
-    .promo__cta {
-      text-align: left;
-    }
-  }
-
-  &.is-right {
-    flex-direction: row-reverse;
-
-    .promo__media {
-      width: 50%;
-      margin-bottom: 0;
-      margin-left: $promo-media-margin;
-    }
-  }
-
   img {
     max-width: 100%;
   }
 
   @media (--bp-large-max) {
-    &.is-right,
-    &.is-left {
-      align-items: flex-start;
-      flex-direction: column;
-
-      .promo__media {
-        min-width: 100%;
-        margin-right: 0;
-        margin-bottom: $promo-media-margin;
-        margin-left: 0;
-      }
-    }
+   
   }
 
   @media (--bp-x-small-max) {
-    &.is-right,
-    &.is-left {
-      flex-direction: column;
-
-      .promo__media {
-        margin-bottom: 1.125rem;
-        margin-left: 0;
-        margin-right: 0;
-      }
-    }
+    
   }
 }
 
-.promo__description {
-  max-width: 800px;
-}
 
 .promo__media {
-  margin-bottom: 1.125rem;
+  
 }
 
 .promo__picture {
-  cursor: pointer;
+  
 }
 
 .promo__content {
-  flex: 1;
+  
 }
 
 .promo__title {
-  margin-bottom: 12px;
-  font-family: $serif;
-  font-size: 1.55rem;
-  font-weight: bold;
-  line-height: 2.625rem;
-  cursor: pointer;
-
-  &:hover {
-    color: ($grey-500, 0.7);
-    text-decoration: underline;
-  }
+  
 }
 
-.promo__subtitle {
-  display: block;
-  margin-bottom: 12px;
-  font-family: $secondary-sans;
-  font-size: 1.2rem;
-  font-weight: bold;
+.promo__description {
+  
 }
 
 .promo__cta {
-  display: block;
-  font-weight: bold;
-  text-align: left;
-  text-decoration: underline;
-  cursor: pointer;
-
-  &::after {
-    content: " →";
-  }
-
-  &:hover {
-    color: ($grey-500, 0.7);
-  }
+  
 }
+
+.promo--no-image {}
+
+.promo--image {}
+
+.promo--circle {}
