@@ -111,8 +111,6 @@ const rollupPlugins = R.reject(
         browsersync({
           server: "build",
           watch: true,
-          httpModule: "http2",
-          https: true,
           middleware: [compression()],
         }),
     ],

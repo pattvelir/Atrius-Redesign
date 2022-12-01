@@ -29,8 +29,6 @@ module.exports = {
   proxy: false,
   port: 3000,
   middleware: [compression()],
-  httpModule: "http2",
-  https: true,
   serveStatic: [],
   ghostMode: {
     clicks: true,
