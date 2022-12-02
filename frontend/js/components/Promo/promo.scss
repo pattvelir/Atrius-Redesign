@@ -1,3 +1,4 @@
+@import "../../../scss/variables/index";
 :root {
   --promo-background-color: var(--color-design-system-white);
   --promo-color: var(--color-neutral-900);
@@ -12,7 +13,7 @@
 @custom-media --bp-small-min: (min-width: 552px);
 
 .promo {
-  padding: 16px;
+  padding: var(--spacing-16);
   color: var(--promo-color);
   background-color: var(--promo-background-color);
   max-inline-size: 552px;
@@ -26,12 +27,12 @@
   }
 
   @media (--bp-small-min) {
-    padding: 40px;
+    padding: var(--spacing-40);
   }
 }
 
 .promo__title {
-  margin-block-end: 24px;
+  margin-block-end: var(--spacing-24);
   text-align: var(--promo-text-align);
   font: var(--promo-title-font);
   text-transform: var(--promo-title-transfrom);
@@ -42,7 +43,7 @@
 }
 
 .promo__description {
-  margin-block-start: 24px;
+  margin-block-start: var(--spacing-24);
   text-align: var(--promo-text-align);
   font: var(--promo-description-font);
 }
@@ -69,8 +70,7 @@
   --promo-cta-rotate-icon: rotate(-45deg);
 }
 
-.promo--image {
-}
+.promo--image {}
 
 .promo--circle {
   --promo-text-align: center;
