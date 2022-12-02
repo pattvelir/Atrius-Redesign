@@ -45,8 +45,8 @@ const rollupPlugins = R.reject(
       },
     }),
     nodeResolve({
-      // extensions: [".js", ".jsx", ".ts", ".tsx", ".json", ".css", ".scss"],
-      dedupe: ["react", "react-dom", "ramda", "lodash", "jquery"], // Default: []
+      extensions: [".js", ".jsx", ".json"],
+      dedupe: ["react", "react-dom", "ramda", "lodash", "jquery", "slick"], // Default: []
       jsnext: true,
     }),
     svgSprite({
@@ -143,6 +143,7 @@ export default {
     chunkFileNames: "js/chunks/[name]-[hash].js",
     assetFileNames: "assets/[name]-generated[extname]",
     sourcemap: isLocal ? "inline" : false,
+    preserveModules: true,
   },
   watch:
     isLocal && isWatching

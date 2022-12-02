@@ -12,6 +12,19 @@ body {
       background-color: var(--color-green-600);
 
     } */
+  --max-content-width: 360px;
+
+  @media (min-width: 792px) {
+    --max-content-width: 744px;
+  }
+
+  @media (min-width: 1200px) {
+    --max-content-width: 1128px;
+  }
+
+  @media (min-width: 1600px) {
+    --max-content-width: 1512px;
+  }
 
   font: var(--font-body-body-md);
 }
