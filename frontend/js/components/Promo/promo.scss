@@ -1,31 +1,32 @@
-@import "../../../scss/variables/index";
-
-$promo-media-margin: 30px;
-
 :root {
   --promo-background-color: var(--color-design-system-white);
   --promo-color: var(--color-neutral-900);
   --promo-text-align: left;
   --promo-img-margin-block-end: 24px;
-  --promo-title-font: var(--font-headings-1600-800-heading-d);
+  --promo-title-font: var(--font-headings-400-heading-d);
   --promo-description-font: var(--font-sub-headings-400-sub-heading-b);
   --promo-title-transfrom: capitalize;
+  --promo-cta-rotate-icon: 0;
 }
 
+@custom-media --bp-small-min: (min-width: 552px);
+
 .promo {
-  background-color: var(--promo-background-color);
+  padding: 16px;
   color: var(--promo-color);
+  background-color: var(--promo-background-color);
   max-inline-size: 552px;
-  padding: 40px;
 
   img {
     max-width: 100%;
   }
 
-  @media (--bp-large-max) {
+  .icon {
+    transform: var(--promo-cta-rotate-icon);
   }
 
-  @media (--bp-x-small-max) {
+  @media (--bp-small-min) {
+    padding: 40px; 
   }
 }
 
@@ -34,6 +35,10 @@ $promo-media-margin: 30px;
   text-align: var(--promo-text-align);
   font: var(--promo-title-font);
   text-transform: var(--promo-title-transfrom);
+
+  @media (--bp-small-min) {
+    --promo-title-font: var(--font-headings-1600-800-heading-d);
+  }
 }
 
 .promo__description {
@@ -61,6 +66,7 @@ $promo-media-margin: 30px;
 }
 
 .promo--no-image {
+  --promo-cta-rotate-icon: rotate(-45deg);
 }
 
 .promo--image {
@@ -70,15 +76,23 @@ $promo-media-margin: 30px;
   --promo-text-align: center;
   --promo-img-margin-block-end: 0;
   --promo-title-font: var(--font-meta-1600-800-meta-c);
-  --promo-description-font: var(--font-body-body-lg-med);
+  --promo-description-font: var(--font-body-body-md-smb);
   --promo-title-transfrom: uppercase;
 
+  @media (--bp-small-min) {
+    --promo-description-font: var(--font-body-body-lg-med)
+  }
+
   .promo__img {
-    border-radius: 50%;
     margin-inline: auto;
-    max-inline-size: 192px;
+    border-radius: 50%;
     aspect-ratio: 1 / 1;
+    max-inline-size: 96px;
     object-fit: cover;
+
+    @media (--bp-small-min) {
+      max-inline-size: 168px;
+    }
   }
 }
 
