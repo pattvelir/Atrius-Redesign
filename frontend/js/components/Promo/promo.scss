@@ -1,4 +1,5 @@
 @import "../../../scss/variables/index";
+
 :root {
   --promo-background-color: var(--color-design-system-white);
   --promo-color: var(--color-neutral-900);
@@ -70,7 +71,8 @@
   --promo-cta-rotate-icon: rotate(-45deg);
 }
 
-.promo--image {}
+.promo--image {
+}
 
 .promo--circle {
   --promo-text-align: center;
