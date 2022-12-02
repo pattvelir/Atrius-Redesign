@@ -9,6 +9,16 @@ export default {
         "Vitas mori. Albus orexiss ducunt ad gabalium. Ubi est altus nomen? Liberi de castus bubo, pugna species! Persuadere diligenter ducunt ad bi-color barcas.",
       cta: "Read Full Article",
       url: "https://www.w3.org/",
+      srcset: `
+      https://placekitten.com/400/300 400w,
+      https://placekitten.com/800/x600 800w,
+      https://placekitten.com/1200/900 1200w,
+      https://placekitten.com/1600/1200 1600w,
+      https://placekitten.com/2000/1500 2000w,
+      https://placekitten.com/2400/1800 2400w,
+      https://placekitten.com/2800/2100 2800w,
+      https://placekitten.com/3200/2400 3200w"
+    `,
     },
     {
       title: "Lotus brodium virtualiter captiss barcas est?",
@@ -27,6 +37,16 @@ export default {
         "Ecce, resistentia! Heu, grandis nuclear vexatum iacere! Accentor azureus nuclear vexatum iacere est. Cum epos studere, omnes nuptiaes convertam neuter, alter vigiles.",
       cta: "Read Full Article",
       url: "https://www.w3.org/",
+      srcset: `
+      https://placekitten.com/400/300 400w,
+      https://placekitten.com/800/x600 800w,
+      https://placekitten.com/1200/900 1200w,
+      https://placekitten.com/1600/1200 1600w,
+      https://placekitten.com/2000/1500 2000w,
+      https://placekitten.com/2400/1800 2400w,
+      https://placekitten.com/2800/2100 2800w,
+      https://placekitten.com/3200/2400 3200w"
+    `,
     },
     {
       title: "Pulchritudine de ferox particula, contactus capio?",

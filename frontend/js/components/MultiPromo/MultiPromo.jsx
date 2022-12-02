@@ -22,7 +22,7 @@ const multiPromo = (props) => {
             : "(min-width: 680px) 50vw, 100vw";
           return (
             <div className="multi-promo__promo" key={i}>
-              <Promo {...promo} />
+              <Promo {...promo} theme="theme2" />
             </div>
           );
         })}
