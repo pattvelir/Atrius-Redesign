@@ -26,7 +26,7 @@
   }
 
   @media (--bp-small-min) {
-    padding: 40px; 
+    padding: 40px;
   }
 }
 
@@ -80,7 +80,7 @@
   --promo-title-transfrom: uppercase;
 
   @media (--bp-small-min) {
-    --promo-description-font: var(--font-body-body-lg-med)
+    --promo-description-font: var(--font-body-body-lg-med);
   }
 
   .promo__img {
