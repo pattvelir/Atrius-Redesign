@@ -1,7 +1,6 @@
 export default {
   theme: 1,
-  title: "Nunquam acquirere calcaria.",
-  description:
-    "Cum fluctus mori, omnes brodiumes pugna superbus, azureus habenaes.",
-  cta: "A falsis, consilium mirabilis luna.",
+  title: "Atrius Health Accepts a Variety of Insurance Plans",
+  description: "Atrius Health Accepts a Variety of Insurance Plans",
+  cta: "See Insurance & Billing",
 };

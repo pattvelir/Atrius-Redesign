@@ -1,6 +1,7 @@
 import React from "react";
 import { string, number, bool } from "prop-types";
 import cx from "classnames";
+import Button from "../Button/Button";
 
 const propTypes = {
   title: string,
@@ -12,6 +13,7 @@ const propTypes = {
 
 const TextBanner = (props) => {
   const { theme, title, description, cta, adjacent } = props;
+  const buttonColor = theme !== 4 ? "light" : "dark";
 
   return (
     <section
@@ -21,17 +23,19 @@ const TextBanner = (props) => {
       })}
     >
       <div className="text-banner__container container">
-        <h2 className="text-banner__title" id="uniqueId-dda5ad8a">
-          {title}
-        </h2>
+        <h2 className="text-banner__title">{title}</h2>
         <p className="text-banner__description">{description}</p>
-        <a
-          className="text-banner__cta btn btn--primary"
+        <Button
+          btnType="filled"
+          btnColor={buttonColor}
+          iconRight="arrow-right"
+          size="xsm"
+          as="a"
           href="/#"
           aria-labelledby="uniqueId-dda5ad8a"
         >
           {cta}
-        </a>
+        </Button>
       </div>
     </section>
   );
