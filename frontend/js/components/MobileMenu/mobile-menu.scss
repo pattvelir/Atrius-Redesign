@@ -3,7 +3,7 @@
 /* NOTE "position: relative;" needs to be added to the parent with full width. */
 .mobile-menu {
   .nav-toggle__label {
-    @include visually-hidden();
+    @include visually-hidden;
     display: block;
   }
 

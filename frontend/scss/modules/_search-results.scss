@@ -18,7 +18,7 @@ $search-results__sort-arrow-size: 24px;
 }
 
 .search-results__sort-bar {
-  @include clearfix();
+  @include clearfix;
   margin-bottom: 30px;
   border-bottom: 1px solid $grey-400;
 
@@ -52,7 +52,7 @@ $search-results__sort-arrow-size: 24px;
     }
 
     li {
-      @include clearfix();
+      @include clearfix;
       width: 100%;
       clear: both;
       margin-bottom: 12px;

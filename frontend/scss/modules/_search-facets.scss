@@ -65,7 +65,7 @@ $search-facets__values-indent: 16px;
 }
 
 .search-facets__group {
-  @include clearfix();
+  @include clearfix;
   clear: both;
   margin-bottom: 20px;
   background: $grey-200;

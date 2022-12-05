@@ -7,7 +7,7 @@
 }
 
 .breadcrumbs__list {
-  @include zero-list();
+  @include zero-list;
   font-size: 14px;
 }
 

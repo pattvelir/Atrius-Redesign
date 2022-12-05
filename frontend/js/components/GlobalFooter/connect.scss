@@ -9,7 +9,7 @@ $connect-promo-size: 24px !default;
 $connect-bp-small-max: 570px !default;
 
 .connect {
-  @include container();
+  @include container;
 }
 
 .connect__inner {

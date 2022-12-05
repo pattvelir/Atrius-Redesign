@@ -2,7 +2,7 @@
 }
 
 .utility-nav__list {
-  @include zero-list();
+  @include zero-list;
   display: flex;
 
   @media (--bp-global-header-max) {

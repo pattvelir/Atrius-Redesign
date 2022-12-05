@@ -114,7 +114,7 @@ $list-item-media-margin: 30px;
 }
 
 .list-item__meta {
-  @include clearfix();
+  @include clearfix;
   margin-top: 16px;
   margin-bottom: $list-item-media-margin;
 

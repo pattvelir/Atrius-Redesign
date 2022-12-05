@@ -3,7 +3,7 @@
 $rich-text__video-width: 328px;
 
 .rich-text {
-  @include clearfix();
+  @include clearfix;
   font-size: 18px;
 
   .container__col--100 > .rich-text {

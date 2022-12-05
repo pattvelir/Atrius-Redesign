@@ -25,7 +25,7 @@
 }
 
 .footer-nav__col {
-  @include zero-list();
+  @include zero-list;
   margin-right: 24px;
 
   @media (--bp-x-small-max) {

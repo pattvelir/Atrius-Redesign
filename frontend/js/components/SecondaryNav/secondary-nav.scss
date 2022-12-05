@@ -52,7 +52,7 @@ $secondary-nav__list-vert-margin: 16px;
 }
 
 .secondary-nav__menu {
-  @include zero-list();
+  @include zero-list;
   display: flex;
   align-items: flex-start;
   flex-direction: column;

@@ -1,13 +1,11 @@
 // @import "../../../scss/variables/index";
- 
+
 .primary-nav {
   width: auto;
-  
-  
 }
 
 .primary-nav__items {
-  @include zero-list();
+  @include zero-list;
   display: flex;
   gap: var(--size-7);
   align-items: flex-start;
@@ -19,7 +17,8 @@
   }
 }
 
-.primary-nav__item, .search-menu__button {
+.primary-nav__item,
+.search-menu__button {
   display: block;
   margin: 0;
   padding: var(--size-4) var(--size-3);
@@ -30,25 +29,30 @@
 
 .primary-nav__item--submenu {
 }
-.primary-nav__top-link{
+
+.primary-nav__top-link {
   display: block;
 }
+
 .primary-nav__sub-link,
 .primary-nav__top-link {
- font: var(--font-ui-labels-ui-md-smb);
- .icon{
-  color:var(--color-yellow-300);}
- 
+  font: var(--font-ui-labels-ui-md-smb);
+
+  .icon {
+    color: var(--color-yellow-300);
+  }
+
   &:hover {
-  text-decoration: underline;
-  .icon{
-    color:var(--color-design-system-white);}
+    text-decoration: underline;
+
+    .icon {
+      color: var(--color-design-system-white);
+    }
   }
 }
 
 .primary-nav__sub-link--active,
 .primary-nav__top-link--active {
-
 }
 
 .primary-nav__top-link--button {
@@ -67,7 +71,7 @@
 }
 
 .primary-nav__submenu {
-  @include zero-list();
+  @include zero-list;
   position: absolute;
   top: 100%;
   left: 0;

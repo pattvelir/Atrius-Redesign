@@ -12,7 +12,7 @@ body {
       background-color: var(--color-green-600);
 
     } */
-    
+
   --max-content-width: 360px;
 
   @media (min-width: 792px) {
@@ -28,8 +28,6 @@ body {
   }
 
   font: var(--font-body-body-md);
-
-
 }
 
 html,
@@ -156,7 +154,8 @@ th {
   background-color: $grey-300;
 }
 
-button, a {
+button,
+a {
   color: inherit;
   background: transparent;
   border: 0;
