@@ -181,3 +181,4 @@ tools/helix/add-helix-module-configuration.json
 bundle.css
 bundle.css.map
 build/
+src/Project/Atrius/code/Atrius-Build/
