@@ -20,11 +20,9 @@ const globalHeader = (props) => {
     <section className="global-header">
       <div className="global-header__desktop">
         <div className="global-header__top">
-          <div className="global-header__top-container container container--50-50">
-            <div className="container__col container__col--50 container__col--left">
-              <SiteLogo {...siteLogo} />
-            </div>
-            <div className="container__col container__col--50 container__col--right global-header__utility-container">
+          <div className="global-header__top-container">
+            <SiteLogo {...siteLogo} />
+            <div className="global-header__utility-container">
               <UtilityNav {...utilityNav} />
               {langSelect && <LanguageSelector {...langSelect} />}
             </div>

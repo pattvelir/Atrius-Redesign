@@ -10,16 +10,32 @@
 }
 
 .text-banner__container.container {
-  padding: 4rem 1rem;
+  padding: 40px 16px;
+
+  @media (min-width: 361px) {
+    padding: 40px;
+  }
 }
 
 .text-banner__title {
-  font-size: 1.8rem;
+  font-size: 32px;
+  margin-block-end: 24px;
+  line-height: 1.25;
+
+  @media (min-width: 361px) {
+    font-size: 24px;
+  }
 }
 
 .text-banner__description {
   font-family: $secondary-sans;
-  font-size: 1.2rem;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-block-end: 24px;
+
+  @media (min-width: 361px) {
+    font-size: 20px;
+  }
 }
 
 .text-banner__cta {
@@ -32,70 +48,21 @@
 
 /* Text Banner Themes */
 .text-banner--theme1 {
-  color: $grey-700;
-  background-color: $grey-300;
-
-  .btn-primary {
-    color: $white;
-    background-color: $grey-600;
-    border-color: $grey-600;
-
-    &:hover,
-    &:focus {
-      background-color: $grey-900;
-      border-color: $grey-900;
-    }
-  }
+  background-color: var(--color-blue-800);
+  color:  var(--color-design-system-white);
 }
 
 .text-banner--theme2 {
-  color: $grey-700;
-  background-color: $grey-400;
-
-  .btn-primary {
-    color: $black;
-    background-color: $grey-500;
-    border-color: $grey-500;
-
-    &:hover,
-    &:focus {
-      color: $white;
-      background-color: $grey-900;
-      border-color: $grey-900;
-    }
-  }
+  background-color: var(--color-green-900);
+  color:  var(--color-design-system-white);
 }
 
 .text-banner--theme3 {
-  color: $white;
-  background-color: $grey-500;
-
-  .btn-primary {
-    color: $black;
-    background-color: $grey-400;
-    border-color: $grey-400;
-
-    &:hover,
-    &:focus {
-      color: $white;
-      background-color: $grey-900;
-      border-color: $grey-900;
-    }
-  }
+  background-color: var(--color-purple-900);
+  color:  var(--color-design-system-white);
 }
 
 .text-banner--theme4 {
-  color: $grey-700;
-  background-color: $white;
-
-  .btn-primary {
-    color: $white;
-    background-color: $grey-700;
-    border-color: $grey-700;
-
-    &:hover {
-      background-color: $grey-900;
-      border-color: $grey-900;
-    }
-  }
+  color: var(--color-neutral-900);
+  background-color:  var(--color-design-system-white);
 }

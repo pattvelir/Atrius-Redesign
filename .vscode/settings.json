@@ -3,7 +3,9 @@
 {
   "cssvar.files": [
     "./node_modules/open-props/open-props.min.css",
-    "./frontend/scss/variables/_props-generated.scss"
+    "./frontend/scss/jit/_props-generated.scss",
+    "./frontend/scss/jit/_props.scss",
+    "./frontend/scss/jit/_custom-media.pcss"
   ],
    // Do not ignore node_modules css files, which is ignored by default
   "cssvar.ignore": [],

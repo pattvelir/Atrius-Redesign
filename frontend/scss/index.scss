@@ -1,4 +1,10 @@
-@import "./postcss/custom-media";
+/**
+** NOTE: root level custom properties can be added to the scss/jit
+** directory and then only imported if used at build time. In addition
+** to custom props created from figma, the library Open Props are available
+** to use as well. https://open-props.style/
+**/
+
 @import "./variables/index";
 @import "./base/index";
 @import "./helpers/index";

@@ -1,6 +1,7 @@
 import React from "react";
 import { string } from "prop-types";
 import cx from "classnames";
+import Icon from "../Icon/Icon.jsx";
 
 const propTypes = {
   btnText: string,
@@ -8,24 +9,46 @@ const propTypes = {
 };
 
 const Button = (props) => {
-  const { btnText, btnType } = props;
+  const {
+    children,
+    btnType,
+    btnColor,
+    size,
+    icon,
+    iconLeft,
+    iconRight,
+    as: Component,
+    ...rest
+  } = props;
 
   return (
-    <a
+    <Component
       className={cx("btn", {
-        "btn--primary": btnType === "primary",
-        "btn--secondary": btnType === "secondary",
-        "btn--ghost": btnType === "ghost",
+        "btn--filled": btnType === "filled",
+        "btn--outline": btnType === "outline",
         "btn--disabled": btnType === "disabled",
         "btn--link": btnType === "link",
+        "btn--dark": btnColor === "dark",
+        "btn--light": btnColor === "light",
+        "btn--xsm": size === "xsm",
+        "btn--small": size === "sm",
+        "btn--search": size === "search",
+        "btn--icon": icon,
       })}
-      href="#"
-      title={btnText || "Button Text"}
+      title={children}
       aria-disabled={btnType === "disabled"}
+      {...rest}
     >
-      {btnText || "Button Text"}
-    </a>
+      {iconLeft && <Icon iconName={iconLeft} />}
+      <span className="btn__label">{children}</span>
+      {iconRight && <Icon iconName={iconRight} />}
+    </Component>
   );
+};
+
+Button.defaultProps = {
+  as: "a",
+  href: "/",
 };
 
 Button.propTypes = propTypes;

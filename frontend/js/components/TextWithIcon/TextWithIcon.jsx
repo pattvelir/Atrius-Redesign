@@ -29,7 +29,11 @@ const TextWithIcon = ({
       })}
     >
       <span aria-hidden={title ? true : false}>{text}</span>
-      <Icon title={title} iconName={icon || "arrow-right"} />
+      <Icon
+        title={title}
+        iconName={icon || "arrow-right"}
+        className="icon--24x24"
+      />
     </span>
   );
 
