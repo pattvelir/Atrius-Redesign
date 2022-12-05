@@ -13,21 +13,16 @@ const multiPromo = (props) => {
   const { classNames, title, promos } = props;
 
   return (
-    <div className={`component multi-promo ${classNames || ""}`}>
-      {title && <h2 className="multi-promo__title txt-h2">{title}</h2>}
-      <section className="multi-promo__items">
-        {promos.map((promo, i) => {
-          promo.sizes = promo.sizes
-            ? promo.sizes
-            : "(min-width: 680px) 50vw, 100vw";
-          return (
-            <div className="multi-promo__promo" key={i}>
-              <Promo {...promo} theme="theme2" />
-            </div>
-          );
-        })}
-      </section>
-    </div>
+    <section className={`multi-promo ${classNames || ""}`}>
+      {title && <h2 className="multi-promo__title">{title}</h2>}
+      <div
+        className={`multi-promo__items--${promos.length} multi-promo__container`}
+      >
+        {promos.map((promo, i) => (
+          <Promo {...promo} key={i} />
+        ))}
+      </div>
+    </section>
   );
 };
 

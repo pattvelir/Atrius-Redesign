@@ -19,6 +19,7 @@ export default {
       https://placekitten.com/2800/2100 2800w,
       https://placekitten.com/3200/2400 3200w"
     `,
+      theme: "theme4",
     },
     {
       title: "Lotus brodium virtualiter captiss barcas est?",
@@ -28,6 +29,7 @@ export default {
         "Favere rare ducunt ad varius luna. Placidus calcaria sapienter captiss fiscina est. Cum luba congregabo, omnes seculaes visum primus, fidelis nuclear vexatum iacerees.",
       cta: "Read Full Article",
       url: "https://www.w3.org/",
+      theme: "theme2",
     },
     {
       title: "Sunt triticumes resuscitabo domesticus, germanus caculaes?",
@@ -47,6 +49,7 @@ export default {
       https://placekitten.com/2800/2100 2800w,
       https://placekitten.com/3200/2400 3200w"
     `,
+      theme: "theme3",
     },
     {
       title: "Pulchritudine de ferox particula, contactus capio?",
