@@ -1,0 +1,12 @@
+@mixin createSpacingVars($min, $max, $ind) {
+  @for $min from $ind through $max {
+    $i: $min * $ind;
+
+    --spacing-#{$i}: #{$i}px;
+  }
+}
+
+:root {
+  /* --spacing-2, etc */
+  @include createSpacingVars(2, 40, 2);
+}
