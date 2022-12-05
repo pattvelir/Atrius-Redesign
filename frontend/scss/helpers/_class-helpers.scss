@@ -21,7 +21,7 @@ $base-label-border: $grey-100 !default;
 /* visually hidden, but still available for screenreaders: h5bp.com/v */
 
 .u-visuallyhidden {
-  @include visually-hidden;
+  @include visually-hidden();
 }
 
 /* extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */

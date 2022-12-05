@@ -1,5 +1,5 @@
 @import "../../../scss/variables/index";
-
+ 
 .search-menu {
   .search-menu__button {
     .search-menu__close {
@@ -10,8 +10,37 @@
       display: block;
     }
   }
-
+ 
+  .search-menu__inner-container {
+    transition: all 1000ms ease-in-out;
+    opacity: 0;
+    width: 100%;
+    margin: 0 auto;
+    max-width: var(--max-content-width);
+    background-color: var(--color-blue-800);
+    transform: translate(100%,0%);
+  }
+  .search-menu__drop-down{
+    transition: all 1000ms ease-in-out;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100vw;
+    background-color: var(--color-blue-800);
+    visibility: hidden;
+    pointer-events: none;
+  }
   &.is-open {
+    .search-menu__inner-container {
+      opacity: 1;
+      transform: translate(0%,0%);
+    }
+    .search-menu__drop-down{
+      opacity: 1;
+      visibility: visible;
+      pointer-events: all;
+    }
     .search-menu__button {
       .search-menu__open {
         display: none;
@@ -21,15 +50,20 @@
         display: block;
       }
     }
+ 
+    .search-menu__drop-down{
+      transition: all 1000ms ease-in-out;
+      opacity: 1;
+      transform: translate(0%,0%);
+          visibility: visible;
+          pointer-events: all;
+
+    }
   }
 }
 
 .search-menu__button {
   min-width: 96px;
-  padding: 0;
-  padding-top: 4px;
-
-  color: $base-body-color;
   border: 0;
   background: none;
 }
@@ -39,45 +73,8 @@
 
   .search-menu:not(.is-open) {
     visibility: hidden;
-    opacity: 0;
+    // opacity: 0;
   }
 }
 
-.search-menu__drop-down {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: $z-dropdown;
-  max-height: 100vh;
-  width: 100%;
-  overflow: hidden;
-  visibility: hidden;
-  opacity: 0;
-  overflow-y: auto;
-  transition: opacity 1s ease 500ms, visibility 1s ease 500ms;
-
-  .search-menu.is-open & {
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 250ms, visibility 250ms;
-  }
-}
-
-.search-menu__inner-container {
-  position: relative;
-  padding: 16px $gutter;
-  background-color: #fff;
-  transform: translateY(-100%);
-  transition: transform 500ms;
-
-  .search-menu.is-open & {
-    transform: translateY(0);
-    transition: transform 750ms;
-  }
-
-  .search-box {
-    width: 100%;
-    max-width: 570px;
-    margin: 0 auto;
-  }
-}
+ 

@@ -47,7 +47,7 @@
   }
 
   .account-nav__menu {
-    @include zero-list;
+    @include zero-list();
     margin-bottom: 0;
     margin-left: -52px;
     padding-bottom: 0;

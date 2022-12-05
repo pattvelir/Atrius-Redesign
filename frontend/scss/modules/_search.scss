@@ -1,5 +1,5 @@
 .search__query-mount {
-  @include clearfix;
+  @include clearfix();
 
   .search-box {
     max-width: 900px;

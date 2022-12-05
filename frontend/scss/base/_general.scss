@@ -12,6 +12,7 @@ body {
       background-color: var(--color-green-600);
 
     } */
+    
   --max-content-width: 360px;
 
   @media (min-width: 792px) {
@@ -27,6 +28,8 @@ body {
   }
 
   font: var(--font-body-body-md);
+
+
 }
 
 html,
@@ -114,10 +117,8 @@ dl {
 /* links */
 
 a {
-  color: $base-link-color;
-
-  /* Fast Out, Slow In */
   transition: color 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
 
   &:hover {
     color: rgba($base-link-color, 0.7);
@@ -153,4 +154,13 @@ td {
 
 th {
   background-color: $grey-300;
+}
+
+button, a {
+  color: inherit;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
 }

@@ -2,13 +2,19 @@
   color: var(--color-design-system-white);
   background-color: var(--color-neutral-900);
 
+  a {
+    color: var(--color-design-system-white);
+  }
+
   &.theme-dark--blue {
     background-color: var(--color-blue-800);
   }
 }
 
 .theme-light {
-  color: var(--color-neutral-900);
+  a {
+    color: var(--color-neutral-900);
+  }
 
   &.theme-dark--blue {
     background-color: var(--color-blue-800);

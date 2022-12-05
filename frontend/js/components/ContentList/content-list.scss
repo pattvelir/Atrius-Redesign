@@ -25,7 +25,7 @@
 /* // list */
 
 .content-list__list {
-  @include zero-list;
+  @include zero-list();
 }
 
 /* // items */

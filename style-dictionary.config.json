@@ -3,7 +3,7 @@
   "platforms": {
     "scss": {
       "transformGroup": "tokens-scss",
-      "buildPath": "./frontend/scss/variables/",
+      "buildPath": "./frontend/scss/jit/",
       "files": [{
         "destination": "_props-generated.scss",
         "format": "css/variables",

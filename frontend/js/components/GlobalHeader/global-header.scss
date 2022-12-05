@@ -29,7 +29,8 @@ $global-header__bottom-space: 30px;
   }
 }
 
-.global-header__bottom-container {
+.global-header__bottom-container,
+.global-header__top-container {
   display: flex;
   justify-content: space-between;
   width: var(--max-content-width);
@@ -47,14 +48,7 @@ $global-header__bottom-space: 30px;
 }
 
 .global-header__top-container {
-  display: flex;
-  justify-content: space-between;
-
   > div {
-    width: 100%;
-  }
-
-  @media (--bp-global-header-max) {
     width: 100%;
   }
 }

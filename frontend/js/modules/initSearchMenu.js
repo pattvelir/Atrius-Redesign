@@ -5,7 +5,7 @@ const initSearchMenu = (el) => {
   const onOpen = () => {};
 
   NavMenu({
-    animationDelay: 800,
+    animationDelay: 2000,
     closed: true,
     direction: "",
     menuButton: ".js-search-menu-button",

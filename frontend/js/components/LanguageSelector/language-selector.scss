@@ -90,7 +90,7 @@ $language-selector__item-vert-margin: 4px;
 }
 
 .language-selector__menu {
-  @include zero-list;
+  @include zero-list();
   position: absolute;
   top: calc(100% + 0.8125rem);
   left: 0;

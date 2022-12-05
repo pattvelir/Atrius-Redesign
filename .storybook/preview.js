@@ -1,8 +1,6 @@
 import React from "react";
 import { addDecorator } from "@storybook/react";
 import { themes } from '@storybook/theming';
-import "../frontend/scss/postcss/custom-media.scss";
-import "../frontend/scss/variables/_props-generated.scss"; 
 import "../frontend/js/index.js";
 import "../build/css/index-generated.css";
 
