@@ -12,7 +12,7 @@
     .OUTPUTS
         Writes 'Path' value to the properties file specified by the 'PropertiesFile' parameter.
     .EXAMPLE
-        Set-WorkspacePath -Path "C:\Jenkins\workspaces\DEV" -PropertiesFile "dev"
+        PS> Set-WorkspacePath -Path "C:\Jenkins\workspaces\DEV" -PropertiesFile "dev"
 #>
 Function Set-WorkspacePath {
     param (

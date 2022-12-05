@@ -4,7 +4,7 @@
     .DESCRIPTION
         Rebuilds all search indexes defined in the Sitecore solution.
     .EXAMPLE
-        Invoke-RebuildSearchIndexes
+        PS> Invoke-RebuildSearchIndexes
 #>
 Function Invoke-RebuildSearchIndexes {
     

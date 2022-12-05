@@ -7,9 +7,10 @@
     .PARAMETER Name
         Name of variable in .env file
     .OUTPUTS
-        Value of variable corresponding to the provided 'Name' parameter
+        String. Value of variable corresponding to the provided 'Name' parameter
     .EXAMPLE
-        Get-EnvVariable -Name CM_HOST
+        PS> Get-EnvVariable -Name CM_HOST
+        cm.AtriusHealth.localhost
 #>
 Function Get-EnvVariable {
     [CmdletBinding()]

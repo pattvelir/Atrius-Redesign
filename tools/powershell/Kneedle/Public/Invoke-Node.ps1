@@ -10,7 +10,8 @@
     .OUTPUTS
         Resulting ouput of the executed NodeJS command
     .EXAMPLE
-        Invoke-Node -Command "--version"
+        PS> Invoke-Node -Command "--version"
+        6.14.10
 #>
 Function Invoke-Node {
     param (

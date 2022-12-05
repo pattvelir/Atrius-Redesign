@@ -7,12 +7,10 @@
     .PARAMETER Image
         Name of the container where the Xdt transform should be executed.
     .EXAMPLE
-        Invoke-XdtTransform
-
+        PS> Invoke-XdtTransform
         Runs xdt transforms on configs found in the "cm" Docker container, by default.
-
-        Invoke-XdtTransform -Image "cd"
-
+    .EXAMPLE
+        PS> Invoke-XdtTransform -Image "cd"
         Runs xdt transforms on configs found in the "cd" Docker container.
 #>
 Function Invoke-XdtTransform {

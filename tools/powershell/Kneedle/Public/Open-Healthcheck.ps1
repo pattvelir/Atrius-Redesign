@@ -9,7 +9,7 @@
     .OUTPUTS
         Opens a browser window to the '/healthz/ready' page.
     .EXAMPLE
-        Open-Healthcheck -Image "cd"
+        PS> Open-Healthcheck -Image "cd"
 #>
 Function Open-Healthcheck {
     [CmdletBinding()]

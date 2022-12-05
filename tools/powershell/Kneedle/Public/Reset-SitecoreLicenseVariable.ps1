@@ -13,9 +13,9 @@
         A switch parameter.  If defined, 'docker-compose up -d' will not be run after
         resetting the variable.
     .EXAMPLE
-        Reset-SitecoreLicenseVariable
-
-        Reset-SitecoreLicenseVariable -NoStop -NoStart
+        PS> Reset-SitecoreLicenseVariable
+    .EXAMPLE
+        PS> Reset-SitecoreLicenseVariable -NoStop -NoStart
 #>
 Function Reset-SitecoreLicenseVariable {
     param(
