@@ -5,9 +5,9 @@ $multi-promo__promo-space: 30px;
 
 .multi-promo__container {
   display: grid;
+  grid-auto-flow: row;
   gap: var(--spacing-24);
   max-inline-size: 1128px;
-  grid-auto-flow: row;
 }
 
 .multi-promo__items--2 {
