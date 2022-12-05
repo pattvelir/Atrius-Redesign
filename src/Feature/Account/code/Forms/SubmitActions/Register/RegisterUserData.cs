@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace Thread.Feature.Account.Forms.SubmitActions.Register
+namespace AtriusHealth.Feature.Account.Forms.SubmitActions.Register
 {
 	public class RegisterUserData
 	{

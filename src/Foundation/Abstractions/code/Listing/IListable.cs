@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 
-namespace Thread.Foundation.Abstractions.Listing
+namespace AtriusHealth.Foundation.Abstractions.Listing
 {
 	public interface IListable
 	{

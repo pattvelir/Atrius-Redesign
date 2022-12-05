@@ -1,9 +1,9 @@
-﻿using Sitecore.Data;
+using Sitecore.Data;
 using Sitecore.Data.Items;
 using Sitecore.Globalization;
 using Sitecore.Security.Domains;
 
-namespace Thread.Foundation.Orm.Services
+namespace AtriusHealth.Foundation.Orm.Services
 {
 	public interface IContextProvider
 	{

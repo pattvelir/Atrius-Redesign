@@ -1,4 +1,4 @@
-﻿using Sitecore.Pipelines.GetContentEditorWarnings;
+using Sitecore.Pipelines.GetContentEditorWarnings;
 using Sitecore;
 using Sitecore.Data.Items;
 using System;
@@ -9,7 +9,7 @@ using Sitecore.Globalization;
 using Sitecore.Configuration;
 using Sitecore.Data.Managers;
 
-namespace Thread.Foundation.Workflow.Pipelines
+namespace AtriusHealth.Foundation.Workflow.Pipelines
 {
     public class UnlockItemWarning
     {
@@ -32,7 +32,7 @@ namespace Thread.Foundation.Workflow.Pipelines
                 {
                     GetContentEditorWarningsArgs.ContentEditorWarning unlockContentEditorWarning = args.Add();
                     unlockContentEditorWarning.Title = Translate.Text("'{0}' has locked this item.", (object)obj.Locking.GetOwnerWithoutDomain());
-                    unlockContentEditorWarning.AddOption(Translate.Text("Check In"), "thread:unlockitem");
+                    unlockContentEditorWarning.AddOption(Translate.Text("Check In"), "AtriusHealth:unlockitem");
                 }
                 else
                 {

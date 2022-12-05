@@ -1,6 +1,6 @@
 using System.Web;
 
-namespace Thread.Feature.Multimedia.Services
+namespace AtriusHealth.Feature.Multimedia.Services
 {
   public interface IVideoService
   {

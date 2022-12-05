@@ -1,8 +1,8 @@
-﻿---
+---
 ID: "abce3433-cf47-4597-928a-aa90213cb7e4"
 Parent: "f50aa367-f492-4096-aa14-4b71627153fb"
 Template: "3c8bd8a1-280b-4278-bb8b-21fa3b87af0f"
-Path: /sitecore/system/Settings/Html Editor Profiles/Thread/Rich Text Limited/Toolbar 1/Outdent
+Path: /sitecore/system/Settings/Html Editor Profiles/AtriusHealth/Rich Text Limited/Toolbar 1/Outdent
 DB: core
 BranchID: "b9ed3ccb-9ec5-4c8c-825b-3dbc2eb0e676"
 SharedFields:
@@ -32,7 +32,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Ausrücken
+    Value: Ausr�cken
   Versions:
   - Version: 1
     Fields:
@@ -61,7 +61,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: インデントを減らす
+    Value: ?????????
   Versions:
   - Version: 1
     Fields:

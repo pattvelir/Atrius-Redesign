@@ -10,7 +10,7 @@
 //------------------------------------------------------------------------------
 // ReSharper disable All
 
-					namespace Thread.Feature.Banners
+					namespace AtriusHealth.Feature.Banners
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -59,7 +59,7 @@ public static implicit operator Item(HeroItem customItem)
 					}
 				
 
-					namespace Thread.Feature.Banners
+					namespace AtriusHealth.Feature.Banners
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -96,7 +96,7 @@ public static implicit operator Item(PageBannerItem customItem)
 					}
 				
 
-					namespace Thread.Feature.Banners
+					namespace AtriusHealth.Feature.Banners
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -137,7 +137,7 @@ public static implicit operator Item(TextBannerItem customItem)
 					}
 				
 
-					namespace Thread.Feature.Banners
+					namespace AtriusHealth.Feature.Banners
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -174,15 +174,15 @@ public static implicit operator Item(_PrivacyConfigurationItem customItem)
 
 
 
-					namespace Thread.Feature.Banners
+					namespace AtriusHealth.Feature.Banners
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
 						using Sitecore.Data.Items;
 						using Sitecore.Mvc.Presentation;
-						using Thread.Foundation.Orm;
+						using AtriusHealth.Foundation.Orm;
 
-						public partial class BannerParameters : ThreadRenderingParameters
+						public partial class BannerParameters : AtriusHealthRenderingParameters
 						{
 							public static class Fields
 		{
@@ -202,21 +202,21 @@ public BannerParameters(string parametersAsQueryString) : base(parametersAsQuery
 
 				public virtual float Opacity => GetFloatValue(Fields.Opacity);
 
-				public virtual Thread.Foundation.Theme.ThemeItem Theme => GetItemValue(Fields.Theme);
+				public virtual AtriusHealth.Foundation.Theme.ThemeItem Theme => GetItemValue(Fields.Theme);
 
 						}
 					}
 				
 
-					namespace Thread.Feature.Banners
+					namespace AtriusHealth.Feature.Banners
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
 						using Sitecore.Data.Items;
 						using Sitecore.Mvc.Presentation;
-						using Thread.Foundation.Orm;
+						using AtriusHealth.Foundation.Orm;
 
-						public partial class TextBannerParameters : ThreadRenderingParameters
+						public partial class TextBannerParameters : AtriusHealthRenderingParameters
 						{
 							public static class Fields
 		{
@@ -232,7 +232,7 @@ public TextBannerParameters(string parametersAsQueryString) : base(parametersAsQ
 							
 				public virtual bool ExcludeTopMargin => GetBoolValue(Fields.ExcludeTopMargin);
 
-				public virtual Thread.Foundation.Theme.ThemeItem Theme => GetItemValue(Fields.Theme);
+				public virtual AtriusHealth.Foundation.Theme.ThemeItem Theme => GetItemValue(Fields.Theme);
 
 						}
 					}
@@ -240,7 +240,7 @@ public TextBannerParameters(string parametersAsQueryString) : base(parametersAsQ
 
 
 
-// Thread.Feature.Banners.Banner_Parameters (/sitecore/templates/Feature/Banners/Banner Parameters 52d2d679-2816-4a79-afe8-ebd5f5e9a1e3)
+// AtriusHealth.Feature.Banners.Banner_Parameters (/sitecore/templates/Feature/Banners/Banner Parameters 52d2d679-2816-4a79-afe8-ebd5f5e9a1e3)
 	// Banner_Height (e0c93ebb-51c4-4e1f-b42f-2e1ff4c80a8b)
 		// Type: Integer
 		// Section: Display Options
@@ -252,7 +252,7 @@ public TextBannerParameters(string parametersAsQueryString) : base(parametersAsQ
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Feature.Banners.Hero (/sitecore/templates/Feature/Banners/Hero f76633f7-ec75-40b3-832b-ac997c6ecb22)
+// AtriusHealth.Feature.Banners.Hero (/sitecore/templates/Feature/Banners/Hero f76633f7-ec75-40b3-832b-ac997c6ecb22)
 	// Image (b96ca82b-a50a-4fc6-8830-ffda49603cd1)
 		// Type: Image
 		// Section: Image
@@ -279,7 +279,7 @@ public TextBannerParameters(string parametersAsQueryString) : base(parametersAsQ
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Feature.Banners.Page_Banner (/sitecore/templates/Feature/Banners/Page Banner 60ac7f1a-2dda-4022-8f6c-a75fd3732303)
+// AtriusHealth.Feature.Banners.Page_Banner (/sitecore/templates/Feature/Banners/Page Banner 60ac7f1a-2dda-4022-8f6c-a75fd3732303)
 	// Image (8f6bb17a-0d9a-4fb5-b9de-1133ca7cfcd0)
 		// Type: Image
 		// Section: Image
@@ -291,7 +291,7 @@ public TextBannerParameters(string parametersAsQueryString) : base(parametersAsQ
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Feature.Banners.Text_Banner (/sitecore/templates/Feature/Banners/Text Banner 4e8757b1-b9a1-483b-a705-621f86420d75)
+// AtriusHealth.Feature.Banners.Text_Banner (/sitecore/templates/Feature/Banners/Text Banner 4e8757b1-b9a1-483b-a705-621f86420d75)
 	// Link (b457e6ab-c2b1-4e96-84c1-abb2c9f1ed4e)
 		// Type: General Link
 		// Section: Link
@@ -308,14 +308,14 @@ public TextBannerParameters(string parametersAsQueryString) : base(parametersAsQ
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Feature.Banners.Text_Banner_Parameters (/sitecore/templates/Feature/Banners/Text Banner Parameters 26713e59-27da-4b8b-bb29-e20f43e844f9)
+// AtriusHealth.Feature.Banners.Text_Banner_Parameters (/sitecore/templates/Feature/Banners/Text Banner Parameters 26713e59-27da-4b8b-bb29-e20f43e844f9)
 	// Exclude_Top_Margin (62f206fd-06a3-4f06-99be-576e655ad640)
 		// Type: Checkbox
 		// Section: Display Options
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Feature.Banners._Privacy_Configuration (/sitecore/templates/Feature/Banners/_Privacy Configuration 5e0e7757-c81c-4ddb-9b57-894e09d73619)
+// AtriusHealth.Feature.Banners._Privacy_Configuration (/sitecore/templates/Feature/Banners/_Privacy Configuration 5e0e7757-c81c-4ddb-9b57-894e09d73619)
 	// Privacy_Disclaimer (01ee3336-a06d-420c-a27c-f09ebb1e1565)
 		// Type: Rich Text
 		// Section: Privacy Configuration

@@ -1,5 +1,5 @@
-﻿
-namespace Thread.Feature.Navigation.Models
+
+namespace AtriusHealth.Feature.Navigation.Models
 {
 	public interface IContextualLinkable : ILinkable, IContextual
 	{

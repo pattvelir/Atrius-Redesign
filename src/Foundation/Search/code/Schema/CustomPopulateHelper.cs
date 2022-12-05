@@ -1,10 +1,10 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
 using Sitecore.ContentSearch.SolrProvider.Pipelines.PopulateSolrSchema;
 using SolrNet.Schema;
 
-namespace Thread.Foundation.Search.Schema
+namespace AtriusHealth.Foundation.Search.Schema
 {
     public class CustomPopulateHelper : SchemaPopulateHelper
     {

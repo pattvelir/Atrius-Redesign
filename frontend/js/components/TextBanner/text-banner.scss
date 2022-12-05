@@ -18,8 +18,8 @@
 }
 
 .text-banner__title {
-  font-size: 32px;
   margin-block-end: 24px;
+  font-size: 32px;
   line-height: 1.25;
 
   @media (min-width: 361px) {
@@ -28,10 +28,10 @@
 }
 
 .text-banner__description {
+  margin-block-end: 24px;
   font-family: $secondary-sans;
   font-size: 18px;
   line-height: 1.6;
-  margin-block-end: 24px;
 
   @media (min-width: 361px) {
     font-size: 20px;
@@ -48,21 +48,21 @@
 
 /* Text Banner Themes */
 .text-banner--theme1 {
+  color: var(--color-design-system-white);
   background-color: var(--color-blue-800);
-  color:  var(--color-design-system-white);
 }
 
 .text-banner--theme2 {
+  color: var(--color-design-system-white);
   background-color: var(--color-green-900);
-  color:  var(--color-design-system-white);
 }
 
 .text-banner--theme3 {
+  color: var(--color-design-system-white);
   background-color: var(--color-purple-900);
-  color:  var(--color-design-system-white);
 }
 
 .text-banner--theme4 {
   color: var(--color-neutral-900);
-  background-color:  var(--color-design-system-white);
+  background-color: var(--color-design-system-white);
 }

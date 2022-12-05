@@ -1,11 +1,11 @@
-﻿using System.Web;
+using System.Web;
 using Sitecore.ExperienceForms.Models;
 using Sitecore.ExperienceForms.Processing;
 using Sitecore.ExperienceForms.Processing.Actions;
 using Sitecore.StringExtensions;
-using Thread.Foundation.Forms.Reference;
+using AtriusHealth.Foundation.Forms.Reference;
 
-namespace Thread.Foundation.Forms.SubmitActions
+namespace AtriusHealth.Foundation.Forms.SubmitActions
 {
 	public class RedirectToParam : SubmitActionBase<string>
 	{

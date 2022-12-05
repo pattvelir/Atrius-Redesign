@@ -1,8 +1,8 @@
-﻿using Sitecore.Data.Fields;
+using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
-using Thread.Foundation.Abstractions.PageContent;
+using AtriusHealth.Foundation.Abstractions.PageContent;
 
-namespace Thread.Feature.PageContent.Factory.PageEditable
+namespace AtriusHealth.Feature.PageContent.Factory.PageEditable
 {
 	public class DefaultModel : IPageEditable
 	{

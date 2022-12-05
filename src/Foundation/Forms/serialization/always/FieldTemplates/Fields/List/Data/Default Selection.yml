@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "21ed172d-97e2-4ac4-8eaf-0a8860b891f4"
 Parent: "f5db760e-834f-4b1a-99ba-6ed2461d1222"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
@@ -67,10 +67,10 @@ Languages:
   Fields:
   - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
     Hint: Title
-    Value: デフォルトの選択
+    Value: ????????
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: デフォルトの選択
+    Value: ????????
   Versions:
   - Version: 1
     Fields:
@@ -85,10 +85,10 @@ Languages:
   Fields:
   - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
     Hint: Title
-    Value: 默认选择
+    Value: ????
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 默认选择
+    Value: ????
   Versions:
   - Version: 1
     Fields:

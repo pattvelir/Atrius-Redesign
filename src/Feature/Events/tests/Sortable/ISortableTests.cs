@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using NUnit.Framework;
 using Sitecore.Data;
 using Sitecore.FakeDb;
-using Thread.Foundation.Abstractions.Indexing;
+using AtriusHealth.Foundation.Abstractions.Indexing;
 
-namespace Thread.Feature.Events.Tests.Sortable
+namespace AtriusHealth.Feature.Events.Tests.Sortable
 {
 	[TestFixture]
 	public class ISortableTests

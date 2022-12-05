@@ -1,8 +1,8 @@
-﻿using Thread.Foundation.Mvc.ViewModels;
+using AtriusHealth.Foundation.Mvc.ViewModels;
 
-namespace Thread.Feature.Promo.Models
+namespace AtriusHealth.Feature.Promo.Models
 {
-	public class PromoModel : ThreadViewModel<PromoItem, PromoRenderingParameters>
+	public class PromoModel : AtriusHealthViewModel<PromoItem, PromoRenderingParameters>
 	{
 		public string OrientationClass => RenderingParameters.Orientation?.Value?.Value ?? string.Empty;
 	}

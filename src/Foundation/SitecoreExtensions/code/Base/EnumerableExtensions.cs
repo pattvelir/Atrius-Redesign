@@ -1,7 +1,7 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
-namespace Thread.Foundation.SitecoreExtensions.Base
+namespace AtriusHealth.Foundation.SitecoreExtensions.Base
 {
     public static class EnumerableExtensions
     {

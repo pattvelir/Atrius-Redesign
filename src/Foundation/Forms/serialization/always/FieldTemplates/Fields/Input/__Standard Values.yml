@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "eb802e92-9120-447c-91d2-de8c763a3831"
 Parent: "0908030b-4564-42ea-a6fa-c7a5a2d921a8"
 Template: "0908030b-4564-42ea-a6fa-c7a5a2d921a8"
@@ -80,7 +80,7 @@ Languages:
         sitecore\admin
     - ID: "71ffd7b2-8b09-4f7b-8a66-1e4cef653e8d"
       Hint: Title
-      Value: ラベル
+      Value: ???
 - Language: "zh-CN"
   Versions:
   - Version: 1
@@ -94,4 +94,4 @@ Languages:
         sitecore\admin
     - ID: "71ffd7b2-8b09-4f7b-8a66-1e4cef653e8d"
       Hint: Title
-      Value: 标记
+      Value: ??

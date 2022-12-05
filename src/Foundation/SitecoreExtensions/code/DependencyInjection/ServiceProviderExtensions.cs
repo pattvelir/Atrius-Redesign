@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace Thread.Foundation.SitecoreExtensions.DependencyInjection
+namespace AtriusHealth.Foundation.SitecoreExtensions.DependencyInjection
 {
 	public static class ServiceProviderExtensions
 	{

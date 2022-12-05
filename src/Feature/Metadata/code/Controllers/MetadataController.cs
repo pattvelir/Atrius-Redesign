@@ -1,10 +1,10 @@
-﻿using System.Web.Mvc;
-using Thread.Feature.Metadata.Services;
-using Thread.Foundation.Mvc.Controllers;
+using System.Web.Mvc;
+using AtriusHealth.Feature.Metadata.Services;
+using AtriusHealth.Foundation.Mvc.Controllers;
 
-namespace Thread.Feature.Metadata.Controllers
+namespace AtriusHealth.Feature.Metadata.Controllers
 {
-	public class MetadataController : ThreadController
+	public class MetadataController : AtriusHealthController
 	{
 		private readonly IMetadataService _metadataService;
 		public MetadataController(IMetadataService metadataService)

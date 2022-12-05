@@ -1,14 +1,14 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Sitecore.Data.Items;
 using Sitecore.StringExtensions;
-using Thread.Foundation.Abstractions.Listing;
-using Thread.Foundation.SitecoreExtensions.Base;
-using Thread.Foundation.SitecoreExtensions.Item;
-using Thread.Foundation.Taxonomy;
+using AtriusHealth.Foundation.Abstractions.Listing;
+using AtriusHealth.Foundation.SitecoreExtensions.Base;
+using AtriusHealth.Foundation.SitecoreExtensions.Item;
+using AtriusHealth.Foundation.Taxonomy;
 
-namespace Thread.Feature.PageContent.Factory.Listable
+namespace AtriusHealth.Feature.PageContent.Factory.Listable
 {
 	public class FallbackModel : IListable
 	{
@@ -63,7 +63,7 @@ namespace Thread.Feature.PageContent.Factory.Listable
 		public virtual string ListContentType => ContentTypeItem?.ContentType?.TargetItem?.DisplayName ?? string.Empty;
 		public virtual IEnumerable<string> ListAuthors => PeopleItem?.People?.GetItems().OfType(PersonItem.TemplateId).Select(a => (PersonItem)a).Select(p => $"{p.FirstName.Value} {p.LastName.Value}") ?? Enumerable.Empty<string>();
 		public virtual string ListDate => DateItem?.DisplayDate?.DateTime > DateTime.MinValue
-			? DateItem.DisplayDate.DateTime.ToThreadFormat()
+			? DateItem.DisplayDate.DateTime.ToAtriusHealthFormat()
 			: string.Empty;
 
 		public virtual string ListLocation => string.Empty;

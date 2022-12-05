@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="RebuildAllSearchIndexes.aspx.cs" Inherits="Thread.Foundation.Search.sitecore.admin.RebuildAllSearchIndexes" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="RebuildAllSearchIndexes.aspx.cs" Inherits="AtriusHealth.Foundation.Search.sitecore.admin.RebuildAllSearchIndexes" %>
 
 <!DOCTYPE html>
 

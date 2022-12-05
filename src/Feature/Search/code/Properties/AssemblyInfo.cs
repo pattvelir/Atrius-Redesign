@@ -1,16 +1,16 @@
-﻿using System.Reflection;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Thread.Feature.Search")]
+[assembly: AssemblyTitle("AtriusHealth.Feature.Search")]
 [assembly: AssemblyDescription("Implementation of search components from Velir.Search.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Velir")]
 [assembly: AssemblyProduct("code")]
-[assembly: AssemblyCopyright("Copyright ©  2018")]
+[assembly: AssemblyCopyright("Copyright �  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

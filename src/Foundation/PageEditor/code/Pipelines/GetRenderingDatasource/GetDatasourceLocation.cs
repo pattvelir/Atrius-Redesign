@@ -1,10 +1,10 @@
-﻿using Sitecore.Data.Items;
+using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
 using Sitecore.Text;
 using System;
 using Sitecore.Pipelines.GetRenderingDatasource;
 
-namespace Thread.Foundation.PageEditor.Pipelines.GetRenderingDatasource
+namespace AtriusHealth.Foundation.PageEditor.Pipelines.GetRenderingDatasource
 {
     public class GetDatasourceLocation
     {

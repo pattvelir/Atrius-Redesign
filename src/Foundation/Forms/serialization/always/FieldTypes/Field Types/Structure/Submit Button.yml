@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "7ce25cab-ef3a-4f73-ab13-d33bdc1e4ee2"
 Parent: "77d13f14-e78f-4476-8a2e-2b011fe0fb97"
 Template: "a60edcaf-1285-46b5-8380-d790bb8c8708"
@@ -79,7 +79,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 送信ボタン
+    Value: ?????
   Versions:
   - Version: 1
     Fields:
@@ -94,7 +94,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 提交按钮
+    Value: ????
   Versions:
   - Version: 1
     Fields:

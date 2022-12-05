@@ -1,0 +1,14 @@
+---
+ID: "c28a18bb-179a-44c3-be25-41047b9b4f7f"
+Parent: "1785ac87-187e-4ea5-93da-df7a005a2387"
+Template: "60ac7f1a-2dda-4022-8f6c-a75fd3732303"
+Path: /sitecore/templates/Branches/Project/Atrius/Pages/Long Form Page/$name/Components/Banners/Page Banner
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161205T152339Z

@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "5b47f166-426d-4db9-bdcd-bccfd000eba2"
 Parent: "27a629c7-5545-43e4-84aa-39cb510916bf"
 Template: "9f62ebd5-2280-4a35-be51-a210d831d687"
@@ -26,7 +26,7 @@ SharedFields:
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <r
           id="{6E177CB2-BBC1-486E-90E9-8C5E579A090B}"
-          par="Id=TaxonomySmallButton&amp;Click=trigger%3abutton%3aclick&amp;Command=LaunchFieldEditor&amp;PageCodeScriptFileName=%2fAreas%2fThread%2fScripts%2fLaunchFieldEditor.js&amp;AccessKey=Content+Type%7cTopics%7cLocations%7cPeople"
+          par="Id=TaxonomySmallButton&amp;Click=trigger%3abutton%3aclick&amp;Command=LaunchFieldEditor&amp;PageCodeScriptFileName=%2fAreas%2fAtriusHealth%2fScripts%2fLaunchFieldEditor.js&amp;AccessKey=Content+Type%7cTopics%7cLocations%7cPeople"
           uid="{C69B705F-6976-4A9A-8648-B84913884189}" />
       </d>
     </r>
@@ -94,7 +94,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: ログオフ
+    Value: ????
   Versions:
   - Version: 1
     Fields:
@@ -107,7 +107,7 @@ Languages:
         sitecore\admin
     - ID: "a47cd065-c361-4332-b22b-7e2148de06f4"
       Hint: Tooltip
-      Value: ログオフ
+      Value: ????
     - ID: "c184f18b-b452-44d6-8376-facd6cef8a42"
       Hint: Header
-      Value: ログオフ
+      Value: ????

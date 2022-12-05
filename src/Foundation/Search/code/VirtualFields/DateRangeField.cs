@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -9,9 +9,9 @@ using Sitecore.ContentSearch.Pipelines.GetFacets;
 using Sitecore.ContentSearch.Pipelines.ProcessFacets;
 using Sitecore.ContentSearch.Utilities;
 using Sitecore.Diagnostics;
-using Constants = Thread.Foundation.Search.Reference.Constants;
+using Constants = AtriusHealth.Foundation.Search.Reference.Constants;
 
-namespace Thread.Foundation.Search.VirtualFields
+namespace AtriusHealth.Foundation.Search.VirtualFields
 {
     public class DateRangeField : IVirtualFieldProcessor, IFieldQueryTranslator, ISearchIndexInitializable
     {

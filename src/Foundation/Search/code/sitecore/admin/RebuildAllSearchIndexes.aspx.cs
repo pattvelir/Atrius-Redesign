@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Linq;
 using Sitecore.ContentSearch.Maintenance;
 using Sitecore.sitecore.admin;
 
-namespace Thread.Foundation.Search.sitecore.admin
+namespace AtriusHealth.Foundation.Search.sitecore.admin
 {
     public partial class RebuildAllSearchIndexes : AdminPage
     {

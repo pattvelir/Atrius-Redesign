@@ -1,10 +1,10 @@
-﻿using System.IO;
+using System.IO;
 using System.Text;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.UI;
 
-namespace Thread.Foundation.Theme.Extensions
+namespace AtriusHealth.Foundation.Theme.Extensions
 {
 	public static class HtmlHelperExtensions
 	{

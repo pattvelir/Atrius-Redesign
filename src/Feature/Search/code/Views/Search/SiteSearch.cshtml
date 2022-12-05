@@ -1,12 +1,12 @@
-﻿@using Sitecore.Configuration
+@using Sitecore.Configuration
 @using Sitecore.ContentSearch.SearchTypes
 @using Sitecore.Data
-@using Thread.Feature.Search
-@using Thread.Foundation.Mvc.Extensions
-@using Thread.Foundation.Theme.Extensions
-@using Thread.Foundation.Search.Reference
+@using AtriusHealth.Feature.Search
+@using AtriusHealth.Foundation.Mvc.Extensions
+@using AtriusHealth.Foundation.Theme.Extensions
+@using AtriusHealth.Foundation.Search.Reference
 @using Velir.Search.Core.Models
-@model Thread.Feature.Search.Models.SiteSearchModel
+@model AtriusHealth.Feature.Search.Models.SiteSearchModel
 
 @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
 {
@@ -66,7 +66,7 @@
             else
             {
               <div class="search-results__load-more">
-                <button class="btn btn--primary" type="button">@Html.Raw(Thread.Foundation.Dictionary.Statics.EditableTranslate.Text("Search.SiteSearch.LoadMore"))</button>
+                <button class="btn btn--primary" type="button">@Html.Raw(AtriusHealth.Foundation.Dictionary.Statics.EditableTranslate.Text("Search.SiteSearch.LoadMore"))</button>
               </div>
             }
           }

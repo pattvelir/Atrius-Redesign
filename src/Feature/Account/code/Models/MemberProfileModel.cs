@@ -1,12 +1,12 @@
-﻿using System;
+using System;
 using System.Linq;
 using System.Text;
 using System.Web;
 using System.Web.Mvc;
 using HtmlAgilityPack;
-using Thread.Foundation.Dictionary.Repositories;
+using AtriusHealth.Foundation.Dictionary.Repositories;
 
-namespace Thread.Feature.Account.Models
+namespace AtriusHealth.Feature.Account.Models
 {
     public class MemberProfileModel : MemberProfileBaseModel
     {

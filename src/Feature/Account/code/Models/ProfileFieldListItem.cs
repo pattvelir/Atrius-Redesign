@@ -1,4 +1,4 @@
-﻿namespace Thread.Feature.Account.Models
+namespace AtriusHealth.Feature.Account.Models
 {
     public class ProfileFieldListItem
     {

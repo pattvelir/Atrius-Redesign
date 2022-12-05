@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "9bae3e9a-d89f-4f93-9577-68b5e9d44a38"
 Parent: "df698a60-1c55-4536-98f8-58ba5b1f2156"
 Template: "0a1a6dce-078a-4ece-9fce-71cade57c7b8"
@@ -44,7 +44,7 @@ Languages:
       Value: 20181101T100735Z
     - ID: "2ce7436e-2b14-47e8-9103-7d2ea2f31159"
       Hint: Message
-      Value: "{0} enthält ungültige Emailadresse."
+      Value: "{0} enth�lt ung�ltige Emailadresse."
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -67,7 +67,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Eメール検証
+    Value: E?????
   Versions:
   - Version: 1
     Fields:
@@ -76,7 +76,7 @@ Languages:
       Value: 20181101T101023Z
     - ID: "2ce7436e-2b14-47e8-9103-7d2ea2f31159"
       Hint: Message
-      Value: "{0} に無効なEメール アドレスが含まれています"
+      Value: "{0} ????E??? ????????????"
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -85,7 +85,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 电子邮件验证器
+    Value: ???????
   Versions:
   - Version: 1
     Fields:
@@ -94,7 +94,7 @@ Languages:
       Value: 20181101T101308Z
     - ID: "2ce7436e-2b14-47e8-9103-7d2ea2f31159"
       Hint: Message
-      Value: "{0}包含无效的电子邮件地址。"
+      Value: "{0}????????????"
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

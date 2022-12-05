@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Sitecore.Data;
@@ -8,7 +8,7 @@ using Sitecore.ExperienceEditor.Speak.Server.Responses;
 using Sitecore.Shell.Applications.ContentEditor;
 using Sitecore.Text;
 
-namespace Thread.Foundation.AX.SpeakRequests
+namespace AtriusHealth.Foundation.AX.SpeakRequests
 {
 	public class GenerateFieldEditorUrl : PipelineProcessorRequest<FieldEditorItemContext>
 	{

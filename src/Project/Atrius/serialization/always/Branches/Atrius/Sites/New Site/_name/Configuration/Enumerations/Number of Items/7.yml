@@ -1,0 +1,25 @@
+---
+ID: "39651d84-8a3c-45aa-a2c7-f895d4ff3da4"
+Parent: "c0a6034f-4be5-4b40-9a98-5470fa3436ee"
+Template: "aaad8d76-57dd-48ad-8601-8a573ed01709"
+Path: /sitecore/templates/Branches/Project/Atrius/Sites/New Site/$name/Configuration/Enumerations/Number of Items/7
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 800
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0dc82897-5b0f-47ce-87bd-6957ab817afa"
+      Hint: Value
+      Value: 7
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170310T164442Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

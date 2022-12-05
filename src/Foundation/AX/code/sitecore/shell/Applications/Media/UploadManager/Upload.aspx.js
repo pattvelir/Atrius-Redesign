@@ -1,4 +1,4 @@
-﻿/* Sitecore.Upload */
+/* Sitecore.Upload */
 
 Sitecore.Upload = new function () {
     Sitecore.Dhtml.attachEvent(window, "onload", function () { Sitecore.Upload.load() });

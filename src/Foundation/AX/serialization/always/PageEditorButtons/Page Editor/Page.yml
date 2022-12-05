@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "27a629c7-5545-43e4-84aa-39cb510916bf"
 Parent: "0642041b-6e6c-4b82-9648-bb6603e8dce5"
 Template: "8f3d8f9b-2d76-4ace-803f-35415d2b230a"
@@ -69,7 +69,7 @@ Languages:
         sitecore\admin
     - ID: "c95d21bd-66c3-444b-a37f-d346cbaf2b55"
       Hint: Header
-      Value: Schließen
+      Value: Schlie�en
 - Language: en
   Versions:
   - Version: 1
@@ -91,7 +91,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: ログオフ
+    Value: ????
   Versions:
   - Version: 1
     Fields:
@@ -100,11 +100,11 @@ Languages:
       Value: 20160729T133616Z
     - ID: "4061c1c7-dc71-4c1d-932d-22fd5a37adac"
       Hint: Tooltip
-      Value: プレビューを終了します
+      Value: ???????????
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\admin
     - ID: "c95d21bd-66c3-444b-a37f-d346cbaf2b55"
       Hint: Header
-      Value: 終了
+      Value: ??

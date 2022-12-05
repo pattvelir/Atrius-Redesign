@@ -1,4 +1,4 @@
-﻿@{
+@{
   @* This "hidden" switch is to avoid distorting markup for the search component. *@
   bool eeOnly = @Html.Sitecore().CurrentRendering.Parameters["EE_Only"] == "1";
   bool show = !eeOnly || Sitecore.Context.PageMode.IsExperienceEditor;

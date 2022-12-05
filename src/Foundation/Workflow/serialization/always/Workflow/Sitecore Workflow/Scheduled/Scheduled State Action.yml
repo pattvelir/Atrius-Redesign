@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "6df475f3-23d4-4e2c-b85c-b55fcba41edf"
 Parent: "ad1c366a-7190-4c82-9bf9-4b4250fc4a43"
 Template: "66882e97-c8aa-4e37-8901-7a8aa35ed2ed"
@@ -7,7 +7,7 @@ DB: master
 SharedFields:
 - ID: "a291a22b-99e2-46bb-a27b-8ec744275396"
   Hint: Type
-  Value: Thread.Foundation.Workflow.Actions.ScheduledPublishingAction, Thread.Foundation.Workflow
+  Value: AtriusHealth.Foundation.Workflow.Actions.ScheduledPublishingAction, AtriusHealth.Foundation.Workflow
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 50

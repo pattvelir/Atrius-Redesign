@@ -1,8 +1,8 @@
-﻿---
+---
 ID: "b5813b2e-d70f-42e0-bf93-7ba273b23a0a"
 Parent: "6b76946a-9077-4e2d-b39c-ffbc9d80a594"
 Template: "02404208-46d4-49bf-988b-eb363a52a1c9"
-Path: /sitecore/system/Settings/Html Editor Profiles/Thread/Rich Text Limited/WebEdit Buttons/Insert Link
+Path: /sitecore/system/Settings/Html Editor Profiles/AtriusHealth/Rich Text Limited/WebEdit Buttons/Insert Link
 DB: core
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
@@ -26,10 +26,10 @@ Languages:
   Fields:
   - ID: "371e0d96-4f00-4b80-ad14-6284e00493ba"
     Hint: Tooltip
-    Value: Indsæt link
+    Value: Inds�t link
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Indsæt link
+    Value: Inds�t link
   Versions:
   - Version: 1
     Fields:
@@ -44,10 +44,10 @@ Languages:
   Fields:
   - ID: "371e0d96-4f00-4b80-ad14-6284e00493ba"
     Hint: Tooltip
-    Value: Link einfügen
+    Value: Link einf�gen
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Link einfügen
+    Value: Link einf�gen
   Versions:
   - Version: 1
     Fields:
@@ -77,10 +77,10 @@ Languages:
   Fields:
   - ID: "371e0d96-4f00-4b80-ad14-6284e00493ba"
     Hint: Tooltip
-    Value: リンクを挿入
+    Value: ??????
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: リンクを挿入
+    Value: ??????
   Versions:
   - Version: 1
     Fields:

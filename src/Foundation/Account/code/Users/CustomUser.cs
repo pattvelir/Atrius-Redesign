@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Sitecore.Data;
-using Thread.Foundation.Account.Attributes;
+using AtriusHealth.Foundation.Account.Attributes;
 
-namespace Thread.Foundation.Account.Users
+namespace AtriusHealth.Foundation.Account.Users
 {
     public class CustomUser : BaseUser
     {

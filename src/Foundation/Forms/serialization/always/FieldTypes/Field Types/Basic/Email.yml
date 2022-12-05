@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "04c39cac-8976-4910-be0d-879ed3368429"
 Parent: "b5350d9a-ceee-4d15-b9ff-797ceacccdc7"
 Template: "a60edcaf-1285-46b5-8380-d790bb8c8708"
@@ -70,7 +70,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 電子メール アドレス
+    Value: ????? ????
   Versions:
   - Version: 1
     Fields:
@@ -85,7 +85,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 电子邮件
+    Value: ????
   Versions:
   - Version: 1
     Fields:

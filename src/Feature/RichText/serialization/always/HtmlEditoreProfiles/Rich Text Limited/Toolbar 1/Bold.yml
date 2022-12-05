@@ -1,8 +1,8 @@
-﻿---
+---
 ID: "0a7048b6-fe1b-4793-b3c5-0d84e8297b3b"
 Parent: "f50aa367-f492-4096-aa14-4b71627153fb"
 Template: "3c8bd8a1-280b-4278-bb8b-21fa3b87af0f"
-Path: /sitecore/system/Settings/Html Editor Profiles/Thread/Rich Text Limited/Toolbar 1/Bold
+Path: /sitecore/system/Settings/Html Editor Profiles/AtriusHealth/Rich Text Limited/Toolbar 1/Bold
 DB: core
 BranchID: "b9ed3ccb-9ec5-4c8c-825b-3dbc2eb0e676"
 SharedFields:
@@ -61,7 +61,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 太字
+    Value: ??
   Versions:
   - Version: 1
     Fields:

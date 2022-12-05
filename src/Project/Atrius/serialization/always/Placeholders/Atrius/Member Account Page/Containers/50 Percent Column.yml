@@ -1,0 +1,28 @@
+---
+ID: "a9d6c0c3-e8fe-43a0-bb1f-3009a939d782"
+Parent: "c81fbc73-c4d7-4816-aa11-c0aeb05163ed"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/Project/Atrius/Member Account Page/Containers/50 Percent Column
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: 
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: |
+    {A2180523-F93E-432A-AF08-6009FA07122C}
+    {089971A7-90DA-4923-8712-BE61C59DD237}
+    {18B407EA-1385-4BAD-AF8A-422D85B0CEF2}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161117T030254Z

@@ -1,6 +1,6 @@
-﻿using Sitecore.Data.Items;
+using Sitecore.Data.Items;
 
-namespace Thread.Feature.Sitemap.Services
+namespace AtriusHealth.Feature.Sitemap.Services
 {
   public interface ISitemapService
   {

@@ -10,7 +10,7 @@
 //------------------------------------------------------------------------------
 // ReSharper disable All
 
-					namespace Thread.Foundation.ErrorHandling
+					namespace AtriusHealth.Foundation.ErrorHandling
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -49,7 +49,7 @@ public static implicit operator Item(ErrorHandlingConfigurationItem customItem)
 
 
 
-// Thread.Foundation.ErrorHandling.Error_Handling_Configuration (/sitecore/templates/Foundation/Error Handling/Error Handling Configuration 8148e537-118d-4f13-b6e4-c70036c5b915)
+// AtriusHealth.Foundation.ErrorHandling.Error_Handling_Configuration (/sitecore/templates/Foundation/Error Handling/Error Handling Configuration 8148e537-118d-4f13-b6e4-c70036c5b915)
 	// _404_Page_Location (be5681b8-5cd7-429e-8676-dd9c73ea965c)
 		// Type: Droptree
 		// Section: Error Page Configuration

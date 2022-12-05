@@ -1,12 +1,12 @@
-﻿using Sitecore.DependencyInjection;
+using Sitecore.DependencyInjection;
 using Sitecore.ExperienceForms.Models;
 using Sitecore.ExperienceForms.Processing;
 using Sitecore.ExperienceForms.Processing.Actions;
 using Sitecore.StringExtensions;
-using Thread.Foundation.Abstractions.Account;
-using Thread.Foundation.SitecoreExtensions.DependencyInjection;
+using AtriusHealth.Foundation.Abstractions.Account;
+using AtriusHealth.Foundation.SitecoreExtensions.DependencyInjection;
 
-namespace Thread.Feature.Account.Forms.SubmitActions
+namespace AtriusHealth.Feature.Account.Forms.SubmitActions
 {
 	public abstract class AccountSubmitActionBase<TParametersData> : SubmitActionBase<TParametersData>
 	{

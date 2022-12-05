@@ -1,14 +1,14 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Thread.Feature.Events.Extensions;
-using Thread.Foundation.Mvc.ViewModels;
-using Thread.Foundation.Orm;
-using Thread.Foundation.SitecoreExtensions.Base;
+using AtriusHealth.Feature.Events.Extensions;
+using AtriusHealth.Foundation.Mvc.ViewModels;
+using AtriusHealth.Foundation.Orm;
+using AtriusHealth.Foundation.SitecoreExtensions.Base;
 
-namespace Thread.Feature.Events.Models
+namespace AtriusHealth.Feature.Events.Models
 {
-	public class EventDetailsModel : ThreadViewModel<ThreadItem>
+	public class EventDetailsModel : AtriusHealthViewModel<AtriusHealthItem>
 	{
 		public _EventDetailsItem EventDetails => PageItem;
 		public _EventDatesItem EventDates => PageItem;

@@ -1,7 +1,7 @@
-﻿using Sitecore;
+using Sitecore;
 using Sitecore.Collections;
 
-namespace Thread.Foundation.ResponsiveImages.Extensions
+namespace AtriusHealth.Foundation.ResponsiveImages.Extensions
 {
 	public static class SafeDictionaryExtensions
 	{

@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "5ac7621e-9f18-4569-bcec-f5bf8ba1f4d7"
 Parent: "ebde78cc-ad3f-4623-b395-cc67df70b5ea"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
@@ -67,7 +67,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 日付
+    Value: ??
   Versions:
   - Version: 1
     Fields:
@@ -82,7 +82,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 日期
+    Value: ??
   Versions:
   - Version: 1
     Fields:

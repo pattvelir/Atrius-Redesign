@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Sitecore;
@@ -7,7 +7,7 @@ using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 using Sitecore.Layouts;
 
-namespace Thread.Foundation.Branching.Events.ItemAdded
+namespace AtriusHealth.Foundation.Branching.Events.ItemAdded
 {
 	// http://www.suneco.nl/over-suneco/blog/2014/creating-items-from-a-branch-relocating-datasource.aspx
 	public class RelocateDatasourceItemsFromBranch : RelocateFromBranch

@@ -1,15 +1,15 @@
-﻿using System;
+using System;
 using Sitecore.Data;
 using Sitecore.DependencyInjection;
-using Thread.Foundation.SitecoreExtensions.DependencyInjection;
+using AtriusHealth.Foundation.SitecoreExtensions.DependencyInjection;
 using Sitecore.Diagnostics;
 using Sitecore.ExperienceForms.Models;
 using Sitecore.ExperienceForms.Processing;
-using Thread.Foundation.Abstractions.Account;
-using Thread.Foundation.Forms.SubmitActions;
-using Thread.Foundation.Multisite.Configuration;
+using AtriusHealth.Foundation.Abstractions.Account;
+using AtriusHealth.Foundation.Forms.SubmitActions;
+using AtriusHealth.Foundation.Multisite.Configuration;
 
-namespace Thread.Feature.Account.Forms.SubmitActions.Password
+namespace AtriusHealth.Feature.Account.Forms.SubmitActions.Password
 {
 	public class SendSecureLink : AccountSubmitActionBase<SendSecureLinkData>
 	{

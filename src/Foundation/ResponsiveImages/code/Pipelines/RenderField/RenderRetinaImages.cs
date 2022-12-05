@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using HtmlAgilityPack;
 using Sitecore.Data.Fields;
@@ -6,9 +6,9 @@ using Sitecore.Data.ItemResolvers;
 using Sitecore.Data.Items;
 using Sitecore.Pipelines.RenderField;
 using Sitecore.Resources.Media;
-using Thread.Foundation.ResponsiveImages.Extensions;
+using AtriusHealth.Foundation.ResponsiveImages.Extensions;
 
-namespace Thread.Foundation.ResponsiveImages.Pipelines.RenderField
+namespace AtriusHealth.Foundation.ResponsiveImages.Pipelines.RenderField
 {
 	public class RenderRetinaImages
 	{

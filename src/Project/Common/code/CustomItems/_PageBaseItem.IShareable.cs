@@ -1,8 +1,8 @@
-﻿using Thread.Foundation.Abstractions.Social;
-using Thread.Foundation.SitecoreExtensions.Base;
-using Thread.Foundation.SitecoreExtensions.Item;
+using AtriusHealth.Foundation.Abstractions.Social;
+using AtriusHealth.Foundation.SitecoreExtensions.Base;
+using AtriusHealth.Foundation.SitecoreExtensions.Item;
 
-namespace Thread.Project.Common
+namespace AtriusHealth.Project.Common
 {
 	public partial class _PageBaseItem : IShareable
 	{

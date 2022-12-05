@@ -1,8 +1,8 @@
-﻿using System.Web;
+using System.Web;
 using System.Web.Mvc;
 using StackExchange.Profiling;
 
-namespace Thread.Foundation.Performance.Extensions
+namespace AtriusHealth.Foundation.Performance.Extensions
 {
 	public static class HtmlHelperExtensions
 	{

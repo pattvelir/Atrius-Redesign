@@ -1,6 +1,6 @@
-﻿using System.Linq;
+using System.Linq;
 
-namespace Thread.Foundation.Taxonomy.Extensions
+namespace AtriusHealth.Foundation.Taxonomy.Extensions
 {
 	public static class AuthorExtensions
 	{

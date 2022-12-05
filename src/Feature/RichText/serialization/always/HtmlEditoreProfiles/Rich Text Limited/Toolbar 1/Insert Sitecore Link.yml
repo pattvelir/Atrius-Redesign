@@ -1,8 +1,8 @@
-﻿---
+---
 ID: "0eeffdd5-1f15-4f45-b34f-cc5ad7fca0f0"
 Parent: "f50aa367-f492-4096-aa14-4b71627153fb"
 Template: "3c8bd8a1-280b-4278-bb8b-21fa3b87af0f"
-Path: /sitecore/system/Settings/Html Editor Profiles/Thread/Rich Text Limited/Toolbar 1/Insert Sitecore Link
+Path: /sitecore/system/Settings/Html Editor Profiles/AtriusHealth/Rich Text Limited/Toolbar 1/Insert Sitecore Link
 DB: core
 BranchID: "b9ed3ccb-9ec5-4c8c-825b-3dbc2eb0e676"
 SharedFields:
@@ -20,7 +20,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: "Indsæt Sitecore-link"
+    Value: "Inds�t Sitecore-link"
   Versions:
   - Version: 1
     Fields:
@@ -35,7 +35,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Sitecore Link einfügen
+    Value: Sitecore Link einf�gen
   Versions:
   - Version: 1
     Fields:
@@ -65,7 +65,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: サイトコア内部のリンクを挿入
+    Value: ??????????????
   Versions:
   - Version: 1
     Fields:

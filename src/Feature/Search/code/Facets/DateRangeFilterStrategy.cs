@@ -1,11 +1,11 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using Sitecore.ContentSearch.Linq;
 using Velir.Search.Core.Facets.Sort;
 using Velir.Search.Core.Results.Facets;
-using Thread.Feature.Search.References;
+using AtriusHealth.Feature.Search.References;
 
-namespace Thread.Feature.Search.Facets
+namespace AtriusHealth.Feature.Search.Facets
 {
     public class DateRangeFilterStrategy : AbstractSortStrategy
     {

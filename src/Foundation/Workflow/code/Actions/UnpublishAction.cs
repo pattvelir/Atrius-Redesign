@@ -1,14 +1,14 @@
-﻿using Sitecore.Configuration;
+using Sitecore.Configuration;
 using Sitecore.Publishing;
 using Sitecore.Workflows.Simple;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using Thread.Foundation.Workflow.Publishing;
-using Thread.Foundation.Workflow.References;
+using AtriusHealth.Foundation.Workflow.Publishing;
+using AtriusHealth.Foundation.Workflow.References;
 
-namespace Thread.Foundation.Workflow.Actions
+namespace AtriusHealth.Foundation.Workflow.Actions
 {
     public class UnpublishAction : AbstractCustomWorkflowAction
     {

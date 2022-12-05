@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using System.Text.RegularExpressions;
 using Sitecore.Data;
 using Sitecore.Data.Items;
@@ -6,9 +6,9 @@ using Sitecore.Diagnostics;
 using Sitecore.Pipelines.GetRenderingDatasource;
 using Sitecore.Sites;
 using Sitecore.Text;
-using Thread.Foundation.PageEditor.Reference;
+using AtriusHealth.Foundation.PageEditor.Reference;
 
-namespace Thread.Foundation.PageEditor.Pipelines.GetRenderingDatasource
+namespace AtriusHealth.Foundation.PageEditor.Pipelines.GetRenderingDatasource
 {
 	public class CreateRelativeComponentRoots : AbstractRelativeComponentRoots
 	{

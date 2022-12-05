@@ -1,13 +1,13 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using Sitecore.Data;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 using Sitecore.Links;
 using Sitecore.Resources.Media;
-using Thread.Foundation.SitecoreExtensions.Base;
+using AtriusHealth.Foundation.SitecoreExtensions.Base;
 
-namespace Thread.Foundation.SitecoreExtensions.Item
+namespace AtriusHealth.Foundation.SitecoreExtensions.Item
 {
 	public static class ItemExtensions
 	{

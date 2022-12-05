@@ -1,16 +1,16 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Jabberwocky.DependencyInjection.Autowire.Attributes;
 using Sitecore.DependencyInjection;
-using Thread.Foundation.Abstractions.Account;
-using Thread.Foundation.Abstractions.PageContent;
-using Thread.Foundation.Orm.Factory;
-using Thread.Foundation.Orm.Services;
-using Thread.Foundation.SitecoreExtensions.DependencyInjection;
+using AtriusHealth.Foundation.Abstractions.Account;
+using AtriusHealth.Foundation.Abstractions.PageContent;
+using AtriusHealth.Foundation.Orm.Factory;
+using AtriusHealth.Foundation.Orm.Services;
+using AtriusHealth.Foundation.SitecoreExtensions.DependencyInjection;
 
-namespace Thread.Feature.Account.Models
+namespace AtriusHealth.Feature.Account.Models
 {
     public abstract class MemberProfileBaseModel
     {

@@ -1,0 +1,28 @@
+---
+ID: "909761d0-88a5-4c11-9ca0-66ea4aa20ab4"
+Parent: "6b719b44-ac8f-4a4e-984b-fc975c3f0749"
+Template: "edeb2c49-9782-4516-a356-5ab0c099759c"
+Path: /sitecore/templates/Branches/Project/Atrius/Pages/Event Detail Page/$name
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{2B292640-87CF-49D0-AE7E-9C57E3E3B5CF}"
+          s:ds="{B83ADF51-9132-40E4-A9DD-2F1161E3A6C1}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180202T185320Z

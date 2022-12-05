@@ -1,9 +1,9 @@
-﻿using Thread.Foundation.Mvc.ViewModels;
-using Thread.Foundation.Theme;
+using AtriusHealth.Foundation.Mvc.ViewModels;
+using AtriusHealth.Foundation.Theme;
 
-namespace Thread.Feature.Banners.Models
+namespace AtriusHealth.Feature.Banners.Models
 {
-	public class TextBannerModel : ThreadViewModel<TextBannerItem, TextBannerParameters>
+	public class TextBannerModel : AtriusHealthViewModel<TextBannerItem, TextBannerParameters>
 	{
 		public string ThemeClass => string.IsNullOrEmpty(RenderingParameters.Theme?.Value?.Value) ? "" : "text-banner--theme" + RenderingParameters.Theme.Value.Value;
 		public string ExcludeTopMarginClass => RenderingParameters.ExcludeTopMargin ? "text-banner--no-margin" : "";

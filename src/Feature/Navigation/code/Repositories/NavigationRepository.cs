@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Jabberwocky.DependencyInjection.Autowire.Attributes;
@@ -7,14 +7,14 @@ using Sitecore.Data;
 using Sitecore.Data.Items;
 using Sitecore.Globalization;
 using Sitecore.Links;
-using Thread.Feature.Navigation.Models;
-using Thread.Foundation.Account;
-using Thread.Foundation.Multisite.Configuration;
-using Thread.Foundation.Orm.Factory;
-using Thread.Foundation.Orm.Services;
-using Thread.Foundation.SitecoreExtensions.Item;
+using AtriusHealth.Feature.Navigation.Models;
+using AtriusHealth.Foundation.Account;
+using AtriusHealth.Foundation.Multisite.Configuration;
+using AtriusHealth.Foundation.Orm.Factory;
+using AtriusHealth.Foundation.Orm.Services;
+using AtriusHealth.Foundation.SitecoreExtensions.Item;
 
-namespace Thread.Feature.Navigation.Repositories
+namespace AtriusHealth.Feature.Navigation.Repositories
 {
 	[AutowireService(LifetimeScope.PerScope)]
 	public class NavigationRepository : INavigationRepository

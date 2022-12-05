@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.IO;
 using Jabberwocky.Core.Caching;
 using Jabberwocky.DependencyInjection.Autowire.Attributes;
 using Sitecore.Data.Items;
-using Thread.Feature.Sitemap.Sitemap;
+using AtriusHealth.Feature.Sitemap.Sitemap;
 
-namespace Thread.Feature.Sitemap.Services
+namespace AtriusHealth.Feature.Sitemap.Services
 {
   [AutowireService]
   public class SitemapService : ISitemapService

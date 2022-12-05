@@ -1,6 +1,6 @@
 using Sitecore.StringExtensions;
 
-namespace Thread.Foundation.Theme.Extensions
+namespace AtriusHealth.Foundation.Theme.Extensions
 {
 	public static class ColorExtensions
 	{

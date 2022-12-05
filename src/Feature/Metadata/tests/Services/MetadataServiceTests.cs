@@ -1,14 +1,14 @@
-﻿using NSubstitute;
+using NSubstitute;
 using NUnit.Framework;
 using Sitecore.Data;
 using Sitecore.FakeDb;
-using Thread.Feature.Metadata.Reference;
-using Thread.Feature.Metadata.Services;
-using Thread.Foundation.Multisite.Configuration;
-using Thread.Feature.PageContent;
-using Thread.Foundation.Orm.Factory;
+using AtriusHealth.Feature.Metadata.Reference;
+using AtriusHealth.Feature.Metadata.Services;
+using AtriusHealth.Foundation.Multisite.Configuration;
+using AtriusHealth.Feature.PageContent;
+using AtriusHealth.Foundation.Orm.Factory;
 
-namespace Thread.Feature.Metadata.Tests.Services
+namespace AtriusHealth.Feature.Metadata.Tests.Services
 {
 	[TestFixture]
 	public class MetadataServiceTests

@@ -1,17 +1,17 @@
-﻿using System.Linq;
+using System.Linq;
 using Sitecore;
 using Sitecore.Configuration;
 using Sitecore.ContentSearch;
 using Sitecore.ContentSearch.Pipelines.GetDependencies;
 using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
-using Thread.Foundation.Taxonomy;
+using AtriusHealth.Foundation.Taxonomy;
 
-namespace Thread.Foundation.Search.Pipelines.IndexingGetDependencies
+namespace AtriusHealth.Foundation.Search.Pipelines.IndexingGetDependencies
 {
 	public class GetTaxonomyDependencies : BaseProcessor
 	{
-		private static readonly string[] TaxonomyFolderTemplateIds = Settings.GetSetting("Thread.Foundation.Search.TaxonomyFolderIds", TaxonomyFolderItem.TemplateId.ToString()).Split('|');
+		private static readonly string[] TaxonomyFolderTemplateIds = Settings.GetSetting("AtriusHealth.Foundation.Search.TaxonomyFolderIds", TaxonomyFolderItem.TemplateId.ToString()).Split('|');
 
 		public override void Process(GetDependenciesArgs context)
 		{

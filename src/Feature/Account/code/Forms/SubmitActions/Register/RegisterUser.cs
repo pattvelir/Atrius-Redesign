@@ -1,11 +1,11 @@
-﻿using Sitecore.Data;
+using Sitecore.Data;
 using Sitecore.Diagnostics;
 using Sitecore.ExperienceForms.Models;
 using Sitecore.ExperienceForms.Processing;
-using Thread.Foundation.Abstractions.Account;
-using Thread.Foundation.Forms.SubmitActions;
+using AtriusHealth.Foundation.Abstractions.Account;
+using AtriusHealth.Foundation.Forms.SubmitActions;
 
-namespace Thread.Feature.Account.Forms.SubmitActions.Register
+namespace AtriusHealth.Feature.Account.Forms.SubmitActions.Register
 {
 	/// <summary>
 	/// Adapted from: https://doc.sitecore.com/developers/91/sitecore-experience-management/en/walkthrough--creating-a-register-page.html

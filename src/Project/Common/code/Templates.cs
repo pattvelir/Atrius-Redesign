@@ -10,7 +10,7 @@
 //------------------------------------------------------------------------------
 // ReSharper disable All
 
-					namespace Thread.Project.Common
+					namespace AtriusHealth.Project.Common
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -127,7 +127,7 @@ public static implicit operator Item(ConfigurationFolderItem customItem)
 					}
 				
 
-					namespace Thread.Project.Common
+					namespace AtriusHealth.Project.Common
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -176,7 +176,7 @@ public static implicit operator Item(_PageBaseItem customItem)
 					}
 				
 
-					namespace Thread.Project.Common
+					namespace AtriusHealth.Project.Common
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -227,9 +227,9 @@ public static implicit operator Item(_PageTitlesBaseItem customItem)
 
 
 
-// Thread.Project.Common.Configuration_Folder (/sitecore/templates/Project/Common/Multisite/Configuration Folder 9b1048b7-a9ce-4995-a982-a73684bc4dc2)
+// AtriusHealth.Project.Common.Configuration_Folder (/sitecore/templates/Project/Common/Multisite/Configuration Folder 9b1048b7-a9ce-4995-a982-a73684bc4dc2)
 
-// Thread.Project.Common._Page_Base (/sitecore/templates/Project/Common/Base/_Page Base 4fc11a80-88e7-476c-b7c0-7e3d65dcb741)
+// AtriusHealth.Project.Common._Page_Base (/sitecore/templates/Project/Common/Base/_Page Base 4fc11a80-88e7-476c-b7c0-7e3d65dcb741)
 
-// Thread.Project.Common._Page_Titles_Base (/sitecore/templates/Project/Common/Base/_Page Titles Base 2bc36434-6224-4aa7-b5b9-d624307fb875)
+// AtriusHealth.Project.Common._Page_Titles_Base (/sitecore/templates/Project/Common/Base/_Page Titles Base 2bc36434-6224-4aa7-b5b9-d624307fb875)
 

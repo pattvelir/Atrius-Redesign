@@ -1,7 +1,7 @@
-﻿using System;
-using Thread.Foundation.Abstractions.Indexing;
+using System;
+using AtriusHealth.Foundation.Abstractions.Indexing;
 
-namespace Thread.Feature.PageContent.Factory.Sortable
+namespace AtriusHealth.Feature.PageContent.Factory.Sortable
 {
 	public class DateModel : ISortable
 	{

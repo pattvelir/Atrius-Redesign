@@ -1,9 +1,9 @@
-﻿using System.Linq;
+using System.Linq;
 using Sitecore.Pipelines.RenderField;
-using Thread.Feature.RichText.Extensions;
-using Thread.Feature.RichText.Reference;
+using AtriusHealth.Feature.RichText.Extensions;
+using AtriusHealth.Feature.RichText.Reference;
 
-namespace Thread.Feature.RichText.Pipelines.RenderField
+namespace AtriusHealth.Feature.RichText.Pipelines.RenderField
 {
 	public class TokenReplacer
 	{

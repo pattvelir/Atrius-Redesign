@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace Thread.Feature.Metadata.Reference
+namespace AtriusHealth.Feature.Metadata.Reference
 {
 	public static class Constants
 	{

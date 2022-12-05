@@ -10,7 +10,7 @@
 //------------------------------------------------------------------------------
 // ReSharper disable All
 
-					namespace Thread.Foundation.Theme
+					namespace AtriusHealth.Foundation.Theme
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -43,7 +43,7 @@ public static implicit operator Item(ColorItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Theme
+					namespace AtriusHealth.Foundation.Theme
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -80,7 +80,7 @@ public static implicit operator Item(ColorPairingItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Theme
+					namespace AtriusHealth.Foundation.Theme
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -109,7 +109,7 @@ public static implicit operator Item(ColorPairingsFolderItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Theme
+					namespace AtriusHealth.Foundation.Theme
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -138,7 +138,7 @@ public static implicit operator Item(ColorsFolderItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Theme
+					namespace AtriusHealth.Foundation.Theme
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -171,7 +171,7 @@ public static implicit operator Item(ThemeItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Theme
+					namespace AtriusHealth.Foundation.Theme
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -204,15 +204,15 @@ public static implicit operator Item(ThemeFolderItem customItem)
 
 
 
-					namespace Thread.Foundation.Theme
+					namespace AtriusHealth.Foundation.Theme
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
 						using Sitecore.Data.Items;
 						using Sitecore.Mvc.Presentation;
-						using Thread.Foundation.Orm;
+						using AtriusHealth.Foundation.Orm;
 
-						public partial class ThemeRenderingParameters : ThreadRenderingParameters
+						public partial class ThemeRenderingParameters : AtriusHealthRenderingParameters
 						{
 							public static class Fields
 		{
@@ -224,7 +224,7 @@ public static implicit operator Item(ThemeFolderItem customItem)
 public ThemeRenderingParameters(string parametersAsQueryString) : base(parametersAsQueryString) {}
 
 							
-				public virtual Thread.Foundation.Theme.ThemeItem Theme => GetItemValue(Fields.Theme);
+				public virtual AtriusHealth.Foundation.Theme.ThemeItem Theme => GetItemValue(Fields.Theme);
 
 						}
 					}
@@ -232,9 +232,9 @@ public ThemeRenderingParameters(string parametersAsQueryString) : base(parameter
 
 
 
-// Thread.Foundation.Theme.Color (/sitecore/templates/Foundation/Theme/Color a3960764-19cc-4eb6-9b99-ff7b8e062dc2)
+// AtriusHealth.Foundation.Theme.Color (/sitecore/templates/Foundation/Theme/Color a3960764-19cc-4eb6-9b99-ff7b8e062dc2)
 
-// Thread.Foundation.Theme.Color_Pairing (/sitecore/templates/Foundation/Theme/Color Pairing 618a2809-d88a-4f41-9215-75d558121610)
+// AtriusHealth.Foundation.Theme.Color_Pairing (/sitecore/templates/Foundation/Theme/Color Pairing 618a2809-d88a-4f41-9215-75d558121610)
 	// Background_Color (b7265fde-0fac-48d5-bed3-cca546fcc6bd)
 		// Type: Droplink
 		// Section: Display Options
@@ -246,17 +246,17 @@ public ThemeRenderingParameters(string parametersAsQueryString) : base(parameter
 		// Sort Order: 200
 		// Source: query:ancestor-or-self::*[@@templateid='{98AC8506-0017-4964-81A9-19B76FA9EE98}']/Configuration/Enumerations/Colors/*
 
-// Thread.Foundation.Theme.Color_Pairings_Folder (/sitecore/templates/Foundation/Theme/Color Pairings Folder 2491353e-0d76-4e19-a14f-03cc66def9a6)
+// AtriusHealth.Foundation.Theme.Color_Pairings_Folder (/sitecore/templates/Foundation/Theme/Color Pairings Folder 2491353e-0d76-4e19-a14f-03cc66def9a6)
 
-// Thread.Foundation.Theme.Colors_Folder (/sitecore/templates/Foundation/Theme/Colors Folder a3c4ee02-c076-447c-b089-b3f7ce30a03c)
+// AtriusHealth.Foundation.Theme.Colors_Folder (/sitecore/templates/Foundation/Theme/Colors Folder a3c4ee02-c076-447c-b089-b3f7ce30a03c)
 
-// Thread.Foundation.Theme.Theme (/sitecore/templates/Foundation/Theme/Theme 01258d88-4119-47a5-87f1-f83fc76c92a9)
+// AtriusHealth.Foundation.Theme.Theme (/sitecore/templates/Foundation/Theme/Theme 01258d88-4119-47a5-87f1-f83fc76c92a9)
 
-// Thread.Foundation.Theme.Theme_Folder (/sitecore/templates/Foundation/Theme/Theme Folder 33496225-ec24-4b81-a8d3-f4c60f8bad0c)
+// AtriusHealth.Foundation.Theme.Theme_Folder (/sitecore/templates/Foundation/Theme/Theme Folder 33496225-ec24-4b81-a8d3-f4c60f8bad0c)
 
-// Thread.Foundation.Theme.Theme_Rendering_Parameters (/sitecore/templates/Foundation/Theme/Theme Rendering Parameters f96bbe64-fa1e-45b6-87f7-63c720ea7a3d)
+// AtriusHealth.Foundation.Theme.Theme_Rendering_Parameters (/sitecore/templates/Foundation/Theme/Theme Rendering Parameters f96bbe64-fa1e-45b6-87f7-63c720ea7a3d)
 	// Theme (5107ff88-ce34-4cbd-bf71-3d511c049fb0)
-		// Type: custom=Thread.Foundation.Theme.ThemeItem
+		// Type: custom=AtriusHealth.Foundation.Theme.ThemeItem
 		// Section: Display Options
 		// Sort Order: 200
 		// Source: /sitecore/content/Global Configuration/Enumerations/Themes

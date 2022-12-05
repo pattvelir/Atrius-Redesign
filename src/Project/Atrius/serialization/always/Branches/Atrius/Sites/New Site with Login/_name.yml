@@ -1,0 +1,19 @@
+---
+ID: "49262d76-3ff4-4740-9b0d-6d463b8203f1"
+Parent: "32f0fc03-654f-41f5-aa11-60a6f9d99a76"
+Template: "98ac8506-0017-4964-81a9-19b76fa9ee98"
+Path: /sitecore/templates/Branches/Project/Atrius/Sites/New Site with Login/$name
+DB: master
+SharedFields:
+- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
+  Hint: __Security
+  Value: |
+    ar|sitecore\Sitecore Content Author Content Access|pe|+item:create|+item:write|+item:read|-item:delete|-item:rename|pd|+item:rename|+item:delete|
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160722T192301Z

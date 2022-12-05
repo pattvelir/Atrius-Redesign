@@ -9,7 +9,7 @@
     </pipelines>
     #if ($Sitemap.AgentEnabled == "true")
     <scheduling>
-      <agent type="Thread.Feature.Sitemap.Agent.GenerateSitemapAgent, Thread.Feature.Sitemap" method="GenerateSitemaps" interval="${Sitemap.AgentInterval}">
+      <agent type="AtriusHealth.Feature.Sitemap.Agent.GenerateSitemapAgent, AtriusHealth.Feature.Sitemap" method="GenerateSitemaps" interval="${Sitemap.AgentInterval}">
         <param desc="database">web</param>
         <param desc="sites (pipe-separated)">website</param>
       </agent>

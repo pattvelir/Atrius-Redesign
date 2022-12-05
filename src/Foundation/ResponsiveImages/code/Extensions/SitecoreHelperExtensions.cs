@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -11,10 +11,10 @@ using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 using Sitecore.Pipelines.RenderField;
 using Sitecore.SharedSource.Commons.Utilities.MediaLibrary;
-using Thread.Foundation.ResponsiveImages.Extensions.Markers;
-using Thread.Foundation.SitecoreExtensions.Item;
+using AtriusHealth.Foundation.ResponsiveImages.Extensions.Markers;
+using AtriusHealth.Foundation.SitecoreExtensions.Item;
 
-namespace Thread.Foundation.ResponsiveImages.Extensions
+namespace AtriusHealth.Foundation.ResponsiveImages.Extensions
 {
   public static class SitecoreHelperExtensions
   {

@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "0a2847e6-9885-450b-b61e-f9e6528480ef"
 Parent: "93b36b23-4b04-44a0-af37-5fcded572d02"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
@@ -20,7 +20,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Ordbogsdomæne
+    Value: Ordbogsdom�ne
   Versions:
   - Version: 1
     Fields:
@@ -35,7 +35,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Wörterbuch Domain
+    Value: W�rterbuch Domain
   Versions:
   - Version: 1
     Fields:
@@ -61,7 +61,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: ディクショナリー ドメイン
+    Value: ???????? ????
   Versions:
   - Version: 1
     Fields:

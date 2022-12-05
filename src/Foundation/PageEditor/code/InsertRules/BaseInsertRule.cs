@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using Sitecore.Data.Items;
 using Sitecore.Data.Masters;
 
-namespace Thread.Foundation.PageEditor.InsertRules
+namespace AtriusHealth.Foundation.PageEditor.InsertRules
 {
     public abstract class BaseInsertRule : InsertRule
     {

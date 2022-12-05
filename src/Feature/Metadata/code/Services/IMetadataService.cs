@@ -1,7 +1,7 @@
-﻿using Sitecore.Data.Items;
-using Thread.Feature.Metadata.Areas.Thread.Models;
+using Sitecore.Data.Items;
+using AtriusHealth.Feature.Metadata.Areas.AtriusHealth.Models;
 
-namespace Thread.Feature.Metadata.Services
+namespace AtriusHealth.Feature.Metadata.Services
 {
 	public interface IMetadataService
 	{

@@ -10,7 +10,7 @@
 //------------------------------------------------------------------------------
 // ReSharper disable All
 
-					namespace Thread.Feature.PageContent
+					namespace AtriusHealth.Feature.PageContent
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -43,7 +43,7 @@ public static implicit operator Item(RelatedLinkItem customItem)
 					}
 				
 
-					namespace Thread.Feature.PageContent
+					namespace AtriusHealth.Feature.PageContent
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -80,7 +80,7 @@ public static implicit operator Item(RelatedLinksItem customItem)
 					}
 				
 
-					namespace Thread.Feature.PageContent
+					namespace AtriusHealth.Feature.PageContent
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -113,7 +113,7 @@ public static implicit operator Item(_DateBaseItem customItem)
 					}
 				
 
-					namespace Thread.Feature.PageContent
+					namespace AtriusHealth.Feature.PageContent
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -146,7 +146,7 @@ public static implicit operator Item(_HeaderTitleBaseItem customItem)
 					}
 				
 
-					namespace Thread.Feature.PageContent
+					namespace AtriusHealth.Feature.PageContent
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -183,7 +183,7 @@ public static implicit operator Item(_ImageBaseItem customItem)
 					}
 				
 
-					namespace Thread.Feature.PageContent
+					namespace AtriusHealth.Feature.PageContent
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -216,7 +216,7 @@ public static implicit operator Item(_ShortTitleBaseItem customItem)
 					}
 				
 
-					namespace Thread.Feature.PageContent
+					namespace AtriusHealth.Feature.PageContent
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -249,7 +249,7 @@ public static implicit operator Item(_SubtitleBaseItem customItem)
 					}
 				
 
-					namespace Thread.Feature.PageContent
+					namespace AtriusHealth.Feature.PageContent
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -282,7 +282,7 @@ public static implicit operator Item(_SummaryBaseItem customItem)
 					}
 				
 
-					namespace Thread.Feature.PageContent
+					namespace AtriusHealth.Feature.PageContent
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -321,14 +321,14 @@ public static implicit operator Item(_TitleBaseItem customItem)
 
 
 
-// Thread.Feature.PageContent.Related_Link (/sitecore/templates/Feature/Page Content/Related Link a7d32dbf-149d-46a2-9024-4829aca2c2c0)
+// AtriusHealth.Feature.PageContent.Related_Link (/sitecore/templates/Feature/Page Content/Related Link a7d32dbf-149d-46a2-9024-4829aca2c2c0)
 	// Link (025827d7-badd-4a21-950f-b99c801e238e)
 		// Type: General Link
 		// Section: Link
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Feature.PageContent.Related_Links (/sitecore/templates/Feature/Page Content/Related Links c6d29340-1d4c-40b3-9d8b-e18992b5e173)
+// AtriusHealth.Feature.PageContent.Related_Links (/sitecore/templates/Feature/Page Content/Related Links c6d29340-1d4c-40b3-9d8b-e18992b5e173)
 	// Related_Links (9f5610c3-5e8d-440a-b068-085038b9b05b)
 		// Type: Multilist with Search
 		// Section: Links
@@ -340,21 +340,21 @@ public static implicit operator Item(_TitleBaseItem customItem)
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Feature.PageContent._Date_Base (/sitecore/templates/Feature/Page Content/_Date Base 0068beae-cb7c-44ee-a5cb-db6e4668d383)
+// AtriusHealth.Feature.PageContent._Date_Base (/sitecore/templates/Feature/Page Content/_Date Base 0068beae-cb7c-44ee-a5cb-db6e4668d383)
 	// Display_Date (3927b1aa-347c-4d88-9b93-b327eae1b6d0)
 		// Type: Date
 		// Section: Date
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Feature.PageContent._Header_Title_Base (/sitecore/templates/Feature/Page Content/_Header Title Base 12cc6a13-24e7-418e-a610-8e56d718823c)
+// AtriusHealth.Feature.PageContent._Header_Title_Base (/sitecore/templates/Feature/Page Content/_Header Title Base 12cc6a13-24e7-418e-a610-8e56d718823c)
 	// Header_Title (d64a69f6-1317-47a1-a78b-2e22423c8133)
 		// Type: Single-Line Text
 		// Section: Title
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Feature.PageContent._Image_Base (/sitecore/templates/Feature/Page Content/_Image Base f8bbfc46-ace9-4ddf-ae0f-c4120acf8db3)
+// AtriusHealth.Feature.PageContent._Image_Base (/sitecore/templates/Feature/Page Content/_Image Base f8bbfc46-ace9-4ddf-ae0f-c4120acf8db3)
 	// Image_16x9 (f0e8ca34-1117-486d-88a8-ff0ab471e9c4)
 		// Type: Image
 		// Section: Image
@@ -366,28 +366,28 @@ public static implicit operator Item(_TitleBaseItem customItem)
 		// Sort Order: 200
 		// Source: 
 
-// Thread.Feature.PageContent._Short_Title_Base (/sitecore/templates/Feature/Page Content/_Short Title Base 68f0c8d8-72fb-4837-a723-560c6373406b)
+// AtriusHealth.Feature.PageContent._Short_Title_Base (/sitecore/templates/Feature/Page Content/_Short Title Base 68f0c8d8-72fb-4837-a723-560c6373406b)
 	// Short_Title (10e9213f-9aad-4979-a6a4-912a36275bb9)
 		// Type: Single-Line Text
 		// Section: Title
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Feature.PageContent._Subtitle_Base (/sitecore/templates/Feature/Page Content/_Subtitle Base 82fa5927-bc57-45c7-bc0f-89984f4da43c)
+// AtriusHealth.Feature.PageContent._Subtitle_Base (/sitecore/templates/Feature/Page Content/_Subtitle Base 82fa5927-bc57-45c7-bc0f-89984f4da43c)
 	// Subtitle (cb8dc0b3-f344-4cb0-b9f2-79eb4da005a9)
 		// Type: Single-Line Text
 		// Section: Title
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Feature.PageContent._Summary_Base (/sitecore/templates/Feature/Page Content/_Summary Base 25f21d17-ea40-41bf-bcf8-a45a85808067)
+// AtriusHealth.Feature.PageContent._Summary_Base (/sitecore/templates/Feature/Page Content/_Summary Base 25f21d17-ea40-41bf-bcf8-a45a85808067)
 	// Summary (19d48702-b149-4a2d-b72d-e3e8b5cf3bcc)
 		// Type: Multi-Line Text
 		// Section: Text
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Feature.PageContent._Title_Base (/sitecore/templates/Feature/Page Content/_Title Base 97d4fb50-24eb-447c-9776-511475261822)
+// AtriusHealth.Feature.PageContent._Title_Base (/sitecore/templates/Feature/Page Content/_Title Base 97d4fb50-24eb-447c-9776-511475261822)
 	// Title (91573f05-edb0-43cf-ac81-a6ca06c7fc0d)
 		// Type: Single-Line Text
 		// Section: Title

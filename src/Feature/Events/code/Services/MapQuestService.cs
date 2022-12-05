@@ -1,11 +1,11 @@
-﻿using Sitecore.Configuration;
-using Thread.Foundation.Enumerations;
+using Sitecore.Configuration;
+using AtriusHealth.Foundation.Enumerations;
 
-namespace Thread.Feature.Events.Services
+namespace AtriusHealth.Feature.Events.Services
 {
 	public class MapQuestService : IEventMappable
 	{
-		protected static string MapLink => Settings.GetSetting("Thread.Feature.Events.MapLink", "https://www.mapquest.com/embed/us/{0}/{1}/{2}/{3}?zoom=15&maptype=map");
+		protected static string MapLink => Settings.GetSetting("AtriusHealth.Feature.Events.MapLink", "https://www.mapquest.com/embed/us/{0}/{1}/{2}/{3}?zoom=15&maptype=map");
 
 		public bool ServiceIsProperlyConfigured => true;
 

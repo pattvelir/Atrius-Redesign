@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Linq;
 using HtmlAgilityPack;
 using Sitecore.Pipelines.Save;
 
-namespace Thread.Feature.RichText.Processors.SaveUI
+namespace AtriusHealth.Feature.RichText.Processors.SaveUI
 {
     public class StripExperienceEditorPlaceholderContent
     {

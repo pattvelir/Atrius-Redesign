@@ -50,4 +50,4 @@ contentFolderTemplate={Id for the template}
 
 * `./code/Reference/Constants.cs`
 * `./code/Pipelines/GetRenderingDatasource/CreateRelativeComponentRoot.cs`
-* `./code/App_Config/Include/zThread/Thread.Foundation.PageEditor.config`
+* `./code/App_Config/Include/zAtriusHealth/AtriusHealth.Foundation.PageEditor.config`

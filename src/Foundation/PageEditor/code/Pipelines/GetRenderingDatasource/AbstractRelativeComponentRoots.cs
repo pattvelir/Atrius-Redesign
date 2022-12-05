@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Linq;
 using Sitecore.Data;
 using Sitecore.Data.Items;
-using Thread.Foundation.PageEditor.Reference;
+using AtriusHealth.Foundation.PageEditor.Reference;
 
-namespace Thread.Foundation.PageEditor.Pipelines.GetRenderingDatasource
+namespace AtriusHealth.Foundation.PageEditor.Pipelines.GetRenderingDatasource
 {
 	public abstract class AbstractRelativeComponentRoots
 	{

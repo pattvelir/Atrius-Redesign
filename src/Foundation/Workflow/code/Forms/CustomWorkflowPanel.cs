@@ -1,4 +1,4 @@
-﻿using System.Web.UI;
+using System.Web.UI;
 using Sitecore;
 using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
@@ -10,7 +10,7 @@ using Sitecore.Shell.Framework.Commands;
 using Sitecore.Web.UI.WebControls.Ribbons;
 using Sitecore.Workflows;
 
-namespace Thread.Foundation.Workflow.Form
+namespace AtriusHealth.Foundation.Workflow.Form
 {
 	public class CustomWorkflowPanel : Sitecore.Shell.Applications.ContentManager.Panels.WorkflowPanel
 	{

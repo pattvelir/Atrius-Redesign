@@ -1,15 +1,15 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using Sitecore.Configuration;
 using Sitecore.Data;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 
-namespace Thread.Foundation.Branching.Events.ItemAdded
+namespace AtriusHealth.Foundation.Branching.Events.ItemAdded
 {
 	public class RelocateMultipleItemsFromBranch : RelocateFromBranch
 	{
-		protected override IList<string> LinkedFieldTypes => Settings.GetSetting("Thread.Foundation.Branching.MultipleItemLinkedFieldTypes", "Multilist|Multilist with Search|Treelist|Treelist with Search|TreelistEx").Split('|');
+		protected override IList<string> LinkedFieldTypes => Settings.GetSetting("AtriusHealth.Foundation.Branching.MultipleItemLinkedFieldTypes", "Multilist|Multilist with Search|Treelist|Treelist with Search|TreelistEx").Split('|');
 		protected override void CorrectFieldValue(Item item, ID fieldId, Item rootItem, Item rootBranchItem)
 		{
 			MultilistField field = item.Fields[fieldId];

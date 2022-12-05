@@ -1,8 +1,8 @@
-﻿---
+---
 ID: "ca2482fb-23a2-4cd9-ba43-201a29228b8e"
 Parent: "6a99947f-048a-4de1-a4e3-664b7d060194"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Thread/Foundation/Theme/Theme Rendering Parameters/Display Options/Color Pairing
+Path: /sitecore/templates/AtriusHealth/Foundation/Theme/Theme Rendering Parameters/Display Options/Color Pairing
 DB: master
 SharedFields:
 - ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"

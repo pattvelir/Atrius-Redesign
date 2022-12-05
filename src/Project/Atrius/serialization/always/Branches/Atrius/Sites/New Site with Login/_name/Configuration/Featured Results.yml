@@ -1,0 +1,14 @@
+---
+ID: "a34b4bfd-fce2-4d59-9d76-8fd84e6232a1"
+Parent: "1c15176f-bb2e-4062-8819-565982b4c64f"
+Template: "d791a14e-0f21-4461-a457-1eda601795b5"
+Path: /sitecore/templates/Branches/Project/Atrius/Sites/New Site with Login/$name/Configuration/Featured Results
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200908T212828Z

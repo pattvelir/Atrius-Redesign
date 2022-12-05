@@ -1,11 +1,11 @@
-﻿using Jabberwocky.DependencyInjection.Autowire.Attributes;
+using Jabberwocky.DependencyInjection.Autowire.Attributes;
 using Sitecore.Data;
 using Sitecore.Data.Items;
 using Sitecore.Globalization;
 using Sitecore.Security.Domains;
 using Sitecore.Sites;
 
-namespace Thread.Foundation.Orm.Services
+namespace AtriusHealth.Foundation.Orm.Services
 {
 	[AutowireService(LifetimeScope.PerScope)]
 	public class SitecoreContextProvider : IContextProvider
@@ -17,7 +17,7 @@ namespace Thread.Foundation.Orm.Services
 
 		public virtual ISiteContext GetSite()
 		{
-			return new ThreadSiteContext(Sitecore.Context.Site);
+			return new AtriusHealthSiteContext(Sitecore.Context.Site);
 		}
 
 		public virtual Item GetItem()
@@ -51,10 +51,10 @@ namespace Thread.Foundation.Orm.Services
 		string StartItem { get; }
 	}
 
-	public class ThreadSiteContext : ISiteContext
+	public class AtriusHealthSiteContext : ISiteContext
 	{
 		private readonly SiteContext _context;
-		public ThreadSiteContext(SiteContext context)
+		public AtriusHealthSiteContext(SiteContext context)
 		{
 			_context = context;
 		}

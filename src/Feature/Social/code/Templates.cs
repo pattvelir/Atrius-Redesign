@@ -10,7 +10,7 @@
 //------------------------------------------------------------------------------
 // ReSharper disable All
 
-					namespace Thread.Feature.Social
+					namespace AtriusHealth.Feature.Social
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -43,7 +43,7 @@ public static implicit operator Item(SocialMediaIconItem customItem)
 					}
 				
 
-					namespace Thread.Feature.Social
+					namespace AtriusHealth.Feature.Social
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -80,7 +80,7 @@ public static implicit operator Item(SocialMediaLinkItem customItem)
 					}
 				
 
-					namespace Thread.Feature.Social
+					namespace AtriusHealth.Feature.Social
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -113,7 +113,7 @@ public static implicit operator Item(SocialMediaLinksFolderItem customItem)
 					}
 				
 
-					namespace Thread.Feature.Social
+					namespace AtriusHealth.Feature.Social
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -152,14 +152,14 @@ public static implicit operator Item(_ShareConfigurationItem customItem)
 
 
 
-// Thread.Feature.Social.Social_Media_Icon (/sitecore/templates/Feature/Social/Social Media Icon 8b1e6df7-c1b5-410a-ab8a-10d16e3b3df4)
+// AtriusHealth.Feature.Social.Social_Media_Icon (/sitecore/templates/Feature/Social/Social Media Icon 8b1e6df7-c1b5-410a-ab8a-10d16e3b3df4)
 	// Icon_Name (60767e88-bdd6-4c21-bad7-5e338630d5ff)
 		// Type: Single-Line Text
 		// Section: Name
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Feature.Social.Social_Media_Link (/sitecore/templates/Feature/Social/Social Media Link 9744d172-190e-49ed-9d2f-b9f588bfeaf9)
+// AtriusHealth.Feature.Social.Social_Media_Link (/sitecore/templates/Feature/Social/Social Media Link 9744d172-190e-49ed-9d2f-b9f588bfeaf9)
 	// Icon (6c54a7e4-cb8b-4f5c-838e-b784517c4cb7)
 		// Type: Droplink
 		// Section: Display Options
@@ -171,14 +171,14 @@ public static implicit operator Item(_ShareConfigurationItem customItem)
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Feature.Social.Social_Media_Links_Folder (/sitecore/templates/Feature/Social/Social Media Links Folder 707d5c9f-12ec-4ae5-80e2-c254134e6612)
+// AtriusHealth.Feature.Social.Social_Media_Links_Folder (/sitecore/templates/Feature/Social/Social Media Links Folder 707d5c9f-12ec-4ae5-80e2-c254134e6612)
 	// Social_Follow_Header (15df30a2-3a4c-428d-9c65-c9ee5cce4c4c)
 		// Type: Single-Line Text
 		// Section: Social Configuration
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Feature.Social._Share_Configuration (/sitecore/templates/Feature/Social/_Share Configuration 66e6c75f-3e19-496d-82ec-cf7af4938722)
+// AtriusHealth.Feature.Social._Share_Configuration (/sitecore/templates/Feature/Social/_Share Configuration 66e6c75f-3e19-496d-82ec-cf7af4938722)
 	// AddThis_Account_ID (817b2a50-b4b3-4eb4-9313-9fa1565ab181)
 		// Type: Single-Line Text
 		// Section: Share Configuration

@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using Jabberwocky.DependencyInjection.Autowire.Attributes;
 
-namespace Thread.Feature.Account.Cipher
+namespace AtriusHealth.Feature.Account.Cipher
 {
 	[AutowireService(LifetimeScope.SingleInstance)]
 	public class CipherService : ICipherService

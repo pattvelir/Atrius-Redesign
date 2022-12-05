@@ -1,0 +1,17 @@
+---
+ID: "a51e1ae7-3441-45b0-bb1d-edb4f73b47e1"
+Parent: "53307e4c-a4cf-445e-bd1c-71321b15e0fb"
+Template: "e5acf52c-1e6b-4142-84f2-6d09b1ba1ab8"
+Path: /sitecore/templates/Branches/Project/Atrius/Sites/New Site with Login/$name/Configuration/Navigation/Primary Navigation/Nav Category 1
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170310T155713Z
+    - ID: "efe41572-fbeb-4b09-814c-42c0ffe94dfb"
+      Hint: Title
+      Value: Nav Category 1

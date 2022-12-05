@@ -1,13 +1,13 @@
-﻿using Sitecore.Data.Items;
+using Sitecore.Data.Items;
 using System;
-using Thread.Foundation.Abstractions.Listing;
-using Thread.Foundation.Enumerations.References;
-using Thread.Foundation.Mvc.ViewModels;
-using Thread.Foundation.Orm.Factory;
+using AtriusHealth.Foundation.Abstractions.Listing;
+using AtriusHealth.Foundation.Enumerations.References;
+using AtriusHealth.Foundation.Mvc.ViewModels;
+using AtriusHealth.Foundation.Orm.Factory;
 
-namespace Thread.Feature.Promo.Models
+namespace AtriusHealth.Feature.Promo.Models
 {
-	public class DynamicPromoModel : ThreadViewModel<DynamicPromoItem, DynamicPromoRenderingParameters>
+	public class DynamicPromoModel : AtriusHealthViewModel<DynamicPromoItem, DynamicPromoRenderingParameters>
 	{
         private readonly IItemInterfaceFactory _itemInterfaceFactory;
 

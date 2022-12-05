@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "b775bca9-2605-4d60-b367-a0c354be2504"
 Parent: "e2dba960-0328-463c-9a84-dabe7f426a12"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
@@ -16,10 +16,10 @@ Languages:
   Fields:
   - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
     Hint: Title
-    Value: Standardværdi
+    Value: Standardv�rdi
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Standardværdi
+    Value: Standardv�rdi
   Versions:
   - Version: 1
     Fields:
@@ -63,10 +63,10 @@ Languages:
   Fields:
   - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
     Hint: Title
-    Value: デフォルト値
+    Value: ??????
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: デフォルト値
+    Value: ??????
   Versions:
   - Version: 1
     Fields:
@@ -81,10 +81,10 @@ Languages:
   Fields:
   - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
     Hint: Title
-    Value: 默认值
+    Value: ???
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 默认值
+    Value: ???
   Versions:
   - Version: 1
     Fields:

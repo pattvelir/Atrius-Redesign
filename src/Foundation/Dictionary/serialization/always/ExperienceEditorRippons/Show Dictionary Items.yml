@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "bcb5b0fd-8dcf-4196-850e-cdb106b9275a"
 Parent: "3931f8ba-c7f4-4e5b-b67b-84a4394b88bf"
 Template: "abc069d5-3627-4a20-841e-d199b0eb4957"
@@ -32,7 +32,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Vis navigationsbjælken
+    Value: Vis navigationsbj�lken
   Versions:
   - Version: 1
     Fields:
@@ -41,14 +41,14 @@ Languages:
       Value: 20170728T141910Z
     - ID: "455d570d-77b9-4aa6-b84e-d7dcab7079c0"
       Hint: Tooltip
-      Value: Vis eller skjul Navigationsbjælken.
+      Value: Vis eller skjul Navigationsbj�lken.
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\admin
     - ID: "c7a8b822-2b9d-4e1d-9e5f-82326fcbbfc1"
       Hint: Header
-      Value: Navigationsbjælke
+      Value: Navigationsbj�lke
 - Language: "de-DE"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -91,7 +91,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: ナビゲーション バーの表示
+    Value: ??????? ?????
   Versions:
   - Version: 1
     Fields:
@@ -100,11 +100,11 @@ Languages:
       Value: 20170728T142611Z
     - ID: "455d570d-77b9-4aa6-b84e-d7dcab7079c0"
       Hint: Tooltip
-      Value: ナビゲーション バーを表示または非表示にします
+      Value: ??????? ???????????????
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\admin
     - ID: "c7a8b822-2b9d-4e1d-9e5f-82326fcbbfc1"
       Hint: Header
-      Value: ナビゲーション バー
+      Value: ??????? ??

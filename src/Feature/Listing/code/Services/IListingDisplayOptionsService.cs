@@ -1,4 +1,4 @@
-﻿namespace Thread.Feature.Listing.Services
+namespace AtriusHealth.Feature.Listing.Services
 {
 	public interface IListingDisplayOptionsService
 	{

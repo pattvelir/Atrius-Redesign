@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Linq;
 using NUnit.Framework;
-using Thread.Feature.RichText.Extensions;
-using Thread.Feature.RichText.Reference;
-using Thread.Feature.RichText.Tokens;
+using AtriusHealth.Feature.RichText.Extensions;
+using AtriusHealth.Feature.RichText.Reference;
+using AtriusHealth.Feature.RichText.Tokens;
 
-namespace Thread.Feature.RichText.Tests.Tokens
+namespace AtriusHealth.Feature.RichText.Tests.Tokens
 {
 	[TestFixture]
 	public class TokenTests

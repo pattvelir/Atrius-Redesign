@@ -1,8 +1,8 @@
-﻿using Sitecore;
+using Sitecore;
 using Sitecore.Data.Fields;
-using Thread.Feature.Navigation.Models;
+using AtriusHealth.Feature.Navigation.Models;
 
-namespace Thread.Project.Common
+namespace AtriusHealth.Project.Common
 {
 	public partial class _PageBaseItem : IContextualLinkable
 	{

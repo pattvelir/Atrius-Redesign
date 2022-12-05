@@ -1,16 +1,16 @@
-﻿using System;
+using System;
 using System.Web.Http;
 using System.Web.Http.ModelBinding;
 using Jabberwocky.WebApi.Attributes;
-using Thread.Feature.Listing.Models;
-using Thread.Feature.Listing.Page;
-using Thread.Feature.Listing.Results;
+using AtriusHealth.Feature.Listing.Models;
+using AtriusHealth.Feature.Listing.Page;
+using AtriusHealth.Feature.Listing.Results;
 using Velir.Search.Core.Managers;
 using Velir.Search.Core.Request;
 using Velir.Search.Core.Results;
 using Velir.Search.WebApi.Binders;
 
-namespace Thread.Feature.Listing.Controllers.Api
+namespace AtriusHealth.Feature.Listing.Controllers.Api
 {
 	[Compression, CamelCasingFilter]
 	public class DynamicContentListingController : ApiController

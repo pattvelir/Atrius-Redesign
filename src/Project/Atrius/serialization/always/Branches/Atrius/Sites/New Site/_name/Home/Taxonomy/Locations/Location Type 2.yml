@@ -1,0 +1,14 @@
+---
+ID: "570d814a-4922-43e9-ad49-0bac51a74097"
+Parent: "c612eead-705a-4cdf-9934-da1989e40ac2"
+Template: "d7bbae50-0edd-4dd8-8489-97443f6e5b19"
+Path: /sitecore/templates/Branches/Project/Atrius/Sites/New Site/$name/Home/Taxonomy/Locations/Location Type 2
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170310T162648Z

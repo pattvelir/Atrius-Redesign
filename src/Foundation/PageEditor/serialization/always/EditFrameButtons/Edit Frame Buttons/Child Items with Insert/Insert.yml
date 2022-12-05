@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "2ff398ec-365a-4315-a97d-116a453da4ed"
 Parent: "41780739-424a-4f4f-b97c-dd354ce0575e"
 Template: "02404208-46d4-49bf-988b-eb363a52a1c9"
@@ -25,13 +25,13 @@ Languages:
   Fields:
   - ID: "371e0d96-4f00-4b80-ad14-6284e00493ba"
     Hint: Tooltip
-    Value: Indsæt et nyt element
+    Value: Inds�t et nyt element
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Indsæt
+    Value: Inds�t
   - ID: "c523aba8-d1a1-4dcb-aeee-52635a4ab2ae"
     Hint: Header
-    Value: Indsæt nyt element
+    Value: Inds�t nyt element
   Versions:
   - Version: 1
     Fields:
@@ -46,13 +46,13 @@ Languages:
   Fields:
   - ID: "371e0d96-4f00-4b80-ad14-6284e00493ba"
     Hint: Tooltip
-    Value: Neues Item einfügen
+    Value: Neues Item einf�gen
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Einfügen
+    Value: Einf�gen
   - ID: "c523aba8-d1a1-4dcb-aeee-52635a4ab2ae"
     Hint: Header
-    Value: Neues Item einfügen
+    Value: Neues Item einf�gen
   Versions:
   - Version: 1
     Fields:
@@ -85,13 +85,13 @@ Languages:
   Fields:
   - ID: "371e0d96-4f00-4b80-ad14-6284e00493ba"
     Hint: Tooltip
-    Value: 新しいアイテムを挿入します
+    Value: ?????????????
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 挿入
+    Value: ??
   - ID: "c523aba8-d1a1-4dcb-aeee-52635a4ab2ae"
     Hint: Header
-    Value: 新しいアイテムを挿入
+    Value: ??????????
   Versions:
   - Version: 1
     Fields:

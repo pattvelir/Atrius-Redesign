@@ -14,10 +14,10 @@ When the Long Description field for a Template's field is filled out, the help t
 
 **Related Files**
 
-* `./code/App_Config/Include/zThread/Thread.Foundation.Ax.config`
+* `./code/App_Config/Include/zAtriusHealth/AtriusHealth.Foundation.Ax.config`
 * `./code/Pipelines/RenderContentEditor/InjectContentEditorResources.cs`
-* `./code/Areas/Thread/css/tooltip.css`
-* `./code/Areas/Thread/js/tooltip.js`
+* `./code/Areas/AtriusHealth/css/tooltip.css`
+* `./code/Areas/AtriusHealth/js/tooltip.js`
 
 ### Custom Experience Editor Ribbon Buttons
 
@@ -27,10 +27,10 @@ Custom ribbon buttons that appear on the Home tab of the Experience Editor Ribbo
 
 **Related Files**
 
-* `./code/Areas/Thread/Scripts/LaunchFieldEditor.js`
+* `./code/Areas/AtriusHealth/Scripts/LaunchFieldEditor.js`
 * `./code/SpeakRequests/FieldEditorItemContext.cs`
 * `./code/SpeakRequests/GenerateFieldEditorURls.cs`
-* All items under `/sitecore/Applications/WebEdit/Ribbons/WebEdit/Page Editor` in the Thread.Foundation.AX.Core TDS project.
+* All items under `/sitecore/Applications/WebEdit/Ribbons/WebEdit/Page Editor` in the AtriusHealth.Foundation.AX.Core TDS project.
 
 ### Insert Newly Created Items Last
 
@@ -38,16 +38,16 @@ This functionality uses an Item:Created event handler to ensure that a newly cre
 
 **Related Files**
 
-* `./code/App_Config/Include/zThread/Thread.Foundation.Ax.config`
+* `./code/App_Config/Include/zAtriusHealth/AtriusHealth.Foundation.Ax.config`
 * `./code/Events/ItemCreated/InsertItemLastEventHandler.cs`
 
 ### Custom Experience Editor CSS
 
-The code in this project allows for injecting resources like css and javascript into the page when in Preview and Experience Editor mode.  The files to include are managed via configuration.  You can see an example of how to do this in the `Thread.Foundation.AX.config`.  Another module makes use of this functionality to insert custom CSS to style components differently when in Experience Editor mode or fix inconsistencies due to the extra HTML Sitecore injects in Experience Editor mode.
+The code in this project allows for injecting resources like css and javascript into the page when in Preview and Experience Editor mode.  The files to include are managed via configuration.  You can see an example of how to do this in the `AtriusHealth.Foundation.AX.config`.  Another module makes use of this functionality to insert custom CSS to style components differently when in Experience Editor mode or fix inconsistencies due to the extra HTML Sitecore injects in Experience Editor mode.
 
 **Related Files**
 
-* `./code/App_Config/Include/zThread/Thread.Foundation.Ax.config`
+* `./code/App_Config/Include/zAtriusHealth/AtriusHealth.Foundation.Ax.config`
 * `./code/Pipelines/RenderPageExtenders/InjectPageEditorResources.cs`
 
 ### Rebuild Dictionary on Application Start
@@ -56,7 +56,7 @@ Sitecore's dictionary gets built and stored as a temporary file on disk.  For va
 
 **Related Files**
 
-* `./code/App_Config/Include/zThread/Thread.Foundation.Ax.config`
+* `./code/App_Config/Include/zAtriusHealth/AtriusHealth.Foundation.Ax.config`
 * `./code/Pipelines/Initialize/InitializeDictionary.cs`
 
 ### Dictionary Shortcut
@@ -67,4 +67,4 @@ Since the dictionary is found in the System area of Sitecore, content authors mi
 
 **Related Files**
 
-* The item `/sitecore/Applications/Content Editor/Applications/Dictionary` in the Thread.Foundation.AX.Core TDS project.
+* The item `/sitecore/Applications/Content Editor/Applications/Dictionary` in the AtriusHealth.Foundation.AX.Core TDS project.

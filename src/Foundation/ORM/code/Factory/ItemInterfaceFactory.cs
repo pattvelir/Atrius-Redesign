@@ -1,11 +1,11 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using Jabberwocky.DependencyInjection.Autowire.Attributes;
 using Sitecore.Data.Items;
 using Sitecore.Pipelines;
-using Thread.Foundation.Orm.Factory.Pipeline;
+using AtriusHealth.Foundation.Orm.Factory.Pipeline;
 
-namespace Thread.Foundation.Orm.Factory
+namespace AtriusHealth.Foundation.Orm.Factory
 {
 	[AutowireService(LifetimeScope.SingleInstance)]
 	public class ItemInterfaceFactory : IItemInterfaceFactory

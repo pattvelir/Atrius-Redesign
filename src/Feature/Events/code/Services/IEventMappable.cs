@@ -1,4 +1,4 @@
-﻿namespace Thread.Feature.Events.Services
+namespace AtriusHealth.Feature.Events.Services
 {
 	public interface IEventMappable
 	{

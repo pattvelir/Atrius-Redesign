@@ -1,0 +1,96 @@
+---
+ID: "6bf2338f-dd03-413e-921c-aecc7b2d1a9f"
+Parent: "fcd3bd0d-71bd-45f7-a758-6ababcf3f0f6"
+Template: "fcd3bd0d-71bd-45f7-a758-6ababcf3f0f6"
+Path: /sitecore/templates/Project/Atrius/Pages/Long Form Page/__Standard Values
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: ApplicationsV2/16x16/form_yellow.png
+- ID: "ca9b9f52-4fb0-4f87-a79f-24dea62cda65"
+  Hint: __Default workflow
+  Value: "{F904F489-7129-4A77-8791-59662AB2B399}"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{A2DE3965-E340-45B4-9FAB-3F35BECE08C1}">
+        <p
+          uid="{2E5328B8-A174-46B2-8076-B2DF5105DCA8}"
+          key="primary-column-left"
+          md="/sitecore/layout/Placeholder Settings/Project/Atrius/Long Form Page/Containers/70 Percent Left Column" />
+        <p
+          uid="{00EE5058-14D2-4F0F-8E39-70CC9F4FFD49}"
+          key="secondary-column-right"
+          md="/sitecore/layout/Placeholder Settings/Project/Atrius/Long Form Page/Containers/30 Percent Right Column" />
+        <p
+          uid="{ECDD7A83-9B2C-46EE-950B-A5186D289912}"
+          key="secondary-column-left"
+          md="/sitecore/layout/Placeholder Settings/Project/Atrius/Long Form Page/Containers/30 Percent Left Column" />
+        <p
+          uid="{C984B85F-0177-46FC-80E0-CD1B4FD25FE4}"
+          key="primary-column-right"
+          md="/sitecore/layout/Placeholder Settings/Project/Atrius/Long Form Page/Containers/70 Percent Right Column" />
+        <r
+          id="{04E17BDE-B4F7-4B77-BED6-2A24F059D04D}"
+          ph="content-body"
+          uid="{8B05B85C-CADF-4C0E-A460-2874217B09F1}" />
+        <r
+          id="{6F3D1130-74EC-4C8B-B8A7-8BD1D51B17E7}"
+          ph="content-body"
+          uid="{6C96DBF9-ADC1-4412-9E88-B1DC910377C7}" />
+        <r
+          id="{60C2AC1C-4754-4914-B11A-37F0DF825B43}"
+          ph="content-body"
+          uid="{8047D1DD-8D81-49F4-86BE-25C5F3D2052E}" />
+        <r
+          id="{3E615E7F-8DB2-4648-B7E1-E9C2F05FFD08}"
+          ph="content-body"
+          uid="{25386D19-1ED9-4329-878C-B33599AE3FF5}" />
+        <r
+          id="{1B8B6412-BC11-4D18-8547-28380C1BCCF7}"
+          ph="content-body"
+          uid="{1C8F6212-B00A-40D7-8341-532CC76E3143}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{0E502833-C8B2-4086-8362-8D226DF16244}"
+              p:after="p[@uid='{C984B85F-0177-46FC-80E0-CD1B4FD25FE4}']"
+              s:ds=""
+              s:id="{C9529F14-C669-46C3-A959-97931F35E039}"
+              s:par=""
+              s:ph="/content-body/content-width-column-{8047D1DD-8D81-49F4-86BE-25C5F3D2052E}-0" />
+            <r
+              uid="{EBA073E5-850D-45FB-8975-5B14F8F31192}"
+              p:after="r[@uid='{0E502833-C8B2-4086-8362-8D226DF16244}']"
+              s:id="{FC3D7B61-8FFE-4FA5-8E62-841A0E8A8F17}"
+              s:ph="/content-body/primary-column-left-{6C96DBF9-ADC1-4412-9E88-B1DC910377C7}-0" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161025T200232Z
+    - ID: "3927b1aa-347c-4d88-9b93-b327eae1b6d0"
+      Hint: Date of Publication
+      Value: $now
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

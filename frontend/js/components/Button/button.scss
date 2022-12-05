@@ -22,24 +22,24 @@
 
 .btn {
   display: var(--btn-display);
-  border-radius: var(--btn-border-radius);
+  padding: var(--btn-padding);
+  font: var(--btn-font);
   text-decoration: none;
   vertical-align: middle;
+  border-radius: var(--btn-border-radius);
   background: var(--color-green-500);
   transition: color 0.35s, background-color 0.35s, border-color 0.35s;
   cursor: pointer;
-  padding: var(--btn-padding);
-  font: var(--btn-font);
 
   .btn__label {
-    font: var(--btn-font);
     margin-inline: var(--btn-margin-inline);
+    font: var(--btn-font);
     vertical-align: middle;
   }
 
   .icon {
+    height: var(--btn-icon);
     width: var(--btn-icon);
-    height:  var(--btn-icon);
   }
 
   &.btn--xsm {
@@ -63,9 +63,9 @@
     --btn-icon: 16px;
     --btn-display: inline-grid;
     --btn-border-radius: 50%;
+    --btn-margin-inline: 0;
     align-content: center;
     justify-content: center;
-    --btn-margin-inline: 0;
     height: var(--btn-icon-height);
     width: var(--btn-icon-width);
   }
@@ -82,19 +82,19 @@
  ** filled dark */
 
 .btn--filled.btn--dark {
-  background: var(--btn-blue);
   color: var(--btn-white);
+  background: var(--btn-blue);
 
   .icon {
     color: var(--btn-yellow);
   }
 
   &:hover {
+    color: var(--btn-blue);
     background: var(--btn-yellow);
-    color:  var(--btn-blue);
 
     .icon {
-      color:  var(--btn-blue);
+      color: var(--btn-blue);
     }
   }
 
@@ -103,8 +103,8 @@
   }
 
   &[disabled] {
-    background: var(--btn-white);
     color: var(--btn-grey);
+    background: var(--btn-white);
 
     .icon {
       color: var(--btn-grey);
@@ -115,32 +115,32 @@
 /* // filled light */
 
 .btn--filled.btn--light {
-  background:  var(--btn-yellow);
-  color:  var(--btn-blue);
+  color: var(--btn-blue);
+  background: var(--btn-yellow);
 
   .icon {
-    color:  var(--btn-blue);
+    color: var(--btn-blue);
   }
 
   &:hover {
-    background: var(--btn-white);
-    color:  var(--btn-blue);
+    color: var(--btn-blue);
     text-decoration: underline;
+    background: var(--btn-white);
 
     .icon {
-      color:  var(--btn-yellow);
+      color: var(--btn-yellow);
     }
   }
 
   &:active {
+    color: var(--btn-blue);
     text-decoration: underline;
-    color:  var(--btn-blue);
     background: var(--btn-lgrey);
   }
 
   &[disabled] {
-    background: var(--btn-white);
     color: var(--btn-grey);
+    background: var(--btn-white);
 
     .icon {
       color: var(--btn-grey);
@@ -148,23 +148,21 @@
   }
 }
 
-
-
 /* // outline light */
 
 .btn--outline.btn--light {
-  background-color: transparent;
-  border: 2px solid var(--btn-dgrey);
   color: var(--btn-dgrey);
+  border: 2px solid var(--btn-dgrey);
+  background-color: transparent;
 
   .icon {
     color: var(--btn-yellow);
   }
 
   &:hover {
-    background-color: var(--btn-yellow);
-    border-color: var(--btn-yellow);
     text-decoration: underline;
+    border-color: var(--btn-yellow);
+    background-color: var(--btn-yellow);
 
     .icon {
       color: var(--btn-blue);
@@ -172,10 +170,10 @@
   }
 
   &:active {
-    background-color: var(--btn-blue);
-    border-color: var(--btn-blue);
     color: var(--btn-white);
     text-decoration: underline;
+    border-color: var(--btn-blue);
+    background-color: var(--btn-blue);
   }
 
   &[disabled] {
@@ -188,13 +186,12 @@
   }
 }
 
-
 /* // outline dark */
 
 .btn--outline.btn--dark {
-  background-color: transparent;
-  border: 2px solid var(--btn-yellow);
   color: var(--btn-white);
+  border: 2px solid var(--btn-yellow);
+  background-color: transparent;
 
   .icon {
     color: var(--btn-yellow);
@@ -202,16 +199,16 @@
 
   &:hover {
     color: var(--btn-blue);
-    background-color: transparent;
-    border-color: transparent;
     text-decoration: underline;
+    border-color: transparent;
+    background-color: transparent;
   }
 
   &:active {
-    background-color: var(--btn-yellow);
-    border-color: var(--btn-yellow);
     color: var(--btn-blue);
     text-decoration: underline;
+    border-color: var(--btn-yellow);
+    background-color: var(--btn-yellow);
   }
 
   &[disabled] {
@@ -237,6 +234,7 @@
 
     &:hover {
       text-decoration: underline;
+
       .icon {
         color: var(--btn-blue);
       }
@@ -264,6 +262,7 @@
 
     &:hover {
       text-decoration: underline;
+
       .icon {
         color: var(--btn-white);
       }
@@ -282,6 +281,3 @@
     }
   }
 }
-
-
-

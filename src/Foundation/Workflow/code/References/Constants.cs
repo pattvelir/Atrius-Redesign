@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace Thread.Foundation.Workflow.References
+namespace AtriusHealth.Foundation.Workflow.References
 {
 	public static class Constants
 	{

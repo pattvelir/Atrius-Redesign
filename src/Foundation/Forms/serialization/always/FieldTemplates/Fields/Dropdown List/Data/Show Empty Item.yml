@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "6bf5048d-fbbd-4839-9f18-4412d4e11834"
 Parent: "133a06b5-2e15-492b-8a82-f11d1f4e6b83"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
@@ -67,10 +67,10 @@ Languages:
   Fields:
   - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
     Hint: Title
-    Value: 空のアイテムを表示
+    Value: ?????????
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 空のアイテムを表示
+    Value: ?????????
   Versions:
   - Version: 1
     Fields:
@@ -85,10 +85,10 @@ Languages:
   Fields:
   - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
     Hint: Title
-    Value: 显示空项目
+    Value: ?????
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 显示空项目
+    Value: ?????
   Versions:
   - Version: 1
     Fields:

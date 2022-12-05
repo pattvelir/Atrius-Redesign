@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Sitecore.Data.Items;
-using Thread.Foundation.PageEditor.Reference;
-using Thread.Foundation.SitecoreExtensions.Item;
+using AtriusHealth.Foundation.PageEditor.Reference;
+using AtriusHealth.Foundation.SitecoreExtensions.Item;
 
-namespace Thread.Foundation.PageEditor.InsertRules
+namespace AtriusHealth.Foundation.PageEditor.InsertRules
 {
 	public class ComponentsInsertRule : BaseInsertRule
 	{

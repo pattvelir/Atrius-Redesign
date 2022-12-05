@@ -1,8 +1,8 @@
-﻿---
+---
 ID: "0cdf6c63-6c8b-4203-9077-207cd6694813"
 Parent: "1ee83405-cd9e-4088-bb75-cd6a845944f7"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Thread/Foundation/Taxonomy/Base/_Age Base/Personal Details/Age
+Path: /sitecore/templates/AtriusHealth/Foundation/Taxonomy/Base/_Age Base/Personal Details/Age
 DB: master
 SharedFields:
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"

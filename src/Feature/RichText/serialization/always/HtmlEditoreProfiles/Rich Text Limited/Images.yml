@@ -1,8 +1,8 @@
-﻿---
+---
 ID: "c91be508-a03f-4c7a-8376-aa442709c5eb"
 Parent: "1c1a2643-50d6-4094-aa14-7a1502ec4013"
 Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
-Path: /sitecore/system/Settings/Html Editor Profiles/Thread/Rich Text Limited/Images
+Path: /sitecore/system/Settings/Html Editor Profiles/AtriusHealth/Rich Text Limited/Images
 DB: core
 BranchID: "30235f43-6242-4107-87ab-5267e34edf0c"
 SharedFields:
@@ -58,7 +58,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 画像
+    Value: ??
   Versions:
   - Version: 1
     Fields:

@@ -1,4 +1,4 @@
-﻿// Generates Sitecore Habitat-style constants classes
+// Generates Sitecore Habitat-style constants classes
 
 Log.Debug($"Emitting constants templates for {ConfigurationName}...");
 

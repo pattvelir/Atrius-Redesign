@@ -1,5 +1,5 @@
-﻿
-namespace Thread.Foundation.PageEditor.Reference
+
+namespace AtriusHealth.Foundation.PageEditor.Reference
 {
 	public static class Constants
 	{

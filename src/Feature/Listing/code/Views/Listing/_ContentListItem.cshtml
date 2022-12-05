@@ -1,13 +1,13 @@
-﻿@using Thread.Foundation.Dictionary.Statics
-@using Thread.Foundation.Mvc.Extensions
-@using Thread.Foundation.ResponsiveImages.Extensions
-@using Thread.Foundation.ResponsiveImages.Extensions.Markers
-@using Thread.Foundation.SitecoreExtensions.Base
-@using Thread.Foundation.Taxonomy
-@using Thread.Foundation.Taxonomy.Extensions
-@using PageEditorConstants = Thread.Foundation.PageEditor.Reference.Constants
-@using TaxonomyConstants = Thread.Foundation.Taxonomy.Reference.Constants
-@model Thread.Feature.Listing.ContentListingItemItem
+@using AtriusHealth.Foundation.Dictionary.Statics
+@using AtriusHealth.Foundation.Mvc.Extensions
+@using AtriusHealth.Foundation.ResponsiveImages.Extensions
+@using AtriusHealth.Foundation.ResponsiveImages.Extensions.Markers
+@using AtriusHealth.Foundation.SitecoreExtensions.Base
+@using AtriusHealth.Foundation.Taxonomy
+@using AtriusHealth.Foundation.Taxonomy.Extensions
+@using PageEditorConstants = AtriusHealth.Foundation.PageEditor.Reference.Constants
+@using TaxonomyConstants = AtriusHealth.Foundation.Taxonomy.Reference.Constants
+@model AtriusHealth.Feature.Listing.ContentListingItemItem
 
 @if (Model != null)
 {
@@ -54,7 +54,7 @@
             <div class="list-item__meta">
                 @if (Html.Sitecore().HasValueOrEditing(Model.Date))
                 {
-                    using (Html.EditFrame(Model.InnerItem, Thread.Feature.Listing.Reference.Constants.EditFrames.EditDate, "Edit Date"))
+                    using (Html.EditFrame(Model.InnerItem, AtriusHealth.Feature.Listing.Reference.Constants.EditFrames.EditDate, "Edit Date"))
                     {
                         <span class="list-item__date">
                             @if (Sitecore.Context.PageMode.IsExperienceEditorEditing && string.IsNullOrEmpty(Model.Date.Value))
@@ -63,7 +63,7 @@
                             }
                             else
                             {
-                                @Model.Date.DateTime.ToThreadFormat()
+                                @Model.Date.DateTime.ToAtriusHealthFormat()
                             }
                         </span>
                     }

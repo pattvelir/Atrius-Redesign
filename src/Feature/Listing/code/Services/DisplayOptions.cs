@@ -1,6 +1,6 @@
-﻿using Thread.Foundation.Enumerations.References;
+using AtriusHealth.Foundation.Enumerations.References;
 
-namespace Thread.Feature.Listing.Services
+namespace AtriusHealth.Feature.Listing.Services
 {
 	public class DisplayOptions
 	{

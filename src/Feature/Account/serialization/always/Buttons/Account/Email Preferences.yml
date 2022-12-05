@@ -1,8 +1,8 @@
-﻿---
+---
 ID: "7e82c9e0-7da6-4e20-a684-1d6001fc9b9e"
 Parent: "27afa7d0-ca5f-4d0a-9140-70d7944548b5"
 Template: "1ab4f9ad-b004-413c-8924-3e07143a614b"
-Path: /sitecore/content/Applications/WebEdit/Custom Experience Buttons/Thread/Feature/Account/Email Preferences
+Path: /sitecore/content/Applications/WebEdit/Custom Experience Buttons/AtriusHealth/Feature/Account/Email Preferences
 DB: core
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.IO;
 using Sitecore.Diagnostics;
 using Sitecore.Mvc.Pipelines.Response.RenderRendering;
 using Sitecore.Mvc.Presentation;
 
-namespace Thread.Foundation.ErrorHandling.Pipelines.RenderRenderings
+namespace AtriusHealth.Foundation.ErrorHandling.Pipelines.RenderRenderings
 {
 	public class ExecuteRenderer : Sitecore.Mvc.Pipelines.Response.RenderRendering.ExecuteRenderer
 	{

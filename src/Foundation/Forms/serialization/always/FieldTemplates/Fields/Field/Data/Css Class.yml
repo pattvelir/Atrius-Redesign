@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "7abaa3f6-6ec0-4b65-a463-7919bfae55aa"
 Parent: "05e33109-9229-4bb0-961c-9b03d83250fc"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
@@ -64,10 +64,10 @@ Languages:
   Fields:
   - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
     Hint: Title
-    Value: CSS クラス
+    Value: CSS ???
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: CSS クラス
+    Value: CSS ???
   Versions:
   - Version: 1
     Fields:
@@ -82,10 +82,10 @@ Languages:
   Fields:
   - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
     Hint: Title
-    Value: Css 类
+    Value: Css ?
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Css 类
+    Value: Css ?
   Versions:
   - Version: 1
     Fields:

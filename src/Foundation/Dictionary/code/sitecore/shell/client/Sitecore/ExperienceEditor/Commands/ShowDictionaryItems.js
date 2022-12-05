@@ -1,4 +1,4 @@
-﻿define(["sitecore", "/-/speak/v1/ExperienceEditor/ExperienceEditor.js"], function (Sitecore, ExperienceEditor) {
+define(["sitecore", "/-/speak/v1/ExperienceEditor/ExperienceEditor.js"], function (Sitecore, ExperienceEditor) {
     Sitecore.Commands.ShowDictionaryItems =
     {
         canExecute: function (context) {

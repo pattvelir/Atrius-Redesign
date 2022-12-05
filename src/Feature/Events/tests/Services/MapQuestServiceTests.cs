@@ -1,10 +1,10 @@
-﻿using NUnit.Framework;
+using NUnit.Framework;
 using Sitecore.Data;
 using Sitecore.FakeDb;
-using Thread.Feature.Events.Services;
-using Thread.Foundation.Enumerations;
+using AtriusHealth.Feature.Events.Services;
+using AtriusHealth.Foundation.Enumerations;
 
-namespace Thread.Feature.Events.Tests.Services
+namespace AtriusHealth.Feature.Events.Tests.Services
 {
 	[TestFixture]
 	public class MapQuestServiceTests

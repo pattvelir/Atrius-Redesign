@@ -1,0 +1,22 @@
+---
+ID: "6059ab8f-146d-475a-97a3-7bf34e3accfe"
+Parent: "a557b6c0-ac31-48a0-9f8d-be0a659e2fd8"
+Template: "fbd8d65e-ea3b-413a-90de-93f7fedca0bc"
+Path: /sitecore/templates/Branches/Project/Atrius/Sites/New Site with Login/$name/Configuration/Enumerations/Number of Columns
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161025T214246Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

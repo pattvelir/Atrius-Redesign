@@ -1,12 +1,12 @@
-﻿using NSubstitute;
+using NSubstitute;
 using NUnit.Framework;
 using Sitecore.Data;
 using Sitecore.FakeDb;
-using Thread.Feature.Banners.Models;
-using Thread.Foundation.Orm.Factory;
-using Thread.Foundation.Theme;
+using AtriusHealth.Feature.Banners.Models;
+using AtriusHealth.Foundation.Orm.Factory;
+using AtriusHealth.Foundation.Theme;
 
-namespace Thread.Feature.Banners.Tests.Models
+namespace AtriusHealth.Feature.Banners.Tests.Models
 {
 	[TestFixture]
 	public class PageBannerModelTests

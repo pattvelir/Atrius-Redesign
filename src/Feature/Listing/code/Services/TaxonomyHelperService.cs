@@ -1,15 +1,15 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using Jabberwocky.DependencyInjection.Autowire.Attributes;
 using Sitecore.ContentSearch.Linq.Utilities;
 using Sitecore.Data.Items;
-using Thread.Feature.Listing.Results;
-using Thread.Foundation.Taxonomy;
-using Thread.Foundation.SitecoreExtensions.Item;
+using AtriusHealth.Feature.Listing.Results;
+using AtriusHealth.Foundation.Taxonomy;
+using AtriusHealth.Foundation.SitecoreExtensions.Item;
 
-namespace Thread.Feature.Listing.Services
+namespace AtriusHealth.Feature.Listing.Services
 {
 	[AutowireService(LifetimeScope.SingleInstance)]
 	public class TaxonomyHelperService : ITaxonomyHelperService

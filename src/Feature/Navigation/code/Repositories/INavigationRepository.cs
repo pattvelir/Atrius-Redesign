@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using Sitecore.Data;
 using Sitecore.Data.Items;
-using Thread.Feature.Navigation.Models;
+using AtriusHealth.Feature.Navigation.Models;
 
-namespace Thread.Feature.Navigation.Repositories
+namespace AtriusHealth.Feature.Navigation.Repositories
 {
 	public interface INavigationRepository
 	{

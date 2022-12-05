@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 
-namespace Thread.Feature.Metadata.Areas.Thread.Models
+namespace AtriusHealth.Feature.Metadata.Areas.AtriusHealth.Models
 {
 	public interface IPageMetadata
 	{

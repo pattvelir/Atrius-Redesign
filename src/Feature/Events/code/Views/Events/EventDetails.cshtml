@@ -1,7 +1,7 @@
-﻿@using Thread.Feature.Events.Reference
-@using Thread.Foundation.Dictionary.Statics
-@using Thread.Foundation.Mvc.Extensions
-@model Thread.Feature.Events.Models.EventDetailsModel
+@using AtriusHealth.Feature.Events.Reference
+@using AtriusHealth.Foundation.Dictionary.Statics
+@using AtriusHealth.Foundation.Mvc.Extensions
+@model AtriusHealth.Feature.Events.Models.EventDetailsModel
 
 <aside class="event-card">
   @if (Model.EventDates != null)
@@ -40,7 +40,7 @@
 
             @if (Model.EventDetails.State.TargetItem != null)
             {
-              Thread.Foundation.Enumerations.StateItem state = Model.EventDetails.State.TargetItem;
+              AtriusHealth.Foundation.Enumerations.StateItem state = Model.EventDetails.State.TargetItem;
               @state.Value.Value
             }
             else if (Sitecore.Context.PageMode.IsExperienceEditorEditing)

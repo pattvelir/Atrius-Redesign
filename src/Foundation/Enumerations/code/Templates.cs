@@ -10,7 +10,7 @@
 //------------------------------------------------------------------------------
 // ReSharper disable All
 
-					namespace Thread.Foundation.Enumerations
+					namespace AtriusHealth.Foundation.Enumerations
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -43,7 +43,7 @@ public static implicit operator Item(EmailFrequencyItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Enumerations
+					namespace AtriusHealth.Foundation.Enumerations
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -72,7 +72,7 @@ public static implicit operator Item(EmailFrequencyFolderItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Enumerations
+					namespace AtriusHealth.Foundation.Enumerations
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -109,7 +109,7 @@ public static implicit operator Item(EmailListItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Enumerations
+					namespace AtriusHealth.Foundation.Enumerations
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -138,7 +138,7 @@ public static implicit operator Item(EmailListFolderItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Enumerations
+					namespace AtriusHealth.Foundation.Enumerations
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -167,7 +167,7 @@ public static implicit operator Item(EnumerationsFolderItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Enumerations
+					namespace AtriusHealth.Foundation.Enumerations
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -200,7 +200,7 @@ public static implicit operator Item(GenderItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Enumerations
+					namespace AtriusHealth.Foundation.Enumerations
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -229,7 +229,7 @@ public static implicit operator Item(GendersFolderItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Enumerations
+					namespace AtriusHealth.Foundation.Enumerations
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -262,7 +262,7 @@ public static implicit operator Item(NumberOfColumnsItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Enumerations
+					namespace AtriusHealth.Foundation.Enumerations
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -291,7 +291,7 @@ public static implicit operator Item(NumberOfColumnsFolderItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Enumerations
+					namespace AtriusHealth.Foundation.Enumerations
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -324,7 +324,7 @@ public static implicit operator Item(NumberOfItemsItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Enumerations
+					namespace AtriusHealth.Foundation.Enumerations
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -353,7 +353,7 @@ public static implicit operator Item(NumberOfItemsFolderItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Enumerations
+					namespace AtriusHealth.Foundation.Enumerations
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -386,7 +386,7 @@ public static implicit operator Item(OrientationItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Enumerations
+					namespace AtriusHealth.Foundation.Enumerations
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -415,7 +415,7 @@ public static implicit operator Item(OrientationsFolderItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Enumerations
+					namespace AtriusHealth.Foundation.Enumerations
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -448,7 +448,7 @@ public static implicit operator Item(RatioItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Enumerations
+					namespace AtriusHealth.Foundation.Enumerations
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -477,7 +477,7 @@ public static implicit operator Item(RatioFolderItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Enumerations
+					namespace AtriusHealth.Foundation.Enumerations
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -510,7 +510,7 @@ public static implicit operator Item(SalutationItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Enumerations
+					namespace AtriusHealth.Foundation.Enumerations
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -539,7 +539,7 @@ public static implicit operator Item(SalutationsFolderItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Enumerations
+					namespace AtriusHealth.Foundation.Enumerations
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -572,7 +572,7 @@ public static implicit operator Item(StateItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Enumerations
+					namespace AtriusHealth.Foundation.Enumerations
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -601,7 +601,7 @@ public static implicit operator Item(StatesFolderItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Enumerations
+					namespace AtriusHealth.Foundation.Enumerations
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -634,7 +634,7 @@ public static implicit operator Item(SuffixItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Enumerations
+					namespace AtriusHealth.Foundation.Enumerations
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -663,7 +663,7 @@ public static implicit operator Item(SuffixesFolderItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Enumerations
+					namespace AtriusHealth.Foundation.Enumerations
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -696,7 +696,7 @@ public static implicit operator Item(TextAlignmentItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Enumerations
+					namespace AtriusHealth.Foundation.Enumerations
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -725,7 +725,7 @@ public static implicit operator Item(TextAlignmentFolderItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Enumerations
+					namespace AtriusHealth.Foundation.Enumerations
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -758,7 +758,7 @@ public static implicit operator Item(_EnumerationBaseItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Enumerations
+					namespace AtriusHealth.Foundation.Enumerations
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -797,65 +797,65 @@ public static implicit operator Item(_NumericalEnumerationBaseItem customItem)
 
 
 
-// Thread.Foundation.Enumerations.Email_Frequency (/sitecore/templates/Foundation/Enumerations/Email Frequency a580d907-62fa-4935-84c0-8d8591a7d0d4)
+// AtriusHealth.Foundation.Enumerations.Email_Frequency (/sitecore/templates/Foundation/Enumerations/Email Frequency a580d907-62fa-4935-84c0-8d8591a7d0d4)
 
-// Thread.Foundation.Enumerations.Email_Frequency_Folder (/sitecore/templates/Foundation/Enumerations/Folders/Email Frequency Folder af84df6a-b5ff-4b6a-996d-17eae16aec3f)
+// AtriusHealth.Foundation.Enumerations.Email_Frequency_Folder (/sitecore/templates/Foundation/Enumerations/Folders/Email Frequency Folder af84df6a-b5ff-4b6a-996d-17eae16aec3f)
 
-// Thread.Foundation.Enumerations.Email_List (/sitecore/templates/Foundation/Enumerations/Email List 77f33dcc-04ef-4c40-8f34-7a131576180e)
+// AtriusHealth.Foundation.Enumerations.Email_List (/sitecore/templates/Foundation/Enumerations/Email List 77f33dcc-04ef-4c40-8f34-7a131576180e)
 	// Short_Description (f4e5896d-004e-499d-b8f0-23345baef94d)
 		// Type: Single-Line Text
 		// Section: Display Options
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Foundation.Enumerations.Email_List_Folder (/sitecore/templates/Foundation/Enumerations/Folders/Email List Folder b4229f69-76dc-440c-8d4b-440309341aa1)
+// AtriusHealth.Foundation.Enumerations.Email_List_Folder (/sitecore/templates/Foundation/Enumerations/Folders/Email List Folder b4229f69-76dc-440c-8d4b-440309341aa1)
 
-// Thread.Foundation.Enumerations.Enumerations_Folder (/sitecore/templates/Foundation/Enumerations/Folders/Enumerations Folder 474c209d-f0ce-49e7-8271-b7abc6ddf4df)
+// AtriusHealth.Foundation.Enumerations.Enumerations_Folder (/sitecore/templates/Foundation/Enumerations/Folders/Enumerations Folder 474c209d-f0ce-49e7-8271-b7abc6ddf4df)
 
-// Thread.Foundation.Enumerations.Gender (/sitecore/templates/Foundation/Enumerations/Gender e992befe-ac37-422a-9b9e-2696f5f00d87)
+// AtriusHealth.Foundation.Enumerations.Gender (/sitecore/templates/Foundation/Enumerations/Gender e992befe-ac37-422a-9b9e-2696f5f00d87)
 
-// Thread.Foundation.Enumerations.Genders_Folder (/sitecore/templates/Foundation/Enumerations/Folders/Genders Folder 48e0cc49-1602-422f-8fc4-44814737591e)
+// AtriusHealth.Foundation.Enumerations.Genders_Folder (/sitecore/templates/Foundation/Enumerations/Folders/Genders Folder 48e0cc49-1602-422f-8fc4-44814737591e)
 
-// Thread.Foundation.Enumerations.Number_Of_Columns (/sitecore/templates/Foundation/Enumerations/Number of Columns 03f0a1d9-afa6-48d1-8db1-9b2195733caf)
+// AtriusHealth.Foundation.Enumerations.Number_Of_Columns (/sitecore/templates/Foundation/Enumerations/Number of Columns 03f0a1d9-afa6-48d1-8db1-9b2195733caf)
 
-// Thread.Foundation.Enumerations.Number_Of_Columns_Folder (/sitecore/templates/Foundation/Enumerations/Folders/Number of Columns Folder fbd8d65e-ea3b-413a-90de-93f7fedca0bc)
+// AtriusHealth.Foundation.Enumerations.Number_Of_Columns_Folder (/sitecore/templates/Foundation/Enumerations/Folders/Number of Columns Folder fbd8d65e-ea3b-413a-90de-93f7fedca0bc)
 
-// Thread.Foundation.Enumerations.Number_Of_Items (/sitecore/templates/Foundation/Enumerations/Number of Items aaad8d76-57dd-48ad-8601-8a573ed01709)
+// AtriusHealth.Foundation.Enumerations.Number_Of_Items (/sitecore/templates/Foundation/Enumerations/Number of Items aaad8d76-57dd-48ad-8601-8a573ed01709)
 
-// Thread.Foundation.Enumerations.Number_Of_Items_Folder (/sitecore/templates/Foundation/Enumerations/Folders/Number of Items Folder f40da9da-33b5-4533-9cd0-ba0d000ccba6)
+// AtriusHealth.Foundation.Enumerations.Number_Of_Items_Folder (/sitecore/templates/Foundation/Enumerations/Folders/Number of Items Folder f40da9da-33b5-4533-9cd0-ba0d000ccba6)
 
-// Thread.Foundation.Enumerations.Orientation (/sitecore/templates/Foundation/Enumerations/Orientation 2c81004c-2528-40e6-98c2-73f73138ab05)
+// AtriusHealth.Foundation.Enumerations.Orientation (/sitecore/templates/Foundation/Enumerations/Orientation 2c81004c-2528-40e6-98c2-73f73138ab05)
 
-// Thread.Foundation.Enumerations.Orientations_Folder (/sitecore/templates/Foundation/Enumerations/Folders/Orientations Folder 400b3de1-9220-4cf9-a362-8023313c58cc)
+// AtriusHealth.Foundation.Enumerations.Orientations_Folder (/sitecore/templates/Foundation/Enumerations/Folders/Orientations Folder 400b3de1-9220-4cf9-a362-8023313c58cc)
 
-// Thread.Foundation.Enumerations.Ratio (/sitecore/templates/Foundation/Enumerations/Ratio 415fdcdd-992d-4f3f-9752-e33fa61ca5db)
+// AtriusHealth.Foundation.Enumerations.Ratio (/sitecore/templates/Foundation/Enumerations/Ratio 415fdcdd-992d-4f3f-9752-e33fa61ca5db)
 
-// Thread.Foundation.Enumerations.Ratio_Folder (/sitecore/templates/Foundation/Enumerations/Folders/Ratio Folder 09f8503a-5ccf-4e2c-9a5c-d9cf0d73fd69)
+// AtriusHealth.Foundation.Enumerations.Ratio_Folder (/sitecore/templates/Foundation/Enumerations/Folders/Ratio Folder 09f8503a-5ccf-4e2c-9a5c-d9cf0d73fd69)
 
-// Thread.Foundation.Enumerations.Salutation (/sitecore/templates/Foundation/Enumerations/Salutation 24b98cc6-fc73-4bc4-8b45-a40022047990)
+// AtriusHealth.Foundation.Enumerations.Salutation (/sitecore/templates/Foundation/Enumerations/Salutation 24b98cc6-fc73-4bc4-8b45-a40022047990)
 
-// Thread.Foundation.Enumerations.Salutations_Folder (/sitecore/templates/Foundation/Enumerations/Folders/Salutations Folder 1625996d-32ba-4001-8d85-4072658a8bd0)
+// AtriusHealth.Foundation.Enumerations.Salutations_Folder (/sitecore/templates/Foundation/Enumerations/Folders/Salutations Folder 1625996d-32ba-4001-8d85-4072658a8bd0)
 
-// Thread.Foundation.Enumerations.State (/sitecore/templates/Foundation/Enumerations/State 523c7870-f866-4f61-8e96-630405c2907f)
+// AtriusHealth.Foundation.Enumerations.State (/sitecore/templates/Foundation/Enumerations/State 523c7870-f866-4f61-8e96-630405c2907f)
 
-// Thread.Foundation.Enumerations.States__Folder (/sitecore/templates/Foundation/Enumerations/Folders/States  Folder c7146fe4-a0a6-48fa-bdbd-9acc2723ff13)
+// AtriusHealth.Foundation.Enumerations.States__Folder (/sitecore/templates/Foundation/Enumerations/Folders/States  Folder c7146fe4-a0a6-48fa-bdbd-9acc2723ff13)
 
-// Thread.Foundation.Enumerations.Suffix (/sitecore/templates/Foundation/Enumerations/Suffix 7a623f5c-692d-45ce-a749-0aa63f680a67)
+// AtriusHealth.Foundation.Enumerations.Suffix (/sitecore/templates/Foundation/Enumerations/Suffix 7a623f5c-692d-45ce-a749-0aa63f680a67)
 
-// Thread.Foundation.Enumerations.Suffixes__Folder (/sitecore/templates/Foundation/Enumerations/Folders/Suffixes  Folder 439b37c1-9ad8-4f12-bb2a-47b46eee254b)
+// AtriusHealth.Foundation.Enumerations.Suffixes__Folder (/sitecore/templates/Foundation/Enumerations/Folders/Suffixes  Folder 439b37c1-9ad8-4f12-bb2a-47b46eee254b)
 
-// Thread.Foundation.Enumerations.Text_Alignment (/sitecore/templates/Foundation/Enumerations/Text Alignment 6eb8bc7f-e231-44ad-92b2-b1fbac97b3b1)
+// AtriusHealth.Foundation.Enumerations.Text_Alignment (/sitecore/templates/Foundation/Enumerations/Text Alignment 6eb8bc7f-e231-44ad-92b2-b1fbac97b3b1)
 
-// Thread.Foundation.Enumerations.Text_Alignment_Folder (/sitecore/templates/Foundation/Enumerations/Folders/Text Alignment Folder 56c607e1-b07a-47e9-9041-04703acafd3c)
+// AtriusHealth.Foundation.Enumerations.Text_Alignment_Folder (/sitecore/templates/Foundation/Enumerations/Folders/Text Alignment Folder 56c607e1-b07a-47e9-9041-04703acafd3c)
 
-// Thread.Foundation.Enumerations._Enumeration_Base (/sitecore/templates/Foundation/Enumerations/_Enumeration Base cabe55a1-4397-4b0a-a682-3578aef7e724)
+// AtriusHealth.Foundation.Enumerations._Enumeration_Base (/sitecore/templates/Foundation/Enumerations/_Enumeration Base cabe55a1-4397-4b0a-a682-3578aef7e724)
 	// Value (197fd7ed-d7de-4445-a87d-3a6b9e845000)
 		// Type: Single-Line Text
 		// Section: Value
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Foundation.Enumerations._Numerical_Enumeration_Base (/sitecore/templates/Foundation/Enumerations/_Numerical Enumeration Base 7d24dfac-bdf7-4bd2-a2e7-159e300c0170)
+// AtriusHealth.Foundation.Enumerations._Numerical_Enumeration_Base (/sitecore/templates/Foundation/Enumerations/_Numerical Enumeration Base 7d24dfac-bdf7-4bd2-a2e7-159e300c0170)
 	// Value (0dc82897-5b0f-47ce-87bd-6957ab817afa)
 		// Type: Integer
 		// Section: Value

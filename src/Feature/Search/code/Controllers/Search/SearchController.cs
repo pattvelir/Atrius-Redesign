@@ -1,13 +1,13 @@
-﻿using System.Web.Mvc;
+using System.Web.Mvc;
 using Sitecore.Data.Items;
-using Thread.Feature.Search.Models;
-using Thread.Foundation.Mvc.Controllers;
-using Thread.Foundation.SitecoreExtensions.Item;
+using AtriusHealth.Feature.Search.Models;
+using AtriusHealth.Foundation.Mvc.Controllers;
+using AtriusHealth.Foundation.SitecoreExtensions.Item;
 using Velir.Search.Core.Reference;
 
-namespace Thread.Feature.Search.Controllers.Search
+namespace AtriusHealth.Feature.Search.Controllers.Search
 {
-	public class SearchController : ThreadController
+	public class SearchController : AtriusHealthController
 	{
 		public virtual ActionResult QuickSearchBar()
 		{
