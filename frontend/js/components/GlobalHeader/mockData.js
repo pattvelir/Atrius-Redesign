@@ -55,10 +55,12 @@ export default {
       {
         href: "#",
         label: "Utility Link 1",
+        icon: "heart",
       },
       {
         href: "#",
         label: "Utility Link 2",
+        icon: "careers",
       },
       {
         href: "#",

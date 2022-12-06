@@ -73,21 +73,21 @@ const rollupPlugins = R.reject(
     babel({
       exclude: "node_modules/**",
       babelHelpers: "bundled",
-      presets: [
-        [
-          "@babel/preset-env",
-          {
-            useBuiltIns: "usage",
-            corejs: 3,
-          },
-        ],
-        [
-          "@babel/preset-react",
-          {
-            runtime: "automatic",
-          },
-        ],
-      ],
+      // presets: [
+      //   [
+      //     "@babel/preset-env",
+      //     {
+      //       useBuiltIns: "usage",
+      //       corejs: 3,
+      //     },
+      //   ],
+      //   [
+      //     "@babel/preset-react",
+      //     {
+      //       runtime: "automatic",
+      //     },
+      //   ],
+      // ],
     }),
     dynamicImportVar({ warnOnError: true }),
     commonjs({
@@ -138,16 +138,27 @@ const rollupPlugins = R.reject(
 );
 
 export default {
-  input: [`${frontendDir}/js/index.js`],
-  output: {
-    format: "esm",
-    dir: `${buildDir}`,
-    entryFileNames: "js/index-generated.js",
-    chunkFileNames: "js/chunks/[name]-[hash].js",
-    assetFileNames: "assets/[name]-generated[extname]",
-    sourcemap: isLocal ? "inline" : false,
-    preserveModules: true,
-  },
+  input: `${frontendDir}/js/index.js`,
+  output: [
+    {
+      format: "esm",
+      dir: `${buildDir}`,
+      entryFileNames: "js/[name]-generated.js",
+      chunkFileNames: "js/chunks/[name]-[hash].js",
+      assetFileNames: "assets/[name]-generated[extname]",
+      sourcemap: isLocal ? "inline" : false,
+      preserveModules: false,
+    },
+    {
+      dir: `${buildDir}`,
+      entryFileNames: "js/[name]-generated.cjs.js",
+      chunkFileNames: "js/chunks/[name]-[hash].cjs.js",
+      assetFileNames: "assets/[name]-generated[extname]",
+      sourcemap: isLocal ? "inline" : false,
+      preserveModules: false,
+      format: "cjs",
+    },
+  ],
   watch:
     isLocal && isWatching
       ? {
