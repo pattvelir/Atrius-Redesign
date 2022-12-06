@@ -1,8 +1,12 @@
 import React from "react";
 import ContainerFull from "../Container/ContainerFull.jsx";
 import mockData from "./mockData.js";
+import promoData from "../Promo/mockData.js";
+import textData from "../TextBanner/mockData.js";
 
 import MultiPromo from "./MultiPromo.jsx";
+import Promo from "../Promo/Promo.jsx";
+import TextBanner from "../TextBanner/TextBanner.jsx";
 
 export default {
   title: "Components/Multi Promo",
@@ -23,5 +27,15 @@ export const multiPromo3 = (args) => (
 export const multiPromo4 = (args) => (
   <ContainerFull>
     <MultiPromo {...mockData} promos={mockData.promos.slice(0, 4)} />
+  </ContainerFull>
+);
+
+export const multiPromoWithText = (args) => (
+  <ContainerFull>
+    <MultiPromo {...mockData} promos={null}>
+      <Promo {...promoData[0]} theme="theme3" type="no-image" />
+      <Promo {...promoData[0]} theme="theme3" type="no-image" />
+      <TextBanner {...textData} colorPairs={null} />
+    </MultiPromo>
   </ContainerFull>
 );
