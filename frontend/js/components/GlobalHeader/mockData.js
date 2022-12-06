@@ -62,10 +62,6 @@ export default {
         label: "Utility Link 2",
         icon: "careers",
       },
-      {
-        href: "#",
-        label: "Utility Link 3",
-      },
     ],
   },
   langSelect: {

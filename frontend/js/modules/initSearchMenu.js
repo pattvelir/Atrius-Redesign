@@ -9,6 +9,7 @@ const initSearchMenu = (el) => {
     closed: true,
     direction: "",
     menuButton: ".js-search-menu-button",
+    menuCloseButton: ".js-search-menu-close-button",
     menuContainer: ".js-search-menu-content",
     navigationLink: "input, button",
     openClass: "is-open",

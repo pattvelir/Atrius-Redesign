@@ -1,10 +1,11 @@
-import * as dotenv from "dotenv"; // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
+import * as dotenv from "dotenv";
 dotenv.config();
 const {
   NODE_ENV = "production",
   FE_BUILD_DIR = "./build",
   FE_SRC_DIR = "./frontend",
 } = process.env;
+// see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
 import * as R from "ramda";
 import path from "path";
 import yargs from "yargs";
@@ -26,15 +27,15 @@ import { brotliCompress } from "zlib";
 import { promisify } from "util";
 import compression from "compression";
 import browsersync from "rollup-plugin-browsersync";
-const brotliPromise = promisify(brotliCompress);
+
 const env = yargs?.argv?.environment || NODE_ENV;
 const isWatching = yargs?.argv?.w || false;
+const brotliPromise = promisify(brotliCompress);
 const isLocal = env === "development" || env === "local";
 const isCi = env === "ci";
 const isProduction = env === "production";
 const buildDir = FE_BUILD_DIR;
 const frontendDir = FE_SRC_DIR;
-
 const rollupPlugins = R.reject(
   (i) => !i,
   R.flatten([

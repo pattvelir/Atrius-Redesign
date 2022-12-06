@@ -49,10 +49,11 @@
       color: var(--color-design-system-white);
     }
   }
-}
+} 
 
 .primary-nav__sub-link--active,
 .primary-nav__top-link--active {
+  border-bottom: 2px solid var(--color-yellow-300);
 }
 
 .primary-nav__top-link--button {

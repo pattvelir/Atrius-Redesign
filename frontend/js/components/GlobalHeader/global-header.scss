@@ -7,7 +7,8 @@ $global-header__bottom-space: 30px;
 
 .global-header {
   position: relative;
-
+  overflow: hidden;
+  
   .language-selector {
     display: block;
     margin-top: 0;

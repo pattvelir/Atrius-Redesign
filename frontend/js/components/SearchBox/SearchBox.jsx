@@ -25,10 +25,15 @@ const searchBox = (props) => {
         <label htmlFor={searchId} className="u-visuallyhidden">
           Search
         </label>
-        <input name="q" id={searchId} type="search" placeholder="Search" />
+        <input
+          name="q"
+          id={searchId}
+          type="search"
+          placeholder="Search using provider name, location, or keywords"
+        />
         <button type="submit" className="search-box__button">
           <span className="u-visuallyhidden">Submit Search</span>
-          <Icon className="icon" iconName="search" aria-hidden="true" />
+          <Icon className="icon" iconName="search-field" aria-hidden="true" />
         </button>
       </div>
     </form>

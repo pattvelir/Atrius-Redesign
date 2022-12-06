@@ -5,11 +5,13 @@ export default {
       href: "#",
       label: "Utility Link 1",
       active: false,
+      icon: "heart",
     },
     {
       href: "#",
       label: "Active Link 2",
       active: true,
+      icon: "careers",
     },
     {
       href: "#",

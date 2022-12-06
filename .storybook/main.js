@@ -1,4 +1,6 @@
-const path = require('path')
+const path = require("path");
+const postcss = require("postcss");
+const sass = require("sass");
 module.exports = {
   features: {
     postcss: true,
@@ -9,7 +11,7 @@ module.exports = {
       name: '@storybook/preset-scss',
       options: {
         sassLoaderOptions:{
-          implementation: require("sass"),
+          implementation: sass,
         },
         cssLoaderOptions: {
           importLoaders: 2,
@@ -20,7 +22,7 @@ module.exports = {
       name: '@storybook/addon-postcss',
       options: {
         postcssLoaderOptions: {
-          implementation: require('postcss'),
+          implementation: postcss,
         },
       },
     },
@@ -44,4 +46,4 @@ module.exports = {
     
     return config
   },
-}
+};
