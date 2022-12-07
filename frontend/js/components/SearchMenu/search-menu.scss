@@ -3,7 +3,7 @@
 .search-menu {
   display: flex;
   align-items: center;
-  
+
   .search-menu__button {
     .search-menu__close {
       display: none;
@@ -50,13 +50,15 @@
     display: flex;
     overflow: hidden;
   }
-  .is-open{
-    display:none;
-  
+
+  .is-open {
+    display: none;
   }
-  .is-closed{
+
+  .is-closed {
     display: flex;
   }
+
   &.is-open {
     .search-menu__inner-container {
       opacity: 1;
@@ -86,11 +88,12 @@
       transform: translate(0%, 0%);
       pointer-events: all;
     }
-    .is-open{
+
+    .is-open {
       display: flex;
-    
     }
-    .is-closed{
+
+    .is-closed {
       display: none;
     }
   }
@@ -107,6 +110,7 @@
 
   .search-menu:not(.is-open) {
     visibility: hidden;
+
     // opacity: 0;
   }
 }

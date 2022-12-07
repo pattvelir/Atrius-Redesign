@@ -11,7 +11,7 @@ $global-header__bottom-space: 30px;
   overflow: hidden;
 
   @media (--bp-large-min) {
-    --global-header-max-width:1130px;
+    --global-header-max-width: 1130px;
   }
 
   .language-selector {
@@ -112,6 +112,4 @@ $global-header__bottom-space: 30px;
       display: none;
     }
   }
-
- 
 }

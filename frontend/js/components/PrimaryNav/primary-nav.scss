@@ -15,19 +15,20 @@
     align-items: stretch;
     flex-direction: column;
   }
-  .primary-nav__item:first-child{
+
+  .primary-nav__item:first-child {
     padding-left: 0;
   }
-  .primary-nav__item:last-child{
+
+  .primary-nav__item:last-child {
     padding-right: 0;
   }
 }
 
 .primary-nav__item,
 .search-menu__button {
-  display: block;
   margin: 0;
-  padding: var(--size-4) clamp(var(--size-2), 1.2vw, var(--size-3))  ;
+  padding: var(--size-4) clamp(var(--size-2), 1.2vw, var(--size-3));
   position: relative;
   z-index: 0;
   display: flex;
@@ -138,5 +139,4 @@
   @media (--bp-global-header-max) {
     width: 100%;
   }
- 
 }
