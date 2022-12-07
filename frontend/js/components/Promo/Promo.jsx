@@ -56,17 +56,17 @@ const promo = (props) => {
       {type !== "no-image" ? promoHeaderTypes : header}
       <div className="promo__content">
         <p className="promo__description">{description}</p>
-        {url && (
-          <footer className="promo__cta">
-            <TextWithIconComponent
-              text={cta}
-              icon={ctaIcon}
-              href={url}
-              aria-labelledby={id}
-            />
-          </footer>
-        )}
       </div>
+      {url && (
+        <footer className="promo__cta">
+          <TextWithIconComponent
+            text={cta}
+            icon={ctaIcon}
+            href={url}
+            aria-labelledby={id}
+          />
+        </footer>
+      )}
     </section>
   );
 };

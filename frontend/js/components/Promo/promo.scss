@@ -1,16 +1,23 @@
 @import "../../../scss/variables/index";
 
+@custom-media --bp-small-min: (min-width: 552px);
+
 :root {
   --promo-img-margin-block-end: 24px;
   --promo-description-font: var(--font-sub-headings-400-sub-heading-b);
   --promo-title-transfrom: capitalize;
   --promo-cta-rotate-icon: 0;
+
+  @media (--bp-small-min) {
+    --promo-padding: var(--spacing-40);
+  }
 }
 
-@custom-media --bp-small-min: (min-width: 552px);
 
 .promo {
-  padding: var(--spacing-16);
+  --promo-padding: var(--spacing-16);
+  position: relative;
+  padding: var(--promo-padding);
   color: var(--promo-color);
   background-color: var(--promo-background-color);
 
@@ -23,11 +30,6 @@
   .icon {
     transform: var(--promo-cta-rotate-icon);
   }
-
-  @media (--bp-small-min) {
-    padding: var(--spacing-40);
-  }
-
 
   &:not(.promo--circle) {
     --promo-text-align: left;
@@ -48,16 +50,27 @@
   }
 }
 
-.promo__description {
+.promo__content {
+  display: block;
+  height: auto;
   margin-block-start: var(--spacing-24);
+  margin-block-end: var(--spacing-48);
+}
+
+.promo__description {
+  margin: 0;
   text-align: var(--promo-text-align);
   font: var(--promo-description-font);
 }
 
 .promo__cta {
+  position: absolute;
+  bottom: var(--promo-padding);
   font: var(--font-ui-labels-ui-md-smb);
   text-align: var(--promo-text-align);
   text-decoration: none;
+  left: var(--promo-padding);
+  right: var(--promo-padding);
 
   a {
     color: var(--promo-color);

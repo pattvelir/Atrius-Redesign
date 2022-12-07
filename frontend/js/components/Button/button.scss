@@ -39,7 +39,7 @@
 
   .icon {
     width: var(--btn-icon);
-    height:  var(--btn-icon);
+    height: var(--btn-icon);
   }
 
   &.btn--xsm {
@@ -65,6 +65,7 @@
     --btn-border-radius: 50%;
     align-content: center;
     justify-content: center;
+
     --btn-margin-inline: 0;
     height: var(--btn-icon-height);
     width: var(--btn-icon-width);
@@ -91,10 +92,10 @@
 
   &:hover {
     background: var(--btn-yellow);
-    color:  var(--btn-blue);
+    color: var(--btn-blue);
 
     .icon {
-      color:  var(--btn-blue);
+      color: var(--btn-blue);
     }
   }
 
@@ -115,26 +116,26 @@
 /* // filled light */
 
 .btn--filled.btn--light {
-  background:  var(--btn-yellow);
-  color:  var(--btn-blue);
+  background: var(--btn-yellow);
+  color: var(--btn-blue);
 
   .icon {
-    color:  var(--btn-blue);
+    color: var(--btn-blue);
   }
 
   &:hover {
     background: var(--btn-white);
-    color:  var(--btn-blue);
+    color: var(--btn-blue);
     text-decoration: underline;
 
     .icon {
-      color:  var(--btn-yellow);
+      color: var(--btn-yellow);
     }
   }
 
   &:active {
     text-decoration: underline;
-    color:  var(--btn-blue);
+    color: var(--btn-blue);
     background: var(--btn-lgrey);
   }
 
@@ -147,8 +148,6 @@
     }
   }
 }
-
-
 
 /* // outline light */
 
@@ -187,7 +186,6 @@
     }
   }
 }
-
 
 /* // outline dark */
 
@@ -237,6 +235,7 @@
 
     &:hover {
       text-decoration: underline;
+
       .icon {
         color: var(--btn-blue);
       }
@@ -264,6 +263,7 @@
 
     &:hover {
       text-decoration: underline;
+
       .icon {
         color: var(--btn-white);
       }
@@ -282,6 +282,3 @@
     }
   }
 }
-
-
-
