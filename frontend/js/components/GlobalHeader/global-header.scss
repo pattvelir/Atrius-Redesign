@@ -6,9 +6,14 @@ $global-header__bottom-space: 30px;
 /* base */
 
 .global-header {
+  --global-header-max-width: var(--max-content-width);
   position: relative;
   overflow: hidden;
-  
+
+  @media (--bp-large-min) {
+    --global-header-max-width:1130px;
+  }
+
   .language-selector {
     display: block;
     margin-top: 0;
@@ -34,8 +39,10 @@ $global-header__bottom-space: 30px;
 .global-header__top-container {
   display: flex;
   justify-content: space-between;
-  width: var(--max-content-width);
+  width: 100%;
+  max-width: var(--global-header-max-width);
   margin: 0 auto;
+  padding: 0 var(--size-7);
 }
 
 .global-header__container.container {
@@ -106,7 +113,5 @@ $global-header__bottom-space: 30px;
     }
   }
 
-  .search-menu {
-    margin-left: auto;
-  }
+ 
 }

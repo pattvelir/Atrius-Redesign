@@ -9,20 +9,32 @@
       name="viewport"
       content="width=device-width, minimum-scale=1, initial-scale=1"
     />
-    <link
-      rel="shortcut icon"
-      href="/img/3895e0fc2c0843c1a74e0f05b5172ec1.ashx"
-    />
-    <meta name="canonical" content="https://dev.graybox.velir.net/" />
+    <meta name="canonical" content="https://localhost:3000/" />
     <meta name="description" content="Small-group adventure travel" />
     <meta name="title" content="Home" />
+ 
+    <!--add preloads-->
+    <link rel="preload" href="/css/index-generated.css" as="style" />
+    <link rel="preload" href="/js/index-generated.js" as="script" />
     <link rel="preconnect" href="//fonts.googleapis.com" />
     <link rel="preconnect" href="//fonts.gstatic.com" crossorigin />
-    <link
+    <!-- <link rel="preload" type="text/css" href="/css/index-x-small-generated.css" media="screen and (min-width: 470px)" />
+    <link rel="preload" type="text/css" href="/css/index-small-generated.css" media="screen and (min-width: 680px)" />
+    <link rel="preload" type="text/css" href="/css/index-medium-generated.css" media="screen and (min-width: 780px)" />
+    <link rel="preload" type="text/css" href="/css/index-large-generated.css" media="screen and (min-width: 910px)" /> -->
+    <!--add preloads-->
+
+    <link   rel="stylesheet" href="/css/index-generated.css"  />
+
+    <link rel="stylesheet" type="text/css" href="/css/index-x-small-generated.css" media="screen and (min-width: 470px)"  />
+    <link rel="stylesheet" type="text/css" href="/css/index-small-generated.css" media="screen and (min-width: 680px)"  />
+    <link rel="stylesheet" type="text/css" href="/css/index-medium-generated.css" media="screen and (min-width: 780px)"  />
+    <link rel="stylesheet" type="text/css" href="/css/index-large-generated.css" media="screen and (min-width: 910px)"  />
+
+    <link defer
       href="//fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Noto+Serif:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/index-generated.css" />
   </head>
   <body class="translate">
     <div class="js-page-content-wrapper">
@@ -1823,9 +1835,10 @@
         </section>
       </footer>
     </div>
-    <script type="module" src="/js/index-generated.js"></script>
-    <script
-      type="text/javascript"
+    <script defer type="module" src="/js/frontend/js/index-generated.js"></script>
+    <script defer type="module" src="/js/index-generated.js"></script>
+
+    <script defer
       src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ae8d3047ee3e1d0"
     ></script>
   </body>

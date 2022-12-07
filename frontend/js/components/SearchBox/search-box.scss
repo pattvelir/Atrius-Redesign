@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   padding: 0.75rem var(--size-4);
-  background-color:var(--color-design-system-white);
+  background-color: var(--color-design-system-white);
   border: 2px solid var(--color-neutral-50);
   translate: border 240ms ease-in-out;
   height: 48px;
@@ -21,29 +21,30 @@
     box-shadow: none;
     background-color: transparent;
     font: var(--font-ui-labels-ui-sm);
-    
-    &:focus{
+
+    &:focus {
       outline: 0;
     }
-
   }
 
   &:focus-within {
     border: 2px solid var(--color-yellow-300);
   }
 
-  &::placeholder{color:var(--color-neutral-600)}
+  &::placeholder {
+    color: var(--color-neutral-600);
+  }
 }
 
 .search-box__button {
   flex: none;
- 
+
   background: transparent;
   border: 0;
   cursor: pointer;
 
   & > svg {
-  color: var(--color-neutral-200);
+    color: var(--color-neutral-200);
   }
 }
 

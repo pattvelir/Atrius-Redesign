@@ -1,6 +1,9 @@
 @import "../../../scss/variables/index";
 
 .search-menu {
+  display: flex;
+  align-items: center;
+  
   .search-menu__button {
     .search-menu__close {
       display: none;
@@ -8,10 +11,6 @@
 
     .search-menu__open {
       display: block;
-    }
-
-    .icon--search-field{
-      color:var(--color-neutral-200);
     }
   }
 
@@ -26,15 +25,19 @@
     display: flex;
     justify-content: space-between;
 
-    .search-box{width: 80%;}
-    
-    .btn{align-self: flex-end;}
+    .search-box {
+      width: 80%;
+    }
+
+    .btn {
+      align-self: flex-end;
+    }
   }
 
   .search-menu__drop-down {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     width: 100vw;
     visibility: hidden;
     opacity: 0;
@@ -45,8 +48,15 @@
     align-items: center;
     justify-content: center;
     display: flex;
+    overflow: hidden;
   }
-
+  .is-open{
+    display:none;
+  
+  }
+  .is-closed{
+    display: flex;
+  }
   &.is-open {
     .search-menu__inner-container {
       opacity: 1;
@@ -75,6 +85,13 @@
       transition: all 1000ms ease-in-out;
       transform: translate(0%, 0%);
       pointer-events: all;
+    }
+    .is-open{
+      display: flex;
+    
+    }
+    .is-closed{
+      display: none;
     }
   }
 }

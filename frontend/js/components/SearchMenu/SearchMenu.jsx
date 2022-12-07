@@ -17,14 +17,14 @@ const SearchMenu = (props) => {
         className="search-menu__button js-search-menu-button"
       >
         <TextWithIcon
-          classNames="search-menu__open"
+          classNames="is-closed"
           text="Search"
           icon="search-field"
           title="open search menu"
         />
 
         <TextWithIcon
-          classNames="search-menu__close"
+          classNames="is-open"
           text="Close"
           icon="close"
           title="close search menu"
@@ -33,14 +33,6 @@ const SearchMenu = (props) => {
       <div className="search-menu__drop-down js-search-menu-content">
         <div className="search-menu__inner-container">
           <SearchBox />
-          <button className="btn btn--link btn--dark btn--no-padding js-search-menu-close-button">
-            <TextWithIcon
-              className=""
-              title="Close"
-              text="Close"
-              icon="close"
-            />
-          </button>
         </div>
       </div>
     </div>

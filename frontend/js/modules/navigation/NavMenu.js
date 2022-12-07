@@ -29,10 +29,7 @@ export default function (initProps) {
     console.error("'menuButton' selector is required");
     propsFail = true;
   }
-  if (!initProps.menuCloseButton || initProps.menuCloseButton.length === 0) {
-    console.error("'menuCloseButton' selector is required");
-    propsFail = true;
-  }
+
   if (!initProps.menuContainer || initProps.menuContainer.length === 0) {
     console.error("'menuContainer' selector is required");
     propsFail = true;
@@ -68,7 +65,6 @@ export default function (initProps) {
   const elMenuButton = elParent.querySelector(props.menuButton);
   const elMenuContainer = elParent.querySelector(props.menuContainer);
   const elMenuLinks = elMenuContainer.querySelectorAll(props.navigationLink);
-  const elCloseMenuButton = elParent.querySelector(props.menuCloseButton);
 
   bindEvents();
   init();
@@ -96,11 +92,6 @@ export default function (initProps) {
     elMenuButton.addEventListener("mousedown", (e) => {
       e.preventDefault();
       toggleMenu();
-    });
-
-    elCloseMenuButton.addEventListener("mousedown", (e) => {
-      e.preventDefault();
-      closeMenu();
     });
 
     elMenuButton.addEventListener("keydown", handleMenuKeyEvent);

@@ -14,26 +14,23 @@ export default {
   primaryNav: [
     {
       href: "#",
-      label: "Browse Tours",
-      submenu: [
-        { href: "#", label: "US & Canada" },
-        { href: "#", label: "Europe" },
-        { href: "#", label: "Latin America" },
-        { href: "#", label: "Asia" },
-        { href: "#", label: "Middle East" },
-        { href: "#", label: "New Zealand" },
-        { href: "#", label: "Polar Regions" },
-      ],
+      label: "Find a Provider",
     },
     {
       href: "#",
-      label: "How It Works",
+      label: "Locations",
+      featureTitle: "Find a Location",
+      featureDescription:
+        "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+      featureLink: {
+        href: "#",
+        label: "See All Locations",
+      },
       submenu: [
-        { href: "#", label: "Son Dolor" },
-        { href: "#", label: "Tincindunt" },
-        { href: "#", label: "Blandit Ante" },
-        { href: "#", label: "Quisque" },
-        { href: "#", label: "Maecena Luctus" },
+        { href: "#", label: "Regions and Offices" },
+        { href: "#link1", label: "City of Boston" },
+        { href: "#link2", label: "Greater Boston" },
+        { href: "#link3", label: "Administrative Offices" },
       ],
     },
     {
@@ -54,12 +51,12 @@ export default {
     items: [
       {
         href: "#",
-        label: "Utility Link 1",
+        label: "My Health Online",
         icon: "heart",
       },
       {
         href: "#",
-        label: "Utility Link 2",
+        label: "Careers",
         icon: "careers",
       },
     ],
