@@ -15,7 +15,7 @@
   gap: var(--spacing-24);
   max-inline-size: 744px;
 
-  &:not(* > .text-banner){
+  &:not(* > .text-banner) {
     .promo:first-child:nth-last-child(3),
     .promo:first-child:nth-last-child(3) ~ .promo {
       flex: 100% 0 0 !important;
