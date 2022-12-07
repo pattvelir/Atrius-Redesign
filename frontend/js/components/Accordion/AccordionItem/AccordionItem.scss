@@ -2,7 +2,7 @@
   position: relative;
   border-block: thin solid var(--color-neutral-100);
 
-  .accordion-item__title  {
+  .accordion-item__title {
     cursor: pointer;
     list-style: none;
     display: grid;
@@ -44,13 +44,12 @@
   }
 }
 
-
-
 .accordion-item[open] {
   .accordion-item__title {
     text-decoration: underline;
     background-color: var(--color-yellow-50);
   }
+
   .accordion-item__title__arrow {
     transform: rotate(180deg);
     color: var(--color-neutral-900);
@@ -60,4 +59,3 @@
 .accordion-item__copy {
   padding-block: var(--spacing-16);
 }
-
