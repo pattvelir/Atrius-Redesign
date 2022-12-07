@@ -5,7 +5,7 @@ import React from "react";
 import propTypes from "./Accordion.propTypes.js";
 
 const Accordion = (props) => {
-  const {} = props;
+  const { title, text } = props;
 
   return <div className="container accordion">Accordion Template</div>;
 };
