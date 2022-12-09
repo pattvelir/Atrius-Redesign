@@ -3,4 +3,7 @@
  **/
 
 import {} from "prop-types";
-export default {};
+export default {
+  title: string,
+  type: string,
+};
