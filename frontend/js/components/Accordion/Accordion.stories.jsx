@@ -1,6 +1,13 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import AccordionContainer from "./AccordionContainer/AccordionContainer.jsx";
 import AccordionItem from "./AccordionItem/AccordionItem.jsx";
+
+export default {
+  title: "Components/Accordion",
+  component: AccordionContainer,
+  subcomponents: AccordionItem,
+};
 
 export const Default = () => (
   <AccordionContainer>
@@ -74,7 +81,3 @@ export const H2Style = () => (
     </AccordionItem>
   </AccordionContainer>
 );
-
-export default {
-  title: "Components/Accordion",
-};
