@@ -1,68 +1,52 @@
 @import "../../../scss/variables/index";
 
-$multi-promo__bp-stack: 600px;
-$multi-promo__promo-space: 30px;
+:root {
+  --multi-promo-title: var(--font-headings-400-heading-d);
+  --multi-promo-description: var(--body-md);
 
-.multi-promo__items {
-  /* @include component-whitespace; */
+  @media (--bp-small-min) {
+    --promo-title: var(--font-headings-1600-800-heading-d);
+  }
+}
+
+.multi-promo__container {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -$multi-promo__promo-space;
+  gap: var(--spacing-24);
+  max-inline-size: 744px;
+
+  &:not(* > .text-banner) {
+    .promo:first-child:nth-last-child(3),
+    .promo:first-child:nth-last-child(3) ~ .promo {
+      flex: 100% 0 0 !important;
+    }
+  }
+
+  .promo {
+    flex: calc(50% - (var(--spacing-24) / 2)) 0 0;
+  }
+
+  // .promo {
+  //   flex: 100% 0 0;
+
+  //   @media (--bp-small-min) {
+  //     flex: calc(50% - (var(--spacing-24) / 2)) 0 0;
+  //   }
+  // }
+
+  .text-banner {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 100%;
+  }
+}
+
+.multi-promo__description {
+  font: var(--multi-promo-description);
+  margin-block-end: var(--spacing-40);
 }
 
 .multi-promo__title {
-  margin-bottom: 1em;
-
-  @media (--bp-medium-max) {
-    font-size: rem(24);
-  }
-}
-
-.multi-promo__promo {
-  width: 100%;
-  margin-left: $multi-promo__promo-space;
-
-  @media (--bp-large-min) {
-    @include exactly(3) {
-      width: calc(33.333% - #{$multi-promo__promo-space});
-    }
-    width: calc(50% - #{$multi-promo__promo-space});
-  }
-
-  @media (--bp-x-small-min) {
-    width: calc(50% - #{$multi-promo__promo-space});
-  }
-
-  /*  Broken code found v2.5
-  ** @media (width: $multi-image__bp-stack) {
-  ** 	width: 100%;
-  ** }
-  */
-
-  /* fix IE flexbox bug to prevent text overflow */
-
-  .promo {
-    display: block;
-    width: 100%;
-
-    img {
-      width: 100%;
-      object-fit: cover;
-    }
-  }
-}
-
-.container--70-30 .container__col:last-child,
-.container--30-70 .container__col:first-child,
-.container--50-50 .container__col,
-.multi-promo--dynamic {
-  .multi-promo__promo {
-    width: 100%;
-  }
-}
-
-.multi-promo--dynamic {
-  .promo {
-    display: flex;
-  }
+  font: var(--multi-promo-title);
+  margin-block-end: var(--spacing-24);
 }

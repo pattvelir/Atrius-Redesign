@@ -6,28 +6,25 @@ import Promo from "../Promo/Promo.jsx";
 const propTypes = {
   classNames: string,
   title: string,
+  description: string,
   promos: array.isRequired,
 };
 
 const multiPromo = (props) => {
-  const { classNames, title, promos } = props;
+  const { classNames, title, description, promos, children } = props;
 
   return (
-    <div className={`component multi-promo ${classNames || ""}`}>
-      {title && <h2 className="multi-promo__title txt-h2">{title}</h2>}
-      <section className="multi-promo__items">
-        {promos.map((promo, i) => {
-          promo.sizes = promo.sizes
-            ? promo.sizes
-            : "(min-width: 680px) 50vw, 100vw";
-          return (
-            <div className="multi-promo__promo" key={i}>
-              <Promo {...promo} />
-            </div>
-          );
-        })}
-      </section>
-    </div>
+    <section className={`multi-promo ${classNames || ""}`}>
+      {title && <h2 className="multi-promo__title">{title}</h2>}
+      <p className="multi-promo__description">{description}</p>
+      <div
+        className={`multi-promo__items--${promos?.length} multi-promo__container`}
+      >
+        {promos != null
+          ? promos?.map((promo, i) => <Promo {...promo} key={i} />)
+          : children}
+      </div>
+    </section>
   );
 };
 
