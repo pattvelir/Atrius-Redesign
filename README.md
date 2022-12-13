@@ -36,7 +36,7 @@ $ npm run eslint -- --fix
 
 1. Ensure you have completed all prerequisites.
 2. Clone this repository to a directory of your choosing.  This location will be referred to as your **source** directory.
-3. Open a Powershell window as Administrator in the root of your **source** directory
+3. Double-click `start-knitting.bat` or open a Powershell window as Administrator in the root of your **source** directory. (`start-knitting.bat` opens a Powershell console window in Administrator mode and imports the Kneedle Powershell module.  For more info on Kneedle, read below.)
 4. In your Powershell console, run `.\up.ps1 -IncludeDbBackups`.  (If this your first time running the script, you will be prompted for a path to your Sitecore license file, enter a valid path (e.g. C:\data\license\license.xml) and press 'Enter')
 
 ### FE Setup

@@ -4,6 +4,7 @@ param(
 
 $ScriptPath = Split-Path $MyInvocation.MyCommand.Path
 
+Push-Location $ScriptPath
 Import-Module $ScriptPath\tools\powershell\Kneedle\Kneedle.psm1 -Force
 
 # ENSURE local.properties FILE EXISTS
