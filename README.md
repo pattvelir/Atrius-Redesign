@@ -83,11 +83,11 @@ $ npm run convert:tokens
 
 ```
 
-### Creating a New Site
+## Creating a New Site
 
-1. From the Sitecore Content Editor, right-click the **Content** item and create a new site using the branch: `/sitecore/templates/Branches/AtriusHealth/Project/Atrius/Sites/New Site`.
-2. Update `rootPath` attribute of website site, in the `/src/Project/Atrius/code/App_Config/Include/zAtriusHealth/AtriusHealth.Project.Atrius.config.example` and rename the file to `AtriusHealth.Project.Atrius.config`.
-3. Right-click `AtriusHealth.Project.Atrius.config`, select **Properties** and set `Build Action` to `Content`.
+1. From the Sitecore Content Editor, right-click the **Content** item and create a new site using the branch: `/sitecore/templates/Branches/Project/Atrius/Sites/New Site`.
+2. Update `rootPath` attribute of website site, in the `/src/Project/Atrius/code/App_Config/Include/Project/Project.Atrius.config.template` or create a new Project module and add a `<site>` configuration to that project's config.
+3. Right-click `Project.Atrius.config`, select **Properties** and set `Build Action` to `Content`.
 4. Right-click on AtriusHealth.Project.Atrius, click **Publish...**.
 
 ## Powershell Module: Kneedle
