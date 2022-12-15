@@ -55,6 +55,7 @@
 .search-menu__button {
   margin: 0;
   padding: var(--size-4) 0;
+
   // position: relative;
   z-index: 0;
   display: flex;
@@ -81,11 +82,10 @@
   }
 }
 
-.primary-nav__submenu { 
+.primary-nav__submenu {
   color: var(--color-neutral-900);
   @include zero-list;
   position: absolute;
-  top: 100%;
   left: 0;
   z-index: $z-dropdown;
   display: block;
@@ -135,11 +135,11 @@
   .primary-nav__mobile__back {
     display: none;
   }
+
   .primary-nav {
     width: auto;
     flex: 100% 1 0;
   }
-
 
   .search-menu__button {
     padding-right: 0;
@@ -223,6 +223,4 @@
     align-items: center;
     grid-template-columns: 50% 50%;
   }
-
-
 }

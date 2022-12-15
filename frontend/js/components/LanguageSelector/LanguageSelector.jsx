@@ -11,7 +11,7 @@ const propTypes = {
     shape({
       href: string,
       label: string,
-    })
+    }),
   ),
 };
 

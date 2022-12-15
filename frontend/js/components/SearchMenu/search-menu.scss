@@ -16,6 +16,8 @@
   }
 
   .search-menu__inner-container {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     max-width: var(--max-content-width);
     opacity: 0;
@@ -23,8 +25,6 @@
     background-color: var(--color-blue-800);
     transition: all 1000ms ease-in-out;
     transform: translate(100%, 0%);
-    display: flex;
-    justify-content: space-between;
 
     .search-box {
       width: 80%;
@@ -39,17 +39,17 @@
     position: absolute;
     top: 0;
     right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
     width: 100vw;
+    overflow: hidden;
     visibility: hidden;
     opacity: 0;
     background-color: var(--color-blue-800);
     transition: all 1000ms ease-in-out;
     pointer-events: none;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    overflow: hidden;
   }
 
   .is-open {
