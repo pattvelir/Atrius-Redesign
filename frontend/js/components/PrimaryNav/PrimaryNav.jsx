@@ -13,12 +13,12 @@ const propTypes = {
           active: bool,
           label: string,
           href: string,
-        }),
+        })
       ),
       active: bool,
       label: string,
       href: string,
-    }),
+    })
   ),
 };
 

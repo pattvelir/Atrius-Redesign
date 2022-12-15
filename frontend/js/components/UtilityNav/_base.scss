@@ -5,8 +5,11 @@
 .utility-nav__list {
   @include zero-list;
   display: flex;
+  gap: 24px;
 
-  @media (--bp-global-header-max) {
+  @media screen and (max-width: 909px) {
+    // gap: 0;
+
     // display: block;
     width: 100%;
 
@@ -18,27 +21,23 @@
 
 .utility-nav__item {
   margin-bottom: 0;
-
   font-family: $font-secondary;
   font-size: 0.875rem;
 
-  @media (--bp-global-header-max) {
+  @media screen and (max-width: 909px) {
     display: block;
-    margin-right: 24px;
-    margin-bottom: 4px;
-
-    font-size: 0.875rem;
+    font-size: 20px;
   }
 
-  @media (--bp-global-header-min) {
+  @media screen and (max-width: 909px) {
     & + & {
-      margin-left: 2rem;
+      // margin-left: 2rem;
     }
   }
 }
 
 .utility-nav__link {
-  @media (--bp-global-header-max) {
+  @media screen and (max-width: 909px) {
     display: block;
     padding: 6px 16px 5px;
   }

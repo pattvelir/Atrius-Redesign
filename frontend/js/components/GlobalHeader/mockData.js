@@ -30,7 +30,6 @@ export default {
         {
           title: "Regions and Offices",
           submenu: [
-            { href: "#", label: "Regions and Offices" },
             { href: "#link1", label: "City of Boston" },
             { href: "#link2", label: "Greater Boston" },
             { href: "#link3", label: "Administrative Offices" },
@@ -52,7 +51,6 @@ export default {
         {
           title: "Most Visted Services",
           submenu: [
-            { href: "#", label: "Regions and Offices" },
             { href: "#link1", label: "City of Boston" },
             { href: "#link2", label: "Greater Boston" },
             { href: "#link3", label: "Administrative Offices" },
@@ -74,19 +72,19 @@ export default {
         {
           title: "Getting Care",
           submenu: [
-            { href: "#", label: "Regions and Offices" },
-            { href: "#link1", label: "City of Boston" },
-            { href: "#link2", label: "Greater Boston" },
-            { href: "#link3", label: "Administrative Offices" },
+            { href: "#", label: "Become a patient" },
+            { href: "#link1", label: "Sign into MyHealth Online" },
+            { href: "#link2", label: "Fill a prescription" },
+            { href: "#link3", label: "Order contact lenses" },
+            { href: "#link3", label: "Request medical records" },
           ],
         },
         {
           title: "Insurance & Billing",
           submenu: [
-            { href: "#", label: "Regions and Offices" },
-            { href: "#link1", label: "City of Boston" },
-            { href: "#link2", label: "Greater Boston" },
-            { href: "#link3", label: "Administrative Offices" },
+            { href: "#", label: "Insurance" },
+            { href: "#link1", label: "Billing" },
+            { href: "#link2", label: "Estimate cost for care" },
           ],
         },
       ],
@@ -104,20 +102,14 @@ export default {
       menus: [
         {
           title: "Atrius Blog",
-          submenu: [
-            { href: "#", label: "Regions and Offices" },
-            { href: "#link1", label: "City of Boston" },
-            { href: "#link2", label: "Greater Boston" },
-            { href: "#link3", label: "Administrative Offices" },
-          ],
+          submenu: [{ href: "#", label: "Read our blog" }],
         },
         {
           title: "Healthy Topics",
           submenu: [
-            { href: "#", label: "Regions and Offices" },
-            { href: "#link1", label: "City of Boston" },
-            { href: "#link2", label: "Greater Boston" },
-            { href: "#link3", label: "Administrative Offices" },
+            { href: "#", label: "COVID-19" },
+            { href: "#link1", label: "Seasonal Flu" },
+            { href: "#link2", label: "Heart Care" },
           ],
           all: {
             href: "#",

@@ -46,7 +46,6 @@ const globalHeader = (props) => {
             {langSelect && <LanguageSelector {...langSelect} />}
             <div className="mobile-menu__content">
               <h1>Atrius Health</h1>
-              <p>asdf</p>
               <PrimaryNav primaryNav={primaryNav} utilityNav={utilityNav} />
               <div className="mobile-menu__search">
                 <h2>Search</h2>

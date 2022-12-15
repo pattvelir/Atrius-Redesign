@@ -3,14 +3,14 @@
 /* button element */
 .nav-toggle {
   display: grid;
-  padding: 0;
-  background: 0;
-  border: 0;
-  cursor: pointer;
   align-items: center;
-  justify-items: start;
   grid-template-columns: auto 18px;
   gap: var(--spacing-8);
+  justify-items: start;
+  padding: 0;
+  border: 0;
+  background: 0;
+  cursor: pointer;
 }
 
 /* Original Icon style and animation code cribbed from
@@ -21,7 +21,7 @@
   position: relative;
   display: inline-block;
   height: 12px;
-  width: 18px;
+  width: 24px;
   cursor: pointer;
 
   span {
