@@ -20,6 +20,8 @@ const PrimaryNav = (el) => {
   const $navToggle = $el.find(".js-nav-toggle");
   const openClass = "is-open";
 
+  console.log($el);
+
   bindEvents();
 
   $navItems.each(adjustFlyoutMenuAlignment);

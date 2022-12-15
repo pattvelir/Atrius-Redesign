@@ -11,7 +11,7 @@ const initPrimaryNav = (el, index = 0) => {
       handleKeyDown(e, i);
     });
   });
-  el.querySelectorAll(".js-primary-nav-menu").forEach((el, i) => {
+  el.querySelectorAll(".js-primary-nav-menu").forEach(($el, i) => {
     NavMenu({
       animationDelay: 500,
       closed: true,
@@ -22,7 +22,7 @@ const initPrimaryNav = (el, index = 0) => {
       openClass: "is-open",
       onClose: onClose,
       onOpen: onOpen,
-      parent: el,
+      parent: $el,
     });
   });
 

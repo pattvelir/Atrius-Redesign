@@ -6,6 +6,8 @@ import UtilityNav from "../UtilityNav/UtilityNav.jsx";
 import PrimaryNav from "../PrimaryNav/PrimaryNav.jsx";
 import MobileMenu from "../MobileMenu/MobileMenu.jsx";
 import LanguageSelector from "../LanguageSelector/LanguageSelector.jsx";
+import SkipNavigation from "../SkipNavigation/SkipNavigation.jsx";
+import SearchBox from "../SearchBox/SearchBox.jsx";
 
 const propTypes = {
   primaryNav: array.isRequired,
@@ -18,6 +20,7 @@ const globalHeader = (props) => {
   const { primaryNav, siteLogo, utilityNav, langSelect } = props;
   return (
     <section className="global-header">
+      <SkipNavigation href="#main" text="skip navigation" />
       <div className="global-header__desktop">
         <div className="global-header__top">
           <div className="global-header__top-container">
@@ -38,11 +41,18 @@ const globalHeader = (props) => {
       <div className="global-header__container container container--100 ">
         <div className="global-header__mobile">
           <SiteLogo {...siteLogo} />
-          <SearchMenu />
           <MobileMenu>
-            <PrimaryNav primaryNav={primaryNav} utilityNav={utilityNav} />
             <UtilityNav {...utilityNav} />
             {langSelect && <LanguageSelector {...langSelect} />}
+            <div className="mobile-menu__content">
+              <h1>Atrius Health</h1>
+              <p>asdf</p>
+              <PrimaryNav primaryNav={primaryNav} utilityNav={utilityNav} />
+              <div className="mobile-menu__search">
+                <h2>Search</h2>
+                <SearchBox />
+              </div>
+            </div>
           </MobileMenu>
         </div>
       </div>

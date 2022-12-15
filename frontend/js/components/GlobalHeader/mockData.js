@@ -26,24 +26,105 @@ export default {
         href: "#",
         label: "See All Locations",
       },
-      submenu: [
-        { href: "#", label: "Regions and Offices" },
-        { href: "#link1", label: "City of Boston" },
-        { href: "#link2", label: "Greater Boston" },
-        { href: "#link3", label: "Administrative Offices" },
+      menus: [
+        {
+          title: "Regions and Offices",
+          submenu: [
+            { href: "#", label: "Regions and Offices" },
+            { href: "#link1", label: "City of Boston" },
+            { href: "#link2", label: "Greater Boston" },
+            { href: "#link3", label: "Administrative Offices" },
+          ],
+        },
       ],
     },
     {
       href: "#",
-      label: "Why Choose Us",
+      label: "Services",
+      featureTitle: "Our Services",
+      featureDescription:
+        "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+      featureLink: {
+        href: "#",
+        label: "See All Services",
+      },
+      menus: [
+        {
+          title: "Most Visted Services",
+          submenu: [
+            { href: "#", label: "Regions and Offices" },
+            { href: "#link1", label: "City of Boston" },
+            { href: "#link2", label: "Greater Boston" },
+            { href: "#link3", label: "Administrative Offices" },
+          ],
+        },
+      ],
     },
     {
       href: "#",
-      label: "Deals",
+      label: "Patient Information",
+      featureTitle: "Patient Information",
+      featureDescription:
+        "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+      featureLink: {
+        href: "#",
+        label: "Visit Patient Information",
+      },
+      menus: [
+        {
+          title: "Getting Care",
+          submenu: [
+            { href: "#", label: "Regions and Offices" },
+            { href: "#link1", label: "City of Boston" },
+            { href: "#link2", label: "Greater Boston" },
+            { href: "#link3", label: "Administrative Offices" },
+          ],
+        },
+        {
+          title: "Insurance & Billing",
+          submenu: [
+            { href: "#", label: "Regions and Offices" },
+            { href: "#link1", label: "City of Boston" },
+            { href: "#link2", label: "Greater Boston" },
+            { href: "#link3", label: "Administrative Offices" },
+          ],
+        },
+      ],
     },
     {
       href: "#",
-      label: "Blog",
+      label: "Healthy Living",
+      featureTitle: "Healthy Living",
+      featureDescription:
+        "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+      featureLink: {
+        href: "#",
+        label: "Visit Healthy Living",
+      },
+      menus: [
+        {
+          title: "Atrius Blog",
+          submenu: [
+            { href: "#", label: "Regions and Offices" },
+            { href: "#link1", label: "City of Boston" },
+            { href: "#link2", label: "Greater Boston" },
+            { href: "#link3", label: "Administrative Offices" },
+          ],
+        },
+        {
+          title: "Healthy Topics",
+          submenu: [
+            { href: "#", label: "Regions and Offices" },
+            { href: "#link1", label: "City of Boston" },
+            { href: "#link2", label: "Greater Boston" },
+            { href: "#link3", label: "Administrative Offices" },
+          ],
+          all: {
+            href: "#",
+            label: "See All Topics",
+          },
+        },
+      ],
     },
   ],
   utilityNav: {

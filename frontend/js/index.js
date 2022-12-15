@@ -106,5 +106,5 @@ const threadComponents = [
 
 document.addEventListener("DOMContentLoaded", () => {
   threadComponents.forEach(dynamicRenderer);
-  googleTranslate();
+  // googleTranslate();
 });

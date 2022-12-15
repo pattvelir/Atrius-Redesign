@@ -1,7 +1,8 @@
 @import "../../../scss/variables/index";
 
 .search-menu {
-  display: flex;
+  display: grid;
+  justify-items: end;
   align-items: center;
 
   .search-menu__button {

@@ -122,6 +122,11 @@ export default function (initProps) {
   }
 
   function openMenu() {
+    if (
+      document.querySelector(".mobile-menu").classList.contains(props.openClass)
+    ) {
+      document.querySelector(".mobile-menu").classList.add("child-is-open");
+    }
     closedState = false;
     elMenuButton.setAttribute("aria-expanded", true);
     elParent.classList.add(props.openClass);
@@ -141,6 +146,12 @@ export default function (initProps) {
   }
 
   function closeMenu(moveFocus = true) {
+    if (
+      document.querySelector(".mobile-menu").classList.contains("child-is-open")
+    ) {
+      document.querySelector(".mobile-menu").classList.remove("child-is-open");
+    }
+
     closedState = true;
     if (moveFocus) {
       elMenuButton && elMenuButton.focus();

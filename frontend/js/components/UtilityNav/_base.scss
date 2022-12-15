@@ -1,4 +1,5 @@
 .utility-nav {
+  padding-left: 24px;
 }
 
 .utility-nav__list {
@@ -6,11 +7,12 @@
   display: flex;
 
   @media (--bp-global-header-max) {
-    display: block;
+    // display: block;
     width: 100%;
-    margin-top: 20px;
-    padding: 20px 0 0;
-    border-top: 2px solid $base-border-color;
+
+    // margin-top: 20px;
+    // padding: 20px 0 0;
+    // border-bottom: 2px solid $base-border-color;
   }
 }
 
@@ -22,7 +24,7 @@
 
   @media (--bp-global-header-max) {
     display: block;
-    margin-right: 0;
+    margin-right: 24px;
     margin-bottom: 4px;
 
     font-size: 0.875rem;
@@ -39,5 +41,14 @@
   @media (--bp-global-header-max) {
     display: block;
     padding: 6px 16px 5px;
+  }
+}
+
+@media screen and (max-width: 679px) {
+  .utility-nav,
+  .language-selector__nav {
+    .icon {
+      display: none;
+    }
   }
 }

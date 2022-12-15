@@ -11,7 +11,7 @@ const propTypes = {
     shape({
       href: string,
       label: string,
-    }),
+    })
   ),
 };
 
@@ -28,7 +28,7 @@ const LanguageSelector = (props) => {
           type="button"
           className="language-selector__toggle js-lang-select-toggle"
         >
-          <TextWithIcon text="Languages" icon="translate" />
+          <TextWithIcon text="Translate" icon="translate" />
         </button>
         <ul className="language-selector__menu js-lang-select-menu">
           {items &&
