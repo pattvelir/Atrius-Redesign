@@ -1,4 +1,4 @@
-﻿namespace Thread.Foundation.Account.Reference
+namespace AtriusHealth.Foundation.Account.Reference
 {
     public static class Constants
     {

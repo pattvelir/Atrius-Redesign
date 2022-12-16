@@ -1,9 +1,9 @@
-﻿using Sitecore;
+using Sitecore;
 using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
 using Sitecore.SecurityModel;
 
-namespace Thread.Foundation.Workflow.Services
+namespace AtriusHealth.Foundation.Workflow.Services
 {
     public class WorkflowService
     {

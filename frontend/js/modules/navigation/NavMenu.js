@@ -9,6 +9,7 @@
 //   closed: boolean
 //   direction: string (horizontal or vertical)
 //   menuButton: string.isRequired (class or id selector)
+//   menuCloseButton: string.isRequired (class or id selector)
 //   menuContainer: string.isRequired (class or id selector)
 //   navigationLink: string.isRequired (class selector)
 //   openClass: string (class name)
@@ -28,6 +29,7 @@ export default function (initProps) {
     console.error("'menuButton' selector is required");
     propsFail = true;
   }
+
   if (!initProps.menuContainer || initProps.menuContainer.length === 0) {
     console.error("'menuContainer' selector is required");
     propsFail = true;
@@ -48,7 +50,7 @@ export default function (initProps) {
   const defaultProps = {
     animationDelay: 600,
     closed: true,
-    direction: "vertical",
+    direction: "horizontal",
     openClass: "is-open",
   };
 
@@ -120,6 +122,11 @@ export default function (initProps) {
   }
 
   function openMenu() {
+    if (
+      document.querySelector(".mobile-menu").classList.contains(props.openClass)
+    ) {
+      document.querySelector(".mobile-menu").classList.add("child-is-open");
+    }
     closedState = false;
     elMenuButton.setAttribute("aria-expanded", true);
     elParent.classList.add(props.openClass);
@@ -139,6 +146,12 @@ export default function (initProps) {
   }
 
   function closeMenu(moveFocus = true) {
+    if (
+      document.querySelector(".mobile-menu").classList.contains("child-is-open")
+    ) {
+      document.querySelector(".mobile-menu").classList.remove("child-is-open");
+    }
+
     closedState = true;
     if (moveFocus) {
       elMenuButton && elMenuButton.focus();

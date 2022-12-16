@@ -1,5 +1,5 @@
-﻿
-namespace Thread.Foundation.Enumerations.References
+
+namespace AtriusHealth.Foundation.Enumerations.References
 {
     public enum ImageFormat
     {

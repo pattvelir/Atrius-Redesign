@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "01ee3336-a06d-420c-a27c-f09ebb1e1565"
 Parent: "59428ba1-0ce2-4b23-a55d-43615722587a"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
@@ -7,7 +7,7 @@ DB: master
 SharedFields:
 - ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
   Hint: Source
-  Value: /sitecore/system/Settings/Html Editor Profiles/Thread/Rich Text Limited
+  Value: /sitecore/system/Settings/Html Editor Profiles/AtriusHealth/Rich Text Limited
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
   Hint: Type
   Value: Rich Text

@@ -7,7 +7,7 @@ and running. There are additional default properties from dev.properties that yo
   <include buildfile="default.docker.properties" failonerror="true" />
 
   <!-- Local site instance settings -->
-  <property name="Project.SourceRoot" value="[CHANGEME]" /><!--This should be the folder where you have checked out the source code. e.g. 'D:\Projects\Thread'-->
+  <property name="Project.SourceRoot" value="[CHANGEME]" /><!--This should be the folder where you have checked out the source code. e.g. 'D:\Projects\AtriusHealth'-->
   <property name="Project.DeployRoot" value="${Project.SourceRoot}\tools\docker\deploy\website" /><!--[CHANGEME] If not using Vagrant. If your source code and Sitecore instance is on the same machine, change the value of this property to ${Project.InstanceRoot}-->
 
   <!-- Web Deploy -->

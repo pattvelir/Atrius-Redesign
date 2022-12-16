@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "a3e5e09f-1422-4050-9414-dc959aa60d7b"
 Parent: "02e48132-df0d-4300-a05d-a908d1db13c0"
 Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
@@ -50,7 +50,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: アクション
+    Value: ?????
   Versions:
   - Version: 1
     Fields:
@@ -65,7 +65,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 操作
+    Value: ??
   Versions:
   - Version: 1
     Fields:

@@ -1,4 +1,4 @@
-﻿namespace Thread.Foundation.Dictionary.Repositories
+namespace AtriusHealth.Foundation.Dictionary.Repositories
 {
 	public interface IDictionaryRepository
 	{

@@ -1,11 +1,11 @@
 /* This file is shared between older developer center rich text editor and the new EditorPage, that is used exclusively by Content Editor */
 
-Telerik.Web.UI.Editor.CommandList["Save"] = function (commandName, editor, tool) {
-  var form = scGetForm();
+Telerik.Web.UI.Editor.CommandList["Save"] = function(commandName, editor, tool) {
+	var form = scGetForm();
 
-  if (form != null) {
-    form.postEvent("", "", "item:save");
-  }
+	if (form != null) {
+		form.postEvent("", "", "item:save");
+	}
 };
 
 var scEditor = null;
@@ -53,33 +53,35 @@ function addPlaceholderToEditor(editor, arg) {
 	}
 }
 
-Telerik.Web.UI.Editor.CommandList["InsertSitecoreLink"] = function (commandName, editor, args) {
-  var d = Telerik.Web.UI.Editor.CommandList._getLinkArgument(editor);
-  Telerik.Web.UI.Editor.CommandList._getDialogArguments(d, "A", editor, "DocumentManager");
+Telerik.Web.UI.Editor.CommandList["InsertSitecoreLink"] = function(commandName, editor, args) {
+	var d = Telerik.Web.UI.Editor.CommandList._getLinkArgument(editor);
+	Telerik.Web.UI.Editor.CommandList._getDialogArguments(d, "A", editor, "DocumentManager");
 
-  var html = editor.getSelectionHtml();
+	var html = editor.getSelectionHtml();
 
-  var id;
+	var id;
 
-  // internal link in form of <a href="~/link.aspx?_id=110D559FDEA542EA9C1C8A5DF7E70EF9">...</a>
-  if (html) {
-    id = GetIDByMediaPrefix(/link.aspx\?_id=([\w\d]+)/, html);
-  }
+	// internal link in form of <a href="~/link.aspx?_id=110D559FDEA542EA9C1C8A5DF7E70EF9">...</a>
+	if (html) {
+		id = GetMediaID(html);
+	}
 
-  // link to media in form of <a href="-/media/CC2393E7CA004EADB4A155BE4761086B.ashx">...</a>
-  if (!id) {
-    id = GetMediaID(html);
-  }
+	// link to media in form of <a href="-/media/CC2393E7CA004EADB4A155BE4761086B.ashx">...</a>
+	if (!id) {
+		var regex = /~\/media\/([\w\d]+)\.ashx/;
+		var match = regex.exec(html);
+		if (match && match.length >= 1 && match[1]) {
+			id = match[1];
+		}
+	}
 
-  if (!id) {
-    id = scItemID;
-  }
+	if (!id) {
+		id = scItemID;
+	}
 
-  id = scFormatId(id);
+	scEditor = editor;
 
-  scEditor = editor;
-
-  editor.showExternalDialog(
+	editor.showExternalDialog(
     "/sitecore/shell/default.aspx?xmlcontrol=RichText.InsertLink&la=" + scLanguage + "&fo=" + id + (scDatabase ? "&databasename=" + scDatabase : ""),
     null, //argument
     1100,
@@ -93,13 +95,6 @@ Telerik.Web.UI.Editor.CommandList["InsertSitecoreLink"] = function (commandName,
     false //showTitleBar
   );
 };
-
-function scFormatId(id) {
-  if (decodeURIComponent(id) === id) {
-    return encodeURI(id);
-  }
-  return id;
-}
 
 Telerik.Web.UI.Editor.CommandList["SetImageProperties"] = function (commandName, editor, args) {
 	var currentImage = editor.getSelectedElement();
@@ -138,10 +133,7 @@ Telerik.Web.UI.Editor.CommandList["SetImageProperties"] = function (commandName,
 		oldImage.parentNode.replaceChild(newImage, oldImage);
 	});
 
-  var argument = new Telerik.Web.UI.EditorCommandEventArgs("SetImageProperties", null, currentImage);
-  Telerik.Web.UI.Editor.CommandList._getDialogArguments(argument, "IMG", editor, commandName);
-
-  editor.showDialog("ImageProperties", argument, callbackFunction);
+	editor.showDialog("ImageProperties", new window.Telerik.Web.UI.EditorCommandEventArgs("SetImageProperties", null, currentImage), callbackFunction);
 };
 
 Telerik.Web.UI.Editor.CommandList["ImageMapDialog"] = function (commandName, editor, args) {

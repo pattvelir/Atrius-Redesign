@@ -1,0 +1,44 @@
+---
+ID: "71dcda39-d6e8-4e11-977b-acfaf3d7371d"
+Parent: "a3be331d-179b-4c7a-abf8-522a293a2355"
+Template: "0c887ab2-fb9c-42cd-bd93-b89041cf01fe"
+Path: /sitecore/templates/Branches/Project/Atrius/Pages/Landing Page/$name
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <p
+          uid="{F68BCE00-453D-46B5-BD0A-7B181E54AF7E}"
+          s:md="{6825E57A-01DB-406D-831D-9D5296F176F3}" />
+        <p
+          uid="{80C131B0-31D5-4145-AD41-E7385A7EC3DF}"
+          s:md="{3F73EC3E-F837-4713-A7D3-7EED69BABCA7}" />
+        <p
+          uid="{72E14C20-70CC-44A3-A51E-CB48CB819C69}"
+          s:md="{184578C4-875A-4A0E-944E-1D1B74DDCAC7}" />
+        <r
+          uid="{6E4400D0-B44E-4886-A0E0-D24F7336AF5A}"
+          p:after="p[@uid='{72E14C20-70CC-44A3-A51E-CB48CB819C69}']"
+          s:ds="{DB95A213-A61B-4188-BFCB-5B5DCBD1B707}"
+          s:id="{E2C034E3-E3A6-4329-A870-8B276E6D23B8}"
+          s:ph="/content-body/full-width-column-{D38DF4A2-F2CA-4431-92A7-A93F417825AC}-0" />
+        <r
+          uid="{D38DF4A2-F2CA-4431-92A7-A93F417825AC}"
+          s:ds=""
+          s:par="Include Bottom Margin=1" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160308T143400Z

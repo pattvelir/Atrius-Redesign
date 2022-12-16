@@ -1,11 +1,11 @@
-﻿using Sitecore.Data.Items;
+using Sitecore.Data.Items;
 using Sitecore.DependencyInjection;
-using Thread.Foundation.Abstractions.Listing;
-using Thread.Foundation.Orm.Factory;
-using Thread.Foundation.SitecoreExtensions.DependencyInjection;
+using AtriusHealth.Foundation.Abstractions.Listing;
+using AtriusHealth.Foundation.Orm.Factory;
+using AtriusHealth.Foundation.SitecoreExtensions.DependencyInjection;
 using Velir.Search.Core.ComputedFields;
 
-namespace Thread.Foundation.Search.ComputedFields
+namespace AtriusHealth.Foundation.Search.ComputedFields
 {
 	public class TitleField : BaseContentComputedField
 	{

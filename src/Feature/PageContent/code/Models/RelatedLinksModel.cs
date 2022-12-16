@@ -1,10 +1,10 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
-using Thread.Foundation.Mvc.ViewModels;
+using AtriusHealth.Foundation.Mvc.ViewModels;
 
-namespace Thread.Feature.PageContent.Models
+namespace AtriusHealth.Feature.PageContent.Models
 {
-    public class RelatedLinksModel : ThreadViewModel<RelatedLinksItem>
+    public class RelatedLinksModel : AtriusHealthViewModel<RelatedLinksItem>
     {
         public bool IsValid() => Datasource != null && RelatedLinks.Any(r => !string.IsNullOrEmpty(r?.Link.GetFriendlyUrl()) && (r.Link.IsInternal || r.Link.IsMediaLink || !string.IsNullOrEmpty(r.Link.Text)));
 

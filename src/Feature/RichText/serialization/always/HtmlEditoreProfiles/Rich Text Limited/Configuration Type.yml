@@ -1,8 +1,8 @@
-﻿---
+---
 ID: "a30e1cd3-fab8-44aa-9ab9-20e7d444f878"
 Parent: "1c1a2643-50d6-4094-aa14-7a1502ec4013"
 Template: "eca6e291-bb55-47ab-bd02-be76b1bc884f"
-Path: /sitecore/system/Settings/Html Editor Profiles/Thread/Rich Text Limited/Configuration Type
+Path: /sitecore/system/Settings/Html Editor Profiles/AtriusHealth/Rich Text Limited/Configuration Type
 DB: core
 SharedFields:
 - ID: "ff617570-33a4-4d0e-931e-ffeb9fab450f"
@@ -54,7 +54,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 設定タイプ
+    Value: ?????
   Versions:
   - Version: 1
     Fields:

@@ -1,8 +1,8 @@
-﻿using Sitecore.Mvc.Presentation;
+using Sitecore.Mvc.Presentation;
 using Sitecore.StringExtensions;
-using Thread.Foundation.Mvc.Extensions;
+using AtriusHealth.Foundation.Mvc.Extensions;
 
-namespace Thread.Feature.Global.Models
+namespace AtriusHealth.Feature.Global.Models
 {
 	public class FooterConnectModel
 	{

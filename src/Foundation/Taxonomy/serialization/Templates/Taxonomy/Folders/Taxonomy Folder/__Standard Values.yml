@@ -1,8 +1,8 @@
-﻿---
+---
 ID: "d007d610-f611-400e-9a8c-ea0b57095aa6"
 Parent: "61f2ddc5-111b-406a-af8b-e37cdc30ca8a"
 Template: "61f2ddc5-111b-406a-af8b-e37cdc30ca8a"
-Path: /sitecore/templates/Thread/Foundation/Taxonomy/Folders/Taxonomy Folder/__Standard Values
+Path: /sitecore/templates/AtriusHealth/Foundation/Taxonomy/Folders/Taxonomy Folder/__Standard Values
 DB: master
 SharedFields:
 - ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"

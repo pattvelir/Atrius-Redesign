@@ -17,14 +17,14 @@ const SearchMenu = (props) => {
         className="search-menu__button js-search-menu-button"
       >
         <TextWithIcon
-          classNames="search-menu__open"
+          classNames="is-closed"
           text="Search"
           icon="search-field"
           title="open search menu"
         />
 
         <TextWithIcon
-          classNames="search-menu__close"
+          classNames="is-open"
           text="Close"
           icon="close"
           title="close search menu"

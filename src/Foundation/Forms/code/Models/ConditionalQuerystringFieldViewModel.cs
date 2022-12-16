@@ -1,9 +1,9 @@
-﻿using System.Web;
+using System.Web;
 using Sitecore;
 using Sitecore.Data.Items;
 using Sitecore.ExperienceForms.Mvc.Models.Fields;
 
-namespace Thread.Foundation.Forms.Models
+namespace AtriusHealth.Foundation.Forms.Models
 {
     public class ConditionalQuerystringFieldViewModel : FieldViewModel
     {

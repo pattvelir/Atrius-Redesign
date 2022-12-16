@@ -1,16 +1,16 @@
-﻿using System.Linq;
+using System.Linq;
 using Sitecore.ContentSearch.Linq;
 using Sitecore.Data;
-using Thread.Feature.Search.Repositories;
-using Thread.Foundation.Search.Results;
+using AtriusHealth.Feature.Search.Repositories;
+using AtriusHealth.Foundation.Search.Results;
 using Velir.Search.Core.Pipelines.VelirSearchQuery;
 using Velir.Search.Core.Pipelines.VelirSearchQuery.Args;
 using Velir.Search.Core.Reference;
 
 
-namespace Thread.Feature.Search.Pipelines.VelirSearchApplyFilters
+namespace AtriusHealth.Feature.Search.Pipelines.VelirSearchApplyFilters
 {
-    public class ApplyFeatureResultFilter : AbstractVelirSearchQueryProcessor<ThreadSearchResultItem>
+    public class ApplyFeatureResultFilter : AbstractVelirSearchQueryProcessor<AtriusHealthSearchResultItem>
     {
         private readonly IFeaturedResultsRepository _featuredResults;
 

@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "c6caa979-c3ac-4ffc-861e-2961f5fc3c48"
 Parent: "110ce845-a1ff-4bca-80be-dfcd8ad2a9a3"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
@@ -70,10 +70,10 @@ Languages:
   Fields:
   - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
     Hint: Title
-    Value: Html タグ
+    Value: Html ??
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Html タグ
+    Value: Html ??
   Versions:
   - Version: 1
     Fields:
@@ -88,10 +88,10 @@ Languages:
   Fields:
   - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
     Hint: Title
-    Value: HTML标记
+    Value: HTML??
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: HTML标记
+    Value: HTML??
   Versions:
   - Version: 1
     Fields:

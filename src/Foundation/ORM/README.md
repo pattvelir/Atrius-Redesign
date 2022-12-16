@@ -6,11 +6,11 @@ This module containing ORM code for dealing with Sitecore Items and Rendering Pa
 
 ## Features
 
-### ThreadItem
+### AtriusHealthItem
 
 Generic implementation of CustomItem class.
 
-### ThreadRenderingParameters
+### AtriusHealthRenderingParameters
 
 Subclass of Sitecore's RenderingParameters class that all code-generated RenderingParameter classes derive from.
 

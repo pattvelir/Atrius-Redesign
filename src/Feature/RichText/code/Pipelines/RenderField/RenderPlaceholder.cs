@@ -1,10 +1,10 @@
-﻿using System.Text.RegularExpressions;
+using System.Text.RegularExpressions;
 using Sitecore.Mvc.Helpers;
 using Sitecore.Mvc.Presentation;
 using Sitecore.Pipelines.RenderField;
-using Thread.Feature.RichText.Reference;
+using AtriusHealth.Feature.RichText.Reference;
 
-namespace Thread.Feature.RichText.Pipelines.RenderField
+namespace AtriusHealth.Feature.RichText.Pipelines.RenderField
 {
     public class RenderPlaceholder
     {

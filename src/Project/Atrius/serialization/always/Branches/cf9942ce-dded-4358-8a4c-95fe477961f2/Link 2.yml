@@ -1,0 +1,18 @@
+---
+ID: "c155c31a-85de-481a-a4cb-d91cd11139cb"
+Parent: "cf9942ce-dded-4358-8a4c-95fe477961f2"
+Template: "d5745f91-8fa1-457f-be87-875a029c7b69"
+Path: /sitecore/templates/Branches/Project/Atrius/Sites/New Site/$name/Configuration/Navigation/Footer Navigation/Footer Navigation Link Columns/Column Header 2/Link 2
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170202T220218Z

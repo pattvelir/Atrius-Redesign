@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using Sitecore.Globalization;
-using Thread.Foundation.Dictionary.Services;
+using AtriusHealth.Foundation.Dictionary.Services;
 
-namespace Thread.Foundation.Dictionary.Statics
+namespace AtriusHealth.Foundation.Dictionary.Statics
 {
     public static class EditableTranslate
     {

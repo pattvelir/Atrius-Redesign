@@ -1,10 +1,10 @@
-﻿using NUnit.Framework;
+using NUnit.Framework;
 using Sitecore.Data;
 using Sitecore.FakeDb;
 using Sitecore.Sites;
-using Thread.Foundation.Aliases.Resolvers;
+using AtriusHealth.Foundation.Aliases.Resolvers;
 
-namespace Thread.Foundation.Aliases.Tests.Resolvers
+namespace AtriusHealth.Foundation.Aliases.Tests.Resolvers
 {
 	[TestFixture]
 	public class SiteSpecificAliasResolverTests

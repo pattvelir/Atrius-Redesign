@@ -1,8 +1,8 @@
-﻿using Thread.Feature.PageContent.Factory.Listable;
-using Thread.Foundation.Abstractions.Listing;
-using Thread.Foundation.Orm.Factory.Pipeline;
+using AtriusHealth.Feature.PageContent.Factory.Listable;
+using AtriusHealth.Foundation.Abstractions.Listing;
+using AtriusHealth.Foundation.Orm.Factory.Pipeline;
 
-namespace Thread.Feature.PageContent.Pipelines.InterfaceFactory
+namespace AtriusHealth.Feature.PageContent.Pipelines.InterfaceFactory
 {
 	public class FallbackItemIListableProcessor : InterfaceFactoryProcessor<IListable>
 	{

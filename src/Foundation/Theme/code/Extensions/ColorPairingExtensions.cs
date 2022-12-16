@@ -1,8 +1,8 @@
-﻿using System.Text;
+using System.Text;
 using Sitecore;
-using Thread.Foundation.SitecoreExtensions.Base;
+using AtriusHealth.Foundation.SitecoreExtensions.Base;
 
-namespace Thread.Foundation.Theme.Extensions
+namespace AtriusHealth.Foundation.Theme.Extensions
 {
 	public static class ColorPairingExtensions
 	{

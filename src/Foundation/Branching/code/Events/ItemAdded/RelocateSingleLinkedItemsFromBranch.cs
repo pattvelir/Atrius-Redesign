@@ -1,14 +1,14 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using Sitecore.Configuration;
 using Sitecore.Data;
 using Sitecore.Data.Items;
 
-namespace Thread.Foundation.Branching.Events.ItemAdded
+namespace AtriusHealth.Foundation.Branching.Events.ItemAdded
 {
     public class RelocateSingleLinkedItemsFromBranch : RelocateFromBranch
     {
-        protected override IList<string> LinkedFieldTypes => Settings.GetSetting("Thread.Foundation.Branching.SingleItemLinkedFieldTypes", "Droplink|Droptree").Split('|');
+        protected override IList<string> LinkedFieldTypes => Settings.GetSetting("AtriusHealth.Foundation.Branching.SingleItemLinkedFieldTypes", "Droplink|Droptree").Split('|');
 
         protected override void CorrectFieldValue(Item item, ID fieldId, Item rootItem, Item rootBranchItem)
         {

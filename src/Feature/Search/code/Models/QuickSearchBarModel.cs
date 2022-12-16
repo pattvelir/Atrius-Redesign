@@ -1,6 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 
-namespace Thread.Feature.Search.Models
+namespace AtriusHealth.Feature.Search.Models
 {
 	public class QuickSearchBarModel
 	{

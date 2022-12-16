@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using Ploeh.AutoFixture.Kernel;
 
-namespace Thread.Foundation.Testing.AutoFixture
+namespace AtriusHealth.Foundation.Testing.AutoFixture
 {
 	public class PropertyNameOmitter : ISpecimenBuilder
 	{

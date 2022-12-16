@@ -2,10 +2,10 @@ using System.Collections.Generic;
 using System.Linq;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
-using Thread.Foundation.Taxonomy;
+using AtriusHealth.Foundation.Taxonomy;
 using Velir.Search.Core.ComputedFields;
 
-namespace Thread.Foundation.Search.ComputedFields
+namespace AtriusHealth.Foundation.Search.ComputedFields
 {
 	public class LocationsFacetField : BaseContentComputedField
 	{

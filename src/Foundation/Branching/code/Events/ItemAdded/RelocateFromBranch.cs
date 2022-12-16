@@ -6,7 +6,7 @@ using Sitecore.Data;
 using Sitecore.Data.Items;
 using Sitecore.Events;
 
-namespace Thread.Foundation.Branching.Events.ItemAdded
+namespace AtriusHealth.Foundation.Branching.Events.ItemAdded
 {
     public abstract class RelocateFromBranch
     {

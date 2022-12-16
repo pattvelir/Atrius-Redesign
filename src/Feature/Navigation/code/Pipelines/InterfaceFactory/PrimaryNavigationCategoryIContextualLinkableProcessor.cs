@@ -1,7 +1,7 @@
-﻿using Thread.Feature.Navigation.Models;
-using Thread.Foundation.Orm.Factory.Pipeline;
+using AtriusHealth.Feature.Navigation.Models;
+using AtriusHealth.Foundation.Orm.Factory.Pipeline;
 
-namespace Thread.Feature.Navigation.Pipelines.InterfaceFactory
+namespace AtriusHealth.Feature.Navigation.Pipelines.InterfaceFactory
 {
 	public class PrimaryNavigationCategoryIContextualLinkableProcessor : InterfaceFactoryProcessor<IContextualLinkable>
 	{

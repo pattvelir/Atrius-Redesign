@@ -1,8 +1,8 @@
-﻿using Sitecore.ContentSearch.SolrProvider.Abstractions;
+using Sitecore.ContentSearch.SolrProvider.Abstractions;
 using Sitecore.ContentSearch.SolrProvider.Pipelines.PopulateSolrSchema;
 using SolrNet.Schema;
 
-namespace Thread.Foundation.Search.Schema
+namespace AtriusHealth.Foundation.Search.Schema
 {
     public class CustomPopulateHelperFactory : IPopulateHelperFactory
     {

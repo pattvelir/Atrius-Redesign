@@ -1,7 +1,7 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
-namespace Thread.Feature.Sitemap.Sitemap
+namespace AtriusHealth.Feature.Sitemap.Sitemap
 {
   public class SitemapNode
   {

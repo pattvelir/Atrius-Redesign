@@ -3,6 +3,7 @@ import {} from "prop-types";
 import uniqueId from "lodash.uniqueid";
 
 import Icon from "../Icon/Icon.jsx";
+import TextWithIcon from "../TextWithIcon/TextWithIcon.jsx";
 
 const propTypes = {};
 
@@ -25,10 +26,19 @@ const searchBox = (props) => {
         <label htmlFor={searchId} className="u-visuallyhidden">
           Search
         </label>
-        <input name="q" id={searchId} type="search" placeholder="Search" />
+        <input
+          name="q"
+          id={searchId}
+          type="search"
+          placeholder="Search using provider name, location, or keywords"
+        />
         <button type="submit" className="search-box__button">
           <span className="u-visuallyhidden">Submit Search</span>
-          <Icon className="icon" iconName="search" aria-hidden="true" />
+          <Icon
+            className=" icon icon--special"
+            iconName="search-field"
+            aria-hidden="true"
+          />
         </button>
       </div>
     </form>

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Thread.Feature.Navigation.Models
+namespace AtriusHealth.Feature.Navigation.Models
 {
 	public class NavItem
 	{

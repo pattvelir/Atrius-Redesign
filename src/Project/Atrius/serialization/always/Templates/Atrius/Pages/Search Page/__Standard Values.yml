@@ -1,0 +1,77 @@
+---
+ID: "a2d3b575-ce13-4350-8ad5-43dbcbdef03e"
+Parent: "42f8bf91-2d37-4eda-9c9e-879a831927eb"
+Template: "42f8bf91-2d37-4eda-9c9e-879a831927eb"
+Path: /sitecore/templates/Project/Atrius/Pages/Search Page/__Standard Values
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Applications/16x16/document_find.png
+- ID: "ca9b9f52-4fb0-4f87-a79f-24dea62cda65"
+  Hint: __Default workflow
+  Value: "{F904F489-7129-4A77-8791-59662AB2B399}"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{A2DE3965-E340-45B4-9FAB-3F35BECE08C1}">
+        <p
+          uid="{7AF5F79E-0B55-4711-BFAE-339068BD3668}"
+          key="content-body"
+          md="{D8FC6858-4B10-485E-9DA9-16CBCA08A5D2}" />
+        <p
+          uid="{12662E93-40D7-464A-949B-02F0B3A15B92}"
+          key="content-width-column"
+          md="{B173604A-1E98-4A9E-8A3D-A69E4BDD0527}" />
+        <p
+          uid="{00D54110-D659-4D43-A6D8-93000BB1566D}"
+          key="full-width-column"
+          md="{2B2586E2-B84E-4ED0-8AA1-9AAC6B006AC6}" />
+        <p
+          uid="{6288CA4E-8F95-4717-985A-DF21F25AED96}"
+          key="search-sort-options"
+          md="{4F93D7CD-BA97-4B9E-A172-88B2AA4BC90E}" />
+        <p
+          uid="{2140EBB8-313D-47DF-ABCE-88B809DB5882}"
+          key="search-facets"
+          md="{4DFCE6BD-EDC9-4FA8-A865-8B9FAD0B9E38}" />
+        <r
+          id="{60C2AC1C-4754-4914-B11A-37F0DF825B43}"
+          ph="content-body"
+          uid="{69395D94-C347-4B68-8389-8C74C22D37D1}" />
+        <r
+          id="{FC3D7B61-8FFE-4FA5-8E62-841A0E8A8F17}"
+          ph="/content-body/content-width-column-{69395D94-C347-4B68-8389-8C74C22D37D1}-0"
+          uid="{3DD777BB-E921-4EAD-B5E5-06CC20C64418}" />
+        <r
+          id="{4FC58D75-BE0A-469A-88A8-D5678805B423}"
+          ph="/content-body/content-width-column-{69395D94-C347-4B68-8389-8C74C22D37D1}-0"
+          uid="{5F794B1E-534C-4F7F-AFB2-7CCDDD1CE391}" />
+        <r
+          ds=""
+          id="{8082A2EA-D9BB-431F-9A16-BD98532E77A4}"
+          par=""
+          ph="/content-body/content-width-column-{69395D94-C347-4B68-8389-8C74C22D37D1}-0"
+          uid="{DA8355DB-CD80-4601-9F8A-1558AF500296}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1bd0fef8-5ee5-435b-bde3-a332a0709e8e"
+      Hint: No Follow
+      Type: Checkbox
+      Value: 1
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161025T204529Z
+    - ID: "497a98de-d47a-4da9-931e-100fc84d5ab1"
+      Hint: No Index
+      Type: Checkbox
+      Value: 1

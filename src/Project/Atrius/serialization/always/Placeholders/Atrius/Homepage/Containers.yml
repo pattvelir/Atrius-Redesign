@@ -1,0 +1,14 @@
+---
+ID: "8cb703aa-4bb2-4aed-96dc-8df067a49c82"
+Parent: "db30f48e-7a62-4c38-8a7c-79f9c4e42106"
+Template: "c3b037a0-46e5-4b67-ac7a-a144b962a56f"
+Path: /sitecore/layout/Placeholder Settings/Project/Atrius/Homepage/Containers
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161110T145210Z

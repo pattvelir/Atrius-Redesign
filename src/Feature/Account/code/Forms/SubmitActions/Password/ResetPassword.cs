@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using Sitecore.Diagnostics;
 using Sitecore.ExperienceForms.Models;
 using Sitecore.ExperienceForms.Processing;
-using Thread.Foundation.Abstractions.Account;
-using Thread.Foundation.Forms.SubmitActions;
+using AtriusHealth.Foundation.Abstractions.Account;
+using AtriusHealth.Foundation.Forms.SubmitActions;
 
-namespace Thread.Feature.Account.Forms.SubmitActions.Password
+namespace AtriusHealth.Feature.Account.Forms.SubmitActions.Password
 {
 	public class ResetPassword : AccountSubmitActionBase<ResetPasswordData>
 	{

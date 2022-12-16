@@ -6,7 +6,7 @@ Param (
     $LicenseXmlPath,
 
     [string]
-    $HostName = "thread",
+    $HostName = "atrius",
     
     # We do not need to use [SecureString] here since the value will be stored unencrypted in .env,
     # and used only for transient local example environment.
@@ -47,6 +47,9 @@ Write-Host "Importing SitecoreDockerTools..." -ForegroundColor Green
 Import-Module SitecoreDockerTools -RequiredVersion $dockerToolsVersion
 Write-SitecoreDockerWelcome
 
+Write-Host "Importing Invoke-MsBuild..." -ForegroundColor Green
+Import-Module Invoke-MsBuild
+
 ###############################
 # Populate the environment file
 ###############################
@@ -59,17 +62,11 @@ Set-EnvFileVariable "SITECORE_ADMIN_PASSWORD" -Value $SitecoreAdminPassword
 # SQL_SA_PASSWORD
 Set-EnvFileVariable "SQL_SA_PASSWORD" -Value $SqlSaPassword
 
-# CD_HOST
-Set-EnvFileVariable "CD_HOST" -Value "cd.$($HostName).localhost"
-
 # CM_HOST
 Set-EnvFileVariable "CM_HOST" -Value "cm.$($HostName).localhost"
 
 # ID_HOST
 Set-EnvFileVariable "ID_HOST" -Value "id.$($HostName).localhost"
-
-# HRZ_HOST
-Set-EnvFileVariable "HRZ_HOST" -Value "hrz.$($HostName).localhost"
 
 # REPORTING_API_KEY = random 64-128 chars
 Set-EnvFileVariable "REPORTING_API_KEY" -Value (Get-SitecoreRandomString 64 -DisallowSpecial)
@@ -128,10 +125,8 @@ finally {
 
 Write-Host "Adding Windows hosts file entries..." -ForegroundColor Green
 
-Add-HostsEntry "cd.$($HostName).localhost"
 Add-HostsEntry "cm.$($HostName).localhost"
 Add-HostsEntry "id.$($HostName).localhost"
-Add-HostsEntry "hrz.$($HostName).localhost"
 Add-HostsEntry "storybook.$($HostName).localhost"
 
 Write-Host "Done!" -ForegroundColor Green

@@ -1,0 +1,14 @@
+---
+ID: "82ef2096-3d87-4c65-a4a5-495e72dbe40b"
+Parent: "c8d67101-06fc-4c27-b820-91358c61656d"
+Template: "707d5c9f-12ec-4ae5-80e2-c254134e6612"
+Path: /sitecore/templates/Branches/Project/Atrius/Sites/New Site/$name/Configuration/Navigation/Footer Navigation/Social Links
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161018T163106Z

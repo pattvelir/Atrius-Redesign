@@ -1,4 +1,4 @@
-﻿<layers xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+<layers xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
 	<layer xdt:Locator="Match(name)" name="Custom">
 		<loadOrder>
       <add xdt:Transform="Remove" xdt:Locator="Match(path)" path="VelirSearch" />

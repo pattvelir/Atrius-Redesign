@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Net.Mail;
 using System.Web;
 using System.Web.Security;
@@ -10,15 +10,15 @@ using Sitecore.Data;
 using Sitecore.Security.Accounts;
 using Sitecore.Security.Authentication;
 using Sitecore.StringExtensions;
-using Thread.Feature.Account.Services;
-using Thread.Feature.Account.Services.Models;
-using Thread.Foundation.Abstractions.Account;
-using Thread.Foundation.Forms;
-using Thread.Foundation.Orm.Services;
-using Thread.Foundation.SitecoreExtensions.Base;
-using Thread.Foundation.SitecoreExtensions.Item;
+using AtriusHealth.Feature.Account.Services;
+using AtriusHealth.Feature.Account.Services.Models;
+using AtriusHealth.Foundation.Abstractions.Account;
+using AtriusHealth.Foundation.Forms;
+using AtriusHealth.Foundation.Orm.Services;
+using AtriusHealth.Foundation.SitecoreExtensions.Base;
+using AtriusHealth.Foundation.SitecoreExtensions.Item;
 
-namespace Thread.Feature.Account.Providers
+namespace AtriusHealth.Feature.Account.Providers
 {
 	[AutowireService(LifetimeScope.PerScope)]
 	public class SitecoreMembershipProvider : IMembershipProvider

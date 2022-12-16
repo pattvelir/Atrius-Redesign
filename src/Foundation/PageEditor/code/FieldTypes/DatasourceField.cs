@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 using Sitecore.Links;
 using Sitecore.Text;
 
-namespace Thread.Foundation.PageEditor.FieldTypes
+namespace AtriusHealth.Foundation.PageEditor.FieldTypes
 {
 	public class DatasourceField : Sitecore.Data.Fields.DatasourceField
 	{

@@ -1,7 +1,7 @@
-﻿using Sitecore.Data.Fields;
-using Thread.Feature.Navigation.Models;
+using Sitecore.Data.Fields;
+using AtriusHealth.Feature.Navigation.Models;
 
-namespace Thread.Feature.Navigation
+namespace AtriusHealth.Feature.Navigation
 {
 	public partial class PrimaryNavigationCategoryItem : IContextualLinkable
 	{

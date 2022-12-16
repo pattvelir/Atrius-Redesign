@@ -1,18 +1,18 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
 using Sitecore;
 using Sitecore.Data.Items;
-using Thread.Feature.Navigation.Models;
-using Thread.Feature.Navigation.Repositories;
-using Thread.Foundation.Enumerations;
-using Thread.Foundation.Mvc.Controllers;
-using Thread.Foundation.SitecoreExtensions.Base;
-using Thread.Foundation.SitecoreExtensions.Item;
+using AtriusHealth.Feature.Navigation.Models;
+using AtriusHealth.Feature.Navigation.Repositories;
+using AtriusHealth.Foundation.Enumerations;
+using AtriusHealth.Foundation.Mvc.Controllers;
+using AtriusHealth.Foundation.SitecoreExtensions.Base;
+using AtriusHealth.Foundation.SitecoreExtensions.Item;
 
-namespace Thread.Feature.Navigation.Controllers.Navigation
+namespace AtriusHealth.Feature.Navigation.Controllers.Navigation
 {
-	public class NavigationController : ThreadController
+	public class NavigationController : AtriusHealthController
 	{
 		private readonly INavigationRepository _navigationRepository;
 		public NavigationController(INavigationRepository navigationRepository)

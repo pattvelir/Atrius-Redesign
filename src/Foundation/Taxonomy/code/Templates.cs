@@ -10,7 +10,7 @@
 //------------------------------------------------------------------------------
 // ReSharper disable All
 
-					namespace Thread.Foundation.Taxonomy
+					namespace AtriusHealth.Foundation.Taxonomy
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -39,7 +39,7 @@ public static implicit operator Item(ContentTypeItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Taxonomy
+					namespace AtriusHealth.Foundation.Taxonomy
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -68,7 +68,7 @@ public static implicit operator Item(ContentTypesItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Taxonomy
+					namespace AtriusHealth.Foundation.Taxonomy
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -97,7 +97,7 @@ public static implicit operator Item(LocationItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Taxonomy
+					namespace AtriusHealth.Foundation.Taxonomy
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -126,7 +126,7 @@ public static implicit operator Item(LocationsItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Taxonomy
+					namespace AtriusHealth.Foundation.Taxonomy
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -155,7 +155,7 @@ public static implicit operator Item(PeopleItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Taxonomy
+					namespace AtriusHealth.Foundation.Taxonomy
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -216,7 +216,7 @@ public static implicit operator Item(PersonItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Taxonomy
+					namespace AtriusHealth.Foundation.Taxonomy
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -245,7 +245,7 @@ public static implicit operator Item(TaxonomyFolderItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Taxonomy
+					namespace AtriusHealth.Foundation.Taxonomy
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -274,7 +274,7 @@ public static implicit operator Item(TopicItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Taxonomy
+					namespace AtriusHealth.Foundation.Taxonomy
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -303,7 +303,7 @@ public static implicit operator Item(TopicsItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Taxonomy
+					namespace AtriusHealth.Foundation.Taxonomy
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -336,7 +336,7 @@ public static implicit operator Item(_AgeBaseItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Taxonomy
+					namespace AtriusHealth.Foundation.Taxonomy
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -393,7 +393,7 @@ public static implicit operator Item(_ContactBaseItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Taxonomy
+					namespace AtriusHealth.Foundation.Taxonomy
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -426,7 +426,7 @@ public static implicit operator Item(_ContentTypeBaseItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Taxonomy
+					namespace AtriusHealth.Foundation.Taxonomy
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -459,7 +459,7 @@ public static implicit operator Item(_GenderBaseItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Taxonomy
+					namespace AtriusHealth.Foundation.Taxonomy
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -492,7 +492,7 @@ public static implicit operator Item(_LocationBaseItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Taxonomy
+					namespace AtriusHealth.Foundation.Taxonomy
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -541,7 +541,7 @@ public static implicit operator Item(_NameBaseItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Taxonomy
+					namespace AtriusHealth.Foundation.Taxonomy
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -574,7 +574,7 @@ public static implicit operator Item(_OccupationBaseItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Taxonomy
+					namespace AtriusHealth.Foundation.Taxonomy
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -607,7 +607,7 @@ public static implicit operator Item(_PeopleBaseItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Taxonomy
+					namespace AtriusHealth.Foundation.Taxonomy
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -652,7 +652,7 @@ public static implicit operator Item(_TaxonomyBaseItem customItem)
 					}
 				
 
-					namespace Thread.Foundation.Taxonomy
+					namespace AtriusHealth.Foundation.Taxonomy
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -691,17 +691,17 @@ public static implicit operator Item(_TopicBaseItem customItem)
 
 
 
-// Thread.Foundation.Taxonomy.Content_Type (/sitecore/templates/Foundation/Taxonomy/Items/Content Type 2dca937a-9634-4d0d-9a27-8b8d9ed3d99b)
+// AtriusHealth.Foundation.Taxonomy.Content_Type (/sitecore/templates/Foundation/Taxonomy/Items/Content Type 2dca937a-9634-4d0d-9a27-8b8d9ed3d99b)
 
-// Thread.Foundation.Taxonomy.Content_Types (/sitecore/templates/Foundation/Taxonomy/Folders/Content Types 10a620aa-739d-448c-b0eb-f387a5287682)
+// AtriusHealth.Foundation.Taxonomy.Content_Types (/sitecore/templates/Foundation/Taxonomy/Folders/Content Types 10a620aa-739d-448c-b0eb-f387a5287682)
 
-// Thread.Foundation.Taxonomy.Location (/sitecore/templates/Foundation/Taxonomy/Items/Location 410549bb-1134-4859-98ca-67125cee19a2)
+// AtriusHealth.Foundation.Taxonomy.Location (/sitecore/templates/Foundation/Taxonomy/Items/Location 410549bb-1134-4859-98ca-67125cee19a2)
 
-// Thread.Foundation.Taxonomy.Locations (/sitecore/templates/Foundation/Taxonomy/Folders/Locations d7bbae50-0edd-4dd8-8489-97443f6e5b19)
+// AtriusHealth.Foundation.Taxonomy.Locations (/sitecore/templates/Foundation/Taxonomy/Folders/Locations d7bbae50-0edd-4dd8-8489-97443f6e5b19)
 
-// Thread.Foundation.Taxonomy.People (/sitecore/templates/Foundation/Taxonomy/Folders/People a814df8e-c530-48bd-b162-a75fea5f1e6a)
+// AtriusHealth.Foundation.Taxonomy.People (/sitecore/templates/Foundation/Taxonomy/Folders/People a814df8e-c530-48bd-b162-a75fea5f1e6a)
 
-// Thread.Foundation.Taxonomy.Person (/sitecore/templates/Foundation/Taxonomy/Items/Person 4c0a8d3e-48c5-4c24-8b59-8eab2ef0143a)
+// AtriusHealth.Foundation.Taxonomy.Person (/sitecore/templates/Foundation/Taxonomy/Items/Person 4c0a8d3e-48c5-4c24-8b59-8eab2ef0143a)
 	// Description (2423eb10-2089-4c54-85ac-02e31ccef1cf)
 		// Type: Multi-Line Text
 		// Section: Text
@@ -713,20 +713,20 @@ public static implicit operator Item(_TopicBaseItem customItem)
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Foundation.Taxonomy.Taxonomy_Folder (/sitecore/templates/Foundation/Taxonomy/Folders/Taxonomy Folder 61f2ddc5-111b-406a-af8b-e37cdc30ca8a)
+// AtriusHealth.Foundation.Taxonomy.Taxonomy_Folder (/sitecore/templates/Foundation/Taxonomy/Folders/Taxonomy Folder 61f2ddc5-111b-406a-af8b-e37cdc30ca8a)
 
-// Thread.Foundation.Taxonomy.Topic (/sitecore/templates/Foundation/Taxonomy/Items/Topic 9bbbc5f7-8322-4d98-966f-d1c3eb92bb3e)
+// AtriusHealth.Foundation.Taxonomy.Topic (/sitecore/templates/Foundation/Taxonomy/Items/Topic 9bbbc5f7-8322-4d98-966f-d1c3eb92bb3e)
 
-// Thread.Foundation.Taxonomy.Topics (/sitecore/templates/Foundation/Taxonomy/Folders/Topics eb1141d0-72e9-4c69-91d2-4ea395f3574b)
+// AtriusHealth.Foundation.Taxonomy.Topics (/sitecore/templates/Foundation/Taxonomy/Folders/Topics eb1141d0-72e9-4c69-91d2-4ea395f3574b)
 
-// Thread.Foundation.Taxonomy._Age_Base (/sitecore/templates/Foundation/Taxonomy/Base/_Age Base 01c8443e-71f4-4dc0-87fe-dc0ab6b18eb0)
+// AtriusHealth.Foundation.Taxonomy._Age_Base (/sitecore/templates/Foundation/Taxonomy/Base/_Age Base 01c8443e-71f4-4dc0-87fe-dc0ab6b18eb0)
 	// Age (0cdf6c63-6c8b-4203-9077-207cd6694813)
 		// Type: Integer
 		// Section: Personal Details
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Foundation.Taxonomy._Contact_Base (/sitecore/templates/Foundation/Taxonomy/Base/_Contact Base 95cb8785-255d-4c7e-be48-b040264938f2)
+// AtriusHealth.Foundation.Taxonomy._Contact_Base (/sitecore/templates/Foundation/Taxonomy/Base/_Contact Base 95cb8785-255d-4c7e-be48-b040264938f2)
 	// Address_1 (d134c2cd-48d2-4045-98d8-7639f20b5dad)
 		// Type: Single-Line Text
 		// Section: Contact Details
@@ -763,28 +763,28 @@ public static implicit operator Item(_TopicBaseItem customItem)
 		// Sort Order: 700
 		// Source: 
 
-// Thread.Foundation.Taxonomy._Content_Type_Base (/sitecore/templates/Foundation/Taxonomy/Base/_Content Type Base 0b715d4d-34e3-4cc6-ad5f-1cde18ede95d)
+// AtriusHealth.Foundation.Taxonomy._Content_Type_Base (/sitecore/templates/Foundation/Taxonomy/Base/_Content Type Base 0b715d4d-34e3-4cc6-ad5f-1cde18ede95d)
 	// Content_Type (d7b9c27c-79e3-42a7-9b46-bff652ef0981)
 		// Type: Droplink
 		// Section: Taxonomy
 		// Sort Order: 100
 		// Source: query:ancestor-or-self::*[@@name='Home']/Taxonomy/Content Types/*
 
-// Thread.Foundation.Taxonomy._Gender_Base (/sitecore/templates/Foundation/Taxonomy/Base/_Gender Base 0901baea-4e2a-4a81-89e5-964b6e80230f)
+// AtriusHealth.Foundation.Taxonomy._Gender_Base (/sitecore/templates/Foundation/Taxonomy/Base/_Gender Base 0901baea-4e2a-4a81-89e5-964b6e80230f)
 	// Gender (b90b5ae1-4520-45f3-862e-7a2a69643183)
 		// Type: Droplink
 		// Section: Personal Details
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Foundation.Taxonomy._Location_Base (/sitecore/templates/Foundation/Taxonomy/Base/_Location Base ddee891f-6247-4f90-8f7f-aff0c8c3c89d)
+// AtriusHealth.Foundation.Taxonomy._Location_Base (/sitecore/templates/Foundation/Taxonomy/Base/_Location Base ddee891f-6247-4f90-8f7f-aff0c8c3c89d)
 	// Locations (7928f523-5727-4843-ba3d-60874d4e6f6b)
 		// Type: Multilist with Search
 		// Section: Taxonomy
 		// Sort Order: 100
 		// Source: StartSearchLocation=query:ancestor-or-self::*[@@templateid->'{98AC8506-0017-4964-81A9-19B76FA9EE98}']&Filter=+_templatename:Location
 
-// Thread.Foundation.Taxonomy._Name_Base (/sitecore/templates/Foundation/Taxonomy/Base/_Name Base 7137b868-ee08-4e39-910d-5ca8ee58ebd7)
+// AtriusHealth.Foundation.Taxonomy._Name_Base (/sitecore/templates/Foundation/Taxonomy/Base/_Name Base 7137b868-ee08-4e39-910d-5ca8ee58ebd7)
 	// First_Name (978f1c21-f821-47d6-9245-2b986e26b2e1)
 		// Type: Single-Line Text
 		// Section: Personal Details
@@ -811,23 +811,23 @@ public static implicit operator Item(_TopicBaseItem customItem)
 		// Sort Order: 500
 		// Source: query:ancestor-or-self::*[@@templateid='{98AC8506-0017-4964-81A9-19B76FA9EE98}']/Configuration/Enumerations/Suffix/*
 
-// Thread.Foundation.Taxonomy._Occupation_Base (/sitecore/templates/Foundation/Taxonomy/Base/_Occupation Base 62175606-0ba7-427e-ab34-a2f859a31a26)
+// AtriusHealth.Foundation.Taxonomy._Occupation_Base (/sitecore/templates/Foundation/Taxonomy/Base/_Occupation Base 62175606-0ba7-427e-ab34-a2f859a31a26)
 	// Occupation (cc961a04-1406-4451-abe5-faeb9289ef26)
 		// Type: Single-Line Text
 		// Section: Personal Details
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Foundation.Taxonomy._People_Base (/sitecore/templates/Foundation/Taxonomy/Base/_People Base 958038af-b23a-4f67-bbf7-879e709d83d2)
+// AtriusHealth.Foundation.Taxonomy._People_Base (/sitecore/templates/Foundation/Taxonomy/Base/_People Base 958038af-b23a-4f67-bbf7-879e709d83d2)
 	// People (bef10252-ea97-4433-a7e3-d924796e3950)
 		// Type: Multilist with Search
 		// Section: Taxonomy
 		// Sort Order: 100
 		// Source: StartSearchLocation=query:ancestor-or-self::*[@@templateid->'{98AC8506-0017-4964-81A9-19B76FA9EE98}']&Filter=+_templatename:Person
 
-// Thread.Foundation.Taxonomy._Taxonomy_Base (/sitecore/templates/Foundation/Taxonomy/Base/_Taxonomy Base 2507ca55-c349-4c83-85c6-13db1d6a5428)
+// AtriusHealth.Foundation.Taxonomy._Taxonomy_Base (/sitecore/templates/Foundation/Taxonomy/Base/_Taxonomy Base 2507ca55-c349-4c83-85c6-13db1d6a5428)
 
-// Thread.Foundation.Taxonomy._Topic_Base (/sitecore/templates/Foundation/Taxonomy/Base/_Topic Base d8017f32-92a9-44f2-b461-1c38d7a5d75d)
+// AtriusHealth.Foundation.Taxonomy._Topic_Base (/sitecore/templates/Foundation/Taxonomy/Base/_Topic Base d8017f32-92a9-44f2-b461-1c38d7a5d75d)
 	// Topics (027f5e1e-d0e5-4afd-9b7a-90a563504d47)
 		// Type: Multilist with Search
 		// Section: Taxonomy

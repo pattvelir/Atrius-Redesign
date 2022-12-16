@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace Thread.Foundation.Orm.Factory.Pipeline
+namespace AtriusHealth.Foundation.Orm.Factory.Pipeline
 {
 	public abstract class InterfaceFactoryProcessor<T>
     {

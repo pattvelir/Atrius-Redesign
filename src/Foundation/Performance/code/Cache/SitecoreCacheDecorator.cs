@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Threading;
 using System.Threading.Tasks;
 using Jabberwocky.Core.Caching;
-using Thread.Foundation.Orm.Services;
+using AtriusHealth.Foundation.Orm.Services;
 
-namespace Thread.Foundation.Performance.Cache
+namespace AtriusHealth.Foundation.Performance.Cache
 {
 	public class SitecoreCacheDecorator : ICacheProvider
 	{

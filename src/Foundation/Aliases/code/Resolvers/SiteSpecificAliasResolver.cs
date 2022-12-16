@@ -1,7 +1,7 @@
-﻿using Sitecore.Data;
+using Sitecore.Data;
 using Sitecore.Sites;
 
-namespace Thread.Foundation.Aliases.Resolvers
+namespace AtriusHealth.Foundation.Aliases.Resolvers
 {
 	public class SiteSpecificAliasResolver : AliasResolver, IAliasResolver
 	{

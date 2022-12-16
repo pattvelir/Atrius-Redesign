@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using Sitecore;
 using Sitecore.Abstractions;
@@ -9,7 +9,7 @@ using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
 using Sitecore.Pipelines.GetChromeData;
 
-namespace Thread.Foundation.AX.Pipelines.GetChromeData
+namespace AtriusHealth.Foundation.AX.Pipelines.GetChromeData
 {
     public class MultiRootEditFrameChromeData : GetEditFrameChromeData
     {

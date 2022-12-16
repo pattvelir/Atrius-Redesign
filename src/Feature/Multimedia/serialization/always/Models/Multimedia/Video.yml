@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "18bc25de-f407-4fdc-a931-ba383748c198"
 Parent: "b416b679-87cb-4009-b4bc-33cf9c76b9b9"
 Template: "fed6a14f-0d05-4e18-b160-17c0588a2005"
@@ -7,7 +7,7 @@ DB: master
 SharedFields:
 - ID: "ee9e23d2-181d-4172-a929-0e0b8d10313c"
   Hint: Model Type
-  Value: Thread.Feature.Multimedia.Models.VideoModel,Thread.Feature.Multimedia
+  Value: AtriusHealth.Feature.Multimedia.Models.VideoModel,AtriusHealth.Feature.Multimedia
 Languages:
 - Language: en
   Versions:

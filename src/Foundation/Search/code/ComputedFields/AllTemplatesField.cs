@@ -1,11 +1,11 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using Sitecore.ContentSearch;
 using Sitecore.ContentSearch.ComputedFields;
 using Sitecore.ContentSearch.Utilities;
 using Sitecore.Data.Items;
 
-namespace Thread.Foundation.Search.ComputedFields
+namespace AtriusHealth.Foundation.Search.ComputedFields
 {
     public class AllTemplatesField : IComputedIndexField
     {

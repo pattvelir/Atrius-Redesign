@@ -1,16 +1,16 @@
-﻿using System.Reflection;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Thread.Foundation.Mvc")]
+[assembly: AssemblyTitle("AtriusHealth.Foundation.Mvc")]
 [assembly: AssemblyDescription("Helpers for MVC solutions.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Velir")]
-[assembly: AssemblyProduct("Thread.Foundation.Mvc")]
-[assembly: AssemblyCopyright("Copyright ©  2018")]
+[assembly: AssemblyProduct("AtriusHealth.Foundation.Mvc")]
+[assembly: AssemblyCopyright("Copyright �  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -33,9 +33,9 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 [assembly: AssemblyVersion("3.2.4.0")]
 [assembly: AssemblyFileVersion("3.2.4.0")]
-[assembly: InternalsVisibleTo("Thread.Feature.Banners.Tests")]
-[assembly: InternalsVisibleTo("Thread.Feature.Containers.Tests")]
-[assembly: InternalsVisibleTo("Thread.Feature.Events.Tests")]
-[assembly: InternalsVisibleTo("Thread.Feature.Listing.Tests")]
-[assembly: InternalsVisibleTo("Thread.Feature.Events.Tests")]
-[assembly: InternalsVisibleTo("Thread.Feature.Metadata.Tests")]
+[assembly: InternalsVisibleTo("AtriusHealth.Feature.Banners.Tests")]
+[assembly: InternalsVisibleTo("AtriusHealth.Feature.Containers.Tests")]
+[assembly: InternalsVisibleTo("AtriusHealth.Feature.Events.Tests")]
+[assembly: InternalsVisibleTo("AtriusHealth.Feature.Listing.Tests")]
+[assembly: InternalsVisibleTo("AtriusHealth.Feature.Events.Tests")]
+[assembly: InternalsVisibleTo("AtriusHealth.Feature.Metadata.Tests")]

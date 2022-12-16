@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Web;
 using Jabberwocky.DependencyInjection.Autowire.Attributes;
-using Thread.Foundation.Enumerations.References;
+using AtriusHealth.Foundation.Enumerations.References;
 
-namespace Thread.Feature.Listing.Services
+namespace AtriusHealth.Feature.Listing.Services
 {
 	[AutowireService(LifetimeScope.SingleInstance)]
 	public class ListingDisplayOptionsService : IListingDisplayOptionsService

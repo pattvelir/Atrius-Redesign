@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Reflection;
 using Sitecore.Security.Accounts;
 using Sitecore.SecurityModel;
-using Thread.Foundation.Account.Attributes;
+using AtriusHealth.Foundation.Account.Attributes;
 
-namespace Thread.Foundation.Account.Users
+namespace AtriusHealth.Foundation.Account.Users
 {
     public class BaseUser
     {

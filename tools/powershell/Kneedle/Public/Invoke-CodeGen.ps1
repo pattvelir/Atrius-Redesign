@@ -6,12 +6,11 @@
     .PARAMETER Watch
         If 'Watch' parameter is present, CodeGen will execute every time a change is detected
     .EXAMPLE
-        Invoke-CodeGen
-
+        PS> Invoke-CodeGen
         Runs Leprechaun CodeGen and exits
 
-        Invoke-CodeGen -Watch
-
+    .EXAMPLE
+        PS> Invoke-CodeGen -Watch
         Runs Leprechaun CodeGen and continues to watch for changes
 #>
 Function Invoke-CodeGen {

@@ -1,8 +1,8 @@
-﻿---
+---
 ID: "9385cb13-8ec9-4f3e-b53d-04a38b7b4ff9"
 Parent: "c91be508-a03f-4c7a-8376-aa442709c5eb"
 Template: "3825fe6a-6ca1-489b-a7c9-c3b4b3b38272"
-Path: /sitecore/system/Settings/Html Editor Profiles/Thread/Rich Text Limited/Images/Help
+Path: /sitecore/system/Settings/Html Editor Profiles/AtriusHealth/Rich Text Limited/Images/Help
 DB: core
 BranchID: "2c9e00e7-4a4f-42e8-9251-b50a3fdf356f"
 SharedFields:
@@ -15,7 +15,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Hjælp
+    Value: Hj�lp
   Versions:
   - Version: 1
     Fields:
@@ -70,7 +70,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: ヘルプ
+    Value: ???
   Versions:
   - Version: 1
     Fields:
@@ -84,4 +84,4 @@ Languages:
     - ID: "8e5179b0-2a09-4624-885d-619c0e3d0390"
       Hint: Header
       Value: |
-        <img height="16" src="/sitecore/shell/Themes/standard/core/16x16/help16.png" width="16" border="0" />ヘルプ
+        <img height="16" src="/sitecore/shell/Themes/standard/core/16x16/help16.png" width="16" border="0" />???

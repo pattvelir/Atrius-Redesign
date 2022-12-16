@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using System.Reflection;
 using System.Web.Mvc;
@@ -6,7 +6,7 @@ using Jabberwocky.Core.Utils.Reflection;
 using Microsoft.Extensions.DependencyInjection;
 using Sitecore.Mvc.Presentation;
 
-namespace Thread.Foundation.Mvc.Extensions
+namespace AtriusHealth.Foundation.Mvc.Extensions
 {
 	public static class ServiceCollectionExtensions
 	{
@@ -25,7 +25,7 @@ namespace Thread.Foundation.Mvc.Extensions
 			}
 		}
 
-		public static void AddThreadViewModels(this IServiceCollection serviceCollection, params string[] assemblyNames)
+		public static void AddAtriusHealthViewModels(this IServiceCollection serviceCollection, params string[] assemblyNames)
 		{
 			assemblyNames = assemblyNames ?? new string[0];
 

@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "54116c20-3358-489c-9d3f-4b67ee3f8953"
 Parent: "5ff3a6bc-e410-4d52-aa8e-9e819ab71926"
 Template: "02404208-46d4-49bf-988b-eb363a52a1c9"
@@ -85,13 +85,13 @@ Languages:
   Fields:
   - ID: "371e0d96-4f00-4b80-ad14-6284e00493ba"
     Hint: Tooltip
-    Value: プロパティ
+    Value: ?????
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: プロパティ
+    Value: ?????
   - ID: "c523aba8-d1a1-4dcb-aeee-52635a4ab2ae"
     Hint: Header
-    Value: プロパティ
+    Value: ?????
   Versions:
   - Version: 1
     Fields:
@@ -106,13 +106,13 @@ Languages:
   Fields:
   - ID: "371e0d96-4f00-4b80-ad14-6284e00493ba"
     Hint: Tooltip
-    Value: 编辑此组件属性
+    Value: ???????
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 属性
+    Value: ??
   - ID: "c523aba8-d1a1-4dcb-aeee-52635a4ab2ae"
     Hint: Header
-    Value: 编辑此组件属性
+    Value: ???????
   Versions:
   - Version: 1
     Fields:

@@ -1,6 +1,6 @@
-﻿using System.Web.Mvc;
+using System.Web.Mvc;
 
-namespace Thread.Foundation.AX.Mvc
+namespace AtriusHealth.Foundation.AX.Mvc
 {
 	public static class SitecoreHelperExtensions
 	{

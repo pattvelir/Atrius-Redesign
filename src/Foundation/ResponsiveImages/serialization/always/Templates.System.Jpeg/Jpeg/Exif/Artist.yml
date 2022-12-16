@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "327878c4-28c8-4e71-8914-5de34e00e716"
 Parent: "3f6316e8-74c6-42b9-b390-fb79df8ae578"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
@@ -89,10 +89,10 @@ Languages:
   Fields:
   - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
     Hint: Title
-    Value: アーティスト
+    Value: ??????
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: アーティスト
+    Value: ??????
   Versions:
   - Version: 1
     Fields:

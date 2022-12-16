@@ -9,7 +9,6 @@ const AccordionItem = (props) => {
     <details className="accordion-item">
       <summary className="accordion-item__title">
         <Component>{title}</Component>
-
         <Icon
           iconName="keyboard_arrow_down"
           className="accordion-item__title__arrow"

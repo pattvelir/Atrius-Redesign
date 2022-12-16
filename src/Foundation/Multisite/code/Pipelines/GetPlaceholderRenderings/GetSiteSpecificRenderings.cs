@@ -1,10 +1,10 @@
-﻿using System.Linq;
+using System.Linq;
 using System.Web;
 using Sitecore;
 using Sitecore.Diagnostics;
 using Sitecore.Pipelines.GetPlaceholderRenderings;
 
-namespace Thread.Foundation.Multisite.Pipelines.GetPlaceholderRenderings
+namespace AtriusHealth.Foundation.Multisite.Pipelines.GetPlaceholderRenderings
 {
     public class GetSiteSpecificRenderings : GetAllowedRenderings
     {

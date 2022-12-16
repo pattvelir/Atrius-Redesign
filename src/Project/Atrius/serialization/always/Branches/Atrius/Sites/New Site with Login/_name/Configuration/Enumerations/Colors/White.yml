@@ -1,0 +1,17 @@
+---
+ID: "5c14ebc2-9103-4055-a838-f3dbe91b9f93"
+Parent: "ea359c73-30c1-4fe0-84f0-b55442588524"
+Template: "a3960764-19cc-4eb6-9b99-ff7b8e062dc2"
+Path: /sitecore/templates/Branches/Project/Atrius/Sites/New Site with Login/$name/Configuration/Enumerations/Colors/White
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "197fd7ed-d7de-4445-a87d-3a6b9e845000"
+      Hint: Value
+      Value: #fff
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170403T124641Z

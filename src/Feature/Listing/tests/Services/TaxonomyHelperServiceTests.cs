@@ -1,11 +1,11 @@
-﻿using NUnit.Framework;
+using NUnit.Framework;
 using Sitecore.Data;
 using Sitecore.Data.Items;
 using Sitecore.FakeDb;
-using Thread.Feature.Listing.Services;
-using Thread.Foundation.Taxonomy;
+using AtriusHealth.Feature.Listing.Services;
+using AtriusHealth.Foundation.Taxonomy;
 
-namespace Thread.Feature.Listing.Tests.Services
+namespace AtriusHealth.Feature.Listing.Tests.Services
 {
 	[TestFixture]
 	public class TaxonomyHelperServiceTests

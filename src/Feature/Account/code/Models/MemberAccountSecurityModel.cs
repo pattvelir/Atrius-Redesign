@@ -1,7 +1,7 @@
-﻿using Thread.Foundation.Abstractions.Account;
-using Thread.Foundation.Dictionary.Repositories;
+using AtriusHealth.Foundation.Abstractions.Account;
+using AtriusHealth.Foundation.Dictionary.Repositories;
 
-namespace Thread.Feature.Account.Models
+namespace AtriusHealth.Feature.Account.Models
 {
     public class MemberAccountSecurityModel : MemberProfileBaseModel
     {

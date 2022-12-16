@@ -1,4 +1,4 @@
-﻿(function (speak) {
+(function (speak) {
   var parentApp = window.parent.Sitecore.Speak.app.findApplication('EditActionSubAppRenderer'),
     designBoardApp = window.parent.Sitecore.Speak.app.findComponent('FormDesignBoard');
 

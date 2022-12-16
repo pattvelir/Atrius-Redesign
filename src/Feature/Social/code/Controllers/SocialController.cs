@@ -1,11 +1,11 @@
-﻿using System.Linq;
+using System.Linq;
 using System.Web.Mvc;
-using Thread.Feature.Social.Models;
-using Thread.Foundation.Mvc.Controllers;
+using AtriusHealth.Feature.Social.Models;
+using AtriusHealth.Foundation.Mvc.Controllers;
 
-namespace Thread.Feature.Social.Controllers
+namespace AtriusHealth.Feature.Social.Controllers
 {
-	public class SocialController : ThreadController
+	public class SocialController : AtriusHealthController
 	{
 		public virtual ActionResult SocialFollow()
 		{

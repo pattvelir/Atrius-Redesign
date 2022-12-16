@@ -1,9 +1,9 @@
-@using Thread.Foundation.Theme.Extensions
-@using Thread.Foundation.Mvc.Extensions
-@using Thread.Foundation.ResponsiveImages.Extensions
-@using Thread.Foundation.ResponsiveImages.Extensions.Markers
-@using Thread.Foundation.SitecoreExtensions.Item
-@model Thread.Feature.Banners.Models.HeroBannerModel
+@using AtriusHealth.Foundation.Theme.Extensions
+@using AtriusHealth.Foundation.Mvc.Extensions
+@using AtriusHealth.Foundation.ResponsiveImages.Extensions
+@using AtriusHealth.Foundation.ResponsiveImages.Extensions.Markers
+@using AtriusHealth.Foundation.SitecoreExtensions.Item
+@model AtriusHealth.Feature.Banners.Models.HeroBannerModel
 
 @if (Html.Sitecore().HasValueOrEditing(Model.Datasource.Image))
 {
@@ -42,7 +42,7 @@
             @Html.Sitecore().BeginField(Model.Datasource.Link, new { @class = "hero__action btn btn--primary", aria_labelledby = "hero-" + Model.Datasource.ID })
             if (!Sitecore.Context.PageMode.IsExperienceEditorEditing && string.IsNullOrEmpty(Model.Datasource.Link.Text))
             {
-                @Html.Raw(Thread.Foundation.Dictionary.Statics.EditableTranslate.Text("Banners.Hero.ReadMore"))
+                @Html.Raw(AtriusHealth.Foundation.Dictionary.Statics.EditableTranslate.Text("Banners.Hero.ReadMore"))
             }
             @Html.Sitecore().EndField()
         }

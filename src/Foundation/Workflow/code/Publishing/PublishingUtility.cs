@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Sitecore;
@@ -8,10 +8,10 @@ using Sitecore.Data.Items;
 using Sitecore.Publishing;
 using Sitecore.SecurityModel;
 using Sitecore.Shell.Applications.Dialogs.ProgressBoxes;
-using Thread.Foundation.Workflow.References;
-using Constants = Thread.Foundation.Workflow.References.Constants;
+using AtriusHealth.Foundation.Workflow.References;
+using Constants = AtriusHealth.Foundation.Workflow.References.Constants;
 
-namespace Thread.Foundation.Workflow.Publishing
+namespace AtriusHealth.Foundation.Workflow.Publishing
 {
 	public static class PublishingUtility
 	{

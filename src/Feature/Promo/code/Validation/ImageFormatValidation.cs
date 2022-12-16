@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Runtime.Serialization;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 using Sitecore.Data.Validators;
 
-namespace Thread.Feature.Promo.Validation
+namespace AtriusHealth.Feature.Promo.Validation
 {
     [Serializable]
     public class ImageFormatValidation : StandardValidator

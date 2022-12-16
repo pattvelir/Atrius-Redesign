@@ -1,7 +1,7 @@
-﻿using Sitecore.Configuration;
+using Sitecore.Configuration;
 using Sitecore.Data;
 
-namespace Thread.Foundation.Workflow.References
+namespace AtriusHealth.Foundation.Workflow.References
 {
 	public class Databases
 	{

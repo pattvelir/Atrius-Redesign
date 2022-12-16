@@ -1,4 +1,4 @@
-﻿using System.Net.Mail;
+using System.Net.Mail;
 using Sitecore;
 using Sitecore.Data;
 using Sitecore.DependencyInjection;
@@ -7,10 +7,10 @@ using Sitecore.ExperienceForms.Models;
 using Sitecore.ExperienceForms.Processing;
 using Sitecore.ExperienceForms.Processing.Actions;
 using Sitecore.StringExtensions;
-using Thread.Foundation.Orm.Services;
-using Thread.Foundation.SitecoreExtensions.DependencyInjection;
+using AtriusHealth.Foundation.Orm.Services;
+using AtriusHealth.Foundation.SitecoreExtensions.DependencyInjection;
 
-namespace Thread.Foundation.Forms.SubmitActions.Email
+namespace AtriusHealth.Foundation.Forms.SubmitActions.Email
 {
     public class SendEmail : SubmitActionBase<EmailMessageData>
     {

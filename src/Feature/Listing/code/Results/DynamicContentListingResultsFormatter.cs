@@ -1,17 +1,18 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Jabberwocky.DependencyInjection.Autowire.Attributes;
 using Sitecore.ContentSearch.Linq;
-using Thread.Feature.Listing.Services;
-using Thread.Foundation.Abstractions.Listing;
-using Thread.Foundation.Enumerations.References;
-using Thread.Foundation.Orm.Factory;
-using Thread.Foundation.Search.Results;
-using Thread.Foundation.SitecoreExtensions.Base;
+using AtriusHealth.Feature.Listing.Services;
+using AtriusHealth.Foundation.Abstractions.Listing;
+using AtriusHealth.Foundation.Enumerations.References;
+using AtriusHealth.Foundation.Orm.Factory;
+using AtriusHealth.Foundation.ResponsiveImages.Extensions;
+using AtriusHealth.Foundation.Search.Results;
+using AtriusHealth.Foundation.SitecoreExtensions.Base;
 using Velir.Search.Core.Results;
 
-namespace Thread.Feature.Listing.Results
+namespace AtriusHealth.Feature.Listing.Results
 {
     [AutowireService(LifetimeScope.PerScope)]
     public class DynamicContentListingResultsFormatter : IResultsFormatter<DynamicContentSearchResultItem>
@@ -46,7 +47,7 @@ namespace Thread.Feature.Listing.Results
                 Key = l.ListId,
                 Title = l.ListTitle,
                 Body = displayOptions.DisplaySummary ? l.ListDescription : string.Empty,
-                ImageSrc = GetProperImageSrc(l, displayOptions.DisplayImageFormat).FormatImagePath(220),
+                ImageSrc = GetProperImageSrc(l, displayOptions.DisplayImageFormat).GetSrcSetWidths(630, 270),
                 Date = displayOptions.DisplayDate ? l.ListDate : string.Empty,
                 ContentType = displayOptions.DisplayContentType ? l.ListContentType : string.Empty,
                 Location = l.ListLocation,

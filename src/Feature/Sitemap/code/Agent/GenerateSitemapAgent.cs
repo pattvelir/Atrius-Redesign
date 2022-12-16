@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Linq;
 using Sitecore.Configuration;
@@ -6,9 +6,9 @@ using Sitecore.Data;
 using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
 using Sitecore.Sites;
-using Thread.Feature.Sitemap.Sitemap;
+using AtriusHealth.Feature.Sitemap.Sitemap;
 
-namespace Thread.Feature.Sitemap.Agent
+namespace AtriusHealth.Feature.Sitemap.Agent
 {
 	public class GenerateSitemapAgent
 	{
@@ -23,14 +23,14 @@ namespace Thread.Feature.Sitemap.Agent
 
 		public void GenerateSitemaps()
 		{
-			Log.Info("ThreadSitemapGenerator - Running Command", this);
+			Log.Info("AtriusHealthSitemapGenerator - Running Command", this);
 			foreach (var site in Sites)
 			{
 				var rootItem = Database.GetItem($"{site.RootPath}{site.StartItem}");
 
 				GenerateSitemap(rootItem, site);
 			}
-			Log.Info("ThreadSitemapGenerator - Command Finished", this);
+			Log.Info("AtriusHealthSitemapGenerator - Command Finished", this);
 		}
 
 		protected void GenerateSitemap(Item rootItem, SiteContext site)

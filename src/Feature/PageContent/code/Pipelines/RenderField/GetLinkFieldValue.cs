@@ -1,8 +1,8 @@
-﻿using Sitecore.Data.Fields;
+using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 using Sitecore.Pipelines.RenderField;
 
-namespace Thread.Feature.PageContent.Pipelines.RenderField
+namespace AtriusHealth.Feature.PageContent.Pipelines.RenderField
 {
 	public class GetLinkFieldValue : Sitecore.Pipelines.RenderField.GetLinkFieldValue
 	{

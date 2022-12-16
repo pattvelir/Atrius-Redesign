@@ -1,4 +1,4 @@
-﻿namespace Thread.Feature.Account.Cipher
+namespace AtriusHealth.Feature.Account.Cipher
 {
 	public interface ICipherService
 	{

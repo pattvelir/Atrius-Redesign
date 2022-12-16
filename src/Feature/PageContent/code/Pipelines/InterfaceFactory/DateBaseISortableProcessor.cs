@@ -1,8 +1,8 @@
-﻿using Thread.Feature.PageContent.Factory.Sortable;
-using Thread.Foundation.Abstractions.Indexing;
-using Thread.Foundation.Orm.Factory.Pipeline;
+using AtriusHealth.Feature.PageContent.Factory.Sortable;
+using AtriusHealth.Foundation.Abstractions.Indexing;
+using AtriusHealth.Foundation.Orm.Factory.Pipeline;
 
-namespace Thread.Feature.PageContent.Pipelines.InterfaceFactory
+namespace AtriusHealth.Feature.PageContent.Pipelines.InterfaceFactory
 {
 	public class DateBaseISortableProcessor : InterfaceFactoryProcessor<ISortable>
 	{

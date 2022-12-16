@@ -5,7 +5,8 @@
         A wrapper function around the Powershell script found with the Unicorn project
         to sync the serialization items to a running Sitecore environment.
     .EXAMPLE
-        Sync-Unicorn
+        PS> Sync-Unicorn
+        Unicorn console output
 #>
 Function Sync-Unicorn {
     $LASTEXITCODE=0

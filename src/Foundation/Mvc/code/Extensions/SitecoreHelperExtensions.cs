@@ -1,10 +1,10 @@
-﻿using System.Web;
+using System.Web;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 using Sitecore.Mvc.Helpers;
 using CustomField = Sitecore.Data.Fields.CustomField;
 
-namespace Thread.Foundation.Mvc.Extensions
+namespace AtriusHealth.Foundation.Mvc.Extensions
 {
 	public static class SitecoreHelperExtensions
 	{

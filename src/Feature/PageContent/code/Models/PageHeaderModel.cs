@@ -1,10 +1,10 @@
-﻿using Thread.Foundation.Mvc.ViewModels;
-using Thread.Foundation.Orm;
-using Thread.Foundation.Taxonomy;
+using AtriusHealth.Foundation.Mvc.ViewModels;
+using AtriusHealth.Foundation.Orm;
+using AtriusHealth.Foundation.Taxonomy;
 
-namespace Thread.Feature.PageContent.Models
+namespace AtriusHealth.Feature.PageContent.Models
 {
-	public class PageHeaderModel : ThreadViewModel<ThreadItem>
+	public class PageHeaderModel : AtriusHealthViewModel<AtriusHealthItem>
 	{
 		public _HeaderTitleBaseItem TitleItem => PageItem;
 		public _SubtitleBaseItem SubTitleItem => PageItem;

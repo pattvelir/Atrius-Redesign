@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "497da5f2-279d-4e06-9879-2a2252863edc"
 Parent: "76a971f4-5b04-4cd7-a667-c07e1a7288f9"
 Template: "fed6a14f-0d05-4e18-b160-17c0588a2005"
@@ -7,7 +7,7 @@ DB: master
 SharedFields:
 - ID: "ee9e23d2-181d-4172-a929-0e0b8d10313c"
   Hint: Model Type
-  Value: Thread.Feature.Banners.Models.HeroBannerModel,Thread.Feature.Banners
+  Value: AtriusHealth.Feature.Banners.Models.HeroBannerModel,AtriusHealth.Feature.Banners
 Languages:
 - Language: en
   Versions:

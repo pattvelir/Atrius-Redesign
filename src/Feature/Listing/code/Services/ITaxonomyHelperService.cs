@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using Sitecore.Data.Items;
-using Thread.Feature.Listing.Results;
+using AtriusHealth.Feature.Listing.Results;
 
-namespace Thread.Feature.Listing.Services
+namespace AtriusHealth.Feature.Listing.Services
 {
 	public interface ITaxonomyHelperService
 	{

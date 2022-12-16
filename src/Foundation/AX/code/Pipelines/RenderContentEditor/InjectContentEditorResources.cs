@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Web.UI;
 using Sitecore.Shell.Applications.ContentEditor.Pipelines.RenderContentEditor;
 
-namespace Thread.Foundation.AX.Pipelines.RenderContentEditor
+namespace AtriusHealth.Foundation.AX.Pipelines.RenderContentEditor
 {
 	public class InjectContentEditorResources
 	{

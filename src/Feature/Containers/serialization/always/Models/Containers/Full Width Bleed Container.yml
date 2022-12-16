@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "2c4f9060-3fa3-42dc-8659-da370689fa59"
 Parent: "d3e60914-ae99-485b-855e-d69997e17f58"
 Template: "fed6a14f-0d05-4e18-b160-17c0588a2005"
@@ -7,7 +7,7 @@ DB: master
 SharedFields:
 - ID: "ee9e23d2-181d-4172-a929-0e0b8d10313c"
   Hint: Model Type
-  Value: Thread.Feature.Containers.Models.FullBleedContainerModel,Thread.Feature.Containers
+  Value: AtriusHealth.Feature.Containers.Models.FullBleedContainerModel,AtriusHealth.Feature.Containers
 Languages:
 - Language: en
   Versions:

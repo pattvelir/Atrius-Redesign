@@ -1,6 +1,5 @@
-import * as dotenv from "dotenv"; // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
-dotenv.config();
-const { NODE_ENV = "production" } = process.env;
+// see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
+import * as dotenv from "dotenv";
 import * as R from "ramda";
 import path from "path";
 import yargs from "yargs";
@@ -23,20 +22,24 @@ import { promisify } from "util";
 import compression from "compression";
 import browsersync from "rollup-plugin-browsersync";
 
-const brotliPromise = promisify(brotliCompress);
+dotenv.config();
+const {
+  NODE_ENV = "production",
+  FE_BUILD_DIR = "./build",
+  FE_SRC_DIR = "./frontend",
+} = process.env;
 const env = yargs?.argv?.environment || NODE_ENV;
 const isWatching = yargs?.argv?.w || false;
+const brotliPromise = promisify(brotliCompress);
 const isLocal = env === "development" || env === "local";
 const isCi = env === "ci";
 const isProduction = env === "production";
-const buildDir = "./build";
-const frontendDir = "./frontend";
+
 const rollupPlugins = R.reject(
   (i) => !i,
   R.flatten([
     postcss({
       extract: "css/index-generated.css",
-      // inject: true,
       extensions: [".scss", ".css"],
       loaders: ["sass-loader"],
       config: {
@@ -50,22 +53,26 @@ const rollupPlugins = R.reject(
       jsnext: true,
     }),
     svgSprite({
-      src: `${frontendDir}/img/svg`,
-      dest: `${frontendDir}/img`,
+      src: `${FE_SRC_DIR}/img/svg`,
+      dest: `${FE_SRC_DIR}/img`,
     }),
     copy({
       targets: [
         {
-          src: `${frontendDir}/img/*`,
-          dest: `${buildDir}/img`,
+          src: `${FE_SRC_DIR}/img/*`,
+          dest: `${FE_BUILD_DIR}/img`,
         },
         {
-          src: [`${frontendDir}/index.html`],
-          dest: buildDir,
+          src: [`${FE_SRC_DIR}/index.html`],
+          dest: FE_BUILD_DIR,
         },
       ],
       copyOnce: false,
     }),
+    eslint({
+      exclude: [`${FE_SRC_DIR}/**/*.scss`, "node_modules/**"],
+    }),
+    stylelint.default(),
     //TODO GET BABELRC AND MERGE
     babel({
       exclude: "node_modules/**",
@@ -101,15 +108,12 @@ const rollupPlugins = R.reject(
       // (see below for more details)
       // namedExports: { './module.js': ['foo', 'bar' ] }  // Default: undefined
     }),
-    eslint({
-      exclude: ["frontend/**/*.scss", "node_modules/**"],
-    }),
-    stylelint.default(),
+
     ...[
       isLocal &&
         isWatching &&
         browsersync({
-          server: "build",
+          server: FE_BUILD_DIR,
           watch: true,
           middleware: [compression()],
         }),
@@ -123,7 +127,7 @@ const rollupPlugins = R.reject(
     ...[
       (isProduction || isCi) &&
         gzipPlugin.default({
-          additionalFiles: ["./build/index.html"],
+          additionalFiles: [`${FE_BUILD_DIR}/index.html`],
           customCompression: (content) => brotliPromise(Buffer.from(content)),
           fileName: ".br",
         }),
@@ -134,23 +138,37 @@ const rollupPlugins = R.reject(
   ]),
 );
 
+/**
+ * Note: preserveModules is required for tree shaking.
+ */
 export default {
-  input: [`${frontendDir}/js/index.js`],
-  output: {
-    format: "esm",
-    dir: `${buildDir}`,
-    entryFileNames: "js/index-generated.js",
-    chunkFileNames: "js/chunks/[name]-[hash].js",
-    assetFileNames: "assets/[name]-generated[extname]",
-    sourcemap: isLocal ? "inline" : false,
-    preserveModules: true,
-  },
+  input: `${FE_SRC_DIR}/js/index.js`,
+  output: [
+    {
+      format: "esm",
+      dir: `${FE_BUILD_DIR}`,
+      entryFileNames: "js/[name]-generated.js",
+      chunkFileNames: "js/chunks/[name]-[hash].js",
+      assetFileNames: "assets/[name]-generated[extname]",
+      sourcemap: isLocal,
+      preserveModules: true,
+    },
+    {
+      dir: `${FE_BUILD_DIR}`,
+      entryFileNames: "js/[name]-generated.cjs.js",
+      chunkFileNames: "js/chunks/[name]-[hash].cjs.js",
+      assetFileNames: "assets/[name]-generated[extname]",
+      sourcemap: isLocal,
+      preserveModules: true,
+      format: "cjs",
+    },
+  ],
   watch:
     isLocal && isWatching
       ? {
           skipWrite: false,
           clearScreen: false,
-          include: `${frontendDir}/**/*`,
+          include: `${FE_SRC_DIR}/**/*`,
         }
       : false,
   plugins: rollupPlugins,

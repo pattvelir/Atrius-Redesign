@@ -1,6 +1,6 @@
-﻿using Sitecore.Data;
+using Sitecore.Data;
 
-namespace Thread.Foundation.Forms.Reference
+namespace AtriusHealth.Foundation.Forms.Reference
 {
 	public static class Constants
 	{

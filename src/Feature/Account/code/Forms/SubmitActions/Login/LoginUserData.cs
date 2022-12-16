@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace Thread.Feature.Account.Forms.SubmitActions.Login
+namespace AtriusHealth.Feature.Account.Forms.SubmitActions.Login
 {
 	public class LoginUserData
 	{

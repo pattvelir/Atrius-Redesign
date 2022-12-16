@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using Sitecore;
 using Sitecore.Data;
@@ -9,12 +9,12 @@ using Sitecore.Publishing;
 using Sitecore.SecurityModel;
 using Sitecore.Tasks;
 using Sitecore.Workflows;
-using Thread.Foundation.Workflow.Publishing;
-using Thread.Foundation.Workflow.References;
-using Thread.Foundation.Workflow.Services;
-using Constants = Thread.Foundation.Workflow.References.Constants;
+using AtriusHealth.Foundation.Workflow.Publishing;
+using AtriusHealth.Foundation.Workflow.References;
+using AtriusHealth.Foundation.Workflow.Services;
+using Constants = AtriusHealth.Foundation.Workflow.References.Constants;
 
-namespace Thread.Foundation.Workflow.Commands
+namespace AtriusHealth.Foundation.Workflow.Commands
 {
     public class AutoPublish
     {

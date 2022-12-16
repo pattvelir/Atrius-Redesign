@@ -14,7 +14,7 @@
     .OUTPUTS
         Writes user-provided value back to the properties file specified by the FileName parameter.
     .EXAMPLE
-        Write-Property -PropertyName "Project.SourceRoot" -PropertyValue "C:\Data\Projects\Thread-Sitecore"
+        PS> Write-Property -PropertyName "Project.SourceRoot" -PropertyValue "C:\Data\Projects\AtriusHealth"
 #>
 Function Write-Property {
     [CmdletBinding()]

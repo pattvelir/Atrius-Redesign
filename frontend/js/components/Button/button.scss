@@ -69,6 +69,11 @@
     height: var(--btn-icon-height);
     width: var(--btn-icon-width);
   }
+
+  &.btn--no-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .btn--disabled,

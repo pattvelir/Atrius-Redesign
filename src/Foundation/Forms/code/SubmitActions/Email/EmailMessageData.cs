@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Sitecore.Pipelines.GetAboutInformation;
 
-namespace Thread.Foundation.Forms.SubmitActions.Email
+namespace AtriusHealth.Foundation.Forms.SubmitActions.Email
 {
     public class EmailMessageData
     {

@@ -10,7 +10,7 @@
 //------------------------------------------------------------------------------
 // ReSharper disable All
 
-					namespace Thread.Feature.RichText
+					namespace AtriusHealth.Feature.RichText
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -47,15 +47,15 @@ public static implicit operator Item(RichTextItem customItem)
 
 
 
-					namespace Thread.Feature.RichText
+					namespace AtriusHealth.Feature.RichText
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
 						using Sitecore.Data.Items;
 						using Sitecore.Mvc.Presentation;
-						using Thread.Foundation.Orm;
+						using AtriusHealth.Foundation.Orm;
 
-						public partial class RichTextRenderingParameters : ThreadRenderingParameters
+						public partial class RichTextRenderingParameters : AtriusHealthRenderingParameters
 						{
 							public static class Fields
 		{
@@ -69,7 +69,7 @@ public static implicit operator Item(RichTextItem customItem)
 public RichTextRenderingParameters(string parametersAsQueryString) : base(parametersAsQueryString) {}
 
 							
-				public virtual Thread.Foundation.Enumerations.TextAlignmentItem Alignment => GetItemValue(Fields.Alignment);
+				public virtual AtriusHealth.Foundation.Enumerations.TextAlignmentItem Alignment => GetItemValue(Fields.Alignment);
 
 				public virtual float MaxWidth => GetFloatValue(Fields.MaxWidth);
 
@@ -79,16 +79,16 @@ public RichTextRenderingParameters(string parametersAsQueryString) : base(parame
 
 
 
-// Thread.Feature.RichText.Rich_Text (/sitecore/templates/Feature/Rich Text/Rich Text e4076c99-8864-41c9-a691-e628331ab7c5)
+// AtriusHealth.Feature.RichText.Rich_Text (/sitecore/templates/Feature/Rich Text/Rich Text e4076c99-8864-41c9-a691-e628331ab7c5)
 	// Text (520e3345-4694-4928-9cbb-cb8204c0fe3f)
 		// Type: Rich Text
 		// Section: Content
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Feature.RichText.Rich_Text_Rendering_Parameters (/sitecore/templates/Feature/Rich Text/Rich Text Rendering Parameters a5944469-af21-41d3-84a9-fa7f3544705b)
+// AtriusHealth.Feature.RichText.Rich_Text_Rendering_Parameters (/sitecore/templates/Feature/Rich Text/Rich Text Rendering Parameters a5944469-af21-41d3-84a9-fa7f3544705b)
 	// Alignment (2493a7f1-8aa8-4df2-ac90-cd86732f5122)
-		// Type: custom=Thread.Foundation.Enumerations.TextAlignmentItem
+		// Type: custom=AtriusHealth.Foundation.Enumerations.TextAlignmentItem
 		// Section: Display Options
 		// Sort Order: 600
 		// Source: /sitecore/content/Global Configuration/Enumerations/Text Alignments

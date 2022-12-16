@@ -1,7 +1,7 @@
-﻿using System;
+using System;
 using Sitecore.Data;
 
-namespace Thread.Foundation.Abstractions.Account
+namespace AtriusHealth.Foundation.Abstractions.Account
 {
 	public interface IMembershipProvider
 	{

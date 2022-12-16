@@ -1,6 +1,6 @@
-﻿using Sitecore.Globalization;
+using Sitecore.Globalization;
 
-namespace Thread.Feature.PageContent.Reference
+namespace AtriusHealth.Feature.PageContent.Reference
 {
 	public static class Dictionary
 	{

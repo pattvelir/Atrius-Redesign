@@ -1,6 +1,6 @@
-﻿using Jabberwocky.Core.Caching;
+using Jabberwocky.Core.Caching;
 
-namespace Thread.Foundation.Dictionary.Repositories
+namespace AtriusHealth.Foundation.Dictionary.Repositories
 {
 	public class DictionaryCacheDecorator : IDictionaryRepository
 	{
@@ -15,7 +15,7 @@ namespace Thread.Foundation.Dictionary.Repositories
 
 		public string Get(string key)
 		{
-			return _cache.GetFromCache($"Thread.Foundation.Dictionary:Key={key}", () => _provider.Get(key));
+			return _cache.GetFromCache($"AtriusHealth.Foundation.Dictionary:Key={key}", () => _provider.Get(key));
 		}
 	}
 }

@@ -1,8 +1,8 @@
-﻿---
+---
 ID: "0a05580b-299f-43ed-859e-5f7ae8628edd"
 Parent: "ed6e3597-d966-4088-967e-4ad96b132720"
 Template: "1ab4f9ad-b004-413c-8924-3e07143a614b"
-Path: /sitecore/content/Applications/WebEdit/Custom Experience Buttons/Thread/Feature/Banners/Hero Banner
+Path: /sitecore/content/Applications/WebEdit/Custom Experience Buttons/AtriusHealth/Feature/Banners/Hero Banner
 DB: core
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
@@ -82,13 +82,13 @@ Languages:
   Fields:
   - ID: "108d3a63-baaa-4560-86d8-3a112ed84717"
     Hint: Header
-    Value: 編集
+    Value: ??
   - ID: "5f0812af-d370-4292-afee-f26a39b7406d"
     Hint: Tooltip
-    Value: アイテムのフィールドを編集します
+    Value: ????????????????
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 編集
+    Value: ??
   Versions:
   - Version: 1
     Fields:

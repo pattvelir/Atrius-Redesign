@@ -1,8 +1,8 @@
-﻿---
+---
 ID: "13fdcc2c-7aee-46f0-a2d0-09d450558dcd"
 Parent: "39c252d3-9c1c-4376-8403-79b8c88b7951"
 Template: "1ab4f9ad-b004-413c-8924-3e07143a614b"
-Path: /sitecore/content/Applications/WebEdit/Custom Experience Buttons/Thread/Feature/Promo/Promo Content
+Path: /sitecore/content/Applications/WebEdit/Custom Experience Buttons/AtriusHealth/Feature/Promo/Promo Content
 DB: core
 SharedFields:
 - ID: "4431914a-c40b-437c-8add-d2ed12cc8cc3"
@@ -79,13 +79,13 @@ Languages:
   Fields:
   - ID: "108d3a63-baaa-4560-86d8-3a112ed84717"
     Hint: Header
-    Value: 編集
+    Value: ??
   - ID: "5f0812af-d370-4292-afee-f26a39b7406d"
     Hint: Tooltip
-    Value: アイテムのフィールドを編集します
+    Value: ????????????????
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 編集
+    Value: ??
   Versions:
   - Version: 1
     Fields:

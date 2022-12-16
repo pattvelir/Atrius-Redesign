@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using Sitecore.Data.Items;
 
-namespace Thread.Feature.Social.Models
+namespace AtriusHealth.Feature.Social.Models
 {
 	public class SocialFollowModel
 	{

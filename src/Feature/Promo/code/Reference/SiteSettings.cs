@@ -1,10 +1,10 @@
-﻿using Sitecore.Configuration;
+using Sitecore.Configuration;
 
-namespace Thread.Feature.Promo.Reference
+namespace AtriusHealth.Feature.Promo.Reference
 {
 	public static class SiteSettings
 	{
-		public static string CitatationPrefix => Settings.GetSetting("Thread.PullQuote.CitationPrefix", "- ");
-		public static string CitatationSeparator => Settings.GetSetting("Thread.PullQuote.CitationSeparator", ", ");
+		public static string CitatationPrefix => Settings.GetSetting("AtriusHealth.PullQuote.CitationPrefix", "- ");
+		public static string CitatationSeparator => Settings.GetSetting("AtriusHealth.PullQuote.CitationSeparator", ", ");
 	}
 }

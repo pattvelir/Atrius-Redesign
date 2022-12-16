@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using Sitecore.Data.Items;
 
-namespace Thread.Foundation.Orm.Factory
+namespace AtriusHealth.Foundation.Orm.Factory
 {
 	public interface IItemInterfaceFactory
 	{

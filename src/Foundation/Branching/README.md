@@ -16,10 +16,10 @@ When creating items from a branch, items linked in the Datasource field of any R
 
 When creating items from a branch, items linked in Multilist (Multilist, Treelist, etc.) fields will be re-linked to the newly created items instead of the branch template items.
 
-*Hidden Sitecore Setting*: `Thread.Foundation.Branching.MultipleItemLinkedFieldTypes`.  This setting defines which fields types will be checked on the item.  Multiple field types are separated by a `|`.  Default value: `Multilist|Multilist with Search|Treelist|Treelist with Search|TreelistEx`.
+*Hidden Sitecore Setting*: `AtriusHealth.Foundation.Branching.MultipleItemLinkedFieldTypes`.  This setting defines which fields types will be checked on the item.  Multiple field types are separated by a `|`.  Default value: `Multilist|Multilist with Search|Treelist|Treelist with Search|TreelistEx`.
 
 ### RelocateSingleLinkedItemsFromBranch
 
 When creating items from a branch, items linked in single item fields (Droptree, Droplist) will be re-linked to the newly created items instead of the branch template items.
 
-*Hidden Sitecore Setting*: `Thread.Foundation.Branching.SingleItemLinkedFieldTypes`.  This setting defines which fields types will be checked on the item.  Multiple field types are separated by a `|`.  Default value: `Droplink|Droptree`.
+*Hidden Sitecore Setting*: `AtriusHealth.Foundation.Branching.SingleItemLinkedFieldTypes`.  This setting defines which fields types will be checked on the item.  Multiple field types are separated by a `|`.  Default value: `Droplink|Droptree`.

@@ -10,7 +10,7 @@
 //------------------------------------------------------------------------------
 // ReSharper disable All
 
-					namespace Thread.Feature.Navigation
+					namespace AtriusHealth.Feature.Navigation
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -43,7 +43,7 @@ public static implicit operator Item(BreadcrumbConfigurationItem customItem)
 					}
 				
 
-					namespace Thread.Feature.Navigation
+					namespace AtriusHealth.Feature.Navigation
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -72,7 +72,7 @@ public static implicit operator Item(FooterNavigationLinksColumnsFolderItem cust
 					}
 				
 
-					namespace Thread.Feature.Navigation
+					namespace AtriusHealth.Feature.Navigation
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -101,7 +101,7 @@ public static implicit operator Item(FooterNavigationLinksFolderItem customItem)
 					}
 				
 
-					namespace Thread.Feature.Navigation
+					namespace AtriusHealth.Feature.Navigation
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -134,7 +134,7 @@ public static implicit operator Item(LinkItem customItem)
 					}
 				
 
-					namespace Thread.Feature.Navigation
+					namespace AtriusHealth.Feature.Navigation
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -175,7 +175,7 @@ public static implicit operator Item(LinkColumnHeaderItem customItem)
 					}
 				
 
-					namespace Thread.Feature.Navigation
+					namespace AtriusHealth.Feature.Navigation
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -204,7 +204,7 @@ public static implicit operator Item(LinksFolderItem customItem)
 					}
 				
 
-					namespace Thread.Feature.Navigation
+					namespace AtriusHealth.Feature.Navigation
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -233,7 +233,7 @@ public static implicit operator Item(NavigationConfigurationFolderItem customIte
 					}
 				
 
-					namespace Thread.Feature.Navigation
+					namespace AtriusHealth.Feature.Navigation
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -266,7 +266,7 @@ public static implicit operator Item(PrimaryNavigationCategoryItem customItem)
 					}
 				
 
-					namespace Thread.Feature.Navigation
+					namespace AtriusHealth.Feature.Navigation
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -295,7 +295,7 @@ public static implicit operator Item(PrimaryNavigationLinksFolderItem customItem
 					}
 				
 
-					namespace Thread.Feature.Navigation
+					namespace AtriusHealth.Feature.Navigation
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -334,25 +334,25 @@ public static implicit operator Item(_NavigationBaseItem customItem)
 
 
 
-// Thread.Feature.Navigation.Breadcrumb_Configuration (/sitecore/templates/Feature/Navigation/Breadcrumb Configuration 14e2f690-2849-45f2-9b1f-8741fd0606d0)
+// AtriusHealth.Feature.Navigation.Breadcrumb_Configuration (/sitecore/templates/Feature/Navigation/Breadcrumb Configuration 14e2f690-2849-45f2-9b1f-8741fd0606d0)
 	// Svg_Delimiter_Name (a94cf3ac-75ea-4f48-8299-082a9a1aa413)
 		// Type: Single-Line Text
 		// Section: Breadcrumb Configuration
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Feature.Navigation.Footer_Navigation_Links_Columns_Folder (/sitecore/templates/Feature/Navigation/Footer Navigation Links Columns Folder 9112014d-54d5-4c5e-b696-92ac51ebb15a)
+// AtriusHealth.Feature.Navigation.Footer_Navigation_Links_Columns_Folder (/sitecore/templates/Feature/Navigation/Footer Navigation Links Columns Folder 9112014d-54d5-4c5e-b696-92ac51ebb15a)
 
-// Thread.Feature.Navigation.Footer_Navigation_Links_Folder (/sitecore/templates/Feature/Navigation/Footer Navigation Links Folder ed05b776-d15c-47f6-9bb7-887a65cf227d)
+// AtriusHealth.Feature.Navigation.Footer_Navigation_Links_Folder (/sitecore/templates/Feature/Navigation/Footer Navigation Links Folder ed05b776-d15c-47f6-9bb7-887a65cf227d)
 
-// Thread.Feature.Navigation.Link (/sitecore/templates/Feature/Navigation/Link d5745f91-8fa1-457f-be87-875a029c7b69)
+// AtriusHealth.Feature.Navigation.Link (/sitecore/templates/Feature/Navigation/Link d5745f91-8fa1-457f-be87-875a029c7b69)
 	// Link (ca902061-ead1-441e-a6d5-90612ce27830)
 		// Type: General Link
 		// Section: Link
 		// Sort Order: 100
 		// Source: /sitecore/content
 
-// Thread.Feature.Navigation.Link_Column_Header (/sitecore/templates/Feature/Navigation/Link Column Header e17a5c79-ed0a-4f95-8a47-ca76322a3c2c)
+// AtriusHealth.Feature.Navigation.Link_Column_Header (/sitecore/templates/Feature/Navigation/Link Column Header e17a5c79-ed0a-4f95-8a47-ca76322a3c2c)
 	// Number_Of_Columns (da90ba19-124b-4385-9bdf-455464b3cee4)
 		// Type: Droplink
 		// Section: Presentation
@@ -364,20 +364,20 @@ public static implicit operator Item(_NavigationBaseItem customItem)
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Feature.Navigation.Links_Folder (/sitecore/templates/Feature/Navigation/Links Folder 056b6446-94d4-4c94-86bf-d0b10c384dbc)
+// AtriusHealth.Feature.Navigation.Links_Folder (/sitecore/templates/Feature/Navigation/Links Folder 056b6446-94d4-4c94-86bf-d0b10c384dbc)
 
-// Thread.Feature.Navigation.Navigation_Configuration_Folder (/sitecore/templates/Feature/Navigation/Navigation Configuration Folder 95e5e5ef-6382-4bf8-979e-65f9e46da42d)
+// AtriusHealth.Feature.Navigation.Navigation_Configuration_Folder (/sitecore/templates/Feature/Navigation/Navigation Configuration Folder 95e5e5ef-6382-4bf8-979e-65f9e46da42d)
 
-// Thread.Feature.Navigation.Primary_Navigation_Category (/sitecore/templates/Feature/Navigation/Primary Navigation Category e5acf52c-1e6b-4142-84f2-6d09b1ba1ab8)
+// AtriusHealth.Feature.Navigation.Primary_Navigation_Category (/sitecore/templates/Feature/Navigation/Primary Navigation Category e5acf52c-1e6b-4142-84f2-6d09b1ba1ab8)
 	// Title (efe41572-fbeb-4b09-814c-42c0ffe94dfb)
 		// Type: Single-Line Text
 		// Section: Title
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Feature.Navigation.Primary_Navigation_Links_Folder (/sitecore/templates/Feature/Navigation/Primary Navigation Links Folder 8c5b5db5-85de-4b12-aaba-0c112cabfdd0)
+// AtriusHealth.Feature.Navigation.Primary_Navigation_Links_Folder (/sitecore/templates/Feature/Navigation/Primary Navigation Links Folder 8c5b5db5-85de-4b12-aaba-0c112cabfdd0)
 
-// Thread.Feature.Navigation._Navigation_Base (/sitecore/templates/Feature/Navigation/_Navigation Base 4da6ca42-ccf0-4af6-8671-26384ea21494)
+// AtriusHealth.Feature.Navigation._Navigation_Base (/sitecore/templates/Feature/Navigation/_Navigation Base 4da6ca42-ccf0-4af6-8671-26384ea21494)
 	// Suppress_In_Navigation (1ccdab5f-8819-4a04-a09a-4f66dfb65d12)
 		// Type: Checkbox
 		// Section: Navigation

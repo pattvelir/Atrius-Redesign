@@ -1,9 +1,9 @@
-﻿using System.Globalization;
+using System.Globalization;
 using System.Text.RegularExpressions;
 using Sitecore.Resources.Media;
 using Sitecore.Web;
 
-namespace Thread.Foundation.SitecoreExtensions.Base
+namespace AtriusHealth.Foundation.SitecoreExtensions.Base
 {
 	public static class StringExtensions
 	{

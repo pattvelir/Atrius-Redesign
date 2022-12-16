@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.Data.SqlClient;
 using System.Linq;
@@ -6,9 +6,9 @@ using System.Web.Security;
 using Jabberwocky.Core.Caching;
 using Jabberwocky.DependencyInjection.Autowire.Attributes;
 using Sitecore.Security.Accounts;
-using Thread.Foundation.Account.Users;
+using AtriusHealth.Foundation.Account.Users;
 
-namespace Thread.Foundation.Account.Services
+namespace AtriusHealth.Foundation.Account.Services
 {
     [AutowireService]
     public class UserService : IUserService

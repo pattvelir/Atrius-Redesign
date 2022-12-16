@@ -1,12 +1,12 @@
-using Thread.Foundation.Abstractions.PageContent;
-using Thread.Foundation.Mvc.ViewModels;
-using Thread.Foundation.Orm.Factory;
-using Thread.Foundation.Taxonomy;
-using Thread.Foundation.Theme.Extensions;
+using AtriusHealth.Foundation.Abstractions.PageContent;
+using AtriusHealth.Foundation.Mvc.ViewModels;
+using AtriusHealth.Foundation.Orm.Factory;
+using AtriusHealth.Foundation.Taxonomy;
+using AtriusHealth.Foundation.Theme.Extensions;
 
-namespace Thread.Feature.Banners.Models
+namespace AtriusHealth.Feature.Banners.Models
 {
-	public class PageBannerModel : ThreadViewModel<PageBannerItem, BannerParameters>
+	public class PageBannerModel : AtriusHealthViewModel<PageBannerItem, BannerParameters>
 	{
 		private readonly IItemInterfaceFactory _factory;
 		public PageBannerModel(IItemInterfaceFactory interfaceFactory)

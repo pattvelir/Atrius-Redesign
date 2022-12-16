@@ -1,8 +1,8 @@
-﻿using Thread.Foundation.Mvc.ViewModels;
+using AtriusHealth.Foundation.Mvc.ViewModels;
 
-namespace Thread.Feature.Multimedia.Models
+namespace AtriusHealth.Feature.Multimedia.Models
 {
-	public class ImageModel : ThreadViewModel<ImageItem>
+	public class ImageModel : AtriusHealthViewModel<ImageItem>
 	{
 
 	}

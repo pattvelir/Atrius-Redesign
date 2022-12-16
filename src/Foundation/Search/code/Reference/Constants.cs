@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace Thread.Foundation.Search.Reference
+namespace AtriusHealth.Foundation.Search.Reference
 {
 	public static class Constants
 	{

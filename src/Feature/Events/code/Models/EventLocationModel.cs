@@ -1,5 +1,5 @@
-﻿
-namespace Thread.Feature.Events.Models
+
+namespace AtriusHealth.Feature.Events.Models
 {
 	public class EventLocationModel
 	{

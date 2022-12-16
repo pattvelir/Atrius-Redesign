@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace Thread.Foundation.Account.Attributes
+namespace AtriusHealth.Foundation.Account.Attributes
 {
     [AttributeUsage(AttributeTargets.Property)]
     public class SitecoreFieldAttribute : Attribute

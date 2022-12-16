@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.IO;
@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Web.UI;
 using Sitecore.Collections;
 
-namespace Thread.Foundation.AX.Mvc
+namespace AtriusHealth.Foundation.AX.Mvc
 {
 	public class SitecoreBodyTag : IDisposable
 	{

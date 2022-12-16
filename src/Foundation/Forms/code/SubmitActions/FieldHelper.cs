@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Sitecore.ExperienceForms.Models;
 
-namespace Thread.Foundation.Forms.SubmitActions
+namespace AtriusHealth.Foundation.Forms.SubmitActions
 {
 	public static class FieldHelper
 	{

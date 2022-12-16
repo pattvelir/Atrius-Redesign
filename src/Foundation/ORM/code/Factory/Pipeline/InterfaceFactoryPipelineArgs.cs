@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using Sitecore.Data.Items;
 using Sitecore.Pipelines;
 
-namespace Thread.Foundation.Orm.Factory.Pipeline
+namespace AtriusHealth.Foundation.Orm.Factory.Pipeline
 {
 	public class InterfaceFactoryPipelineArgs : PipelineArgs
 	{

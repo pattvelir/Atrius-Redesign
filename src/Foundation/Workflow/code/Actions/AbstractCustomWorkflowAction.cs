@@ -1,10 +1,10 @@
-﻿using System.Collections.Specialized;
+using System.Collections.Specialized;
 using Sitecore.Data.Items;
 using Sitecore.SecurityModel;
 using Sitecore.Web;
 using Sitecore.Workflows.Simple;
 
-namespace Thread.Foundation.Workflow.Actions
+namespace AtriusHealth.Foundation.Workflow.Actions
 {
     public abstract class AbstractCustomWorkflowAction
     {

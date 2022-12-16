@@ -10,7 +10,7 @@
 //------------------------------------------------------------------------------
 // ReSharper disable All
 
-					namespace Thread.Feature.Account
+					namespace AtriusHealth.Feature.Account
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -47,7 +47,7 @@ public static implicit operator Item(EmailPreferencesItem customItem)
 					}
 				
 
-					namespace Thread.Feature.Account
+					namespace AtriusHealth.Feature.Account
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -80,7 +80,7 @@ public static implicit operator Item(InterestsItem customItem)
 					}
 				
 
-					namespace Thread.Feature.Account
+					namespace AtriusHealth.Feature.Account
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -127,7 +127,7 @@ public static implicit operator Item(_AccountConfigurationItem customItem)
 
 
 
-// Thread.Feature.Account.Email_Preferences (/sitecore/templates/Feature/Account/Email Preferences 61977679-a5da-4791-a6ec-003a99a40ae5)
+// AtriusHealth.Feature.Account.Email_Preferences (/sitecore/templates/Feature/Account/Email Preferences 61977679-a5da-4791-a6ec-003a99a40ae5)
 	// Email_Frequencies (618cb90e-df16-4287-8d94-55ef2bbe84b1)
 		// Type: Treelist
 		// Section: Configuration
@@ -139,14 +139,14 @@ public static implicit operator Item(_AccountConfigurationItem customItem)
 		// Sort Order: 200
 		// Source: query:ancestor-or-self::*[@@templateid='{98AC8506-0017-4964-81A9-19B76FA9EE98}']/Configuration/Enumerations/*[@@templateid='{B4229F69-76DC-440C-8D4B-440309341AA1}']
 
-// Thread.Feature.Account.Interests (/sitecore/templates/Feature/Account/Interests f7a574a1-ffc6-448f-aa92-40d61f2c76c4)
+// AtriusHealth.Feature.Account.Interests (/sitecore/templates/Feature/Account/Interests f7a574a1-ffc6-448f-aa92-40d61f2c76c4)
 	// Interests (869ae91d-9f59-4912-bede-3900a421c8ae)
 		// Type: TreelistEx
 		// Section: Configuration
 		// Sort Order: 100
 		// Source: query:ancestor-or-self::*[@@templateid='{98AC8506-0017-4964-81A9-19B76FA9EE98}']/Home/*[@@templateid='{61F2DDC5-111B-406A-AF8B-E37CDC30CA8A}']
 
-// Thread.Feature.Account._Account_Configuration (/sitecore/templates/Feature/Account/_Account Configuration 69ed1402-6eaf-46ad-b6d6-c3cf273a6e34)
+// AtriusHealth.Feature.Account._Account_Configuration (/sitecore/templates/Feature/Account/_Account Configuration 69ed1402-6eaf-46ad-b6d6-c3cf273a6e34)
 	// Login_Page (e2a46fd1-6c83-4440-9ff8-c45352284b6c)
 		// Type: General Link
 		// Section: Account Configuration

@@ -1,9 +1,9 @@
-﻿using Sitecore.StringExtensions;
-using Thread.Foundation.Mvc.ViewModels;
+using Sitecore.StringExtensions;
+using AtriusHealth.Foundation.Mvc.ViewModels;
 
-namespace Thread.Feature.Promo.Models
+namespace AtriusHealth.Feature.Promo.Models
 {
-	public class PullQuoteModel : ThreadViewModel<PullQuoteItem>
+	public class PullQuoteModel : AtriusHealthViewModel<PullQuoteItem>
 	{
 		public bool HasContent()
 		{

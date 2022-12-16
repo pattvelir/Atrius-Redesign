@@ -1,12 +1,12 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using Thread.Foundation.Mvc.ViewModels;
+using AtriusHealth.Foundation.Mvc.ViewModels;
 
-namespace Thread.Feature.Banners.Models
+namespace AtriusHealth.Feature.Banners.Models
 {
-    public class PrivacyBannerModel : ThreadViewModel<_PrivacyConfigurationItem>
+    public class PrivacyBannerModel : AtriusHealthViewModel<_PrivacyConfigurationItem>
     {
     }
 }

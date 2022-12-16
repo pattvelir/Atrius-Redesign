@@ -1,15 +1,15 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Newtonsoft.Json;
 using Sitecore.Data;
 using Sitecore.Mvc.Presentation;
-using Thread.Feature.Listing.Reference;
-using Thread.Foundation.Orm.Services;
-using Thread.Foundation.Search.Areas.Thread.Models.Search;
+using AtriusHealth.Feature.Listing.Reference;
+using AtriusHealth.Foundation.Orm.Services;
+using AtriusHealth.Foundation.Search.Areas.AtriusHealth.Models.Search;
 using Velir.Search.Core.Models;
 
-namespace Thread.Feature.Listing.Models
+namespace AtriusHealth.Feature.Listing.Models
 {
     [JsonObject(MemberSerialization.OptIn)]
     public class DynamicContentListingModel : AbstractSearchResultsModel<DynamicContentListingItem,

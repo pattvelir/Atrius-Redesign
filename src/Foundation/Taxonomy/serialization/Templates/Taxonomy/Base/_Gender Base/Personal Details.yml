@@ -1,8 +1,8 @@
-﻿---
+---
 ID: "8cdbf33e-266d-4d2e-b7fd-4aef027d2ce7"
 Parent: "0901baea-4e2a-4a81-89e5-964b6e80230f"
 Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: /sitecore/templates/Thread/Foundation/Taxonomy/Base/_Gender Base/Personal Details
+Path: /sitecore/templates/AtriusHealth/Foundation/Taxonomy/Base/_Gender Base/Personal Details
 DB: master
 Languages:
 - Language: en

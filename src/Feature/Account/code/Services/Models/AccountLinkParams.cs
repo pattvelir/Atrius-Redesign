@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace Thread.Feature.Account.Services.Models
+namespace AtriusHealth.Feature.Account.Services.Models
 {
 	public class AccountLinkParams
 	{

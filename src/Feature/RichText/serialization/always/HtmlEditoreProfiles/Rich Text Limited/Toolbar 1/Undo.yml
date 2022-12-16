@@ -1,8 +1,8 @@
-﻿---
+---
 ID: "874b00b9-e552-4c09-82ef-9bbd9f8c946e"
 Parent: "f50aa367-f492-4096-aa14-4b71627153fb"
 Template: "a473cbd2-4e48-41b3-8b1b-5695daf90b5c"
-Path: /sitecore/system/Settings/Html Editor Profiles/Thread/Rich Text Limited/Toolbar 1/Undo
+Path: /sitecore/system/Settings/Html Editor Profiles/AtriusHealth/Rich Text Limited/Toolbar 1/Undo
 DB: core
 BranchID: "b9ed3ccb-9ec5-4c8c-825b-3dbc2eb0e676"
 SharedFields:
@@ -32,7 +32,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Rückgängig
+    Value: R�ckg�ngig
   Versions:
   - Version: 1
     Fields:
@@ -65,7 +65,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 元に戻す
+    Value: ????
   Versions:
   - Version: 1
     Fields:

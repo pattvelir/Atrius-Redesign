@@ -8,29 +8,43 @@
   position: relative;
   display: flex;
   align-items: center;
-  border: 1px solid $base-border-color;
+  height: 48px;
+  padding: 0.75rem var(--size-4);
+  border: 2px solid var(--color-neutral-50);
+  background-color: var(--color-design-system-white);
+  translate: border 240ms ease-in-out;
 
   input {
     flex: auto;
     width: auto;
-    padding: 10px 12px;
-
-    font-size: 16px;
+    font: var(--font-ui-labels-ui-sm);
     border: 0;
+    background-color: transparent;
     box-shadow: none;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  &:focus-within {
+    border: 2px solid var(--color-yellow-300);
+  }
+
+  &::placeholder {
+    color: var(--color-neutral-600);
   }
 }
 
 .search-box__button {
   flex: none;
-  padding: 8px 10px;
+
   background: transparent;
   border: 0;
   cursor: pointer;
 
   & > svg {
-    height: 1.5rem;
-    width: 1.5rem;
+    color: var(--color-neutral-200);
   }
 }
 

@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "aa49c517-a516-4c28-bec2-df105ca3677d"
 Parent: "05d71800-56be-4a53-afab-3819da817a4a"
 Template: "05d71800-56be-4a53-afab-3819da817a4a"
@@ -99,4 +99,4 @@ Languages:
         sitecore\admin
     - ID: "71ffd7b2-8b09-4f7b-8a66-1e4cef653e8d"
       Hint: Title
-      Value: 密码
+      Value: ??

@@ -1,10 +1,10 @@
-﻿using Jabberwocky.Core.Caching;
+using Jabberwocky.Core.Caching;
 using Microsoft.Extensions.DependencyInjection;
 using Sitecore.DependencyInjection;
-using Thread.Foundation.Orm.Services;
-using Thread.Foundation.Performance.Cache;
+using AtriusHealth.Foundation.Orm.Services;
+using AtriusHealth.Foundation.Performance.Cache;
 
-namespace Thread.Foundation.Performance.DependencyInjection
+namespace AtriusHealth.Foundation.Performance.DependencyInjection
 {
 	public class Registrar : IServicesConfigurator
 	{

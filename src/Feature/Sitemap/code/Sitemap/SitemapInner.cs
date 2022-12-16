@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -9,7 +9,7 @@ using Sitecore.Links;
 using Sitecore.Security.Accounts;
 using Sitecore.Sites;
 
-namespace Thread.Feature.Sitemap.Sitemap
+namespace AtriusHealth.Feature.Sitemap.Sitemap
 {
 	public class SitemapInner
 	{

@@ -1,9 +1,9 @@
-﻿using Thread.Foundation.Multisite.Configuration;
-using Thread.Foundation.Mvc.ViewModels;
+using AtriusHealth.Foundation.Multisite.Configuration;
+using AtriusHealth.Foundation.Mvc.ViewModels;
 
-namespace Thread.Feature.Social.Models
+namespace AtriusHealth.Feature.Social.Models
 {
-	public class AddThisModel : ThreadViewModel<_ShareConfigurationItem>
+	public class AddThisModel : AtriusHealthViewModel<_ShareConfigurationItem>
 	{
 		public AddThisModel(ISitecoreConfigurationManager configManager)
 		{

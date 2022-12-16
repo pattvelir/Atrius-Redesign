@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "3f67be6a-f3f0-41c5-b379-c6af29685666"
 Parent: "7485abfd-c755-42cb-868f-0a6d6e76d3d5"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
@@ -20,10 +20,10 @@ Languages:
   Fields:
   - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
     Hint: Title
-    Value: Rækker
+    Value: R�kker
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Rækker
+    Value: R�kker
   Versions:
   - Version: 1
     Fields:
@@ -67,10 +67,10 @@ Languages:
   Fields:
   - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
     Hint: Title
-    Value: 行
+    Value: ?
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 行
+    Value: ?
   Versions:
   - Version: 1
     Fields:
@@ -85,10 +85,10 @@ Languages:
   Fields:
   - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
     Hint: Title
-    Value: 行
+    Value: ?
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 行
+    Value: ?
   Versions:
   - Version: 1
     Fields:

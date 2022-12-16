@@ -1,12 +1,12 @@
-﻿using System;
+using System;
 using NUnit.Framework;
 using Sitecore.Data;
 using Sitecore.Data.Items;
 using Sitecore.FakeDb;
-using Thread.Feature.Events.Models;
-using Thread.Foundation.Enumerations;
+using AtriusHealth.Feature.Events.Models;
+using AtriusHealth.Foundation.Enumerations;
 
-namespace Thread.Feature.Events.Tests.Models
+namespace AtriusHealth.Feature.Events.Tests.Models
 {
 	[TestFixture]
 	public class EventDetailsModelTests

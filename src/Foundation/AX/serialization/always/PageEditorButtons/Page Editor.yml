@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "0642041b-6e6c-4b82-9648-bb6603e8dce5"
 Parent: "570a52b6-6755-461a-8052-5b95ef766f74"
 Template: "ec6d62a5-5d00-4329-8958-8ac1ad100ebb"
@@ -86,7 +86,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: エクスペリエンス エディター
+    Value: ???????? ?????
   Versions:
   - Version: 1
     Fields:
@@ -95,7 +95,7 @@ Languages:
       Value: 20171219T155952Z
     - ID: "5453dc07-6a17-48ba-8d05-17db90a2e795"
       Hint: Header
-      Value: ホーム
+      Value: ???
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -104,7 +104,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 网页编辑器
+    Value: ?????
   Versions:
   - Version: 1
     Fields:
@@ -113,7 +113,7 @@ Languages:
       Value: 20181101T101057Z
     - ID: "5453dc07-6a17-48ba-8d05-17db90a2e795"
       Hint: Header
-      Value: 主页
+      Value: ??
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

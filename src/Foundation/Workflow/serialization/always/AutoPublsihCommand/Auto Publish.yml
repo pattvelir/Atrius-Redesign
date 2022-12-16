@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "49bcb30e-239c-43fd-bef4-952de71f01bf"
 Parent: "3ebec263-b57e-4a3c-a232-7c70519f9908"
 Template: "58119a3e-560e-4da6-97c6-1ace8a5b1219"
@@ -10,7 +10,7 @@ SharedFields:
   Value: Run
 - ID: "752579a7-ef2f-45b7-b9d1-9b682308b7a5"
   Hint: Type
-  Value: Thread.Foundation.Workflow.Commands.AutoPublish, Thread.Foundation.Workflow
+  Value: AtriusHealth.Foundation.Workflow.Commands.AutoPublish, AtriusHealth.Foundation.Workflow
 Languages:
 - Language: en
   Versions:

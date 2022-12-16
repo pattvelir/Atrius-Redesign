@@ -1,92 +1,90 @@
-﻿@using Thread.Foundation.SitecoreExtensions.Base
-@using Thread.Foundation.Dictionary.Repositories
-
-@model Thread.Feature.Promo.Models.DynamicPromoModel
+@using AtriusHealth.Foundation.SitecoreExtensions.Base
+@using AtriusHealth.Foundation.Dictionary.Repositories
+@model AtriusHealth.Feature.Promo.Models.DynamicPromoModel
 
 @if (Model != null && Model.Datasource != null && Model.FeaturePage != null)
 {
-    <section class="promo @(Model.OrientationClass)">
-        @if (Model.RenderingParameters.ImageFormat != null && Model.RenderingParameters.ImageFormat.ID.ToString() != "{7B1025DC-9D74-491D-A3AF-14BB1706C684}" &&
-            (!string.IsNullOrEmpty(Model.FeaturePage.ListImage16X9) || !string.IsNullOrEmpty(Model.FeaturePage.ListImage1X1)))
-        {
-            <figure class="promo__media">
-                <a href="@Model.FeaturePage.ListUrl">
-                    <picture>
-                        @{
-                            var imagesrc = Model.ImageRatio == Thread.Foundation.Enumerations.References.ImageFormat.OneByOne ? Model.FeaturePage.ListImage1X1 : Model.FeaturePage.ListImage16X9;
-                        }
-                        @if (!Sitecore.Context.PageMode.IsExperienceEditorEditing)
-                        {
+  <section class="promo @(Model.OrientationClass)">
+    @if (Model.RenderingParameters.ImageFormat != null && Model.RenderingParameters.ImageFormat.ID.ToString() != "{7B1025DC-9D74-491D-A3AF-14BB1706C684}" &&
+        (!string.IsNullOrEmpty(Model.FeaturePage.ListImage16X9) || !string.IsNullOrEmpty(Model.FeaturePage.ListImage1X1)))
+    {
+      <figure class="promo__media">
+        <a href="@Model.FeaturePage.ListUrl">
+          <picture>
+            @{
+              var imagesrc = Model.ImageRatio == AtriusHealth.Foundation.Enumerations.References.ImageFormat.OneByOne ? Model.FeaturePage.ListImage1X1 : Model.FeaturePage.ListImage16X9;
+            }
+            @if (!Sitecore.Context.PageMode.IsExperienceEditorEditing)
+            {
 
-                            <source srcset="@imagesrc.FormatImagePath(615)" media="(min-width: 56.9375em)">
-                            <source srcset="@imagesrc.FormatImagePath(420)" media="(min-width: 29.4375em)">
-                            <source srcset="@imagesrc.FormatImagePath(420)" media="(max-width: 29.375em)">
-                        }
+              <source srcset="@imagesrc.FormatImagePath(615)" media="(min-width: 56.9375em)">
+              <source srcset="@imagesrc.FormatImagePath(420)" media="(min-width: 29.4375em)">
+              <source srcset="@imagesrc.FormatImagePath(420)" media="(max-width: 29.375em)">
+            }
 
-                        <img src="@imagesrc.FormatImagePath(615)">
-                    </picture>
-                </a>
-                <figcaption class="u-visuallyhidden"></figcaption>
-            </figure>
-        }
-            <div class="promo__content">
+            <img src="@imagesrc.FormatImagePath(615)">
+          </picture>
+        </a>
+        <figcaption class="u-visuallyhidden"></figcaption>
+      </figure>
+    }
+    <div class="promo__content">
 
-                @if (Model.RenderingParameters.DisplayContentTypeLabel)
-                {
-                    <h2 class="list-item__eyebrow">
-                        @Model.FeaturePage.ListContentType
-                    </h2>
-                }
+      @if (Model.RenderingParameters.DisplayContentTypeLabel)
+      {
+        <h2 class="list-item__eyebrow">
+          @Model.FeaturePage.ListContentType
+        </h2>
+      }
 
-                <a href="@Model.FeaturePage.ListUrl">
-                    <h2 class="promo__title subheader1" id="promo-@Model.Datasource.ID.Guid">@Model.FeaturePage.ListShortTitle</h2>
-                </a>
+      <a href="@Model.FeaturePage.ListUrl">
+        <h2 class="promo__title subheader1" id="promo-@Model.Datasource.ID.Guid">@Model.FeaturePage.ListShortTitle</h2>
+      </a>
 
+      @if (Model.RenderingParameters.DisplaySubtitle && !string.IsNullOrEmpty(Model.FeaturePage.ListSubtitle))
+      {
+        <h3 class="promo__subtitle quote">@Model.FeaturePage.ListSubtitle</h3>
+      }
+      @if (Model.RenderingParameters.DisplaySummary && !string.IsNullOrEmpty(Model.FeaturePage.ListDescription))
+      {
+        <p class="promo__description">@Model.FeaturePage.ListDescription</p>
+      }
+      @if (Model.RenderingParameters.DisplayLink)
+      {
 
-                @if (Model.RenderingParameters.DisplaySubtitle && !string.IsNullOrEmpty(Model.FeaturePage.ListSubtitle))
-                {
-                    <h3 class="promo__subtitle quote">@Model.FeaturePage.ListSubtitle</h3>
-                }
-                @if (Model.RenderingParameters.DisplaySummary && !string.IsNullOrEmpty(Model.FeaturePage.ListDescription))
-                {
-                    <p class="promo__description">@Model.FeaturePage.ListDescription</p>
-                }
-                @if (Model.RenderingParameters.DisplayLink)
-                {
+        <a class="promo__cta" title="Book Now" href="@Model.FeaturePage.ListUrl" aria-labelledby="promo-@Model.Datasource.ID.Guid">
+          @Dictionary.Current.Get("Promo.DynamicPromo.CallToActionLinkText")
+        </a>
 
-                    <a class="promo__cta" title="Book Now" href="@Model.FeaturePage.ListUrl" aria-labelledby="promo-@Model.Datasource.ID.Guid">
-                        @Dictionary.Current.Get("Promo.DynamicPromo.CallToActionLinkText")
-                    </a>
-
-                }
-            </div>
-    </section>
+      }
+    </div>
+  </section>
 }
 else if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
 {
-    <figure class="promo__media">
-        <a href="">
-            <picture>
-                <img src="">
-            </picture>
-        </a>
-        <figcaption class="u-visuallyhidden"></figcaption>
-        <div class="promo__content">
+  <figure class="promo__media">
+    <a href="">
+      <picture>
+        <img src="">
+      </picture>
+    </a>
+    <figcaption class="u-visuallyhidden"></figcaption>
+    <div class="promo__content">
 
-            <h2 class="list-item__eyebrow">
-                Set Dynamic Promo Feature
-            </h2>
+      <h2 class="list-item__eyebrow">
+        Set Dynamic Promo Feature
+      </h2>
 
-            @*<h2 class="promo__title subheader1">Set Dynamic Promo Feature</h2>
+      @*<h2 class="promo__title subheader1">Set Dynamic Promo Feature</h2>
 
-                <h3 class="promo__subtitle quote">Set Dynamic Promo Feature</h3>
+        <h3 class="promo__subtitle quote">Set Dynamic Promo Feature</h3>
 
-                <p class="promo__description">Set Dynamic Promo Feature</p>
+        <p class="promo__description">Set Dynamic Promo Feature</p>
 
-                <a class="promo__cta" title="Book Now" href=" aria-labelledby="promo-Set Dynamic Promo Feature">
-                    Set Dynamic Promo Feature
-                </a>*@
+        <a class="promo__cta" title="Book Now" href=" aria-labelledby="promo-Set Dynamic Promo Feature">
+            Set Dynamic Promo Feature
+        </a>*@
 
-        </div>
-    </figure>
+    </div>
+  </figure>
 }

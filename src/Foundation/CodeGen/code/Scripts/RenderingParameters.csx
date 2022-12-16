@@ -17,9 +17,9 @@ public string RenderTemplates()
 						using Sitecore.Data.Fields;
 						using Sitecore.Data.Items;
 						using Sitecore.Mvc.Presentation;
-						using Thread.Foundation.Orm;
+						using AtriusHealth.Foundation.Orm;
 
-						public partial class {RenderTemplateName(template)} : ThreadRenderingParameters
+						public partial class {RenderTemplateName(template)} : AtriusHealthRenderingParameters
 						{{
 							{RenderFieldNames(template)}
 							{RenderConstructors(template)}

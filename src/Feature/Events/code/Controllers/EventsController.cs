@@ -1,11 +1,11 @@
-﻿using System.Web.Mvc;
-using Thread.Feature.Events.Models;
-using Thread.Feature.Events.Services;
-using Thread.Foundation.Mvc.Controllers;
+using System.Web.Mvc;
+using AtriusHealth.Feature.Events.Models;
+using AtriusHealth.Feature.Events.Services;
+using AtriusHealth.Foundation.Mvc.Controllers;
 
-namespace Thread.Feature.Events.Controllers
+namespace AtriusHealth.Feature.Events.Controllers
 {
-	public class EventsController : ThreadController
+	public class EventsController : AtriusHealthController
 	{
 		private readonly IEventMappable _mappingService;
 

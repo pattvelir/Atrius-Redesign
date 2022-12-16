@@ -1,11 +1,11 @@
-﻿using System.Web;
+using System.Web;
 using Sitecore.Data.Fields;
 using Sitecore.Mvc.Helpers;
-using Thread.Feature.Navigation.Models;
-using Thread.Foundation.Mvc.Extensions;
-using Thread.Foundation.SitecoreExtensions.Item;
+using AtriusHealth.Feature.Navigation.Models;
+using AtriusHealth.Foundation.Mvc.Extensions;
+using AtriusHealth.Foundation.SitecoreExtensions.Item;
 
-namespace Thread.Feature.Navigation.Extensions
+namespace AtriusHealth.Feature.Navigation.Extensions
 {
 	public static class SitecoreHelperExtensions
 	{

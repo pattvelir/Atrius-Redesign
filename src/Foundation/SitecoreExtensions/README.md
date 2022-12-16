@@ -8,7 +8,7 @@ This module is a collection of helpful extension methods used by a number of oth
 
 ### DateTimeExtensions
 
-Includes a couple of extension methods to format `DateTime` objects as `strings`.  Of particular use is the `ToThreadFormat` method which is used to ensure that dates are formatted consistently throughout the site.
+Includes a couple of extension methods to format `DateTime` objects as `strings`.  Of particular use is the `ToAtriusHealthFormat` method which is used to ensure that dates are formatted consistently throughout the site.
 
 ### DictionaryExtensions
 

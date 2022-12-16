@@ -1,12 +1,12 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using Sitecore.ContentSearch;
-using Thread.Foundation.Search.Reference;
-using Thread.Foundation.Search.Results;
+using AtriusHealth.Foundation.Search.Reference;
+using AtriusHealth.Foundation.Search.Results;
 
-namespace Thread.Feature.Listing.Results
+namespace AtriusHealth.Feature.Listing.Results
 {
-	public class DynamicContentSearchResultItem : ThreadSearchResultItem
+	public class DynamicContentSearchResultItem : AtriusHealthSearchResultItem
 	{
 		[IndexField(Constants.IndexFieldNames.ContentType)]
 		public Guid ContentTypeId { get; set; }

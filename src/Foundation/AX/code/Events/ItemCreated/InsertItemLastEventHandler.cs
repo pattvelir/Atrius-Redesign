@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using Sitecore;
 using Sitecore.Data.Events;
@@ -6,7 +6,7 @@ using Sitecore.Data.Items;
 using Sitecore.Events;
 using Sitecore.SecurityModel;
 
-namespace Thread.Foundation.AX.Events.ItemCreated
+namespace AtriusHealth.Foundation.AX.Events.ItemCreated
 {
 	public class InsertItemLastEventHandler
 	{

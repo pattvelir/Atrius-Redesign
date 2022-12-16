@@ -1,7 +1,7 @@
-﻿using System;
-using Thread.Foundation.Abstractions.Indexing;
+using System;
+using AtriusHealth.Foundation.Abstractions.Indexing;
 
-namespace Thread.Feature.Events
+namespace AtriusHealth.Feature.Events
 {
 	public partial class _EventDatesItem : ISortable
 	{

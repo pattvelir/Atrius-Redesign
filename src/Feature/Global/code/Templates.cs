@@ -10,7 +10,7 @@
 //------------------------------------------------------------------------------
 // ReSharper disable All
 
-					namespace Thread.Feature.Global
+					namespace AtriusHealth.Feature.Global
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -55,7 +55,7 @@ public static implicit operator Item(_FooterConnectItem customItem)
 					}
 				
 
-					namespace Thread.Feature.Global
+					namespace AtriusHealth.Feature.Global
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -88,7 +88,7 @@ public static implicit operator Item(_FooterCopyrightItem customItem)
 					}
 				
 
-					namespace Thread.Feature.Global
+					namespace AtriusHealth.Feature.Global
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -125,7 +125,7 @@ public static implicit operator Item(_FooterLogoItem customItem)
 					}
 				
 
-					namespace Thread.Feature.Global
+					namespace AtriusHealth.Feature.Global
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -172,7 +172,7 @@ public static implicit operator Item(_HeaderLogoItem customItem)
 
 
 
-// Thread.Feature.Global._Footer_Connect (/sitecore/templates/Feature/Global/Footer/_Footer Connect afc79bd2-9d91-49e5-8bdc-ca4bf73c7b44)
+// AtriusHealth.Feature.Global._Footer_Connect (/sitecore/templates/Feature/Global/Footer/_Footer Connect afc79bd2-9d91-49e5-8bdc-ca4bf73c7b44)
 	// Connect_Link (9658ac80-64d8-4cc2-a466-bd3c3568d11b)
 		// Type: General Link
 		// Section: Footer
@@ -194,14 +194,14 @@ public static implicit operator Item(_HeaderLogoItem customItem)
 		// Sort Order: 600
 		// Source: 
 
-// Thread.Feature.Global._Footer_Copyright (/sitecore/templates/Feature/Global/Footer/_Footer Copyright 553420cc-2da2-448a-bc94-6364ef2f768c)
+// AtriusHealth.Feature.Global._Footer_Copyright (/sitecore/templates/Feature/Global/Footer/_Footer Copyright 553420cc-2da2-448a-bc94-6364ef2f768c)
 	// Copyright_Statement (ddbaec9a-cd44-44f2-91db-c8f997a279f5)
 		// Type: Single-Line Text
 		// Section: Footer
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Feature.Global._Footer_Logo (/sitecore/templates/Feature/Global/Footer/_Footer Logo ca21bb62-10b5-46d5-a713-683c56333fef)
+// AtriusHealth.Feature.Global._Footer_Logo (/sitecore/templates/Feature/Global/Footer/_Footer Logo ca21bb62-10b5-46d5-a713-683c56333fef)
 	// Footer_Branding_Title (a96facc6-3890-4e57-bb5a-1770a5115cca)
 		// Type: Single-Line Text
 		// Section: Footer
@@ -213,7 +213,7 @@ public static implicit operator Item(_HeaderLogoItem customItem)
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Feature.Global._Header_Logo (/sitecore/templates/Feature/Global/Header/_Header Logo c5e2c715-1397-4ba4-8ebd-ac8e038736d4)
+// AtriusHealth.Feature.Global._Header_Logo (/sitecore/templates/Feature/Global/Header/_Header Logo c5e2c715-1397-4ba4-8ebd-ac8e038736d4)
 	// Header_Branding_Title (21ce934b-783b-4864-a152-eeeaf3a6d121)
 		// Type: Single-Line Text
 		// Section: Header

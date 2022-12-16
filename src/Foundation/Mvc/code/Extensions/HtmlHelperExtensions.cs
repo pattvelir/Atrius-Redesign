@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq.Expressions;
 using System.Web.Mvc;
 using System.Web.Mvc.Html;
@@ -6,7 +6,7 @@ using Sitecore.Data.Items;
 using Sitecore.Mvc.Common;
 using Sitecore.Mvc.Extensions;
 
-namespace Thread.Foundation.Mvc.Extensions
+namespace AtriusHealth.Foundation.Mvc.Extensions
 {
 	public static class HtmlHelperExtensions
 	{

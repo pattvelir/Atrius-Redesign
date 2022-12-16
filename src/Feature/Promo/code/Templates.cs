@@ -10,7 +10,7 @@
 //------------------------------------------------------------------------------
 // ReSharper disable All
 
-					namespace Thread.Feature.Promo
+					namespace AtriusHealth.Feature.Promo
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -43,7 +43,7 @@ public static implicit operator Item(DynamicPromoItem customItem)
 					}
 				
 
-					namespace Thread.Feature.Promo
+					namespace AtriusHealth.Feature.Promo
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -76,7 +76,7 @@ public static implicit operator Item(MultiPromoItem customItem)
 					}
 				
 
-					namespace Thread.Feature.Promo
+					namespace AtriusHealth.Feature.Promo
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -129,7 +129,7 @@ public static implicit operator Item(PromoItem customItem)
 					}
 				
 
-					namespace Thread.Feature.Promo
+					namespace AtriusHealth.Feature.Promo
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
@@ -178,15 +178,15 @@ public static implicit operator Item(PullQuoteItem customItem)
 
 
 
-					namespace Thread.Feature.Promo
+					namespace AtriusHealth.Feature.Promo
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
 						using Sitecore.Data.Items;
 						using Sitecore.Mvc.Presentation;
-						using Thread.Foundation.Orm;
+						using AtriusHealth.Foundation.Orm;
 
-						public partial class DynamicPromoRenderingParameters : ThreadRenderingParameters
+						public partial class DynamicPromoRenderingParameters : AtriusHealthRenderingParameters
 						{
 							public static class Fields
 		{
@@ -216,23 +216,23 @@ public DynamicPromoRenderingParameters(string parametersAsQueryString) : base(pa
 
 				public virtual bool DisplaySummary => GetBoolValue(Fields.DisplaySummary);
 
-				public virtual Thread.Foundation.Enumerations.RatioItem ImageFormat => GetItemValue(Fields.ImageFormat);
+				public virtual AtriusHealth.Foundation.Enumerations.RatioItem ImageFormat => GetItemValue(Fields.ImageFormat);
 
-				public virtual Thread.Foundation.Enumerations.OrientationItem ImageOrientation => GetItemValue(Fields.ImageOrientation);
+				public virtual AtriusHealth.Foundation.Enumerations.OrientationItem ImageOrientation => GetItemValue(Fields.ImageOrientation);
 
 						}
 					}
 				
 
-					namespace Thread.Feature.Promo
+					namespace AtriusHealth.Feature.Promo
 					{
 						using Sitecore.Data;
 						using Sitecore.Data.Fields;
 						using Sitecore.Data.Items;
 						using Sitecore.Mvc.Presentation;
-						using Thread.Foundation.Orm;
+						using AtriusHealth.Foundation.Orm;
 
-						public partial class PromoRenderingParameters : ThreadRenderingParameters
+						public partial class PromoRenderingParameters : AtriusHealthRenderingParameters
 						{
 							public static class Fields
 		{
@@ -244,7 +244,7 @@ public DynamicPromoRenderingParameters(string parametersAsQueryString) : base(pa
 public PromoRenderingParameters(string parametersAsQueryString) : base(parametersAsQueryString) {}
 
 							
-				public virtual Thread.Foundation.Enumerations.OrientationItem Orientation => GetItemValue(Fields.Orientation);
+				public virtual AtriusHealth.Foundation.Enumerations.OrientationItem Orientation => GetItemValue(Fields.Orientation);
 
 						}
 					}
@@ -252,14 +252,14 @@ public PromoRenderingParameters(string parametersAsQueryString) : base(parameter
 
 
 
-// Thread.Feature.Promo.Dynamic_Promo (/sitecore/templates/Feature/Promo/Dynamic Promo e1d1f8d7-36d5-4c92-a3e4-697127688f65)
+// AtriusHealth.Feature.Promo.Dynamic_Promo (/sitecore/templates/Feature/Promo/Dynamic Promo e1d1f8d7-36d5-4c92-a3e4-697127688f65)
 	// Feature (c55982ce-712e-4749-9be0-4851d12efe0d)
 		// Type: Droptree
 		// Section: Configuration
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Feature.Promo.Dynamic_Promo_Rendering_Parameters (/sitecore/templates/Feature/Promo/Dynamic Promo Rendering Parameters 78188cec-8003-4f47-8dad-e68d6b7b9433)
+// AtriusHealth.Feature.Promo.Dynamic_Promo_Rendering_Parameters (/sitecore/templates/Feature/Promo/Dynamic Promo Rendering Parameters 78188cec-8003-4f47-8dad-e68d6b7b9433)
 	// Display_Content_Type_Label (4908e72e-a35a-4d3d-92ef-042d338cd82a)
 		// Type: Checkbox
 		// Section: Display Options
@@ -281,24 +281,24 @@ public PromoRenderingParameters(string parametersAsQueryString) : base(parameter
 		// Sort Order: 500
 		// Source: 
 	// Image_Format (886360bf-3e31-4e30-b8b4-b440fab7525c)
-		// Type: custom=Thread.Foundation.Enumerations.RatioItem
+		// Type: custom=AtriusHealth.Foundation.Enumerations.RatioItem
 		// Section: Display Options
 		// Sort Order: 200
 		// Source: /sitecore/content/Global Configuration/Enumerations/Ratios
 	// Image_Orientation (f26501b9-4ce7-4d6b-bbf6-605ff5865970)
-		// Type: custom=Thread.Foundation.Enumerations.OrientationItem
+		// Type: custom=AtriusHealth.Foundation.Enumerations.OrientationItem
 		// Section: Display Options
 		// Sort Order: 100
 		// Source: /sitecore/content/Global Configuration/Enumerations/Orientation
 
-// Thread.Feature.Promo.Multi_Promo (/sitecore/templates/Feature/Promo/Multi Promo e822a1e9-d502-463d-b38c-fdb84b3afabf)
+// AtriusHealth.Feature.Promo.Multi_Promo (/sitecore/templates/Feature/Promo/Multi Promo e822a1e9-d502-463d-b38c-fdb84b3afabf)
 	// Title (e5a0df4d-4b8a-4fc5-b1b0-45962fe22b5a)
 		// Type: Single-Line Text
 		// Section: Title
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Feature.Promo.Promo (/sitecore/templates/Feature/Promo/Promo 4dee566f-614c-4a89-8f0b-00f4b04beab9)
+// AtriusHealth.Feature.Promo.Promo (/sitecore/templates/Feature/Promo/Promo 4dee566f-614c-4a89-8f0b-00f4b04beab9)
 	// Description (62ae03c9-f72c-4f43-9537-83f0f2c9616b)
 		// Type: Multi-Line Text
 		// Section: Text
@@ -325,14 +325,14 @@ public PromoRenderingParameters(string parametersAsQueryString) : base(parameter
 		// Sort Order: 100
 		// Source: 
 
-// Thread.Feature.Promo.Promo_Rendering_Parameters (/sitecore/templates/Feature/Promo/Promo Rendering Parameters 0e8d3193-6621-44f3-8b10-160e221fe41d)
+// AtriusHealth.Feature.Promo.Promo_Rendering_Parameters (/sitecore/templates/Feature/Promo/Promo Rendering Parameters 0e8d3193-6621-44f3-8b10-160e221fe41d)
 	// Orientation (f1a3dbb2-63b6-45ce-a781-9dc3e122ab86)
-		// Type: custom=Thread.Foundation.Enumerations.OrientationItem
+		// Type: custom=AtriusHealth.Foundation.Enumerations.OrientationItem
 		// Section: Display Options
 		// Sort Order: 100
 		// Source: /sitecore/content/Global Configuration/Enumerations/Orientation
 
-// Thread.Feature.Promo.Pull_Quote (/sitecore/templates/Feature/Promo/Pull Quote 755f251c-81ed-490c-81ae-c05dd3f6bd2f)
+// AtriusHealth.Feature.Promo.Pull_Quote (/sitecore/templates/Feature/Promo/Pull Quote 755f251c-81ed-490c-81ae-c05dd3f6bd2f)
 	// Company (f5157f10-b660-40bf-9f93-ecefc38ca4cf)
 		// Type: Single-Line Text
 		// Section: Text

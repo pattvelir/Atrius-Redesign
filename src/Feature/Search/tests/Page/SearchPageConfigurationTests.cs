@@ -1,13 +1,13 @@
-﻿using NSubstitute;
+using NSubstitute;
 using NUnit.Framework;
 using Sitecore.Data;
 using Sitecore.FakeDb;
-using Thread.Feature.Search.Page;
-using Thread.Foundation.Enumerations;
+using AtriusHealth.Feature.Search.Page;
+using AtriusHealth.Foundation.Enumerations;
 using Velir.Search.Core.Factory;
 using Velir.Search.Core.Rules.Parser;
 
-namespace Thread.Feature.Search.Tests.Page
+namespace AtriusHealth.Feature.Search.Tests.Page
 {
 	[TestFixture]
 	public class SearchPageConfigurationTests

@@ -2,6 +2,7 @@ import React from "react";
 import { arrayOf, string, shape } from "prop-types";
 import cx from "classnames";
 import Icon from "../Icon/Icon.jsx";
+import TextWithIcon from "../TextWithIcon/TextWithIcon.jsx";
 // import "./language-selector.scss";
 
 const propTypes = {
@@ -27,10 +28,7 @@ const LanguageSelector = (props) => {
           type="button"
           className="language-selector__toggle js-lang-select-toggle"
         >
-          <span className="language-selector__title">Languages</span>
-          <span className="icon">
-            <Icon iconName="chevron-down" aria-hidden="true" />
-          </span>
+          <TextWithIcon text="Translate" icon="translate" />
         </button>
         <ul className="language-selector__menu js-lang-select-menu">
           {items &&

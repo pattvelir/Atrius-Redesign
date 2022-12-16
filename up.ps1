@@ -1,3 +1,6 @@
+param(
+        [switch]$IncludeDbBackups
+    )
 
 $ScriptPath = Split-Path $MyInvocation.MyCommand.Path
 
@@ -57,8 +60,18 @@ if (-not $status.status -eq "enabled") {
     Write-Error "Timeout waiting for Sitecore CM to become available via Traefik proxy. Check CM container logs."
 }
 
+if($IncludeDbBackups.IsPresent) {
+    Write-Host "Extracting production SQL bacpacs..." -ForegroundColor Green
+
+    Export-SqlBacPacs -Server "VELBOS-SQL1901" -ClientKeyword "AtriusHealth" -EnvironmentKeyword "prod"
+    
+    Write-Host "Importing production SQL bacpacs..." -ForegroundColor Green
+    
+    Import-SqlBacPacs    
+}
+
 Write-Host "Restoring NuGet packages..." -ForegroundColor Green
-.nuget\nuget.exe restore .\Thread-Sitecore.sln
+.nuget\nuget.exe restore .\AtriusHealth.sln
 
 Write-Host "Building Solution..." -ForegroundColor Green
 

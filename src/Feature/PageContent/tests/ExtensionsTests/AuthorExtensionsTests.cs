@@ -1,12 +1,12 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
 using Sitecore.Data;
 using Sitecore.FakeDb;
-using Thread.Feature.PageContent.Extensions;
-using Thread.Foundation.Taxonomy;
+using AtriusHealth.Feature.PageContent.Extensions;
+using AtriusHealth.Foundation.Taxonomy;
 
-namespace Thread.Feature.PageContent.Tests.ExtensionsTests
+namespace AtriusHealth.Feature.PageContent.Tests.ExtensionsTests
 {
 	[TestFixture]
 	public class AuthorExtensionsTests

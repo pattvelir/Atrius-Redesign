@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
 using Sitecore;
@@ -7,11 +7,11 @@ using Sitecore.Data.Items;
 using Sitecore.Layouts;
 using Sitecore.Mvc.Devices;
 using Sitecore.Mvc.Pipelines.Response.GetXmlBasedLayoutDefinition;
-using Thread.Foundation.SitecoreExtensions.Base;
+using AtriusHealth.Foundation.SitecoreExtensions.Base;
 using Log = Sitecore.Diagnostics.Log;
 using PageContext = Sitecore.Mvc.Presentation.PageContext;
 
-namespace Thread.Foundation.CascadedRenderings.Pipelines.GetXmlBasedLayoutDefinition
+namespace AtriusHealth.Foundation.CascadedRenderings.Pipelines.GetXmlBasedLayoutDefinition
 {
     public class InsertCascadedRenderings : GetXmlBasedLayoutDefinitionProcessor
     {

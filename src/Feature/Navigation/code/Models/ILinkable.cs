@@ -1,6 +1,6 @@
-﻿using Sitecore.Data.Fields;
+using Sitecore.Data.Fields;
 
-namespace Thread.Feature.Navigation.Models
+namespace AtriusHealth.Feature.Navigation.Models
 {
 	public interface ILinkable
 	{

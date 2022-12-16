@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using System.Globalization;
 using System.Text.RegularExpressions;
 
-namespace Thread.Foundation.SitecoreExtensions.Base
+namespace AtriusHealth.Foundation.SitecoreExtensions.Base
 {
 	public static class DateTimeExtensions
 	{
@@ -39,7 +39,7 @@ namespace Thread.Foundation.SitecoreExtensions.Base
 			return date.ToString(format);
 		}
 
-		public static string ToThreadFormat(this DateTime date)
+		public static string ToAtriusHealthFormat(this DateTime date)
 		{
 			if (date == DateTime.MinValue) return string.Empty;
             return date.ToServerTime().ToStringExtended("MMM dd, yyyy");

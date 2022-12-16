@@ -2,10 +2,14 @@
 
 /* button element */
 .nav-toggle {
-  display: block;
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 18px;
+  gap: var(--spacing-8);
+  justify-items: start;
   padding: 0;
-  background: 0;
   border: 0;
+  background: 0;
   cursor: pointer;
 }
 
@@ -16,8 +20,8 @@
 .nav-toggle__icon {
   position: relative;
   display: inline-block;
-  height: 20px;
-  width: 20px;
+  height: 12px;
+  width: 24px;
   cursor: pointer;
 
   span {
@@ -58,17 +62,12 @@
 }
 
 .nav-toggle__label {
-  padding-top: 4px;
-
   color: $base-body-color;
-  font-family: $font-secondary;
-  font-size: 0.75rem;
-  font-weight: bold;
-  text-transform: uppercase;
+  font: var(--font-ui-labels-ui-xsm-smb);
 }
 
 .nav-toggle__label--open {
-  display: block;
+  display: inline-block;
 }
 
 .nav-toggle__label--close {

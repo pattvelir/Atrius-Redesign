@@ -1,8 +1,8 @@
-﻿using Glass.Mapper.Sc.Fields;
+using Glass.Mapper.Sc.Fields;
 using NUnit.Framework;
-using Thread.Foundation.ResponsiveImages.Extensions;
+using AtriusHealth.Foundation.ResponsiveImages.Extensions;
 
-namespace Thread.Foundation.ResponsiveImages.Tests.Extensions
+namespace AtriusHealth.Foundation.ResponsiveImages.Tests.Extensions
 {
 	[TestFixture]
 	public class ImageExtensionsTests

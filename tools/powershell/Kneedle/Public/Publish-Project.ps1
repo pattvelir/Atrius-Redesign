@@ -13,18 +13,14 @@
         Optional parameter.  Used in conjunction with the 'Layer' parameter, will build/publish
         a single module.
     .EXAMPLE
-        Publish-Project -All
-
-        All modules in the solution will be build/published to site.
-
-        Publish-Project -Layer "Feature"
-
-        All modules defined at the Feature layer of the project will be built/published to
-        the site.
-
-        Publish-Project -Layer "Feature" -Module "Search"
-
-        Only the Search Feature module will be built/published to the site.
+        PS> Publish-Project -All
+        MSBuild output for all projects in the solution.
+    .EXAMPLE
+        PS> Publish-Project -Layer "Feature"
+        MSBuild output for all projects in the Feature layer.
+    .EXAMPLE
+        PS> Publish-Project -Layer "Feature" -Module "Search"
+        MSBuild output for Search Feature.
 #>
 Function Publish-Project {
     param(
@@ -36,6 +32,7 @@ Function Publish-Project {
     $configuration = Get-ConfigValue -Key "BuildConfiguration"
     $buildParameters = "/p:Configuration=$configuration /p:DeployOnBuild=True /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem /p:PublishProfile=Local"
 
+    $buildResult = $null
     if($All.IsPresent) {
         $slnToBuild = Get-ChildItem -Filter *_FastBuild.proj -Name | Select-Object -First 1
         if($null -eq $slnToBuild) {
@@ -43,7 +40,7 @@ Function Publish-Project {
         }
 
         if($null -ne $slnToBuild) {
-            Invoke-MsBuild -Path ".\$slnToBuild" -MsBuildParameters $buildParameters -ShowBuildOutputInCurrentWindow
+            $buildResult = Invoke-MsBuild -Path ".\$slnToBuild" -MsBuildParameters $buildParameters -ShowBuildOutputInCurrentWindow
         }
         else {
             Write-Error "Failed to find solution file."
@@ -57,10 +54,14 @@ Function Publish-Project {
             Get-ChildItem -Filter "src\$Layer\*" | Foreach-Object { 
                 $path = "src\$Layer\" + $_.Name + "\code\*.csproj"
                 $proj = Get-ChildItem -Filter $path | Select-Object -First 1
-                Invoke-MsBuild -Path $proj.FullName -MsBuildParameters $buildParameters -ShowBuildOutputInCurrentWindow }
+                $buildResult = Invoke-MsBuild -Path $proj.FullName -MsBuildParameters $buildParameters -ShowBuildOutputInCurrentWindow }
         }        
     }
     else {
         Write-Error "Please supply the 'All' flag or specify a Layer (Options are Foundation, Feature, Project)"
+    }
+
+    if($null -eq $buildResult -or -not $buildResult.BuildSucceeded) {
+        Write-Error "Build Failed"
     }
 }

@@ -6,6 +6,7 @@
 import "./modules/assetsDirectory.js";
 import dynamicRenderer from "./dynamicRenderer.js";
 import "../scss/index.scss";
+import googleTranslate from "./common/translate";
 // import * as Thread from "./modules";
 /**
  * ThreadComponents is an array of every component in thread
@@ -105,4 +106,5 @@ const threadComponents = [
 
 document.addEventListener("DOMContentLoaded", () => {
   threadComponents.forEach(dynamicRenderer);
+  // googleTranslate();
 });

@@ -1,5 +1,6 @@
 import React from "react";
 import { string, arrayOf, shape, bool } from "prop-types";
+import TextWithIcon from "../TextWithIcon/TextWithIcon";
 // import "./utility-nav.scss";
 
 const propTypes = {
@@ -23,15 +24,19 @@ const utilityNav = (props) => {
             return (
               <li key={i} className="utility-nav__item">
                 {navItem.active && (
-                  <span className="utility-nav__link">{navItem.label}</span>
+                  <TextWithIcon
+                    className="utility-nav__link"
+                    icon={navItem.icon}
+                    text={navItem.label}
+                  />
                 )}
                 {!navItem.active && (
-                  <a
+                  <TextWithIcon
                     className="utility-nav__link js-utility-nav-link"
+                    icon={navItem.icon}
+                    text={navItem.label}
                     href={navItem.href}
-                  >
-                    {navItem.label}
-                  </a>
+                  />
                 )}
               </li>
             );

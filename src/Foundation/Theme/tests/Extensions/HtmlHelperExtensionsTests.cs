@@ -1,9 +1,9 @@
 using System.Web.Mvc;
 using NSubstitute;
 using NUnit.Framework;
-using Thread.Foundation.Theme.Extensions;
+using AtriusHealth.Foundation.Theme.Extensions;
 
-namespace Thread.Foundation.Theme.Tests.Extensions
+namespace AtriusHealth.Foundation.Theme.Tests.Extensions
 {
 	[TestFixture]
 	public class HtmlHelperExtensionsTests

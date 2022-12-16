@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Web;
 using Sitecore.Abstractions;
 using Sitecore.Diagnostics;
 using Sitecore.Links;
-using Thread.Foundation.Multisite.Configuration;
+using AtriusHealth.Foundation.Multisite.Configuration;
 
-namespace Thread.Foundation.ErrorHandling.Pipelines.HttpRequestBegin
+namespace AtriusHealth.Foundation.ErrorHandling.Pipelines.HttpRequestBegin
 {
 	public class ExecuteRequest : Sitecore.Pipelines.HttpRequest.ExecuteRequest
 	{
