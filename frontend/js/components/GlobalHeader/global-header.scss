@@ -193,12 +193,16 @@ $global-header__bottom-space: 30px;
 
     &:first-child:nth-last-child(3),
     &:first-child:nth-last-child(3) ~ & {
+      flex: 100% 0 0 !important;
       margin-top: 50px;
       margin-bottom: 0;
       padding-bottom: 40px;
-      flex: 100% 0 0 !important;
       border-right: none;
       border-bottom: thin solid var(--color-neutral-200);
+
+      @media screen and (max-width: 525px) {
+        margin-bottom: 50px;
+      }
     }
   }
 }
