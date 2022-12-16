@@ -22,7 +22,7 @@ export default {
       https://placekitten.com/472/260 2800w,
       https://placekitten.com/472/260 3200w"
     `,
-      theme: "theme4",
+      theme: "theme5",
     },
     {
       title: "Lotus brodium virtualiter captiss barcas est?",
@@ -32,7 +32,7 @@ export default {
         "Favere rare ducunt ad varius luna. Placidus calcaria sapienter captiss fiscina est. Cum luba congregabo, omnes seculaes visum primus, fidelis nuclear vexatum iacerees.",
       cta: "Read Full Article",
       url: "https://www.w3.org/",
-      theme: "theme2",
+      theme: "theme5",
     },
     {
       title: "Sunt triticumes resuscitabo domesticus, germanus caculaes?",
@@ -52,7 +52,7 @@ export default {
       https://placekitten.com/2800/2100 2800w,
       https://placekitten.com/3200/2400 3200w"
     `,
-      theme: "theme3",
+      theme: "theme6",
     },
     {
       title: "Pulchritudine de ferox particula, contactus capio?",
@@ -62,7 +62,7 @@ export default {
         "Tuss manducare! Cedrium de grandis terror, demitto particula! Deus studeres, tanquam flavum finis. Cum verpa cadunt, omnes orexises promissio raptus, pius castores.",
       cta: "Read Full Article",
       url: "https://www.w3.org/",
-      theme: "theme3",
+      theme: "theme6",
     },
     {
       title: "Germanus lixa virtualiter magicaes historia est?",
@@ -72,7 +72,7 @@ export default {
         "Eposs peregrinationes in palatium! Fluctui rusticus luna est. Est regius rumor, cesaris. Cum bulla assimilant, omnes menses quaestio alter, superbus brabeutaes.",
       cta: "Read Full Article",
       url: "https://www.w3.org/",
-      theme: "theme3",
+      theme: "theme5",
     },
   ],
 };

@@ -1,7 +1,22 @@
 @import "../../../scss/variables/index";
 
+:root {
+}
+
 .text-banner {
+  --text-banner-decription: var(--body-sm);
+  --text-banner-heading: var(--font-headings-400-heading-d);
+  --text-banner-container-padding: var(--spacing-40) var(--spacing-16);
+
+  @media (min-width: 361px) {
+    --text-banner-container-padding: var(--spacing-40);
+    --text-banner-decription: var(--body-md);
+    --text-banner-heading: var(--font-headings-1600-800-heading-d);
+  }
+
+  color: var(--text-banner-color);
   text-align: center;
+  background-color: var(--text-banner-background-color);
 
   &.text-banner--no-margin {
     margin-top: 0;
@@ -10,32 +25,17 @@
 }
 
 .text-banner__container.container {
-  padding: 40px 16px;
-
-  @media (min-width: 361px) {
-    padding: 40px;
-  }
+  padding: var(--text-banner-container-padding);
 }
 
 .text-banner__title {
-  margin-block-end: 24px;
-  font-size: 32px;
-  line-height: 1.25;
-
-  @media (min-width: 361px) {
-    font-size: 24px;
-  }
+  margin-block-end: var(--spacing-24);
+  font: var(--text-banner-heading);
 }
 
 .text-banner__description {
-  margin-block-end: 24px;
-  font-family: $secondary-sans;
-  font-size: 18px;
-  line-height: 1.6;
-
-  @media (min-width: 361px) {
-    font-size: 20px;
-  }
+  margin-block-end: var(--spacing-24);
+  font: var(--text-banner-decription);
 }
 
 .text-banner__cta {
@@ -48,21 +48,41 @@
 
 /* Text Banner Themes */
 .text-banner--theme1 {
-  color: var(--color-design-system-white);
-  background-color: var(--color-blue-800);
+  --text-banner-background-color: var(--color-design-system-white);
+  --text-banner-color: var(--color-neutral-900);
 }
 
 .text-banner--theme2 {
-  color: var(--color-design-system-white);
-  background-color: var(--color-green-900);
+  --text-banner-background-color: var(--color-green-900);
+  --text-banner-color: var(--color-design-system-white);
 }
 
 .text-banner--theme3 {
-  color: var(--color-design-system-white);
-  background-color: var(--color-purple-900);
+  --text-banner-background-color: var(--color-purple-900);
+  --text-banner-color: var(--color-design-system-white);
 }
 
 .text-banner--theme4 {
-  color: var(--color-neutral-900);
-  background-color: var(--color-design-system-white);
+  --text-banner-background-color: var(--color-blue-800);
+  --text-banner-color: var(--color-design-system-white);
+}
+
+.text-banner--theme5 {
+  --text-banner-background-color: var(--color-purple-50);
+  --text-banner-color: var(--color-neutral-900);
+}
+
+.text-banner--theme6 {
+  --text-banner-background-color: var(--color-green-50);
+  --text-banner-color: var(--color-neutral-900);
+}
+
+.text-banner--theme7 {
+  --text-banner-background-color: var(--color-blue-50);
+  --text-banner-color: var(--color-neutral-900);
+}
+
+.text-banner--theme8 {
+  --text-banner-background-color: var(--color-yellow-50);
+  --text-banner-color: var(--color-neutral-900);
 }

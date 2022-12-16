@@ -35,5 +35,33 @@ export const textBanner = () => (
     <ContainerBleed>
       <TextBanner {...mockData} colorPairs={null} theme={4} />
     </ContainerBleed>
+
+    <p style={{ textDecoration: "underline", marginTop: "50px" }}>
+      Text Banner Theme 5
+    </p>
+    <ContainerBleed>
+      <TextBanner {...mockData} colorPairs={null} theme={5} />
+    </ContainerBleed>
+
+    <p style={{ textDecoration: "underline", marginTop: "50px" }}>
+      Text Banner Theme 6
+    </p>
+    <ContainerBleed>
+      <TextBanner {...mockData} colorPairs={null} theme={6} />
+    </ContainerBleed>
+
+    <p style={{ textDecoration: "underline", marginTop: "50px" }}>
+      Text Banner Theme 7
+    </p>
+    <ContainerBleed>
+      <TextBanner {...mockData} colorPairs={null} theme={7} />
+    </ContainerBleed>
+
+    <p style={{ textDecoration: "underline", marginTop: "50px" }}>
+      Text Banner Theme 8
+    </p>
+    <ContainerBleed>
+      <TextBanner {...mockData} colorPairs={null} theme={8} />
+    </ContainerBleed>
   </React.Fragment>
 );

@@ -29,13 +29,3 @@ export const multiPromo4 = (args) => (
     <MultiPromo {...mockData} promos={mockData.promos.slice(0, 4)} />
   </ContainerFull>
 );
-
-export const multiPromoWithText = (args) => (
-  <ContainerFull>
-    <MultiPromo {...mockData} promos={null}>
-      <Promo {...promoData[0]} theme="theme3" type="no-image" />
-      <Promo {...promoData[0]} theme="theme3" type="no-image" />
-      <TextBanner {...textData} colorPairs={null} />
-    </MultiPromo>
-  </ContainerFull>
-);

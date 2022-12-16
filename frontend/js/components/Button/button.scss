@@ -126,6 +126,8 @@
     color: var(--btn-blue);
     text-decoration: underline;
     background: var(--btn-white);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 8px;
 
     .icon {
       color: var(--btn-yellow);

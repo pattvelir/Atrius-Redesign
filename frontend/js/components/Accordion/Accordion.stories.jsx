@@ -6,10 +6,9 @@ import AccordionItem from "./AccordionItem/AccordionItem.jsx";
 export default {
   title: "Components/Accordion",
   component: AccordionContainer,
-  subcomponents: AccordionItem,
 };
 
-export const Default = () => (
+const Template = () => (
   <AccordionContainer>
     <AccordionItem title="Vaporware">
       <p>
@@ -46,9 +45,11 @@ export const Default = () => (
     </AccordionItem>
   </AccordionContainer>
 );
-export const SingleH4 = () => (
+export const Default = Template.bind({});
+
+const T2 = () => (
   <AccordionContainer>
-    <AccordionItem title="Air plant authentic">
+    <AccordionItem title="Air plant authentic" type="h4">
       <p>
         Four dollar toast man braid church-key blog tbh williamsburg tonx,
         wayfarers typewriter everyday carry gluten-free green juice cronut woke.
@@ -64,9 +65,11 @@ export const SingleH4 = () => (
   </AccordionContainer>
 );
 
-export const H2Style = () => (
+export const SingleH4 = T2.bind({});
+
+const T3 = () => (
   <AccordionContainer>
-    <AccordionItem title="mixtape 3 wolf moon" type="h2">
+    <AccordionItem title="mixtape 3 wolf moon">
       <p>
         Four dollar toast man braid church-key blog tbh williamsburg tonx,
         wayfarers typewriter everyday carry gluten-free green juice cronut woke.
@@ -81,3 +84,5 @@ export const H2Style = () => (
     </AccordionItem>
   </AccordionContainer>
 );
+
+export const H2Style = T3.bind({});

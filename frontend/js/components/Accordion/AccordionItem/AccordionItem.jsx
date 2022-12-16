@@ -3,12 +3,12 @@ import propTypes from "../Accordion.propTypes.js";
 import Icon from "../../Icon/Icon.jsx";
 
 const AccordionItem = (props) => {
-  const { title, type, children } = props;
+  const { title, type: Component, children } = props;
 
   return (
     <details className="accordion-item">
       <summary className="accordion-item__title">
-        {type == "h2" ? <h2>{title}</h2> : <h4>{title}</h4>}
+        <Component>{title}</Component>
 
         <Icon
           iconName="keyboard_arrow_down"
@@ -18,6 +18,10 @@ const AccordionItem = (props) => {
       <div className="accordion-item__copy">{children}</div>
     </details>
   );
+};
+
+AccordionItem.defaultProps = {
+  type: "h2",
 };
 
 AccordionItem.propTypes = propTypes;

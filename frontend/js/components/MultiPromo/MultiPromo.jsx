@@ -16,7 +16,6 @@ const multiPromo = (props) => {
   return (
     <section className={`multi-promo ${classNames || ""}`}>
       {title && <h2 className="multi-promo__title">{title}</h2>}
-      <p className="multi-promo__description">{description}</p>
       <div
         className={`multi-promo__items--${promos?.length} multi-promo__container`}
       >

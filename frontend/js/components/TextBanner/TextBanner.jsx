@@ -13,7 +13,7 @@ const propTypes = {
 
 const TextBanner = (props) => {
   const { theme, title, description, cta, adjacent } = props;
-  const buttonColor = theme !== 4 ? "light" : "dark";
+  const buttonColor = theme <= 4 && theme != 1 ? "light" : "dark";
 
   return (
     <section

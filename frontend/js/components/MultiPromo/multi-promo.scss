@@ -1,11 +1,12 @@
 @import "../../../scss/variables/index";
 
-:root {
+.multi-promo {
   --multi-promo-title: var(--font-headings-400-heading-d);
-  --multi-promo-description: var(--body-md);
+  --promo-flex: 100% 0 1;
 
-  @media (--bp-small-min) {
+  @media screen and (min-width: 470px) {
     --promo-title: var(--font-headings-1600-800-heading-d);
+    --promo-flex: calc(50% - (var(--spacing-24) / 2)) 0 0;
   }
 }
 
@@ -13,7 +14,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-24);
-  max-inline-size: 744px;
+
+  // max-inline-size: 744px;
 
   &:not(* > .text-banner) {
     .promo:first-child:nth-last-child(3),
@@ -23,16 +25,8 @@
   }
 
   .promo {
-    flex: calc(50% - (var(--spacing-24) / 2)) 0 0;
+    flex: var(--promo-flex);
   }
-
-  // .promo {
-  //   flex: 100% 0 0;
-
-  //   @media (--bp-small-min) {
-  //     flex: calc(50% - (var(--spacing-24) / 2)) 0 0;
-  //   }
-  // }
 
   .text-banner {
     flex-grow: 0;
@@ -42,11 +36,11 @@
 }
 
 .multi-promo__description {
-  font: var(--multi-promo-description);
   margin-block-end: var(--spacing-40);
+  font: var(--multi-promo-description);
 }
 
 .multi-promo__title {
-  font: var(--multi-promo-title);
   margin-block-end: var(--spacing-24);
+  font: var(--multi-promo-title);
 }
