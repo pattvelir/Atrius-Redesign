@@ -100,11 +100,21 @@ export const AllIcons = (args) => (
     }}
   >
     {icons.map((i) => (
-      <IconComponent
-        key={i}
-        className={cx([args.iconSize, args.iconColor])}
-        iconName={i}
-      />
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "24px auto",
+          gridGap: "8px",
+          alignItems: "center",
+        }}
+      >
+        <IconComponent
+          key={i}
+          className={cx([args.iconSize, args.iconColor])}
+          iconName={i}
+        />
+        <span style={{ fontSize: "12px" }}>{i}</span>
+      </div>
     ))}
   </div>
 );
