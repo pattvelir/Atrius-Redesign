@@ -38,7 +38,7 @@ body {
   --label-ui-sm-smb: var(--font-ui-labels-ui-sm-smb);
   --quote-a: var(--font-quote-400-quote-a);
 
-  @media (--bp-medium-min) {
+  @media screen and (min-width: 680px) {
     --heading-a: var(--font-headings-1600-800-heading-a);
     --heading-b: var(--font-headings-1600-800-heading-b);
     --heading-c: var(--font-headings-1600-800-heading-c);
@@ -94,7 +94,7 @@ h6 {
 .txt-h1,
 h1 {
   font: var(--heading-a);
-  @media (--bp-medium-min) {
+  @media screen and (min-width: 680px) {
     --heading-a: var(--font-headings-1600-800-heading-a);
   }
 }
@@ -104,9 +104,9 @@ h1 {
 h2 {
   font: var(--heading-b);
 
-  /* // @media (--bp-medium-min) {
-  //   --heading-b: var(--font-headings-1600-800-heading-b);
-  // } */
+  @media screen and (min-width: 680px) {
+    --heading-b: var(--font-headings-1600-800-heading-b);
+  }
 }
 
 .heading-3,
@@ -114,9 +114,9 @@ h2 {
 h3 {
   font: var(--heading-c);
 
-  /* // @media (--bp-medium-min) {
-  //   --heading-c: var(--font-headings-1600-800-heading-c);
-  // } */
+  @media screen and (min-width: 680px) {
+    --heading-c: var(--font-headings-1600-800-heading-c);
+  }
 }
 
 .heading-4,
@@ -124,9 +124,9 @@ h3 {
 h4 {
   font: var(--heading-d);
 
-  /* // @media (--bp-medium-min) {
-  //   --heading-d: var(--font-headings-1600-800-heading-d);
-  // } */
+  @media screen and (min-width: 680px) {
+    --heading-d: var(--font-headings-1600-800-heading-d);
+  }
 }
 
 .heading-5,
@@ -134,9 +134,9 @@ h4 {
 h5 {
   font: var(--heading-e);
 
-  /* // @media (--bp-medium-min) {
-  //   --heading-e: var(--font-headings-1600-800-heading-e);
-  // } */
+  @media screen and (min-width: 680px) {
+    --heading-e: var(--font-headings-1600-800-heading-e);
+  }
 }
 
 h6,
@@ -161,4 +161,136 @@ p {
 
 .txt-small {
   font-size: 14px;
+}
+
+.sub-heading-a {
+  font: var(--sub-heading-a);
+}
+
+.sub-heading-b {
+  font: var(--sub-heading-b);
+}
+
+.title-a {
+  font: var(--title-a);
+}
+
+.title-b {
+  font: var(--title-b);
+}
+
+.title-c {
+  font: var(--title-c);
+}
+
+.title-d {
+  font: var(--title-d);
+}
+
+.body-xl {
+  font: var(--body-xl);
+}
+
+.body-lg {
+  font: var(--body-lg);
+}
+
+.body-lg-med {
+  font: var(--body-lg-med);
+}
+
+.body-md {
+  font: var(--body-md);
+}
+
+.body-md-med {
+  font: var(--body-md-med);
+}
+
+.body-md-smb {
+  font: var(--body-md-smb);
+}
+
+.body-md-u-smb {
+  font: var(--body-md-u-smb);
+}
+
+.body-md-u {
+  font: var(--body-md-u);
+}
+
+.body-sm {
+  font: var(--body-sm);
+}
+
+.body-xsm {
+  font: var(--body-xsm);
+}
+
+.body-xxsm {
+  font: var(--body-xxsm);
+}
+
+.meta-a {
+  font: var(--meta-a);
+}
+
+.meta-b {
+  font: var(--meta-b);
+}
+
+.meta-c {
+  font: var(--meta-c);
+}
+
+.label-ui-lg {
+  font: var(--label-ui-lg);
+}
+
+.label-ui-md {
+  font: var(--label-ui-md);
+}
+
+.label-ui-md-smb {
+  font: var(--label-ui-md-smb);
+}
+
+.label-ui-sm {
+  font: var(--label-ui-sm);
+}
+
+.label-ui-sm-b {
+  font: var(--label-ui-sm-b);
+}
+
+.label-ui-xsm {
+  font: var(--label-ui-xsm);
+}
+
+.label-ui-xsm-smb {
+  font: var(--label-ui-xsm-smb);
+}
+
+.label-ui-xxsm {
+  font: var(--label-ui-xxsm);
+}
+
+.label-ui-xxsm-med {
+  font: var(--label-ui-xxsm-med);
+}
+
+.label-ui-xxxsm {
+  font: var(--label-ui-xxxsm);
+}
+
+.label-ui-xxxsm-med {
+  font: var(--label-ui-xxxsm-med);
+}
+
+.label-ui-sm-smb {
+  font: var(--label-ui-sm-smb);
+}
+
+.quote-a {
+  font: var(--quote-a);
 }
