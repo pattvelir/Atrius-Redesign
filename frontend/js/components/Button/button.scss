@@ -2,15 +2,6 @@
 @import "../../../scss/variables/index";
 
 :root {
-  --btn-display: inline-block;
-  --btn-border-radius: 100px;
-  --btn-padding: 12px 24px;
-  --btn-font: var(--font-ui-labels-ui-md-smb);
-  --btn-label-margin-inline: 8px;
-  --btn-icon: 24px;
-  --btn-icon-height: 48px;
-  --btn-icon-width: 48px;
-  --btn-margin-inline: var(--btn-label-margin-inline);
   --btn-yellow: var(--color-yellow-primary);
   --btn-dyellow: var(--color-yellow-300);
   --btn-blue: var(--color-blue-800);
@@ -21,6 +12,16 @@
 }
 
 .btn {
+  --btn-display: inline-block;
+  --btn-border-radius: 100px;
+  --btn-padding: 12px 24px;
+  --btn-font: var(--font-ui-labels-ui-md-smb);
+  --btn-label-margin-inline: 8px;
+  --btn-icon: 24px;
+  --btn-icon-height: 48px;
+  --btn-icon-width: 48px;
+  --btn-margin-inline: var(--btn-label-margin-inline);
+
   display: var(--btn-display);
   padding: var(--btn-padding);
   font: var(--btn-font);
@@ -31,10 +32,10 @@
   transition: color 0.35s, background-color 0.35s, border-color 0.35s;
   cursor: pointer;
 
-  .btn__label {
+  &:not(.btn--icon) .btn__label {
     margin-inline: var(--btn-margin-inline);
-    font: var(--btn-font);
     vertical-align: middle;
+    font: var(--btn-font);
   }
 
   .icon {
@@ -43,12 +44,12 @@
   }
 
   &.btn--xsm {
-    --btn-padding: 8px 12px;
+    --btn-padding: var(--spacing-8) var(--spacing-12);
     --btn-font: var(--font-ui-labels-ui-xsm-smb);
   }
 
-  &.btn--search {
-    --btn-padding: 4px 10px;
+  &.btn--xxsm {
+    --btn-padding: var(--spacing-4) var(--spacing-10);
     --btn-font: var(--font-ui-labels-ui-xxsm-med);
     --btn-icon: 16px;
   }
@@ -74,13 +75,19 @@
     padding-left: 0;
     padding-right: 0;
   }
-}
 
-.btn--disabled,
-.btn[disabled="true"] {
-  opacity: 0.3;
-  cursor: default;
-  pointer-events: none;
+  &:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 8px;
+  }
+
+  &.btn--disabled,
+  &[disabled],
+  &:disabled {
+    cursor: default;
+    pointer-events: none;
+  }
 }
 
 /* modifiers
@@ -129,10 +136,7 @@
 
   &:hover {
     color: var(--btn-blue);
-    text-decoration: underline;
     background: var(--btn-white);
-    text-decoration-thickness: 2px;
-    text-underline-offset: 8px;
 
     .icon {
       color: var(--btn-yellow);
@@ -229,6 +233,8 @@
 }
 
 .btn--link {
+  --btn-font: var(--font-ui-labels-ui-md-smb);
+
   border: none;
   background-color: transparent;
 

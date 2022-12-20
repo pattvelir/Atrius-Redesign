@@ -32,7 +32,7 @@ const Button = (props) => {
         "btn--light": btnColor === "light",
         "btn--xsm": size === "xsm",
         "btn--small": size === "sm",
-        "btn--search": size === "search",
+        "btn--xxsm": size === "xxsm",
         "btn--icon": icon,
       })}
       title={children}

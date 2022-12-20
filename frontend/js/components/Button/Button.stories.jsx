@@ -36,7 +36,7 @@ export const buttons = () => (
         iconLeft="chevron-down"
         iconRight="chevron-down"
       >
-        outline Dark
+        Outline Dark
       </Button>
 
       <Button
@@ -45,7 +45,7 @@ export const buttons = () => (
         iconLeft="chevron-down"
         iconRight="chevron-down"
       >
-        outline Light
+        Outline Light
       </Button>
       <div>
         <Button
@@ -53,7 +53,6 @@ export const buttons = () => (
           btnColor="dark"
           iconLeft="close"
           iconRight="close"
-          size="search"
         >
           Link Dark
         </Button>
@@ -63,7 +62,6 @@ export const buttons = () => (
           btnColor="light"
           iconLeft="close"
           iconRight="close"
-          size="search"
         >
           Link Light
         </Button>
@@ -116,25 +114,20 @@ export const buttons = () => (
 
     <p>Search</p>
     <div style={{ margin: "10px 0" }}>
-      <Button btnType="filled" btnColor="dark" iconRight="close" size="search">
+      <Button btnType="filled" btnColor="dark" iconRight="close" size="xxsm">
         Filled Dark
       </Button>
 
-      <Button btnType="filled" btnColor="light" iconRight="close" size="search">
+      <Button btnType="filled" btnColor="light" iconRight="close" size="xxsm">
         Filled Light
       </Button>
     </div>
     <div style={{ margin: "10px 0" }}>
-      <Button btnType="outline" btnColor="dark" iconRight="close" size="search">
+      <Button btnType="outline" btnColor="dark" iconRight="close" size="xxsm">
         outline Dark
       </Button>
 
-      <Button
-        btnType="outline"
-        btnColor="light"
-        iconRight="close"
-        size="search"
-      >
+      <Button btnType="outline" btnColor="light" iconRight="close" size="xxsm">
         outline Light
       </Button>
     </div>
@@ -176,6 +169,7 @@ export const typesButton = () => (
     >
       Dark
     </Button>
+
     <Button
       btnType="filled"
       btnColor="light"
@@ -184,6 +178,7 @@ export const typesButton = () => (
     >
       Light
     </Button>
+
     <p>Outline</p>
     <div style={{ background: "#333", display: "inline-block" }}>
       <Button
@@ -229,17 +224,195 @@ export const typesButton = () => (
   </ContainerFull>
 );
 export const sizesButton = () => (
-  <ContainerFull>
-    <Button btnType="secondary">Secondary</Button>
-  </ContainerFull>
+  <>
+    <ContainerFull style={{ marginBottom: "80px" }}>
+      <h2>Default</h2>
+      <Button
+        btnType="filled"
+        btnColor="dark"
+        iconLeft="chevron-down"
+        iconRight="chevron-down"
+      >
+        Filled
+      </Button>
+      <Button
+        btnType="outline"
+        btnColor="light"
+        iconLeft="chevron-down"
+        iconRight="chevron-down"
+      >
+        Outline
+      </Button>
+      <Button
+        btnType="link"
+        btnColor="light"
+        iconLeft="chevron-down"
+        iconRight="chevron-down"
+      >
+        Link
+      </Button>
+    </ContainerFull>
+
+    <ContainerFull style={{ marginBottom: "80px" }}>
+      <h2>XSM</h2>
+      <Button
+        btnType="filled"
+        btnColor="dark"
+        iconLeft="chevron-down"
+        iconRight="chevron-down"
+        size="xsm"
+      >
+        Filled
+      </Button>
+      <Button
+        btnType="outline"
+        btnColor="light"
+        iconLeft="chevron-down"
+        iconRight="chevron-down"
+        size="xsm"
+      >
+        Outline
+      </Button>
+      <Button
+        btnType="link"
+        btnColor="light"
+        iconLeft="chevron-down"
+        iconRight="chevron-down"
+        size="xsm"
+      >
+        Link
+      </Button>
+    </ContainerFull>
+    <ContainerFull style={{ marginBottom: "80px" }}>
+      <h2>XXSM (search)</h2>
+      <Button
+        btnType="filled"
+        btnColor="dark"
+        iconLeft="chevron-down"
+        iconRight="chevron-down"
+        size="xxsm"
+      >
+        Filled
+      </Button>
+      <Button
+        btnType="outline"
+        btnColor="light"
+        iconLeft="chevron-down"
+        iconRight="chevron-down"
+        size="xxsm"
+      >
+        Outline
+      </Button>
+      <Button
+        btnType="link"
+        btnColor="light"
+        iconLeft="chevron-down"
+        iconRight="chevron-down"
+        size="xxsm"
+      >
+        Link
+      </Button>
+    </ContainerFull>
+  </>
 );
 export const specialButton = () => (
-  <ContainerFull>
-    <Button btnType="outline">Outline</Button>
-  </ContainerFull>
+  <>
+    <ContainerFull style={{ marginBottom: "80px" }}>
+      <h2>Search</h2>
+      <Button btnType="filled" btnColor="dark" iconRight="close" size="xxsm">
+        Filled Dark
+      </Button>
+
+      <Button btnType="filled" btnColor="light" iconRight="close" size="xxsm">
+        Filled Light
+      </Button>
+      <Button btnType="outline" btnColor="dark" iconRight="close" size="xxsm">
+        outline Dark
+      </Button>
+
+      <Button btnType="outline" btnColor="light" iconRight="close" size="xxsm">
+        outline Light
+      </Button>
+    </ContainerFull>
+
+    <ContainerFull style={{ marginBottom: "80px" }}>
+      <h2>Icon</h2>
+      <Button btnType="filled" btnColor="dark" icon>
+        <Icon iconName="chevron-down" />
+      </Button>
+      <Button btnType="filled" btnColor="light" icon>
+        <Icon iconName="chevron-down" />
+      </Button>
+      <Button btnType="outline" btnColor="dark" icon>
+        <Icon iconName="chevron-down" />
+      </Button>
+      <Button btnType="outline" btnColor="light" icon>
+        <Icon iconName="chevron-down" />
+      </Button>
+    </ContainerFull>
+  </>
 );
 export const disabledButton = () => (
-  <ContainerFull>
-    <Button btnType="disabled">Disabled</Button>
-  </ContainerFull>
+  <>
+    <ContainerFull style={{ marginBottom: "80px" }}>
+      <Button
+        btnType="filled"
+        btnColor="dark"
+        iconLeft="chevron-down"
+        iconRight="chevron-down"
+        disabled
+      >
+        Dark Disabled
+      </Button>
+      <Button
+        btnType="filled"
+        btnColor="light"
+        iconLeft="chevron-down"
+        iconRight="chevron-down"
+        disabled
+      >
+        Light Disabled
+      </Button>
+    </ContainerFull>
+    <ContainerFull style={{ marginBottom: "80px" }}>
+      <Button
+        btnType="outline"
+        btnColor="dark"
+        iconLeft="chevron-down"
+        iconRight="chevron-down"
+        disabled
+      >
+        Dark Disabled
+      </Button>
+      <Button
+        btnType="outline"
+        btnColor="light"
+        iconLeft="chevron-down"
+        iconRight="chevron-down"
+        disabled
+      >
+        Light Disabled
+      </Button>
+    </ContainerFull>
+    <ContainerFull style={{ marginBottom: "80px" }}>
+      <Button
+        btnType="link"
+        btnColor="dark"
+        iconLeft="chevron-down"
+        iconRight="chevron-down"
+        disabled
+      >
+        Dark Disabled
+      </Button>
+      <Button
+        btnType="link"
+        btnColor="light"
+        iconLeft="chevron-down"
+        iconRight="chevron-down"
+        disabled
+      >
+        Light Disabled
+      </Button>
+    </ContainerFull>
+  </>
 );
