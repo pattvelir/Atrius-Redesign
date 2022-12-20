@@ -159,69 +159,106 @@ export const buttons = () => (
 );
 
 export const typesButton = () => (
-  <ContainerFull>
-    <p>Filled</p>
-    <Button
-      btnType="filled"
-      btnColor="dark"
-      iconLeft="chevron-down"
-      iconRight="chevron-down"
-    >
-      Dark
-    </Button>
-
-    <Button
-      btnType="filled"
-      btnColor="light"
-      iconLeft="chevron-down"
-      iconRight="chevron-down"
-    >
-      Light
-    </Button>
-
-    <p>Outline</p>
-    <div style={{ background: "#333", display: "inline-block" }}>
+  <>
+    <ContainerFull>
+      <h1>Regular</h1>
+      <p style={{ margin: "16px" }}>Filled</p>
       <Button
-        btnType="outline"
+        btnType="filled"
         btnColor="dark"
         iconLeft="chevron-down"
         iconRight="chevron-down"
       >
         Dark
       </Button>
-    </div>
-    <div style={{ display: "inline-block" }}>
+
       <Button
-        btnType="outline"
+        btnType="filled"
         btnColor="light"
         iconLeft="chevron-down"
         iconRight="chevron-down"
       >
         Light
       </Button>
-    </div>
-    <p>Link</p>
-    <div style={{ background: "#333", display: "inline-block" }}>
-      <Button
-        btnType="link"
-        btnColor="dark"
-        iconLeft="chevron-down"
-        iconRight="chevron-down"
-      >
-        Dark
+
+      <p>Outline</p>
+      <div style={{ background: "#333", display: "inline-block" }}>
+        <Button
+          btnType="outline"
+          btnColor="dark"
+          iconLeft="chevron-down"
+          iconRight="chevron-down"
+        >
+          Dark
+        </Button>
+      </div>
+      <div style={{ display: "inline-block" }}>
+        <Button
+          btnType="outline"
+          btnColor="light"
+          iconLeft="chevron-down"
+          iconRight="chevron-down"
+        >
+          Light
+        </Button>
+      </div>
+      <p>Link</p>
+      <div style={{ background: "#333", display: "inline-block" }}>
+        <Button
+          btnType="link"
+          btnColor="dark"
+          iconLeft="chevron-down"
+          iconRight="chevron-down"
+        >
+          Dark
+        </Button>
+      </div>
+      <div style={{ display: "inline-block" }}>
+        <Button
+          btnType="link"
+          btnColor="light"
+          iconLeft="chevron-down"
+          iconRight="chevron-down"
+        >
+          Light
+        </Button>
+      </div>
+    </ContainerFull>
+    <ContainerFull style={{ marginTop: "40px" }}>
+      <h1>Icon</h1>
+      <p>Filled</p>
+      <Button btnType="filled" btnColor="dark" icon>
+        <Icon iconName="chevron-down" />
       </Button>
-    </div>
-    <div style={{ display: "inline-block" }}>
-      <Button
-        btnType="link"
-        btnColor="light"
-        iconLeft="chevron-down"
-        iconRight="chevron-down"
-      >
-        Light
+
+      <Button btnType="filled" btnColor="light" icon>
+        <Icon iconName="chevron-down" />
       </Button>
-    </div>
-  </ContainerFull>
+
+      <p>Outline</p>
+      <div style={{ background: "#333", display: "inline-block" }}>
+        <Button btnType="outline" btnColor="dark" icon>
+          <Icon iconName="chevron-down" />
+        </Button>
+      </div>
+      <div style={{ display: "inline-block" }}>
+        <Button btnType="outline" btnColor="light" icon>
+          <Icon iconName="chevron-down" />
+        </Button>
+      </div>
+      <p>Link</p>
+      <div style={{ background: "#333", display: "inline-block" }}>
+        <Button btnType="link" btnColor="dark" icon>
+          <Icon iconName="chevron-down" />
+        </Button>
+      </div>
+      <div style={{ display: "inline-block" }}>
+        <Button btnType="link" btnColor="light" icon>
+          <Icon iconName="chevron-down" />
+        </Button>
+      </div>
+    </ContainerFull>
+  </>
 );
 export const sizesButton = () => (
   <>
@@ -250,6 +287,50 @@ export const sizesButton = () => (
         iconRight="chevron-down"
       >
         Link
+      </Button>
+    </ContainerFull>
+
+    <ContainerFull style={{ marginBottom: "80px" }}>
+      <h2>No Padding</h2>
+      <Button
+        btnType="filled"
+        btnColor="dark"
+        iconLeft="chevron-down"
+        iconRight="chevron-down"
+        size="no-padding"
+      >
+        Filled
+      </Button>
+      <Button
+        btnType="outline"
+        btnColor="light"
+        iconLeft="chevron-down"
+        iconRight="chevron-down"
+        size="no-padding"
+      >
+        Outline
+      </Button>
+      <Button
+        btnType="link"
+        btnColor="light"
+        iconLeft="chevron-down"
+        iconRight="chevron-down"
+        size="no-padding"
+      >
+        Link
+      </Button>
+    </ContainerFull>
+
+    <ContainerFull style={{ marginBottom: "80px" }}>
+      <h2>Small</h2>
+      <Button btnType="filled" btnColor="dark" size="sm" icon>
+        <Icon iconName="chevron-down" />
+      </Button>
+      <Button btnType="outline" btnColor="light" size="sm" icon>
+        <Icon iconName="chevron-down" />
+      </Button>
+      <Button btnType="link" btnColor="light" size="sm" icon>
+        <Icon iconName="chevron-down" />
       </Button>
     </ContainerFull>
 

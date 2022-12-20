@@ -21,21 +21,27 @@
   --btn-icon-height: 48px;
   --btn-icon-width: 48px;
   --btn-margin-inline: var(--btn-label-margin-inline);
+  --btn-border: 2px solid transparent;
+  --btn-underline-offset: 8px;
+  --btn-underline-thick: 1px;
 
   display: var(--btn-display);
   padding: var(--btn-padding);
   font: var(--btn-font);
   text-decoration: none;
   vertical-align: middle;
+  border: var(--btn-border);
   border-radius: var(--btn-border-radius);
   background: var(--color-green-500);
   transition: color 0.35s, background-color 0.35s, border-color 0.35s;
   cursor: pointer;
 
-  &:not(.btn--icon) .btn__label {
-    margin-inline: var(--btn-margin-inline);
-    vertical-align: middle;
-    font: var(--btn-font);
+  &:not(.btn--icon) {
+    .btn__label {
+      margin-inline: var(--btn-margin-inline);
+      font: var(--btn-font);
+      vertical-align: middle;
+    }
   }
 
   .icon {
@@ -46,12 +52,14 @@
   &.btn--xsm {
     --btn-padding: var(--spacing-8) var(--spacing-12);
     --btn-font: var(--font-ui-labels-ui-xsm-smb);
+    --btn-underline-offset: 4px;
   }
 
   &.btn--xxsm {
     --btn-padding: var(--spacing-4) var(--spacing-10);
     --btn-font: var(--font-ui-labels-ui-xxsm-med);
     --btn-icon: 16px;
+    --btn-underline-offset: 2px;
   }
 
   &.btn--small {
@@ -72,14 +80,24 @@
   }
 
   &.btn--no-padding {
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
   }
 
   &:hover {
     text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 8px;
+    text-decoration-thickness: var(--btn-underline-thick);
+    text-underline-offset: var(--btn-underline-offset);
+  }
+
+  &:active {
+    text-decoration: underline;
+    text-decoration-thickness: var(--btn-underline-thick);
+    text-underline-offset: var(--btn-underline-offset);
+
+    .icon {
+      transform: rotate(180deg);
+    }
   }
 
   &.btn--disabled,
@@ -110,11 +128,9 @@
     }
   }
 
-  &:active {
-    text-decoration: underline;
-  }
-
-  &[disabled] {
+  &.btn--disabled,
+  &[disabled],
+  &:disabled {
     color: var(--btn-grey);
     background: var(--btn-white);
 
@@ -145,11 +161,12 @@
 
   &:active {
     color: var(--btn-blue);
-    text-decoration: underline;
     background: var(--btn-lgrey);
   }
 
-  &[disabled] {
+  &.btn--disabled,
+  &[disabled],
+  &:disabled {
     color: var(--btn-grey);
     background: var(--btn-white);
 
@@ -163,7 +180,7 @@
 
 .btn--outline.btn--light {
   color: var(--btn-dgrey);
-  border: 2px solid var(--btn-dgrey);
+  border-color: var(--btn-dgrey);
   background-color: transparent;
 
   .icon {
@@ -171,7 +188,6 @@
   }
 
   &:hover {
-    text-decoration: underline;
     border-color: var(--btn-yellow);
     background-color: var(--btn-yellow);
 
@@ -182,12 +198,13 @@
 
   &:active {
     color: var(--btn-white);
-    text-decoration: underline;
     border-color: var(--btn-blue);
     background-color: var(--btn-blue);
   }
 
-  &[disabled] {
+  &.btn--disabled,
+  &[disabled],
+  &:disabled {
     color: var(--btn-grey);
     border-color: var(--btn-grey);
 
@@ -201,7 +218,7 @@
 
 .btn--outline.btn--dark {
   color: var(--btn-white);
-  border: 2px solid var(--btn-yellow);
+  border-color: var(--btn-yellow);
   background-color: transparent;
 
   .icon {
@@ -210,19 +227,19 @@
 
   &:hover {
     color: var(--btn-blue);
-    text-decoration: underline;
     border-color: transparent;
     background-color: transparent;
   }
 
   &:active {
     color: var(--btn-blue);
-    text-decoration: underline;
     border-color: var(--btn-yellow);
     background-color: var(--btn-yellow);
   }
 
-  &[disabled] {
+  &.btn--disabled,
+  &[disabled],
+  &:disabled {
     color: var(--btn-grey);
     border-color: var(--btn-grey);
 
@@ -246,8 +263,6 @@
     }
 
     &:hover {
-      text-decoration: underline;
-
       .icon {
         color: var(--btn-blue);
       }
@@ -260,10 +275,6 @@
         color: var(--btn-grey);
       }
     }
-
-    &:active {
-      text-decoration: underline;
-    }
   }
 
   &.btn--dark {
@@ -274,8 +285,6 @@
     }
 
     &:hover {
-      text-decoration: underline;
-
       .icon {
         color: var(--btn-white);
       }
@@ -287,10 +296,6 @@
       .icon {
         color: var(--btn-grey);
       }
-    }
-
-    &:active {
-      text-decoration: underline;
     }
   }
 }

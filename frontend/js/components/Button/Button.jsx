@@ -33,6 +33,7 @@ const Button = (props) => {
         "btn--xsm": size === "xsm",
         "btn--small": size === "sm",
         "btn--xxsm": size === "xxsm",
+        "btn--no-padding": size === "no-padding",
         "btn--icon": icon,
       })}
       title={children}
