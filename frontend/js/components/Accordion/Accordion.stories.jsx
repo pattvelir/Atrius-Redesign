@@ -84,3 +84,32 @@ export const h2Title = () => (
     </AccordionItem>
   </AccordionContainer>
 );
+
+export const footer = () => (
+  <div style={{ backgroundColor: "#000" }} className="global-footer">
+    <AccordionContainer section="footer">
+      <AccordionItem title="mixtape 3 wolf moon">
+        <ul className="footer-nav__col">
+          <li>
+            <a href="#">Test</a>
+          </li>
+          <li>
+            <a href="#">Test</a>
+          </li>
+          <li>
+            <a href="#">Test</a>
+          </li>
+          <li>
+            <a href="#">Test</a>
+          </li>
+          <li>
+            <a href="#">Test</a>
+          </li>
+          <li>
+            <a href="#">Test</a>
+          </li>
+        </ul>
+      </AccordionItem>
+    </AccordionContainer>
+  </div>
+);
