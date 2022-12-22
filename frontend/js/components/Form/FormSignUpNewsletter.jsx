@@ -16,7 +16,7 @@ const FormSignUpNewsletter = (props) => {
       <div className="sc-form__button-row">
         <input
           type="submit"
-          className="btn btn--filled btn--light"
+          className="btn btn--filled btn--dark"
           value="Sign Up"
         />
       </div>

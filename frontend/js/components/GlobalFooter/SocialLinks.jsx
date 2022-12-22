@@ -10,7 +10,7 @@ const propTypes = {
       url: string.isRequired,
       label: string,
       icon: string.isRequired,
-    }),
+    })
   ),
 };
 
@@ -26,7 +26,7 @@ const socialLinks = (props) => {
               <li key={i}>
                 <Button
                   btnType="filled"
-                  btnColor="light"
+                  btnColor="dark"
                   icon
                   href={site.url}
                   aria-label={site.label}

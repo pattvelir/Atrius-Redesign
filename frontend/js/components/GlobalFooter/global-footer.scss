@@ -1,36 +1,85 @@
 @import "../../../scss/variables/index";
 
-// $icon: url("data:image/svg+xml,%3Csvg width='14'height='14'viewBox='0 0 14 14'xmlns='http://www.w3.org/2000/svg'%3E%3Cgstroke='currentColor'stroke-width='1.2'fill='none'fill-rule='evenodd'%3E%3Cpathd='M0 7.014h12.793M6.878 1l5.976 5.976-5.976 5.976'/%3E%3C/g%3E%3C/svg%3E");
+// $icon1: url("data:image/svg+xml,%3Csvg width='14'height='14'viewBox='0 0 14 14'xmlns='http://www.w3.org/2000/svg'%3E%3Cgstroke='currentColor'stroke-width='1.2'fill='none'fill-rule='evenodd'%3E%3Cpathd='M0 7.014h12.793M6.878 1l5.976 5.976-5.976 5.976'/%3E%3C/g%3E%3C/svg%3E");
+
+// $icon1: url('data:image/svg+xml; utf8, <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><g stroke="currentColor" stroke-width="1.2" fill="none" fill-rule="evenodd"><path d="M0 7.014h12.793M6.878 1l5.976 5.976-5.976 5.976"/></g></svg>');
+
+// $icon1: url('data:image/svg+xml, <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><g stroke="currentColor" stroke-width="1.2" fill="none" fill-rule="evenodd"><path d="M0 7.014h12.793M6.878 1l5.976 5.976-5.976 5.976"/></g></svg>');
+
+$icon1: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxLjIiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PHBhdGggZD0iTTAgNy4wMTRoMTIuNzkzTTYuODc4IDFsNS45NzYgNS45NzYtNS45NzYgNS45NzYiLz48L2c+PC9zdmc+Cg==");
+$iconYellow: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBzdHJva2U9IiNGN0IzNjUiIHN0cm9rZS13aWR0aD0iMS4yIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0wIDcuMDE0aDEyLjc5M002Ljg3OCAxbDUuOTc2IDUuOTc2LTUuOTc2IDUuOTc2Ii8+PC9nPjwvc3ZnPgo=");
+$iconYellowBigger: url("data:image/svg+xml;base64, PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAxNCAxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBzdHJva2U9IiNGN0IzNjUiIHN0cm9rZS13aWR0aD0iMS4yIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0wIDcuMDE0aDEyLjc5M002Ljg3OCAxbDUuOTc2IDUuOTc2LTUuOTc2IDUuOTc2Ii8+PC9nPjwvc3ZnPgo=");
+$icon2: "→";
+$icon: $iconYellowBigger;
+
+// https://codepen.io/sosuke/pen/Pjoqqp
+$iconColor: invert(92%) sepia(13%) saturate(6058%) hue-rotate(314deg)
+  brightness(106%) contrast(105%);
 
 .global-footer {
-  --global-footer-padding: var(--spacing-80) var(--spacing-108);
-  padding: var(--global-footer-padding);
+  padding: 40px 24px;
+  @media (min-width: 1600px) {
+    padding: 80px 108px;
+  }
+  @media (min-width: 1200px) {
+    padding: 80px 156px;
+  }
+  @media (min-width: 800px) {
+    padding: 65px 45px;
+  }
+
   color: var(--color-design-system-white);
 
   background: var(--color-blue-800);
 
   a:hover {
-    color: var(--color-yellow-primary);
+    color: currentcolor;
+    text-decoration: underline;
+    text-underline-offset: 4px;
   }
 
   a[target="_blank"] {
-    @include iconAfterLink("→");
+    @include iconAfterLink($icon);
+    fill: var(--color-yellow-primary);
   }
 
   .global-footer__row {
     display: grid;
+  }
 
-    &__bottom {
+  .global-footer__row__bottom {
+    @media (min-width: 1200px) {
       align-items: center;
       grid-template-columns: max-content auto;
       gap: var(--spacing-32);
       justify-items: start;
     }
 
-    &__top {
+    display: block;
+  }
+
+  .global-footer__row__top {
+    @media (min-width: 1200px) {
       grid-template-columns: auto 360px;
       justify-content: space-between;
       margin-bottom: var(--spacing-80);
+    }
+  }
+
+  .global-footer__nav {
+    &--desktop {
+      display: none;
+      @media (min-width: 1200px) {
+        display: flex;
+      }
+    }
+
+    &--mobile {
+      display: block;
+      margin-bottom: 40px;
+      @media (min-width: 1200px) {
+        display: none;
+      }
     }
   }
 
@@ -39,14 +88,12 @@
     display: block;
   }
 
-  @media (--bp-large-min) {
+  @media (min-width: 1200px) {
     .copyright {
       float: left;
     }
 
     .footer-links {
-      float: right;
-
       text-align: right;
     }
   }

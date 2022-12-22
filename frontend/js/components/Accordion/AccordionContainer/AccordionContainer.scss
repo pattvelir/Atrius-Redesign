@@ -1,4 +1,8 @@
 .accordion-container {
   inline-size: 100%;
   max-inline-size: 744px;
+
+  &.accordion-container--footer {
+    max-inline-size: none;
+  }
 }

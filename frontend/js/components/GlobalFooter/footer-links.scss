@@ -4,16 +4,25 @@
   font: var(--font-ui-labels-ui-xsm-smb);
 
   ul {
-    @include zero-list;
-    text-align: right;
 
-    @media (--bp-large-max) {
-      text-align: center;
+    @include zero-list;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 24px;
+    @media (min-width: 800px) {
+      display: block;
+    }
+
+    @media (min-width: 1200px) {
+      margin-top: 0;
     }
   }
 
   li {
-    display: inline;
-    margin-left: 16px;
+    flex: 1 0 50%;
+    @media (min-width: 800px) {
+      display: inline;
+      margin-right: 32px;
+    }
   }
 }

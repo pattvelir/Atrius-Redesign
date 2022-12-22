@@ -1,55 +1,17 @@
 @import "../../../scss/variables/index";
 
-/* connect variables */
-$connect-icon-size: 35px !default;
-$connect-icon-spacing: 4px !default;
-$connect-icon-fill: currentcolor !default;
-$connect-phone-size: 24px !default;
-$connect-promo-size: 24px !default;
-$connect-bp-small-max: 570px !default;
-
 .connect {
-  @include container;
+  margin-bottom: 64px;
 }
 
 .connect__inner {
   display: block;
 }
 
-.connect__button {
-  padding: 0 20px 0 0;
-
-  line-height: $connect-icon-size;
-  white-space: nowrap;
-
-  @media (--bp-x-small-max) {
-    padding: 0 0 12px;
-  }
-}
-
-.connect__contact {
-  display: flex;
-  order: 1;
-  padding: 12px 0;
-
-  @media (--bp-large-max) {
-    padding: 0 0 12px;
-  }
-
-  @media (max-width: $connect-bp-small-max) {
-    justify-content: center;
-    width: 100%;
-  }
-
-  @media (--bp-x-small-max) {
-    display: block;
-    padding: 0;
-  }
-}
-
 .connect__newsletter {
   .sc-form__message {
     margin-bottom: var(--spacing-24);
+    font: var(--body-lg);
   }
 
   .sc-form-item {
@@ -62,25 +24,6 @@ $connect-bp-small-max: 570px !default;
 
   .sc-form__button-row {
     margin-top: 0;
-  }
-}
-
-.connect__phone {
-  order: 2;
-  padding: 0 20px 0 0;
-
-  font-size: $connect-phone-size;
-  font-weight: 700;
-  line-height: $connect-icon-size;
-  white-space: nowrap;
-
-  @media (--bp-x-small-max) {
-    padding: 0 0 12px;
-  }
-
-  a {
-    color: currentcolor;
-    text-decoration: none;
   }
 }
 

@@ -8,7 +8,7 @@
   --btn-white: var(--color-design-system-white);
   --btn-grey: var(--color-neutral-300);
   --btn-dgrey: var(--color-neutral-900);
-  --btn-lgrey: var(--btn-lgrey);
+  --btn-lgrey: var(--color-yellow-100);
 }
 
 .btn {
@@ -21,7 +21,7 @@
   --btn-icon-width: 48px;
   --btn-margin-inline: var(--btn-label-margin-inline);
   --btn-border: 2px solid transparent;
-  --btn-underline-offset: 8px;
+  --btn-underline-offset: 6px;
   --btn-underline-thick: 1px;
   --btn-display: inline-block;
   display: var(--btn-display);
@@ -78,8 +78,8 @@
     width: var(--btn-icon-width);
 
     .global-footer .social-links & {
-      color: var(--color-neutral-900);
-      background-color: var(--color-design-system-white);
+      --btn-icon: 24px;
+      background-color: var(--color-yellow-50);
     }
   }
 
@@ -115,7 +115,7 @@
 /* modifiers
  ** filled dark */
 
-.btn--filled.btn--dark {
+.btn--filled.btn--light {
   color: var(--btn-white);
   background: var(--btn-blue);
 
@@ -129,6 +129,15 @@
 
     .icon {
       color: var(--btn-blue);
+    }
+  }
+
+  &:active {
+    color: var(--btn-white);
+    background: var(--btn-blue);
+
+    .icon {
+      color: var(--btn-yellow);
     }
   }
 
@@ -146,12 +155,12 @@
 
 /* // filled light */
 
-.btn--filled.btn--light {
-  color: var(--btn-blue);
+.btn--filled.btn--dark {
+  color: var(--btn-dgrey);
   background: var(--btn-yellow);
 
   .icon {
-    color: var(--btn-blue);
+    color: var(--btn-dgrey);
   }
 
   &:hover {
@@ -164,8 +173,12 @@
   }
 
   &:active {
-    color: var(--btn-blue);
+    color: var(--btn-dgrey);
     background: var(--btn-lgrey);
+
+    .icon {
+      color: var(--btn-dgrey);
+    }
   }
 
   &.btn--disabled,

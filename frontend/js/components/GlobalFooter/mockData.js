@@ -1,5 +1,5 @@
 export default {
-  footerLinks: ["lorem", "Ipsum Son", "Dolor"],
+  footerLinks: ["lorem", "Ipsum Son", "Dolor", "this is the forth"],
   siteLogo: {
     title: "Company Name",
     logoLg: "",
