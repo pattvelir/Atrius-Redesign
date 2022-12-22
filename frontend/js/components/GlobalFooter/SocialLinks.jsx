@@ -10,7 +10,7 @@ const propTypes = {
       url: string.isRequired,
       label: string,
       icon: string.isRequired,
-    })
+    }),
   ),
 };
 
