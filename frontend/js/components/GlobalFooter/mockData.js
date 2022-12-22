@@ -11,7 +11,7 @@ export default {
     sizesLg: "",
   },
   connect: {
-    connectStatement: "Connect with us promo statement",
+    connectStatement: "Connect",
     connectPhone: "(555) 555-5555",
     connectTapPhone: "15555555555",
     connectColorStripe: "connect",
@@ -28,13 +28,13 @@ export default {
       },
       {
         url: "#",
-        icon: "google",
-        label: "Google+",
+        icon: "youtube",
+        label: "Youtube",
       },
       {
         url: "#",
-        icon: "rss",
-        label: "RSS",
+        icon: "instagram",
+        label: "Instagram",
       },
       {
         url: "#",
@@ -45,7 +45,7 @@ export default {
   },
   footerNav: [
     {
-      heading: "Dexter domesticus",
+      heading: "For Patients",
       headingUrl: "#",
       numCols: 1,
       items: [
@@ -56,6 +56,7 @@ export default {
         {
           url: "#",
           label: "Berolinum",
+          target: "_blank",
         },
         {
           url: "#",
@@ -69,11 +70,32 @@ export default {
           url: "#",
           label: "Cur pulchritudine nocere",
         },
+        {
+          url: "#",
+          label: "Cur pulchritudine nocere",
+        },
+        {
+          url: "#",
+          label: "Cur pulchritudine nocere",
+          target: "_blank",
+        },
+        {
+          url: "#",
+          label: "Cur pulchritudine nocere",
+        },
+        {
+          url: "#",
+          label: "Cur pulchritudine nocere",
+        },
+        {
+          url: "#",
+          label: "Cur pulchritudine nocere",
+        },
       ],
     },
     {
-      heading: "Dexter domesticus",
-      numCols: 2,
+      heading: "Dexter domesticus 2",
+      numCols: 1,
       headingUrl: "#",
       items: [
         {
@@ -96,59 +118,19 @@ export default {
           url: "#",
           label: "Lorem",
         },
-      ],
-    },
-    {
-      heading: "Dexter domesticus",
-      numCols: 1,
-      headingUrl: "#",
-      items: [
         {
           url: "#",
-          label: "Tubinga",
+          label: "Lorem",
+          target: "_blank",
         },
         {
           url: "#",
-          label: "Idoleums cadunt",
+          label: "Lorem",
         },
         {
           url: "#",
-          label: "Rusticus turpis est",
-        },
-        {
-          url: "#",
-          label: "Stella",
-        },
-        {
-          url: "#",
-          label: "Abene valebat",
-        },
-      ],
-    },
-    {
-      heading: "Dexter domesticus",
-      numCols: 3,
-      headingUrl: "#",
-      items: [
-        {
-          url: "#",
-          label: "Vasa ",
-        },
-        {
-          url: "#",
-          label: "Danistas peregrinationes",
-        },
-        {
-          url: "#",
-          label: "Cur elevatus",
-        },
-        {
-          url: "#",
-          label: "Stella",
-        },
-        {
-          url: "#",
-          label: "Abene valebat",
+          label: "Lorem",
+          target: "_blank",
         },
       ],
     },

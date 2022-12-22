@@ -7,8 +7,7 @@ $copyright-text-size: 14px !default;
   display: inline-block;
   margin: 0;
   padding: 0;
-  font-size: $copyright-text-size;
-  line-height: $copyright-symbol-size;
+  font: var(--font-ui-labels-ui-xsm-smb);
 }
 
 .copyright__symbol {

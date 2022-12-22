@@ -32,6 +32,21 @@
   list-style-type: none;
 }
 
+@mixin iconAfterLink($icon) {
+  &::after {
+    position: relative;
+    top: 6px;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin-left: var(--spacing-12);
+    color: var(--color-yellow-primary);
+    font-size: 24px;
+    content: $icon;
+    transform: rotate(-45deg);
+  }
+}
+
 /* 
 ** -----------------------------------------------------------------------------
 ** Quantity queries

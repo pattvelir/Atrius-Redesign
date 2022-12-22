@@ -2,6 +2,7 @@ import React from "react";
 import { arrayOf, shape, string } from "prop-types";
 
 import Icon from "../Icon/Icon.jsx";
+import Button from "../Button/Button.jsx";
 
 const propTypes = {
   connectSocialSites: arrayOf(
@@ -9,7 +10,7 @@ const propTypes = {
       url: string.isRequired,
       label: string,
       icon: string.isRequired,
-    }),
+    })
   ),
 };
 
@@ -23,9 +24,18 @@ const socialLinks = (props) => {
           connectSocialSites.map((site, i) => {
             return (
               <li key={i}>
-                <a href={site.url} aria-label={site.label}>
-                  <Icon iconName={site.icon} className="connect__social-icon" />
-                </a>
+                <Button
+                  btnType="filled"
+                  btnColor="light"
+                  icon
+                  href={site.url}
+                  aria-label={site.label}
+                >
+                  <Icon
+                    iconName={`social-${site.icon}`}
+                    className="connect__social-icon"
+                  />
+                </Button>
               </li>
             );
           })}

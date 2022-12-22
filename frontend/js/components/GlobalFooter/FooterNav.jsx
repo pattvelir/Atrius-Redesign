@@ -5,7 +5,7 @@ const propTypes = {
   navSection: arrayOf(
     shape({
       items: array,
-    }),
+    })
   ),
 };
 
@@ -38,7 +38,9 @@ const footerNav = (props) => {
                     {column.map((item, i) => {
                       return (
                         <li key={i}>
-                          <a href={item.url}>{item.label}</a>
+                          <a href={item.url} target={item.target}>
+                            {item.label}
+                          </a>
                         </li>
                       );
                     })}

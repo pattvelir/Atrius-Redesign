@@ -1,6 +1,8 @@
 @import "../../../scss/variables/index";
 
 .footer-links {
+  font: var(--font-ui-labels-ui-xsm-smb);
+
   ul {
     @include zero-list;
     text-align: right;

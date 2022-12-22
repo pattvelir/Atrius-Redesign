@@ -8,5 +8,5 @@
 
 :root {
   /* --spacing-2, etc */
-  @include createSpacingVars(2, 40, 2);
+  @include createSpacingVars(2, 160, 2);
 }

@@ -7,12 +7,14 @@ import {
   loginData,
   registrationData,
   resetPasswordData,
+  signUpNewsLetter,
 } from "./formData.js";
 import FormContact from "./FormContact.jsx";
 import FormForgotPassword from "./FormForgotPassword.jsx";
 import FormLogin from "./FormLogin.jsx";
 import FormRegistration from "./FormRegistration.jsx";
 import FormResetPassword from "./FormResetPassword.jsx";
+import FormSignUpNewsletter from "./FormSignUpNewsletter.jsx";
 
 export default {
   title: "Components/Forms",
@@ -95,4 +97,8 @@ export const passwordReset = () => (
       </p>
     </form>
   </React.Fragment>
+);
+
+export const newsLetterSignUp = () => (
+  <FormSignUpNewsletter {...signUpNewsLetter} />
 );

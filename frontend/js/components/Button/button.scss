@@ -12,7 +12,6 @@
 }
 
 .btn {
-  --btn-display: inline-block;
   --btn-border-radius: 100px;
   --btn-padding: 12px 24px;
   --btn-font: var(--font-ui-labels-ui-md-smb);
@@ -24,7 +23,7 @@
   --btn-border: 2px solid transparent;
   --btn-underline-offset: 8px;
   --btn-underline-thick: 1px;
-
+  --btn-display: inline-block;
   display: var(--btn-display);
   padding: var(--btn-padding);
   font: var(--btn-font);
@@ -77,6 +76,11 @@
     justify-content: center;
     height: var(--btn-icon-height);
     width: var(--btn-icon-width);
+
+    .global-footer .social-links & {
+      color: var(--color-neutral-900);
+      background-color: var(--color-design-system-white);
+    }
   }
 
   &.btn--no-padding {

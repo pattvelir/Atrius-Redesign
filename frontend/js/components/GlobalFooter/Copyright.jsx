@@ -11,7 +11,7 @@ const copyright = (props) => {
 
   return (
     <div className="copyright">
-      <span className="copyright__symbol">&copy;</span>
+      <span className="copyright__symbol">&copy;&nbsp;</span>
       <span className="copyright__notice">
         {currentYear} {copyrightStatement}
       </span>

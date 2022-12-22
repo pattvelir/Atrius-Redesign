@@ -1,5 +1,5 @@
 export default {
-  connectStatement: "Connect with us promo statement",
+  connectStatement: "Connect",
   connectPhone: "(555) 555-5555",
   connectTapPhone: "15555555555",
   connectColorStripe: "connect",
@@ -16,13 +16,13 @@ export default {
     },
     {
       url: "#",
-      icon: "google",
-      label: "Google+",
+      icon: "youtube",
+      label: "Youtube",
     },
     {
       url: "#",
-      icon: "rss",
-      label: "RSS",
+      icon: "instagram",
+      label: "Instagram",
     },
     {
       url: "#",

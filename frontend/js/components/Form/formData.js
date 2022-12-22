@@ -41,6 +41,20 @@ export const contactFormData = {
   },
 };
 
+export const signUpNewsLetter = {
+  email: {
+    autocomplete: "email",
+    error: false,
+    errorMsg: "Please enter a valid email address",
+    label: "Email Address",
+    name: "email",
+    placeholder: "your.name@example.com",
+    required: true,
+    type: "email",
+    validationType: "email",
+  },
+};
+
 export const contactErrorData = {
   name: {
     autocomplete: "name",

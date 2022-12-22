@@ -1,13 +1,27 @@
 .social-links {
   ul {
     display: flex;
+    gap: var(--spacing-8);
     margin: 0;
     list-style: none;
   }
 
   li {
-    margin-right: 5px;
-    margin-bottom: 0;
+    // a {
+    //   display: grid;
+    //   align-content: center;
+    //   justify-content: center;
+    //   height: 48px;
+    //   width: 48px;
+    //   color: var(--color-neutral-900);
+    //   border-radius: 100px;
+    //   background: var(--color-design-system-white);
+
+    //   .icon {
+    //     height: 20px;
+    //     width: 20px;
+    //   }
+    // }
 
     a:hover,
     a:focus {
