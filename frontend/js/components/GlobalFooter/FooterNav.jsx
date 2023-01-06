@@ -66,20 +66,19 @@ const footerNav = (props) => {
         className="footer-nav global-footer__nav--mobile"
         aria-label="Footer"
       >
-        {navSection.map((section, i) => {
-          const { items, numCols, heading } = section;
-          const size = Math.ceil(items.length / numCols);
-          const columnArray = [];
+        <AccordionContainer
+          section="footer"
+          className={`footer-nav__section has-${navSection.length}`}
+        >
+          {navSection.map((section, i) => {
+            const { items, numCols, heading } = section;
+            const size = Math.ceil(items.length / numCols);
+            const columnArray = [];
 
-          for (let i = 0; i < items.length; i += size) {
-            columnArray.push(items.slice(i, i + size));
-          }
-          return (
-            <AccordionContainer
-              key={i}
-              section="footer"
-              className={`footer-nav__section has-${section.numCols}`}
-            >
+            for (let i = 0; i < items.length; i += size) {
+              columnArray.push(items.slice(i, i + size));
+            }
+            return (
               <AccordionItem
                 title={heading}
                 type="h2"
@@ -105,9 +104,9 @@ const footerNav = (props) => {
                   );
                 })}
               </AccordionItem>
-            </AccordionContainer>
-          );
-        })}
+            );
+          })}
+        </AccordionContainer>
       </nav>
     </>
   );
