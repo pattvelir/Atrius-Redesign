@@ -34,16 +34,14 @@
 
 @mixin iconAfterLink($icon, $color: transparent, $filter: none) {
   &::after {
-    position: relative;
-    top: 4px;
+    position: absolute;
     display: inline-block;
-    height: 15px;
-    width: 15px;
+    height: 14px;
+    width: 14px;
     margin-left: var(--spacing-8);
     color: $color;
     font-size: 24px;
     content: $icon;
-    transform: rotate(-45deg);
     filter: $filter;
   }
 }

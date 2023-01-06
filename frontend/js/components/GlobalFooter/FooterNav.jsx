@@ -7,7 +7,7 @@ const propTypes = {
   navSection: arrayOf(
     shape({
       items: array,
-    }),
+    })
   ),
 };
 
@@ -32,8 +32,9 @@ const footerNav = (props) => {
             <div
               key={i}
               className={`footer-nav__section has-${section.numCols}`}
+              aria-labelledby={`${heading}-${i}`}
             >
-              <h2 id={`${heading}-123`} className="footer-nav__heading">
+              <h2 id={`${heading}-${i}`} className="footer-nav__heading">
                 {heading}
               </h2>
               <div className="footer-nav__col-wrapper">
@@ -47,7 +48,9 @@ const footerNav = (props) => {
                       {column.map((item, i) => {
                         return (
                           <li key={i}>
-                            <a href={item.url}>{item.label}</a>
+                            <a href={item.url} target={item.target}>
+                              {item.label}
+                            </a>
                           </li>
                         );
                       })}

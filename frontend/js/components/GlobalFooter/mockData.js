@@ -1,5 +1,26 @@
 export default {
-  footerLinks: ["lorem", "Ipsum Son", "Dolor", "this is the forth"],
+  footerLinks: [
+    {
+      copy: "lorem",
+      href: "#",
+    },
+    {
+      copy: "Ipsum",
+      href: "http://example.com",
+    },
+    {
+      copy: "Sign in",
+      href: "#",
+      target: {
+        rel: "nonreffer",
+        target: "_blank",
+      },
+    },
+    {
+      copy: "lorem",
+      href: "#",
+    },
+  ],
   siteLogo: {
     title: "Company Name",
     logoLg: "",
