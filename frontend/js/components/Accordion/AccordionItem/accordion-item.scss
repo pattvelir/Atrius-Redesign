@@ -12,10 +12,10 @@
   }
 
   .accordion-item__title {
-    display: grid;
+    display: flex;
     align-items: center;
-    grid-template-columns: 1fr 24px;
-    gap: var(--spacing-16);
+    justify-content: space-between;
+    gap: var(--size-3);
     margin: 0;
     padding: 0;
     list-style: none;
@@ -24,7 +24,7 @@
 
     h2 {
       margin: 0;
-      padding-block: var(--spacing-16);
+      padding-block: var(--size-3);
       font: var(--accordion-heading-h2-font);
 
       .accordion-container--footer & {
@@ -34,13 +34,13 @@
 
     h4 {
       margin: 0;
-      padding-block: var(--spacing-8);
+      padding-block: var(--size-2);
       font: var(--accordion-heading-h4-font);
     }
 
     .accordion-item__title__arrow {
-      height: 24px;
-      width: 24px;
+      height: var(--size-5);
+      width: var(--size-5);
       color: var(--color-yellow-300);
       transition: ease color 0.25s;
     }
@@ -86,5 +86,5 @@
 }
 
 .accordion-item__copy {
-  padding-block: var(--spacing-16);
+  padding-block: var(--size-3);
 }

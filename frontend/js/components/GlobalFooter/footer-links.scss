@@ -15,28 +15,26 @@ $icon: $iconYellowSmaller;
     @include zero-list;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 24px;
-    @media (min-width: 800px) {
-      display: block;
-    }
+    margin-top: var(--size-5);
 
-    @media (min-width: 1200px) {
+    @media (--bp-1200) {
       margin-top: 0;
     }
   }
 
   li {
     flex: 1 0 50%;
-    @media (min-width: 800px) {
+    @media (--bp-800) {
       display: inline;
-      margin-right: 32px;
+      flex: auto;
+      margin-right: var(--size-7);
     }
   }
 
   a[target="_blank"] {
     @include iconAfterLink($icon);
     position: relative;
-    padding-right: 16px;
+    padding-right: var(--size-3);
     fill: var(--color-yellow-primary);
 
     &::after {

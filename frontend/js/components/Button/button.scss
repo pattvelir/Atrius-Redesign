@@ -12,16 +12,16 @@
 }
 
 .btn {
-  --btn-border-radius: 100px;
-  --btn-padding: 12px 24px;
+  --btn-border-radius: var(--spacing-100);
+  --btn-padding: calc(var(--size-5) / 2) var(--size-5);
   --btn-font: var(--font-ui-labels-ui-md-smb);
-  --btn-label-margin-inline: 8px;
-  --btn-icon: 24px;
-  --btn-icon-height: 48px;
-  --btn-icon-width: 48px;
+  --btn-label-margin-inline: var(--size-2);
+  --btn-icon: var(--size-5);
+  --btn-icon-height: var(--size-8);
+  --btn-icon-width: var(--size-8);
   --btn-margin-inline: var(--btn-label-margin-inline);
-  --btn-border: 2px solid transparent;
-  --btn-underline-offset: 6px;
+  --btn-border: calc(var(--size-1) / 2) solid transparent;
+  --btn-underline-offset: var(--spacing-6);
   --btn-underline-thick: 1px;
   --btn-display: inline-block;
   display: var(--btn-display);
@@ -49,28 +49,28 @@
   }
 
   &.btn--xsm {
-    --btn-padding: var(--spacing-8) var(--spacing-12);
+    --btn-padding: var(--size-2) var(--spacing-12);
     --btn-font: var(--font-ui-labels-ui-xsm-smb);
-    --btn-underline-offset: 4px;
+    --btn-underline-offset: var(--size-1);
   }
 
   &.btn--xxsm {
-    --btn-padding: var(--spacing-4) var(--spacing-10);
+    --btn-padding: var(--size-1) var(--spacing-10);
     --btn-font: var(--font-ui-labels-ui-xxsm-med);
-    --btn-icon: 16px;
-    --btn-underline-offset: 2px;
+    --btn-icon: var(--size-3);
+    --btn-underline-offset: calc(var(--size-1) / 2);
   }
 
   &.btn--small {
-    --btn-icon-height: 32px;
-    --btn-icon-width: 32px;
+    --btn-icon-height: var(--size-7);
+    --btn-icon-width: var(--size-7);
   }
 
   &.btn--icon {
     --btn-padding: 0;
-    --btn-icon: 16px;
+    --btn-icon: var(--size-3);
     --btn-display: inline-grid;
-    --btn-border-radius: 50%;
+    --btn-border-radius: var(--radius-round);
     --btn-margin-inline: 0;
     align-content: center;
     justify-content: center;
@@ -78,7 +78,7 @@
     width: var(--btn-icon-width);
 
     .global-footer .social-links & {
-      --btn-icon: 24px;
+      --btn-icon: var(--size-5);
       background-color: var(--color-yellow-50);
     }
   }

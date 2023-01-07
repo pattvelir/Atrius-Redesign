@@ -4,18 +4,16 @@
   --multi-promo-title: var(--font-headings-400-heading-d);
   --promo-flex: 100% 0 1;
 
-  @media screen and (min-width: 470px) {
+  @media (--bp-x-small-min) {
     --promo-title: var(--font-headings-1600-800-heading-d);
-    --promo-flex: calc(50% - (var(--spacing-24) / 2)) 0 0;
+    --promo-flex: calc(50% - (var(--size-5) / 2)) 0 0;
   }
 }
 
 .multi-promo__container {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--spacing-24);
-
-  // max-inline-size: 744px;
+  gap: var(--size-5);
 
   &:not(* > .text-banner) {
     .promo:first-child:nth-last-child(3),
@@ -36,11 +34,11 @@
 }
 
 .multi-promo__description {
-  margin-block-end: var(--spacing-40);
+  margin-block-end: calc(var(--size-10) / 2);
   font: var(--multi-promo-description);
 }
 
 .multi-promo__title {
-  margin-block-end: var(--spacing-24);
+  margin-block-end: var(--size-5);
   font: var(--multi-promo-title);
 }

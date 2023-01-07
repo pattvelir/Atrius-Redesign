@@ -44,7 +44,7 @@ export default {
       url: "https://www.w3.org/",
       srcset: `
       https://placekitten.com/400/300 400w,
-      https://placekitten.com/800/x600 800w,
+      https://placekitten.com/800/600 800w,
       https://placekitten.com/1200/900 1200w,
       https://placekitten.com/1600/1200 1600w,
       https://placekitten.com/2000/1500 2000w,

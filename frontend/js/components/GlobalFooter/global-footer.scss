@@ -8,60 +8,60 @@
   a:hover {
     color: currentcolor;
     text-decoration: underline;
-    text-underline-offset: 4px;
+    text-underline-offset: var(--size-1);
   }
 
   .global-footer__container {
     width: 100%;
-    max-width: 1600px;
+    max-width: $bp-1600;
     margin: auto;
-    padding: 40px 24px;
+    padding: calc(var(--size-10) / 2) var(--size-5);
 
-    @media (min-width: 1600px) {
-      padding: 80px 108px;
+    @media (--bp-1600) {
+      padding: var(--size-10) var(--spacing-108);
     }
-    @media (min-width: 1200px) and (max-width: 1599px) {
-      padding: 80px 156px;
+    @media (--bp-1200) and (--bp-1600-max) {
+      padding: var(--size-10) var(--spacing-156);
     }
-    @media (min-width: 800px) and (max-width: 1199px) {
-      padding: 65px 45px;
+    @media (--bp-800) and (--bp-1200-max) {
+      padding: var(--size-9) var(--size-8);
     }
   }
 
   .global-footer__row {
     display: block;
 
-    @media (min-width: 1200px) {
+    @media (--bp-1200) {
       display: flex;
     }
   }
 
   .global-footer__row__bottom {
-    @media (min-width: 1200px) {
-      gap: var(--spacing-32);
+    @media (--bp-1200) {
+      gap: var(--size-7);
     }
   }
 
   .global-footer__row__top {
-    @media (min-width: 1200px) {
-      gap: var(--spacing-24);
+    @media (--bp-1200) {
+      gap: var(--size-5);
       justify-content: space-between;
-      margin-bottom: var(--spacing-80);
+      margin-bottom: var(--size-10);
     }
   }
 
   .global-footer__nav {
     &--desktop {
       display: none;
-      @media (min-width: 1200px) {
+      @media (--bp-1200) {
         display: flex;
       }
     }
 
     &--mobile {
       display: block;
-      margin-bottom: 40px;
-      @media (min-width: 1200px) {
+      margin-bottom: calc(var(--size-10) / 2);
+      @media (--bp-1200) {
         display: none;
       }
     }
@@ -70,8 +70,5 @@
   .copyright,
   .footer-links {
     display: block;
-  }
-
-  @media (min-width: 1200px) {
   }
 }
