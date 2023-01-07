@@ -13,12 +13,12 @@ const propTypes = {
           active: bool,
           label: string,
           href: string,
-        }),
+        })
       ),
       active: bool,
       label: string,
       href: string,
-    }),
+    })
   ),
 };
 
@@ -102,7 +102,7 @@ const PrimaryNav = (props) => {
                             <div>
                               <Button
                                 btnType="filled"
-                                btnColor="dark"
+                                btnColor="light"
                                 iconRight="arrow-right"
                                 href={navItem.featureLink.href}
                               >
