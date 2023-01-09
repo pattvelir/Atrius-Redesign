@@ -7,7 +7,7 @@ const propTypes = {
   navSection: arrayOf(
     shape({
       items: array,
-    })
+    }),
   ),
 };
 
