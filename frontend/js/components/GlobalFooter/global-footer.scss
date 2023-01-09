@@ -2,6 +2,16 @@
 
 :root {
   --gf-padding: calc(var(--size-10) / 2) var(--size-5);
+
+  // @media (--bp-1600) {
+  //   --gf-padding: var(--size-10) var(--spacing-108);
+  // }
+  // @media (--bp-1200) and (--bp-1600-max) {
+  //   --gf-padding: var(--size-10) var(--spacing-156);
+  // }
+  // @media (--bp-800) and (--bp-1200-max) {
+  //   --gf-padding: var(--size-9) var(--size-8);
+  // }
 }
 
 .global-footer {
@@ -30,16 +40,6 @@
     @media (--bp-800) and (--bp-1200-max) {
       padding: var(--size-9) var(--size-8);
     }
-
-    // @media (--bp-1600) {
-    //   --gf-padding: var(--size-10) var(--spacing-108);
-    // }
-    // @media (--bp-1200) and (--bp-1600-max) {
-    //   --gf-padding: var(--size-10) var(--spacing-156);
-    // }
-    // @media (--bp-800) and (--bp-1200-max) {
-    //   --gf-padding: var(--size-9) var(--size-8);
-    // }
   }
 
   .global-footer__row {
