@@ -1,0 +1,25 @@
+---
+ID: "3830d9b9-8e0f-405d-b8c7-e9c7cbe6c10c"
+Parent: "9a0074b5-994e-4903-9203-63cfec57a95b"
+Template: "aaad8d76-57dd-48ad-8601-8a573ed01709"
+Path: /sitecore/templates/Branches/Project/AtriusHealth/Sites/New Site with Login/$name/Configuration/Enumerations/Number of Items/8
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 900
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0dc82897-5b0f-47ce-87bd-6957ab817afa"
+      Hint: Value
+      Value: 8
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170310T164447Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

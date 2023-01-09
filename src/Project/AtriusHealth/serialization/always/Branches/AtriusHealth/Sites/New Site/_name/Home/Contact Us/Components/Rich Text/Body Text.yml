@@ -1,0 +1,23 @@
+---
+ID: "01c98394-491b-41eb-80fb-93a261c15168"
+Parent: "a50387c6-bd9c-4ab3-a9c4-af3bed274894"
+Template: "e4076c99-8864-41c9-a691-e628331ab7c5"
+Path: /sitecore/templates/Branches/Project/AtriusHealth/Sites/New Site/$name/Home/Contact Us/Components/Rich Text/Body Text
+DB: master
+BranchID: "a45cfeab-a8f8-4188-8973-40b090802a02"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{6EAE704C-1D0C-49A4-9B80-60F489D23265}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191022T133635Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

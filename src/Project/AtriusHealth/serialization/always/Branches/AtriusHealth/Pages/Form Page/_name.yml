@@ -1,0 +1,28 @@
+---
+ID: "cf469e10-0248-4901-9790-401f3c897fb5"
+Parent: "a45cfeab-a8f8-4188-8973-40b090802a02"
+Template: "039d4323-8c75-4824-86a3-4ff09eb87aad"
+Path: /sitecore/templates/Branches/Project/AtriusHealth/Pages/Form Page/$name
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{1499620E-F13E-40BD-A280-BD8B192F2FBB}"
+          s:ds="{6EAE704C-1D0C-49A4-9B80-60F489D23265}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190506T154636Z

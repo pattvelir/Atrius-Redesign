@@ -1,0 +1,31 @@
+---
+ID: "9e4de891-102d-4eef-90c4-aef3e6b4dc8a"
+Parent: "c94896a0-d089-41df-8533-f901666bb959"
+Template: "c94896a0-d089-41df-8533-f901666bb959"
+Path: /sitecore/templates/Project/AtriusHealth/Folders/Page Folder/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {A3BE331D-179B-4C7A-ABF8-522A293A2355}
+    {EB9DA56D-99FE-4AEB-8919-97AE4B416DA7}
+    {9FA3D41E-7CC0-4549-B0F1-B8683DF28E75}
+    {C94896A0-D089-41DF-8533-F901666BB959}
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161117T024230Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

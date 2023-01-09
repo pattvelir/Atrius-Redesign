@@ -1,0 +1,22 @@
+---
+ID: "e014a3d9-af0f-47b3-8ac2-fd4f77354db9"
+Parent: "c9f79282-c74d-458f-af7f-6dd037c1e9cd"
+Template: "61977679-a5da-4791-a6ec-003a99a40ae5"
+Path: /sitecore/templates/Branches/Project/AtriusHealth/Sites/New Site with Login/$name/Home/Account/Email Preferences/Components/Account/Member Email Preferences
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191022T134131Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "618cb90e-df16-4287-8d94-55ef2bbe84b1"
+      Hint: Email Frequencies
+      Type: Treelist
+      Value: 

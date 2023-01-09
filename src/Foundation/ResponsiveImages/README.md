@@ -51,5 +51,5 @@ The `ResponsiveGlassView` extends the functionality of Glass.Mapper's `GlassView
 As long as the image in Sitecore is at least 1000px wide the resulting image tag will look something like:
 
 ```
-<img src="/img/some-img.jpg?mw=500&hash=somehash" srcset="1x /img/some-img.jpg?mw=500&hash=somehash, 2x /img/some-img.jpg?mw=1000&hash=someotherhash" alt="Some Alt Text" />
+<img src="/-/media/some-img.jpg?mw=500&hash=somehash" srcset="1x /-/media/some-img.jpg?mw=500&hash=somehash, 2x /-/media/some-img.jpg?mw=1000&hash=someotherhash" alt="Some Alt Text" />
 ```

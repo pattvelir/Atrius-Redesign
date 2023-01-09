@@ -1,0 +1,83 @@
+---
+ID: "8d298173-a277-43b3-8c16-a715f93b1e56"
+Parent: "dc59a232-3274-4de7-b3bb-0ae7594c9659"
+Template: "dc59a232-3274-4de7-b3bb-0ae7594c9659"
+Path: /sitecore/templates/Project/AtriusHealth/Pages/Member Account Page/__Standard Values
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/add_user.png
+- ID: "ca9b9f52-4fb0-4f87-a79f-24dea62cda65"
+  Hint: __Default workflow
+  Value: "{F904F489-7129-4A77-8791-59662AB2B399}"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{A2DE3965-E340-45B4-9FAB-3F35BECE08C1}">
+        <p
+          uid="{D674D9DB-3A98-447D-AE92-F2B6C9BC8314}"
+          key="content-body"
+          md="{AD5A2ADF-20EA-4486-8097-627222532277}" />
+        <p
+          uid="{ECFF6AFA-639D-4AC0-A14B-6AE5B180DF9E}"
+          key="full-width-column"
+          md="{E91D1274-E13D-4BB4-B245-8DEF7A29D986}" />
+        <p
+          uid="{608813F5-A6C9-40B8-9240-BF7D2A337329}"
+          key="content-width-column"
+          md="{0DBE2B2C-E901-4D4A-B49D-D31BCAB69171}" />
+        <p
+          uid="{29AFAED7-52D9-46CE-A84E-AFE8B9D46673}"
+          key="50-50-left-column"
+          md="{A9D6C0C3-E8FE-43A0-BB1F-3009A939D782}" />
+        <p
+          uid="{1C8A696E-05CE-415C-A4F5-84553304A99D}"
+          key="50-50-right-column"
+          md="{A9D6C0C3-E8FE-43A0-BB1F-3009A939D782}" />
+        <p
+          uid="{DA77BDAB-1DAB-43D2-BBE9-7B9F2036D14E}"
+          key="primary-column-left"
+          md="{D5D23E41-ED15-4DEA-9EA1-2947B88D7CCF}" />
+        <p
+          uid="{EFD7AA50-1CF9-47D5-84C4-C2B4AEE8AF08}"
+          key="secondary-column-right"
+          md="{2D6C6498-5D07-40F8-9B9F-70BFD0CF19F3}" />
+        <r
+          id="{04E17BDE-B4F7-4B77-BED6-2A24F059D04D}"
+          ph="content-body"
+          uid="{48E85CE9-2AAA-4815-9842-8CA4B05201BD}" />
+        <r
+          id="{60C2AC1C-4754-4914-B11A-37F0DF825B43}"
+          ph="content-body"
+          uid="{BF7BCC5A-E28D-48D9-8B0A-1032271A8BD7}" />
+        <r
+          id="{6F3D1130-74EC-4C8B-B8A7-8BD1D51B17E7}"
+          ph="content-body"
+          uid="{8B4D7D19-9375-47A2-A69C-DBEF328F94D7}" />
+        <r
+          id="{3E615E7F-8DB2-4648-B7E1-E9C2F05FFD08}"
+          ph="content-body"
+          uid="{11391452-BB8D-4EE6-9916-C26543AEFB40}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190926T180109Z
+    - ID: "497a98de-d47a-4da9-931e-100fc84d5ab1"
+      Hint: No Index
+      Type: Checkbox
+      Value: 1
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

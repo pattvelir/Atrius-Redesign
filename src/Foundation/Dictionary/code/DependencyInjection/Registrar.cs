@@ -10,8 +10,8 @@ namespace AtriusHealth.Foundation.Dictionary.DependencyInjection
 	{
 		public void Configure(IServiceCollection serviceCollection)
 		{
-			serviceCollection.AddScoped<IDictionaryRepository>(p => new Repositories.Dictionary(SiteContext.Current));
-			serviceCollection.Decorate<IDictionaryRepository>((provider, sp) => new DictionaryCacheDecorator(provider, sp.GetService<ICacheProvider>()));
+			serviceCollection.AddScoped(p => new Repositories.Dictionary(SiteContext.Current));
+			serviceCollection.AddScoped<IDictionaryRepository>(sp => new DictionaryCacheDecorator(sp.GetService<Repositories.Dictionary>(), sp.GetService<ICacheProvider>()));
 		}
 	}
 }

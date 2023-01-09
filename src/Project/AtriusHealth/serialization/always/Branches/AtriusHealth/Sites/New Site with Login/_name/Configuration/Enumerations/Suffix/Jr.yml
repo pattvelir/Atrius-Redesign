@@ -1,0 +1,17 @@
+---
+ID: "9c1817a0-80ba-405d-8e5c-d8a5870e1180"
+Parent: "96fe7122-813a-483b-8ab1-9dbbea0060c0"
+Template: "7a623f5c-692d-45ce-a749-0aa63f680a67"
+Path: /sitecore/templates/Branches/Project/AtriusHealth/Sites/New Site with Login/$name/Configuration/Enumerations/Suffix/Jr
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "197fd7ed-d7de-4445-a87d-3a6b9e845000"
+      Hint: Value
+      Value: Jr.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170310T164354Z

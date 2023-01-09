@@ -1,0 +1,21 @@
+---
+ID: "3bed23e6-ee35-43d9-a847-cc1cfefbc9e0"
+Parent: "82ef2096-3d87-4c65-a4a5-495e72dbe40b"
+Template: "9744d172-190e-49ed-9d2f-b9f588bfeaf9"
+Path: /sitecore/templates/Branches/Project/AtriusHealth/Sites/New Site/$name/Configuration/Navigation/Footer Navigation/Social Links/LinkedIn
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170310T201630Z
+    - ID: "6c54a7e4-cb8b-4f5c-838e-b784517c4cb7"
+      Hint: Icon
+      Value: "{A130E678-2AD4-43E2-B9E8-FDBCEA071C51}"

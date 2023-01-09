@@ -1,0 +1,31 @@
+---
+ID: "4c13660a-ea37-46fc-ae86-7d22ee062a8e"
+Parent: "c4303fe4-d3a6-46aa-93ea-a9957f480a63"
+Template: "9b1048b7-a9ce-4995-a982-a73684bc4dc2"
+Path: /sitecore/templates/Branches/Project/AtriusHealth/Sites/New Site/$name/Configuration
+DB: master
+SharedFields:
+- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
+  Hint: __Security
+  Value: |
+    ar|sitecore\Sitecore Content Author Content Access|pe|-item:delete|-item:rename|
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160722T192313Z
+    - ID: "68b134b1-19e5-4664-8fdb-0da0c1750a45"
+      Hint: Phone Number
+      Value: "(555) 555-5555"
+    - ID: "96f8b3dc-22dd-4a48-b40c-b3f5f9f32fef"
+      Hint: Touch To Call Phone Number
+      Value: 55555555555
+    - ID: "addd3394-07c6-4f96-b2a2-354c4b9022a1"
+      Hint: Connect Statement
+      Value: Connect with us
+    - ID: "be5681b8-5cd7-429e-8676-dd9c73ea965c"
+      Hint: 404 Page Location
+      Value: 

@@ -1,0 +1,18 @@
+---
+ID: "0784cad6-4f14-48bd-93c9-4f31cd8f9f7e"
+Parent: "820561a0-e18a-4f16-bea2-9b66e50741f2"
+Template: "4c0a8d3e-48c5-4c24-8b59-8eab2ef0143a"
+Path: /sitecore/templates/Branches/Project/AtriusHealth/Sites/New Site with Login/$name/Home/Taxonomy/People/Author 3
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170310T170206Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

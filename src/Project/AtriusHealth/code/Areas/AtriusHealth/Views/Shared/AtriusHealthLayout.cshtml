@@ -1,0 +1,22 @@
+@using Sitecore.Mvc
+@using StringExtensions = AtriusHealth.Foundation.Dictionary.Extensions.StringExtensions
+
+@{
+	Layout = "OuterAtriusHealthLayout.cshtml";
+}
+
+<div class="js-page-content-wrapper">
+	<header>
+		@Html.Sitecore().Placeholder("content-header")
+	</header>
+	<main class="main-content">
+		<div class="u-visuallyhidden" id="main-content" tabIndex="-1">
+			@StringExtensions.Translate("Start of Main Content")
+		</div>
+		<div class="main-content-wrapper">@Html.Sitecore().Placeholder("content-body")</div>
+	</main>
+	<footer>
+		@Html.Partial("~/Views/Global/BackToTop.cshtml")
+		@Html.Sitecore().Placeholder("content-footer")
+	</footer>
+</div>

@@ -1,0 +1,14 @@
+---
+ID: "e52fb765-58fa-4120-88f8-96a8d7d8d91a"
+Parent: "40efb841-649a-48f6-8320-f8d3b2f233bd"
+Template: "10a620aa-739d-448c-b0eb-f387a5287682"
+Path: /sitecore/templates/Branches/Project/AtriusHealth/Sites/New Site with Login/$name/Home/Taxonomy/Content Types
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161108T211202Z

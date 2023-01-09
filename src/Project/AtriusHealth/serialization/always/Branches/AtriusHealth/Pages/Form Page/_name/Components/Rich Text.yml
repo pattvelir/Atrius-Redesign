@@ -1,0 +1,18 @@
+---
+ID: "612c183d-571f-481d-bebe-32cba8842bbf"
+Parent: "54884c7f-f2d2-46ce-affe-c6da6a58c531"
+Template: "b5e1a562-1a76-49be-a899-1d5ca76703b2"
+Path: /sitecore/templates/Branches/Project/AtriusHealth/Pages/Form Page/$name/Components/Rich Text
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190506T154701Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

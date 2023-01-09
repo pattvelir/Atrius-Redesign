@@ -1,0 +1,22 @@
+---
+ID: "1fcdb68e-be6c-4bd3-a0b8-ecaa0fa371ee"
+Parent: "2b74e0ac-1933-4b01-abe9-5d09fbdbf0e4"
+Template: "d5745f91-8fa1-457f-be87-875a029c7b69"
+Path: /sitecore/templates/Branches/Project/AtriusHealth/Sites/New Site with Login/$name/Configuration/Navigation/Utility Navigation Logged Out/Log in
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190524T173855Z
+    - ID: "ca902061-ead1-441e-a6d5-90612ce27830"
+      Hint: Link
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{01ABFBD2-08A9-435D-86B8-B66D124CA2EE}" />
