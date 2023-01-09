@@ -7,7 +7,7 @@ const propTypes = {
   navSection: arrayOf(
     shape({
       items: array,
-    }),
+    })
   ),
 };
 
@@ -83,6 +83,7 @@ const footerNav = (props) => {
                 title={heading}
                 type="h2"
                 className="footer-nav__heading footer-nav__col-wrapper"
+                key={i}
               >
                 {columnArray.map((column, i) => {
                   return (

@@ -1,5 +1,9 @@
 @import "../../../scss/variables/index";
 
+:root {
+  --c-size-5: var(--size-5);
+}
+
 .connect {
   max-width: 360px;
   margin-bottom: var(--size-9);
@@ -11,7 +15,7 @@
 
 .connect__newsletter {
   .sc-form__message {
-    margin-bottom: var(--size-5);
+    margin-bottom: var(--c-size-5);
     font: var(--body-lg);
   }
 
@@ -20,7 +24,7 @@
   }
 
   .sc-form-item {
-    margin-bottom: var(--size-5);
+    margin-bottom: var(--c-size-5);
   }
 
   .sc-form__button-row {
@@ -29,7 +33,7 @@
 }
 
 .connect__promo-statement {
-  margin-bottom: var(--size-5);
+  margin-bottom: var(--c-size-5);
   font: var(--heading-e);
 }
 

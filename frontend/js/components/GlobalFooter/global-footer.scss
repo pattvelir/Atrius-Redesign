@@ -1,5 +1,9 @@
 @import "../../../scss/variables/index";
 
+:root {
+  --gf-padding: calc(var(--size-10) / 2) var(--size-5);
+}
+
 .global-footer {
   color: var(--color-design-system-white);
 
@@ -15,7 +19,7 @@
     width: 100%;
     max-width: $bp-1600;
     margin: auto;
-    padding: calc(var(--size-10) / 2) var(--size-5);
+    padding: var(--gf-padding);
 
     @media (--bp-1600) {
       padding: var(--size-10) var(--spacing-108);
@@ -26,6 +30,16 @@
     @media (--bp-800) and (--bp-1200-max) {
       padding: var(--size-9) var(--size-8);
     }
+
+    // @media (--bp-1600) {
+    //   --gf-padding: var(--size-10) var(--spacing-108);
+    // }
+    // @media (--bp-1200) and (--bp-1600-max) {
+    //   --gf-padding: var(--size-10) var(--spacing-156);
+    // }
+    // @media (--bp-800) and (--bp-1200-max) {
+    //   --gf-padding: var(--size-9) var(--size-8);
+    // }
   }
 
   .global-footer__row {
