@@ -6,10 +6,10 @@
 .text-banner {
   --text-banner-decription: var(--body-sm);
   --text-banner-heading: var(--font-headings-400-heading-d);
-  --text-banner-container-padding: var(--spacing-40) var(--spacing-16);
+  --text-banner-container-padding: calc(var(--size-10) / 2) var(--size-3);
 
   @media (min-width: 361px) {
-    --text-banner-container-padding: var(--spacing-40);
+    --text-banner-container-padding: calc(var(--size-10) / 2);
     --text-banner-decription: var(--body-md);
     --text-banner-heading: var(--font-headings-1600-800-heading-d);
   }
@@ -29,12 +29,12 @@
 }
 
 .text-banner__title {
-  margin-block-end: var(--spacing-24);
+  margin-block-end: var(--size-5);
   font: var(--text-banner-heading);
 }
 
 .text-banner__description {
-  margin-block-end: var(--spacing-24);
+  margin-block-end: var(--size-5);
   font: var(--text-banner-decription);
 }
 

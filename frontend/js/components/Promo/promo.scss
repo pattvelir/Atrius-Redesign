@@ -3,16 +3,18 @@
 @custom-media --bp-small-min: (min-width: 552px);
 
 :root {
-  --promo-img-margin-block-end: 24px;
+  --promo-img-margin-block-end: var(--size-5);
   --promo-description-font: var(--font-sub-headings-400-sub-heading-b);
   --promo-title-transfrom: capitalize;
   --promo-cta-rotate-icon: 0;
 }
 
 .promo {
-  --promo-padding: var(--spacing-40) var(--spacing-16);
+  --promo-padding: calc(var(--size-10) / 2) var(--size-3);
+
+  // variable not changing with @custom-media
   @media screen and (min-width: 680px) {
-    --promo-padding: var(--spacing-40);
+    --promo-padding: calc(var(--size-10) / 2);
   }
 
   position: relative;
@@ -40,19 +42,19 @@
 
     .promo__picture {
       overflow: hidden;
-      margin-bottom: var(--spacing-16);
-      aspect-ratio: 16/9;
+      margin-bottom: var(--size-3);
+      aspect-ratio: var(--ratio-widescreen);
     }
   }
 }
 
 .promo__title {
-  margin-bottom: var(--spacing-16);
+  margin-bottom: var(--size-3);
   text-align: var(--promo-text-align);
   font: var(--promo-title-font);
 
   .promo--circle & {
-    margin-bottom: var(--spacing-24);
+    margin-bottom: var(--size-5);
     text-transform: uppercase;
   }
 }
@@ -61,10 +63,10 @@
   display: block;
   height: auto;
 
-  margin-block-end: var(--spacing-48);
+  margin-block-end: var(--size-7);
 
   .promo--circle & {
-    margin-block-start: var(--spacing-24);
+    margin-block-start: var(--size-5);
   }
 }
 
@@ -120,13 +122,13 @@
 
   .promo__img {
     margin-inline: auto;
-    border-radius: 50%;
-    aspect-ratio: 1 / 1;
-    max-inline-size: 96px;
+    border-radius: var(--radius-round);
+    aspect-ratio: var(--ration-square);
+    max-inline-size: var(--spacing-96);
     object-fit: cover;
 
-    @media screen and (min-width: 680px) {
-      max-inline-size: 168px;
+    @media (--bp-small-min) {
+      max-inline-size: var(--spacing-168);
     }
   }
 }

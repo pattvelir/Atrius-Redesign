@@ -1,5 +1,12 @@
 @import "../../../scss/variables/index";
 
+:root {
+  --sm-color: var(--color-blue-800);
+  --sm-transition: all 1000ms ease-in-out;
+  --sm-transform: translate(100%, 0%);
+  --sm-min-width: var(--spacing-96);
+}
+
 .search-menu {
   display: grid;
   justify-items: end;
@@ -22,12 +29,12 @@
     max-width: var(--max-content-width);
     opacity: 0;
     margin: 0 auto;
-    background-color: var(--color-blue-800);
-    transition: all 1000ms ease-in-out;
-    transform: translate(100%, 0%);
+    background-color: var(--sm-color);
+    transition: var(--sm-transition);
+    transform: var(--sm-transform);
 
     .search-box {
-      width: 78%;
+      width: calc(100% - 200px);
     }
 
     .btn {
@@ -47,8 +54,8 @@
     overflow: hidden;
     visibility: hidden;
     opacity: 0;
-    background-color: var(--color-blue-800);
-    transition: all 1000ms ease-in-out;
+    background-color: var(--sm-color);
+    transition: var(--sm-transition);
     pointer-events: none;
   }
 
@@ -85,7 +92,7 @@
     .search-menu__drop-down {
       visibility: visible;
       opacity: 1;
-      transition: all 1000ms ease-in-out;
+      transition: var(--sm-transition);
       transform: translate(0%, 0%);
       pointer-events: all;
     }
@@ -101,7 +108,7 @@
 }
 
 .search-menu__button {
-  min-width: 96px;
+  min-width: var(--sm-min-width);
   border: 0;
   background: none;
 }
@@ -111,7 +118,5 @@
 
   .search-menu:not(.is-open) {
     visibility: hidden;
-
-    // opacity: 0;
   }
 }

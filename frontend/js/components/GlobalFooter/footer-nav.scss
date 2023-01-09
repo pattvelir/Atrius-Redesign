@@ -1,14 +1,29 @@
 @import "../../../scss/variables/index";
 
+:root {
+  --fn-size-5: var(--size-5);
+  --fn-top: calc(var(--size-1 / 2));
+}
+
 .footer-nav {
   display: flex;
   flex-shrink: 0;
   flex-wrap: wrap;
-  gap: 72px;
+  gap: var(--spacing-72);
   justify-content: flex-start;
 
   @media (--bp-x-small-max) {
     display: block;
+  }
+
+  a[target="_blank"] {
+    @include iconAfterLink($icon);
+    position: relative;
+    fill: var(--color-yellow-primary);
+
+    &::after {
+      top: var(--fn-top);
+    }
   }
 }
 
@@ -19,7 +34,7 @@
   @include zero-list;
 
   li:not(:last-child) {
-    margin-bottom: var(--spacing-24);
+    margin-bottom: var(--fn-size-5);
   }
 
   a {
@@ -28,6 +43,6 @@
 }
 
 .footer-nav__heading {
-  margin-bottom: var(--spacing-24);
+  margin-bottom: var(--fn-size-5);
   font: var(--heading-e);
 }

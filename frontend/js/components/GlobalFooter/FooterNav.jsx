@@ -32,8 +32,9 @@ const footerNav = (props) => {
             <div
               key={i}
               className={`footer-nav__section has-${section.numCols}`}
+              aria-labelledby={`${heading}-${i}`}
             >
-              <h2 id={`${heading}-123`} className="footer-nav__heading">
+              <h2 id={`${heading}-${i}`} className="footer-nav__heading">
                 {heading}
               </h2>
               <div className="footer-nav__col-wrapper">
@@ -47,7 +48,9 @@ const footerNav = (props) => {
                       {column.map((item, i) => {
                         return (
                           <li key={i}>
-                            <a href={item.url}>{item.label}</a>
+                            <a href={item.url} target={item.target}>
+                              {item.label}
+                            </a>
                           </li>
                         );
                       })}
@@ -63,24 +66,24 @@ const footerNav = (props) => {
         className="footer-nav global-footer__nav--mobile"
         aria-label="Footer"
       >
-        {navSection.map((section, i) => {
-          const { items, numCols, heading } = section;
-          const size = Math.ceil(items.length / numCols);
-          const columnArray = [];
+        <AccordionContainer
+          section="footer"
+          className={`footer-nav__section has-${navSection.length}`}
+        >
+          {navSection.map((section, i) => {
+            const { items, numCols, heading } = section;
+            const size = Math.ceil(items.length / numCols);
+            const columnArray = [];
 
-          for (let i = 0; i < items.length; i += size) {
-            columnArray.push(items.slice(i, i + size));
-          }
-          return (
-            <AccordionContainer
-              key={i}
-              section="footer"
-              className={`footer-nav__section has-${section.numCols}`}
-            >
+            for (let i = 0; i < items.length; i += size) {
+              columnArray.push(items.slice(i, i + size));
+            }
+            return (
               <AccordionItem
                 title={heading}
                 type="h2"
                 className="footer-nav__heading footer-nav__col-wrapper"
+                key={i}
               >
                 {columnArray.map((column, i) => {
                   return (
@@ -102,9 +105,9 @@ const footerNav = (props) => {
                   );
                 })}
               </AccordionItem>
-            </AccordionContainer>
-          );
-        })}
+            );
+          })}
+        </AccordionContainer>
       </nav>
     </>
   );

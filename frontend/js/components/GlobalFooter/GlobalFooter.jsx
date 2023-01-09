@@ -17,13 +17,15 @@ const globalFooter = (props) => {
 
   return (
     <footer className="global-footer">
-      <div className="global-footer__row global-footer__row__top">
-        <FooterNav navSection={footerNav} />
-        <Connect {...connect} />
-      </div>
-      <div className="global-footer__row global-footer__row__bottom">
-        <Copyright />
-        <FooterLinks footerLinks={footerLinks} />
+      <div className="global-footer__container">
+        <div className="global-footer__row global-footer__row__top">
+          <FooterNav navSection={footerNav} />
+          <Connect {...connect} />
+        </div>
+        <div className="global-footer__row global-footer__row__bottom">
+          <Copyright />
+          <FooterLinks footerLinks={footerLinks} />
+        </div>
       </div>
     </footer>
   );
