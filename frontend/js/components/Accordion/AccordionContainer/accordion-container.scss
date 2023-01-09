@@ -1,6 +1,10 @@
+:root {
+  --ac-max-inline: 744px;
+}
+
 .accordion-container {
   inline-size: 100%;
-  max-inline-size: 744px;
+  max-inline-size: var(--ac-max-inline);
 
   &.accordion-container--footer {
     max-inline-size: none;

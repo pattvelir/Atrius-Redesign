@@ -10,25 +10,25 @@
 */
 .icon {
   display: inline-block;
-  height: 16px;
-  width: 16px;
+  height: var(--size-3);
+  width: var(--size-3);
   vertical-align: middle;
   fill: currentcolor;
 }
 
 .icon--24x24 {
-  height: 24px;
-  width: 24px;
+  height: var(--size-5);
+  width: var(--size-5);
 }
 
 .icon--36x36 {
-  height: 36px;
-  width: 36px;
+  height: var(--spacing-36);
+  width: var(--spacing-36);
 }
 
 .icon--48x48 {
-  height: 48px;
-  width: 48px;
+  height: var(--size-8);
+  width: var(--size-8);
 }
 
 .icon--black {

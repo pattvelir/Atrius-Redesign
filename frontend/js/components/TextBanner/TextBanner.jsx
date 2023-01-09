@@ -9,11 +9,12 @@ const propTypes = {
   cta: string,
   theme: number,
   adjacent: bool,
+  href: string,
 };
 
 const TextBanner = (props) => {
-  const { theme, title, description, cta, adjacent } = props;
-  const buttonColor = theme <= 4 && theme != 1 ? "light" : "dark";
+  const { theme, title, description, cta, adjacent, href } = props;
+  const buttonColor = theme >= 2 && theme < 5 ? "dark" : "light";
 
   return (
     <section
@@ -23,7 +24,9 @@ const TextBanner = (props) => {
       })}
     >
       <div className="text-banner__container container">
-        <h2 className="text-banner__title">{title}</h2>
+        <h2 className="text-banner__title">
+          {title} {theme} {buttonColor}
+        </h2>
         <p className="text-banner__description">{description}</p>
         <Button
           btnType="filled"
@@ -31,7 +34,7 @@ const TextBanner = (props) => {
           iconRight="arrow-right"
           size="xsm"
           as="a"
-          href="/#"
+          href={href}
           aria-labelledby="uniqueId-dda5ad8a"
         >
           {cta}

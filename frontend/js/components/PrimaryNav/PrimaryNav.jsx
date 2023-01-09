@@ -102,7 +102,7 @@ const PrimaryNav = (props) => {
                             <div>
                               <Button
                                 btnType="filled"
-                                btnColor="dark"
+                                btnColor="light"
                                 iconRight="arrow-right"
                                 href={navItem.featureLink.href}
                               >

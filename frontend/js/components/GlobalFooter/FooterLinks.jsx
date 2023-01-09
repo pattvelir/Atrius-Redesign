@@ -10,10 +10,12 @@ const footerLinks = (props) => {
     <nav className="footer-links" aria-label="Footer Utility">
       <ul>
         {footerLinks &&
-          footerLinks.map((link, i) => {
+          footerLinks.map(({ copy, target, href }, i) => {
             return (
               <li key={i}>
-                <a href="#">{link}</a>
+                <a href={href} {...target}>
+                  {copy}
+                </a>
               </li>
             );
           })}
