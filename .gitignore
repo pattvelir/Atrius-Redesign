@@ -177,3 +177,4 @@ tools/helix/add-helix-module-configuration.json
 !tools/docker/build/mssql/backups
 /tools/powershell/Kneedle/config.json
 /build
+/package-lock.json
