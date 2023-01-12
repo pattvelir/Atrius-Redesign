@@ -49,7 +49,7 @@ namespace AtriusHealth.Foundation.Theme.Extensions
 
 		public static HtmlString RenderJs(this HtmlHelper helper, string fileName)
 		{
-			return new HtmlString($"<script src=\"/assets/{Sitecore.Context.Site.PrimaryArea()}-build/js/{fileName}-generated.js\"></script>");
+			return new HtmlString($"<script src=\"/assets/{Sitecore.Context.Site.PrimaryArea()}-build/js/frontend/js/{fileName}-generated.js\"></script>");
 		}
 	}
 }

@@ -178,3 +178,5 @@ tools/helix/add-helix-module-configuration.json
 /tools/powershell/Kneedle/config.json
 /build
 /package-lock.json
+/src/Project/AtriusHealth/code/assets/AtriusHealth-Build/js/_virtual
+/src/Project/AtriusHealth/code/assets/AtriusHealth-Build/index.html
