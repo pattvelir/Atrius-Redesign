@@ -1,8 +1,11 @@
+
 # AtriusHealth for Sitecore
 
 ## Overview
 
 AtriusHealth is a tool kit of parts to accelerate Sitecore builds.
+This repo is built off of the Velir Thread Starter but we have replaced some Gulp task with Rollup to take advantage of some newer javascript features.
+Solution code for the Atrius Health Redesign.
 
 ## Version
 v7.2.1
@@ -13,6 +16,11 @@ See [AtriusHealth Release Notes](https://velirs.atlassian.net/wiki/spaces/VR/pag
 * Visual Studio 2019+
 * .NET Framework 4.8
 * Docker Desktop
+
+// linting
+$ npm run eslint
+//or
+*$ npm run eslint -- --fix
 
 ## Installation
 
@@ -43,6 +51,7 @@ The instructions below go over installing and working with AtriusHealth Proper. 
         - Disable command: `bcdedit /set hypervisorlaunchtype off`
         - Enable command: `bcdedit /set hypervisorlaunchtype auto`
 
+
 ### Local Environment Setup
 
 1. Ensure you have completed all prerequisites.
@@ -50,6 +59,49 @@ The instructions below go over installing and working with AtriusHealth Proper. 
 3. Open a Powershell window as Administrator in the root of your **source** directory
 4. In your Powershell console, run `.\up.ps1 -IncludeDbBackups`.  (If this your first time running the script, you will be prompted for a path to your Sitecore license file, enter a valid path (e.g. C:\data\license\license.xml) and press 'Enter')
 
+### FE Setup
+
+1. Visit https://github.com/settings/tokens/new and create a Github Personal Access Token with *read:packages* permissions selected
+2. On Windows, add a new environment variable named `GH_PAT` with the value of the Personal Access Token created in Step #1.
+3. On a Mac, paste the token generated into your `.zshrc` or `.bash_profile` file. This will make the PAT token available for use in projects and make it possible to use Velir toolkit packages.
+
+```
+export GH_PAT=<GITHUB_TOKEN>
+```
+4. Run `npm install`.
+
+### FE Commands
+
+```bash
+//Run dev server and storybook
+$ npm start 
+//or
+$ npm run dev
+//create production build
+$ npm run build
+//clean up dependencies and reinstall
+$ npm run fresh-install
+// linting
+$ npm run eslint
+//or
+$ npm run eslint -- --fix
+//and
+
+$ npm run stylelint
+//or
+$ npm run stylelint -- --fix
+
+// run storybook
+$ npm run storybook
+
+// convert design tokens from figma to css props
+$ npm run convert:tokens
+```
+1. npm run build - Builds the FE Files. 
+2. Uses parameters located at the `.env` file.
+   - FE_BUILD_DIR
+   - FE_SRC_DIR
+   
 ### Creating a New Site
 
 1. From the Sitecore Content Editor, right-click the **Content** item and create a new site using the branch: `/sitecore/templates/Branches/AtriusHealth/Project/AtriusHealth/Sites/New Site`.
