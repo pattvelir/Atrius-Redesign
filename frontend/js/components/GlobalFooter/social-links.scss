@@ -13,9 +13,15 @@
     a:focus {
       border-color: transparent;
     }
+  }
 
-    &:last-child {
-      margin-right: 0;
+  &.social-links--vertical {
+    ul {
+      flex-wrap: wrap;
+    }
+
+    li {
+      flex: 100%;
     }
   }
 }
