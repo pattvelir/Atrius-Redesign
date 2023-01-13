@@ -76,3 +76,16 @@ export function pageBlock(totalResults, resultsPerPage, currentPage) {
     };
   }, pages);
 }
+
+/**
+ * This retruns the function from the prop handlePageChange.
+ *
+ * @param {number} pageNum
+ * @param {number} isDisabled
+ * @param {function} handlePageChange
+ */
+export const onPageClick = (pageNum, isDisabled, handlePageChange) => {
+  if (!isDisabled) {
+    handlePageChange(pageNum);
+  }
+};

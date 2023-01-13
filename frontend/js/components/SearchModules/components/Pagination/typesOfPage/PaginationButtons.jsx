@@ -1,6 +1,6 @@
 import React from "react";
-import { func, number } from "prop-types";
-import { isLastPage, isFirstPage } from "../../../data/paging.js";
+import { bool, func, number, string } from "prop-types";
+import { isLastPage, isFirstPage, onPageClick } from "../../../data/paging.js";
 import Button from "../../../../Button/Button.jsx";
 
 const propTypes = {
@@ -8,6 +8,9 @@ const propTypes = {
   resultsPerPage: number.isRequired,
   currentPage: number.isRequired,
   handlePageChange: func.isRequired,
+  seeMore: bool,
+  value: string || number,
+  isDisabled: bool,
 };
 
 const PaginationButtons = (props) => {
@@ -17,6 +20,8 @@ const PaginationButtons = (props) => {
     currentPage,
     handlePageChange,
     seeMore,
+    value,
+    isDisabled,
   } = props;
   const isLast = isLastPage(totalResults, resultsPerPage, currentPage);
   const isFirst = isFirstPage(currentPage);
@@ -24,27 +29,31 @@ const PaginationButtons = (props) => {
   const prevNextTemplate = (
     <>
       <Button
+        as="button"
         btnType="filled"
         btnColor="light"
         iconLeft="left-arrow"
         disabled={isFirst}
-        onClick={handlePageChange}
+        onClick={() => onPageClick(value, isDisabled, handlePageChange)}
+        size="xsm"
       >
         Previous
       </Button>
       <Button
+        as="button"
         btnType="filled"
         btnColor="light"
         iconRight="right-arrow"
         disabled={isLast}
-        onClick={handlePageChange}
+        onClick={() => onPageClick(value, isDisabled, handlePageChange)}
+        size="xsm"
       >
         Next
       </Button>
     </>
   );
   const seeMoreTemplate = (
-    <Button btnType="outline" btnColor="light" href="#">
+    <Button btnType="outline" btnColor="light" href="#" size="xsm">
       See All
     </Button>
   );

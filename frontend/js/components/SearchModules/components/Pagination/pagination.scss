@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.pagination--active {
+  pointer-events: none;
+}
+
 .pagination__container {
   display: flex;
   justify-content: center;
@@ -28,6 +32,10 @@
   &.pagination--active {
     background-color: var(--color-blue-900);
   }
+}
+
+.pagination__load-more {
+  width: 170px;
 }
 
 .pagination__pages {

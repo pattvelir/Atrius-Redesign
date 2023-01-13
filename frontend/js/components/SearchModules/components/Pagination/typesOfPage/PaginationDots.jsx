@@ -1,6 +1,7 @@
 import React from "react";
 import { func, number } from "prop-types";
 import { pageBlock } from "../../../data/paging.js";
+import { getPage } from "./GetPage.jsx";
 
 const propTypes = {
   totalResults: number.isRequired,
@@ -13,31 +14,17 @@ const PaginationDots = (props) => {
   const { totalResults, resultsPerPage, currentPage, handlePageChange } = props;
   const block = pageBlock(totalResults, resultsPerPage, currentPage);
 
-  const getPage = (label, value, isDisabled, side, type) => {
-    const active = isDisabled ? " pagination--active" : "";
-    const dotsTemplate = (
-      <button
-        className={`pagination__dot${active}`}
-        key={label}
-        aria-current={isDisabled}
-        onClick={() => onPageClick(value, isDisabled)}
-        disabled={isDisabled}
-      ></button>
-    );
-
-    return dotsTemplate;
-  };
-
-  const onPageClick = (pageNum, isDisabled) => {
-    if (!isDisabled) {
-      handlePageChange(pageNum);
-    }
-  };
-
   const pagnationDotesTemplate = (
     <nav className="pagination__dots pagination__container">
       {block.map((page) =>
-        getPage(page.label, page.num, page.current, "", "dots"),
+        getPage(
+          page.label,
+          page.num,
+          page.current,
+          "",
+          "dots",
+          handlePageChange,
+        ),
       )}
     </nav>
   );
