@@ -6,6 +6,14 @@ import Icon from "../Icon/Icon.jsx";
 const propTypes = {
   btnText: string,
   btnType: string,
+  children: string,
+  btnColor: string,
+  size: string,
+  icon: string,
+  iconLeft: string,
+  iconRight: string,
+  as: string,
+  classNames: string,
 };
 
 const Button = (props) => {
