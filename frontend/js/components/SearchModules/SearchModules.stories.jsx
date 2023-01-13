@@ -59,8 +59,44 @@ export const pagination = () => (
     <Pagination
       handlePageChange={() => console.log("clicked")}
       totalResults={100}
-      currentPage={2}
+      currentPage={1}
       resultsPerPage={5}
+      typeOfPage="prevNext"
+    />
+    <Pagination
+      handlePageChange={() => console.log("clicked")}
+      totalResults={100}
+      currentPage={1}
+      resultsPerPage={5}
+      typeOfPage="prevNextLoad"
+    />
+    <Pagination
+      handlePageChange={() => console.log("clicked")}
+      totalResults={100}
+      currentPage={1}
+      resultsPerPage={5}
+      typeOfPage="loadMore"
+    />
+    <Pagination
+      handlePageChange={() => console.log("clicked")}
+      totalResults={100}
+      currentPage={1}
+      resultsPerPage={5}
+      typeOfPage="numbersv1"
+    />
+    <Pagination
+      handlePageChange={() => console.log("clicked")}
+      totalResults={100}
+      currentPage={1}
+      resultsPerPage={5}
+      typeOfPage="dots"
+    />
+    <Pagination
+      handlePageChange={() => console.log("clicked")}
+      totalResults={100}
+      currentPage={1}
+      resultsPerPage={5}
+      typeOfPage="numbersv2"
     />
   </ContainerFull>
 );
