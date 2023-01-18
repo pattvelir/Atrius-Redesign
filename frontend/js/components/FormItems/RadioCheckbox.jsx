@@ -11,6 +11,8 @@ const propTypes = {
   errorMsg: string,
   checked: bool,
   inputdescription: string,
+  side: string,
+  toggle: bool,
 };
 
 const radioCheckbox = (props) => {
@@ -23,23 +25,32 @@ const radioCheckbox = (props) => {
     errorMsg,
     checked,
     inputdescription,
+    side,
+    size,
+    toggle,
   } = props;
 
   const id = parseInt(Math.random() * 1000);
 
   return (
     <label
-      className={cx(`sc-form-item sc-form-item--${type}`, {
-        "js-form-required": required,
-        "sc-form-item--optional": !required,
-        "has-error": error,
-      })}
+      className={cx(
+        `sc-form-item sc-form-item--${type}`,
+        `sc-form-item--${side}`,
+        {
+          "js-form-required": required,
+          "sc-form-item--optional": !required,
+          "has-error": error,
+          "sc-form-item--small": size === "small",
+          "sc-form-item--toggle": toggle,
+        },
+      )}
     >
       <input
         type={type}
         id={`GUID-${id}`}
         aria-required={required}
-        checked={checked}
+        // checked={checked}
         name={name}
         className="sc-form-item__field"
       />
@@ -55,6 +66,10 @@ const radioCheckbox = (props) => {
       </span>
     </label>
   );
+};
+
+radioCheckbox.defaultProps = {
+  side: "left",
 };
 
 radioCheckbox.propTypes = propTypes;

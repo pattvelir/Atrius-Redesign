@@ -8,7 +8,8 @@
   background: var(--color-design-system-white);
 
   &:hover {
-    border: 2px solid var(--color-neutral-100);
+    border-color: var(--color-yellow-300);
+    cursor: pointer;
   }
 
   &:focus-visible {
