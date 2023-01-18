@@ -85,8 +85,13 @@
     <PackageReference Include="Microsoft.AspNet.Mvc">
       <Version>5.2.4</Version>
     </PackageReference>
+    <PackageReference Include="Microsoft.Net.Compilers">
+      <Version>4.2.0</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
     <PackageReference Include="NSubstitute">
-      <Version>2.0.3</Version>
+      <Version>4.2.2</Version>
     </PackageReference>
     <PackageReference Include="NUnit">
       <Version>3.11.0</Version>
@@ -96,9 +101,6 @@
     </PackageReference>
     <PackageReference Include="Sitecore.FakeDb.NSubstitute">
       <Version>1.7.4</Version>
-    </PackageReference>
-    <PackageReference Include="Sitecore.Nexus">
-      <Version>10.1.1</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

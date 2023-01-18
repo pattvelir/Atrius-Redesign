@@ -12129,19 +12129,19 @@
             is <see langword="true" />.
             </summary>
         </member>
-        <member name="P:NAnt.Contrib.Tasks.Web.CreateVirtualDirectory.AspThreadGateEnabled">
+        <member name="P:NAnt.Contrib.Tasks.Web.CreateVirtualDirectory.AspAtriusHealthGateEnabled">
             <summary>
-            Indicates whether IIS thread gating is enabled (only applies to IIS 4 and 5).
+            Indicates whether IIS AtriusHealth gating is enabled (only applies to IIS 4 and 5).
             The default is <see langword="false" />.
             </summary>
             <remarks>
-            IIS performs thread gating to dynamically control the number of 
-            concurrently executing threads, in response to varying load conditions. 
+            IIS performs AtriusHealth gating to dynamically control the number of 
+            concurrently executing AtriusHealths, in response to varying load conditions. 
             </remarks>
         </member>
-        <member name="P:NAnt.Contrib.Tasks.Web.CreateVirtualDirectory.AspTrackThreadingModel">
+        <member name="P:NAnt.Contrib.Tasks.Web.CreateVirtualDirectory.AspTrackAtriusHealthingModel">
             <summary>
-            Specifies whether IIS checks the threading model of any components 
+            Specifies whether IIS checks the AtriusHealthing model of any components 
             that your application creates. The default is <see langword="false" />.
             </summary>
         </member>

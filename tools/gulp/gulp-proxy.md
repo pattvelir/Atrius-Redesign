@@ -7,4 +7,4 @@
 
 ## Starting the Proxy
 
-1. gulp sitecore-graybox
+1. gulp sitecore-AtriusHealth

@@ -1,10 +1,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29418.71
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{B648E5AF-F7D4-470F-8986-53487924D757}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Atrius", "Atrius", "{92FF1186-F5D1-47A1-A727-FE3AE5DF8D99}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AtriusHealth", "AtriusHealth", "{92FF1186-F5D1-47A1-A727-FE3AE5DF8D99}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{3E8ED502-3F32-43A9-BE2B-818314D8F03A}"
 EndProject
@@ -89,7 +89,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configurat
 		config\env\default.docker.properties = config\env\default.docker.properties
 		config\env\default.properties = config\env\default.properties
 		config\env\dev.properties = config\env\dev.properties
-		config\env\docker.properties = config\env\docker.properties
 		config\env\local.properties = config\env\local.properties
 		config\env\local.properties.example = config\env\local.properties.example
 		config\env\prod.properties = config\env\prod.properties
@@ -112,7 +111,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtriusHealth.Feature.Naviga
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtriusHealth.Feature.Navigation.Tests", "src\Feature\Navigation\tests\AtriusHealth.Feature.Navigation.Tests.csproj", "{F554DB68-0542-4609-B860-030858A54948}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtriusHealth.Project.Atrius", "src\Project\Atrius\code\AtriusHealth.Project.Atrius.csproj", "{D1A14D56-0309-49E4-9E79-2CF15D974EFD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtriusHealth.Project.AtriusHealth", "src\Project\AtriusHealth\code\AtriusHealth.Project.AtriusHealth.csproj", "{D1A14D56-0309-49E4-9E79-2CF15D974EFD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtriusHealth.Feature.Containers.Tests", "src\Feature\Containers\tests\AtriusHealth.Feature.Containers.Tests.csproj", "{55C4A747-1A0B-4531-BC77-E7B5A5503CD8}"
 EndProject
@@ -607,7 +606,7 @@ Global
 		{2BC4EF4F-47CD-4808-9C86-9C0A9F6D8061} = {66C00352-D4DB-4054-A315-D13C5C58318B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {455E1133-7536-459E-A859-F3C60EE65FA3}
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
+		SolutionGuid = {455E1133-7536-459E-A859-F3C60EE65FA3}
 	EndGlobalSection
 EndGlobal

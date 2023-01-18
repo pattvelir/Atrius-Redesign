@@ -1,0 +1,30 @@
+---
+ID: "4420475b-eac1-4a3f-b196-c750f7fe5bbd"
+Parent: "47b7e344-2548-4492-bf4e-72625d5eeed2"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/Project/AtriusHealth/Detail Page/Containers/70 Percent Left Column
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: 
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: |
+    {FC3D7B61-8FFE-4FA5-8E62-841A0E8A8F17}
+    {4FC58D75-BE0A-469A-88A8-D5678805B423}
+    {C9529F14-C669-46C3-A959-97931F35E039}
+    {089971A7-90DA-4923-8712-BE61C59DD237}
+    {A639756B-37D4-4987-8E5E-F428CF990C1C}
+    {2321AED5-316F-4149-AE49-56A8D6813482}
+    {18B407EA-1385-4BAD-AF8A-422D85B0CEF2}
+    {1999A7EF-9D6D-4DC8-97AF-A9408543702D}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161110T145455Z

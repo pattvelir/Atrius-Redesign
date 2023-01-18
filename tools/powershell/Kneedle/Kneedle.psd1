@@ -30,7 +30,7 @@ CompanyName = 'Velir Studios LLC'
 Copyright = 'Copyright (C) by Velir Studios LLC'
 
 # Description of the functionality provided by this module
-Description = 'PowerShell extensions for Thread-based Sitecore development'
+Description = 'PowerShell extensions for AtriusHealth-based Sitecore development'
 
 # Minimum version of the Windows PowerShell engine required by this module
 PowerShellVersion = '5.1'
@@ -95,13 +95,13 @@ PrivateData = @{
     PSData = @{
 
         # Tags applied to this module. These help with module discovery in online galleries.
-        Tags = 'sitecore','docker','powershell', 'thread', 'kneedle'
+        Tags = 'sitecore','docker','powershell', 'AtriusHealth', 'kneedle'
 
         # A URL to the license for this module.
         LicenseUri = ''
 
         # A URL to the main website for this project.
-        ProjectUri = 'https://github.com/Velir/Atrius-Redesign'
+        ProjectUri = 'https://github.com/Velir/AtriusHealth'
 
         # A URL to an icon representing this module.
         IconUri = ''

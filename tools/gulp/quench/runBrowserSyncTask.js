@@ -2,6 +2,7 @@ const quench = require("./quench.js");
 const R = require("ramda");
 const chalk = require("chalk");
 const browserSync = require("browser-sync");
+
 module.exports = function runBrowserSyncTask(userConfig = {}) {
   const localJs = quench.loadLocalJs();
 

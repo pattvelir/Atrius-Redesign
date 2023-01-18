@@ -2,20 +2,20 @@ version: "2.4"
 
 services:
 
-  # node:
-  #   image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-node:${VERSION:-latest}
-  #   build:
-  #     context: .
-  #     dockerfile: ${LOCAL_BUILD_PATH}/node/Dockerfile
-  #     args:
-  #       BASE_IMAGE: ${SOLUTION_BASE_IMAGE}
-  #       NODE_INSTALLER_IMAGE: mcr.microsoft.com/windows/servercore:1803
-  #       NODE_VERSION: v10.19.0
-  #   working_dir: C:\html
-  #   mem_limit: 2GB
-  #   volumes:
-  #     - .\:C:\html
-  #   scale: 0
+  #node:
+  #  image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-node:${VERSION:-latest}
+  #  build:
+  #    context: .
+  #    dockerfile: ${LOCAL_BUILD_PATH}/node/Dockerfile
+  #    args:
+  #      BASE_IMAGE: mcr.microsoft.com/windows/nanoserver:1809
+  #      NODE_INSTALLER_IMAGE: mcr.microsoft.com/windows/servercore:1803
+  #      NODE_VERSION: v10.19.0
+  #  working_dir: C:\html
+  #  mem_limit: 2GB
+  #  volumes:
+  #    - .\:C:\html
+  #  scale: 0
 
   # storybook:
   #   image: wodby/node:14
@@ -26,7 +26,7 @@ services:
   #   mem_limit: 3GB
   #   ports:
   #     - "3030:3030"
-  #   command: bash -c "npm install && node_modules/.bin/gulp Atrius"
+  #   command: bash -c "npm install && node_modules/.bin/gulp AtriusHealth"
 
   jmeter:
     image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-jmeter:${VERSION:-latest}
@@ -47,40 +47,41 @@ services:
       - ./tools/docker/traefik:C:/etc/traefik
     depends_on:
       cm:
-        condition: service_healthy  
+        condition: service_healthy
   
   mssql:
-    image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-xp0-mssql:${VERSION:-latest}
-    build:
-      context: ${LOCAL_BUILD_PATH}\mssql
-      args:
-        BASE_IMAGE: ${SITECORE_DOCKER_REGISTRY}sitecore-xp0-mssql:${SITECORE_VERSION}
-        SPE_IMAGE: ${SITECORE_MODULE_REGISTRY}spe-assets:${SPE_VERSION}
     mem_limit: 2GB
     volumes:
       - ${LOCAL_DATA_PATH}\mssql:c:\data
+
+  mssql-init:
+    image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-xp0-mssql-init:${VERSION:-latest}
+    build:
+      context: ${LOCAL_BUILD_PATH}/mssql-init
+      args:
+        BASE_IMAGE: ${SITECORE_DOCKER_REGISTRY}sitecore-xp1-mssql-init:${SITECORE_VERSION}
+        SPE_IMAGE: ${SITECORE_MODULE_REGISTRY}sitecore-spe-assets:${SPE_VERSION}
   
   # Mount our Solr data folder
   solr:
     command: powershell.exe -NoLogo -NoProfile -Command "& c:\\tools\\entrypoints\\solr-log4j.ps1; .\\Start.ps1 -InstallPath c:\\solr\\server\\solr -DataPath c:\\data -SolrPort 8983 -Verbose"
     volumes:
-      - ${LOCAL_BUILD_PATH}\solr\entrypoints:c:\tools\entrypoints
       - ${LOCAL_DATA_PATH}\solr:c:\data
   
-  # Some modules (like SXA) also require additions to the Solr image.
   # solr-init:
     # AtriusHealth - removed customizations
 
   # id:
     # AtriusHealth - removed customizations
-    
+
   cm:
     image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-xp0-cm:${VERSION:-latest}
     build:
-      context: ${LOCAL_BUILD_PATH}\cm
+      context: .
+      dockerfile: ${LOCAL_BUILD_PATH}/cm/Dockerfile
       args:
         BASE_IMAGE: ${SITECORE_DOCKER_REGISTRY}sitecore-xp0-cm:${SITECORE_VERSION}
-        SPE_IMAGE: ${SITECORE_MODULE_REGISTRY}spe-assets:${SPE_VERSION}
+        SPE_IMAGE: ${SITECORE_MODULE_REGISTRY}sitecore-spe-assets:${SPE_VERSION}
         TOOLING_IMAGE: ${SITECORE_TOOLS_REGISTRY}sitecore-docker-tools-assets:${TOOLS_VERSION}
     volumes:
       - ${LOCAL_DEPLOY_PATH}\website:C:\deploy
@@ -88,10 +89,18 @@ services:
       - ${LOCAL_ITEM_PATH}:c:\Unicorn
     environment:
       SITECORE_DEVELOPMENT_PATCHES: CustomErrorsOff
-    entrypoint: powershell -Command "& C:\\tools\\entrypoints\\iis\\Development.ps1"
+    entrypoint: powershell -Command "& C:\\tools\\entrypoints\\iis\\Development.ps1 -WatchDirectoryParameters @{ Path = 'C:\\deploy'; Destination = 'C:\\inetpub\\wwwroot'; DefaultExcludedDirectories = @('obj', 'Properties') }"
 
-  # xconnect:
-    # AtriusHealth - removed customizations
+  xconnect:
+    image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-xp0-xconnect:${VERSION:-latest}
+    build:
+      context: ${LOCAL_BUILD_PATH}/xconnect
+      args:
+        BASE_IMAGE: ${SITECORE_DOCKER_REGISTRY}sitecore-xp0-xconnect:${SITECORE_VERSION}
+        TOOLING_IMAGE: ${SITECORE_TOOLS_REGISTRY}sitecore-docker-tools-assets:${TOOLS_VERSION}
+    volumes:
+      - ${LOCAL_DEPLOY_PATH}\xconnect:C:\deploy
+    entrypoint: powershell -Command "& C:\tools\entrypoints\iis\Development.ps1"
 
   # xdbsearchworker:
     # AtriusHealth - removed customizations

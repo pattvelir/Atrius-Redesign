@@ -1,0 +1,21 @@
+---
+ID: "aeb70a5b-200a-4dc8-b5f5-d2c635fadd7b"
+Parent: "6059ab8f-146d-475a-97a3-7bf34e3accfe"
+Template: "03f0a1d9-afa6-48d1-8db1-9b2195733caf"
+Path: /sitecore/templates/Branches/Project/AtriusHealth/Sites/New Site with Login/$name/Configuration/Enumerations/Number of Columns/2
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0dc82897-5b0f-47ce-87bd-6957ab817afa"
+      Hint: Value
+      Value: 2
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170202T214242Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

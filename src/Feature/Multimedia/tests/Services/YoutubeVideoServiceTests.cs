@@ -1,5 +1,4 @@
 using System;
-using System.Json;
 using NSubstitute;
 using NUnit.Framework;
 using Sitecore.Data.Items;

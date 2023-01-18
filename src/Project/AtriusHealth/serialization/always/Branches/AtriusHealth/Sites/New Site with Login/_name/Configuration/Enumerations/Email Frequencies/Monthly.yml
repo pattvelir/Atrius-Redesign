@@ -1,0 +1,25 @@
+---
+ID: "602176dd-6ee5-45d4-b693-fdb1630cdb09"
+Parent: "1ae17e70-b5c5-4549-9e5a-c8bbf9283e9d"
+Template: "a580d907-62fa-4935-84c0-8d8591a7d0d4"
+Path: /sitecore/templates/Branches/Project/AtriusHealth/Sites/New Site with Login/$name/Configuration/Enumerations/Email Frequencies/Monthly
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "197fd7ed-d7de-4445-a87d-3a6b9e845000"
+      Hint: Value
+      Value: Monthly
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191001T134348Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

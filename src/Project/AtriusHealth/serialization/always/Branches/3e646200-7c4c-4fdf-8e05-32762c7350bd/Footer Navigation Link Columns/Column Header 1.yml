@@ -1,0 +1,21 @@
+---
+ID: "dd25a178-09e8-4fe2-aa89-7c4dac00c633"
+Parent: "4ddbc6ca-43a9-41b8-badc-38e26ef4c538"
+Template: "e17a5c79-ed0a-4f95-8a47-ca76322a3c2c"
+Path: /sitecore/templates/Branches/Project/AtriusHealth/Sites/New Site with Login/$name/Configuration/Navigation/Footer Navigation/Footer Navigation Link Columns/Column Header 1
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170202T220128Z
+    - ID: "da90ba19-124b-4385-9bdf-455464b3cee4"
+      Hint: Number Of Columns
+      Value: 
