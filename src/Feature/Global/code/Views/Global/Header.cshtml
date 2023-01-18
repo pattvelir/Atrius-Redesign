@@ -1,41 +1,38 @@
 <section class="global-header">
-	<div class="global-header__desktop">
-		<div class="global-header__top">
-			<div class="global-header__top-container container container--100">
-				@Html.Sitecore().Placeholder("header-utility-nav")
-			</div>
-		</div>
-		<div class="global-header__container container container--100">
-			<div class="global-header__bottom">
-				<div class="global-header__bottom-left">
-					@Html.Sitecore().Placeholder("header-site-logo")
-				</div>
-				<div class="global-header__bottom-right">
-					@Html.Sitecore().Placeholder("header-primary-nav")
-					@Html.Sitecore().Placeholder("header-search")
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="global-header__container container container--100">
-		<div class="global-header__mobile">
-			@Html.Sitecore().Placeholder("header-site-logo")
-			@Html.Sitecore().Placeholder("header-search")
-			<div class="mobile-menu js-mobile-menu">
-				<button type="button" class="nav-toggle js-nav-toggle">
-					<span class="nav-toggle__icon">
-						<span></span>
-					</span>
-					<span class="nav-toggle__label nav-toggle__label--open">Menu</span>
-					<span class="nav-toggle__label nav-toggle__label--close">Close</span>
-				</button>
-				<div class="mobile-menu__drop-down js-mobile-menu-content">
-					<div class="mobile-menu__inner-container">
-						@Html.Sitecore().Placeholder("header-primary-nav")
-						@Html.Sitecore().Placeholder("header-utility-nav")
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
- </section>
+    <div class="global-header__desktop">
+        <div class="global-header__top">
+            <div class="global-header__top-container">
+                @Html.Sitecore().Placeholder("header-site-logo")
+                <div class="global-header__utility-container">
+                    @Html.Sitecore().Placeholder("header-utility-nav")
+                </div>
+            </div>
+    </div>
+    <div class="global-header__bottom theme-dark theme-dark--blue">
+         <div class="global-header__bottom-container">
+             @Html.Sitecore().Placeholder("header-primary-nav")
+             @Html.Sitecore().Placeholder("header-search")
+         </div>
+    </div>
+    <div class="global-header__container container container--100">
+        <div class="global-header__mobile">
+            @Html.Sitecore().Placeholder("header-site-logo")
+            @Html.Sitecore().Placeholder("header-search")
+            <div class="mobile-menu js-mobile-menu">
+                <button type="button" class="nav-toggle js-nav-toggle">
+                    <span class="nav-toggle__icon">
+                        <span></span>
+                    </span>
+                    <span class="nav-toggle__label nav-toggle__label--open">Menu</span>
+                    <span class="nav-toggle__label nav-toggle__label--close">Close</span>
+                </button>
+                <div class="mobile-menu__drop-down js-mobile-menu-content">
+                    <div class="mobile-menu__inner-container">
+                        @Html.Sitecore().Placeholder("header-primary-nav")
+                        @Html.Sitecore().Placeholder("header-utility-nav")
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
