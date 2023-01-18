@@ -1,0 +1,25 @@
+﻿---
+ID: "4d4d8dd0-1bfa-4769-bc71-0e9e6b5768c9"
+Parent: "d2e1b8ee-4170-45d1-8d53-e627596a9ac0"
+Template: "618a2809-d88a-4f41-9215-75d558121610"
+Path: /sitecore/content/AtriusHealth/Configuration/Enumerations/Color Pairings/Bg Grey Fg White
+DB: master
+BranchID: "6c7df339-23ae-4f6a-a092-99a904c18968"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{D9EA56AD-421C-4218-BC89-E7D5157ADB17}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230112T160357Z
+    - ID: "9d35680b-d5b4-4977-8598-87437702a5e1"
+      Hint: Foreground Color
+      Value: "{2049504E-3527-4489-820F-74AF8F8B4594}"
+    - ID: "b7265fde-0fac-48d5-bed3-cca546fcc6bd"
+      Hint: Background Color
+      Value: "{6F6EFA5A-4CF9-4977-9DBA-14D0D9503611}"

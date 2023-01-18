@@ -1,0 +1,26 @@
+﻿---
+ID: "3d6da77f-2497-4610-bbb3-f7d62e8b7d11"
+Parent: "6a8ef981-79c2-4bd3-997a-75f619290310"
+Template: "61f2ddc5-111b-406a-af8b-e37cdc30ca8a"
+Path: /sitecore/content/AtriusHealth/Home/Taxonomy
+DB: master
+BranchID: "6c7df339-23ae-4f6a-a092-99a904c18968"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 700
+- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
+  Hint: __Security
+  Value: |
+    ar|sitecore\Sitecore Content Author Content Access|pe|-item:delete|-item:rename|
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{EC6A164D-8D20-42A6-B1CE-14981FE33B53}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230112T160354Z

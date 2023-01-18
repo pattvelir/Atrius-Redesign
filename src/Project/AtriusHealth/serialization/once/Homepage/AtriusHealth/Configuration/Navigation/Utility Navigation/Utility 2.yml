@@ -1,0 +1,19 @@
+﻿---
+ID: "ad56bbdb-a3b5-4442-89e3-5bfdce374f5b"
+Parent: "4996737c-c0c9-412a-b831-ad8dfbf28130"
+Template: "d5745f91-8fa1-457f-be87-875a029c7b69"
+Path: /sitecore/content/AtriusHealth/Configuration/Navigation/Utility Navigation/Utility 2
+DB: master
+BranchID: "6c7df339-23ae-4f6a-a092-99a904c18968"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{F003E6C3-CA5A-4456-87DF-906B6E273BDE}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230112T160358Z

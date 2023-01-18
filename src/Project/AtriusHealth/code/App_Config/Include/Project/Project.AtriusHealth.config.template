@@ -11,10 +11,10 @@
         <patch:attribute name="enableItemLanguageFallback">true</patch:attribute>
       </site>
       <site name="website">
-        <patch:attribute name="rootPath">/sitecore/content/AtriusHealth AtriusHealth</patch:attribute> 
+        <patch:attribute name="rootPath">/sitecore/content/AtriusHealth</patch:attribute> 
         <patch:attribute name="hostName">${Site.Website.Domain}</patch:attribute> 
         <patch:attribute name="targetHostName">${Site.Website.Domain}</patch:attribute> 
-				<patch:attribute name="primaryArea">AtriusHealth</patch:attribute> 
+		<patch:attribute name="primaryArea">atriushealth</patch:attribute> 
         <patch:attribute name="scheme">${Site.Protocol}</patch:attribute> 
         <patch:attribute name="loginPage">/login</patch:attribute> 
         <patch:attribute name="dictionaryDomain">Default</patch:attribute>

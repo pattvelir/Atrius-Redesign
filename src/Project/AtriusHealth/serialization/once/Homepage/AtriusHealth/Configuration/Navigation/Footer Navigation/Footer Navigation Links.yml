@@ -1,0 +1,19 @@
+﻿---
+ID: "a6e42b16-48b9-4340-9760-077b634bcbc9"
+Parent: "f5c87691-2d2e-48b0-81e4-0962a937c0c8"
+Template: "056b6446-94d4-4c94-86bf-d0b10c384dbc"
+Path: /sitecore/content/AtriusHealth/Configuration/Navigation/Footer Navigation/Footer Navigation Links
+DB: master
+BranchID: "6c7df339-23ae-4f6a-a092-99a904c18968"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{04EA239F-A666-43CD-844B-0A5BBB0D3AB1}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230112T160359Z

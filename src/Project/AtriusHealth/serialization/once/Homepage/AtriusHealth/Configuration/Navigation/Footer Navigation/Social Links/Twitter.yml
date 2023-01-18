@@ -1,0 +1,26 @@
+﻿---
+ID: "0357c1be-bb9b-4ffb-919b-c87bea1958a7"
+Parent: "2f4bca47-f86f-482a-9621-1f438414547b"
+Template: "9744d172-190e-49ed-9d2f-b9f588bfeaf9"
+Path: /sitecore/content/AtriusHealth/Configuration/Navigation/Footer Navigation/Social Links/Twitter
+DB: master
+BranchID: "6c7df339-23ae-4f6a-a092-99a904c18968"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{FD817E21-2275-4D50-B67B-1C62AA10C5A5}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230112T160400Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "6c54a7e4-cb8b-4f5c-838e-b784517c4cb7"
+      Hint: Icon
+      Value: "{BAF8E4BD-51B4-48D0-B299-D94F447E3F16}"

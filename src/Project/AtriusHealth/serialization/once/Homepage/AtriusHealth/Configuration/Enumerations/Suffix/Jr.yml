@@ -1,0 +1,22 @@
+﻿---
+ID: "b53551e0-4584-4982-94b9-709a37156d82"
+Parent: "22aea5b4-1066-4592-b728-508dbf073215"
+Template: "7a623f5c-692d-45ce-a749-0aa63f680a67"
+Path: /sitecore/content/AtriusHealth/Configuration/Enumerations/Suffix/Jr
+DB: master
+BranchID: "6c7df339-23ae-4f6a-a092-99a904c18968"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{18AE7ECF-F222-42FA-A76A-E6E6F25B1FEB}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "197fd7ed-d7de-4445-a87d-3a6b9e845000"
+      Hint: Value
+      Value: Jr.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230112T160357Z

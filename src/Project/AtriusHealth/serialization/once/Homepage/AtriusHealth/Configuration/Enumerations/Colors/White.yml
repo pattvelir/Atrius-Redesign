@@ -1,0 +1,22 @@
+﻿---
+ID: "f44238f5-300d-4b36-bf2c-e2daab9eb92c"
+Parent: "f7ac543f-62ad-48ef-8136-fa43dc8cf38d"
+Template: "a3960764-19cc-4eb6-9b99-ff7b8e062dc2"
+Path: /sitecore/content/AtriusHealth/Configuration/Enumerations/Colors/White
+DB: master
+BranchID: "6c7df339-23ae-4f6a-a092-99a904c18968"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{2049504E-3527-4489-820F-74AF8F8B4594}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "197fd7ed-d7de-4445-a87d-3a6b9e845000"
+      Hint: Value
+      Value: #fff
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230112T160358Z

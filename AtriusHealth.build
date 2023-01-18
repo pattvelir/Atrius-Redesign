@@ -16,6 +16,7 @@
 	<echo message="Using environment: ${env}" />
 
 	<!-- Load the properties for the configured environment -->
+	<include buildfile="${dir.config}/env/default.properties" failonerror="true" />
 	<include buildfile="${dir.config}/env/${env}.properties" failonerror="true" />
 
 	<!-- A target for including all the files in a directory -->

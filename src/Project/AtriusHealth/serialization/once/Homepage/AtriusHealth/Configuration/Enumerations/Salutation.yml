@@ -1,0 +1,22 @@
+﻿---
+ID: "8af69572-a203-4ca2-806a-07c1dd011de5"
+Parent: "5a5c83b9-9db5-45f1-ac57-17cee07b9ea9"
+Template: "1625996d-32ba-4001-8d85-4072658a8bd0"
+Path: /sitecore/content/AtriusHealth/Configuration/Enumerations/Salutation
+DB: master
+BranchID: "6c7df339-23ae-4f6a-a092-99a904c18968"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{1DC4A66B-00B1-4D40-91AD-CC87126E1851}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230112T160357Z

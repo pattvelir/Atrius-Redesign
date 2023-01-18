@@ -1,0 +1,22 @@
+﻿---
+ID: "4dcb1040-7e59-4ecc-bfd2-dad9e75ae3ac"
+Parent: "5a5c83b9-9db5-45f1-ac57-17cee07b9ea9"
+Template: "48e0cc49-1602-422f-8fc4-44814737591e"
+Path: /sitecore/content/AtriusHealth/Configuration/Enumerations/Gender
+DB: master
+BranchID: "6c7df339-23ae-4f6a-a092-99a904c18968"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{281FCC83-561A-4AB1-AED8-6AF6ABD768EC}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230112T160357Z

@@ -1,0 +1,25 @@
+﻿---
+ID: "48e14591-6a5a-49e4-a707-7ab7f20959b4"
+Parent: "86d74f39-2c10-42a3-b600-23535265b0b6"
+Template: "e5acf52c-1e6b-4142-84f2-6d09b1ba1ab8"
+Path: /sitecore/content/AtriusHealth/Configuration/Navigation/Primary Navigation/Nav Category 2
+DB: master
+BranchID: "6c7df339-23ae-4f6a-a092-99a904c18968"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 150
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{7074CE13-34C9-44B5-9731-C18945B0BD05}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230112T160358Z
+    - ID: "efe41572-fbeb-4b09-814c-42c0ffe94dfb"
+      Hint: Title
+      Value: Nav Category 2

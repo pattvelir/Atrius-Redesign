@@ -1,0 +1,23 @@
+﻿---
+ID: "5a5c83b9-9db5-45f1-ac57-17cee07b9ea9"
+Parent: "155bdb93-7e44-4aa9-a3e6-457dacc14b36"
+Template: "474c209d-f0ce-49e7-8271-b7abc6ddf4df"
+Path: /sitecore/content/AtriusHealth/Configuration/Enumerations
+DB: master
+BranchID: "6c7df339-23ae-4f6a-a092-99a904c18968"
+SharedFields:
+- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
+  Hint: __Security
+  Value: |
+    ar|sitecore\Sitecore Content Author Content Access|pe|-item:delete|-item:rename|
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{8A789138-3AB0-46CB-928E-7A9C1E43280C}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230112T160356Z

@@ -1,0 +1,78 @@
+﻿---
+ID: "67830a8e-794b-46ae-9c2f-570898347c12"
+Parent: "d10de86d-91db-4420-8917-c6741cddf34a"
+Template: "0c887ab2-fb9c-42cd-bd93-b89041cf01fe"
+Path: /sitecore/content/AtriusHealth/Home/Error/404
+DB: master
+BranchID: "6c7df339-23ae-4f6a-a092-99a904c18968"
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{F904F489-7129-4A77-8791-59662AB2B399}"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <p
+          uid="{F68BCE00-453D-46B5-BD0A-7B181E54AF7E}"
+          s:md="{6825E57A-01DB-406D-831D-9D5296F176F3}" />
+        <p
+          uid="{80C131B0-31D5-4145-AD41-E7385A7EC3DF}"
+          s:md="{3F73EC3E-F837-4713-A7D3-7EED69BABCA7}" />
+        <p
+          uid="{72E14C20-70CC-44A3-A51E-CB48CB819C69}"
+          s:md="{184578C4-875A-4A0E-944E-1D1B74DDCAC7}" />
+        <r
+          uid="{D38DF4A2-F2CA-4431-92A7-A93F417825AC}"
+          s:ds=""
+          s:par="Include Bottom Margin" />
+        <r
+          uid="{6E4400D0-B44E-4886-A0E0-D24F7336AF5A}"
+          p:after="r[@uid='{354C1B40-6C0B-44C4-94DB-BCB2B45A78E3}']"
+          s:ds="{8CA96C12-9497-49F9-A07A-D890C07B2950}"
+          s:id="{E2C034E3-E3A6-4329-A870-8B276E6D23B8}"
+          s:par="Banner Height&amp;Color Pairing&amp;Opacity=1"
+          s:ph="/content-body/full-width-column-{D38DF4A2-F2CA-4431-92A7-A93F417825AC}-0" />
+        <r
+          uid="{DE3B41F4-0EEB-45F4-9DAE-800A0805E998}"
+          p:after="*[1=2]"
+          s:ds="{EF84CD76-D38F-4770-A1A2-FB14043EFA56}"
+          s:id="{089971A7-90DA-4923-8712-BE61C59DD237}"
+          s:par=""
+          s:ph="/content-body/full-width-column-{D38DF4A2-F2CA-4431-92A7-A93F417825AC}-0/content-width-column-{580B684C-9B1A-4F09-85CD-7725342571D7}-0" />
+      </d>
+    </r>
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{FDF16CB0-6D9A-400A-BEBA-54AF774815AE}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "10e9213f-9aad-4979-a6a4-912a36275bb9"
+      Hint: Short title
+      Value: 404
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230112T160352Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{4458FD36-EEF2-40B7-8BA3-A8ED0E41CDAC}"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "91573f05-edb0-43cf-ac81-a6ca06c7fc0d"
+      Hint: Title
+      Value: 404
+    - ID: "cb8dc0b3-f344-4cb0-b9f2-79eb4da005a9"
+      Hint: Subtitle
+      Value: We can't seem to find what you're looking for
+    - ID: "d64a69f6-1317-47a1-a78b-2e22423c8133"
+      Hint: Header Title
+      Value: "Lost?"

@@ -1,0 +1,22 @@
+﻿---
+ID: "11e71688-e7ae-4b7a-b5b5-ecb45a2553eb"
+Parent: "8af69572-a203-4ca2-806a-07c1dd011de5"
+Template: "24b98cc6-fc73-4bc4-8b45-a40022047990"
+Path: /sitecore/content/AtriusHealth/Configuration/Enumerations/Salutation/Dr
+DB: master
+BranchID: "6c7df339-23ae-4f6a-a092-99a904c18968"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{5800DAC9-AAB1-4942-9E7F-780EF90844F1}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "197fd7ed-d7de-4445-a87d-3a6b9e845000"
+      Hint: Value
+      Value: Dr.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230112T160357Z

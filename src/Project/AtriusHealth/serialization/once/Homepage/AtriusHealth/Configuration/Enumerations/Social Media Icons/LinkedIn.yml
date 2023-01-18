@@ -1,0 +1,22 @@
+﻿---
+ID: "2fa05b44-1352-4bea-8e3e-7378f3c690db"
+Parent: "49c595a6-16e5-4dd0-bc84-c426f5426bb2"
+Template: "8b1e6df7-c1b5-410a-ab8a-10d16e3b3df4"
+Path: /sitecore/content/AtriusHealth/Configuration/Enumerations/Social Media Icons/LinkedIn
+DB: master
+BranchID: "6c7df339-23ae-4f6a-a092-99a904c18968"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{A130E678-2AD4-43E2-B9E8-FDBCEA071C51}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230112T160357Z
+    - ID: "60767e88-bdd6-4c21-bad7-5e338630d5ff"
+      Hint: Icon Name
+      Value: linkedin
