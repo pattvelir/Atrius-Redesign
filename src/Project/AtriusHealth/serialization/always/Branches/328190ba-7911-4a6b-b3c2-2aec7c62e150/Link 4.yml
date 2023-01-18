@@ -1,0 +1,14 @@
+---
+ID: "1a0d1fb6-4087-48a0-b614-3982f8dc534d"
+Parent: "328190ba-7911-4a6b-b3c2-2aec7c62e150"
+Template: "d5745f91-8fa1-457f-be87-875a029c7b69"
+Path: /sitecore/templates/Branches/Project/AtriusHealth/Sites/New Site/$name/Configuration/Navigation/Footer Navigation/Footer Navigation Link Columns/Column Header 3/Link 4
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170310T170017Z

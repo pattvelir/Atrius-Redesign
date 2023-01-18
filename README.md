@@ -1,15 +1,34 @@
+
 # AtriusHealth for Sitecore
 
-This repo is built off of the Velir Thread Starter but we have replaced some Gulp task with Rollup to take advantage of some newer javascript features.
+## Overview
 
+AtriusHealth is a tool kit of parts to accelerate Sitecore builds.
+This repo is built off of the Velir Thread Starter but we have replaced some Gulp task with Rollup to take advantage of some newer javascript features.
 Solution code for the Atrius Health Redesign.
 
+## Version
+v7.2.1
+See [AtriusHealth Release Notes](https://velirs.atlassian.net/wiki/spaces/VR/pages/140544650/Release+Notes).
+
 ## Prerequisites
+
+* Visual Studio 2019+
+* .NET Framework 4.8
+* Docker Desktop
 
 // linting
 $ npm run eslint
 //or
-$ npm run eslint -- --fix
+*$ npm run eslint -- --fix
+
+## Installation
+
+Before getting started, it is recommended you read through the Back-end and Front-end Implementation Guides: <https://velirs.atlassian.net/wiki/spaces/VR/pages/137894237/Implementation+Guide>
+
+### Starting a New Client Project with AtriusHealth
+
+The instructions below go over installing and working with AtriusHealth Proper.  If you looking at setting a new client project based on AtriusHealth, please refer to the **Cloning the AtriusHealth GitHub Repository** section of the [Back-end Implemenation Guide](https://velirs.atlassian.net/wiki/spaces/VR/pages/137894237/Implementation+Guide), before proceeding.
 
 ### Docker Configuration Prerequisites
 
@@ -32,12 +51,14 @@ $ npm run eslint -- --fix
         - Disable command: `bcdedit /set hypervisorlaunchtype off`
         - Enable command: `bcdedit /set hypervisorlaunchtype auto`
 
+
 ### Local Environment Setup
 
 1. Ensure you have completed all prerequisites.
 2. Clone this repository to a directory of your choosing.  This location will be referred to as your **source** directory.
 3. Open a Powershell window as Administrator in the root of your **source** directory
 4. In your Powershell console, run `.\up.ps1 -IncludeDbBackups`.  (If this your first time running the script, you will be prompted for a path to your Sitecore license file, enter a valid path (e.g. C:\data\license\license.xml) and press 'Enter')
+5. Run `docker-compose up -d` if you don't need to run all the steps defined in the `Up` script.
 
 ### FE Setup
 
@@ -57,18 +78,14 @@ export GH_PAT=<GITHUB_TOKEN>
 $ npm start 
 //or
 $ npm run dev
-
 //create production build
 $ npm run build
-
 //clean up dependencies and reinstall
 $ npm run fresh-install
-
 // linting
 $ npm run eslint
 //or
 $ npm run eslint -- --fix
-
 //and
 
 $ npm run stylelint
@@ -80,15 +97,26 @@ $ npm run storybook
 
 // convert design tokens from figma to css props
 $ npm run convert:tokens
-
 ```
-
+1. npm run build - Builds the FE Files. 
+2. Uses parameters located at the `.env` file.
+   - FE_BUILD_DIR
+   - FE_SRC_DIR
+   
 ### Creating a New Site
 
-1. From the Sitecore Content Editor, right-click the **Content** item and create a new site using the branch: `/sitecore/templates/Branches/AtriusHealth/Project/Atrius/Sites/New Site`.
-2. Update `rootPath` attribute of website site, in the `/src/Project/Atrius/code/App_Config/Include/zAtriusHealth/AtriusHealth.Project.Atrius.config.example` and rename the file to `AtriusHealth.Project.Atrius.config`.
-3. Right-click `AtriusHealth.Project.Atrius.config`, select **Properties** and set `Build Action` to `Content`.
-4. Right-click on AtriusHealth.Project.Atrius, click **Publish...**.
+1. From the Sitecore Content Editor, right-click the **Content** item and create a new site using the branch: `/sitecore/templates/Branches/AtriusHealth/Project/AtriusHealth/Sites/New Site`.
+2. Update `rootPath` attribute of website site, in the `/src/Project/AtriusHealth/code/App_Config/Include/zAtriusHealth/AtriusHealth.Project.AtriusHealth.config.example` and rename the file to `AtriusHealth.Project.AtriusHealth.config`.
+3. Right-click `AtriusHealth.Project.AtriusHealth.config`, select **Properties** and set `Build Action` to `Content`.
+4. Right-click on AtriusHealth.Project.AtriusHealth, click **Publish...**.
+
+### Installing Horizion
+
+Horizon customizes the functionality to add fields to Solr, and this customization conflicts with AtriusHealth. This is only an issue during installation, when running "Populate Solr Schema" for the "sitecore_horizon_index". The Horizon class is "internal", so cannot be extended. The workaround is to comment out this line in Foundation.Search.config during the Horizon installation, and then uncomment it afterwards.
+
+```
+    <param set:type="AtriusHealth.Foundation.Search.Schema.CustomPopulateHelperFactory,AtriusHealth.Foundation.Search" />
+```
 
 ## Powershell Module: Kneedle
 
@@ -109,6 +137,7 @@ You can also use the Powershell command `Publish-Project` to publish you solutio
 1. Publish all projects in the solution: `Publish-Project -All`
 2. Publish all projects in a single layer of the solution: `Publish-Project -Layer Foundation`
 3. Publish a single project: `Publish-Project -Layer Foundation -Module Search`
+4. Publish-FE is a powershell script to copy all FE generated files to the destination / server.
 
 ### Exporting/Importing SQL Database Backups
 

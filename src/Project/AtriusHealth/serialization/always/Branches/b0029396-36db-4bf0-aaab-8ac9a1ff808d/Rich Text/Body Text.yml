@@ -1,0 +1,22 @@
+---
+ID: "732157c4-00b2-40f6-bb23-176278ca7f6c"
+Parent: "b14274b4-5ef0-4c76-a45f-af0f7d38e322"
+Template: "e4076c99-8864-41c9-a691-e628331ab7c5"
+Path: /sitecore/templates/Branches/Project/AtriusHealth/Sites/New Site with Login/$name/Home/Login/Reset Password/Components/Rich Text/Body Text
+DB: master
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{6EAE704C-1D0C-49A4-9B80-60F489D23265}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190524T174445Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

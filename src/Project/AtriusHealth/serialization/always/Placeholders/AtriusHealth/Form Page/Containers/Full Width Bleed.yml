@@ -1,0 +1,28 @@
+---
+ID: "3278b1f5-b1bb-4825-8e11-c5bdf38a1fec"
+Parent: "abb2e20e-1f59-4758-9852-a3c1607b5d31"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/Project/AtriusHealth/Form Page/Containers/Full Width Bleed
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: 
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: |
+    {E2C034E3-E3A6-4329-A870-8B276E6D23B8}
+    {EB9C4EE5-57B5-4B92-846B-F6032B41A357}
+    {968EBC81-A435-428A-86EA-381ECCA3D65B}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161117T030030Z

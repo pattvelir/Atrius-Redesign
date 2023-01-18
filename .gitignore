@@ -150,8 +150,8 @@ src/Feature/Events/code/App_Config/Include/Feature/Feature.Events.config
 src/Project/Common/code/App_Config/Include/Project/Project.Common.Custom.config
 src/Project/Common/code/web.config.xdt
 src/Project/Demo/code/App_Config/Include/Project/Project.Demo.config
-src/Project/Atrius/code/App_Config/Include/Project/Project.Atrius.config
-/src/Project/Atrius/code/App_Config/Include/Project/Project.Association.config
+src/Project/AtriusHealth/code/App_Config/Include/Project/Project.AtriusHealth.config
+/src/Project/AtriusHealth/code/App_Config/Include/Project/Project.Association.config
 
 # Unicorn
 z.Unicorn.Dev.config
@@ -176,9 +176,7 @@ tools/helix/add-helix-module-configuration.json
 .env
 !tools/docker/build/mssql/backups
 /tools/powershell/Kneedle/config.json
-
-#FE
-bundle.css
-bundle.css.map
-build/
-src/Project/Atrius/code/Atrius-Build/
+/build
+/package-lock.json
+/src/Project/AtriusHealth/code/assets/AtriusHealth-Build/js/_virtual
+/src/Project/AtriusHealth/code/assets/AtriusHealth-Build/index.html

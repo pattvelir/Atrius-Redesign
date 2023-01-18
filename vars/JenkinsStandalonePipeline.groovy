@@ -78,7 +78,7 @@ def call(Map pipelineParams) {
 						if (pipelineParams.DeployStorybook) {
 							script {
 								dir(WORKSPACE_PATH) {
-									bat "npm run build-storybook-Atrius"
+									bat "npm run build-storybook-AtriusHealth"
 									bat "npm run build-storybook-demo"
 								}
 							}

@@ -1,0 +1,14 @@
+---
+ID: "c612eead-705a-4cdf-9934-da1989e40ac2"
+Parent: "ec6a164d-8d20-42a6-b1ce-14981fe33b53"
+Template: "d7bbae50-0edd-4dd8-8489-97443f6e5b19"
+Path: /sitecore/templates/Branches/Project/AtriusHealth/Sites/New Site/$name/Home/Taxonomy/Locations
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161108T211206Z

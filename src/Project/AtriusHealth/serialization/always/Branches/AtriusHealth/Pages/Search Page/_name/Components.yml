@@ -1,0 +1,18 @@
+---
+ID: "e3f5fc2e-83e9-42e2-a587-21a58ec2ecbd"
+Parent: "76f03b06-cfca-4454-aac1-b17fca0d6efd"
+Template: "b5e1a562-1a76-49be-a899-1d5ca76703b2"
+Path: /sitecore/templates/Branches/Project/AtriusHealth/Pages/Search Page/$name/Components
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170118T204938Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

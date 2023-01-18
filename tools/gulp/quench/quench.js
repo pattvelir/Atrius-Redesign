@@ -17,6 +17,7 @@
  */
 
 /* eslint-disable no-console */
+
 const gulp = require("gulp");
 const plumber = require("gulp-plumber");
 const notify = require("gulp-notify");
@@ -43,10 +44,11 @@ const environments = ["development", "production", "local"];
  */
 const yargOptions = {
   watch: {
-    default: false,
+    default: true,
     type: "boolean",
   },
   env: {
+    default: "local",
     type: "string",
   },
 };

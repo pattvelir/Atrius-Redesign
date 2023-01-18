@@ -1,0 +1,78 @@
+---
+ID: "ee97b266-e00e-4ef2-a39e-5751004c5b9b"
+Parent: "9fa3d41e-7cc0-4549-b0f1-b8683df28e75"
+Template: "fcd3bd0d-71bd-45f7-a758-6ababcf3f0f6"
+Path: /sitecore/templates/Branches/Project/AtriusHealth/Pages/Long Form Page/$name
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <p
+          uid="{2E5328B8-A174-46B2-8076-B2DF5105DCA8}"
+          s:md="{C98D4D8E-6B2D-4FCA-8F74-C275BB8C79FB}" />
+        <p
+          uid="{00EE5058-14D2-4F0F-8E39-70CC9F4FFD49}"
+          s:md="{4B05ED0C-97B7-4E5F-918E-FD721A53697B}" />
+        <p
+          uid="{ECDD7A83-9B2C-46EE-950B-A5186D289912}"
+          s:md="{26030EF5-F63E-41CE-8E3F-063570A505C6}" />
+        <p
+          uid="{C984B85F-0177-46FC-80E0-CD1B4FD25FE4}"
+          s:md="{BCBB1512-C83B-476B-868D-ABE2E1BAE57A}" />
+        <r
+          uid="{AC49801A-F030-4229-9206-D89BCFA7EB4D}"
+          p:after="p[@uid='{C984B85F-0177-46FC-80E0-CD1B4FD25FE4}']"
+          s:ds="{C28A18BB-179A-44C3-BE25-41047B9B4F7F}"
+          s:id="{E2C034E3-E3A6-4329-A870-8B276E6D23B8}"
+          s:ph="/content-body/full-width-column-{8B05B85C-CADF-4C0E-A460-2874217B09F1}-0" />
+        <r
+          uid="{0E502833-C8B2-4086-8362-8D226DF16244}"
+          p:after="r[@uid='{AC49801A-F030-4229-9206-D89BCFA7EB4D}']" />
+        <r
+          uid="{9D524A8D-0742-4FA8-B487-900627E796D9}"
+          p:after="r[@uid='{0E502833-C8B2-4086-8362-8D226DF16244}']"
+          s:ds="{B99B2C79-2495-4CB8-AB9E-1A870F5E839F}"
+          s:id="{089971A7-90DA-4923-8712-BE61C59DD237}"
+          s:ph="/content-body/content-width-column-{8047D1DD-8D81-49F4-86BE-25C5F3D2052E}-0" />
+        <r
+          uid="{8B05B85C-CADF-4C0E-A460-2874217B09F1}"
+          s:ds=""
+          s:par="Include Bottom Margin=1" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{0E502833-C8B2-4086-8362-8D226DF16244}"
+              p:after="p[@uid='{C984B85F-0177-46FC-80E0-CD1B4FD25FE4}']"
+              s:ds=""
+              s:id="{C9529F14-C669-46C3-A959-97931F35E039}"
+              s:par=""
+              s:ph="/content-body/content-width-column-{8047D1DD-8D81-49F4-86BE-25C5F3D2052E}-0" />
+            <r
+              uid="{EBA073E5-850D-45FB-8975-5B14F8F31192}"
+              p:after="r[@uid='{0E502833-C8B2-4086-8362-8D226DF16244}']"
+              s:id="{FC3D7B61-8FFE-4FA5-8E62-841A0E8A8F17}"
+              s:ph="/content-body/primary-column-left-{6C96DBF9-ADC1-4412-9E88-B1DC910377C7}-0" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161103T165229Z

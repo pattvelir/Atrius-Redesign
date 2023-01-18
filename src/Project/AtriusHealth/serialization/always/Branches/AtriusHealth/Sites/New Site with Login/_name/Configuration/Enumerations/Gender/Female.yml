@@ -1,0 +1,25 @@
+---
+ID: "04877335-cbcf-4c8d-8777-1919102508c3"
+Parent: "8bc23cb9-577c-4bc6-bea6-42517022f95c"
+Template: "e992befe-ac37-422a-9b9e-2696f5f00d87"
+Path: /sitecore/templates/Branches/Project/AtriusHealth/Sites/New Site with Login/$name/Configuration/Enumerations/Gender/Female
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "197fd7ed-d7de-4445-a87d-3a6b9e845000"
+      Hint: Value
+      Value: Female
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170202T214429Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

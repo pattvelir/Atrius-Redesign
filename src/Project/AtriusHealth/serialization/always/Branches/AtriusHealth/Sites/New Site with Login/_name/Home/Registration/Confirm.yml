@@ -1,0 +1,73 @@
+---
+ID: "a1734810-2e9d-4c55-a317-8eeb5b128de4"
+Parent: "a5666d71-685a-49e7-8183-63f8280f4023"
+Template: "cdc8c7d0-90a0-48e7-be0e-c029a6a062d5"
+Path: /sitecore/templates/Branches/Project/AtriusHealth/Sites/New Site with Login/$name/Home/Registration/Confirm
+DB: master
+BranchID: "eb9da56d-99fe-4aeb-8919-97ae4b416da7"
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <p
+          uid="{476B8789-49CF-4343-9D4F-10E576B90018}"
+          s:md="{7EF1DDF3-5C30-4EBC-98A7-FD38E81B1E61}" />
+        <p
+          uid="{98E519C5-B0F5-40E5-89AD-CE89377910DF}"
+          s:md="{190E8151-6B18-49BB-9584-60AB35D6960B}" />
+        <p
+          uid="{93731C05-726F-4672-83CC-9990AFC00BA3}"
+          s:md="{DF0305F9-D939-42B6-983D-679E35106C5B}" />
+        <p
+          uid="{DE7D578A-38DF-407E-B5B6-3531011CE460}"
+          s:md="{4420475B-EAC1-4A3F-B196-C750F7FE5BBD}" />
+        <p
+          uid="{BDC82F61-E3DD-43C0-8FD3-07C52EB5515B}"
+          s:md="{4E8052C4-10D5-4666-B778-DB7C84D3465B}" />
+        <r
+          uid="{2B292640-87CF-49D0-AE7E-9C57E3E3B5CF}"
+          p:after="r[@uid='{5612F900-285A-4A9E-BF20-9E599A7095A4}']"
+          s:ds="{17290A49-FA90-463A-968B-0EBD71A5B77D}"
+          s:id="{089971A7-90DA-4923-8712-BE61C59DD237}"
+          s:ph="/content-body/primary-column-right-{335CD150-84A4-49C4-8BD2-693ECA039674}-0" />
+        <r
+          uid="{DA106ACA-44DB-415E-A98A-0772E2318219}"
+          p:after="*[1=2]"
+          s:ds=""
+          s:id="{E485445F-E09D-434E-887E-52075219334D}"
+          s:par=""
+          s:ph="/content-body/primary-column-right-{335CD150-84A4-49C4-8BD2-693ECA039674}-0" />
+      </d>
+    </r>
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{13D8737E-D912-4AC2-AFFA-4FD20C15A6B0}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "10e9213f-9aad-4979-a6a4-912a36275bb9"
+      Hint: Short title
+      Value: Confirm
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191023T150151Z
+    - ID: "3927b1aa-347c-4d88-9b93-b327eae1b6d0"
+      Hint: Date of Publication
+      Value: 20191023T150151Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "91573f05-edb0-43cf-ac81-a6ca06c7fc0d"
+      Hint: Title
+      Value: Confirm
+    - ID: "d64a69f6-1317-47a1-a78b-2e22423c8133"
+      Hint: Header Title
+      Value: Confirm
