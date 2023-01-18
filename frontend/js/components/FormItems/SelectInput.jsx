@@ -24,6 +24,7 @@ const propTypes = {
   matchName: string,
   readonly: bool,
   jsClass: string,
+  disabled: bool,
 };
 
 const selectInput = (props) => {
@@ -41,10 +42,14 @@ const selectInput = (props) => {
     matchName,
     readonly,
     jsClass,
+    disabled,
   } = props;
 
   const id = parseInt(Math.random() * 1000);
   const selectClass = jsClass || "";
+  const wrapperClasses = cx("select-form-item__input-wrapper", {
+    "select-form-item--disabled": disabled,
+  });
 
   return (
     <label
@@ -58,8 +63,9 @@ const selectInput = (props) => {
       <span className="select-form-item__text sc-form-item__label">
         {label}
       </span>
-      <div className="select-form-item__input-wrapper">
+      <div className={wrapperClasses}>
         <select
+          disabled={disabled}
           data-type={type}
           name={name}
           id={`GUID-${id}`}

@@ -6,6 +6,14 @@ import Icon from "../Icon/Icon.jsx";
 const propTypes = {
   btnText: string,
   btnType: string,
+  children: string,
+  btnColor: string,
+  size: string,
+  icon: string,
+  iconLeft: string,
+  iconRight: string,
+  as: string,
+  classNames: string,
 };
 
 const Button = (props) => {
@@ -18,12 +26,13 @@ const Button = (props) => {
     iconLeft,
     iconRight,
     as: Component,
+    classNames,
     ...rest
   } = props;
 
   return (
     <Component
-      className={cx("btn", {
+      className={cx("btn", classNames, {
         "btn--filled": btnType === "filled",
         "btn--outline": btnType === "outline",
         "btn--disabled": btnType === "disabled",
@@ -32,6 +41,8 @@ const Button = (props) => {
         "btn--light": btnColor === "light",
         "btn--xsm": size === "xsm",
         "btn--small": size === "sm",
+        "btn--large": size === "lg",
+        "btn--full": size === "full",
         "btn--xxsm": size === "xxsm",
         "btn--no-padding": size === "no-padding",
         "btn--icon": icon,

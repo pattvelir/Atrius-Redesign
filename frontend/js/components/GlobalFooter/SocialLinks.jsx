@@ -3,6 +3,7 @@ import { arrayOf, shape, string } from "prop-types";
 
 import Icon from "../Icon/Icon.jsx";
 import Button from "../Button/Button.jsx";
+import cn from "classnames";
 
 const propTypes = {
   connectSocialSites: arrayOf(
@@ -12,13 +13,17 @@ const propTypes = {
       icon: string.isRequired,
     }),
   ),
+  placement: string,
 };
 
 const socialLinks = (props) => {
-  const { connectSocialSites } = props;
+  const { connectSocialSites, direction } = props;
+  const classNames = cn("social-links", {
+    [`social-links--${direction}`]: direction,
+  });
 
   return (
-    <nav className="social-links">
+    <nav className={classNames}>
       <ul>
         {connectSocialSites &&
           connectSocialSites.map((site, i) => {

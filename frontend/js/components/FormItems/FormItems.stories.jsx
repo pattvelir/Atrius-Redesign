@@ -58,32 +58,193 @@ export const legend = () => (
 );
 
 export const checkbox = () => (
-  <ContainerFull>
-    <RadioCheckbox
-      label="Selected Interest Item"
-      name="sample-checkbox"
-      type="checkbox"
-      inputdescription="<span><strong>text detail</strong></span>"
-      checked={true}
-    />
-  </ContainerFull>
+  <>
+    <ContainerFull style={{ marginBlock: "40px" }}>
+      <RadioCheckbox
+        label="Selected Interest Item"
+        name="sample-checkbox"
+        type="checkbox"
+        inputdescription="<span><strong>To the left text detail</strong></span>"
+        checked={true}
+      />
+    </ContainerFull>
+
+    <ContainerFull style={{ marginBlock: "40px" }}>
+      <RadioCheckbox
+        label="Selected Interest Item"
+        name="sample-checkbox"
+        type="checkbox"
+        inputdescription="<span><strong>To the right text detail asdf asdflkj adflkjdflkjadsflkjasdflkjsdfalkjsdflkj dflkj </strong></span>"
+        checked={true}
+        side="right"
+      />
+    </ContainerFull>
+
+    <ContainerFull style={{ marginBlock: "40px" }}>
+      <RadioCheckbox
+        size="small"
+        label="Selected Interest Item"
+        name="sample-checkbox"
+        type="checkbox"
+        inputdescription="<span><strong>To the left text detail</strong></span>"
+        checked={true}
+      />
+    </ContainerFull>
+    <ContainerFull style={{ marginBlock: "40px" }}>
+      <RadioCheckbox
+        size="small"
+        label="Selected Interest Item"
+        name="sample-checkbox"
+        type="checkbox"
+        inputdescription="<span><strong>To the right text detail asdf asdflkj adflkjdflkjadsflkjasdflkjsdfalkjsdflkj dflkj </strong></span>"
+        checked={true}
+        side="right"
+      />
+    </ContainerFull>
+  </>
 );
 
 export const radioButton = () => (
-  <ContainerFull>
-    <RadioCheckbox
-      label="Selected Interest Item"
-      name="sample-radio"
-      type="radio"
-      inputdescription="<span><strong>text detail</strong></span>"
-      checked={true}
-    />
-  </ContainerFull>
+  <>
+    <ContainerFull style={{ marginBlock: "40px" }}>
+      <RadioCheckbox
+        side="left"
+        label="Selected Interest Item"
+        name="sample-radio"
+        type="radio"
+        inputdescription="<span><strong>text detail</strong></span>"
+        checked={true}
+      />
+    </ContainerFull>
+
+    <ContainerFull style={{ marginBlock: "40px" }}>
+      <RadioCheckbox
+        side="right"
+        label="Selected Interest Item"
+        name="sample-radio"
+        type="radio"
+        inputdescription="<span><strong>text detail</strong></span>"
+        checked={true}
+      />
+    </ContainerFull>
+
+    <ContainerFull style={{ marginBlock: "40px" }}>
+      <RadioCheckbox
+        side="left"
+        size="small"
+        label="Selected Interest Item"
+        name="sample-radio"
+        type="radio"
+        inputdescription="<span><strong>text detail</strong></span>"
+        checked={true}
+      />
+    </ContainerFull>
+
+    <ContainerFull style={{ marginBlock: "40px" }}>
+      <RadioCheckbox
+        side="right"
+        size="small"
+        label="Selected Interest Item"
+        name="sample-radio"
+        type="radio"
+        inputdescription="<span><strong>text detail</strong></span>"
+        checked={true}
+      />
+    </ContainerFull>
+  </>
+);
+
+export const switchCheckbox = () => (
+  <>
+    <ContainerFull style={{ marginBlock: "40px" }}>
+      <RadioCheckbox
+        side="left"
+        toggle
+        label="Selected Interest Item"
+        name="sample-radio"
+        type="checkbox"
+        inputdescription="<span><strong>text detail</strong></span>"
+        checked={true}
+      />
+    </ContainerFull>
+
+    <ContainerFull style={{ marginBlock: "40px" }}>
+      <RadioCheckbox
+        side="right"
+        toggle
+        label="Selected Interest Item"
+        name="sample-radio"
+        type="checkbox"
+        inputdescription="<span><strong>text detail</strong></span>"
+        checked={true}
+      />
+    </ContainerFull>
+
+    <ContainerFull style={{ marginBlock: "40px" }}>
+      <RadioCheckbox
+        side="left"
+        toggle
+        size="small"
+        label="Selected Interest Item"
+        name="sample-radio"
+        type="checkbox"
+        inputdescription="<span><strong>text detail</strong></span>"
+        checked={true}
+      />
+    </ContainerFull>
+
+    <ContainerFull style={{ marginBlock: "40px" }}>
+      <RadioCheckbox
+        side="right"
+        toggle
+        size="small"
+        label="Selected Interest Item"
+        name="sample-radio"
+        type="checkbox"
+        inputdescription="<span><strong>text detail</strong></span>"
+        checked={true}
+      />
+    </ContainerFull>
+  </>
 );
 
 export const selectInput = () => (
   <ContainerFull>
     <SelectInput
+      autocomplete=""
+      error={false}
+      errorMsg=""
+      label="Select Input"
+      name="sample-select"
+      readonly={false}
+      required={true}
+      validationType="text"
+      matchName=""
+      options={[
+        {
+          text: "option 1",
+          value: "1",
+        },
+        {
+          text: "option 2",
+          value: "2",
+        },
+        {
+          text: "option 3",
+          value: "3",
+        },
+        {
+          text: "option 4",
+          value: "4",
+        },
+        {
+          text: "option 5",
+          value: "5",
+        },
+      ]}
+    />
+    <SelectInput
+      disabled
       autocomplete=""
       error={false}
       errorMsg=""

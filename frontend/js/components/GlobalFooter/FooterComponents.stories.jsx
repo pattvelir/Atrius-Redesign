@@ -22,9 +22,19 @@ export const footerConnectBar = () => (
 );
 
 export const socialLinks = () => (
-  <ContainerFull>
-    <SocialLinks {...connectData} />
-  </ContainerFull>
+  <>
+    <ContainerFull
+      style={{ backgroundColor: "#333", padding: "16px", marginBlock: "16px" }}
+    >
+      <SocialLinks {...connectData} />
+    </ContainerFull>
+
+    <ContainerFull
+      style={{ backgroundColor: "#333", padding: "16px", marginBlock: "16px" }}
+    >
+      <SocialLinks {...connectData} direction="vertical" />
+    </ContainerFull>
+  </>
 );
 
 export const footerNavigationLinks = () => (

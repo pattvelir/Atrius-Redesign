@@ -1,58 +1,26 @@
 import React from "react";
-import { func, number } from "prop-types";
-import {
-  isLastPage,
-  isFirstPage,
-  totalPages,
-  pageBlock,
-} from "../../data/paging.js";
 
-const propTypes = {
-  totalResults: number.isRequired,
-  resultsPerPage: number.isRequired,
-  currentPage: number.isRequired,
-  handlePageChange: func.isRequired,
-};
+import PaginationButtons from "./typesOfPage/PaginationButtons.jsx";
+import PaginationDots from "./typesOfPage/PaginationDots.jsx";
+import PaginationLoadMore from "./typesOfPage/PaginationLoadMore.jsx";
+import PaginationNumbers from "./typesOfPage/PaginationNumbers.jsx";
+import PaginationNumbersOf from "./typesOfPage/PaginationNumbersOf.jsx";
+
+const propTypes = {};
 
 const Pagination = (props) => {
-  const { totalResults, resultsPerPage, currentPage, handlePageChange } = props;
-  const block = pageBlock(totalResults, resultsPerPage, currentPage);
-  const isLast = isLastPage(totalResults, resultsPerPage, currentPage);
-  const isFirst = isFirstPage(currentPage);
-  const lastPage = totalPages(totalResults, resultsPerPage);
+  const { typeOfPage } = props;
 
-  const getPage = (label, value, isDisabled) => {
-    return (
-      <button
-        className="btn btn--link"
-        key={label}
-        type="button"
-        aria-current={isDisabled}
-        onClick={() => onPageClick(value, isDisabled)}
-        disabled={isDisabled}
-      >
-        {label}
-      </button>
-    );
+  const typeOfTemplate = {
+    prevNext: <PaginationButtons {...props} />,
+    prevNextLoad: <PaginationButtons {...props} seeMore />,
+    loadMore: <PaginationDots {...props} />,
+    numbersv1: <PaginationLoadMore {...props} />,
+    dots: <PaginationNumbers {...props} />,
+    numbersv2: <PaginationNumbersOf {...props} />,
   };
 
-  const onPageClick = (pageNum, isDisabled) => {
-    if (!isDisabled) {
-      handlePageChange(pageNum);
-    }
-  };
-
-  return (
-    <div className="pagination">
-      <nav aria-label="Pagination" className="pagination__pages">
-        {getPage("<< First", 1, isFirst)}
-        {getPage("< Previous", currentPage - 1, isFirst)}
-        {block.map((page) => getPage(page.label, page.num, page.current))}
-        {getPage("Next >", currentPage + 1, isLast)}
-        {getPage("Last >>", lastPage, isLast)}
-      </nav>
-    </div>
-  );
+  return <div className="pagination">{typeOfTemplate[typeOfPage]}</div>;
 };
 
 Pagination.propTypes = propTypes;

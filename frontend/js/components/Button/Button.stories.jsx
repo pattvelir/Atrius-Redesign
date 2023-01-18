@@ -291,6 +291,37 @@ export const sizesButton = () => (
     </ContainerFull>
 
     <ContainerFull style={{ marginBottom: "80px" }}>
+      <h2>Large</h2>
+      <Button
+        btnType="filled"
+        btnColor="dark"
+        iconLeft="chevron-down"
+        iconRight="chevron-down"
+        size="lg"
+      >
+        Filled
+      </Button>
+      <Button
+        btnType="outline"
+        btnColor="light"
+        iconLeft="chevron-down"
+        iconRight="chevron-down"
+        size="lg"
+      >
+        Outline
+      </Button>
+      <Button
+        btnType="link"
+        btnColor="light"
+        iconLeft="chevron-down"
+        iconRight="chevron-down"
+        size="lg"
+      >
+        Link
+      </Button>
+    </ContainerFull>
+
+    <ContainerFull style={{ marginBottom: "80px" }}>
       <h2>No Padding</h2>
       <Button
         btnType="filled"
