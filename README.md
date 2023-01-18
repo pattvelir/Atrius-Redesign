@@ -58,6 +58,7 @@ The instructions below go over installing and working with AtriusHealth Proper. 
 2. Clone this repository to a directory of your choosing.  This location will be referred to as your **source** directory.
 3. Open a Powershell window as Administrator in the root of your **source** directory
 4. In your Powershell console, run `.\up.ps1 -IncludeDbBackups`.  (If this your first time running the script, you will be prompted for a path to your Sitecore license file, enter a valid path (e.g. C:\data\license\license.xml) and press 'Enter')
+5. Run `docker-compose up -d` if you don't need to run all the steps defined in the `Up` script.
 
 ### FE Setup
 
@@ -136,6 +137,7 @@ You can also use the Powershell command `Publish-Project` to publish you solutio
 1. Publish all projects in the solution: `Publish-Project -All`
 2. Publish all projects in a single layer of the solution: `Publish-Project -Layer Foundation`
 3. Publish a single project: `Publish-Project -Layer Foundation -Module Search`
+4. Publish-FE is a powershell script to copy all FE generated files to the destination / server.
 
 ### Exporting/Importing SQL Database Backups
 
