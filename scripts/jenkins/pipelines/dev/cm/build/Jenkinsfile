@@ -1,3 +1,3 @@
 @Library(['PipelineTools','AtriusRedesignPipelineTools']) _
 
-JenkinsBuildPipeline(Environment: 'dev',DeployStorybook: false)
+JenkinsBuildPipeline(Environment: 'dev',SyncUnicorn: true,DeployStorybook: false)
