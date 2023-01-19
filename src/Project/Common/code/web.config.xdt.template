@@ -23,7 +23,7 @@
         <rule name="HTTPS force" enabled="true" stopProcessing="true" xdt:Transform="InsertIfMissing">
           <match url="(.*)" />
           <conditions>
-            <add input="{HTTPS}" pattern="on" ignoreCase="true" />
+            <add input="{HTTPS}" pattern="^OFF$" ignoreCase="true" />
             <add input="{HTTP_HOST}" matchType="Pattern" pattern="^localhost(:\d+)?$" negate="true" />
             <add input="{HTTP_HOST}" matchType="Pattern" pattern="^(127.0.0.1)(:\d+)?$" negate="true" />
           </conditions>
