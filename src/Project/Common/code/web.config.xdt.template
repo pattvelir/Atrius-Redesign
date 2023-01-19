@@ -3,6 +3,7 @@
   <appSettings>
     <add key="env:define" value="${env}" xdt:Transform="InsertIfMissing" xdt:Locator="Match(key)" />
     <add key="env:define" value="${env}" xdt:Transform="SetAttributes" xdt:Locator="Match(key)" />
+	<add key="role:define" value="${Env.Sitecore.Role}" xdt:Transform="SetAttributes" xdt:Locator="Match(key)" />
   </appSettings>
   <system.web>
     #if ($webfarm.enabled == "true")

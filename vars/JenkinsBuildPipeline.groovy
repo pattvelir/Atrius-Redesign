@@ -107,6 +107,19 @@ def call(Map pipelineParams) {
 					}
 				}
 			}
+			
+			stage ('Apply Xml Transformations') {
+				steps {
+					script {
+
+						powershell("""
+							Import-Module $WORKSPACE_PATH\\tools\\powershell\\Kneedle\\Kneedle.psm1 -Force
+							Invoke-XdtTransform -XdtDllPath "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Microsoft\\VisualStudio\\v17.0\\Web\\Microsoft.Web.XmlTransform.dll"
+							exit 0
+						""")
+					}
+				}
+			}
 
 			stage ('Execute Unicorn Sync') {
 				steps {
