@@ -13,10 +13,8 @@ Function Publish-FE {
     $FEBUILDFolderPath = "$(Get-ConfigValue -Key ProjectRoot)\build"
 	$destination = "$(Get-ConfigValue -Key DeployRoot)\assets\$(Get-ConfigValue -Key ProjectName)-build"
 	
-	robocopy   $FEBUILDFolderPath $destination /COPYALL /s /secfix
-	
+	robocopy $FEBUILDFolderPath $destination /COPYALL /s /secfix
+	Write-Output "Robocopy code:  $($LastExitCode)"
 
-    if ($LASTEXITCODE -ne 0) {
-        Write-Error "Copy FE push failed, see errors above."
-    }    
+	exit 0
 }
